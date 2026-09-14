@@ -1,0 +1,53 @@
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+venv/
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.cache/
+tmp/
+temp/
+
+# Local machine configuration backups and unfrozen reference dumps
+backups/
+pic/
+
+# Reproducible Hatch Pet intermediates. Approved decoded strips, prompts,
+# manifests, scripts, and JSON QA baselines remain tracked.
+hatch-runs/*/final/
+hatch-runs/**/generated/
+hatch-runs/**/source/
+hatch-runs/**/references/
+hatch-runs/**/decoded/base.png
+hatch-runs/**/decoded/frames/
+hatch-runs/**/qa/frames/
+hatch-runs/**/qa/previews/
+hatch-runs/**/qa/rows/
+hatch-runs/**/qa/*.gif
+hatch-runs/**/qa/*.png
+hatch-runs/**/qa/**/*.gif
+hatch-runs/**/qa/**/*.png
