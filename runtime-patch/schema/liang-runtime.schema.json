@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liang-no-henshin.local/schema/liang-runtime.schema.json",
+  "title": "Liang no Henshin Runtime Sidecar",
+  "description": "Backward-compatible dual-form runtime metadata stored separately from the native Codex pet manifest.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "initialForm",
+    "forms",
+    "transitions"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "initialForm": {
+      "$ref": "#/$defs/form"
+    },
+    "forms": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gu",
+        "feng"
+      ],
+      "properties": {
+        "gu": {
+          "$ref": "#/$defs/formSource"
+        },
+        "feng": {
+          "$ref": "#/$defs/formSource"
+        }
+      }
+    },
+    "transitions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gu_to_feng",
+        "feng_to_gu"
+      ],
+      "properties": {
+        "gu_to_feng": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/transition"
+            },
+            {
+              "properties": {
+                "from": {
+                  "const": "gu"
+                },
+                "to": {
+                  "const": "feng"
+                }
+              }
+            }
+          ]
+        },
+        "feng_to_gu": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/transition"
+            },
+            {
+              "properties": {
+                "from": {
+                  "const": "feng"
+                },
+                "to": {
+                  "const": "gu"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "form": {
+      "type": "string",
+      "enum": [
+        "gu",
+        "feng"
+      ]
+    },
+    "petRelativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?![A-Za-z]:)(?!.*\\\\)(?!.*(?:^|/)\\.\\.?(/|$))(?!.*//)[^\\u0000]+$"
+    },
+    "formSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "spritesheetPath"
+      ],
+      "properties": {
+        "spritesheetPath": {
+          "$ref": "#/$defs/petRelativePath"
+        }
+      }
+    },
+    "transition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "from",
+        "to",
+        "frames",
+        "frameDurationMs"
+      ],
+      "properties": {
+        "from": {
+          "$ref": "#/$defs/form"
+        },
+        "to": {
+          "$ref": "#/$defs/form"
+        },
+        "frames": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/petRelativePath"
+          }
+        },
+        "frameDurationMs": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    }
+  }
+}

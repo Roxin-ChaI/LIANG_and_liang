@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "initialForm": "gu",
+  "forms": {
+    "gu": {
+      "spritesheetPath": "assets/builds/gu/spritesheet.webp"
+    },
+    "feng": {
+      "spritesheetPath": "assets/builds/feng/spritesheet.webp"
+    }
+  },
+  "transitions": {
+    "gu_to_feng": {
+      "from": "gu",
+      "to": "feng",
+      "frames": [
+        "assets/transform/gu_to_feng/gu_to_feng_01.png",
+        "assets/transform/gu_to_feng/gu_to_feng_02.png",
+        "assets/transform/gu_to_feng/gu_to_feng_03.png",
+        "assets/transform/gu_to_feng/gu_to_feng_04.png",
+        "assets/transform/gu_to_feng/gu_to_feng_05.png",
+        "assets/transform/gu_to_feng/gu_to_feng_06.png",
+        "assets/transform/gu_to_feng/gu_to_feng_07.png",
+        "assets/transform/gu_to_feng/gu_to_feng_08.png",
+        "assets/transform/gu_to_feng/gu_to_feng_09.png",
+        "assets/transform/gu_to_feng/gu_to_feng_10.png"
+      ],
+      "frameDurationMs": 140
+    },
+    "feng_to_gu": {
+      "from": "feng",
+      "to": "gu",
+      "frames": [
+        "assets/transform/feng_to_gu/feng_to_gu_01.png",
+        "assets/transform/feng_to_gu/feng_to_gu_02.png",
+        "assets/transform/feng_to_gu/feng_to_gu_03.png",
+        "assets/transform/feng_to_gu/feng_to_gu_04.png",
+        "assets/transform/feng_to_gu/feng_to_gu_05.png",
+        "assets/transform/feng_to_gu/feng_to_gu_06.png",
+        "assets/transform/feng_to_gu/feng_to_gu_07.png",
+        "assets/transform/feng_to_gu/feng_to_gu_08.png"
+      ],
+      "frameDurationMs": 140
+    }
+  }
+}
