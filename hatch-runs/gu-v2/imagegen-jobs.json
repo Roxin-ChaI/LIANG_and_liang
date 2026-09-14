@@ -1,0 +1,710 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-07T22:52:27.397393+00:00",
+  "run_dir": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2",
+  "primary_generation_skill": "$imagegen",
+  "jobs": [
+    {
+      "id": "base",
+      "kind": "base-pet",
+      "status": "complete",
+      "prompt_file": "prompts/base-pet.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        }
+      ],
+      "output_path": "decoded/base.png",
+      "depends_on": [],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "source_path": "/Users/mac/Projects/liang-no-henshin/assets/gu/idle.png",
+      "completed_at": "2026-09-07T22:52:43Z"
+    },
+    {
+      "id": "idle",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/idle.md",
+      "retry_prompt_file": "prompts/row-retries/idle.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/idle.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/gu/idle.png",
+          "role": "approved gu idle identity/pose reference"
+        }
+      ],
+      "output_path": "jobs/idle/decoded/idle.png",
+      "source_path": "jobs/idle/generated/idle-source.png",
+      "completed_at": "2026-09-09T09:38:22Z",
+      "completion_method": "coherent ImageGen idle-loop synthesis followed by deterministic approved-frame anchoring, nearest-neighbor registration, hard-alpha cleanup, and y=96 lower-body raster lock",
+      "imagegen_used": true,
+      "qa_report": "jobs/idle/qa/validation.json",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "no deterministic derivation is configured for this state"
+      },
+      "mirror_policy": {}
+    },
+    {
+      "id": "running-right",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/running-right.md",
+      "retry_prompt_file": "prompts/row-retries/running-right.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/running-right.png",
+          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/gu/drag.png",
+          "role": "approved gu drag pose/action basis; animate the same dragging-right drag loop"
+        },
+        {
+          "path": "jobs/idle/decoded/idle.png",
+          "role": "completed approved idle identity, scale, and registration reference"
+        }
+      ],
+      "output_path": "jobs/running-right/decoded/running-right.png",
+      "source_path": "jobs/running-right/generated/running-right-source.png",
+      "completed_at": "2026-09-09T10:09:34Z",
+      "completion_method": "coherent ImageGen passive drag-gait synthesis followed by deterministic hard-alpha extraction, shared nearest-neighbor scaling, torso registration, and baseline alignment",
+      "imagegen_used": true,
+      "qa_report": "jobs/running-right/qa/validation.json",
+      "depends_on": [
+        "base",
+        "idle"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "no deterministic derivation is configured for this state"
+      },
+      "mirror_policy": {}
+    },
+    {
+      "id": "running-left",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/running-left.md",
+      "retry_prompt_file": "prompts/row-retries/running-left.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/running-left.png",
+          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "jobs/running-right/decoded/running-right.png",
+          "role": "approved rightward gait source for deterministic framewise mirroring"
+        },
+        {
+          "path": "assets/gu/drag.png",
+          "role": "approved Liang Wengu drag identity, posture, and low-energy action reference"
+        }
+      ],
+      "output_path": "jobs/running-left/decoded/running-left.png",
+      "source_path": "jobs/running-right/decoded/running-right.png",
+      "derived_from": "running-right",
+      "completed_at": "2026-09-09T12:52:15Z",
+      "completion_method": "Hatch Pet approved deterministic framewise horizontal mirror preserving temporal order; no scaling or resampling",
+      "imagegen_used": false,
+      "qa_report": "jobs/running-left/qa/validation.json",
+      "metadata": {
+        "width": 1536,
+        "height": 208,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "mirror_decision": {
+        "approved": true,
+        "approved_at": "2026-09-09T12:52:15Z",
+        "note": "梁文谷无文字、徽标、单侧道具或固定手持物；逐帧镜像后发型、眼镜、西装、双手与疲惫身份仍合理。",
+        "transform": "framewise-horizontal-mirror-preserving-order"
+      },
+      "depends_on": [
+        "base",
+        "running-right"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base",
+        "running-right"
+      ],
+      "derivation_policy": {
+        "may_derive": true,
+        "may_derive_from": "running-right",
+        "derivation": "framewise-horizontal-mirror-preserving-order",
+        "requires_explicit_approval": true,
+        "fallback_generation_skill": "$imagegen"
+      },
+      "mirror_policy": {
+        "may_derive": true,
+        "may_derive_from": "running-right",
+        "derivation": "framewise-horizontal-mirror-preserving-order",
+        "requires_explicit_approval": true,
+        "fallback_generation_skill": "$imagegen"
+      }
+    },
+    {
+      "id": "waving",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/waving.md",
+      "retry_prompt_file": "prompts/row-retries/waving.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/waving.png",
+          "role": "layout guide for 4 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        }
+      ],
+      "output_path": "decoded/waving.png",
+      "source_path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/waving/source/original.png",
+      "original_user_path": "/Users/mac/Desktop/替换备份/layout-guides/waving.png",
+      "completed_at": "2026-09-09T08:37:48Z",
+      "completion_method": "imported existing generation; removed baked checkerboard deterministically; nearest-neighbor normalized; extracted and reviewed",
+      "imported_existing_generation": true,
+      "qa_report": "qa/rows/waving/review.json",
+      "visual_qa_report": "qa/rows/waving/visual-review.json",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "state requires its own generated animation semantics"
+      },
+      "mirror_policy": {}
+    },
+    {
+      "id": "jumping",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/jumping.md",
+      "retry_prompt_file": "prompts/row-retries/jumping.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/jumping.png",
+          "role": "layout guide for 5 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/gu/hover.png",
+          "role": "approved gu hover/lift pose/action basis for the jumping hover loop"
+        },
+        {
+          "path": "jobs/idle/decoded/idle.png",
+          "role": "completed approved idle identity, scale, registration, and start/end reference"
+        },
+        {
+          "path": "assets/gu/idle.png",
+          "role": "device-tested approved idle identity and proportion reference"
+        }
+      ],
+      "output_path": "jobs/jumping/decoded/jumping.png",
+      "source_path": "assets/gu/hover.png",
+      "completed_at": "2026-09-09T15:00:42Z",
+      "completion_method": "device-test repair: approved hover normalized once with nearest-neighbor, then reused unchanged across five frames with rigid integer vertical offsets 0/-1/-4/-2/0",
+      "imagegen_used": false,
+      "qa_report": "jobs/jumping/qa/validation.json",
+      "repair_reason": "Hover device test failed because the generated middle frames used a larger head and different facial proportions",
+      "device_retest_required": "hover",
+      "depends_on": [
+        "base",
+        "idle"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "state requires its own generated animation semantics"
+      },
+      "mirror_policy": {}
+    },
+    {
+      "id": "failed",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/failed.md",
+      "retry_prompt_file": "prompts/row-retries/failed.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/failed.png",
+          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        }
+      ],
+      "output_path": "decoded/failed.png",
+      "source_path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/failed/source/original.png",
+      "original_user_path": "/var/folders/nc/p06rznj10dv3fh67gs5g5q540000gp/T/codex-clipboard-dc214284-492c-4f79-8fb8-3f946c2d135f.png",
+      "completed_at": "2026-09-09T13:22:05Z",
+      "completion_method": "imported existing generation; nearest-neighbor normalized to the approved standard-row scale and baseline; component-extracted and reviewed",
+      "imported_existing_generation": true,
+      "qa_report": "qa/rows/failed/review.json",
+      "visual_qa_report": "qa/rows/failed/visual-review.json",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "state requires its own generated animation semantics"
+      },
+      "mirror_policy": {}
+    },
+    {
+      "id": "waiting",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/waiting.md",
+      "retry_prompt_file": "prompts/row-retries/waiting.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/waiting.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        }
+      ],
+      "output_path": "decoded/waiting.png",
+      "source_path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/waiting/source/original.png",
+      "original_user_path": "/Users/mac/Desktop/替换备份/layout-guides/waiting.png",
+      "completed_at": "2026-09-09T08:37:48Z",
+      "completion_method": "imported existing generation; component-extracted and reviewed",
+      "imported_existing_generation": true,
+      "qa_report": "qa/rows/waiting/review.json",
+      "visual_qa_report": "qa/rows/waiting/visual-review.json",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "state requires its own generated animation semantics"
+      },
+      "mirror_policy": {}
+    },
+    {
+      "id": "running",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/running.md",
+      "retry_prompt_file": "prompts/row-retries/running.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/running.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        }
+      ],
+      "output_path": "decoded/running.png",
+      "source_path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/running/source/original.png",
+      "original_user_path": "/Users/mac/Desktop/替换备份/layout-guides/running.png",
+      "completed_at": "2026-09-09T08:37:48Z",
+      "completion_method": "imported existing generation; component-extracted and reviewed",
+      "imported_existing_generation": true,
+      "qa_report": "qa/rows/running/review.json",
+      "visual_qa_report": "qa/rows/running/visual-review.json",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "state requires its own generated animation semantics"
+      },
+      "mirror_policy": {}
+    },
+    {
+      "id": "review",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/review.md",
+      "retry_prompt_file": "prompts/row-retries/review.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/review.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        }
+      ],
+      "output_path": "decoded/review.png",
+      "source_path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/review/source/original.png",
+      "original_user_path": "/Users/mac/Desktop/替换备份/layout-guides/review.png",
+      "completed_at": "2026-09-09T08:37:48Z",
+      "completion_method": "imported existing generation; component-extracted and reviewed",
+      "imported_existing_generation": true,
+      "qa_report": "qa/rows/review/review.json",
+      "visual_qa_report": "qa/rows/review/visual-review.json",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "state requires its own generated animation semantics"
+      },
+      "mirror_policy": {}
+    },
+    {
+      "id": "look-cardinals",
+      "kind": "look-cardinal-strip",
+      "status": "pending",
+      "prompt_file": "prompts/look-cardinals.md",
+      "repair_prompt_files": {
+        "000": "prompts/look-anchor-repairs/000.md",
+        "090": "prompts/look-anchor-repairs/090.md",
+        "180": "prompts/look-anchor-repairs/180.md",
+        "270": "prompts/look-anchor-repairs/270.md"
+      },
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/look-cardinals.png",
+          "role": "layout guide for four cardinal slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "qa/contact-sheet.png",
+          "role": "approved standard-row identity, scale, and baseline reference"
+        }
+      ],
+      "output_path": "decoded/look-cardinals.png",
+      "extracted_output_paths": [
+        "decoded/look-anchors/000.png",
+        "decoded/look-anchors/090.png",
+        "decoded/look-anchors/180.png",
+        "decoded/look-anchors/270.png"
+      ],
+      "approved_strip_path": "decoded/look-anchors-approved.png",
+      "candidate_path": "jobs/look-cardinals/decoded/look-cardinals.png",
+      "candidate_qa_report": "jobs/look-cardinals/qa/validation.json",
+      "pending_reason": "standard rows are not all complete; re-register candidate against the approved standard-row scale and baseline before approval",
+      "depends_on": [
+        "idle",
+        "running-right",
+        "running-left",
+        "waving",
+        "jumping",
+        "failed",
+        "waiting",
+        "running",
+        "review"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "look_mechanics_file": "qa/look-mechanics.md",
+      "directions": [
+        "000",
+        "090",
+        "180",
+        "270"
+      ],
+      "packaging_eligible": false,
+      "parallelizable_after": [
+        "idle",
+        "running-right",
+        "running-left",
+        "waving",
+        "jumping",
+        "failed",
+        "waiting",
+        "running",
+        "review"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "cardinal directions require grounded pet-specific generation"
+      }
+    },
+    {
+      "id": "look-row-9",
+      "kind": "look-row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/look-row-9.md",
+      "retry_prompt_file": "prompts/row-retries/look-row-9.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/look-row-9.png",
+          "role": "layout guide for 8 direction slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "qa/contact-sheet.png",
+          "role": "approved standard-row identity, scale, and baseline reference"
+        },
+        {
+          "path": "jobs/look-cardinals/decoded/look-anchors-approved.png",
+          "role": "approved cardinal reference strip in order 000 up, 090 screen-right, 180 down, 270 screen-left; interpolate intermediate directions evenly"
+        }
+      ],
+      "output_path": "jobs/look-row-9/decoded/look-row-9.png",
+      "source_path": "jobs/look-row-9/generated/look-row-9-source.png",
+      "completed_at": "2026-09-09T08:39:40Z",
+      "completion_method": "coherent ImageGen synthesis followed by deterministic nearest-neighbor registration, approved anchor lock, hard-alpha cleanup, and body raster lock",
+      "imagegen_used": true,
+      "qa_report": "jobs/look-row-9/qa/validation.json",
+      "depends_on": [
+        "look-cardinals"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "look_mechanics_file": "qa/look-mechanics.md",
+      "directions": [
+        "000.0",
+        "022.5",
+        "045.0",
+        "067.5",
+        "090.0",
+        "112.5",
+        "135.0",
+        "157.5"
+      ],
+      "parallelizable_after": [
+        "look-cardinals"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "look directions require grounded pet-specific generation"
+      },
+      "coherent_synthesis_required": true,
+      "individual_cell_packaging_allowed": false,
+      "packaging_eligible": true
+    },
+    {
+      "id": "look-row-10",
+      "kind": "look-row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/look-row-10.md",
+      "retry_prompt_file": "prompts/row-retries/look-row-10.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/look-row-10.png",
+          "role": "layout guide for 8 direction slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "qa/contact-sheet.png",
+          "role": "approved standard-row identity, scale, and baseline reference"
+        },
+        {
+          "path": "jobs/look-cardinals/decoded/look-anchors-approved.png",
+          "role": "approved cardinal reference strip in order 000 up, 090 screen-right, 180 down, 270 screen-left; interpolate intermediate directions evenly"
+        },
+        {
+          "path": "jobs/look-row-9/decoded/look-row-9.png",
+          "role": "completed first half of the clockwise look loop for row 10 continuity"
+        }
+      ],
+      "output_path": "jobs/look-row-10/decoded/look-row-10.png",
+      "source_path": "jobs/look-row-10/generated/look-row-10-source.png",
+      "completed_at": "2026-09-09T09:00:19Z",
+      "completion_method": "coherent ImageGen synthesis with targeted 337.5-to-000 boundary repair, followed by deterministic nearest-neighbor registration, approved Down head lock, hard-alpha cleanup, and row-9 body raster lock",
+      "imagegen_used": true,
+      "qa_report": "jobs/look-row-10/qa/validation.json",
+      "depends_on": [
+        "look-cardinals",
+        "look-row-9"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "look_mechanics_file": "qa/look-mechanics.md",
+      "directions": [
+        "180.0",
+        "202.5",
+        "225.0",
+        "247.5",
+        "270.0",
+        "292.5",
+        "315.0",
+        "337.5"
+      ],
+      "parallelizable_after": [
+        "look-cardinals",
+        "look-row-9"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "look directions require grounded pet-specific generation"
+      },
+      "coherent_synthesis_required": true,
+      "individual_cell_packaging_allowed": false,
+      "packaging_eligible": true
+    }
+  ]
+}

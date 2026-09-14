@@ -1,0 +1,275 @@
+{
+  "ok": true,
+  "repair_reason": "device Hover test exposed per-frame head scale and identity drift",
+  "method": "normalize approved hover once, then use rigid integer vertical translations only",
+  "approved_hover": "/Users/mac/Projects/liang-no-henshin/assets/gu/hover.png",
+  "approved_hover_sha256": "1c552f03dfffda41676a7ae4c5f243deb45e68ee9c728633a7ae1d8b4506156d",
+  "approved_idle": "/Users/mac/Projects/liang-no-henshin/assets/gu/idle.png",
+  "approved_idle_sha256": "e51d09e2d1c09f6db316050ca859a103684712ef7685b50a1297e74e45985656",
+  "approved_idle_row": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/idle/decoded/idle.png",
+  "approved_idle_row_sha256": "78f5bb1d2f2d671abce8014230738aac352c64893b0b25bcda1c43c4677e8d54",
+  "output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/jumping/decoded/jumping.png",
+  "output_sha256": "079be5d30e81c5635b625580232b91e1ae04469b5aaefac348467a172aa0c892",
+  "output_size": [
+    960,
+    208
+  ],
+  "mode": "RGBA",
+  "frame_labels": [
+    "01-hover",
+    "02-lift",
+    "03-peak",
+    "04-descent",
+    "05-settle"
+  ],
+  "vertical_offsets": [
+    0,
+    -1,
+    -4,
+    -2,
+    0
+  ],
+  "jump_height_pixels": 4,
+  "normalization_scale": 0.18115279048490393,
+  "resampling": "nearest-neighbor once for approved hover canonical only",
+  "head_region_bottom_in_canonical": 80,
+  "canonical_hover_bbox": [
+    56,
+    6,
+    123,
+    204
+  ],
+  "approved_idle_frame_bbox": [
+    54,
+    4,
+    122,
+    204
+  ],
+  "checks": {
+    "dimensions_960x208": true,
+    "mode_rgba": true,
+    "five_nonempty_192x208_cells": true,
+    "frame_1_and_5_pixel_identical": true,
+    "frame_1_and_5_baseline_y_203": true,
+    "body_center_fixed_near_x_96": true,
+    "vertical_trajectory_0_minus1_minus4_minus2_0": true,
+    "baseline_trajectory_203_202_199_201_203": true,
+    "head_bounding_box_size_identical_all_frames": true,
+    "face_glasses_hair_and_body_pixels_rigidly_identical": true,
+    "no_head_scaling": true,
+    "hover_and_idle_normalized_geometry_compatible": true,
+    "jump_height_4px": true,
+    "no_horizontal_drift": true,
+    "no_clipping": true,
+    "single_connected_sprite_no_isolated_pixels": true,
+    "binary_alpha_no_antialias": true,
+    "hidden_background_rgb_clear": true,
+    "nearest_neighbor_normalization_once_only": true,
+    "no_per_frame_resampling": true,
+    "same_character_all_five_frames_visually_confirmed": true,
+    "no_head_scale_pop_visually_confirmed": true,
+    "low_energy_hover_jump_visually_confirmed": true,
+    "loop_5_to_1_visually_confirmed": true,
+    "approved_hover_identity_match": true
+  },
+  "frames": [
+    {
+      "index": 0,
+      "label": "01-hover",
+      "vertical_offset": 0,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/jumping/decoded/frames/01-01-hover.png",
+      "bbox": [
+        56,
+        6,
+        123,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 95.5,
+      "head_bbox": [
+        56,
+        6,
+        123,
+        80
+      ],
+      "head_bbox_size": [
+        67,
+        74
+      ],
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true,
+      "exact_rigid_translation_of_canonical_hover": true,
+      "margins": {
+        "left": 56,
+        "top": 6,
+        "right": 69,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 1,
+      "label": "02-lift",
+      "vertical_offset": -1,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/jumping/decoded/frames/02-02-lift.png",
+      "bbox": [
+        56,
+        5,
+        123,
+        203
+      ],
+      "baseline_y": 202,
+      "body_center_x": 95.5,
+      "head_bbox": [
+        56,
+        5,
+        123,
+        79
+      ],
+      "head_bbox_size": [
+        67,
+        74
+      ],
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true,
+      "exact_rigid_translation_of_canonical_hover": true,
+      "margins": {
+        "left": 56,
+        "top": 5,
+        "right": 69,
+        "bottom": 5
+      }
+    },
+    {
+      "index": 2,
+      "label": "03-peak",
+      "vertical_offset": -4,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/jumping/decoded/frames/03-03-peak.png",
+      "bbox": [
+        56,
+        2,
+        123,
+        200
+      ],
+      "baseline_y": 199,
+      "body_center_x": 95.5,
+      "head_bbox": [
+        56,
+        2,
+        123,
+        76
+      ],
+      "head_bbox_size": [
+        67,
+        74
+      ],
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true,
+      "exact_rigid_translation_of_canonical_hover": true,
+      "margins": {
+        "left": 56,
+        "top": 2,
+        "right": 69,
+        "bottom": 8
+      }
+    },
+    {
+      "index": 3,
+      "label": "04-descent",
+      "vertical_offset": -2,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/jumping/decoded/frames/04-04-descent.png",
+      "bbox": [
+        56,
+        4,
+        123,
+        202
+      ],
+      "baseline_y": 201,
+      "body_center_x": 95.5,
+      "head_bbox": [
+        56,
+        4,
+        123,
+        78
+      ],
+      "head_bbox_size": [
+        67,
+        74
+      ],
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true,
+      "exact_rigid_translation_of_canonical_hover": true,
+      "margins": {
+        "left": 56,
+        "top": 4,
+        "right": 69,
+        "bottom": 6
+      }
+    },
+    {
+      "index": 4,
+      "label": "05-settle",
+      "vertical_offset": 0,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/jumping/decoded/frames/05-05-settle.png",
+      "bbox": [
+        56,
+        6,
+        123,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 95.5,
+      "head_bbox": [
+        56,
+        6,
+        123,
+        80
+      ],
+      "head_bbox_size": [
+        67,
+        74
+      ],
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true,
+      "exact_rigid_translation_of_canonical_hover": true,
+      "margins": {
+        "left": 56,
+        "top": 6,
+        "right": 69,
+        "bottom": 4
+      }
+    }
+  ],
+  "manual_review": {
+    "reviewed_at": "2026-09-09T15:00:42Z",
+    "same_character_all_five_frames": "pass",
+    "character_evidence": "五帧均来自同一个 approved Hover 规范化角色，脸、眼镜、发型、肩宽、服装和身体像素仅随整个人物做刚性垂直平移。",
+    "no_head_scale_pop": "pass",
+    "head_evidence": "五帧头部 bounding box 均为 67×74 px；不存在缩放、变形或逐帧重绘。",
+    "low_energy_hover_jump": "pass",
+    "motion_evidence": "垂直位移为 0、-1、-4、-2、0 px，形成克制的抬升、峰值、回落动作，无左右漂移或活泼跳跃。",
+    "loop_5_to_1": "pass",
+    "loop_evidence": "Frame 5 与 Frame 1 逐像素一致，回到相同站姿。",
+    "approved_hover_identity_match": "pass",
+    "identity_evidence": "规范化源直接来自 assets/gu/hover.png；与已通过 Idle 的规范化几何仅差 1×2 px，保持同一梁文谷身份和低能量气质。"
+  }
+}

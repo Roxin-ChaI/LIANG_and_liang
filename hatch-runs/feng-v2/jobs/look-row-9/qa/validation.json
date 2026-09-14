@@ -1,0 +1,403 @@
+{
+  "ok": true,
+  "job": "feng-v2/look-row-9",
+  "status": "complete",
+  "validated_at": "2026-09-13T08:22:30.037958Z",
+  "output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/look-row-9/decoded/look-row-9.png",
+  "sha256": "746186e3161ad80736b04e22755631b714719d8f6916978f9f431f9bdb061a98",
+  "dimensions": [
+    1536,
+    208
+  ],
+  "mode": "RGBA",
+  "frame_count": 8,
+  "cell_size": [
+    192,
+    208
+  ],
+  "direction_order": [
+    "000.0",
+    "022.5",
+    "045.0",
+    "067.5",
+    "090.0",
+    "112.5",
+    "135.0",
+    "157.5"
+  ],
+  "source_generation_sha256": "0399da9e30d1899cbbf8083bd37d606bf4f47a440a9455232cab18b3f7b245b1",
+  "imagegen_used": true,
+  "imagegen_cli_used": false,
+  "normalization": {
+    "background": "deterministic grayscale checkerboard removal to true transparent binary alpha",
+    "resize": "one shared nearest-neighbor scale for all generated intermediate directions",
+    "registration": "shared top-of-head registration; approved baseline y=203 and lower-body center x=96.377",
+    "body_lock": "approved cardinal 000 body pixels copied identically at y>=82 for all eight cells",
+    "anchor_lock": "cells 1/000 and 5/090 copied byte-for-byte from approved cardinal cells",
+    "semantic_ordering": "one coherent generated clockwise screen-right arc; no whole-character mirroring"
+  },
+  "checks": {
+    "dimensions_1536x208": true,
+    "mode_rgba": true,
+    "eight_cells_192x208": true,
+    "all_cells_nonempty": true,
+    "direction_order_strict": true,
+    "frame_000_exact_cardinal_match": true,
+    "frame_090_exact_cardinal_match": true,
+    "body_y82_down_pixel_identical": true,
+    "baseline_identical_y203": true,
+    "body_center_stable_near_96": true,
+    "shoulder_width_identical": true,
+    "head_height_identical": true,
+    "head_scale_fixed_shared_nearest_transform": true,
+    "head_width_change_is_pose_silhouette_only": true,
+    "adjacent_frames_all_distinct": true,
+    "adjacent_direction_continuity_visual": true,
+    "binary_alpha": true,
+    "transparent_rgb_cleared": true,
+    "no_hidden_or_green_background": true,
+    "single_connected_subject_per_cell": true,
+    "no_isolated_pixels": true,
+    "safe_padding_no_clipping": true,
+    "nearest_neighbor_only": true,
+    "no_antialiasing_or_blur": true,
+    "identity_matches_approved_liang_wenfeng": "PASS",
+    "direction_semantics": "PASS"
+  },
+  "alpha_values": [
+    0,
+    255
+  ],
+  "hidden_transparent_rgb_pixels": 0,
+  "green_key_like_pixels": 0,
+  "head_core_height_values": [
+    56,
+    56,
+    56,
+    56,
+    56,
+    56,
+    56,
+    56
+  ],
+  "head_core_width_values": [
+    55,
+    58,
+    59,
+    60,
+    54,
+    59,
+    57,
+    57
+  ],
+  "head_width_note": "The fixed shared scale preserves physical head size; the small 54-60 px horizontal silhouette range is the expected foreshortening from frontal/up through right profile to down-right.",
+  "adjacent_head_pixel_differences": [
+    4436,
+    4224,
+    4223,
+    4457,
+    4507,
+    4388,
+    4184
+  ],
+  "frames": [
+    {
+      "index": 1,
+      "degree": "000.0",
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "body_center_x": 95.508,
+      "head_core_bbox": [
+        62,
+        4,
+        117,
+        60
+      ],
+      "head_core_size": [
+        55,
+        56
+      ],
+      "shoulder_width": 104,
+      "connected_components": 1,
+      "isolated_components_le_2px": 0,
+      "margins": {
+        "left": 42,
+        "right": 46,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 2,
+      "degree": "022.5",
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "body_center_x": 95.508,
+      "head_core_bbox": [
+        59,
+        4,
+        117,
+        60
+      ],
+      "head_core_size": [
+        58,
+        56
+      ],
+      "shoulder_width": 104,
+      "connected_components": 1,
+      "isolated_components_le_2px": 0,
+      "margins": {
+        "left": 42,
+        "right": 46,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 3,
+      "degree": "045.0",
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "body_center_x": 95.508,
+      "head_core_bbox": [
+        58,
+        4,
+        117,
+        60
+      ],
+      "head_core_size": [
+        59,
+        56
+      ],
+      "shoulder_width": 104,
+      "connected_components": 1,
+      "isolated_components_le_2px": 0,
+      "margins": {
+        "left": 42,
+        "right": 46,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 4,
+      "degree": "067.5",
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "body_center_x": 95.508,
+      "head_core_bbox": [
+        59,
+        4,
+        119,
+        60
+      ],
+      "head_core_size": [
+        60,
+        56
+      ],
+      "shoulder_width": 104,
+      "connected_components": 1,
+      "isolated_components_le_2px": 0,
+      "margins": {
+        "left": 42,
+        "right": 46,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 5,
+      "degree": "090.0",
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "body_center_x": 95.508,
+      "head_core_bbox": [
+        63,
+        4,
+        117,
+        60
+      ],
+      "head_core_size": [
+        54,
+        56
+      ],
+      "shoulder_width": 104,
+      "connected_components": 1,
+      "isolated_components_le_2px": 0,
+      "margins": {
+        "left": 42,
+        "right": 46,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 6,
+      "degree": "112.5",
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "body_center_x": 95.508,
+      "head_core_bbox": [
+        61,
+        4,
+        120,
+        60
+      ],
+      "head_core_size": [
+        59,
+        56
+      ],
+      "shoulder_width": 104,
+      "connected_components": 1,
+      "isolated_components_le_2px": 0,
+      "margins": {
+        "left": 42,
+        "right": 46,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 7,
+      "degree": "135.0",
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "body_center_x": 95.508,
+      "head_core_bbox": [
+        65,
+        4,
+        122,
+        60
+      ],
+      "head_core_size": [
+        57,
+        56
+      ],
+      "shoulder_width": 104,
+      "connected_components": 1,
+      "isolated_components_le_2px": 0,
+      "margins": {
+        "left": 42,
+        "right": 46,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 8,
+      "degree": "157.5",
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "body_center_x": 95.508,
+      "head_core_bbox": [
+        65,
+        4,
+        122,
+        60
+      ],
+      "head_core_size": [
+        57,
+        56
+      ],
+      "shoulder_width": 104,
+      "connected_components": 1,
+      "isolated_components_le_2px": 0,
+      "margins": {
+        "left": 42,
+        "right": 46,
+        "top": 4,
+        "bottom": 4
+      }
+    }
+  ],
+  "direction_semantics": [
+    {
+      "degree": "000.0",
+      "verdict": "PASS",
+      "evidence": "Exact approved Up cardinal anchor; frontal head with eyes raised."
+    },
+    {
+      "degree": "022.5",
+      "verdict": "PASS",
+      "evidence": "Mostly frontal/up with the first small screen-right gaze and face turn."
+    },
+    {
+      "degree": "045.0",
+      "verdict": "PASS",
+      "evidence": "Intermediate up-right head plane between the 022.5 and 067.5 poses."
+    },
+    {
+      "degree": "067.5",
+      "verdict": "PASS",
+      "evidence": "Predominantly screen-right, still short of the full Right anchor."
+    },
+    {
+      "degree": "090.0",
+      "verdict": "PASS",
+      "evidence": "Exact approved Right cardinal anchor."
+    },
+    {
+      "degree": "112.5",
+      "verdict": "PASS",
+      "evidence": "Right-facing head begins a small downward pitch."
+    },
+    {
+      "degree": "135.0",
+      "verdict": "PASS",
+      "evidence": "Balanced down-right diagonal with narrowed downward gaze."
+    },
+    {
+      "degree": "157.5",
+      "verdict": "PASS",
+      "evidence": "Near-Down pose retaining a slight screen-right bias for continuity into 180."
+    }
+  ]
+}

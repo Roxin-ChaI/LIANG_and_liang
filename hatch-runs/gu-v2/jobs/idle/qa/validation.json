@@ -1,0 +1,224 @@
+{
+  "ok": true,
+  "generated_source": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/idle/generated/idle-source.png",
+  "generated_source_sha256": "884c5be91cd83527343448998680dc05ae824ce14ec7858cd206c6746af61b7b",
+  "approved_idle": "/Users/mac/Projects/liang-no-henshin/assets/gu/idle.png",
+  "approved_idle_sha256": "e51d09e2d1c09f6db316050ca859a103684712ef7685b50a1297e74e45985656",
+  "output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/idle/decoded/idle.png",
+  "output_sha256": "78f5bb1d2f2d671abce8014230738aac352c64893b0b25bcda1c43c4677e8d54",
+  "output_size": [
+    1152,
+    208
+  ],
+  "mode": "RGBA",
+  "frame_labels": [
+    "01-idle",
+    "02-breathe-down",
+    "03-blink",
+    "04-eyes-closed",
+    "05-reopen",
+    "06-loop-return"
+  ],
+  "body_lock_y": 96,
+  "resampling": "nearest-neighbor",
+  "checks": {
+    "dimensions_1152x208": true,
+    "mode_rgba": true,
+    "six_nonempty_192x208_cells": true,
+    "frame_1_exact_approved_idle": true,
+    "frame_6_exact_loop_return": true,
+    "baseline_y_203": true,
+    "body_center_stable_near_96": true,
+    "body_arms_hands_legs_feet_pixel_locked": true,
+    "adjacent_head_registration_continuous": true,
+    "no_clipping": true,
+    "no_isolated_pixels": true,
+    "binary_alpha_no_antialias": true,
+    "hidden_background_rgb_clear": true,
+    "nearest_neighbor_only": true,
+    "idle_action_sequence_visually_confirmed": true,
+    "loop_6_to_1_visually_confirmed": true,
+    "approved_liang_wengu_identity_match": true
+  },
+  "frames": [
+    {
+      "index": 0,
+      "label": "01-idle",
+      "generated_source_index": null,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/idle/decoded/frames/01-01-idle.png",
+      "bbox": [
+        54,
+        4,
+        122,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 95.5,
+      "head_center_x": 88.0,
+      "margins": {
+        "left": 54,
+        "top": 4,
+        "right": 70,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 1,
+      "label": "02-breathe-down",
+      "generated_source_index": 1,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/idle/decoded/frames/02-02-breathe-down.png",
+      "bbox": [
+        56,
+        5,
+        125,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 94.5,
+      "head_center_x": 90.5,
+      "margins": {
+        "left": 56,
+        "top": 5,
+        "right": 67,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 2,
+      "label": "03-blink",
+      "generated_source_index": 2,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/idle/decoded/frames/03-03-blink.png",
+      "bbox": [
+        57,
+        5,
+        126,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 95.5,
+      "head_center_x": 91.5,
+      "margins": {
+        "left": 57,
+        "top": 5,
+        "right": 66,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 3,
+      "label": "04-eyes-closed",
+      "generated_source_index": 3,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/idle/decoded/frames/04-04-eyes-closed.png",
+      "bbox": [
+        56,
+        5,
+        125,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 94.5,
+      "head_center_x": 90.5,
+      "margins": {
+        "left": 56,
+        "top": 5,
+        "right": 67,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 4,
+      "label": "05-reopen",
+      "generated_source_index": 4,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/idle/decoded/frames/05-05-reopen.png",
+      "bbox": [
+        56,
+        4,
+        125,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 95.0,
+      "head_center_x": 90.5,
+      "margins": {
+        "left": 56,
+        "top": 4,
+        "right": 67,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 5,
+      "label": "06-loop-return",
+      "generated_source_index": null,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/idle/decoded/frames/06-06-loop-return.png",
+      "bbox": [
+        54,
+        4,
+        122,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 95.5,
+      "head_center_x": 88.0,
+      "margins": {
+        "left": 54,
+        "top": 4,
+        "right": 70,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    }
+  ],
+  "manual_review": {
+    "reviewed_at": "2026-09-09T09:38:22Z",
+    "idle_action_sequence": "pass",
+    "sequence_evidence": {
+      "frame_1": "exact normalized approved idle, eyes open",
+      "frame_2": "upper body and head settle downward by one pixel while feet remain planted",
+      "frame_3": "slow blink reaches the closed-eye phase",
+      "frame_4": "brief tired closed-eye hold",
+      "frame_5": "eyes reopen and the upper body recovers",
+      "frame_6": "exact return to frame 1"
+    },
+    "loop_6_to_1": "pass",
+    "loop_evidence": "frame 6 is pixel-identical to frame 1, producing a zero-pop loop boundary",
+    "approved_identity_match": "pass",
+    "identity_evidence": "approved black short hair, thin glasses, face, navy suit, white shirt, slim narrow shoulders, slight slouch, and tired low-energy demeanor are preserved",
+    "body_lock": "pass; rows y=96..207 are pixel-identical across all six cells"
+  }
+}

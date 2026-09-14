@@ -1,0 +1,315 @@
+{
+  "ok": true,
+  "job": "running-left",
+  "status": "complete",
+  "method": "Hatch Pet official framewise horizontal mirror preserving frame order",
+  "derived_from": "hatch-runs/feng-v2/jobs/running-right/decoded/running-right.png",
+  "source_sha256": "c89cd42973bd8c9c2d1c5d7ea5a091cccd429e8167cf4f9fe8964a8aaf086d42",
+  "output": "hatch-runs/feng-v2/jobs/running-left/decoded/running-left.png",
+  "output_sha256": "4dc1f79479c240a9d724d2af8232e0675a0a0461d93b673dfa2a2e14be2cb994",
+  "output_size": [
+    1536,
+    208
+  ],
+  "mode": "RGBA",
+  "imagegen_used": false,
+  "imagegen_cli_used": false,
+  "transform": "framewise-horizontal-mirror-preserving-order",
+  "resampling": "none",
+  "checks": {
+    "dimensions_1536x208": true,
+    "mode_rgba": true,
+    "eight_nonempty_192x208_cells": true,
+    "framewise_pixel_exact_horizontal_mirror": true,
+    "frame_order_preserved": true,
+    "leftward_drag_semantics_visual_review": true,
+    "baseline_stable_y_203": true,
+    "body_center_stable_near_x_96": true,
+    "body_height_matches_running_right": true,
+    "head_size_matches_running_right_exactly": true,
+    "shoulder_width_matches_running_right_exactly": true,
+    "gait_and_8_to_1_loop_inherited_without_timing_reversal": true,
+    "identity_and_costume_mirror_safe_visual_review": true,
+    "no_clipping_min_4px_margin": true,
+    "hatch_pet_frame_inspection_pass": true,
+    "binary_alpha_no_antialias": true,
+    "hidden_background_rgb_clear": true,
+    "no_opaque_green_background": true,
+    "no_resampling_or_scaling": true,
+    "no_blur_added_by_mirror": true
+  },
+  "metrics": {
+    "baseline_y": [
+      203,
+      203,
+      203,
+      203,
+      203,
+      203,
+      203,
+      203
+    ],
+    "mirrored_torso_center_x": [
+      95.0,
+      95.5,
+      94.5,
+      95.5,
+      94.5,
+      94.5,
+      94.5,
+      95.0
+    ],
+    "height_px": [
+      199,
+      199,
+      199,
+      199,
+      199,
+      199,
+      199,
+      200
+    ],
+    "head_width_px": [
+      54,
+      54,
+      53,
+      55,
+      54,
+      54,
+      53,
+      53
+    ],
+    "head_height_px": [
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45
+    ],
+    "shoulder_band_width_px": [
+      69,
+      72,
+      73,
+      67,
+      69,
+      66,
+      69,
+      69
+    ],
+    "opaque_green_pixels": 0
+  },
+  "frames": [
+    {
+      "index": 1,
+      "label": "01-enter",
+      "path": "hatch-runs/feng-v2/jobs/running-left/qa/frames/running-left/00.png",
+      "bbox": [
+        53,
+        5,
+        139,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 96.0,
+      "mirrored_torso_center_x": 95.0,
+      "height": 199,
+      "head_bbox_size": [
+        54,
+        45
+      ],
+      "shoulder_band_width_px": 69,
+      "pixel_exact_mirror_of_right_frame": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 2,
+      "label": "02-left-lean",
+      "path": "hatch-runs/feng-v2/jobs/running-left/qa/frames/running-left/01.png",
+      "bbox": [
+        46,
+        5,
+        138,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 92.0,
+      "mirrored_torso_center_x": 95.5,
+      "height": 199,
+      "head_bbox_size": [
+        54,
+        45
+      ],
+      "shoulder_band_width_px": 72,
+      "pixel_exact_mirror_of_right_frame": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 3,
+      "label": "03-left-foot-forward",
+      "path": "hatch-runs/feng-v2/jobs/running-left/qa/frames/running-left/02.png",
+      "bbox": [
+        46,
+        5,
+        142,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 94.0,
+      "mirrored_torso_center_x": 94.5,
+      "height": 199,
+      "head_bbox_size": [
+        53,
+        45
+      ],
+      "shoulder_band_width_px": 73,
+      "pixel_exact_mirror_of_right_frame": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 4,
+      "label": "04-weight-transfer",
+      "path": "hatch-runs/feng-v2/jobs/running-left/qa/frames/running-left/03.png",
+      "bbox": [
+        54,
+        5,
+        134,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 94.0,
+      "mirrored_torso_center_x": 95.5,
+      "height": 199,
+      "head_bbox_size": [
+        55,
+        45
+      ],
+      "shoulder_band_width_px": 67,
+      "pixel_exact_mirror_of_right_frame": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 5,
+      "label": "05-right-foot-follow",
+      "path": "hatch-runs/feng-v2/jobs/running-left/qa/frames/running-left/04.png",
+      "bbox": [
+        49,
+        5,
+        144,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 96.5,
+      "mirrored_torso_center_x": 94.5,
+      "height": 199,
+      "head_bbox_size": [
+        54,
+        45
+      ],
+      "shoulder_band_width_px": 69,
+      "pixel_exact_mirror_of_right_frame": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 6,
+      "label": "06-body-settle",
+      "path": "hatch-runs/feng-v2/jobs/running-left/qa/frames/running-left/05.png",
+      "bbox": [
+        40,
+        5,
+        144,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 92.0,
+      "mirrored_torso_center_x": 94.5,
+      "height": 199,
+      "head_bbox_size": [
+        54,
+        45
+      ],
+      "shoulder_band_width_px": 66,
+      "pixel_exact_mirror_of_right_frame": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 7,
+      "label": "07-return-near-start",
+      "path": "hatch-runs/feng-v2/jobs/running-left/qa/frames/running-left/06.png",
+      "bbox": [
+        53,
+        5,
+        138,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 95.5,
+      "mirrored_torso_center_x": 94.5,
+      "height": 199,
+      "head_bbox_size": [
+        53,
+        45
+      ],
+      "shoulder_band_width_px": 69,
+      "pixel_exact_mirror_of_right_frame": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 8,
+      "label": "08-loop-transition",
+      "path": "hatch-runs/feng-v2/jobs/running-left/qa/frames/running-left/07.png",
+      "bbox": [
+        55,
+        4,
+        137,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 96.0,
+      "mirrored_torso_center_x": 95.0,
+      "height": 200,
+      "head_bbox_size": [
+        53,
+        45
+      ],
+      "shoulder_band_width_px": 69,
+      "pixel_exact_mirror_of_right_frame": true,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    }
+  ],
+  "mirror_safety_basis": "No text, one-sided prop, directional emblem, or non-mirrorable identity mark; hair, glasses, suit, body proportions, and gait remain coherent when facing screen-left."
+}

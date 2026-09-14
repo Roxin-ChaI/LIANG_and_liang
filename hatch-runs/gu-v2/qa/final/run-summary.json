@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "ready_for_device_test": true,
+  "sprite_version_number": 2,
+  "pet_id": "liang-no-henshin",
+  "spritesheet": "assets/builds/gu/spritesheet.webp",
+  "spritesheet_sha256": "b6a3f086a9fdb9a4cb7c86d047991e1d3ff9a7a2ab740e4c2f705b42b9d08908",
+  "validation": "assets/builds/gu/validation.json",
+  "assembly": "hatch-runs/gu-v2/qa/final/assembly.json",
+  "contact_sheet": "hatch-runs/gu-v2/qa/final/contact-sheet.png",
+  "motion_previews": "hatch-runs/gu-v2/qa/final/previews",
+  "direction_sheet": "hatch-runs/gu-v2/qa/final/look-directions.png",
+  "look_continuity": "hatch-runs/gu-v2/qa/final/look-continuity.json",
+  "visual_qa": "hatch-runs/gu-v2/qa/final/visual-qa.json",
+  "despill_performed": false,
+  "imagegen_used": false,
+  "installed_as_active_pet": true,
+  "ready_for_hover_retest": true,
+  "changed_row": 4
+}

@@ -1,0 +1,203 @@
+{
+  "ok": true,
+  "source": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/waving/source/background-removed.png",
+  "output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/decoded/waving.png",
+  "method": "checkerboard removal followed by largest-component normalization",
+  "checks": {
+    "size_768x208": true,
+    "rgba": true,
+    "four_nonempty": true,
+    "baseline_consistent": true,
+    "body_center_stable": true,
+    "no_clipping": true,
+    "one_component_per_frame": true,
+    "binary_alpha": true,
+    "nearest_neighbor_only": true
+  },
+  "frames": [
+    {
+      "source_bbox": [
+        174,
+        113,
+        370,
+        634
+      ],
+      "source_used_pixels_after_threshold": 75685,
+      "alpha_threshold": 1,
+      "source_cleanup": {
+        "component_count_before": 1,
+        "removed_pixels": 0
+      },
+      "scale": 0.3723608445297505,
+      "resampling": "nearest-neighbor",
+      "resized_size": [
+        73,
+        194
+      ],
+      "post_resize_removed_pixels": 0,
+      "paste_xy": [
+        60,
+        5
+      ],
+      "final_bbox": [
+        60,
+        5,
+        133,
+        199
+      ],
+      "baseline_y": 198,
+      "body_center_x": 96.5,
+      "margins": {
+        "left": 60,
+        "top": 5,
+        "right": 59,
+        "bottom": 9
+      },
+      "used_pixels": 10524,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "index": 0
+    },
+    {
+      "source_bbox": [
+        164,
+        113,
+        367,
+        634
+      ],
+      "source_used_pixels_after_threshold": 76426,
+      "alpha_threshold": 1,
+      "source_cleanup": {
+        "component_count_before": 3,
+        "removed_pixels": 4
+      },
+      "scale": 0.3723608445297505,
+      "resampling": "nearest-neighbor",
+      "resized_size": [
+        76,
+        194
+      ],
+      "post_resize_removed_pixels": 0,
+      "paste_xy": [
+        58,
+        5
+      ],
+      "final_bbox": [
+        58,
+        5,
+        134,
+        199
+      ],
+      "baseline_y": 198,
+      "body_center_x": 96.0,
+      "margins": {
+        "left": 58,
+        "top": 5,
+        "right": 58,
+        "bottom": 9
+      },
+      "used_pixels": 10682,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "index": 1
+    },
+    {
+      "source_bbox": [
+        144,
+        113,
+        365,
+        635
+      ],
+      "source_used_pixels_after_threshold": 79390,
+      "alpha_threshold": 1,
+      "source_cleanup": {
+        "component_count_before": 1,
+        "removed_pixels": 0
+      },
+      "scale": 0.3716475095785441,
+      "resampling": "nearest-neighbor",
+      "resized_size": [
+        82,
+        194
+      ],
+      "post_resize_removed_pixels": 0,
+      "paste_xy": [
+        55,
+        5
+      ],
+      "final_bbox": [
+        55,
+        5,
+        137,
+        199
+      ],
+      "baseline_y": 198,
+      "body_center_x": 96.0,
+      "margins": {
+        "left": 55,
+        "top": 5,
+        "right": 55,
+        "bottom": 9
+      },
+      "used_pixels": 10959,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "index": 2
+    },
+    {
+      "source_bbox": [
+        163,
+        113,
+        365,
+        634
+      ],
+      "source_used_pixels_after_threshold": 75961,
+      "alpha_threshold": 1,
+      "source_cleanup": {
+        "component_count_before": 1,
+        "removed_pixels": 0
+      },
+      "scale": 0.3723608445297505,
+      "resampling": "nearest-neighbor",
+      "resized_size": [
+        75,
+        194
+      ],
+      "post_resize_removed_pixels": 0,
+      "paste_xy": [
+        58,
+        5
+      ],
+      "final_bbox": [
+        58,
+        5,
+        133,
+        199
+      ],
+      "baseline_y": 198,
+      "body_center_x": 95.5,
+      "margins": {
+        "left": 58,
+        "top": 5,
+        "right": 59,
+        "bottom": 9
+      },
+      "used_pixels": 10521,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "index": 3
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "ok": true,
+  "job": "waiting",
+  "status": "complete",
+  "method": "one coherent grounded six-frame waiting generation; Hatch Pet component extraction; binary hard-alpha normalization; integer y registration; deterministic Frame-1 geometry lock outside the generated brow/eye/glasses band",
+  "approved_idle": "assets/feng/idle.png",
+  "approved_idle_sha256": "03b116aedd0a37ee792fbab5690f6d0c6bfbe97fa058c633de16e938b0092eb8",
+  "approved_idle_row": "hatch-runs/feng-v2/jobs/idle/decoded/idle.png",
+  "approved_idle_row_sha256": "a6d24c0d93fae468ec86d40ea8795d07d9a47983ef4209d91370b210d08084b1",
+  "generation_source_sha256": "74705953a74fa88ea5b5e73d96fec0426bf5329ad30bfd9acfe7247306af3463",
+  "output": "hatch-runs/feng-v2/jobs/waiting/decoded/waiting.png",
+  "output_sha256": "86127bdbc88e2a57b044f3ba10b04634aa1135754dc69be0c8cadf71401b34a1",
+  "output_size": [
+    1152,
+    208
+  ],
+  "mode": "RGBA",
+  "imagegen_used": true,
+  "imagegen_cli_used": false,
+  "final_rgba_transparent": true,
+  "alpha_normalization": "threshold generated alpha at 128 to 0/255; clear hidden RGB",
+  "resampling": "none after Hatch Pet extraction",
+  "registration": "integer translation only: +1 px y to baseline 203; center x=96.0",
+  "identity_lock": "all pixels outside [69,31,112,48] are pixel-identical to waiting Frame 1 in every frame",
+  "sequence": [
+    "01-normal-idle",
+    "02-sideways-check",
+    "03-controlled-impatience",
+    "04-closed-eye-pause",
+    "05-eyes-lift-confirm",
+    "06-near-idle-return"
+  ],
+  "checks": {
+    "dimensions_1152x208": true,
+    "mode_rgba": true,
+    "six_nonempty_192x208_cells": true,
+    "strip_cells_equal_qa_frames": true,
+    "waiting_sequence_distinct_from_idle_and_review_visual_review": true,
+    "calm_observation_and_controlled_impatience_visual_review": true,
+    "approved_feng_identity_preserved_visual_review": true,
+    "frame_1_normal_feng_idle_attitude": true,
+    "frame_6_returns_naturally_toward_frame_1": true,
+    "changes_confined_to_brow_eye_glasses_region": true,
+    "baseline_consistent_y_203": true,
+    "body_center_fixed_x_96": true,
+    "body_height_identical_198px": true,
+    "head_bbox_size_identical": true,
+    "face_outline_hair_and_head_geometry_identical": true,
+    "shoulder_width_identical": true,
+    "feet_legs_torso_arms_hands_and_clothing_pixelwise_fixed": true,
+    "no_lateral_or_vertical_body_drift": true,
+    "no_clipping_min_4px_margin": true,
+    "single_connected_subject_no_isolated_pixels": true,
+    "hatch_pet_frame_inspection_pass": true,
+    "binary_alpha_no_antialias": true,
+    "hidden_background_rgb_clear": true,
+    "no_opaque_green_background": true,
+    "no_question_clock_text_ui_or_effects": true,
+    "no_blur_visual_review": true,
+    "no_scaling_or_resampling_after_extraction": true
+  },
+  "metrics": {
+    "bbox": [44, 6, 148, 204],
+    "baseline_y": [203, 203, 203, 203, 203, 203],
+    "body_center_x": [96.0, 96.0, 96.0, 96.0, 96.0, 96.0],
+    "lower_body_center_x": [95.52, 95.52, 95.52, 95.52, 95.52, 95.52],
+    "height_px": [198, 198, 198, 198, 198, 198],
+    "head_anchor_bbox": [64, 6, 115, 56],
+    "head_anchor_size": [51, 50],
+    "shoulder_width_px": 101,
+    "component_count_per_frame": [1, 1, 1, 1, 1, 1],
+    "nontransparent_pixels_per_frame": [11838, 11838, 11838, 11838, 11838, 11838],
+    "alpha_values": [0, 255],
+    "opaque_green_pixels": 0,
+    "transparent_margin_px": {
+      "left": 44,
+      "right": 44,
+      "top": 6,
+      "bottom": 4
+    }
+  },
+  "frames": [
+    {
+      "index": 1,
+      "label": "01-normal-idle",
+      "path": "hatch-runs/feng-v2/jobs/waiting/qa/frames/waiting/00.png",
+      "difference_pixels_vs_frame_1": 0,
+      "difference_bbox_vs_frame_1": null
+    },
+    {
+      "index": 2,
+      "label": "02-sideways-check",
+      "path": "hatch-runs/feng-v2/jobs/waiting/qa/frames/waiting/01.png",
+      "difference_pixels_vs_frame_1": 710,
+      "difference_bbox_vs_frame_1": [69, 31, 112, 48]
+    },
+    {
+      "index": 3,
+      "label": "03-controlled-impatience",
+      "path": "hatch-runs/feng-v2/jobs/waiting/qa/frames/waiting/02.png",
+      "difference_pixels_vs_frame_1": 717,
+      "difference_bbox_vs_frame_1": [69, 31, 112, 48]
+    },
+    {
+      "index": 4,
+      "label": "04-closed-eye-pause",
+      "path": "hatch-runs/feng-v2/jobs/waiting/qa/frames/waiting/03.png",
+      "difference_pixels_vs_frame_1": 714,
+      "difference_bbox_vs_frame_1": [69, 31, 112, 48]
+    },
+    {
+      "index": 5,
+      "label": "05-eyes-lift-confirm",
+      "path": "hatch-runs/feng-v2/jobs/waiting/qa/frames/waiting/04.png",
+      "difference_pixels_vs_frame_1": 716,
+      "difference_bbox_vs_frame_1": [69, 31, 112, 48]
+    },
+    {
+      "index": 6,
+      "label": "06-near-idle-return",
+      "path": "hatch-runs/feng-v2/jobs/waiting/qa/frames/waiting/05.png",
+      "difference_pixels_vs_frame_1": 703,
+      "difference_bbox_vs_frame_1": [69, 31, 112, 48]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "frame_labels": [
+    "01-idle",
+    "02-focus",
+    "03-peak",
+    "04-descent",
+    "05-return"
+  ],
+  "vertical_offsets": [
+    0,
+    0,
+    -3,
+    -1,
+    0
+  ],
+  "eye_regions": [
+    [
+      75,
+      37,
+      92,
+      46
+    ],
+    [
+      103,
+      37,
+      120,
+      46
+    ]
+  ],
+  "imagegen_source": "jobs/jumping/generated/jumping-source.png",
+  "approved_hover": "assets/feng/hover.png",
+  "approved_idle_row": "jobs/idle/decoded/idle.png"
+}

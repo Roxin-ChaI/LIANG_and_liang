@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "reviewed_at": "2026-09-13T09:16:30Z",
+  "imagegen_used": false,
+  "atlas": "hatch-runs/feng-v2/final/spritesheet-extended.webp",
+  "contact_sheet": "hatch-runs/feng-v2/qa/final/contact-sheet.png",
+  "motion_previews": "hatch-runs/feng-v2/qa/final/previews",
+  "look_directions": "hatch-runs/feng-v2/qa/final/look-directions.png",
+  "direction_semantics": "hatch-runs/feng-v2/qa/final/direction-semantics.json",
+  "checks": {
+    "same_approved_liang_wenfeng_identity_all_rows": "pass",
+    "row_and_column_mapping": "pass",
+    "idle_loop": "pass",
+    "jumping_hover": "pass",
+    "running_right": "pass",
+    "running_left": "pass",
+    "waving": "pass",
+    "failed": "pass",
+    "waiting": "pass",
+    "running": "pass",
+    "review": "pass",
+    "sixteen_look_directions": "pass",
+    "no_cross_cell_overflow": "pass",
+    "unused_cells_fully_transparent": "pass",
+    "no_hidden_background_rgb": "pass",
+    "no_unexpected_transparent_holes": "pass",
+    "no_scaling_resampling_or_position_changes": "pass"
+  },
+  "continuity_review": {
+    "verdict": "pass_with_reviewed_metric_warnings",
+    "evidence": "The labeled normal-size direction sheet and 16-frame loop preserve the approved clockwise head/gaze sequence with fixed lower body, no reversal, clipping, scale pop, identity drift, or broken silhouette.",
+    "reviewed_warnings": [
+      "The rows y=194, y=199, and y=200 flagged in all look cells are intentional negative space between the planted legs and shoes, not interior sprite holes.",
+      "067.5->090, 157.5->180, 247.5->270, 270->292.5, and 337.5->000 local diff outliers reflect cardinal head-construction transitions without visible body or scale jumps."
+    ],
+    "resolution": "Accepted as non-destructive measurement warnings after normal-size labeled and animated review; no approved frame pixels were changed."
+  },
+  "despill": {
+    "performed": false,
+    "reason": "Validator reported zero chroma-key contamination and zero hidden transparent RGB residue."
+  }
+}

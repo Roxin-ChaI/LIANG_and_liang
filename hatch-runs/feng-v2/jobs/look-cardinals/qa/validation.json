@@ -1,0 +1,225 @@
+{
+  "ok": true,
+  "job": "feng-v2/look-cardinals",
+  "status": "complete",
+  "output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/look-cardinals/decoded/look-cardinals.png",
+  "sha256": "3f075333017b28a430f61d9ce231316f7ccd479b2123dd13e7d9eee7c3244372",
+  "dimensions": [
+    768,
+    208
+  ],
+  "mode": "RGBA",
+  "frame_count": 4,
+  "cell_size": [
+    192,
+    208
+  ],
+  "direction_order": [
+    "000 Up",
+    "090 Right",
+    "180 Down",
+    "270 Left"
+  ],
+  "source_generation_sha256": "cbc9d08070b2e3473f4e11b432357a19984fd39595ae4bcc3b528450c46cb2cd",
+  "imagegen_used": true,
+  "imagegen_cli_used": false,
+  "normalization": {
+    "background": "deterministic grayscale checkerboard removal to transparent binary alpha",
+    "resize": "single shared scale with nearest-neighbor only",
+    "registration": "shared baseline y=203 and lower-body center x≈96",
+    "body_lock": "all pixels y>=82 are identical across four cells",
+    "semantic_ordering": "source horizontal poses assigned by visible screen-coordinate direction landmarks; no mirroring"
+  },
+  "checks": {
+    "dimensions_768x208": true,
+    "mode_rgba": true,
+    "four_cells_192x208": true,
+    "all_cells_nonempty": true,
+    "direction_order_000_090_180_270": true,
+    "baseline_identical_y203": true,
+    "body_center_stable_near_96": true,
+    "body_y82_down_pixel_identical": true,
+    "height_identical_200": true,
+    "head_size_consistent_within_1px": true,
+    "shoulder_width_identical": true,
+    "binary_alpha": true,
+    "transparent_rgb_cleared": true,
+    "no_hidden_or_green_background": true,
+    "single_connected_subject_per_cell": true,
+    "no_isolated_pixels": true,
+    "safe_padding_no_clipping": true,
+    "nearest_neighbor_only": true,
+    "no_antialiasing_or_blur": true,
+    "identity_matches_approved_liang_wenfeng": "PASS",
+    "cardinal_semantics": "PASS"
+  },
+  "alpha_values": [
+    0,
+    255
+  ],
+  "hidden_transparent_rgb_pixels": 0,
+  "green_key_like_pixels": 0,
+  "frames": [
+    {
+      "index": 1,
+      "degree": "000",
+      "expected": "Up",
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "lower_body_center_x": 96.377,
+      "head_core_bbox": [
+        62,
+        4,
+        117,
+        60
+      ],
+      "head_core_size": [
+        55,
+        56
+      ],
+      "shoulder_width": 102,
+      "connected_components": 1,
+      "isolated_pixels": 0,
+      "margins": {
+        "left": 42,
+        "right": 46,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 2,
+      "degree": "090",
+      "expected": "Right",
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "lower_body_center_x": 96.377,
+      "head_core_bbox": [
+        63,
+        4,
+        117,
+        60
+      ],
+      "head_core_size": [
+        54,
+        56
+      ],
+      "shoulder_width": 102,
+      "connected_components": 1,
+      "isolated_pixels": 0,
+      "margins": {
+        "left": 42,
+        "right": 46,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 3,
+      "degree": "180",
+      "expected": "Down",
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "lower_body_center_x": 96.377,
+      "head_core_bbox": [
+        62,
+        4,
+        116,
+        60
+      ],
+      "head_core_size": [
+        54,
+        56
+      ],
+      "shoulder_width": 102,
+      "connected_components": 1,
+      "isolated_pixels": 0,
+      "margins": {
+        "left": 42,
+        "right": 46,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 4,
+      "degree": "270",
+      "expected": "Left",
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "lower_body_center_x": 96.377,
+      "head_core_bbox": [
+        62,
+        4,
+        116,
+        60
+      ],
+      "head_core_size": [
+        54,
+        56
+      ],
+      "shoulder_width": 102,
+      "connected_components": 1,
+      "isolated_pixels": 0,
+      "margins": {
+        "left": 42,
+        "right": 46,
+        "top": 4,
+        "bottom": 4
+      }
+    }
+  ],
+  "cardinal_semantics": [
+    {
+      "degree": "000",
+      "expected": "Up",
+      "verdict": "PASS",
+      "evidence": "Face remains broadly frontal; pupils sit high under the lenses and the chin is minimally raised."
+    },
+    {
+      "degree": "090",
+      "expected": "Right",
+      "verdict": "PASS",
+      "evidence": "Nose tip, pupils, and face plane turn toward the viewer screen-right side of the head center."
+    },
+    {
+      "degree": "180",
+      "expected": "Down",
+      "verdict": "PASS",
+      "evidence": "Head pitches down; pupils and narrowed lids aim toward the bottom edge while posture stays strong."
+    },
+    {
+      "degree": "270",
+      "expected": "Left",
+      "verdict": "PASS",
+      "evidence": "Nose tip, pupils, and face plane turn toward the viewer screen-left side of the head center."
+    }
+  ],
+  "official_anchor_extraction": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/look-cardinals/qa/cardinal-anchors.json",
+  "approved_anchor_strip": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/look-cardinals/decoded/look-anchors-approved.png",
+  "visual_qa_note": "All four cardinals are distinct at final cell size, preserve the same Liang Wenfeng identity and head volume, and keep the body pixel-stable."
+}

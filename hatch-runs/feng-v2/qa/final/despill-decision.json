@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "reviewed_at": "2026-09-13T09:16:30Z",
+  "performed": false,
+  "reason": "Pre-despill v2 validation found zero opaque chroma-key pixels, zero chroma fringe warnings, and zero transparent RGB residue; no pixel processing was required.",
+  "evidence": "hatch-runs/feng-v2/qa/final/validation-pre-despill.json"
+}

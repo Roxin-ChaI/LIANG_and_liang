@@ -1,0 +1,266 @@
+{
+  "ok": true,
+  "generated_source": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/running-right/generated/running-right-source.png",
+  "generated_source_sha256": "38d8650b85914cc9ac6ba029ba19dcccf64e30867958fff18cd8cefa0bafb5a5",
+  "approved_drag": "/Users/mac/Projects/liang-no-henshin/assets/gu/drag.png",
+  "approved_drag_sha256": "e1a35278b9cd5c6aaa2b0b15414d503238e7550c27e5d7162172013f620a6139",
+  "approved_idle_row": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/idle/decoded/idle.png",
+  "approved_idle_row_sha256": "78f5bb1d2f2d671abce8014230738aac352c64893b0b25bcda1c43c4677e8d54",
+  "output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/running-right/decoded/running-right.png",
+  "output_sha256": "dc94a00a6b44b205b5e25791716be308053a4c3f20ec6b34dcbd3ea91e124a6c",
+  "output_size": [
+    1536,
+    208
+  ],
+  "mode": "RGBA",
+  "frame_labels": [
+    "01-enter",
+    "02-right-lean",
+    "03-right-foot-forward",
+    "04-weight-transfer",
+    "05-left-foot-follow",
+    "06-tired-sway",
+    "07-return-near-start",
+    "08-loop-transition"
+  ],
+  "shared_scale": 0.42462845010615713,
+  "resampling": "nearest-neighbor",
+  "checks": {
+    "dimensions_1536x208": true,
+    "mode_rgba": true,
+    "eight_nonempty_192x208_cells": true,
+    "baseline_y_203": true,
+    "torso_center_stable_near_96": true,
+    "body_height_stable": true,
+    "no_clipping": true,
+    "no_isolated_pixels": true,
+    "binary_alpha_no_antialias": true,
+    "hidden_background_rgb_clear": true,
+    "nearest_neighbor_only": true,
+    "screen_right_drag_semantics_visually_confirmed": true,
+    "alternating_gait_visually_confirmed": true,
+    "loop_8_to_1_visually_confirmed": true,
+    "approved_liang_wengu_identity_match": true
+  },
+  "frames": [
+    {
+      "index": 0,
+      "label": "01-enter",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/running-right/decoded/frames/01-01-enter.png",
+      "bbox": [
+        58,
+        4,
+        134,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 96.0,
+      "height": 200,
+      "margins": {
+        "left": 58,
+        "top": 4,
+        "right": 58,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 1,
+      "label": "02-right-lean",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/running-right/decoded/frames/02-02-right-lean.png",
+      "bbox": [
+        57,
+        5,
+        138,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 96.0,
+      "height": 199,
+      "margins": {
+        "left": 57,
+        "top": 5,
+        "right": 54,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 2,
+      "label": "03-right-foot-forward",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/running-right/decoded/frames/03-03-right-foot-forward.png",
+      "bbox": [
+        54,
+        5,
+        135,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 96.5,
+      "height": 199,
+      "margins": {
+        "left": 54,
+        "top": 5,
+        "right": 57,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 3,
+      "label": "04-weight-transfer",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/running-right/decoded/frames/04-04-weight-transfer.png",
+      "bbox": [
+        55,
+        4,
+        134,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 96.0,
+      "height": 200,
+      "margins": {
+        "left": 55,
+        "top": 4,
+        "right": 58,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 4,
+      "label": "05-left-foot-follow",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/running-right/decoded/frames/05-05-left-foot-follow.png",
+      "bbox": [
+        52,
+        5,
+        134,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 96.5,
+      "height": 199,
+      "margins": {
+        "left": 52,
+        "top": 5,
+        "right": 58,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 5,
+      "label": "06-tired-sway",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/running-right/decoded/frames/06-06-tired-sway.png",
+      "bbox": [
+        57,
+        5,
+        133,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 96.0,
+      "height": 199,
+      "margins": {
+        "left": 57,
+        "top": 5,
+        "right": 59,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 6,
+      "label": "07-return-near-start",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/running-right/decoded/frames/07-07-return-near-start.png",
+      "bbox": [
+        57,
+        5,
+        135,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 96.0,
+      "height": 199,
+      "margins": {
+        "left": 57,
+        "top": 5,
+        "right": 57,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 7,
+      "label": "08-loop-transition",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/running-right/decoded/frames/08-08-loop-transition.png",
+      "bbox": [
+        60,
+        4,
+        135,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 95.5,
+      "height": 200,
+      "margins": {
+        "left": 60,
+        "top": 4,
+        "right": 57,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    }
+  ],
+  "manual_review": {
+    "reviewed_at": "2026-09-09T10:09:34Z",
+    "screen_right_drag_semantics": "pass",
+    "direction_evidence": "approved drag-style passive body lean and delayed alternating foot follow read as movement toward screen-right without sprint posture",
+    "alternating_gait_continuity": "pass",
+    "gait_evidence": "right-foot lead, weight transfer, left-foot follow, and tired sway advance continuously with at least one shoe grounded and no high knees or large arm swing",
+    "loop_8_to_1": "pass",
+    "loop_evidence": "frame 8 is the transition stride into frame 1; wrap diff is 11194 pixels, within the adjacent range 10585–11746, with no cadence reversal",
+    "approved_identity_match": "pass",
+    "identity_evidence": "approved black short hair, thin glasses, tired face, navy suit, white shirt, slim narrow shoulders, slight slouch, proportions, and muted palette are preserved"
+  }
+}

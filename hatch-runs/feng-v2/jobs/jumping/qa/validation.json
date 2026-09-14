@@ -1,0 +1,268 @@
+{
+  "ok": true,
+  "job": "jumping",
+  "status": "complete",
+  "method": "built-in ImageGen coherent jumping semantic source and approved hover action reference, finalized through strict rigid integer translation of completed feng-v2 idle Frame 1 to eliminate all identity and scale drift",
+  "imagegen_cli_used": false,
+  "approved_hover": "assets/feng/hover.png",
+  "approved_hover_sha256": "c92720c4ef9e38bafc47e233bae66fc29ed0eac3e26b0da41bc0fc6e109d1167",
+  "approved_idle": "assets/feng/idle.png",
+  "approved_idle_sha256": "03b116aedd0a37ee792fbab5690f6d0c6bfbe97fa058c633de16e938b0092eb8",
+  "approved_idle_row": "hatch-runs/feng-v2/jobs/idle/decoded/idle.png",
+  "approved_idle_row_sha256": "2952536d93b043ab624a43ac5d8b8ced01891603c9c84c36d9acc82ccfc5ab61",
+  "output": "hatch-runs/feng-v2/jobs/jumping/decoded/jumping.png",
+  "output_sha256": "d38eb36aa9f7701d4adbe0197cefd36e56d2526cfd241469077221c3b5320fd4",
+  "output_size": [
+    960,
+    208
+  ],
+  "mode": "RGBA",
+  "frame_labels": [
+    "01-idle",
+    "02-lock-on",
+    "03-peak",
+    "04-descent",
+    "05-return"
+  ],
+  "vertical_offsets": [
+    0,
+    -1,
+    -3,
+    -1,
+    0
+  ],
+  "jump_height_pixels": 3,
+  "resampling": "none between final frames; rigid integer translation only",
+  "checks": {
+    "dimensions_960x208": true,
+    "mode_rgba": true,
+    "five_nonempty_192x208_cells": true,
+    "strip_cells_equal_qa_frames": true,
+    "frame_1_exact_completed_idle_frame_1": true,
+    "frame_5_exact_frame_1": true,
+    "frame_1_and_5_baseline_y_203": true,
+    "vertical_trajectory_0_minus1_minus3_minus1_0": true,
+    "jump_height_3px": true,
+    "body_center_fixed_x_96": true,
+    "head_bbox_size_identical_all_frames": true,
+    "face_contour_glasses_hair_and_body_exactly_identical": true,
+    "shoulder_width_identical": true,
+    "no_head_scaling": true,
+    "no_horizontal_drift": true,
+    "no_clipping": true,
+    "single_connected_sprite_no_isolated_pixels": true,
+    "binary_alpha_no_antialias": true,
+    "hidden_background_rgb_clear": true,
+    "integer_translation_only_no_per_frame_resampling": true,
+    "no_blur_or_forbidden_effects_visual_review": true,
+    "same_approved_liang_wenfeng_identity_visual_review": true,
+    "strong_controlled_hover_response_visual_review": true
+  },
+  "frames": [
+    {
+      "index": 1,
+      "label": "01-idle",
+      "path": "hatch-runs/feng-v2/jobs/jumping/qa/frames/jumping/01-01-idle.png",
+      "vertical_offset": 0,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 96.0,
+      "head_bbox": [
+        52,
+        4,
+        136,
+        68
+      ],
+      "head_bbox_size": [
+        84,
+        64
+      ],
+      "shoulder_width_px": 100,
+      "margins": {
+        "left": 44,
+        "top": 4,
+        "right": 44,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true,
+      "registered_exact_pixel_match_to_frame_1": true
+    },
+    {
+      "index": 2,
+      "label": "02-lock-on",
+      "path": "hatch-runs/feng-v2/jobs/jumping/qa/frames/jumping/02-02-focus.png",
+      "vertical_offset": -1,
+      "bbox": [
+        44,
+        3,
+        148,
+        203
+      ],
+      "baseline_y": 202,
+      "center_x": 96.0,
+      "head_bbox": [
+        52,
+        3,
+        136,
+        67
+      ],
+      "head_bbox_size": [
+        84,
+        64
+      ],
+      "shoulder_width_px": 100,
+      "margins": {
+        "left": 44,
+        "top": 3,
+        "right": 44,
+        "bottom": 5
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true,
+      "registered_exact_pixel_match_to_frame_1": true
+    },
+    {
+      "index": 3,
+      "label": "03-peak",
+      "path": "hatch-runs/feng-v2/jobs/jumping/qa/frames/jumping/03-03-peak.png",
+      "vertical_offset": -3,
+      "bbox": [
+        44,
+        1,
+        148,
+        201
+      ],
+      "baseline_y": 200,
+      "center_x": 96.0,
+      "head_bbox": [
+        52,
+        1,
+        136,
+        65
+      ],
+      "head_bbox_size": [
+        84,
+        64
+      ],
+      "shoulder_width_px": 100,
+      "margins": {
+        "left": 44,
+        "top": 1,
+        "right": 44,
+        "bottom": 7
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true,
+      "registered_exact_pixel_match_to_frame_1": true
+    },
+    {
+      "index": 4,
+      "label": "04-descent",
+      "path": "hatch-runs/feng-v2/jobs/jumping/qa/frames/jumping/04-04-descent.png",
+      "vertical_offset": -1,
+      "bbox": [
+        44,
+        3,
+        148,
+        203
+      ],
+      "baseline_y": 202,
+      "center_x": 96.0,
+      "head_bbox": [
+        52,
+        3,
+        136,
+        67
+      ],
+      "head_bbox_size": [
+        84,
+        64
+      ],
+      "shoulder_width_px": 100,
+      "margins": {
+        "left": 44,
+        "top": 3,
+        "right": 44,
+        "bottom": 5
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true,
+      "registered_exact_pixel_match_to_frame_1": true
+    },
+    {
+      "index": 5,
+      "label": "05-return",
+      "path": "hatch-runs/feng-v2/jobs/jumping/qa/frames/jumping/05-05-return.png",
+      "vertical_offset": 0,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 96.0,
+      "head_bbox": [
+        52,
+        4,
+        136,
+        68
+      ],
+      "head_bbox_size": [
+        84,
+        64
+      ],
+      "shoulder_width_px": 100,
+      "margins": {
+        "left": 44,
+        "top": 4,
+        "right": 44,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true,
+      "registered_exact_pixel_match_to_frame_1": true
+    }
+  ],
+  "manual_review": {
+    "same_character_all_five_frames": "PASS",
+    "no_head_scale_pop": "PASS",
+    "glasses_face_hair_shoulder_consistency": "PASS",
+    "strong_controlled_hover_jump": "PASS",
+    "hover_semantics_against_approved_hover": "PASS",
+    "loop_5_to_1": "PASS — exact pixel match",
+    "background_edges_and_effects": "PASS"
+  },
+  "generation_source_disposition": {
+    "retained": false,
+    "reason": "removed from run under direct-transparent-only constraint",
+    "sha256": "92b97f82ec39fdbfb7e8d490e3f8b1be66b9d6e693ac39bc63d63838a2893400"
+  },
+  "direct_transparent_output": true
+}

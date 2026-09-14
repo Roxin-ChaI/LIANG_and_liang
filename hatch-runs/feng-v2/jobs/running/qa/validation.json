@@ -1,0 +1,135 @@
+{
+  "ok": true,
+  "job": "running",
+  "status": "complete",
+  "method": "one coherent grounded six-frame active-processing generation; hard-alpha foreground extraction; one shared nearest-neighbor scale; lower-body registration; deterministic Frame-1 geometry lock outside the generated head and raised-action-arm zones; exact Frame-6 return",
+  "approved_idle": "assets/feng/idle.png",
+  "approved_idle_sha256": "03b116aedd0a37ee792fbab5690f6d0c6bfbe97fa058c633de16e938b0092eb8",
+  "approved_idle_row": "hatch-runs/feng-v2/jobs/idle/decoded/idle.png",
+  "approved_idle_row_sha256": "a6d24c0d93fae468ec86d40ea8795d07d9a47983ef4209d91370b210d08084b1",
+  "generation_source_sha256": "d18891d8f7813df23049258c532e66462760fa26e80552e689a8644d9892e351",
+  "output": "hatch-runs/feng-v2/jobs/running/decoded/running.png",
+  "output_sha256": "d255b048c29b32a67b520a422c8b5f6a5809f20bac7a2edbd8f52b7428b4310a",
+  "output_size": [
+    1152,
+    208
+  ],
+  "mode": "RGBA",
+  "imagegen_used": true,
+  "imagegen_cli_used": false,
+  "final_rgba_transparent": true,
+  "shared_scale": 0.3261943986820428,
+  "resampling": "nearest-neighbor only",
+  "alpha_normalization": "threshold original generated alpha at 128 to 0/255 before nearest-neighbor scaling; clear hidden RGB",
+  "registration": "integer-pixel lower-body registration; baseline y=203; lower-body center x=96.07",
+  "geometry_lock": {
+    "head_zone": [58, 5, 124, 70],
+    "head_alpha": "locked to Frame 1; generated RGB expression retained",
+    "raised_action_arm_zone": [45, 47, 108, 124],
+    "arm_connection_patch_from_frame_1": [45, 94, 48, 101],
+    "all_other_pixels": "locked to Frame 1"
+  },
+  "sequence": [
+    "01-enter-work-state",
+    "02-small-forward-confirmation",
+    "03-focused-processing",
+    "04-controlled-pause",
+    "05-small-follow-up-operation",
+    "06-exact-idle-compatible-return"
+  ],
+  "checks": {
+    "dimensions_1152x208": true,
+    "mode_rgba": true,
+    "six_nonempty_192x208_cells": true,
+    "strip_cells_equal_qa_frames": true,
+    "active_task_processing_semantics_visual_review": true,
+    "not_running_walking_or_directional_travel": true,
+    "small_raised_hand_operation_readable_visual_review": true,
+    "focused_cold_expression_preserved_visual_review": true,
+    "approved_feng_identity_preserved_visual_review": true,
+    "frame_1_normal_feng_idle_attitude": true,
+    "frame_6_pixel_identical_to_frame_1": true,
+    "one_shot_transition_to_idle_natural": true,
+    "baseline_consistent_y_203": true,
+    "body_center_stable_around_x_96": true,
+    "lower_body_center_fixed_x_96_07": true,
+    "body_height_identical_198px": true,
+    "head_bbox_size_and_position_identical": true,
+    "core_shoulder_width_identical": true,
+    "feet_legs_torso_and_non_action_arm_pixelwise_fixed": true,
+    "no_lateral_or_vertical_body_drift": true,
+    "no_clipping_min_4px_margin": true,
+    "single_connected_subject_no_isolated_pixels": true,
+    "hatch_pet_frame_inspection_pass": true,
+    "binary_alpha_no_antialias": true,
+    "hidden_background_rgb_clear": true,
+    "no_opaque_green_background": true,
+    "no_computer_keyboard_desk_text_ui_or_effects": true,
+    "no_blur_visual_review": true,
+    "nearest_neighbor_scaling_and_integer_translation_only": true
+  },
+  "metrics": {
+    "bbox": [45, 6, 148, 204],
+    "baseline_y": [203, 203, 203, 203, 203, 203],
+    "body_bbox_center_x": [96.5, 96.5, 96.5, 96.5, 96.5, 96.5],
+    "lower_body_center_x": [96.07, 96.07, 96.07, 96.07, 96.07, 96.07],
+    "height_px": [198, 198, 198, 198, 198, 198],
+    "head_anchor_bbox": [64, 6, 116, 58],
+    "head_anchor_size": [52, 52],
+    "core_shoulder_width_px_y95_to99": [99, 99, 99, 99, 99, 99],
+    "component_count_per_frame": [1, 1, 1, 1, 1, 1],
+    "nontransparent_pixels_per_frame": [11956, 11909, 11885, 11833, 11873, 11956],
+    "alpha_values": [0, 255],
+    "opaque_green_pixels": 0,
+    "transparent_margin_px": {
+      "left": 45,
+      "right": 44,
+      "top": 6,
+      "bottom": 4
+    }
+  },
+  "frames": [
+    {
+      "index": 1,
+      "label": "01-enter-work-state",
+      "path": "hatch-runs/feng-v2/jobs/running/qa/frames/running/00.png",
+      "difference_pixels_vs_frame_1": 0,
+      "difference_bbox_vs_frame_1": null
+    },
+    {
+      "index": 2,
+      "label": "02-small-forward-confirmation",
+      "path": "hatch-runs/feng-v2/jobs/running/qa/frames/running/01.png",
+      "difference_pixels_vs_frame_1": 6051,
+      "difference_bbox_vs_frame_1": [46, 6, 127, 126]
+    },
+    {
+      "index": 3,
+      "label": "03-focused-processing",
+      "path": "hatch-runs/feng-v2/jobs/running/qa/frames/running/02.png",
+      "difference_pixels_vs_frame_1": 6046,
+      "difference_bbox_vs_frame_1": [46, 6, 127, 126]
+    },
+    {
+      "index": 4,
+      "label": "04-controlled-pause",
+      "path": "hatch-runs/feng-v2/jobs/running/qa/frames/running/03.png",
+      "difference_pixels_vs_frame_1": 6029,
+      "difference_bbox_vs_frame_1": [46, 6, 127, 126]
+    },
+    {
+      "index": 5,
+      "label": "05-small-follow-up-operation",
+      "path": "hatch-runs/feng-v2/jobs/running/qa/frames/running/04.png",
+      "difference_pixels_vs_frame_1": 6018,
+      "difference_bbox_vs_frame_1": [46, 6, 127, 126]
+    },
+    {
+      "index": 6,
+      "label": "06-exact-idle-compatible-return",
+      "path": "hatch-runs/feng-v2/jobs/running/qa/frames/running/05.png",
+      "difference_pixels_vs_frame_1": 0,
+      "difference_bbox_vs_frame_1": null
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "ok": true,
+  "job": "idle",
+  "status": "complete",
+  "repair": "correct corrupted eye details in Frames 2-5",
+  "repaired_from_sha256": "2952536d93b043ab624a43ac5d8b8ced01891603c9c84c36d9acc82ccfc5ab61",
+  "method": "rebuild all six frames from approved Frame 1, then apply two small hard-edged pixel-only half-blink and closed-blink poses inside the lenses",
+  "approved_idle": "assets/feng/idle.png",
+  "approved_idle_sha256": "03b116aedd0a37ee792fbab5690f6d0c6bfbe97fa058c633de16e938b0092eb8",
+  "output": "hatch-runs/feng-v2/jobs/idle/decoded/idle.png",
+  "output_sha256": "a6d24c0d93fae468ec86d40ea8795d07d9a47983ef4209d91370b210d08084b1",
+  "output_size": [
+    1152,
+    208
+  ],
+  "mode": "RGBA",
+  "imagegen_used_for_repair": false,
+  "imagegen_cli_used": false,
+  "direct_transparent_output": true,
+  "repair_region": [
+    74,
+    37,
+    99,
+    45
+  ],
+  "eye_regions": [
+    [
+      76,
+      38,
+      82,
+      42
+    ],
+    [
+      91,
+      38,
+      97,
+      42
+    ]
+  ],
+  "checks": {
+    "dimensions_1152x208": true,
+    "mode_rgba": true,
+    "six_nonempty_192x208_cells": true,
+    "strip_cells_equal_qa_frames": true,
+    "frame_1_exact_approved_normalized_idle": true,
+    "frame_6_exact_frame_1": true,
+    "frame_2_open_eyes_restored": true,
+    "frame_3_half_blink_present": true,
+    "frame_4_closed_blink_present": true,
+    "frame_5_open_eyes_restored": true,
+    "changes_confined_to_eye_region": true,
+    "baseline_consistent_y_203": true,
+    "body_center_fixed_x_96": true,
+    "head_bbox_size_identical": true,
+    "shoulder_width_identical": true,
+    "face_hair_glasses_body_identity_preserved": true,
+    "no_eye_blob_or_ear_corruption_visual_review": true,
+    "no_clipping": true,
+    "single_connected_subject_no_isolated_pixels": true,
+    "binary_alpha_no_antialias": true,
+    "hidden_background_rgb_clear": true,
+    "no_opaque_green_background": true,
+    "no_blur_visual_review": true
+  },
+  "frames": [
+    {
+      "index": 1,
+      "path": "hatch-runs/feng-v2/jobs/idle/qa/frames/idle/01-01-idle.png",
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 96.0,
+      "head_bbox": [
+        52,
+        4,
+        136,
+        68
+      ],
+      "head_bbox_size": [
+        84,
+        64
+      ],
+      "shoulder_width_px": 100,
+      "rgb_difference_bbox_vs_frame_1": null,
+      "matches_frame_1_outside_eye_repair_region": true,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 2,
+      "path": "hatch-runs/feng-v2/jobs/idle/qa/frames/idle/02-02-breathe-down.png",
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 96.0,
+      "head_bbox": [
+        52,
+        4,
+        136,
+        68
+      ],
+      "head_bbox_size": [
+        84,
+        64
+      ],
+      "shoulder_width_px": 100,
+      "rgb_difference_bbox_vs_frame_1": null,
+      "matches_frame_1_outside_eye_repair_region": true,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 3,
+      "path": "hatch-runs/feng-v2/jobs/idle/qa/frames/idle/03-03-blink.png",
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 96.0,
+      "head_bbox": [
+        52,
+        4,
+        136,
+        68
+      ],
+      "head_bbox_size": [
+        84,
+        64
+      ],
+      "shoulder_width_px": 100,
+      "rgb_difference_bbox_vs_frame_1": [
+        76,
+        38,
+        97,
+        41
+      ],
+      "matches_frame_1_outside_eye_repair_region": true,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 4,
+      "path": "hatch-runs/feng-v2/jobs/idle/qa/frames/idle/04-04-eyes-closed.png",
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 96.0,
+      "head_bbox": [
+        52,
+        4,
+        136,
+        68
+      ],
+      "head_bbox_size": [
+        84,
+        64
+      ],
+      "shoulder_width_px": 100,
+      "rgb_difference_bbox_vs_frame_1": [
+        76,
+        38,
+        97,
+        41
+      ],
+      "matches_frame_1_outside_eye_repair_region": true,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 5,
+      "path": "hatch-runs/feng-v2/jobs/idle/qa/frames/idle/05-05-reopen.png",
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 96.0,
+      "head_bbox": [
+        52,
+        4,
+        136,
+        68
+      ],
+      "head_bbox_size": [
+        84,
+        64
+      ],
+      "shoulder_width_px": 100,
+      "rgb_difference_bbox_vs_frame_1": null,
+      "matches_frame_1_outside_eye_repair_region": true,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 6,
+      "path": "hatch-runs/feng-v2/jobs/idle/qa/frames/idle/06-06-loop-return.png",
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baseline_y": 203,
+      "center_x": 96.0,
+      "head_bbox": [
+        52,
+        4,
+        136,
+        68
+      ],
+      "head_bbox_size": [
+        84,
+        64
+      ],
+      "shoulder_width_px": 100,
+      "rgb_difference_bbox_vs_frame_1": null,
+      "matches_frame_1_outside_eye_repair_region": true,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    }
+  ],
+  "manual_review": {
+    "eye_detail": "PASS — no black blobs; pupils, lids, and glasses remain readable",
+    "identity": "PASS",
+    "blink_sequence": "PASS — open / half blink / closed / open",
+    "loop_6_to_1": "PASS — exact pixel match",
+    "background": "PASS — direct transparent RGBA"
+  }
+}

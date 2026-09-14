@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "reviewed_at": "2026-09-09T14:02:12Z",
+  "imagegen_used": false,
+  "atlas": "hatch-runs/gu-v2/final/spritesheet-extended.webp",
+  "contact_sheet": "hatch-runs/gu-v2/qa/final/contact-sheet.png",
+  "motion_previews": "hatch-runs/gu-v2/qa/final/previews",
+  "checks": {
+    "same_approved_liang_wengu_identity_all_rows": "pass",
+    "row_and_column_mapping": "pass",
+    "idle_loop": "pass",
+    "hover_trigger_jumping_response": "pass",
+    "drag_right": "pass",
+    "drag_left": "pass",
+    "waving": "pass",
+    "failed": "pass",
+    "waiting": "pass",
+    "running": "pass",
+    "review": "pass",
+    "sixteen_look_directions": "pass",
+    "no_cross_cell_overflow": "pass",
+    "unused_cells_fully_transparent": "pass",
+    "no_hidden_background_rgb": "pass",
+    "no_unexpected_transparent_holes": "pass",
+    "no_scaling_resampling_or_position_changes": "pass"
+  },
+  "direction_semantics": [
+    {"degree": "000", "expected": "up", "verdict": "pass"},
+    {"degree": "022.5", "expected": "up-right", "verdict": "pass"},
+    {"degree": "045", "expected": "up-right", "verdict": "pass"},
+    {"degree": "067.5", "expected": "up-right", "verdict": "pass"},
+    {"degree": "090", "expected": "right", "verdict": "pass"},
+    {"degree": "112.5", "expected": "down-right", "verdict": "pass"},
+    {"degree": "135", "expected": "down-right", "verdict": "pass"},
+    {"degree": "157.5", "expected": "down-right", "verdict": "pass"},
+    {"degree": "180", "expected": "down", "verdict": "pass"},
+    {"degree": "202.5", "expected": "down-left", "verdict": "pass"},
+    {"degree": "225", "expected": "down-left", "verdict": "pass"},
+    {"degree": "247.5", "expected": "down-left", "verdict": "pass"},
+    {"degree": "270", "expected": "left", "verdict": "pass"},
+    {"degree": "292.5", "expected": "up-left", "verdict": "pass"},
+    {"degree": "315", "expected": "up-left", "verdict": "pass"},
+    {"degree": "337.5", "expected": "up-left", "verdict": "pass"}
+  ],
+  "continuity_review": {
+    "verdict": "pass_with_reviewed_metric_warnings",
+    "evidence": "The labeled normal-size direction sheet and 16-frame loop preserve the approved clockwise head/gaze sequence with fixed lower body, no reversal, clipping, scale pop, identity drift, or broken silhouette.",
+    "reviewed_warnings": [
+      "090->112.5 local diff outlier",
+      "157.5->180 local diff and head-center shift",
+      "247.5->270 local diff outlier",
+      "292.5->315 local diff outlier",
+      "337.5->000 local diff outlier"
+    ],
+    "resolution": "Accepted as head-turn metric variation already covered by the approved row-level semantic QA; no visible hard failure and no frame modification permitted or required."
+  },
+  "despill": {
+    "performed": false,
+    "reason": "validate_atlas reported zero opaque chroma-key pixels, zero chroma fringe pixels, and zero transparent RGB residue."
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "ok": true,
+  "generated_source": "/private/tmp/feng-running-right-extracted.png",
+  "generated_source_sha256": "92418d3235e963d2672267452960278dc9c762f8142957bf5c3af0ea97bc2b9b",
+  "approved_drag": "/Users/mac/Projects/liang-no-henshin/assets/feng/drag.png",
+  "approved_drag_sha256": "9a3239a3558399ab17df48f669e1281e51da3e648358012d57a02575df8a3008",
+  "approved_idle_row": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/idle/decoded/idle.png",
+  "approved_idle_row_sha256": "a6d24c0d93fae468ec86d40ea8795d07d9a47983ef4209d91370b210d08084b1",
+  "output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/running-right/decoded/running-right.png",
+  "output_sha256": "c89cd42973bd8c9c2d1c5d7ea5a091cccd429e8167cf4f9fe8964a8aaf086d42",
+  "output_size": [
+    1536,
+    208
+  ],
+  "mode": "RGBA",
+  "frame_labels": [
+    "01-enter",
+    "02-right-lean",
+    "03-right-foot-forward",
+    "04-weight-transfer",
+    "05-left-foot-follow",
+    "06-body-settle",
+    "07-return-near-start",
+    "08-loop-transition"
+  ],
+  "shared_scale": 0.39215686274509803,
+  "resampling": "nearest-neighbor",
+  "checks": {
+    "dimensions_1536x208": true,
+    "mode_rgba": true,
+    "eight_nonempty_192x208_cells": true,
+    "baseline_y_203": true,
+    "torso_center_stable_near_96": true,
+    "body_height_stable": true,
+    "no_clipping": true,
+    "no_isolated_pixels": true,
+    "binary_alpha_no_antialias": true,
+    "hidden_background_rgb_clear": true,
+    "nearest_neighbor_only": true
+  },
+  "frames": [
+    {
+      "index": 0,
+      "label": "01-enter",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/running-right/qa/frames/running-right/01-01-enter.png",
+      "bbox": [
+        53,
+        5,
+        139,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 96.0,
+      "height": 199,
+      "margins": {
+        "left": 53,
+        "top": 5,
+        "right": 53,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 1,
+      "label": "02-right-lean",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/running-right/qa/frames/running-right/02-02-right-lean.png",
+      "bbox": [
+        54,
+        5,
+        146,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 95.5,
+      "height": 199,
+      "margins": {
+        "left": 54,
+        "top": 5,
+        "right": 46,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 2,
+      "label": "03-right-foot-forward",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/running-right/qa/frames/running-right/03-03-right-foot-forward.png",
+      "bbox": [
+        50,
+        5,
+        146,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 96.5,
+      "height": 199,
+      "margins": {
+        "left": 50,
+        "top": 5,
+        "right": 46,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 3,
+      "label": "04-weight-transfer",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/running-right/qa/frames/running-right/04-04-weight-transfer.png",
+      "bbox": [
+        58,
+        5,
+        138,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 95.5,
+      "height": 199,
+      "margins": {
+        "left": 58,
+        "top": 5,
+        "right": 54,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 4,
+      "label": "05-left-foot-follow",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/running-right/qa/frames/running-right/05-05-left-foot-follow.png",
+      "bbox": [
+        48,
+        5,
+        143,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 96.5,
+      "height": 199,
+      "margins": {
+        "left": 48,
+        "top": 5,
+        "right": 49,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 5,
+      "label": "06-body-settle",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/running-right/qa/frames/running-right/06-06-body-settle.png",
+      "bbox": [
+        48,
+        5,
+        152,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 96.5,
+      "height": 199,
+      "margins": {
+        "left": 48,
+        "top": 5,
+        "right": 40,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 6,
+      "label": "07-return-near-start",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/running-right/qa/frames/running-right/07-07-return-near-start.png",
+      "bbox": [
+        54,
+        5,
+        139,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 96.5,
+      "height": 199,
+      "margins": {
+        "left": 54,
+        "top": 5,
+        "right": 53,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 7,
+      "label": "08-loop-transition",
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/running-right/qa/frames/running-right/08-08-loop-transition.png",
+      "bbox": [
+        55,
+        4,
+        137,
+        204
+      ],
+      "baseline_y": 203,
+      "torso_center_x": 96.0,
+      "height": 200,
+      "margins": {
+        "left": 55,
+        "top": 4,
+        "right": 55,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    }
+  ],
+  "manual_review": {
+    "screen_right_drag_semantics": "pending",
+    "alternating_gait_continuity": "pending",
+    "loop_8_to_1": "pending",
+    "approved_identity_match": "pending"
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "ok": true,
+  "job": "waving",
+  "status": "complete",
+  "method": "grounded four-frame generation from approved Feng idle references; deterministic hard-alpha extraction; one shared nearest-neighbor scale; integer-pixel registration",
+  "approved_idle": "assets/feng/idle.png",
+  "approved_idle_row": "hatch-runs/feng-v2/jobs/idle/decoded/idle.png",
+  "output": "hatch-runs/feng-v2/jobs/waving/decoded/waving.png",
+  "output_sha256": "a074f9ad70f4277833d1e31e11082065f4f2511ca09a5c4c2369a4ab4998790b",
+  "output_size": [
+    768,
+    208
+  ],
+  "mode": "RGBA",
+  "imagegen_used": true,
+  "imagegen_cli_used": false,
+  "final_rgba_transparent": true,
+  "shared_scale": 0.31347962382445144,
+  "resampling": "nearest-neighbor",
+  "registration": "lower-body anchor to x≈96; baseline y=203; integer translation only",
+  "checks": {
+    "dimensions_768x208": true,
+    "mode_rgba": true,
+    "four_nonempty_192x208_cells": true,
+    "strip_cells_equal_qa_frames": true,
+    "restrained_right_hand_wave_sequence_visual_review": true,
+    "cold_unsmiling_expression_preserved_visual_review": true,
+    "approved_feng_identity_preserved_visual_review": true,
+    "baseline_consistent_y_203": true,
+    "lower_body_center_stable_within_1px": true,
+    "body_height_stable_within_1px": true,
+    "head_anchor_size_consistent_within_1px": true,
+    "head_anchor_position_stable_within_1px": true,
+    "shoulder_width_and_torso_visual_review": true,
+    "feet_legs_torso_and_left_arm_stable_visual_review": true,
+    "frame_4_returns_naturally_toward_frame_1": true,
+    "no_clipping_min_4px_margin": true,
+    "hatch_pet_frame_inspection_pass": true,
+    "binary_alpha_no_antialias": true,
+    "hidden_background_rgb_clear": true,
+    "no_opaque_green_background": true,
+    "no_blur_visual_review": true,
+    "nearest_neighbor_scaling_and_integer_translation_only": true
+  },
+  "metrics": {
+    "baseline_y": [
+      203,
+      203,
+      203,
+      203
+    ],
+    "lower_body_center_x": [
+      96.08,
+      96.39,
+      95.74,
+      96.33
+    ],
+    "height_px": [
+      199,
+      200,
+      200,
+      200
+    ],
+    "hair_head_anchor_width_px": [
+      51,
+      52,
+      52,
+      52
+    ],
+    "hair_head_anchor_height_px": [
+      33,
+      33,
+      33,
+      33
+    ],
+    "hair_head_anchor_left_x": [
+      63,
+      63,
+      63,
+      64
+    ],
+    "hair_head_anchor_top_y": [
+      5,
+      4,
+      4,
+      4
+    ],
+    "opaque_green_pixels": 0
+  },
+  "frames": [
+    {
+      "index": 1,
+      "label": "01-right-hand-lift",
+      "path": "hatch-runs/feng-v2/jobs/waving/qa/frames/waving/00.png",
+      "bbox": [
+        38,
+        5,
+        150,
+        204
+      ],
+      "baseline_y": 203,
+      "height": 199,
+      "lower_body_center_x": 96.08,
+      "hair_head_anchor_bbox": [
+        63,
+        5,
+        114,
+        38
+      ],
+      "hair_head_anchor_size": [
+        51,
+        33
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 2,
+      "label": "02-palm-open",
+      "path": "hatch-runs/feng-v2/jobs/waving/qa/frames/waving/01.png",
+      "bbox": [
+        39,
+        4,
+        151,
+        204
+      ],
+      "baseline_y": 203,
+      "height": 200,
+      "lower_body_center_x": 96.39,
+      "hair_head_anchor_bbox": [
+        63,
+        4,
+        115,
+        37
+      ],
+      "hair_head_anchor_size": [
+        52,
+        33
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 3,
+      "label": "03-restrained-wave",
+      "path": "hatch-runs/feng-v2/jobs/waving/qa/frames/waving/02.png",
+      "bbox": [
+        27,
+        4,
+        150,
+        204
+      ],
+      "baseline_y": 203,
+      "height": 200,
+      "lower_body_center_x": 95.74,
+      "hair_head_anchor_bbox": [
+        63,
+        4,
+        115,
+        37
+      ],
+      "hair_head_anchor_size": [
+        52,
+        33
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 4,
+      "label": "04-hand-lowering",
+      "path": "hatch-runs/feng-v2/jobs/waving/qa/frames/waving/03.png",
+      "bbox": [
+        36,
+        4,
+        150,
+        204
+      ],
+      "baseline_y": 203,
+      "height": 200,
+      "lower_body_center_x": 96.33,
+      "hair_head_anchor_bbox": [
+        64,
+        4,
+        116,
+        37
+      ],
+      "hair_head_anchor_size": [
+        52,
+        33
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    }
+  ]
+}

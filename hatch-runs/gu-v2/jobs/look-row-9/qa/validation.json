@@ -1,0 +1,285 @@
+{
+  "ok": true,
+  "generated_source": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-row-9/generated/look-row-9-source.png",
+  "generated_source_sha256": "9f28b963c1726d801e4fc9170e275b64e005a864ed65d0380cc62ebd0cd5c39e",
+  "approved_cardinals": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-cardinals/decoded/look-cardinals.png",
+  "approved_cardinals_sha256": "10f33faf37ca6674d18ccc3e7b2e70cf458f7bffdcf1a901c8c01a541000856f",
+  "output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-row-9/decoded/look-row-9.png",
+  "output_sha256": "90f8a1da999978b6ef40231cdc20250cd1130764e4d8fc5a3c7551d0371a7616",
+  "output_size": [
+    1536,
+    208
+  ],
+  "mode": "RGBA",
+  "directions": [
+    "000.0",
+    "022.5",
+    "045.0",
+    "067.5",
+    "090.0",
+    "112.5",
+    "135.0",
+    "157.5"
+  ],
+  "shared_scale": 0.4140786749482402,
+  "body_lock_y": 96,
+  "resampling": "nearest-neighbor",
+  "checks": {
+    "dimensions_1536x208": true,
+    "mode_rgba": true,
+    "eight_nonempty_192x208_cells": true,
+    "direction_order_strict": true,
+    "000_exact_approved_cardinal": true,
+    "090_uses_coherent_sweep_right_pose": true,
+    "body_arms_hands_feet_pixel_locked": true,
+    "baseline_y_203": true,
+    "body_center_stable_near_96": true,
+    "adjacent_head_registration_continuous": true,
+    "no_clipping": true,
+    "no_isolated_pixels": true,
+    "binary_alpha_no_antialias": true,
+    "hidden_background_rgb_clear": true,
+    "nearest_neighbor_only": true,
+    "090_cardinal_right_semantics_match": true,
+    "direction_semantics_visually_confirmed": true,
+    "adjacent_head_motion_visually_confirmed": true,
+    "approved_liang_wengu_identity_match": true
+  },
+  "frames": [
+    {
+      "index": 0,
+      "direction": "000.0",
+      "generated_source_index": null,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-row-9/decoded/frames/00-000.0.png",
+      "bbox": [
+        58,
+        4,
+        131,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 96.0,
+      "head_center_x": 94.5,
+      "margins": {
+        "left": 58,
+        "top": 4,
+        "right": 61,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 1,
+      "direction": "022.5",
+      "generated_source_index": 1,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-row-9/decoded/frames/01-022.5.png",
+      "bbox": [
+        59,
+        4,
+        131,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 96.0,
+      "head_center_x": 95.0,
+      "margins": {
+        "left": 59,
+        "top": 4,
+        "right": 61,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 2,
+      "direction": "045.0",
+      "generated_source_index": 2,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-row-9/decoded/frames/02-045.0.png",
+      "bbox": [
+        57,
+        4,
+        129,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 96.0,
+      "head_center_x": 93.0,
+      "margins": {
+        "left": 57,
+        "top": 4,
+        "right": 63,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 3,
+      "direction": "067.5",
+      "generated_source_index": 3,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-row-9/decoded/frames/03-067.5.png",
+      "bbox": [
+        58,
+        4,
+        130,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 96.0,
+      "head_center_x": 94.0,
+      "margins": {
+        "left": 58,
+        "top": 4,
+        "right": 62,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 4,
+      "direction": "090.0",
+      "generated_source_index": 4,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-row-9/decoded/frames/04-090.0.png",
+      "bbox": [
+        58,
+        4,
+        131,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 96.0,
+      "head_center_x": 94.5,
+      "margins": {
+        "left": 58,
+        "top": 4,
+        "right": 61,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 5,
+      "direction": "112.5",
+      "generated_source_index": 5,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-row-9/decoded/frames/05-112.5.png",
+      "bbox": [
+        61,
+        4,
+        134,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 96.0,
+      "head_center_x": 97.5,
+      "margins": {
+        "left": 61,
+        "top": 4,
+        "right": 58,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 6,
+      "direction": "135.0",
+      "generated_source_index": 6,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-row-9/decoded/frames/06-135.0.png",
+      "bbox": [
+        62,
+        4,
+        136,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 96.0,
+      "head_center_x": 99.0,
+      "margins": {
+        "left": 62,
+        "top": 4,
+        "right": 56,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    },
+    {
+      "index": 7,
+      "direction": "157.5",
+      "generated_source_index": 7,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-row-9/decoded/frames/07-157.5.png",
+      "bbox": [
+        63,
+        4,
+        136,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 96.0,
+      "head_center_x": 99.5,
+      "margins": {
+        "left": 63,
+        "top": 4,
+        "right": 56,
+        "bottom": 4
+      },
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "hidden_rgb_clear": true
+    }
+  ],
+  "manual_review": {
+    "reviewed_at": "2026-09-09T08:39:40Z",
+    "direction_semantics": "pass",
+    "direction_evidence": {
+      "000.0": "exact approved Up cell; gaze reads upward",
+      "022.5": "mostly-up gaze with the first subtle screen-right cue",
+      "045.0": "balanced up-right eye and head direction",
+      "067.5": "predominantly screen-right with a remaining upward cue",
+      "090.0": "unmistakable screen-right gaze matching the approved Right pose family",
+      "112.5": "screen-right gaze with the first downward pitch",
+      "135.0": "balanced down-right eye and head direction",
+      "157.5": "predominantly down with a remaining screen-right cue"
+    },
+    "adjacent_head_motion": "pass",
+    "continuity_evidence": "the second coherent sweep removes the 067.5-to-090 overshoot; gaze and head pitch advance without visible reversal",
+    "approved_identity_match": "pass",
+    "identity_evidence": "approved Liang Wengu hair, glasses, face, tired expression, dark suit, white shirt, proportions, and palette are preserved",
+    "body_lock": "pass; rows y=96..207 are pixel-identical across all eight cells"
+  }
+}

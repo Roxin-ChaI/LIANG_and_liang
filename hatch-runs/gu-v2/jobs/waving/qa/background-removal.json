@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "source": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/waving/source/original.png",
+  "output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/waving/source/background-removed.png",
+  "source_size": [
+    2172,
+    724
+  ],
+  "method": "border-connected baked checkerboard removal",
+  "predicate": "RGB range <= 12 and mean >= 170",
+  "removed_pixels": 1265062,
+  "retained_pixels": 307466,
+  "alpha_values": [
+    0,
+    255
+  ]
+}

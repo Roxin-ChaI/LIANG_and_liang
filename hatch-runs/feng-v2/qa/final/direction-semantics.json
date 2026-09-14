@@ -1,0 +1,119 @@
+{
+  "ok": true,
+  "reviewed_at": "2026-09-13T09:16:30Z",
+  "review_basis": "Approved row-level QA plus labeled normal-size review of the assembled exact-pixel 16-direction loop.",
+  "directions": [
+    {
+      "degree": "000",
+      "expected": "up",
+      "observed": "frontal head with raised eyes and chin",
+      "verdict": "pass",
+      "reason": "Exact approved Up cardinal; vertical up cue is unmistakable."
+    },
+    {
+      "degree": "022.5",
+      "expected": "up-right",
+      "observed": "mostly up with the first small screen-right yaw",
+      "verdict": "pass",
+      "reason": "Both axes read and the step follows 000 without reversal."
+    },
+    {
+      "degree": "045",
+      "expected": "up-right",
+      "observed": "balanced up-right head and gaze",
+      "verdict": "pass",
+      "reason": "Intermediate pose advances naturally between 022.5 and 067.5."
+    },
+    {
+      "degree": "067.5",
+      "expected": "up-right",
+      "observed": "mostly screen-right with a remaining upward pitch",
+      "verdict": "pass",
+      "reason": "Correct quadrant and continuous approach to the Right cardinal."
+    },
+    {
+      "degree": "090",
+      "expected": "right",
+      "observed": "head, face plane, and eyes toward screen-right",
+      "verdict": "pass",
+      "reason": "Exact approved Right cardinal."
+    },
+    {
+      "degree": "112.5",
+      "expected": "down-right",
+      "observed": "screen-right yaw with a small downward pitch",
+      "verdict": "pass",
+      "reason": "Correct quadrant and first step toward Down."
+    },
+    {
+      "degree": "135",
+      "expected": "down-right",
+      "observed": "balanced down-right head and gaze",
+      "verdict": "pass",
+      "reason": "Both axes remain readable without body movement."
+    },
+    {
+      "degree": "157.5",
+      "expected": "down-right",
+      "observed": "nearly down with a slight screen-right bias",
+      "verdict": "pass",
+      "reason": "Natural final step before 180."
+    },
+    {
+      "degree": "180",
+      "expected": "down",
+      "observed": "head and eyes pitched down",
+      "verdict": "pass",
+      "reason": "Exact approved Down cardinal; vertical down cue is unmistakable."
+    },
+    {
+      "degree": "202.5",
+      "expected": "down-left",
+      "observed": "mostly down with the first small screen-left yaw",
+      "verdict": "pass",
+      "reason": "Correct quadrant and continuous departure from 180."
+    },
+    {
+      "degree": "225",
+      "expected": "down-left",
+      "observed": "balanced down-left head and gaze",
+      "verdict": "pass",
+      "reason": "Intermediate pose advances naturally toward 247.5."
+    },
+    {
+      "degree": "247.5",
+      "expected": "down-left",
+      "observed": "mostly screen-left with a remaining downward pitch",
+      "verdict": "pass",
+      "reason": "Correct quadrant and continuous approach to the Left cardinal."
+    },
+    {
+      "degree": "270",
+      "expected": "left",
+      "observed": "head, face plane, and eyes toward screen-left",
+      "verdict": "pass",
+      "reason": "Exact approved Left cardinal."
+    },
+    {
+      "degree": "292.5",
+      "expected": "up-left",
+      "observed": "screen-left yaw with a small upward pitch",
+      "verdict": "pass",
+      "reason": "Correct quadrant and first step back toward Up."
+    },
+    {
+      "degree": "315",
+      "expected": "up-left",
+      "observed": "balanced up-left head and gaze",
+      "verdict": "pass",
+      "reason": "Both axes remain readable without body drift."
+    },
+    {
+      "degree": "337.5",
+      "expected": "up-left",
+      "observed": "nearly up with a slight screen-left bias",
+      "verdict": "pass",
+      "reason": "Natural one-step transition into 000 with fixed scale and registration."
+    }
+  ]
+}

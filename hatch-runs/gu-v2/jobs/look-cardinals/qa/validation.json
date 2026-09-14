@@ -1,0 +1,244 @@
+{
+  "ok": true,
+  "source": "/private/var/folders/nc/p06rznj10dv3fh67gs5g5q540000gp/T/codex-clipboard-99303511-32ab-4114-a65c-174ce687dfc1.png",
+  "source_sha256": "3c6be92b01e7d83b3f725bb32212d6d1a493e5f40352bf3f9cb136d3ac8ca12e",
+  "output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-cardinals/decoded/look-cardinals.png",
+  "output_sha256": "10f33faf37ca6674d18ccc3e7b2e70cf458f7bffdcf1a901c8c01a541000856f",
+  "approved_strip": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-cardinals/decoded/look-anchors-approved.png",
+  "source_size": [
+    2172,
+    724
+  ],
+  "output_size": [
+    768,
+    208
+  ],
+  "mode": "RGBA",
+  "directions": [
+    "000",
+    "090",
+    "180",
+    "270"
+  ],
+  "method": "alpha threshold + largest connected component + shared-height nearest-neighbor resize + common body center and feet baseline",
+  "checks": {
+    "dimensions_768x208": true,
+    "mode_rgba": true,
+    "four_nonempty_cells": true,
+    "baseline_consistent": true,
+    "body_center_stable": true,
+    "no_clipping": true,
+    "no_unexpected_isolated_pixels": true,
+    "direction_order_000_090_180_270": true,
+    "binary_alpha_no_antialias": true,
+    "nearest_neighbor_only": true,
+    "direction_semantics_visually_confirmed": true,
+    "approved_liang_wengu_identity_match": true
+  },
+  "frames": [
+    {
+      "source_bbox": [
+        201,
+        48,
+        433,
+        680
+      ],
+      "source_used_pixels_after_threshold": 106564,
+      "alpha_threshold": 64,
+      "source_cleanup": {
+        "component_count_before": 1,
+        "removed_pixels": 0
+      },
+      "scale": 0.31645569620253167,
+      "resampling": "nearest-neighbor",
+      "resized_size": [
+        73,
+        200
+      ],
+      "post_resize_removed_pixels": 0,
+      "paste_xy": [
+        58,
+        4
+      ],
+      "final_bbox": [
+        58,
+        4,
+        131,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 96.0,
+      "margins": {
+        "left": 58,
+        "top": 4,
+        "right": 61,
+        "bottom": 4
+      },
+      "used_pixels": 10646,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "direction": "000",
+      "source_slot": 0,
+      "anchor_path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-cardinals/decoded/look-anchors/000.png"
+    },
+    {
+      "source_bbox": [
+        133,
+        48,
+        372,
+        680
+      ],
+      "source_used_pixels_after_threshold": 107278,
+      "alpha_threshold": 64,
+      "source_cleanup": {
+        "component_count_before": 1,
+        "removed_pixels": 0
+      },
+      "scale": 0.31645569620253167,
+      "resampling": "nearest-neighbor",
+      "resized_size": [
+        76,
+        200
+      ],
+      "post_resize_removed_pixels": 0,
+      "paste_xy": [
+        52,
+        4
+      ],
+      "final_bbox": [
+        52,
+        4,
+        128,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 96.5,
+      "margins": {
+        "left": 52,
+        "top": 4,
+        "right": 64,
+        "bottom": 4
+      },
+      "used_pixels": 10868,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "direction": "090",
+      "source_slot": 1,
+      "anchor_path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-cardinals/decoded/look-anchors/090.png"
+    },
+    {
+      "source_bbox": [
+        122,
+        48,
+        356,
+        680
+      ],
+      "source_used_pixels_after_threshold": 106869,
+      "alpha_threshold": 64,
+      "source_cleanup": {
+        "component_count_before": 1,
+        "removed_pixels": 0
+      },
+      "scale": 0.31645569620253167,
+      "resampling": "nearest-neighbor",
+      "resized_size": [
+        74,
+        200
+      ],
+      "post_resize_removed_pixels": 0,
+      "paste_xy": [
+        53,
+        4
+      ],
+      "final_bbox": [
+        53,
+        4,
+        127,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 96.0,
+      "margins": {
+        "left": 53,
+        "top": 4,
+        "right": 65,
+        "bottom": 4
+      },
+      "used_pixels": 10677,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "direction": "180",
+      "source_slot": 2,
+      "anchor_path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-cardinals/decoded/look-anchors/180.png"
+    },
+    {
+      "source_bbox": [
+        111,
+        48,
+        343,
+        680
+      ],
+      "source_used_pixels_after_threshold": 106479,
+      "alpha_threshold": 64,
+      "source_cleanup": {
+        "component_count_before": 1,
+        "removed_pixels": 0
+      },
+      "scale": 0.31645569620253167,
+      "resampling": "nearest-neighbor",
+      "resized_size": [
+        73,
+        200
+      ],
+      "post_resize_removed_pixels": 0,
+      "paste_xy": [
+        61,
+        4
+      ],
+      "final_bbox": [
+        61,
+        4,
+        134,
+        204
+      ],
+      "baseline_y": 203,
+      "body_center_x": 96.0,
+      "margins": {
+        "left": 61,
+        "top": 4,
+        "right": 58,
+        "bottom": 4
+      },
+      "used_pixels": 10585,
+      "component_count": 1,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "direction": "270",
+      "source_slot": 3,
+      "anchor_path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-cardinals/decoded/look-anchors/270.png"
+    }
+  ],
+  "manual_review": {
+    "reviewed_at": "2026-09-09T07:15:24Z",
+    "direction_semantics": "pass",
+    "direction_evidence": {
+      "000": "eyes and face read upward",
+      "090": "pupils, nose, and head turn toward screen-right",
+      "180": "eyes and head angle read downward",
+      "270": "pupils and face read toward screen-left"
+    },
+    "approved_identity_match": "pass",
+    "identity_evidence": "approved Liang Wengu hair, glasses, face, dark suit, white shirt, proportions, and palette are preserved"
+  }
+}

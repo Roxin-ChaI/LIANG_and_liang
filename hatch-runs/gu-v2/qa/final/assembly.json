@@ -1,0 +1,1196 @@
+{
+  "ok": true,
+  "assembly": "exact 192x208 cell copy; no scaling, resampling, or positional changes",
+  "sprite_version_number": 2,
+  "columns": 8,
+  "rows": 11,
+  "cell_size": [
+    192,
+    208
+  ],
+  "atlas_size": [
+    1536,
+    2288
+  ],
+  "png_output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/spritesheet-extended.png",
+  "png_sha256": "1218a1bb3c4a9b385d54affed230d375c7ddd773bce234548a7ba034391faa2e",
+  "webp_output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/spritesheet-extended.webp",
+  "webp_sha256": "b36d5fda5e354674ef8bb760be636536a60d2ca1fdfc5add725b4f2ab0da2325",
+  "webp_mode": "RGBA",
+  "webp_pixel_exact_to_png": true,
+  "sources": [
+    {
+      "state": "idle",
+      "row": 0,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/idle/decoded/idle.png",
+      "sha256": "78f5bb1d2f2d671abce8014230738aac352c64893b0b25bcda1c43c4677e8d54",
+      "size": [
+        1152,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 6
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/running-right/decoded/running-right.png",
+      "sha256": "dc94a00a6b44b205b5e25791716be308053a4c3f20ec6b34dcbd3ea91e124a6c",
+      "size": [
+        1536,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 8
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/running-left/decoded/running-left.png",
+      "sha256": "9e46a55e3ed6cdff509c0c59355281ba96a71cc19a643e4126860d1260d41efb",
+      "size": [
+        1536,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 8
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/decoded/waving.png",
+      "sha256": "38aaa3bc7b8c8e9824af155cf0139f14131b719b63aa856014cd78fe453399cd",
+      "size": [
+        768,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 4
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/jumping/decoded/jumping.png",
+      "sha256": "6b8559e2e6679697500801f0d117eb9f78266f250a6a293090f236e6a4ab13c9",
+      "size": [
+        960,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 5
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/decoded/failed.png",
+      "sha256": "075547c40689a969e125c003a8fa40b43a3d9efa252779323079d8e17b4eb994",
+      "size": [
+        1536,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 8
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/decoded/waiting.png",
+      "sha256": "bf5c2a5dab6e158ef5f2a6a9e1bbd261f9ef99658acbf3aed6690e7fdffc1706",
+      "size": [
+        1152,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 6
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/decoded/running.png",
+      "sha256": "440dc78746372c2abfb9933ca46ca0904ffb047e9e4da8c0ea59e87d2f1529d8",
+      "size": [
+        1152,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 6
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/decoded/review.png",
+      "sha256": "31eb43358ef6f6d4a1fe336fae7ef03a1d1ef9ed3199f0a41c842b342b1906ea",
+      "size": [
+        1152,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 6
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-row-9/decoded/look-row-9.png",
+      "sha256": "90f8a1da999978b6ef40231cdc20250cd1130764e4d8fc5a3c7551d0371a7616",
+      "size": [
+        1536,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 8
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/jobs/look-row-10/decoded/look-row-10.png",
+      "sha256": "b158a6789b1ada697f1a7092303a34a20bc2b5692cfda30f4b499ef3faf40083",
+      "size": [
+        1536,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 8
+    }
+  ],
+  "cells": [
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "e12f8f315e36d704a910406d1a8b9a0a9ea7779b3b61b3a92443cdf7b3be72fb",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/idle/00.png"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "e6b47cd7fe7e3a27af7c77f426e71aba6099b918970117eff590c0aaf8c38135",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/idle/01.png"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "bdc80990f6fc316ef513aaaf855ddbbb019224015ebb928a6cd01631672b1b23",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/idle/02.png"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "c4988a3828d9e1113f7d4e210c937db6ebec4d66a9e4142a0b79a59e15fa2cc3",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/idle/03.png"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "e54f6f298efcb46b641bedaabcaaa834ae33b81ffdce864b8e09a1a473bfea31",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/idle/04.png"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "e12f8f315e36d704a910406d1a8b9a0a9ea7779b3b61b3a92443cdf7b3be72fb",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/idle/05.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "6e395cd67b45f5852dc0933eabbb8e41a7323f24f4c9425bf058d8349c988ef0",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-right/00.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "bd49d4d4a9a9aa478b3ce6559aa221563a0d3a22a06e723c1262e1496d4a37c8",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-right/01.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "3285aba5994e689c06de6a64adf475fc42df4d359851f738719a6d60fe460511",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-right/02.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "d83865e31ca07a0fe8bc3695a895e8dac7724a30c8bde85ee541922d4f9b02bc",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-right/03.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "70fe96520846782cb7316dfe9cbb98afc0095126c12fc46687f9872fca5a523b",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-right/04.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "4d51aac3e9010fb96927e38f8106f71dd4ab6a59f8f07cbb9568179ccfecb0eb",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-right/05.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 6,
+      "source_box": [
+        1152,
+        0,
+        1344,
+        208
+      ],
+      "sha256_rgba": "315adcd1423b948eaf05cf44e0f5b3696e788eb65a9c99e61a612b2cd146528c",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-right/06.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 7,
+      "source_box": [
+        1344,
+        0,
+        1536,
+        208
+      ],
+      "sha256_rgba": "a696af78104a5f3787744dbdd572249a6fb73bfe1d95f754e2192a7c7c06fcfd",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-right/07.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "d390d8b38a1714646b540178711e120dc5e2076822b55c8bfdcf6c35c7a9d6fa",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-left/00.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "bc0b9124035c65d45bed8d1bf05e9cfd92ba0443f145c6d25660532e5118b0f5",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-left/01.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "84116c6e82b3bda32b21e7b38ecf9975abd79e485fde3abe748fdba21f257773",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-left/02.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "424456a382697d84b1c1fd446e51163aa542179aaa3304c2e77893dec695e4a5",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-left/03.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "375c2e42873e459ef8de60be909768c66902fe92458f1f9cdd2f29f2f7e43490",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-left/04.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "566b95e08491d57131621d499efa7f6a82d9aa19fff85869ae235ed004c4861b",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-left/05.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 6,
+      "source_box": [
+        1152,
+        0,
+        1344,
+        208
+      ],
+      "sha256_rgba": "f66220f4bfd347beddb2a10dac9485d2f6aaa2f530bfa1e938eaf38e02aa6bf5",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-left/06.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 7,
+      "source_box": [
+        1344,
+        0,
+        1536,
+        208
+      ],
+      "sha256_rgba": "18719cb2ab92f2deeb2ebf294b6c721241b82e1205c430bc6906b0e075e1f9a5",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running-left/07.png"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "0eea920f0560923b71aa16351089732e70eb49d5f4c83554ef6c2b51f9335a48",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/waving/00.png"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "17b416fb3e3d57782708160e1ab12794f2614fbc216410a8939486fabe598d53",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/waving/01.png"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "1c2ae460f694d9cd8808cd1ad4a28e7816070bd9f71ad9eadf2bbdc1970ddd32",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/waving/02.png"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "10c8d38cf2a5c8a1261e8e7a93eff45904ba21b15c4144b29577a803fffc93b5",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/waving/03.png"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "f95c00d07fdc96c0419ecdf5acc8b8d3e408f19bc8bdfc28bc18050ae3d0566b",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/jumping/00.png"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "9ae8ae225db57795dc978937806e5622cfb9bf0495e605d54adff48c363105b2",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/jumping/01.png"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "75c5dbd6e56d3c56391a3f8ce79f3daeb8b043cebe30348d05b261e86e1394a1",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/jumping/02.png"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "03119b6d7e3f535eb3eec245f2bd9364b812235bf455cab9a4ed020da02f5463",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/jumping/03.png"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "f95c00d07fdc96c0419ecdf5acc8b8d3e408f19bc8bdfc28bc18050ae3d0566b",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/jumping/04.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "fe51a83a99a34ea0cb445bfadd83baed4c2cf709e0005979687f622dbdb86ef1",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/failed/00.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "d72e6e22f9233d15b0d81ed9081b0eb2f56958df238745452e8c4c37fb23882c",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/failed/01.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "f2540355223975cc13de8a28da054f9682df46cbf32a11042c66bddc3c6ddf8d",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/failed/02.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "4423d095b195841dd3417ca4390891be8be0313ce310f4a9961ae9392935944d",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/failed/03.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "61463f9294ff795d57317a9034f16da608ba865f0c6826f3d57be8922bbe78e9",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/failed/04.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "f9a9b1f561ae7cc619fec834c9a605b769e733d6c4af6483a4e3c777c3ea802d",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/failed/05.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 6,
+      "source_box": [
+        1152,
+        0,
+        1344,
+        208
+      ],
+      "sha256_rgba": "3b6da88f73830b71282faf54a2a5a8714dcb76b23e9212076f5f6fab31649c5b",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/failed/06.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 7,
+      "source_box": [
+        1344,
+        0,
+        1536,
+        208
+      ],
+      "sha256_rgba": "e70d57dcc7afe935e39cff128c0c245bafdd0247320b93942d73d620a6fa07ff",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/failed/07.png"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "3c7cfd4338d014c3a09f6768da359888b37370acc3cdc30e07d3e1141719a856",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/waiting/00.png"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "254be874b7b993db0c37e9d5e4f7361bd06ae6427bf3054383010ee547476979",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/waiting/01.png"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "3ef1362fcd21a423883ede9f9fd41560252c8a1d175dfec116f23053486cbd17",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/waiting/02.png"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "dc283b2adc79b6e63e8adbf42de9b32d7a2b81d6c23f0f9d432f85ebe10133fb",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/waiting/03.png"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "93048d14d68800fab79521a9508bcf2cdcaf62d77dd16e21ccc6ed1348c007c4",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/waiting/04.png"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "907d1eeabb05cc456800bf27a08395d2ab5349c6db44c6d9603650a980d96706",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/waiting/05.png"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "d0ca3bf4bcecc5c35776ad68a37a4b9fb25ce498898b635bcba993edb21f3589",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running/00.png"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "9d7e4f954cf94ccdbc031465859d2af3da8fe0330621924d9a2efd1695663146",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running/01.png"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "f1e3403396cb3746d20c10a54529aa55d87f161a2fb083246d844a1fc23c119c",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running/02.png"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "5e78eaef1b68ed35bbeb68635fc00177d2994e7ca81f6057e85c82c8ce03f967",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running/03.png"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "20528f1fea19257cc1e3a15c51be48597674e6fc336b014f1052efc8a2f673da",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running/04.png"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "7f3f389d7d2171cbbd11d72453c6cb6b9b72cb6d7252ff652f07448ccdea9eb2",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/running/05.png"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "2d47ea90cf6641246619ceb2ac562852ed9e0624e533c317e49960dd9e400bc5",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/review/00.png"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "56268d9a739303b64c7fd43a843e33ddf561ebd7e26a19de6497bda99bc5fead",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/review/01.png"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "0b042bfd36286b04f7cac71a1e2b92cc6cf069a5656e0a508d3d3da280a09517",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/review/02.png"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "a9155c92fa86e1702095a1ef2e6c635dc456729210e4e1099af9e10022e5c60a",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/review/03.png"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "d2439fd5c352c2648adf340037c1feb47b98381a0f26c80aab721d32c6c255b5",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/review/04.png"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "a526b530b9e3c6807911fc75dfafc42611e9bc99f46395874769fe8e210e7f7a",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/review/05.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "1af9f27127b1e31f0aca9168435cc5deb4f8b15fbb04aa1945ac2c557c0ef4cd",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-9/00.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "4fbf55f4c2cf695cd3b8da99e4eeeb816f6ba0bbdd7e9bb3793d3bf0c28f2a1d",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-9/01.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "748c82b10170725566e143c4fbdf9e2ed014ba0154256351261262523bdb1e07",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-9/02.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "e981f7040da97f4161aa5cc085b385548e747bf8924f08ff7f766d41a167cc24",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-9/03.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "6e9bdb9f771be9e8d9c876eb5bb629f9c717b04d196e3c2e5998636930f8174a",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-9/04.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "3e8705fe9a61c3bcbd5fe5009fdde6222e22c92244a09a8096a7acf72855e068",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-9/05.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 6,
+      "source_box": [
+        1152,
+        0,
+        1344,
+        208
+      ],
+      "sha256_rgba": "3900f7b20675fa9d10bfa640cf88c1238cb810a8416d896952ac4ee5c5717ada",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-9/06.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 7,
+      "source_box": [
+        1344,
+        0,
+        1536,
+        208
+      ],
+      "sha256_rgba": "b251d7a31aa3a3771b6aa4469a0a622f8a3c5bdd1aa3cb6466646221f6883915",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-9/07.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "3f6fa8585be2d89bcdbe3e38ad9222bad807dfe8f60851ec7529c95f6e4af773",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-10/00.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "85fd3daa18cc37e61e321022f41a97a561b9be268ceb8912481e302bbe26777d",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-10/01.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "51cbc1c0097f348e45e6ce8958d8d90e1f951c57c5842b6af409dea222d177a1",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-10/02.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "dfd32cbe537737b41e05b177e4a05a9de185756abf15684f2f5b3a15f0c8c431",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-10/03.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "9120718626264ae63ac3925ec032a1443f75340056967eb0aea673605da2b1c9",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-10/04.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "98ab892520e49b1c853c39a64505542d0934a42d4a872b0b978402023ad4d7b1",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-10/05.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 6,
+      "source_box": [
+        1152,
+        0,
+        1344,
+        208
+      ],
+      "sha256_rgba": "e1f5565452b8d75d5cf0fcf56374c9279382c8db2e0f050711d3e873ec317d2f",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-10/06.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 7,
+      "source_box": [
+        1344,
+        0,
+        1536,
+        208
+      ],
+      "sha256_rgba": "492afebc4c0969f9212d02901e4b2f58c14ccd26604a95d0d75eca3a00a63817",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/gu-v2/final/frames/look-row-10/07.png"
+    },
+    {
+      "state": "neutral",
+      "row": 0,
+      "column": 6,
+      "source": "idle row 0 column 0",
+      "sha256_rgba": "e12f8f315e36d704a910406d1a8b9a0a9ea7779b3b61b3a92443cdf7b3be72fb"
+    }
+  ],
+  "unused_cells": [
+    {
+      "row": 0,
+      "column": 7,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 3,
+      "column": 4,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 3,
+      "column": 5,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 3,
+      "column": 6,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 3,
+      "column": 7,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 4,
+      "column": 5,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 4,
+      "column": 6,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 4,
+      "column": 7,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 6,
+      "column": 6,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 6,
+      "column": 7,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 7,
+      "column": 6,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 7,
+      "column": 7,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 8,
+      "column": 6,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 8,
+      "column": 7,
+      "fully_transparent_zero_rgba": true
+    }
+  ]
+}

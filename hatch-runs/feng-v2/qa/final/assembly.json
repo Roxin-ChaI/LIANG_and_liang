@@ -1,0 +1,1196 @@
+{
+  "ok": true,
+  "assembly": "exact 192x208 cell copy; no scaling, resampling, or positional changes",
+  "sprite_version_number": 2,
+  "columns": 8,
+  "rows": 11,
+  "cell_size": [
+    192,
+    208
+  ],
+  "atlas_size": [
+    1536,
+    2288
+  ],
+  "png_output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/spritesheet-extended.png",
+  "png_sha256": "74018ae7b74d82eccdc2e9ab931257e721d5e1a4b8616bae19be4eb126fdceac",
+  "webp_output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/spritesheet-extended.webp",
+  "webp_sha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+  "webp_mode": "RGBA",
+  "webp_pixel_exact_to_png": true,
+  "sources": [
+    {
+      "state": "idle",
+      "row": 0,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/idle/decoded/idle.png",
+      "sha256": "a6d24c0d93fae468ec86d40ea8795d07d9a47983ef4209d91370b210d08084b1",
+      "size": [
+        1152,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 6
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/running-right/decoded/running-right.png",
+      "sha256": "c89cd42973bd8c9c2d1c5d7ea5a091cccd429e8167cf4f9fe8964a8aaf086d42",
+      "size": [
+        1536,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 8
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/running-left/decoded/running-left.png",
+      "sha256": "4dc1f79479c240a9d724d2af8232e0675a0a0461d93b673dfa2a2e14be2cb994",
+      "size": [
+        1536,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 8
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/waving/decoded/waving.png",
+      "sha256": "a074f9ad70f4277833d1e31e11082065f4f2511ca09a5c4c2369a4ab4998790b",
+      "size": [
+        768,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 4
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/jumping/decoded/jumping.png",
+      "sha256": "d38eb36aa9f7701d4adbe0197cefd36e56d2526cfd241469077221c3b5320fd4",
+      "size": [
+        960,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 5
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/failed/decoded/failed.png",
+      "sha256": "88795e3d5f120ede43fcadf7af3f2652d302b850caf0b51c17b68445153cddd6",
+      "size": [
+        1536,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 8
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/waiting/decoded/waiting.png",
+      "sha256": "86127bdbc88e2a57b044f3ba10b04634aa1135754dc69be0c8cadf71401b34a1",
+      "size": [
+        1152,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 6
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/running/decoded/running.png",
+      "sha256": "d255b048c29b32a67b520a422c8b5f6a5809f20bac7a2edbd8f52b7428b4310a",
+      "size": [
+        1152,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 6
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/review/decoded/review.png",
+      "sha256": "29f13c5c3b0f9da6bb368c2fbed4fb72d0a8ff5529a8b691b7177fd3ca790c2d",
+      "size": [
+        1152,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 6
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/look-row-9/decoded/look-row-9.png",
+      "sha256": "746186e3161ad80736b04e22755631b714719d8f6916978f9f431f9bdb061a98",
+      "size": [
+        1536,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 8
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "path": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/look-row-10/decoded/look-row-10.png",
+      "sha256": "b3e4912ce0f606ed492b5750f7d9d0a66627d7a4e2f92f509135bc4c2bcb4776",
+      "size": [
+        1536,
+        208
+      ],
+      "mode": "RGBA",
+      "format": "PNG",
+      "frame_count": 8
+    }
+  ],
+  "cells": [
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/idle/00.png"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/idle/01.png"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "7f3a6ecaca07e962cdb7d0e8f96bb41dc12323e82694d566d9c23e90dd083faf",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/idle/02.png"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "fe0414d41943c44d3f6e9b34660f227c5f097108902ee35a6353506587d7f389",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/idle/03.png"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/idle/04.png"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/idle/05.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "ba21529f62ca3d8498bcb65f1b77125126673c26d27fe6d5606ccd9ec00e6ece",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-right/00.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "7824752ece6caaf0885ad9359f262343e0c822ba21e05e88df071b0ca133f2c4",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-right/01.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "f6a4e3f4904c10a541a07b1973b304fbd4e445881c0edb01e219312be4564fdb",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-right/02.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "306081778da2b5d615eb53760be03ee6126d3e6d19e504e27f7ae9d89942635e",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-right/03.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "4bc984284c00bdc4be386fc23a01eb05f55556fbae2e915e38a6888561bcb03a",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-right/04.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "ba71e5dcc5b77cc27cfc6a2006313f0ae6aa1ec445905e01331a8304d5f76608",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-right/05.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 6,
+      "source_box": [
+        1152,
+        0,
+        1344,
+        208
+      ],
+      "sha256_rgba": "5620cb1d9ca9b6ab75ec2f8685346535942f82ddf3d0b11f305c0db17ee622a5",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-right/06.png"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "column": 7,
+      "source_box": [
+        1344,
+        0,
+        1536,
+        208
+      ],
+      "sha256_rgba": "b3f393b99a9db168048177adae45643a39f9904d91b050a8463a359b4a9c01e3",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-right/07.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "325187c46ffa017e3641252c5a661345003583e0117b2b7bc5cc5b4da823c455",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-left/00.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "364e032c9bd31ad9cd90fd3c3053eaa2acb0150a91d3391b45998c7bbf51fdc8",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-left/01.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "bf1f03acc6b0fab139033d93033ac8f5117d5bade840daad6c6ae6c163f74d8a",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-left/02.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "a47e8fefae95e26271d3deca970634ed008448d8ef94c36d479c9d4a9cccfae9",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-left/03.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "f785606df87ef7d6af0a206e1950abf0db71893998f708444cfe615ce174227e",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-left/04.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "79dd9c402f2fe3dd8a2a9635b994668c2eb761e7a9442fbe8a802b92af49d214",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-left/05.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 6,
+      "source_box": [
+        1152,
+        0,
+        1344,
+        208
+      ],
+      "sha256_rgba": "3c0ffcb8c0a9da76cadd05e365a6e2bd8d8d6a133b149c317a48b0909c3a215d",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-left/06.png"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "column": 7,
+      "source_box": [
+        1344,
+        0,
+        1536,
+        208
+      ],
+      "sha256_rgba": "518042c8d5b1122d37285eeed4c4e0affd66aa089936eaafb3fd6b4e85746466",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running-left/07.png"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "ded77c8888ce46f705abe410df56c53aec05b04950e206b48fb221dc5647d42d",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/waving/00.png"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "da201f6dad8802fc647efcee406525a5d8f93929ae10ff4899cad23f14d66590",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/waving/01.png"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "19e640a128be17f6ba07ef3854329a1bb22555a03dd62ce683f2767bb6c5c5c5",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/waving/02.png"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "c15639036a64162f08f02565d82a594a87543a309d7451b8f92e2e8af2b9fd23",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/waving/03.png"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/jumping/00.png"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "5928924a16fdeb9666892fa56d87585b25534bb498b05128eba34385a0c61d6e",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/jumping/01.png"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "e665b8fa21219c2505ebc69ae49f4ea443d1bd0e325f1c31e07433640b470aa3",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/jumping/02.png"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "5928924a16fdeb9666892fa56d87585b25534bb498b05128eba34385a0c61d6e",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/jumping/03.png"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/jumping/04.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/failed/00.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/failed/01.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "7f3a6ecaca07e962cdb7d0e8f96bb41dc12323e82694d566d9c23e90dd083faf",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/failed/02.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "fe0414d41943c44d3f6e9b34660f227c5f097108902ee35a6353506587d7f389",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/failed/03.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "fe0414d41943c44d3f6e9b34660f227c5f097108902ee35a6353506587d7f389",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/failed/04.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "7f3a6ecaca07e962cdb7d0e8f96bb41dc12323e82694d566d9c23e90dd083faf",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/failed/05.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 6,
+      "source_box": [
+        1152,
+        0,
+        1344,
+        208
+      ],
+      "sha256_rgba": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/failed/06.png"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "column": 7,
+      "source_box": [
+        1344,
+        0,
+        1536,
+        208
+      ],
+      "sha256_rgba": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/failed/07.png"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "c79d2a37654d4ce23f945f1fb2705f47cd645ccb586252d0881a32fa8c0b9cd8",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/waiting/00.png"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "fe12aec08285985381e1f36fe35e938fa752d40fe2d5cfe114c9ab414dfcc75a",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/waiting/01.png"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "c75301de395a82dfa772324e712e8cd33469aaa517d8c5258e497d6c6652dc3a",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/waiting/02.png"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "16cd32ba925e85ca052ea0c94c6e7d1330c9b3ef35ddd7951c769e4f8487f9d9",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/waiting/03.png"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "7a443f1f8d4ae6f98efb5b1432173c54e90407ec7a1886ba70e5d45017658b27",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/waiting/04.png"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "6d73c0c8972f4d08c20212ff1cba9a83040d5ffc5a721a0f84c8cebf412229cc",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/waiting/05.png"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "a2f78a145e965c18b559ab95425935f603e19d60cac3cef79a3b1cee681e26ae",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running/00.png"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "467b412d4d9c2e56aa96d752e486c937ef4336ec80dca65b329a9adaec6ca7f8",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running/01.png"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "73088ca243773a058fa67052de9893a8a19e92a4a5fee18bf47be1de821f044f",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running/02.png"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "bc5a93eebcd23bf9ec6b3775e23c0b3783a093583bf380413c6967c7a271bbe1",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running/03.png"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "5b8bd187c5ac00b5d3ff3ba719788ef4f0c5505ea6b44238f42ca9d1fc9e1998",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running/04.png"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "a2f78a145e965c18b559ab95425935f603e19d60cac3cef79a3b1cee681e26ae",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/running/05.png"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "fecd35e5b383b6219a19683681f531c9bff359a88824291e7ae4a8cfc9e757b8",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/review/00.png"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "d6e7a74c78bea027e128eea8aa9e545bcc2910f5e3e0dd2261aeca6edaf87093",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/review/01.png"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "67ee015e82880afbd997b007a4a82dd250b99e997f1f0ef5d0850cda9a03fa4d",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/review/02.png"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "f8561de2eebd656109db4802b9f50bb52a71c2b60b3ffa2ed5aa3847b0e87128",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/review/03.png"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "b13b1b2ffd3be48f11f8a1a090d3d9300a3777ecc86d27dbc23391849ca29c7c",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/review/04.png"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "fecd35e5b383b6219a19683681f531c9bff359a88824291e7ae4a8cfc9e757b8",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/review/05.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "08fbc52b99bba048990786d28a66370bc75bcf97cbd682a367372390f1044170",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-9/00.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "adcc010cfa28150eb82d672a946f9eab249ebc6e197f50fbe70bc5fa16ceb781",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-9/01.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "affd0ccccbc73ad7fa70d228ade3bb1dbd892359c9461c993e5721ddcc61ad2c",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-9/02.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "07bc0a04a189eaf6379641230355eeba16a491710c26027ac61dd1e01e0c0863",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-9/03.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "eb24a52bacfbc4220af6e33c2d7d0b7587d073e27d3b275b34bfad04b0b3dd89",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-9/04.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "38d596e7bcad82551d938f00c0e561e22e49488356765ee3f93a01ae6e450b8f",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-9/05.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 6,
+      "source_box": [
+        1152,
+        0,
+        1344,
+        208
+      ],
+      "sha256_rgba": "ab64f66b0a4a9d463effb39e1a14b7d6892d1874e8a85da43f901aae4b33d883",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-9/06.png"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "column": 7,
+      "source_box": [
+        1344,
+        0,
+        1536,
+        208
+      ],
+      "sha256_rgba": "e5e921ba4b69e9852fda427d5426488cb485e9ee344e09bd8c12660c4be9ca9a",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-9/07.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 0,
+      "source_box": [
+        0,
+        0,
+        192,
+        208
+      ],
+      "sha256_rgba": "eae2c11ceb9799447431e4d8a061421b7fee1ee784ca338bba611ed2b2ee1e50",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-10/00.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 1,
+      "source_box": [
+        192,
+        0,
+        384,
+        208
+      ],
+      "sha256_rgba": "c999391d9f3b610980bdc02dc959454c6047d832c9ae703bee3289b809f50442",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-10/01.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 2,
+      "source_box": [
+        384,
+        0,
+        576,
+        208
+      ],
+      "sha256_rgba": "28cd7a952009eae3424f477c1586d8fb9d22307bb77731c0b53ec3f339e9ecf0",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-10/02.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 3,
+      "source_box": [
+        576,
+        0,
+        768,
+        208
+      ],
+      "sha256_rgba": "84dd8c336e975ee3b0768ef0b2cfe8e691beb9caa1fe46a88884e43392d90c4b",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-10/03.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 4,
+      "source_box": [
+        768,
+        0,
+        960,
+        208
+      ],
+      "sha256_rgba": "79011c2da6ff7bb30c5db7ea45e000b7e4e94190b551fefb832ae85df42b5193",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-10/04.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 5,
+      "source_box": [
+        960,
+        0,
+        1152,
+        208
+      ],
+      "sha256_rgba": "23f5244b9dd579249f2a747abcd1afb8eac7470b8c48dcb6a26d6a34e30cae77",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-10/05.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 6,
+      "source_box": [
+        1152,
+        0,
+        1344,
+        208
+      ],
+      "sha256_rgba": "cee23c204a257e53b24adf259509cf5d47b419c8f6e2d036faf2b715037fce4c",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-10/06.png"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "column": 7,
+      "source_box": [
+        1344,
+        0,
+        1536,
+        208
+      ],
+      "sha256_rgba": "0c81bffeeffdf82d6fae487aaf92de0d094954ee6fc25ada18bc7a408a94a065",
+      "output_frame": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/final/frames/look-row-10/07.png"
+    },
+    {
+      "state": "neutral",
+      "row": 0,
+      "column": 6,
+      "source": "idle row 0 column 0",
+      "sha256_rgba": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    }
+  ],
+  "unused_cells": [
+    {
+      "row": 0,
+      "column": 7,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 3,
+      "column": 4,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 3,
+      "column": 5,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 3,
+      "column": 6,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 3,
+      "column": 7,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 4,
+      "column": 5,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 4,
+      "column": 6,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 4,
+      "column": 7,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 6,
+      "column": 6,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 6,
+      "column": 7,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 7,
+      "column": 6,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 7,
+      "column": 7,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 8,
+      "column": 6,
+      "fully_transparent_zero_rgba": true
+    },
+    {
+      "row": 8,
+      "column": 7,
+      "fully_transparent_zero_rgba": true
+    }
+  ]
+}

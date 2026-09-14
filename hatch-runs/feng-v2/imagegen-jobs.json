@@ -1,0 +1,860 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-10T08:33:36.575824+00:00",
+  "run_dir": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2",
+  "primary_generation_skill": "$imagegen",
+  "jobs": [
+    {
+      "id": "base",
+      "kind": "base-pet",
+      "status": "complete",
+      "prompt_file": "prompts/base-pet.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        }
+      ],
+      "output_path": "decoded/base.png",
+      "depends_on": [],
+      "generation_skill": "approved-source-copy",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "source_path": "/Users/mac/Projects/liang-no-henshin/assets/feng/idle.png",
+      "completed_at": "2026-09-10T08:34:43Z",
+      "imagegen_used": false,
+      "provenance": {
+        "method": "exact-approved-source-copy",
+        "canonical_base_path": "references/canonical-base.png",
+        "sha256": "03b116aedd0a37ee792fbab5690f6d0c6bfbe97fa058c633de16e938b0092eb8"
+      }
+    },
+    {
+      "id": "idle",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/idle.md",
+      "retry_prompt_file": "prompts/row-retries/idle.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/idle.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/feng/idle.png",
+          "role": "approved Liang Wenfeng idle identity and neutral-pose reference"
+        }
+      ],
+      "output_path": "jobs/idle/decoded/idle.png",
+      "source_path": "jobs/idle/decoded/idle.png",
+      "completed_at": "2026-09-10T10:04:03Z",
+      "completion_method": "approved Frame 1 identity lock with deterministic eye-detail repair: Frames 2/5 restored to the approved open eyes, Frame 3 uses a hard-edged half blink, Frame 4 uses a hard-edged closed blink, and Frame 6 is pixel-identical to Frame 1",
+      "output_sha256": "a6d24c0d93fae468ec86d40ea8795d07d9a47983ef4209d91370b210d08084b1",
+      "repair_note": "removed corrupted black eye/ear patches; all repaired pixels are confined to the fixed eye region and no ImageGen was used for this repair",
+      "imagegen_used": true,
+      "imagegen_cli_used": false,
+      "qa_report": "jobs/idle/qa/validation.json",
+      "motion_preview": "jobs/idle/qa/idle-preview.gif",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "no deterministic derivation is configured for this state"
+      },
+      "mirror_policy": {},
+      "direct_transparent_output": true,
+      "raw_generation_source_retained": false
+    },
+    {
+      "id": "running-right",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/running-right.md",
+      "retry_prompt_file": "prompts/row-retries/running-right.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/running-right.png",
+          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/feng/drag.png",
+          "role": "approved Liang Wenfeng drag pose and rightward movement reference"
+        }
+      ],
+      "output_path": "jobs/running-right/decoded/running-right.png",
+      "source_path": "jobs/running-right/decoded/running-right.png",
+      "completed_at": "2026-09-10T10:54:49Z",
+      "completion_method": "grounded eight-frame generation from approved Liang Wenfeng drag, idle, and canonical identity references; deterministic hard-alpha foreground extraction and shared nearest-neighbor normalization",
+      "output_sha256": "c89cd42973bd8c9c2d1c5d7ea5a091cccd429e8167cf4f9fe8964a8aaf086d42",
+      "imagegen_used": true,
+      "imagegen_cli_used": false,
+      "qa_report": "jobs/running-right/qa/validation.json",
+      "motion_preview": "jobs/running-right/qa/running-right-preview.gif",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "no deterministic derivation is configured for this state"
+      },
+      "mirror_policy": {},
+      "direct_transparent_output": true,
+      "raw_generation_source_retained": false
+    },
+    {
+      "id": "running-left",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/running-left.md",
+      "retry_prompt_file": "prompts/row-retries/running-left.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/running-left.png",
+          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/running-right.png",
+          "role": "rightward gait reference for leftward row decision"
+        },
+        {
+          "path": "assets/feng/drag.png",
+          "role": "approved Liang Wenfeng drag identity and leftward movement reference"
+        }
+      ],
+      "output_path": "jobs/running-left/decoded/running-left.png",
+      "source_path": "jobs/running-right/decoded/running-right.png",
+      "derived_from": "running-right",
+      "completed_at": "2026-09-10T11:23:32Z",
+      "completion_method": "Hatch Pet official framewise horizontal mirror preserving the approved running-right frame order and timing",
+      "output_sha256": "4dc1f79479c240a9d724d2af8232e0675a0a0461d93b673dfa2a2e14be2cb994",
+      "metadata": {
+        "width": 1536,
+        "height": 208,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "imagegen_used": false,
+      "imagegen_cli_used": false,
+      "qa_report": "jobs/running-left/qa/validation.json",
+      "motion_preview": "jobs/running-left/qa/running-left-preview.gif",
+      "depends_on": [
+        "base",
+        "running-right"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base",
+        "running-right"
+      ],
+      "derivation_policy": {
+        "may_derive": true,
+        "may_derive_from": "running-right",
+        "derivation": "framewise-horizontal-mirror-preserving-order",
+        "requires_explicit_approval": true,
+        "fallback_generation_skill": "$imagegen"
+      },
+      "mirror_policy": {
+        "may_derive": true,
+        "may_derive_from": "running-right",
+        "derivation": "framewise-horizontal-mirror-preserving-order",
+        "requires_explicit_approval": true,
+        "fallback_generation_skill": "$imagegen"
+      },
+      "mirror_decision": {
+        "approved": true,
+        "approved_at": "2026-09-10T11:23:32Z",
+        "note": "No text, one-sided prop, directional emblem, or non-mirrorable identity mark; mirroring preserves identity, costume, proportions, frame order, and timing while producing screen-left motion.",
+        "transform": "framewise-horizontal-mirror-preserving-order"
+      },
+      "direct_transparent_output": true,
+      "raw_generation_source_retained": false
+    },
+    {
+      "id": "waving",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/waving.md",
+      "retry_prompt_file": "prompts/row-retries/waving.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/waving.png",
+          "role": "layout guide for 4 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/feng/idle.png",
+          "role": "approved Liang Wenfeng identity and neutral-pose reference"
+        },
+        {
+          "path": "jobs/idle/decoded/idle.png",
+          "role": "completed Feng v2 idle row for exact scale, baseline, face, glasses, shoulder width, and body proportions"
+        }
+      ],
+      "output_path": "jobs/waving/decoded/waving.png",
+      "source_path": "jobs/waving/decoded/waving.png",
+      "completed_at": "2026-09-10T14:43:38Z",
+      "completion_method": "grounded four-frame generation from approved Liang Wenfeng idle references, followed by deterministic hard-alpha extraction, one shared nearest-neighbor scale, and integer-pixel registration",
+      "output_sha256": "a074f9ad70f4277833d1e31e11082065f4f2511ca09a5c4c2369a4ab4998790b",
+      "metadata": {
+        "width": 768,
+        "height": 208,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "imagegen_used": true,
+      "imagegen_cli_used": false,
+      "qa_report": "jobs/waving/qa/validation.json",
+      "motion_preview": "jobs/waving/qa/waving-preview.gif",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "state requires its own generated animation semantics"
+      },
+      "mirror_policy": {},
+      "direct_transparent_output": true,
+      "raw_generation_source_retained": false
+    },
+    {
+      "id": "jumping",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/jumping.md",
+      "retry_prompt_file": "prompts/row-retries/jumping.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/jumping.png",
+          "role": "layout guide for 5 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/feng/hover.png",
+          "role": "approved Liang Wenfeng hover pose and jumping-response reference"
+        },
+        {
+          "path": "jobs/idle/decoded/idle.png",
+          "role": "completed feng-v2 idle identity, scale, and registration anchor"
+        }
+      ],
+      "output_path": "jobs/jumping/decoded/jumping.png",
+      "source_path": "jobs/jumping/decoded/jumping.png",
+      "completed_at": "2026-09-10T09:39:39Z",
+      "completion_method": "one coherent built-in ImageGen jumping semantic source grounded by approved hover, idle, canonical base, and layout guide; finalized with exact completed-idle identity lock and rigid integer vertical translations 0/-1/-3/-1/0 to eliminate all head, face, glasses, shoulder, and body-scale drift",
+      "imagegen_used": true,
+      "imagegen_cli_used": false,
+      "qa_report": "jobs/jumping/qa/validation.json",
+      "motion_preview": "jobs/jumping/qa/jumping-preview.gif",
+      "depends_on": [
+        "base",
+        "idle"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "state requires its own generated animation semantics"
+      },
+      "mirror_policy": {},
+      "direct_transparent_output": true,
+      "raw_generation_source_retained": false
+    },
+    {
+      "id": "failed",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/failed.md",
+      "retry_prompt_file": "prompts/row-retries/failed.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/failed.png",
+          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/feng/idle.png",
+          "role": "approved Liang Wenfeng identity, strong-build, and neutral-pose reference"
+        },
+        {
+          "path": "jobs/idle/decoded/idle.png",
+          "role": "completed Feng v2 idle row for exact scale, baseline, face, glasses, shoulder width, and body proportions"
+        }
+      ],
+      "output_path": "jobs/failed/decoded/failed.png",
+      "source_path": "jobs/idle/decoded/idle.png",
+      "completed_at": "2026-09-10T16:15:24Z",
+      "completion_method": "deterministic eight-frame sequencing from the QA-approved Feng v2 idle identity lock: open gaze, half blink, closed-eye hold, recovery, and exact idle return; no scaling, resampling, or geometry edits",
+      "output_sha256": "88795e3d5f120ede43fcadf7af3f2652d302b850caf0b51c17b68445153cddd6",
+      "metadata": {
+        "width": 1536,
+        "height": 208,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "imagegen_used": true,
+      "imagegen_pixels_used_in_final": false,
+      "imagegen_cli_used": false,
+      "qa_report": "jobs/failed/qa/validation.json",
+      "motion_preview": "jobs/failed/qa/failed-preview.gif",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "state requires its own generated animation semantics"
+      },
+      "mirror_policy": {},
+      "direct_transparent_output": true,
+      "raw_generation_source_retained": false
+    },
+    {
+      "id": "waiting",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/waiting.md",
+      "retry_prompt_file": "prompts/row-retries/waiting.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/waiting.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/feng/idle.png",
+          "role": "approved Liang Wenfeng identity, strong-build, and neutral-pose reference"
+        },
+        {
+          "path": "jobs/idle/decoded/idle.png",
+          "role": "completed Feng v2 idle row for exact scale, baseline, face, glasses, shoulder width, and body proportions"
+        }
+      ],
+      "output_path": "jobs/waiting/decoded/waiting.png",
+      "source_path": "jobs/waiting/decoded/waiting.png",
+      "completed_at": "2026-09-12T05:12:05Z",
+      "completion_method": "one coherent grounded six-frame waiting generation; Hatch Pet component extraction; binary hard-alpha normalization; +1 px integer baseline registration; deterministic Frame-1 geometry lock outside the generated brow/eye/glasses band",
+      "generation_source_sha256": "74705953a74fa88ea5b5e73d96fec0426bf5329ad30bfd9acfe7247306af3463",
+      "output_sha256": "86127bdbc88e2a57b044f3ba10b04634aa1135754dc69be0c8cadf71401b34a1",
+      "metadata": {
+        "width": 1152,
+        "height": 208,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "imagegen_used": true,
+      "imagegen_cli_used": false,
+      "qa_report": "jobs/waiting/qa/validation.json",
+      "motion_preview": "jobs/waiting/qa/waiting-preview.gif",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "state requires its own generated animation semantics"
+      },
+      "mirror_policy": {},
+      "direct_transparent_output": true,
+      "raw_generation_source_retained": false
+    },
+    {
+      "id": "running",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/running.md",
+      "retry_prompt_file": "prompts/row-retries/running.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/running.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/feng/idle.png",
+          "role": "approved Liang Wenfeng identity, strong-build, and neutral-pose reference"
+        },
+        {
+          "path": "jobs/idle/decoded/idle.png",
+          "role": "completed Feng v2 idle row for exact scale, baseline, face, glasses, shoulder width, and body proportions"
+        }
+      ],
+      "output_path": "jobs/running/decoded/running.png",
+      "source_path": "jobs/running/decoded/running.png",
+      "completed_at": "2026-09-12T15:58:07Z",
+      "completion_method": "one coherent grounded six-frame active-processing generation; hard-alpha extraction; one shared nearest-neighbor scale; lower-body integer registration; deterministic Frame-1 geometry lock outside head and raised-action-arm zones; exact Frame-6 return",
+      "generation_source_sha256": "d18891d8f7813df23049258c532e66462760fa26e80552e689a8644d9892e351",
+      "output_sha256": "d255b048c29b32a67b520a422c8b5f6a5809f20bac7a2edbd8f52b7428b4310a",
+      "metadata": {
+        "width": 1152,
+        "height": 208,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "imagegen_used": true,
+      "imagegen_cli_used": false,
+      "qa_report": "jobs/running/qa/validation.json",
+      "motion_preview": "jobs/running/qa/running-preview.gif",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "state requires its own generated animation semantics"
+      },
+      "mirror_policy": {},
+      "direct_transparent_output": true,
+      "raw_generation_source_retained": false
+    },
+    {
+      "id": "review",
+      "kind": "row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/review.md",
+      "retry_prompt_file": "prompts/row-retries/review.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/review.png",
+          "role": "layout guide for 6 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/feng/idle.png",
+          "role": "approved Liang Wenfeng identity, strong-build, and neutral-pose reference"
+        },
+        {
+          "path": "jobs/idle/decoded/idle.png",
+          "role": "completed Feng v2 idle row for exact scale, baseline, face, glasses, shoulder width, and body proportions"
+        }
+      ],
+      "output_path": "jobs/review/decoded/review.png",
+      "source_path": "jobs/review/decoded/review.png",
+      "completed_at": "2026-09-12T16:23:34Z",
+      "completion_method": "one coherent grounded six-frame review generation; deterministic checkerboard removal; hard-alpha extraction; one shared nearest-neighbor scale; lower-body registration; fixed head silhouette and shoulder geometry; exact Frame-6 return",
+      "generation_source_sha256": "5eb1141e081b5011f4c3803260a91722111a3bcf2ad5b0953f5154d41b5335b5",
+      "output_sha256": "29f13c5c3b0f9da6bb368c2fbed4fb72d0a8ff5529a8b691b7177fd3ca790c2d",
+      "metadata": {
+        "width": 1152,
+        "height": 208,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "imagegen_used": true,
+      "imagegen_cli_used": false,
+      "qa_report": "jobs/review/qa/validation.json",
+      "motion_preview": "jobs/review/qa/review-preview.gif",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "state requires its own generated animation semantics"
+      },
+      "mirror_policy": {},
+      "direct_transparent_output": false,
+      "background_extraction_method": "deterministic grayscale checkerboard segmentation with hard binary alpha and hidden RGB clearing",
+      "raw_generation_source_retained": false
+    },
+    {
+      "id": "look-cardinals",
+      "kind": "look-cardinal-strip",
+      "status": "complete",
+      "prompt_file": "prompts/look-cardinals.md",
+      "repair_prompt_files": {
+        "000": "prompts/look-anchor-repairs/000.md",
+        "090": "prompts/look-anchor-repairs/090.md",
+        "180": "prompts/look-anchor-repairs/180.md",
+        "270": "prompts/look-anchor-repairs/270.md"
+      },
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/look-cardinals.png",
+          "role": "layout guide for four cardinal slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/feng/idle.png",
+          "role": "approved Liang Wenfeng identity, face, strong-build, and neutral-pose reference"
+        },
+        {
+          "path": "jobs/idle/decoded/idle.png",
+          "role": "completed Feng v2 idle row for exact scale, baseline, head size, shoulder width, and body registration"
+        }
+      ],
+      "output_path": "jobs/look-cardinals/decoded/look-cardinals.png",
+      "source_path": "jobs/look-cardinals/decoded/look-cardinals.png",
+      "completed_at": "2026-09-12T17:08:28Z",
+      "completion_method": "one coherent grounded four-cardinal generation; deterministic checkerboard removal; hard binary alpha; one shared nearest-neighbor scale; semantic screen-coordinate ordering; y>=82 body pixel lock; shared one-pixel registration correction",
+      "generation_source_sha256": "cbc9d08070b2e3473f4e11b432357a19984fd39595ae4bcc3b528450c46cb2cd",
+      "output_sha256": "3f075333017b28a430f61d9ce231316f7ccd479b2123dd13e7d9eee7c3244372",
+      "metadata": {
+        "width": 768,
+        "height": 208,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "imagegen_used": true,
+      "imagegen_cli_used": false,
+      "qa_report": "jobs/look-cardinals/qa/validation.json",
+      "cardinal_anchor_report": "jobs/look-cardinals/qa/cardinal-anchors.json",
+      "extracted_output_paths": [
+        "jobs/look-cardinals/decoded/look-anchors/000.png",
+        "jobs/look-cardinals/decoded/look-anchors/090.png",
+        "jobs/look-cardinals/decoded/look-anchors/180.png",
+        "jobs/look-cardinals/decoded/look-anchors/270.png"
+      ],
+      "approved_strip_path": "jobs/look-cardinals/decoded/look-anchors-approved.png",
+      "depends_on": [
+        "idle",
+        "running-right",
+        "running-left",
+        "waving",
+        "jumping",
+        "failed",
+        "waiting",
+        "running",
+        "review"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "look_mechanics_file": "qa/look-mechanics.md",
+      "directions": [
+        "000",
+        "090",
+        "180",
+        "270"
+      ],
+      "packaging_eligible": true,
+      "parallelizable_after": [
+        "idle",
+        "running-right",
+        "running-left",
+        "waving",
+        "jumping",
+        "failed",
+        "waiting",
+        "running",
+        "review"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "cardinal directions require grounded pet-specific generation"
+      },
+      "direct_transparent_output": false,
+      "background_extraction_method": "deterministic grayscale checkerboard segmentation with hard binary alpha and hidden RGB clearing",
+      "semantic_order_verified": true,
+      "raw_generation_source_retained": false
+    },
+    {
+      "id": "look-row-9",
+      "kind": "look-row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/look-row-9.md",
+      "retry_prompt_file": "prompts/row-retries/look-row-9.md",
+      "input_images": [
+        {
+          "path": "references/reference-01.png",
+          "role": "pet reference"
+        },
+        {
+          "path": "references/layout-guides/look-row-9.png",
+          "role": "layout guide for 8 direction slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/feng/idle.png",
+          "role": "canonical approved Liang Wenfeng identity and proportions"
+        },
+        {
+          "path": "jobs/look-cardinals/decoded/look-anchors-approved.png",
+          "role": "approved cardinal reference strip in order 000 up, 090 screen-right, 180 down, 270 screen-left; interpolate intermediate directions evenly"
+        }
+      ],
+      "output_path": "jobs/look-row-9/decoded/look-row-9.png",
+      "source_path": "jobs/look-row-9/decoded/look-row-9.png",
+      "completed_at": "2026-09-13T08:22:30.037958Z",
+      "completion_method": "one coherent grounded eight-direction generation with a direction-gradient retry; deterministic checkerboard removal; one shared nearest-neighbor scale; exact approved 000/090 anchor lock; y>=82 approved body pixel lock; detached 1px extraction speck removal",
+      "generation_source_sha256": "0399da9e30d1899cbbf8083bd37d606bf4f47a440a9455232cab18b3f7b245b1",
+      "output_sha256": "746186e3161ad80736b04e22755631b714719d8f6916978f9f431f9bdb061a98",
+      "metadata": {
+        "width": 1536,
+        "height": 208,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "imagegen_used": true,
+      "imagegen_cli_used": false,
+      "qa_report": "jobs/look-row-9/qa/validation.json",
+      "depends_on": [
+        "look-cardinals"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "look_mechanics_file": "qa/look-mechanics.md",
+      "directions": [
+        "000",
+        "022.5",
+        "045",
+        "067.5",
+        "090",
+        "112.5",
+        "135",
+        "157.5"
+      ],
+      "parallelizable_after": [
+        "look-cardinals"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "look directions require grounded pet-specific generation"
+      },
+      "coherent_synthesis_required": true,
+      "individual_cell_packaging_allowed": false,
+      "packaging_eligible": true,
+      "direct_transparent_output": false,
+      "background_extraction_method": "deterministic grayscale checkerboard segmentation with hard binary alpha and hidden RGB clearing",
+      "semantic_order_verified": true,
+      "cardinal_anchor_exact_match": true,
+      "raw_generation_source_retained": false
+    },
+    {
+      "id": "look-row-10",
+      "kind": "look-row-strip",
+      "status": "complete",
+      "prompt_file": "prompts/rows/look-row-10.md",
+      "retry_prompt_file": "prompts/row-retries/look-row-10.md",
+      "input_images": [
+        {
+          "path": "references/layout-guides/look-row-10.png",
+          "role": "layout guide for 8 direction slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "assets/feng/idle.png",
+          "role": "canonical approved Liang Wenfeng identity and proportions"
+        },
+        {
+          "path": "jobs/look-cardinals/decoded/look-anchors-approved.png",
+          "role": "approved cardinal reference strip in order 000 up, 090 screen-right, 180 down, 270 screen-left; interpolate intermediate directions evenly"
+        },
+        {
+          "path": "jobs/look-row-9/decoded/look-row-9.png",
+          "role": "completed first half of the clockwise look loop for row 10 continuity"
+        }
+      ],
+      "output_path": "jobs/look-row-10/decoded/look-row-10.png",
+      "source_path": "jobs/look-row-10/decoded/look-row-10.png",
+      "completed_at": "2026-09-13T08:51:10.348111Z",
+      "completion_method": "one coherent grounded eight-direction generation; deterministic checkerboard removal; one shared nearest-neighbor scale; exact approved 180/270 anchor lock; y>=82 approved body pixel lock; detached 4px extraction speck removal; cross-row 337.5-to-000 continuity validation",
+      "generation_source_sha256": "d2522d1079ad6a660714325473f281e78a511c4bf60c322b889e097228b6e8fa",
+      "output_sha256": "b3e4912ce0f606ed492b5750f7d9d0a66627d7a4e2f92f509135bc4c2bcb4776",
+      "metadata": {
+        "width": 1536,
+        "height": 208,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "imagegen_used": true,
+      "imagegen_cli_used": false,
+      "qa_report": "jobs/look-row-10/qa/validation.json",
+      "depends_on": [
+        "look-cardinals",
+        "look-row-9"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png"
+      ],
+      "look_mechanics_file": "qa/look-mechanics.md",
+      "directions": [
+        "180",
+        "202.5",
+        "225",
+        "247.5",
+        "270",
+        "292.5",
+        "315",
+        "337.5"
+      ],
+      "parallelizable_after": [
+        "look-cardinals",
+        "look-row-9"
+      ],
+      "derivation_policy": {
+        "may_derive": false,
+        "reason": "look directions require grounded pet-specific generation"
+      },
+      "coherent_synthesis_required": true,
+      "individual_cell_packaging_allowed": false,
+      "packaging_eligible": true,
+      "direct_transparent_output": false,
+      "background_extraction_method": "deterministic grayscale checkerboard segmentation with hard binary alpha and hidden RGB clearing",
+      "semantic_order_verified": true,
+      "cardinal_anchor_exact_match": true,
+      "row9_boundary_continuity_verified": true,
+      "raw_generation_source_retained": false
+    }
+  ]
+}

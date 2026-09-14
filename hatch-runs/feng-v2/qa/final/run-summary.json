@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "ready_for_device_test": true,
+  "sprite_version_number": 2,
+  "pet_id": "liang-no-henshin",
+  "spritesheet": "assets/builds/feng/spritesheet.webp",
+  "spritesheet_sha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+  "atlas_size": [1536, 2288],
+  "cell_size": [192, 208],
+  "validation": "assets/builds/feng/validation.json",
+  "assembly": "hatch-runs/feng-v2/qa/final/assembly.json",
+  "contact_sheet": "hatch-runs/feng-v2/qa/final/contact-sheet.png",
+  "motion_previews": "hatch-runs/feng-v2/qa/final/previews",
+  "direction_sheet": "hatch-runs/feng-v2/qa/final/look-directions.png",
+  "direction_semantics": "hatch-runs/feng-v2/qa/final/direction-semantics.json",
+  "look_continuity": "hatch-runs/feng-v2/qa/final/look-continuity.json",
+  "visual_qa": "hatch-runs/feng-v2/qa/final/visual-qa.json",
+  "despill_performed": false,
+  "imagegen_used": false,
+  "installed_as_active_pet": false
+}

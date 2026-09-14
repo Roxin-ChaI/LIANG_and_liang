@@ -1,0 +1,256 @@
+{
+  "ok": true,
+  "job": "feng-v2/review",
+  "status": "complete",
+  "output": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/review/decoded/review.png",
+  "sha256": "29f13c5c3b0f9da6bb368c2fbed4fb72d0a8ff5529a8b691b7177fd3ca790c2d",
+  "dimensions": [
+    1152,
+    208
+  ],
+  "mode": "RGBA",
+  "frame_count": 6,
+  "cell_size": [
+    192,
+    208
+  ],
+  "source_generation_sha256": "5eb1141e081b5011f4c3803260a91722111a3bcf2ad5b0953f5154d41b5335b5",
+  "imagegen_used": true,
+  "imagegen_cli_used": false,
+  "normalization": {
+    "background": "deterministic checkerboard removal to transparent alpha",
+    "resize": "single shared scale with nearest-neighbor only",
+    "registration": "baseline y=203 and lower-body center x≈96",
+    "geometry_lock": "Frame 1 body geometry outside fixed head/action zones; Frame 6 exact Frame 1"
+  },
+  "checks": {
+    "dimensions_1152x208": true,
+    "mode_rgba": true,
+    "six_cells": true,
+    "all_cells_nonempty": true,
+    "baseline_stable_y203": true,
+    "body_center_stable_near_96": true,
+    "height_stable_200": true,
+    "head_bbox_size_identical": true,
+    "shoulder_width_identical": true,
+    "frame_6_equals_frame_1": true,
+    "binary_alpha": true,
+    "transparent_rgb_cleared": true,
+    "single_connected_subject_per_frame": true,
+    "no_isolated_pixels": true,
+    "safe_padding_no_clipping": true,
+    "no_hidden_or_green_background": true,
+    "hard_edge_nearest_neighbor_pipeline": true,
+    "visual_identity_and_review_semantics": "PASS",
+    "one_shot_return_to_idle": "PASS"
+  },
+  "alpha_values": [
+    0,
+    255
+  ],
+  "hidden_transparent_rgb_pixels": 0,
+  "green_key_like_pixels": 0,
+  "frames": [
+    {
+      "index": 1,
+      "nonempty": true,
+      "bbox": [
+        39,
+        4,
+        145,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "lower_body_center_x": 95.977,
+      "head_bbox": [
+        55,
+        4,
+        126,
+        69
+      ],
+      "head_size": [
+        71,
+        65
+      ],
+      "shoulder_width": 102,
+      "connected_components": 1,
+      "largest_component_pixels": 12612,
+      "isolated_pixels": 0,
+      "margins": {
+        "left": 39,
+        "right": 47,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 2,
+      "nonempty": true,
+      "bbox": [
+        39,
+        4,
+        145,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "lower_body_center_x": 95.961,
+      "head_bbox": [
+        55,
+        4,
+        126,
+        69
+      ],
+      "head_size": [
+        71,
+        65
+      ],
+      "shoulder_width": 102,
+      "connected_components": 1,
+      "largest_component_pixels": 12626,
+      "isolated_pixels": 0,
+      "margins": {
+        "left": 39,
+        "right": 47,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 3,
+      "nonempty": true,
+      "bbox": [
+        39,
+        4,
+        145,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "lower_body_center_x": 95.969,
+      "head_bbox": [
+        55,
+        4,
+        126,
+        69
+      ],
+      "head_size": [
+        71,
+        65
+      ],
+      "shoulder_width": 102,
+      "connected_components": 1,
+      "largest_component_pixels": 12633,
+      "isolated_pixels": 0,
+      "margins": {
+        "left": 39,
+        "right": 47,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 4,
+      "nonempty": true,
+      "bbox": [
+        38,
+        4,
+        145,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "lower_body_center_x": 95.953,
+      "head_bbox": [
+        55,
+        4,
+        126,
+        69
+      ],
+      "head_size": [
+        71,
+        65
+      ],
+      "shoulder_width": 102,
+      "connected_components": 1,
+      "largest_component_pixels": 12648,
+      "isolated_pixels": 0,
+      "margins": {
+        "left": 38,
+        "right": 47,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 5,
+      "nonempty": true,
+      "bbox": [
+        39,
+        4,
+        145,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "lower_body_center_x": 95.977,
+      "head_bbox": [
+        55,
+        4,
+        126,
+        69
+      ],
+      "head_size": [
+        71,
+        65
+      ],
+      "shoulder_width": 102,
+      "connected_components": 1,
+      "largest_component_pixels": 12647,
+      "isolated_pixels": 0,
+      "margins": {
+        "left": 39,
+        "right": 47,
+        "top": 4,
+        "bottom": 4
+      }
+    },
+    {
+      "index": 6,
+      "nonempty": true,
+      "bbox": [
+        39,
+        4,
+        145,
+        204
+      ],
+      "height": 200,
+      "baseline_y": 203,
+      "lower_body_center_x": 95.977,
+      "head_bbox": [
+        55,
+        4,
+        126,
+        69
+      ],
+      "head_size": [
+        71,
+        65
+      ],
+      "shoulder_width": 102,
+      "connected_components": 1,
+      "largest_component_pixels": 12612,
+      "isolated_pixels": 0,
+      "margins": {
+        "left": 39,
+        "right": 47,
+        "top": 4,
+        "bottom": 4
+      }
+    }
+  ],
+  "inspection_report": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/review/qa/inspection.json",
+  "motion_preview": "/Users/mac/Projects/liang-no-henshin/hatch-runs/feng-v2/jobs/review/qa/review-preview.gif",
+  "visual_qa_note": "Six-frame restrained review one-shot preserves Liang Wenfeng identity and fixed body geometry; gaze and one hand move subtly, then Frame 6 returns exactly to Frame 1."
+}
