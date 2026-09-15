@@ -1,0 +1,186 @@
+{
+  "gu_to_feng": [
+    {
+      "frame": 1,
+      "normalizedT": 0.0,
+      "scale": 0.1890359168241966,
+      "resizedWidth": 237,
+      "resizedHeight": 237,
+      "effectiveScale": 0.18899521531100477,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 2,
+      "normalizedT": 0.1111111111111111,
+      "scale": 0.18820288283842207,
+      "resizedWidth": 236,
+      "resizedHeight": 236,
+      "effectiveScale": 0.18819776714513556,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 3,
+      "normalizedT": 0.2222222222222222,
+      "scale": 0.18597035175654636,
+      "resizedWidth": 233,
+      "resizedHeight": 233,
+      "effectiveScale": 0.18580542264752792,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 4,
+      "normalizedT": 0.3333333333333333,
+      "scale": 0.1827381798917412,
+      "resizedWidth": 229,
+      "resizedHeight": 229,
+      "effectiveScale": 0.18261562998405104,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 5,
+      "normalizedT": 0.4444444444444444,
+      "scale": 0.1789062235571784,
+      "resizedWidth": 224,
+      "resizedHeight": 224,
+      "effectiveScale": 0.17862838915470494,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 6,
+      "normalizedT": 0.5555555555555556,
+      "scale": 0.17487433906602973,
+      "resizedWidth": 219,
+      "resizedHeight": 219,
+      "effectiveScale": 0.17464114832535885,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 7,
+      "normalizedT": 0.6666666666666666,
+      "scale": 0.1710423827314669,
+      "resizedWidth": 214,
+      "resizedHeight": 214,
+      "effectiveScale": 0.17065390749601275,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 8,
+      "normalizedT": 0.7777777777777778,
+      "scale": 0.16781021086666176,
+      "resizedWidth": 210,
+      "resizedHeight": 210,
+      "effectiveScale": 0.1674641148325359,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 9,
+      "normalizedT": 0.8888888888888888,
+      "scale": 0.16557767978478605,
+      "resizedWidth": 208,
+      "resizedHeight": 208,
+      "effectiveScale": 0.16586921850079744,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 10,
+      "normalizedT": 1.0,
+      "scale": 0.16474464579901152,
+      "resizedWidth": 207,
+      "resizedHeight": 207,
+      "effectiveScale": 0.16507177033492823,
+      "targetCenterX": 96,
+      "baselineY": 203
+    }
+  ],
+  "feng_to_gu": [
+    {
+      "frame": 1,
+      "normalizedT": 0.0,
+      "scale": 0.16474464579901152,
+      "resizedWidth": 207,
+      "resizedHeight": 207,
+      "effectiveScale": 0.16507177033492823,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 2,
+      "normalizedT": 0.14285714285714285,
+      "scale": 0.16575491240599613,
+      "resizedWidth": 208,
+      "resizedHeight": 208,
+      "effectiveScale": 0.16586921850079744,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 3,
+      "normalizedT": 0.2857142857142857,
+      "scale": 0.1683603368134828,
+      "resizedWidth": 211,
+      "resizedHeight": 211,
+      "effectiveScale": 0.1682615629984051,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 4,
+      "normalizedT": 0.42857142857142855,
+      "scale": 0.17192285590127068,
+      "resizedWidth": 216,
+      "resizedHeight": 216,
+      "effectiveScale": 0.1722488038277512,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 5,
+      "normalizedT": 0.5714285714285714,
+      "scale": 0.17580440654915896,
+      "resizedWidth": 220,
+      "resizedHeight": 220,
+      "effectiveScale": 0.17543859649122806,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 6,
+      "normalizedT": 0.7142857142857143,
+      "scale": 0.17936692563694684,
+      "resizedWidth": 225,
+      "resizedHeight": 225,
+      "effectiveScale": 0.17942583732057416,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 7,
+      "normalizedT": 0.8571428571428571,
+      "scale": 0.18197235004443352,
+      "resizedWidth": 228,
+      "resizedHeight": 228,
+      "effectiveScale": 0.18181818181818182,
+      "targetCenterX": 96,
+      "baselineY": 203
+    },
+    {
+      "frame": 8,
+      "normalizedT": 1.0,
+      "scale": 0.18298261665141813,
+      "resizedWidth": 229,
+      "resizedHeight": 229,
+      "effectiveScale": 0.18261562998405104,
+      "targetCenterX": 96,
+      "baselineY": 203
+    }
+  ]
+}

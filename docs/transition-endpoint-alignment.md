@@ -89,3 +89,58 @@ guide, green is y=203, red is full alpha, and amber is the character proxy.
 These are analysis media, not replacement assets. `ENDPOINT_ALIGNMENT_BLOCKED`
 is a geometry conclusion; visual review remains required, and the current
 Phase 3A runtime derivatives must not be treated as visually seamless.
+
+## Phase 3C — smoothstep schedule and effect-fit preflight
+
+Phase 3C permits per-frame isotropic scaling, but only through one fixed
+smoothstep schedule. `tools/derive_transition_scale_schedule.py` rereads the
+formal idle body heights (both 200 px) and approved source endpoint dark-body
+heights (1058→1214 and 1214→1093 px); no endpoint scale is hard-coded. The
+generated diagnostic fixture is
+`runtime-patch/fixtures/transition-scale-schedule.json`. Each entry records
+frame index, normalized `t`, floating scale, integer nearest-neighbor resize
+side, effective raster scale, x=96 body-center target, and y=203 body baseline.
+
+| Direction | Floating smoothstep scales, in frame order | Integer resize sides |
+| --- | --- | --- |
+| Gu→Feng | 0.189036, 0.188203, 0.185970, 0.182738, 0.178906, 0.174874, 0.171042, 0.167810, 0.165578, 0.164745 | 237, 236, 233, 229, 224, 219, 214, 210, 208, 207 |
+| Feng→Gu | 0.164745, 0.165755, 0.168360, 0.171923, 0.175804, 0.179367, 0.181972, 0.182983 | 207, 208, 211, 216, 220, 225, 228, 229 |
+
+Both sequences are monotonic. Nearest-neighbor preflight finds rasterized
+endpoint body heights `200→200` (Gu→Feng) and `200→199` (Feng→Gu). All
+proposed body baselines are y=203 and integer body centers are x=95.5–96.5.
+This matches the requested transition-cell target but not the approved Gu
+idle alpha-bbox center x=88; a further 8 px entry/exit registration question
+would remain even if effects fit. The formal atlas is not shifted.
+The largest adjacent effective-scale changes are about 2.3% and 2.4%, below
+the 10% limit. Gu→Feng has one 13 px adjacent body-height change driven by
+the original pose (frames 7→8), recorded as `POSE_DRIVEN_DELTA`; Feng→Gu's
+maximum is 6 px.
+
+However, the same preflight proves `IMPORTANT_ALPHA_CLIPPED` for approved
+Gu→Feng frames 03–08 after character-centered baseline placement. The
+high-alpha content (`alpha ≥128`) extends above the 192×208 cell at those
+scheduled scales:
+
+| Gu→Feng frame | Predicted important-content top y | Bottom exclusive |
+| ---: | ---: | ---: |
+| 03 | −16 | 204 |
+| 04 | −16 | 208 |
+| 05 | −16 | 204 |
+| 06 | −11 | 204 |
+| 07 | −8 | 204 |
+| 08 | −2 | 204 |
+
+Frame 04's opaque effect bbox is 224 px tall after scheduled rasterization,
+larger than the entire 208 px cell. No integer translation can keep both
+important effect and grounded body inside the cell. This is not faint alpha=1
+fringe: the preflight uses only pixels with alpha at least 128. It therefore
+triggers the Phase 3C hard stop before overwriting any formal runtime asset.
+The complete row-by-row evidence is in
+`hatch-runs/transition-qa/schedule/preflight.json`.
+
+`SCHEDULE_DERIVATION_PASS`, but `STRUCTURAL_ENDPOINT_CHECK = BLOCKED` for
+runtime application. Commit 1 freezes the diagnostic schedule and preflight;
+the planned regeneration and scaled-sequence QA commits must not run while
+important effects would be cropped. The existing Phase 3A runtime PNGs and
+SHA manifest remain unchanged. `VISUAL_REVIEW_REQUIRED = true`.
