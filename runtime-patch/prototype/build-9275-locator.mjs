@@ -11,6 +11,7 @@ import fs from "node:fs";
 import fsp from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const APP = "/Applications/ChatGPT.app";
 const PLIST = path.join(APP, "Contents/Info.plist");
@@ -263,7 +264,15 @@ async function run() {
   console.log("verdict=BUILD_9275_RECON_LOCATOR_PASS");
 }
 
-run().catch(error => {
-  console.error(`verdict=BLOCKED error=${error.message}`);
-  process.exitCode = 1;
-});
+export {
+  EXPECTED, CHUNKS, MAIN_RESULT, SOURCE, STATE_TABLE, COMPLETION, OWNER,
+  FORM_COMMIT, SIBLING, ROOT_CLIP, sha, shaFile, count, one, appFingerprint,
+  extractCurrentChunks, gate, locate,
+};
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  run().catch(error => {
+    console.error(`verdict=BLOCKED error=${error.message}`);
+    process.exitCode = 1;
+  });
+}
