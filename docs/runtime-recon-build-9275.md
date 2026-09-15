@@ -208,3 +208,62 @@ patch the real app.
 | G. Clipping-safe boundary | overlay chunk | root `relative h-screen w-screen overflow-hidden` + `data-avatar-overlay-content-frame` + layout wrapper just outside root | LIKELY: wrapper-level sibling avoids DOM root clipping; requires viewport-edge review. |
 | H. Form commit | overlay chunk | selected-avatar owner + source-converter/mascot creation dependency group | LIKELY: commit `{form,source,playbackEpoch}` together after tokened completion, then remove transition sibling. |
 | Local control bridge | `.vite/build/preload.js` and main service chunk | existing typed `contextBridge` renderer→main invoke + registered custom-avatar service | LIKELY: a dedicated validated command/event could be added in a later threat-modelled phase; private `ipc.sock` is excluded. |
+
+## Locator Dry Run
+
+`runtime-patch/prototype/build-9275-locator.mjs` gates on the installed
+Build 9275 version, build number, ASAR SHA256, and the seven archived Pet
+chunk SHA256 values before searching. It extracts current packed chunks in
+memory, then searches each patch site by a full local shape plus nearby
+Pet-specific structural anchors. The eight matches below were each unique
+in the current Build 9275 archive. These are **CONFIRMED locator results**,
+not a running-app transition test.
+
+| Patch locator | Matches | Context SHA256 |
+| --- | ---: | --- |
+| Dual-form custom-avatar result | 1 | `504f1f1ca34fd3954132ecb76aec681799b964324e13e7e18d55460ba6a2b87a` |
+| Hot source switch | 1 | `9ce747a5b0835eaebf5f69d417ff83d9e07376efe34897b045be8c9db26651a3` |
+| One-shot frame descriptor | 1 | `a743b8aa0c40a2a3b515d476cef6b6e2032b9bafcacd92be39330e2dcb7a22af` |
+| Completion/timing | 1 | `c0c52f001cc7822e9c3618ec0268398d0ceb34f2ddd60c17c4f9e837cb07329b` |
+| Transition owner | 1 | `aefa4fd3c2076837a9a84cbe425719846510910551b875cce9cb613f66b81c3b` |
+| Atomic form-commit owner | 1 | `3c5f74b001f701c324cb0ef0c19b2e7ffd567886fd3e3455405f789326370029` |
+| Oversized transition sibling | 1 | `75d612631bc47f8eb5f89ec9ffe6135b86f4f8514119020049bb5aa81447d75a` |
+| Clipping-safe structural boundary | 1 | `ed2c5d7bccb5c5d6918e6fbcfc029f441061f31f106a963545c9ec26d20907cb` |
+
+## Clipping Recon
+
+**CONFIRMED:** the normal mascot's absolute box and
+`data-avatar-overlay-hit-region="mascot"` each have one structural match and
+remain inside the clipped overlay `<main>`. That `<main>` uses
+`overflow-hidden`. The layout wrapper's one render of the clipped root is
+outside the root component. A transition-only sibling at that wrapper
+render site therefore does not inherit the root's DOM clipping and can
+preserve the normal mascot hitbox. The dry-run labels this structural site
+`CLIPPING_SAFE_INSERTION_FOUND`. **LIKELY**, not proven by a live renderer:
+an absolute, pointer-events-none sibling there will display the oversized
+transition within the overlay viewport. Native window-edge cropping remains
+**UNKNOWN** until Phase 3D visual testing.
+
+## Temporary Patch, Original Integrity, and Cleanup
+
+The locator created one OS temporary directory, copied the current chunks
+there, inserted a comment marker exactly once immediately before the layout
+wrapper's normal root render in a temporary overlay copy, and ran
+`node --check` on that temporary file. Syntax was **PASS**. Removing the
+marker restored the original bytes exactly, proving the normal branch was
+not changed by the dry-run. The installed ASAR SHA256, size, mode, mtime,
+version/build, and archived key chunk hashes matched their pre-run values
+afterward. No real App, `.asar`, chunk, signature, or Codex configuration was
+modified. The exact temporary directory was removed; cleanup was **PASS**.
+The installed App's read-only `codesign --verify --deep --strict` result is
+an invalid-signature warning, unchanged from the recon. No signing action
+was taken.
+
+## Phase 3D Retry Readiness
+
+**READY_TO_RETRY_PHASE_3D_RUNTIME_POC** applies to the Build 9275
+fingerprint-gated locator and temporary-copy syntax/structure only. The
+Phase 3D runtime PoC must still verify live one-shot completion, native
+form commit, hit-region preservation, and oversized-frame viewport edges.
+No app patch is installed by Phase 3E, and the signature warning must be
+handled explicitly before any future signed-app deployment plan.
