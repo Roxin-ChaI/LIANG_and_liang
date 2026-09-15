@@ -70,3 +70,141 @@ are not yet patch locators:
 The numeric strings `1536` and `2288` occur widely and are never used alone
 as Pet anchors. Generic state words `waiting`, `running`, `review`, `failed`
 also have many non-Pet occurrences.
+
+## Current Pet Call Chains
+
+The following are **CONFIRMED** in the current archived chunks, not inferred
+from the old hashed renderer names.
+
+### Selected custom Pet loading
+
+```text
+selected-avatar-id (renderer setting)
+  → overlay selected-avatar hook (`kd`-shaped custom: branch)
+  → core by-ID key ["custom-avatars", "by-id", id]
+  → renderer service customAvatars.loadAvatar(id)
+  → main service delegation
+  → `.vite/build/src-CCXHtyvY.js` Pet metadata loader
+  → pet.json + bounded relative spritesheetPath + image bytes
+  → v1/v2 dimensions check + base64 data URL
+  → core avatar option → source converter → overlay mascot
+  → mascot wrapper → core background-image renderer
+```
+
+The main service wrapper for `loadAvatar` has one structural instance and
+delegates to the currently archived loader. That loader reads `pet.json`,
+parses the native manifest, checks the spritesheet's type and exact
+`1536×1872` (v1) or `1536×2288` (v2) dimensions, then returns
+`spritesheetDataUrl`. The source converter yields the native
+`{petId,spriteRowCount,spritesheetUrl}` shape; the core visual sets the CSS
+background image. Native `pet.json` and the one-Pet-ID contract are intact.
+
+### Settings > Pets > Refresh
+
+The current Pets Settings route's `settings.pets.refresh` control invokes
+`onRefreshCustomAvatars`, whose handler invalidates three exported query
+prefixes: `['custom-avatars']`, `['cloud-pets','list']`, and
+`['cloud-pets','selection']`. Prefix invalidation includes the active local
+custom by-ID query. The current by-ID query has infinite stale time, no
+window-focus refetch, no retry, and `gcTime:0`, so merely changing a file on
+disk does not change the renderer data URL. The active refetch crosses the
+existing renderer→main service IPC, re-reads the manifest/spritesheet, and
+delivers a fresh `spritesheetDataUrl`; overlay source recomputation is the
+point where the new atlas takes effect. **CONFIRMED**: this is query-driven,
+not a renderer-owned direct filesystem reread. **UNKNOWN**: unrelated
+filesystem observers outside the inspected Pet chain.
+
+### Animation and interaction
+
+The v2 table remains 1536×2288, 8×11 at 192×208, with frame counts
+`[6,8,8,4,5,8,6,6,6,8,8]`. The nine named states are **CONFIRMED** in the
+current core frame descriptor:
+
+| State | Row | Frames | One pass (ms) |
+| --- | ---: | ---: | ---: |
+| idle | 0 | 6 | 1100; slow idle 6600 |
+| running-right | 1 | 8 | 1060 |
+| running-left | 2 | 8 | 1060 |
+| waving | 3 | 4 | 700 |
+| jumping | 4 | 5 | 840 |
+| failed | 5 | 8 | 1220 |
+| waiting | 6 | 6 | 1010 |
+| running | 7 | 6 | 820 |
+| review | 8 | 6 | 1030 |
+
+Idle loops. Each non-idle named row plays three times and then loops the
+six-times-slow idle descriptor; this does not mean its notification has
+ceased. Reduced motion holds the first frame. The core timer uses CSS
+background-position and clears its timeout on renderer dependency changes.
+V2 look angles remain 16 directions at 22.5°: 0–7 row 9, 8–15 row 10.
+
+The mascot wrapper's pointer-enter/leave state switches `jumping` and back
+to the underlying state. Overlay drag supplies `running-right` or
+`running-left` after ±4 screen-pixel horizontal movement and clears that
+transient on release/cancel. The overlay's first-awake notification maps to
+`waving` and expires after eight seconds; it is remembered per avatar ID.
+Loading notification maps to `running`; warning to `waiting`; danger to
+`failed`; success to `review`; info/no notification to `idle`.
+
+## Renderer Hierarchy and Clipping
+
+The current overlay owner builds the mascot using one `source` converter
+call and hands the visual to the mascot-button chunk. The inspected chain is:
+
+```text
+overlay selected avatar → overlay frame owner
+  → absolute draggable mascot box (position/width/height, pointer handlers)
+  → data-avatar-overlay-hit-region="mascot" (h-full w-full)
+  → relative size-full presentation wrapper
+  → pet fade container (absolute inset-0)
+  → mascot button (pointer enter/leave)
+  → core 192×208 background-image visual
+```
+
+The root `<main>` of the overlay frame has `relative h-screen w-screen`
+and `overflow-hidden`; it encloses the normal mascot subtree. This is a
+**CONFIRMED DOM clipping obstacle** for an oversized sibling inside the
+existing Pet fade container. The normal drag hitbox is the absolute mascot
+box and marked hit-region; expanding either would change interaction.
+
+The layout wrapper immediately above that root returns the root component
+as its only child. A transition-only visual sibling at that wrapper level,
+*outside* the clipping `<main>`, is a **LIKELY clipping-safe structural
+candidate** without permanently changing Desktop overlay overflow or the
+mascot drag box. It must be absolute, pointer-events:none, and use the frozen
+canvas offsets. The native overlay window/viewport still inherently crops
+pixels beyond the physical window edge; Phase 3D visual QA must test edge
+placements before claiming full presentation safety.
+
+## Build 8881 → 9275 Delta
+
+| Area | Classification | Measured observation |
+| --- | --- | --- |
+| Main custom-avatar wrapper | UNCHANGED_SEMANTICS | Archived filename and SHA are equal; current service delegation has one match. |
+| Custom loader | CHANGED_STRUCTURE | Current loader/support chunk is `.vite/build/src-CCXHtyvY.js`; native manifest/atlas validation semantics remain. |
+| Core, overlay, mascot, Pets Settings | CHANGED_STRUCTURE | Current filenames and SHA256 values differ from Build 8881 records; old hashed names are absent. |
+| Local/cloud Pet query keys | UNCHANGED_SEMANTICS | Same three Refresh prefixes and `custom` by-ID key/policy were found. |
+| Nine-state table/timing and 16 look rows | UNCHANGED_SEMANTICS | Current literals and completion branch match the documented runtime semantics. |
+| Renderer hierarchy/clipping | UNKNOWN delta | Current main root clip and wrapper chain are confirmed; prior document did not establish an equivalent clipping-safe sibling boundary. |
+| Preload/main IPC | UNKNOWN delta | Current preload still exposes contextBridge/IPC; prior exact preload hash and channel-layout comparison were not established. |
+
+Minified symbol identities are current-build observations only. No old symbol
+is used as a locator unless the current structural context is revalidated.
+
+## Build 9275 Patch-Point Candidates
+
+Every candidate below is subject to the Build 9275 fingerprint gate and
+composite-anchor exact-one locator test. This is **not** authorization to
+patch the real app.
+
+| Point | Current chunk | Structural anchor / matching strategy | Confidence and reason |
+| --- | --- | --- | --- |
+| A. Dual-form load | `.vite/build/main-DaMR-wdT.js`, delegated loader `.vite/build/src-CCXHtyvY.js` | `customAvatars` service registration + one `loadAvatar` delegation + native `spritesheetDataUrl`; loader has `pet.json`/`spritesheetPath`/v2 dimension validation | LIKELY: retain native result and attach two separately validated form URLs once. |
+| B. Hot source switch | `webview/assets/avatar-overlay-native-page-efa96d74af15.js` | selected custom hook + native source converter import + unique `source:Kr(c)` call within mascot creation | LIKELY: choose one already-loaded atlas URL before normal mascot; leave Pet ID/state rows unchanged. |
+| C. One-shot descriptor | `webview/assets/app-initial-4d7ea7f81c2d.js` | v1/v2 layout + complete nine-state row map + out-of-range warning adjacent to descriptor generator | LIKELY: keep the native map and add a separate trusted arbitrary-frame descriptor, not another named state. |
+| D. Completion/timing | same core chunk | `loopStartIndex` descriptor + frame-timeout effect + Pet data attributes | LIKELY: a tokened one-shot completion hook belongs at final timer boundary, without changing native finite/idle behavior. |
+| E. Transition owner | overlay chunk | selected-avatar hook → keyed owner component → mascot state/source props | LIKELY: overlay owner can prioritize transition over drag/hover/task, preserving latest underlying state. |
+| F. Oversized sibling | overlay chunk | layout wrapper's sole root-component render, plus mascot marked hit-region and normal `source` call | LIKELY: add transition-only absolute sibling outside normal draggable box. |
+| G. Clipping-safe boundary | overlay chunk | root `relative h-screen w-screen overflow-hidden` + `data-avatar-overlay-content-frame` + layout wrapper just outside root | LIKELY: wrapper-level sibling avoids DOM root clipping; requires viewport-edge review. |
+| H. Form commit | overlay chunk | selected-avatar owner + source-converter/mascot creation dependency group | LIKELY: commit `{form,source,playbackEpoch}` together after tokened completion, then remove transition sibling. |
+| Local control bridge | `.vite/build/preload.js` and main service chunk | existing typed `contextBridge` renderer→main invoke + registered custom-avatar service | LIKELY: a dedicated validated command/event could be added in a later threat-modelled phase; private `ipc.sock` is excluded. |
