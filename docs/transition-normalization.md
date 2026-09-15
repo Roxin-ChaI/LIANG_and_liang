@@ -29,6 +29,7 @@ remain translucent; normalization does not introduce new interpolation.
 | Direction | Frames | Source | Union bbox | Runtime | Uniform scale | Baseline |
 | --- | ---: | --- | --- | --- | ---: | ---: |
 | Gu→Feng | 10 | 1254×1254 RGBA | (0, 0, 1240, 1254) | 192×208 RGBA | 188/1254 | 203 |
+| Feng→Gu | 8 | 1254×1254 RGBA | (0, 9, 1218, 1254) | 192×208 RGBA | 188/1254 | 203 |
 
 ## QA disposition
 
@@ -38,6 +39,11 @@ to the formal atlas entry frame by the permitted crop/one-scale/translation
 operations alone. This is an endpoint visual continuity warning, not permission
 to repaint or alter approved source art. Phase 3 must review the runtime
 one-shot rendering visually before adopting these derivatives.
+
+The normalized Gu→Feng first frame's alpha height is 159 px versus 200 px
+for the formal Gu idle entry. The normalized Feng→Gu final frame's alpha
+height is 169 px versus 200 px for the formal Gu idle entry. Those are
+material visual jumps; uniform scaling must not be broken to hide them.
 
 The source hashes are recorded in the existing `assets-frozen.sha256`; Phase 3A
 validator verifies all 18 original transition paths against that immutable
