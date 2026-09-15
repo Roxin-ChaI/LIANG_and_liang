@@ -1,0 +1,876 @@
+{
+  "effectCropCount": 0,
+  "layout": {
+    "feng_to_gu": {
+      "anchorX": 105,
+      "anchorY": 217,
+      "canvasHeight": 224,
+      "canvasWidth": 208,
+      "offsetLeft": -9,
+      "offsetTop": -14,
+      "petAnchorX": 96,
+      "petBaselineY": 203
+    },
+    "gu_to_feng": {
+      "anchorX": 112,
+      "anchorY": 221,
+      "canvasHeight": 240,
+      "canvasWidth": 224,
+      "offsetLeft": -16,
+      "offsetTop": -18,
+      "petAnchorX": 96,
+      "petBaselineY": 203
+    }
+  },
+  "maxEffectExtentFromPetBox": {
+    "bottom": 0,
+    "left": 16,
+    "right": 13,
+    "top": 18
+  },
+  "method": "frozen Phase 3C nearest-neighbor scale; dark-body integer anchor; full alpha union; 16px canvas rounding",
+  "normalPetBox": [
+    192,
+    208
+  ],
+  "petAnchor": [
+    96,
+    203
+  ],
+  "result": "PASS",
+  "rows": {
+    "feng_to_gu": [
+      {
+        "bodyBBoxOverlay": [
+          53,
+          18,
+          157,
+          218
+        ],
+        "bodyBBoxPet": [
+          44,
+          4,
+          148,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.0,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 8,
+          "right": 0,
+          "top": 0
+        },
+        "frame": 1,
+        "fullAlphaBBoxOverlay": [
+          1,
+          17,
+          171,
+          219
+        ],
+        "fullAlphaBBoxPet": [
+          -8,
+          3,
+          162,
+          205
+        ],
+        "importantAlphaBBoxPet": [
+          41,
+          4,
+          153,
+          204
+        ],
+        "resizedSide": 207,
+        "translationInPetCoordinates": [
+          -11,
+          -1
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          54,
+          19,
+          156,
+          218
+        ],
+        "bodyBBoxPet": [
+          45,
+          5,
+          147,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.0,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 9,
+          "right": 0,
+          "top": 0
+        },
+        "frame": 2,
+        "fullAlphaBBoxOverlay": [
+          0,
+          17,
+          181,
+          219
+        ],
+        "fullAlphaBBoxPet": [
+          -9,
+          3,
+          172,
+          205
+        ],
+        "importantAlphaBBoxPet": [
+          43,
+          5,
+          151,
+          204
+        ],
+        "resizedSide": 208,
+        "translationInPetCoordinates": [
+          -12,
+          -2
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          62,
+          19,
+          148,
+          218
+        ],
+        "bodyBBoxPet": [
+          53,
+          5,
+          139,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.0,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "frame": 3,
+        "fullAlphaBBoxOverlay": [
+          31,
+          15,
+          155,
+          218
+        ],
+        "fullAlphaBBoxPet": [
+          22,
+          1,
+          146,
+          204
+        ],
+        "importantAlphaBBoxPet": [
+          53,
+          1,
+          141,
+          204
+        ],
+        "resizedSide": 211,
+        "translationInPetCoordinates": [
+          -13,
+          -5
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          66,
+          23,
+          145,
+          218
+        ],
+        "bodyBBoxPet": [
+          57,
+          9,
+          136,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.5,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 5
+        },
+        "frame": 4,
+        "fullAlphaBBoxOverlay": [
+          59,
+          9,
+          168,
+          219
+        ],
+        "fullAlphaBBoxPet": [
+          50,
+          -5,
+          159,
+          205
+        ],
+        "importantAlphaBBoxPet": [
+          57,
+          6,
+          136,
+          204
+        ],
+        "resizedSide": 216,
+        "translationInPetCoordinates": [
+          -18,
+          -8
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          67,
+          17,
+          143,
+          218
+        ],
+        "bodyBBoxPet": [
+          58,
+          3,
+          134,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.0,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "frame": 5,
+        "fullAlphaBBoxOverlay": [
+          54,
+          16,
+          168,
+          218
+        ],
+        "fullAlphaBBoxPet": [
+          45,
+          2,
+          159,
+          204
+        ],
+        "importantAlphaBBoxPet": [
+          58,
+          3,
+          134,
+          204
+        ],
+        "resizedSide": 220,
+        "translationInPetCoordinates": [
+          -18,
+          -12
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          68,
+          18,
+          141,
+          218
+        ],
+        "bodyBBoxPet": [
+          59,
+          4,
+          132,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 95.5,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 1,
+          "right": 0,
+          "top": 6
+        },
+        "frame": 6,
+        "fullAlphaBBoxOverlay": [
+          8,
+          8,
+          163,
+          219
+        ],
+        "fullAlphaBBoxPet": [
+          -1,
+          -6,
+          154,
+          205
+        ],
+        "importantAlphaBBoxPet": [
+          59,
+          4,
+          132,
+          204
+        ],
+        "resizedSide": 225,
+        "translationInPetCoordinates": [
+          -18,
+          -14
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          67,
+          16,
+          143,
+          218
+        ],
+        "bodyBBoxPet": [
+          58,
+          2,
+          134,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.0,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 14
+        },
+        "frame": 7,
+        "fullAlphaBBoxOverlay": [
+          19,
+          0,
+          154,
+          219
+        ],
+        "fullAlphaBBoxPet": [
+          10,
+          -14,
+          145,
+          205
+        ],
+        "importantAlphaBBoxPet": [
+          58,
+          2,
+          139,
+          204
+        ],
+        "resizedSide": 228,
+        "translationInPetCoordinates": [
+          -19,
+          -18
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          71,
+          19,
+          138,
+          218
+        ],
+        "bodyBBoxPet": [
+          62,
+          5,
+          129,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 95.5,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 10
+        },
+        "frame": 8,
+        "fullAlphaBBoxOverlay": [
+          12,
+          4,
+          173,
+          219
+        ],
+        "fullAlphaBBoxPet": [
+          3,
+          -10,
+          164,
+          205
+        ],
+        "importantAlphaBBoxPet": [
+          62,
+          5,
+          129,
+          204
+        ],
+        "resizedSide": 229,
+        "translationInPetCoordinates": [
+          -16,
+          -13
+        ]
+      }
+    ],
+    "gu_to_feng": [
+      {
+        "bodyBBoxOverlay": [
+          77,
+          22,
+          147,
+          222
+        ],
+        "bodyBBoxPet": [
+          61,
+          4,
+          131,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.0,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "frame": 1,
+        "fullAlphaBBoxOverlay": [
+          76,
+          22,
+          164,
+          223
+        ],
+        "fullAlphaBBoxPet": [
+          60,
+          4,
+          148,
+          205
+        ],
+        "importantAlphaBBoxPet": [
+          61,
+          4,
+          131,
+          204
+        ],
+        "resizedSide": 237,
+        "translationInPetCoordinates": [
+          -18,
+          -20
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          77,
+          21,
+          148,
+          222
+        ],
+        "bodyBBoxPet": [
+          61,
+          3,
+          132,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.5,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 3
+        },
+        "frame": 2,
+        "fullAlphaBBoxOverlay": [
+          26,
+          15,
+          195,
+          222
+        ],
+        "fullAlphaBBoxPet": [
+          10,
+          -3,
+          179,
+          204
+        ],
+        "importantAlphaBBoxPet": [
+          61,
+          3,
+          132,
+          204
+        ],
+        "resizedSide": 236,
+        "translationInPetCoordinates": [
+          -20,
+          -14
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          74,
+          24,
+          149,
+          222
+        ],
+        "bodyBBoxPet": [
+          58,
+          6,
+          133,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 95.5,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 16,
+          "right": 13,
+          "top": 16
+        },
+        "frame": 3,
+        "fullAlphaBBoxOverlay": [
+          0,
+          2,
+          221,
+          223
+        ],
+        "fullAlphaBBoxPet": [
+          -16,
+          -16,
+          205,
+          205
+        ],
+        "importantAlphaBBoxPet": [
+          39,
+          -16,
+          148,
+          204
+        ],
+        "resizedSide": 233,
+        "translationInPetCoordinates": [
+          -24,
+          -20
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          57,
+          25,
+          167,
+          222
+        ],
+        "bodyBBoxPet": [
+          41,
+          7,
+          151,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.0,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 13,
+          "right": 9,
+          "top": 18
+        },
+        "frame": 4,
+        "fullAlphaBBoxOverlay": [
+          3,
+          0,
+          217,
+          226
+        ],
+        "fullAlphaBBoxPet": [
+          -13,
+          -18,
+          201,
+          208
+        ],
+        "importantAlphaBBoxPet": [
+          8,
+          -16,
+          190,
+          208
+        ],
+        "resizedSide": 229,
+        "translationInPetCoordinates": [
+          -20,
+          -18
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          64,
+          19,
+          161,
+          222
+        ],
+        "bodyBBoxPet": [
+          48,
+          1,
+          145,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.5,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 13,
+          "right": 6,
+          "top": 16
+        },
+        "frame": 5,
+        "fullAlphaBBoxOverlay": [
+          3,
+          2,
+          214,
+          223
+        ],
+        "fullAlphaBBoxPet": [
+          -13,
+          -16,
+          198,
+          205
+        ],
+        "importantAlphaBBoxPet": [
+          37,
+          -16,
+          157,
+          204
+        ],
+        "resizedSide": 224,
+        "translationInPetCoordinates": [
+          -16,
+          -16
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          65,
+          22,
+          159,
+          222
+        ],
+        "bodyBBoxPet": [
+          49,
+          4,
+          143,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.0,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 0,
+          "right": 2,
+          "top": 12
+        },
+        "frame": 6,
+        "fullAlphaBBoxOverlay": [
+          19,
+          6,
+          210,
+          222
+        ],
+        "fullAlphaBBoxPet": [
+          3,
+          -12,
+          194,
+          204
+        ],
+        "importantAlphaBBoxPet": [
+          41,
+          -11,
+          153,
+          204
+        ],
+        "resizedSide": 219,
+        "translationInPetCoordinates": [
+          -15,
+          -12
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          48,
+          18,
+          177,
+          222
+        ],
+        "bodyBBoxPet": [
+          32,
+          0,
+          161,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.5,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 4,
+          "right": 7,
+          "top": 8
+        },
+        "frame": 7,
+        "fullAlphaBBoxOverlay": [
+          12,
+          10,
+          215,
+          224
+        ],
+        "fullAlphaBBoxPet": [
+          -4,
+          -8,
+          199,
+          206
+        ],
+        "importantAlphaBBoxPet": [
+          31,
+          -8,
+          164,
+          204
+        ],
+        "resizedSide": 214,
+        "translationInPetCoordinates": [
+          -12,
+          -8
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          68,
+          31,
+          157,
+          222
+        ],
+        "bodyBBoxPet": [
+          52,
+          13,
+          141,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.5,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 0,
+          "right": 3,
+          "top": 3
+        },
+        "frame": 8,
+        "fullAlphaBBoxOverlay": [
+          22,
+          15,
+          211,
+          222
+        ],
+        "fullAlphaBBoxPet": [
+          6,
+          -3,
+          195,
+          204
+        ],
+        "importantAlphaBBoxPet": [
+          43,
+          -2,
+          150,
+          204
+        ],
+        "resizedSide": 210,
+        "translationInPetCoordinates": [
+          -10,
+          -3
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          61,
+          24,
+          163,
+          222
+        ],
+        "bodyBBoxPet": [
+          45,
+          6,
+          147,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.0,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 9,
+          "right": 0,
+          "top": 1
+        },
+        "frame": 9,
+        "fullAlphaBBoxOverlay": [
+          7,
+          17,
+          201,
+          222
+        ],
+        "fullAlphaBBoxPet": [
+          -9,
+          -1,
+          185,
+          204
+        ],
+        "importantAlphaBBoxPet": [
+          33,
+          1,
+          153,
+          204
+        ],
+        "resizedSide": 208,
+        "translationInPetCoordinates": [
+          -12,
+          -2
+        ]
+      },
+      {
+        "bodyBBoxOverlay": [
+          60,
+          22,
+          164,
+          222
+        ],
+        "bodyBBoxPet": [
+          44,
+          4,
+          148,
+          204
+        ],
+        "bodyBaselineYPet": 203,
+        "bodyCenterXPet": 96.0,
+        "effectExtentFromPetBox": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "frame": 10,
+        "fullAlphaBBoxOverlay": [
+          21,
+          21,
+          193,
+          223
+        ],
+        "fullAlphaBBoxPet": [
+          5,
+          3,
+          177,
+          205
+        ],
+        "importantAlphaBBoxPet": [
+          44,
+          4,
+          148,
+          204
+        ],
+        "resizedSide": 207,
+        "translationInPetCoordinates": [
+          -11,
+          -1
+        ]
+      }
+    ]
+  },
+  "violations": []
+}

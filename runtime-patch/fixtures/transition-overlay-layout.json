@@ -1,0 +1,22 @@
+{
+  "feng_to_gu": {
+    "anchorX": 105,
+    "anchorY": 217,
+    "canvasHeight": 224,
+    "canvasWidth": 208,
+    "offsetLeft": -9,
+    "offsetTop": -14,
+    "petAnchorX": 96,
+    "petBaselineY": 203
+  },
+  "gu_to_feng": {
+    "anchorX": 112,
+    "anchorY": 221,
+    "canvasHeight": 240,
+    "canvasWidth": 224,
+    "offsetLeft": -16,
+    "offsetTop": -18,
+    "petAnchorX": 96,
+    "petBaselineY": 203
+  }
+}
