@@ -1,0 +1,395 @@
+{
+  "body_bbox_confidence": "LIKELY: opaque dark extremal proxy; cyan effects excluded; comparison sheets require user visual review",
+  "manual_body_bbox_required": false,
+  "phase": "3B",
+  "qa": {
+    "contact_sheet": "/Users/mac/Projects/liang-no-henshin/hatch-runs/transition-qa/endpoints/contact-sheet.png",
+    "feng_to_gu": "/Users/mac/Projects/liang-no-henshin/hatch-runs/transition-qa/endpoints/feng-to-gu-endpoints.png",
+    "gu_to_feng": "/Users/mac/Projects/liang-no-henshin/hatch-runs/transition-qa/endpoints/gu-to-feng-endpoints.png"
+  },
+  "reason": "endpoint body-height scale intervals are disjoint in both directions",
+  "runtime_geometry": {
+    "feng_idle": {
+      "alpha": {
+        "baseline": 203,
+        "bbox": [
+          44,
+          4,
+          148,
+          204
+        ],
+        "center_x": 96.0,
+        "height": 200,
+        "top_y": 4,
+        "visible_character_height": 200,
+        "visible_character_width": 104,
+        "width": 104
+      },
+      "body": {
+        "baseline": 203,
+        "bbox": [
+          44,
+          4,
+          148,
+          204
+        ],
+        "center_x": 96.0,
+        "height": 200,
+        "top_y": 4,
+        "visible_character_height": 200,
+        "visible_character_width": 104,
+        "width": 104
+      }
+    },
+    "feng_to_gu_first": {
+      "alpha": {
+        "baseline": 203,
+        "bbox": [
+          24,
+          21,
+          168,
+          204
+        ],
+        "center_x": 96.0,
+        "height": 183,
+        "top_y": 21,
+        "visible_character_height": 183,
+        "visible_character_width": 144,
+        "width": 144
+      },
+      "body_dark_proxy": {
+        "baseline": 202,
+        "bbox": [
+          51,
+          21,
+          146,
+          203
+        ],
+        "center_x": 98.5,
+        "height": 182,
+        "top_y": 21,
+        "visible_character_height": 182,
+        "visible_character_width": 95,
+        "width": 95
+      }
+    },
+    "feng_to_gu_last": {
+      "alpha": {
+        "baseline": 203,
+        "bbox": [
+          38,
+          35,
+          155,
+          204
+        ],
+        "center_x": 96.5,
+        "height": 169,
+        "top_y": 35,
+        "visible_character_height": 169,
+        "visible_character_width": 117,
+        "width": 117
+      },
+      "body_dark_proxy": {
+        "baseline": 203,
+        "bbox": [
+          39,
+          40,
+          94,
+          204
+        ],
+        "center_x": 66.5,
+        "height": 164,
+        "top_y": 40,
+        "visible_character_height": 164,
+        "visible_character_width": 55,
+        "width": 55
+      }
+    },
+    "gu_idle": {
+      "alpha": {
+        "baseline": 203,
+        "bbox": [
+          54,
+          4,
+          122,
+          204
+        ],
+        "center_x": 88.0,
+        "height": 200,
+        "top_y": 4,
+        "visible_character_height": 200,
+        "visible_character_width": 68,
+        "width": 68
+      },
+      "body": {
+        "baseline": 203,
+        "bbox": [
+          54,
+          4,
+          122,
+          204
+        ],
+        "center_x": 88.0,
+        "height": 200,
+        "top_y": 4,
+        "visible_character_height": 200,
+        "visible_character_width": 68,
+        "width": 68
+      }
+    },
+    "gu_to_feng_first": {
+      "alpha": {
+        "baseline": 203,
+        "bbox": [
+          64,
+          45,
+          129,
+          204
+        ],
+        "center_x": 96.5,
+        "height": 159,
+        "top_y": 45,
+        "visible_character_height": 159,
+        "visible_character_width": 65,
+        "width": 65
+      },
+      "body_dark_proxy": {
+        "baseline": 203,
+        "bbox": [
+          65,
+          45,
+          120,
+          204
+        ],
+        "center_x": 92.5,
+        "height": 159,
+        "top_y": 45,
+        "visible_character_height": 159,
+        "visible_character_width": 55,
+        "width": 55
+      }
+    },
+    "gu_to_feng_last": {
+      "alpha": {
+        "baseline": 203,
+        "bbox": [
+          25,
+          21,
+          167,
+          204
+        ],
+        "center_x": 96.0,
+        "height": 183,
+        "top_y": 21,
+        "visible_character_height": 183,
+        "visible_character_width": 142,
+        "width": 142
+      },
+      "body_dark_proxy": {
+        "baseline": 202,
+        "bbox": [
+          46,
+          21,
+          141,
+          203
+        ],
+        "center_x": 93.5,
+        "height": 182,
+        "top_y": 21,
+        "visible_character_height": 182,
+        "visible_character_width": 95,
+        "width": 95
+      }
+    }
+  },
+  "scale_analysis": {
+    "feng_to_gu": {
+      "candidate_scales": [
+        0.16474464579901152,
+        0.18298261665141813
+      ],
+      "endpoint_body_heights_source": [
+        1214,
+        1093
+      ],
+      "endpoint_height_scale_intervals": [
+        [
+          0.1630971993410214,
+          0.16639209225700163
+        ],
+        [
+          0.18115279048490393,
+          0.1848124428179323
+        ]
+      ],
+      "full_alpha_union_bbox": [
+        0,
+        9,
+        1218,
+        1254
+      ],
+      "max_scale_without_clipping_any_nonzero_alpha": 0.15763546798029557,
+      "one_scale_height_feasible": false
+    },
+    "gu_to_feng": {
+      "candidate_scales": [
+        0.1890359168241966,
+        0.16474464579901152
+      ],
+      "endpoint_body_heights_source": [
+        1058,
+        1214
+      ],
+      "endpoint_height_scale_intervals": [
+        [
+          0.18714555765595464,
+          0.19092627599243855
+        ],
+        [
+          0.1630971993410214,
+          0.16639209225700163
+        ]
+      ],
+      "full_alpha_union_bbox": [
+        0,
+        0,
+        1240,
+        1254
+      ],
+      "max_scale_without_clipping_any_nonzero_alpha": 0.15483870967741936,
+      "one_scale_height_feasible": false
+    }
+  },
+  "source_endpoints": {
+    "feng_to_gu_first": {
+      "alpha": {
+        "baseline": 1253,
+        "bbox": [
+          0,
+          21,
+          1210,
+          1254
+        ],
+        "center_x": 605.0,
+        "height": 1233,
+        "top_y": 21,
+        "visible_character_height": 1233,
+        "visible_character_width": 1210,
+        "width": 1210
+      },
+      "character_dark_proxy": {
+        "baseline": 1241,
+        "bbox": [
+          334,
+          28,
+          965,
+          1242
+        ],
+        "center_x": 649.5,
+        "height": 1214,
+        "top_y": 28,
+        "visible_character_height": 1214,
+        "visible_character_width": 631,
+        "width": 631
+      }
+    },
+    "feng_to_gu_last": {
+      "alpha": {
+        "baseline": 1228,
+        "bbox": [
+          97,
+          19,
+          1198,
+          1229
+        ],
+        "center_x": 647.5,
+        "height": 1210,
+        "top_y": 19,
+        "visible_character_height": 1210,
+        "visible_character_width": 1101,
+        "width": 1101
+      },
+      "character_dark_proxy": {
+        "baseline": 1190,
+        "bbox": [
+          425,
+          98,
+          794,
+          1191
+        ],
+        "center_x": 609.5,
+        "height": 1093,
+        "top_y": 98,
+        "visible_character_height": 1093,
+        "visible_character_width": 369,
+        "width": 369
+      }
+    },
+    "gu_to_feng_first": {
+      "alpha": {
+        "baseline": 1253,
+        "bbox": [
+          97,
+          53,
+          1208,
+          1254
+        ],
+        "center_x": 652.5,
+        "height": 1201,
+        "top_y": 53,
+        "visible_character_height": 1201,
+        "visible_character_width": 1111,
+        "width": 1111
+      },
+      "character_dark_proxy": {
+        "baseline": 1186,
+        "bbox": [
+          420,
+          129,
+          788,
+          1187
+        ],
+        "center_x": 604.0,
+        "height": 1058,
+        "top_y": 129,
+        "visible_character_height": 1058,
+        "visible_character_width": 368,
+        "width": 368
+      }
+    },
+    "gu_to_feng_last": {
+      "alpha": {
+        "baseline": 1253,
+        "bbox": [
+          96,
+          21,
+          1218,
+          1254
+        ],
+        "center_x": 657.0,
+        "height": 1233,
+        "top_y": 21,
+        "visible_character_height": 1233,
+        "visible_character_width": 1122,
+        "width": 1122
+      },
+      "character_dark_proxy": {
+        "baseline": 1241,
+        "bbox": [
+          335,
+          28,
+          965,
+          1242
+        ],
+        "center_x": 650.0,
+        "height": 1214,
+        "top_y": 28,
+        "visible_character_height": 1214,
+        "visible_character_width": 630,
+        "width": 630
+      }
+    }
+  },
+  "structural_endpoint_check": "BLOCKED",
+  "visual_review_required": true
+}
