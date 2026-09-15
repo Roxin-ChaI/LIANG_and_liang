@@ -41,11 +41,25 @@ to repaint or alter approved source art. Phase 3 must review the runtime
 one-shot rendering visually before adopting these derivatives.
 
 The normalized Gu→Feng first frame's alpha height is 159 px versus 200 px
-for the formal Gu idle entry. The normalized Feng→Gu final frame's alpha
-height is 169 px versus 200 px for the formal Gu idle entry. Those are
-material visual jumps; uniform scaling must not be broken to hide them.
+for the formal Gu idle entry; its final frame is 183 px versus 200 px for
+formal Feng idle. Feng→Gu starts at 183 px versus 200 px for formal Feng idle
+and ends at 169 px versus 200 px for formal Gu idle. These are material visual
+jumps; uniform scaling must not be broken to hide them.
 
 The source hashes are recorded in the existing `assets-frozen.sha256`; Phase 3A
 validator verifies all 18 original transition paths against that immutable
 baseline. Runtime-only hashes are separately frozen in
 `assets/transform-runtime.sha256` after both sequences are complete.
+
+## Freeze result
+
+`NORMALIZATION_PASS`: all 18 runtime PNGs are 192×208 RGBA, nonempty, have
+alpha baseline y=203, centered alpha bboxes at x=95.5–96.5, at least 2 px
+horizontal edge clearance, clean RGB under fully transparent pixels, hashes
+matching the runtime-only manifest, and byte-for-byte deterministic
+regeneration. All 18 originals still match `assets-frozen.sha256`.
+
+`VISUAL_REVIEW_REQUIRED = true`: the approved source effects and endpoint
+character sizes create visible entry/exit scale discontinuities. This warning
+does not invalidate structural normalization, but it blocks silently treating
+the derivatives as visually seamless Phase 3 transition assets.
