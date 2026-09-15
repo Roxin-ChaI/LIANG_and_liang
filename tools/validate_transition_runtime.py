@@ -35,6 +35,7 @@ def validate() -> dict[str, object]:
     checked_sources = checked_outputs = 0
     centers: list[float] = []
     scales: set[float] = set()
+    seen_runtime_hashes: set[str] = set()
     for direction, count in DIRECTIONS.items():
         plan = plan_sequence(direction)
         if len(plan.source_paths) != count:
@@ -51,8 +52,12 @@ def validate() -> dict[str, object]:
             output = ROOT / "assets" / "transform-runtime" / direction / source.name
             relative = output.relative_to(ROOT).as_posix()
             expected_runtime.add(relative)
-            if runtime.get(relative) != sha256(output):
+            digest = sha256(output)
+            if runtime.get(relative) != digest:
                 raise ValueError(f"runtime hash mismatch: {relative}")
+            if digest in seen_runtime_hashes:
+                raise ValueError(f"duplicate runtime frame: {relative}")
+            seen_runtime_hashes.add(digest)
             with Image.open(output) as image:
                 if image.format != "PNG" or image.mode != "RGBA" or image.size != CELL:
                     raise ValueError(f"{relative}: not 192x208 RGBA PNG")
