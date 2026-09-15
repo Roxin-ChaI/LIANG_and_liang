@@ -62,6 +62,14 @@ is derived from the committed form and requested target:
 `frameDurationMs` each. The renderer must expose completion with the operation
 token that started playback.
 
+Phase 3D transition frames are independent transparent overlay PNGs, not
+192×208 atlas cells. Their trusted descriptor carries
+`{source,width,height,anchorX,anchorY}` (or the equivalent fixed sequence
+canvas and frame list). The visual canvas anchor maps to the normal Pet anchor
+by `left=96-anchorX`, `top=203-anchorY`; full geometry is frozen in
+`runtime-patch/fixtures/transition-overlay-layout.json`. This does not change
+the normal form-source contract or native Pet renderer dimensions.
+
 Visual priority is:
 
 ```text

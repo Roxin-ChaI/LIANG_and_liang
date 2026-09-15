@@ -1,12 +1,14 @@
-"""Deterministically fit approved transition PNGs into 192x208 runtime cells.
+"""Deterministically normalize approved transition PNGs.
 
-Only alpha bounding boxes, one sequence-wide nearest-neighbor scale, and
-integer positioning are used. The approved source files are never written.
+The default historical Phase 3A mode fits 192x208 cells. Explicit
+``--layout overlay`` uses the frozen Phase 3C per-frame nearest-neighbor scale
+and Phase 3D fixed oversized canvas. Approved sources are never written.
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 from dataclasses import dataclass
 from io import BytesIO
 from pathlib import Path
@@ -95,7 +97,69 @@ def png_bytes(image: Image.Image) -> bytes:
     return stream.getvalue()
 
 
-def normalize(direction: str, *, check: bool = False) -> SequencePlan:
+def overlay_plan(direction: str) -> tuple[dict[str, int], list[dict[str, object]]]:
+    if direction not in DIRECTIONS:
+        raise ValueError(f"unknown direction: {direction}")
+    layout_path = ROOT / "runtime-patch" / "fixtures" / "transition-overlay-layout.json"
+    schedule_path = ROOT / "runtime-patch" / "fixtures" / "transition-scale-schedule.json"
+    layout = json.loads(layout_path.read_text())[direction]
+    entries = json.loads(schedule_path.read_text())[direction]
+    if len(entries) != DIRECTIONS[direction] or [e["frame"] for e in entries] != list(range(1, DIRECTIONS[direction] + 1)):
+        raise ValueError(f"{direction}: malformed frozen schedule")
+    if layout["petAnchorX"] != CELL[0] // 2 or layout["petBaselineY"] != BASELINE:
+        raise ValueError(f"{direction}: normal Pet anchor changed")
+    if layout["offsetLeft"] != CELL[0] // 2 - layout["anchorX"] or layout["offsetTop"] != BASELINE - layout["anchorY"]:
+        raise ValueError(f"{direction}: overlay offsets disagree with anchors")
+    return layout, entries
+
+
+def render_overlay_frame(direction: str, entry: dict[str, object], layout: dict[str, int]) -> Image.Image:
+    # Imported here to retain the legacy normalization path and avoid a
+    # module-load cycle with Phase 3B's geometry helpers.
+    from analyze_transition_endpoints import dark_character_bbox
+
+    frame = int(entry["frame"])
+    side = int(entry["resizedWidth"])
+    if side != int(entry["resizedHeight"]) or side <= 0:
+        raise ValueError(f"{direction} {frame}: schedule is not isotropic")
+    path = ROOT / "assets" / "transform" / direction / f"{direction}_{frame:02d}.png"
+    with Image.open(path) as source:
+        if source.mode != "RGBA" or source.size != (1254, 1254):
+            raise ValueError(f"{path}: approved source format changed")
+        scaled = source.resize((side, side), Image.Resampling.NEAREST)
+    body = dark_character_bbox(scaled)
+    full = scaled.getchannel("A").getbbox()
+    if full is None:
+        raise ValueError(f"{path}: empty resized frame")
+    dx = round(layout["anchorX"] - (body[0] + body[2]) / 2)
+    dy = layout["anchorY"] - (body[3] - 1)
+    moved = (full[0] + dx, full[1] + dy, full[2] + dx, full[3] + dy)
+    size = (layout["canvasWidth"], layout["canvasHeight"])
+    if moved[0] < 0 or moved[1] < 0 or moved[2] > size[0] or moved[3] > size[1]:
+        raise ValueError(f"{path}: full alpha/effect would be cropped by overlay")
+    canvas = Image.new("RGBA", size, (0, 0, 0, 0))
+    canvas.paste(scaled.crop(full), moved[:2])
+    return canvas
+
+
+def normalize(direction: str, *, check: bool = False, layout: str = "cell") -> SequencePlan | dict[str, int]:
+    if layout == "overlay":
+        overlay, entries = overlay_plan(direction)
+        output_dir = ROOT / "assets" / "transform-overlay" / direction
+        if not check:
+            output_dir.mkdir(parents=True, exist_ok=True)
+        for entry in entries:
+            frame = int(entry["frame"])
+            output = output_dir / f"{direction}_{frame:02d}.png"
+            expected = png_bytes(render_overlay_frame(direction, entry, overlay))
+            if check:
+                if not output.exists() or output.read_bytes() != expected:
+                    raise ValueError(f"{output}: missing or not deterministic")
+            else:
+                output.write_bytes(expected)
+        return overlay
+    if layout != "cell":
+        raise ValueError(f"unknown layout: {layout}")
     plan = plan_sequence(direction)
     output_dir = ROOT / "assets" / "transform-runtime" / direction
     if not check:
@@ -114,16 +178,23 @@ def normalize(direction: str, *, check: bool = False) -> SequencePlan:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--direction", choices=tuple(DIRECTIONS), required=True)
+    parser.add_argument("--layout", choices=("cell", "overlay"), default="cell",
+                        help="default historical 192x208 cell or Phase 3D oversized overlay")
     parser.add_argument("--check", action="store_true", help="compare existing outputs without writing")
     args = parser.parse_args()
-    plan = normalize(args.direction, check=args.check)
+    plan = normalize(args.direction, check=args.check, layout=args.layout)
     mode = "PASS" if args.check else "WRITTEN"
-    print(
-        f"{mode} direction={args.direction} frames={len(plan.source_paths)} "
-        f"source={plan.source_size[0]}x{plan.source_size[1]} "
-        f"output={CELL[0]}x{CELL[1]} scale={plan.scale:.9f} "
-        f"union_bbox={plan.union_bbox} baseline={BASELINE}"
-    )
+    if args.layout == "overlay":
+        print(f"{mode} layout=overlay direction={args.direction} frames={DIRECTIONS[args.direction]} "
+              f"output={plan['canvasWidth']}x{plan['canvasHeight']} "
+              f"anchor=({plan['anchorX']},{plan['anchorY']}) baseline={BASELINE}")
+    else:
+        print(
+            f"{mode} direction={args.direction} frames={len(plan.source_paths)} "
+            f"source={plan.source_size[0]}x{plan.source_size[1]} "
+            f"output={CELL[0]}x{CELL[1]} scale={plan.scale:.9f} "
+            f"union_bbox={plan.union_bbox} baseline={BASELINE}"
+        )
 
 
 if __name__ == "__main__":
