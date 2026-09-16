@@ -1,223 +1,271 @@
 #!/usr/bin/env python3
-"""Wait for Liang no Henshin peak/off-peak transitions in the foreground."""
+"""Run the Shanghai Gu/Feng schedule through the local runtime bridge."""
 
 from __future__ import annotations
 
 import argparse
+import stat
 import time as time_module
+import uuid
 from dataclasses import dataclass
-from datetime import datetime, time, timedelta
+from datetime import datetime
 from pathlib import Path
-from typing import Callable, Mapping
+from typing import Any, Callable, Mapping
 
 if __package__:
-    from .time_form_controller import (
-        DEFAULT_ACTIVE_ATLAS,
-        DEFAULT_ATLASES,
-        REFRESH_INSTRUCTION,
-        ControllerError,
-        ControllerStatus,
-        identify_form,
-        parse_time,
-        run_controller,
-        sha256,
-        shanghai_time,
+    from .pet_runtime_client import (
+        PetRuntimeClientError,
+        default_socket_path,
+        set_target_form,
+    )
+    from .time_form_controller import parse_time, shanghai_time
+    from .time_form_scheduler import (
+        FormScheduler,
+        SchedulerDecision,
+        seconds_until_transition,
     )
 else:
-    from time_form_controller import (
-        DEFAULT_ACTIVE_ATLAS,
-        DEFAULT_ATLASES,
-        REFRESH_INSTRUCTION,
-        ControllerError,
-        ControllerStatus,
-        identify_form,
-        parse_time,
-        run_controller,
-        sha256,
-        shanghai_time,
+    from pet_runtime_client import (
+        PetRuntimeClientError,
+        default_socket_path,
+        set_target_form,
+    )
+    from time_form_controller import parse_time, shanghai_time
+    from time_form_scheduler import (
+        FormScheduler,
+        SchedulerDecision,
+        seconds_until_transition,
     )
 
-TRANSITION_TIMES = (time(9, 0), time(12, 0), time(14, 0), time(18, 0))
+
+RETRY_DELAYS = (1.0, 2.0, 4.0, 8.0, 15.0, 30.0, 60.0)
+_UNSEEN = object()
 
 Clock = Callable[[], datetime]
 Sleeper = Callable[[float], None]
-Controller = Callable[..., ControllerStatus]
+BridgeClient = Callable[..., Mapping[str, Any]]
+SessionProbe = Callable[[], object | None]
 Emitter = Callable[[str], None]
-
-
-def emit_line(message: str) -> None:
-    """Print watcher status immediately before the next potentially long sleep."""
-
-    print(message, flush=True)
 
 
 @dataclass(frozen=True)
 class WatchEvent:
-    """One controller reconciliation and its next future transition."""
+    """One scheduler observation and optional bridge delivery result."""
 
-    status: ControllerStatus
-    previous_form: str
-    next_transition: datetime
-
-
-def next_transition(now: datetime) -> datetime:
-    """Return the next strictly future node that changes gu/feng form."""
-
-    current = shanghai_time(now)
-    for day_offset in range(8):
-        candidate_date = current.date() + timedelta(days=day_offset)
-        if candidate_date.weekday() >= 5:
-            continue
-        for transition_time in TRANSITION_TIMES:
-            candidate = datetime.combine(
-                candidate_date, transition_time, tzinfo=current.tzinfo
-            )
-            if candidate > current:
-                return candidate
-    raise ControllerError("unable to find a transition in the next eight days")
+    decision: SchedulerDecision
+    request_id: str | None
+    animate: bool | None
+    accepted: bool
+    transitioning: bool
+    error_code: str | None
+    retry_after: float | None
+    sent: bool
 
 
-def seconds_until_transition(now: datetime, target: datetime) -> float:
-    """Return a non-negative sleep duration using Shanghai wall-clock time."""
-
-    current = shanghai_time(now)
-    normalized_target = shanghai_time(target)
-    return max(0.0, (normalized_target - current).total_seconds())
-
-
-def _source_hashes(atlases: Mapping[str, Path]) -> dict[str, str]:
-    """Read the two approved source hashes for pre-controller reporting."""
-
-    return {form: sha256(Path(atlases[form])) for form in ("gu", "feng")}
-
-
-def reconcile(
-    now: datetime,
-    *,
-    atlases: Mapping[str, Path],
-    active_atlas: Path,
-    controller: Controller = run_controller,
-) -> WatchEvent:
-    """Run the controller once and describe the resulting scheduled state."""
-
-    current = shanghai_time(now)
-    previous_form = identify_form(active_atlas, _source_hashes(atlases))
-    status = controller(now=current, atlases=atlases, active_atlas=active_atlas)
-    return WatchEvent(
-        status=status,
-        previous_form=previous_form,
-        next_transition=next_transition(current),
-    )
-
-
-def emit_event(event: WatchEvent, emit: Emitter = emit_line) -> None:
-    """Write one watcher event in a stable line-oriented format."""
-
-    status = event.status
-    emit(f"current_time={status.current_time}")
-    emit(f"current_form={status.current_form}")
-    emit(f"expected_form={status.expected_form}")
-    emit(f"switched={str(status.switched).lower()}")
-    if status.switched:
-        emit(f"from={event.previous_form}")
-        emit(f"to={status.current_form}")
-    emit(f"refresh_required={str(status.refresh_required).lower()}")
-    if status.refresh_required:
-        emit(f'action="{REFRESH_INSTRUCTION}"')
-    emit(f"next_transition={event.next_transition.isoformat(timespec='seconds')}")
+def emit_line(message: str) -> None:
+    print(message, flush=True)
 
 
 def current_time() -> datetime:
-    """Read the current time in Asia/Shanghai."""
-
     return shanghai_time()
+
+
+def runtime_session_identity(socket_path: Path | None = None) -> object | None:
+    """Return a read-only identity for the current bridge socket generation."""
+
+    path = socket_path or default_socket_path()
+    try:
+        details = path.stat()
+    except FileNotFoundError:
+        return None
+    if not stat.S_ISSOCK(details.st_mode):
+        return None
+    return (details.st_dev, details.st_ino, details.st_ctime_ns)
+
+
+class BridgeWatcher:
+    """Session-aware delivery state layered over the pure scheduler."""
+
+    def __init__(
+        self,
+        *,
+        client: BridgeClient = set_target_form,
+        session_probe: SessionProbe = runtime_session_identity,
+        scheduler: FormScheduler | None = None,
+        request_id_factory: Callable[[], str] = lambda: str(uuid.uuid4()),
+    ) -> None:
+        self.client = client
+        self.session_probe = session_probe
+        self.scheduler = scheduler or FormScheduler()
+        self.request_id_factory = request_id_factory
+        self._session: object = _UNSEEN
+        self._retry_index = 0
+
+    def _failed(self) -> float:
+        delay = RETRY_DELAYS[min(self._retry_index, len(RETRY_DELAYS) - 1)]
+        self._retry_index = min(self._retry_index + 1, len(RETRY_DELAYS) - 1)
+        self._session = None
+        self.scheduler.require_reconcile()
+        return delay
+
+    def attempt(self, now: datetime | None = None) -> WatchEvent:
+        """Reconcile once; errors become bounded-retry events, not crashes."""
+
+        session = self.session_probe()
+        session_changed = self._session is _UNSEEN or session != self._session
+        if session_changed:
+            self.scheduler.require_reconcile()
+        decision = self.scheduler.decide(now)
+        if not decision.should_send:
+            return WatchEvent(
+                decision, None, None, False, False, None, None, False
+            )
+
+        animate = not session_changed and self._session is not None
+        request_id = self.request_id_factory()
+        try:
+            result = self.client(
+                decision.expected_form,
+                animate=animate,
+                request_id=request_id,
+            )
+            accepted = self.scheduler.record_delivery(
+                decision.expected_form, result
+            )
+            if not accepted:
+                return WatchEvent(
+                    decision,
+                    request_id,
+                    animate,
+                    False,
+                    bool(result.get("transitioning", False)),
+                    "NOT_ACCEPTED",
+                    self._failed(),
+                    True,
+                )
+            self._session = self.session_probe()
+            self._retry_index = 0
+            return WatchEvent(
+                decision,
+                request_id,
+                animate,
+                True,
+                bool(result.get("transitioning", False)),
+                None,
+                None,
+                True,
+            )
+        except (PetRuntimeClientError, OSError) as error:
+            return WatchEvent(
+                decision,
+                request_id,
+                animate,
+                False,
+                False,
+                getattr(error, "code", "BRIDGE_ERROR"),
+                self._failed(),
+                True,
+            )
+
+
+def emit_event(event: WatchEvent, emit: Emitter = emit_line) -> None:
+    decision = event.decision
+    emit(f"current_time={decision.current_time.isoformat(timespec='seconds')}")
+    emit(f"expected_form={decision.expected_form}")
+    emit(f"request_id={event.request_id or 'none'}")
+    emit(f"sent={str(event.sent).lower()}")
+    if event.animate is not None:
+        emit(f"animate={str(event.animate).lower()}")
+    emit(f"accepted={str(event.accepted).lower()}")
+    emit(f"transitioning={str(event.transitioning).lower()}")
+    if event.error_code is not None:
+        emit(f"error_code={event.error_code}")
+    if event.retry_after is not None:
+        emit(f"retry_after={event.retry_after:g}")
+    emit(
+        f"next_transition={decision.next_transition.isoformat(timespec='seconds')}"
+    )
 
 
 def watch(
     *,
-    atlases: Mapping[str, Path] = DEFAULT_ATLASES,
-    active_atlas: Path = DEFAULT_ACTIVE_ATLAS,
     clock: Clock = current_time,
     sleeper: Sleeper = time_module.sleep,
-    controller: Controller = run_controller,
+    bridge: BridgeWatcher | None = None,
     on_event: Callable[[WatchEvent], None] = emit_event,
-    max_wakeups: int | None = None,
+    max_iterations: int | None = None,
 ) -> None:
-    """Reconcile now, then sleep directly to each future transition.
+    """Reconcile immediately, then sleep to retry or the next real node."""
 
-    ``max_wakeups`` exists for deterministic tests. ``None`` runs forever and
-    ``0`` performs only the required startup reconciliation.
-    """
-
-    if max_wakeups is not None and max_wakeups < 0:
-        raise ValueError("max_wakeups must be non-negative or None")
-
-    event = reconcile(
-        clock(), atlases=atlases, active_atlas=active_atlas, controller=controller
-    )
-    on_event(event)
-    wakeups = 0
-
-    while max_wakeups is None or wakeups < max_wakeups:
-        target = event.next_transition
-
-        # A sleep can return early. Conversely, macOS can resume after one or
-        # several missed nodes. In both cases, always read the clock again.
-        while True:
-            now = clock()
-            remaining = seconds_until_transition(now, target)
-            if remaining > 0:
-                sleeper(remaining)
-            resumed_at = shanghai_time(clock())
-            if resumed_at >= target:
-                break
-
-        # Reconcile once for the actual resume time. Historical nodes are not
-        # replayed; next_transition() starts strictly after this observation.
-        event = reconcile(
-            resumed_at,
-            atlases=atlases,
-            active_atlas=active_atlas,
-            controller=controller,
-        )
+    if max_iterations is not None and max_iterations < 1:
+        raise ValueError("max_iterations must be positive or None")
+    runtime = bridge or BridgeWatcher()
+    iterations = 0
+    while max_iterations is None or iterations < max_iterations:
+        event = runtime.attempt(clock())
         on_event(event)
-        wakeups += 1
+        iterations += 1
+        if max_iterations is not None and iterations >= max_iterations:
+            return
+
+        observed = shanghai_time(clock())
+        until_node = seconds_until_transition(
+            observed, event.decision.next_transition
+        )
+        delay = (
+            min(event.retry_after, until_node)
+            if event.retry_after is not None and until_node > 0
+            else event.retry_after
+            if event.retry_after is not None
+            else until_node
+        )
+        sleeper(max(0.0, delay))
 
 
-def main() -> None:
+def dry_run(now: datetime | None = None, emit: Emitter = emit_line) -> None:
+    """Print one pure decision without probing or connecting to the bridge."""
+
+    decision = FormScheduler().decide(now)
+    emit(f"current_time={decision.current_time.isoformat(timespec='seconds')}")
+    emit(f"expected_form={decision.expected_form}")
+    emit(
+        f"next_transition={decision.next_transition.isoformat(timespec='seconds')}"
+    )
+    emit("dry_run=true")
+
+
+def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Watch Shanghai peak windows and switch Liang no Henshin."
+        description="Watch Shanghai peak windows through the Liang runtime bridge."
     )
     parser.add_argument(
-        "--once",
+        "--dry-run",
         action="store_true",
-        help="reconcile once, print the next transition, and exit",
+        help="print the current decision without connecting or writing",
     )
     parser.add_argument(
         "--at",
         type=parse_time,
-        help="ISO-8601 time override; valid only with --once",
+        help="ISO-8601 override; valid only with --dry-run",
     )
-    parser.add_argument("--gu-atlas", type=Path, default=DEFAULT_ATLASES["gu"])
-    parser.add_argument("--feng-atlas", type=Path, default=DEFAULT_ATLASES["feng"])
-    parser.add_argument("--active-atlas", type=Path, default=DEFAULT_ACTIVE_ATLAS)
+    parser.add_argument("--socket-path", type=Path, default=default_socket_path())
     args = parser.parse_args()
-    if args.at is not None and not args.once:
-        parser.error("--at requires --once")
+    if args.at is not None and not args.dry_run:
+        parser.error("--at requires --dry-run")
+    if args.dry_run:
+        dry_run(args.at)
+        return 0
 
-    clock = (lambda: args.at) if args.at is not None else current_time
+    client = lambda target, **kwargs: set_target_form(  # noqa: E731
+        target, socket_path=args.socket_path, **kwargs
+    )
+    probe = lambda: runtime_session_identity(args.socket_path)  # noqa: E731
     try:
-        watch(
-            atlases={"gu": args.gu_atlas, "feng": args.feng_atlas},
-            active_atlas=args.active_atlas,
-            clock=clock,
-            max_wakeups=0 if args.once else None,
-        )
+        watch(bridge=BridgeWatcher(client=client, session_probe=probe))
     except KeyboardInterrupt:
         print("stopped=true", flush=True)
-    except (ControllerError, OSError) as exc:
-        raise SystemExit(f"watcher error: {exc}") from exc
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
