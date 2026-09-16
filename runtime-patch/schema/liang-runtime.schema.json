@@ -130,7 +130,34 @@
         "frameDurationMs": {
           "type": "integer",
           "minimum": 1
+        },
+        "layout": {
+          "$ref": "#/$defs/transitionLayout"
         }
+      }
+    },
+    "transitionLayout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "anchorX",
+        "anchorY",
+        "canvasHeight",
+        "canvasWidth",
+        "offsetLeft",
+        "offsetTop",
+        "petAnchorX",
+        "petBaselineY"
+      ],
+      "properties": {
+        "anchorX": { "type": "integer" },
+        "anchorY": { "type": "integer" },
+        "canvasHeight": { "type": "integer", "minimum": 1 },
+        "canvasWidth": { "type": "integer", "minimum": 1 },
+        "offsetLeft": { "type": "integer" },
+        "offsetTop": { "type": "integer" },
+        "petAnchorX": { "type": "integer" },
+        "petBaselineY": { "type": "integer" }
       }
     }
   }

@@ -31,6 +31,7 @@ venv/
 .cache/
 tmp/
 temp/
+build/pet-payload/
 
 # Local machine configuration backups and unfrozen reference dumps
 backups/

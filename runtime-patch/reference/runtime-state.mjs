@@ -45,6 +45,20 @@ function isForm(value) {
   return FORM_VALUES.includes(value);
 }
 
+const LAYOUT_KEYS = Object.freeze([
+  "anchorX", "anchorY", "canvasHeight", "canvasWidth",
+  "offsetLeft", "offsetTop", "petAnchorX", "petBaselineY",
+]);
+
+function validLayout(layout) {
+  return hasExactKeys(layout, LAYOUT_KEYS)
+    && LAYOUT_KEYS.every((key) => Number.isInteger(layout[key]))
+    && layout.canvasWidth > 0
+    && layout.canvasHeight > 0
+    && layout.offsetLeft === layout.petAnchorX - layout.anchorX
+    && layout.offsetTop === layout.petBaselineY - layout.anchorY;
+}
+
 /** Return true only for a normalized, Pet-root-relative, forward-slash path. */
 export function isSafePetRelativePath(value) {
   if (typeof value !== "string" || value.length === 0 || value.includes("\0")) return false;
@@ -82,8 +96,11 @@ export function validateRuntimeConfig(config) {
     for (const name of transitionNames) {
       const transition = config.transitions[name];
       const expected = TRANSITION_ENDPOINTS[name];
-      if (!hasExactKeys(transition, ["from", "to", "frames", "frameDurationMs"])) {
-        errors.push(`${name} must contain exactly from, to, frames, and frameDurationMs`);
+      const transitionKeys = ["from", "to", "frames", "frameDurationMs"];
+      const hasBaseKeys = hasExactKeys(transition, transitionKeys);
+      const hasLayoutKeys = hasExactKeys(transition, [...transitionKeys, "layout"]);
+      if (!hasBaseKeys && !hasLayoutKeys) {
+        errors.push(`${name} must contain transition fields and optional layout`);
         continue;
       }
       if (transition.from !== expected.from || transition.to !== expected.to) {
@@ -96,6 +113,9 @@ export function validateRuntimeConfig(config) {
       }
       if (!Number.isInteger(transition.frameDurationMs) || transition.frameDurationMs <= 0) {
         errors.push(`${name}.frameDurationMs must be a positive integer`);
+      }
+      if ("layout" in transition && !validLayout(transition.layout)) {
+        errors.push(`${name}.layout must contain valid anchored canvas geometry`);
       }
     }
   }
@@ -118,6 +138,11 @@ function cloneConfig(config) {
         to: transition.to,
         frames: Object.freeze([...transition.frames]),
         frameDurationMs: transition.frameDurationMs,
+        ...(transition.layout == null ? {} : {
+          layout: Object.freeze(Object.fromEntries(
+            LAYOUT_KEYS.map((key) => [key, transition.layout[key]]),
+          )),
+        }),
       })];
     }))),
   });
