@@ -83,6 +83,13 @@ def test_supported_build_verifies(tmp_path: Path) -> None:
     assert runtime.inspect(app, spec_path=spec).action == "SUPPORTED"
 
 
+def test_current_build_selects_its_frozen_recipe() -> None:
+    spec_path = ROOT / "runtime-patch/builds/9922/patch-spec.json"
+    spec = runtime._load_spec(spec_path)
+    assert spec["target"]["build"] == "9922"
+    assert runtime._recipe_for_spec(spec) == ROOT / "runtime-patch/builds/9922/build-patch.mjs"
+
+
 @pytest.mark.parametrize(
     ("version", "build"),
     [("26.908.70817", "9275"), ("26.908.70816", "9276")],

@@ -21,7 +21,7 @@ from typing import Any, Callable, Iterator
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SPEC = ROOT / "runtime-patch/builds/9275/patch-spec.json"
-PATCH_RECIPE = ROOT / "runtime-patch/builds/9275/build-patch.mjs"
+PATCH_BUILD_ROOT = ROOT / "runtime-patch/builds"
 REAL_APP = Path("/Applications/ChatGPT.app").resolve()
 BACKUP_NAME = "app.asar.liang-original"
 STATE_NAME = ".liang-runtime-patch-state.json"
@@ -215,9 +215,30 @@ def _load_spec(spec_path: Path) -> dict[str, Any]:
         spec = json.loads(spec_path.read_text())
     except (OSError, json.JSONDecodeError) as error:
         raise RuntimePatchError("INVALID_PATCH_SPEC", "unable to load patch spec") from error
-    if spec.get("formatVersion") != 1 or spec.get("target", {}).get("build") != "9275":
-        _fail("INVALID_PATCH_SPEC", "patch spec is not Build 9275")
+    target = spec.get("target")
+    build = target.get("build") if isinstance(target, dict) else None
+    version = target.get("version") if isinstance(target, dict) else None
+    archive_hash = target.get("appAsarSha256") if isinstance(target, dict) else None
+    if (
+        spec.get("formatVersion") != 1
+        or not isinstance(build, str)
+        or not build.isdecimal()
+        or not isinstance(version, str)
+        or not version
+        or not isinstance(archive_hash, str)
+        or len(archive_hash) != 64
+        or any(character not in "0123456789abcdef" for character in archive_hash)
+    ):
+        _fail("INVALID_PATCH_SPEC", "patch spec target fingerprint is invalid")
     return spec
+
+
+def _recipe_for_spec(spec: dict[str, Any]) -> Path:
+    build = spec["target"]["build"]
+    recipe = PATCH_BUILD_ROOT / build / "build-patch.mjs"
+    if not recipe.is_file() or recipe.is_symlink():
+        _fail("INVALID_PATCH_SPEC", f"no frozen recipe for Build {build}")
+    return recipe
 
 
 def _app_paths(app: Path, *, mutating: bool) -> tuple[Path, Path, Path, Path, Path]:
@@ -302,9 +323,16 @@ def _owned_patched_state(resources: Path, archive: Path, backup: Path) -> dict[s
     return state
 
 
-def _run_recipe(input_dir: Path, output_dir: Path, spec_path: Path, node: str) -> dict[str, Any]:
+def _run_recipe(
+    input_dir: Path,
+    output_dir: Path,
+    spec_path: Path,
+    spec: dict[str, Any],
+    node: str,
+) -> dict[str, Any]:
+    recipe = _recipe_for_spec(spec)
     completed = subprocess.run(
-        [node, str(PATCH_RECIPE), "--input-dir", str(input_dir), "--output-dir", str(output_dir), "--spec", str(spec_path)],
+        [node, str(recipe), "--input-dir", str(input_dir), "--output-dir", str(output_dir), "--spec", str(spec_path)],
         cwd=ROOT,
         capture_output=True,
         text=True,
@@ -372,7 +400,13 @@ def patch_app(
         (input_dir / CONTEXT_NAME).write_text(json.dumps({"version": version, "build": build, "appAsarSha256": original_hash}) + "\n")
         if fault_hook:
             fault_hook("after-extract", paths)
-        report = _run_recipe(input_dir, output_dir, spec_path, node or shutil.which("node") or "node")
+        report = _run_recipe(
+            input_dir,
+            output_dir,
+            spec_path,
+            spec,
+            node or shutil.which("node") or "node",
+        )
         if fault_hook:
             fault_hook("after-patch", paths)
         pack_asar(output_dir, header, patched_archive)

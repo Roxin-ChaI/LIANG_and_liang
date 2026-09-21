@@ -1,0 +1,58 @@
+{
+  "formatVersion": 1,
+  "patchSpecVersion": "9922.1",
+  "target": {
+    "version": "26.915.31945",
+    "build": "9922",
+    "appAsarSha256": "1f7939c1c781887c167043c4d1d307af3400d324685cfc315dfe2f80e634f483"
+  },
+  "chunks": {
+    "main": {"path": ".vite/build/main-DUHZj4_w.js", "sha256": "9e8a3bd79c817064f28693ca26aa1378895e07ab2108c78c42d0ea20dac9d66e"},
+    "preload": {"path": ".vite/build/preload.js", "sha256": "cbb4eafff381b835dc9c371c1d9d3c455ab95c1641d955bd975e03e2a88fb2ea"},
+    "loader": {"path": ".vite/build/src-C3YaUE83.js", "sha256": "14c8c23e8b8dfa874d3fb5a50d54fb28eccf55fb83232c3ab29cb7c0ef0a0472"},
+    "core": {"path": "webview/assets/app-initial-a498f911edeb.js", "sha256": "34a75db63c7137eb4caecdba1f36d631c10c7912487e532fd5e9dafb175bb9be"},
+    "overlay": {"path": "webview/assets/avatar-overlay-native-page-34cd5ae3858a.js", "sha256": "350a0e48425ea6e71636842a2f680d54e39acefeb70760fa8702fa8a8be8955f"},
+    "mascot": {"path": "webview/assets/avatar-mascot-button-171f2736a391.js", "sha256": "826f2fdde13849f68f977d972c78ebe992fdd4a8cebce622e806277172f505c8"},
+    "settings": {"path": "webview/assets/pets-settings-route-8ba274e79a29.js", "sha256": "27884ebe48384c142cfeb04576abcae636da208987aaf1172919897d28137ef0"}
+  },
+  "locators": {
+    "mainAvatarLoader": {"target": "main", "expectedMatches": 1, "needle": "loadAvatar(e){return n.gt({appServerClient:this.executionHostRegistry.get(),avatarId:e,preferWsl:!!process.env.WSL_DISTRO_NAME})}"},
+    "mainServiceRegistration": {"target": "main", "expectedMatches": 1, "needle": "V=new $ue(B,u,x),ee=lit({toggleAvatarOverlay:()=>V.toggleFromHotkey()})"},
+    "preloadExpose": {"target": "preload", "expectedMatches": 1, "needle": "e.contextBridge.exposeInMainWorld(`electronBridge`,z),typeof window<`u`"},
+    "coreDescriptorEntry": {"target": "core", "expectedMatches": 1, "needle": "function WXc(e,t){let n=ZXc[e];"},
+    "coreCompletion": {"target": "core", "expectedMatches": 1, "needle": "a=null;return}i=n,e.style.backgroundPosition=KXc(GXc(r,i),d),o()"},
+    "overlaySource": {"target": "overlay", "expectedMatches": 1, "needle": "source:zr(c)"},
+    "overlayOwner": {"target": "overlay", "expectedMatches": 1, "needle": "function id(e){let t=(0,od.c)(13),{frameProps:n"},
+    "overlayFormCommit": {"target": "overlay", "expectedMatches": 1, "needle": "function rf(e){let t=(0,kf.c)(43),{selectedAvatar:n,selectedAvatarId:r}=e"},
+    "overlaySibling": {"target": "overlay", "expectedMatches": 1, "needle": "g=(0,cd.jsx)(xu,{...n,layout:c}),t[10]=n,t[11]=c,t[12]=g"},
+    "overlayRootClip": {"target": "overlay", "expectedMatches": 1, "needle": "de(`relative h-screen w-screen bg-transparent`,`overflow-hidden`,Yr,Xr)"},
+    "overlayUnderlyingState": {"target": "overlay", "expectedMatches": 1, "needle": "state:yt.mascotState"},
+    "overlayNormalStyle": {"target": "overlay", "expectedMatches": 1, "needle": "style:{...uo(Cn.width),height:Cn.height}"}
+  },
+  "operations": [
+    {"id": "dual-form-loader-model", "target": "main", "locator": "mainAvatarLoader"},
+    {"id": "source-hot-switch", "target": "overlay", "locator": "overlaySource"},
+    {"id": "transition-descriptor", "target": "core", "locator": "coreDescriptorEntry"},
+    {"id": "transition-completion", "target": "core", "locator": "coreCompletion"},
+    {"id": "oversized-sibling-overlay", "target": "overlay", "locator": "overlaySibling"},
+    {"id": "operation-token-guard", "target": "overlay", "locator": "overlayOwner"},
+    {"id": "local-control-bridge-main", "target": "main", "locator": "mainServiceRegistration"},
+    {"id": "preload-typed-event", "target": "preload", "locator": "preloadExpose"},
+    {"id": "request-target-form-binding", "target": "overlay", "locator": "overlayRootClip"},
+    {"id": "overlay-event-subscription", "target": "overlay", "locator": "overlayFormCommit"},
+    {"id": "transition-underlying-state", "target": "overlay", "locator": "overlayUnderlyingState"},
+    {"id": "transition-normal-suppression", "target": "overlay", "locator": "overlayNormalStyle"}
+  ],
+  "postPatchAssertions": [
+    "__liang9922LoadDualForm",
+    "__liang9922Runtime.hotSource",
+    "__liang9922TransitionDescriptor",
+    "__liang9922Runtime?.complete",
+    "__liang9922Runtime.sibling",
+    "token!==s.operationToken",
+    "__liang9922InstallBridge",
+    "liangNoHenshin",
+    "__liang9922BindControl",
+    "requestTargetForm"
+  ]
+}
