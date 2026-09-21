@@ -1,0 +1,58 @@
+{
+  "formatVersion": 1,
+  "patchSpecVersion": "9275.1",
+  "target": {
+    "version": "26.908.70816",
+    "build": "9275",
+    "appAsarSha256": "100b3a06768326eec58ae32e54fa7b85368fef8d4ead5a5866ecb0e8751bdeaa"
+  },
+  "chunks": {
+    "main": {"path": ".vite/build/main-DaMR-wdT.js", "sha256": "0765260be74e8843630d5a92e30bca574783892688e67180c119a5c58679bb61"},
+    "preload": {"path": ".vite/build/preload.js", "sha256": "9dba229e0b3cfa1cc9a7e78925b5f168b7f7385e1c18d785d13ce8e823e65207"},
+    "loader": {"path": ".vite/build/src-CCXHtyvY.js", "sha256": "a42da38cbb14b28399f1d54fcf453bffc5e9802663e7e098f187c8378f4c7a40"},
+    "core": {"path": "webview/assets/app-initial-4d7ea7f81c2d.js", "sha256": "5dcf4a29db25b086f9bd11d053eec60cf0c50bfd988494969cec452e03f19245"},
+    "overlay": {"path": "webview/assets/avatar-overlay-native-page-efa96d74af15.js", "sha256": "51c369ad2dc365550b463e3cb119da97d94c2ffc98e01a9f18b53287d920f0cf"},
+    "mascot": {"path": "webview/assets/avatar-mascot-button-7a295935c1d3.js", "sha256": "adb931faef70d16b02e9099e973563ae5a5d38a2c316770e22d116de876919fb"},
+    "settings": {"path": "webview/assets/pets-settings-route-c49fd75fc38f.js", "sha256": "b5a75703f92baa93703edf965ef3b2e141467934c8a67770bc69b2d873e47c55"}
+  },
+  "locators": {
+    "mainAvatarLoader": {"target": "main", "expectedMatches": 1, "needle": "loadAvatar(e){return n.Mt({appServerClient:this.executionHostRegistry.get(),avatarId:e,preferWsl:!!process.env.WSL_DISTRO_NAME})}"},
+    "mainServiceRegistration": {"target": "main", "expectedMatches": 1, "needle": "H=new wle(V,d,S),ee=o4e"},
+    "preloadExpose": {"target": "preload", "expectedMatches": 1, "needle": "e.contextBridge.exposeInMainWorld(`electronBridge`,R),typeof window<`u`"},
+    "coreDescriptorEntry": {"target": "core", "expectedMatches": 1, "needle": "function Ulo(e,t){let n=Xlo[e];"},
+    "coreCompletion": {"target": "core", "expectedMatches": 1, "needle": "a=null;return}i=n,e.style.backgroundPosition=Glo(Wlo(r,i),d),o()"},
+    "overlaySource": {"target": "overlay", "expectedMatches": 1, "needle": "source:Kr(c)"},
+    "overlayOwner": {"target": "overlay", "expectedMatches": 1, "needle": "function kd(){"},
+    "overlayFormCommit": {"target": "overlay", "expectedMatches": 1, "needle": "function Nd(e){let t=(0,of.c)(43),{selectedAvatar:n,selectedAvatarId:r}=e"},
+    "overlaySibling": {"target": "overlay", "expectedMatches": 1, "needle": "_=(0,Lu.jsx)($l,{...n,layout:c}),t[10]=n,t[11]=c,t[12]=_"},
+    "overlayRootClip": {"target": "overlay", "expectedMatches": 1, "needle": "kr=Ai(`relative h-screen w-screen bg-transparent`,`overflow-hidden`"},
+    "overlayUnderlyingState": {"target": "overlay", "expectedMatches": 1, "needle": "state:vt.mascotState"},
+    "overlayNormalStyle": {"target": "overlay", "expectedMatches": 1, "needle": "style:{...Xa(rn.width),height:rn.height}"}
+  },
+  "operations": [
+    {"id": "dual-form-loader-model", "target": "main", "locator": "mainAvatarLoader"},
+    {"id": "source-hot-switch", "target": "overlay", "locator": "overlaySource"},
+    {"id": "transition-descriptor", "target": "core", "locator": "coreDescriptorEntry"},
+    {"id": "transition-completion", "target": "core", "locator": "coreCompletion"},
+    {"id": "oversized-sibling-overlay", "target": "overlay", "locator": "overlaySibling"},
+    {"id": "operation-token-guard", "target": "overlay", "locator": "overlayOwner"},
+    {"id": "local-control-bridge-main", "target": "main", "locator": "mainServiceRegistration"},
+    {"id": "preload-typed-event", "target": "preload", "locator": "preloadExpose"},
+    {"id": "request-target-form-binding", "target": "overlay", "locator": "overlayRootClip"},
+    {"id": "overlay-event-subscription", "target": "overlay", "locator": "overlayFormCommit"},
+    {"id": "transition-underlying-state", "target": "overlay", "locator": "overlayUnderlyingState"},
+    {"id": "transition-normal-suppression", "target": "overlay", "locator": "overlayNormalStyle"}
+  ],
+  "postPatchAssertions": [
+    "__liang9275LoadDualForm",
+    "__liang9275Runtime.hotSource",
+    "__liang9275TransitionDescriptor",
+    "__liang9275Runtime?.complete",
+    "__liang9275Runtime.sibling",
+    "token!==s.operationToken",
+    "__liang9275InstallBridge",
+    "liangNoHenshin",
+    "__liang9275BindControl",
+    "requestTargetForm"
+  ]
+}
