@@ -8,6 +8,7 @@ import hashlib
 import json
 import os
 import plistlib
+import struct
 import subprocess
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -174,16 +175,53 @@ def _asar_integrity(info: dict[str, object], archive: Path) -> dict[str, object]
     record = metadata.get("Resources/app.asar") if isinstance(metadata, dict) else None
     expected = record.get("hash") if isinstance(record, dict) else None
     algorithm = record.get("algorithm") if isinstance(record, dict) else None
-    actual = sha256_file(archive)
+    archive_sha256 = sha256_file(archive)
+    try:
+        with archive.open("rb") as handle:
+            prefix = handle.read(8)
+            if len(prefix) != 8:
+                raise ValueError("truncated ASAR prefix")
+            pickle_size, header_size = struct.unpack("<II", prefix)
+            if pickle_size != 4 or header_size < 12 or header_size > 64 * 1024 * 1024:
+                raise ValueError("invalid ASAR header size")
+            header = handle.read(header_size)
+            if len(header) != header_size:
+                raise ValueError("truncated ASAR header")
+            payload_size, json_size = struct.unpack("<II", header[:8])
+            if payload_size != header_size - 4 or json_size > header_size - 8:
+                raise ValueError("invalid ASAR pickle header")
+            actual = hashlib.sha256(header[8 : 8 + json_size]).hexdigest()
+    except (OSError, ValueError, struct.error):
+        actual = None
     if not isinstance(expected, str):
         status = "ASAR_INTEGRITY_METADATA_MISSING"
     elif algorithm != "SHA256":
         status = "ASAR_INTEGRITY_ALGORITHM_UNSUPPORTED"
+    elif actual is None:
+        status = "ASAR_INTEGRITY_HEADER_INVALID"
     elif expected.lower() == actual:
         status = "ASAR_INTEGRITY_MATCH"
     else:
         status = "ASAR_INTEGRITY_MISMATCH"
-    return {"status": status, "algorithm": algorithm, "expected": expected, "actual": actual}
+    return {
+        "status": status,
+        "algorithm": algorithm,
+        "expected": expected,
+        "actual": actual,
+        "scope": "raw-json-header",
+        "archiveSha256": archive_sha256,
+    }
+
+
+def _is_macho_file(path: Path) -> bool:
+    try:
+        magic = path.read_bytes()[:4]
+    except OSError:
+        return False
+    return magic in {
+        b"\xfe\xed\xfa\xce", b"\xce\xfa\xed\xfe", b"\xfe\xed\xfa\xcf", b"\xcf\xfa\xed\xfe",
+        b"\xca\xfe\xba\xbe", b"\xbe\xba\xfe\xca", b"\xca\xfe\xba\xbf", b"\xbf\xba\xfe\xca",
+    }
 
 
 def _nested_candidates(app: Path) -> list[Path]:
@@ -196,7 +234,8 @@ def _nested_candidates(app: Path) -> list[Path]:
                 values.add(path)
         for name in files:
             path = base / name
-            if path.suffix in {".dylib", ".node"}:
+            in_dsym = any(parent.suffix == ".dSYM" for parent in path.parents)
+            if path.suffix in {".dylib", ".node"} and not in_dsym and _is_macho_file(path):
                 values.add(path)
     return sorted(values, key=lambda path: path.relative_to(app).as_posix())
 
@@ -330,7 +369,7 @@ def diagnose(
             {
                 "cause": "ASAR_INTEGRITY_MISMATCH",
                 "confidence": "CONFIRMED",
-                "meaning": "app.asar differs from the SHA256 sealed in ElectronAsarIntegrity",
+                "meaning": "the ASAR raw JSON header differs from ElectronAsarIntegrity",
             }
         )
     if entitlements["status"] == "MALFORMED_XML_BLOB":

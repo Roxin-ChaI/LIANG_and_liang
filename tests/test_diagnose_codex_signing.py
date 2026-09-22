@@ -1,7 +1,10 @@
 from __future__ import annotations
 
 import importlib.util
+import hashlib
+import json
 import plistlib
+import struct
 import sys
 from pathlib import Path
 
@@ -25,6 +28,22 @@ def entitlement_plist() -> bytes:
             "com.apple.security.cs.allow-jit": True,
         }
     )
+
+
+def make_asar(payload: bytes = b"current asar") -> tuple[bytes, str]:
+    encoded = json.dumps({"files": {}}, separators=(",", ":")).encode()
+    aligned = (4 + len(encoded) + 1 + 3) & ~3
+    header_size = 4 + aligned
+    padding = aligned - (4 + len(encoded) + 1)
+    archive = (
+        struct.pack("<II", 4, header_size)
+        + struct.pack("<II", aligned, len(encoded))
+        + encoded
+        + b"\0"
+        + (b"\0" * padding)
+        + payload
+    )
+    return archive, hashlib.sha256(encoded).hexdigest()
 
 
 class FakeRunner:
@@ -100,11 +119,12 @@ def make_app(root: Path, *, integrity_matches: bool = True) -> Path:
     (app / "Contents/MacOS").mkdir()
     (app / "Contents/_CodeSignature").mkdir()
     archive = resources / "app.asar"
-    archive.write_bytes(b"current asar")
+    archive_bytes, header_hash = make_asar()
+    archive.write_bytes(archive_bytes)
     executable = app / "Contents/MacOS/ChatGPT"
     executable.write_bytes(b"executable")
     (app / "Contents/_CodeSignature/CodeResources").write_bytes(b"seal")
-    expected = diagnosis.sha256_file(archive) if integrity_matches else "0" * 64
+    expected = header_hash if integrity_matches else "0" * 64
     with (app / "Contents/Info.plist").open("wb") as handle:
         plistlib.dump(
             {
@@ -177,6 +197,7 @@ def test_no_entitlements_are_distinguished_from_malformed(tmp_path: Path) -> Non
 def test_asar_integrity_match(tmp_path: Path) -> None:
     result = run(make_app(tmp_path, integrity_matches=True), FakeRunner())
     assert result["asarIntegrity"]["status"] == "ASAR_INTEGRITY_MATCH"
+    assert result["asarIntegrity"]["scope"] == "raw-json-header"
 
 
 def test_asar_integrity_mismatch_is_a_confirmed_cause(tmp_path: Path) -> None:

@@ -2,19 +2,17 @@
 
 ## Purpose
 
-Phase 7B treats the currently installed `/Applications/ChatGPT.app` as an
-**UNTRUSTED_REFERENCE**. Build 9922 in that bundle has an actual `app.asar`
-SHA256 of
-`1f7939c1c781887c167043c4d1d307af3400d324685cfc315dfe2f80e634f483`,
-while its `ElectronAsarIntegrity` metadata expects
-`a2c8179f53b4722a1d847ccd1753ad60fae8a84a08caf3b40f360edeac6a0a9a`.
-Strict code-signature verification fails and its XML entitlement blob is
-malformed. It therefore cannot supply production hashes, signing material,
-entitlements, or a deployment target.
+Phase 7B acquired the official OpenAI Build 9922 DMG and validated it as a
+**TRUSTED_BASELINE**. Electron's `ElectronAsarIntegrity` value seals the raw
+ASAR JSON header, not the entire archive: the expected and actual header hash
+are both `a2c8179f53b4722a1d847ccd1753ad60fae8a84a08caf3b40f360edeac6a0a9a`.
+The separate full-archive fingerprint is
+`1f7939c1c781887c167043c4d1d307af3400d324685cfc315dfe2f80e634f483`.
 
-The Build 9922 recipe under `runtime-patch/builds/9922/` remains a
-**STRUCTURAL_MIGRATION_PROBE** until it is reconstructed or revalidated
-against a clean official App with matching ASAR integrity.
+That official archive and all seven frozen runtime chunks are byte-identical
+to the earlier Build 9922 structural probe. The recipe is therefore promoted
+without changing its locator needles; its trusted provenance is frozen in
+`runtime-patch/builds/9922/trusted-baseline.json`.
 
 ## Read-only tools
 
@@ -57,12 +55,14 @@ A candidate is accepted only when all of these checks pass:
 3. `lipo` can report at least one executable architecture.
 4. `codesign --verify --deep --strict --verbose=4` passes.
 5. Gatekeeper assessment passes.
-6. Every discovered executable/nested `.app`, `.framework`, `.xpc`,
-   `.dylib`, and `.node` candidate passes strict component verification.
+6. Every discovered executable/nested `.app`, `.framework`, `.xpc`, and
+   macOS Mach-O `.dylib`/`.node` candidate passes strict verification;
+   cross-platform prebuilds and `.dSYM` debug payloads are not code targets.
 7. The main signature advertises hardened runtime.
 8. `codesign` can emit the main entitlements as a valid XML plist.
 9. `ElectronAsarIntegrity` contains a SHA256 record for
-   `Resources/app.asar`, and the expected digest equals the actual digest.
+   `Resources/app.asar`, and the expected digest equals the raw ASAR JSON
+   header digest. The complete archive SHA256 is frozen separately.
 10. The codesign identifier, Team ID, and system-reported authority chain
     match the expected official identity.
 
@@ -94,16 +94,10 @@ and expected ASAR hashes, strict-signature status, and changed hashes for the
 main executable, `Info.plist`, `app.asar`, and `CodeResources`. It never tries
 to repair or synchronize either bundle.
 
-## Gate A and next action
+## Gate A result
 
-Phase 7B stops after this validator commit unless discovery produces
-`CLEAN_REFERENCE_PASS`. A missing reference is an expected gate outcome, not
-a test failure. Obtain a new official Codex Desktop distribution without
-overwriting the installed App, then leave its App mounted from the official
-DMG or copy it under a distinct name such as
-`~/Downloads/ChatGPT-clean.app` and rerun discovery.
-
-Only a passing clean reference may proceed to trusted build fingerprinting,
-clean locator recon, temporary-ASAR patching, and temporary-copy ad-hoc
-signing validation. Official App, ASAR, extracted proprietary JavaScript, and
-entitlement blobs are never committed to this repository.
+Build 9922 passed bundle identity, official Team ID and authority chain,
+Gatekeeper, hardened runtime, valid XML entitlements, deep/strict signature,
+macOS nested-code signatures, Electron ASAR header integrity, and the
+zero-mutation guard. Official App, ASAR, extracted proprietary JavaScript,
+and entitlement blobs are never committed to this repository.

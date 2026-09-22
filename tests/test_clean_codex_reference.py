@@ -3,6 +3,8 @@ from __future__ import annotations
 import hashlib
 import importlib.util
 import plistlib
+import json
+import struct
 import sys
 from pathlib import Path
 
@@ -34,6 +36,22 @@ finder = load_module(
 
 def sha(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
+
+
+def make_asar(payload: bytes = b"clean official archive") -> tuple[bytes, str]:
+    encoded = json.dumps({"files": {}}, separators=(",", ":")).encode()
+    aligned = (4 + len(encoded) + 1 + 3) & ~3
+    header_size = 4 + aligned
+    padding = aligned - (4 + len(encoded) + 1)
+    archive = (
+        struct.pack("<II", 4, header_size)
+        + struct.pack("<II", aligned, len(encoded))
+        + encoded
+        + b"\0"
+        + (b"\0" * padding)
+        + payload
+    )
+    return archive, sha(encoded)
 
 
 class FakeRunner:
@@ -128,11 +146,11 @@ def make_app(
     resources.mkdir(parents=True)
     executable_dir.mkdir()
     signature_dir.mkdir()
-    archive = b"clean official archive"
+    archive, header_hash = make_asar()
     (resources / "app.asar").write_bytes(archive)
     (executable_dir / "ChatGPT").write_bytes(b"clean executable")
     (signature_dir / "CodeResources").write_bytes(b"sealed resources")
-    expected = sha(archive) if integrity_matches else "0" * 64
+    expected = header_hash if integrity_matches else "0" * 64
     with (contents / "Info.plist").open("wb") as handle:
         plistlib.dump(
             {
@@ -167,6 +185,8 @@ def test_clean_candidate_passes_every_gate(tmp_path: Path) -> None:
     assert result["codesign"]["returncode"] == 0
     assert result["entitlements"]["status"] == "VALID_XML"
     assert result["asarIntegrity"]["status"] == "ASAR_INTEGRITY_MATCH"
+    assert result["asarIntegrity"]["scope"] == "raw-json-header"
+    assert result["appAsarSha256"] == sha((app / "Contents/Resources/app.asar").read_bytes())
     assert result["signatureIdentity"]["teamIdentifier"] == "2DC432GLL2"
     assert result["signatureIdentity"]["hardenedRuntime"] is True
     assert result["zeroMutation"] is True
@@ -188,6 +208,26 @@ def test_nested_signature_failure_is_rejected(tmp_path: Path) -> None:
     result = validate(app, runner, nested_components=[nested])
     assert result["classification"] == "REJECT_SIGNATURE"
     assert result["nestedSignatures"]["firstFailingComponent"] == str(nested)
+
+
+def test_non_macho_cross_platform_node_is_not_a_nested_signing_target(tmp_path: Path) -> None:
+    app = make_app(tmp_path)
+    foreign = app / "Contents/Resources/prebuilds/linux-x64/addon.node"
+    foreign.parent.mkdir(parents=True)
+    foreign.write_bytes(b"ELF cross-platform payload")
+    assert foreign not in validator._nested_candidates(
+        app, app / "Contents/MacOS/ChatGPT"
+    )
+
+
+def test_macho_debug_symbol_is_not_a_nested_signing_target(tmp_path: Path) -> None:
+    app = make_app(tmp_path)
+    debug = app / "Contents/Resources/native/addon.node.dSYM/Contents/Resources/DWARF/addon.node"
+    debug.parent.mkdir(parents=True)
+    debug.write_bytes(b"\xcf\xfa\xed\xfe" + b"debug")
+    assert debug not in validator._nested_candidates(
+        app, app / "Contents/MacOS/ChatGPT"
+    )
 
 
 def test_malformed_entitlement_is_rejected(tmp_path: Path) -> None:

@@ -8,6 +8,7 @@ import hashlib
 import json
 import os
 import plistlib
+import struct
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
@@ -185,11 +186,33 @@ def _asar_integrity(info: dict[str, object], archive: Path) -> dict[str, object]
     record = metadata.get("Resources/app.asar") if isinstance(metadata, dict) else None
     algorithm = record.get("algorithm") if isinstance(record, dict) else None
     expected = record.get("hash") if isinstance(record, dict) else None
-    actual = sha256_file(archive)
+    archive_sha256 = sha256_file(archive)
+    try:
+        with archive.open("rb") as handle:
+            prefix = handle.read(8)
+            if len(prefix) != 8:
+                raise ValueError("truncated ASAR prefix")
+            pickle_size, header_size = struct.unpack("<II", prefix)
+            if pickle_size != 4 or header_size < 12 or header_size > 64 * 1024 * 1024:
+                raise ValueError("invalid ASAR header size")
+            header = handle.read(header_size)
+            if len(header) != header_size:
+                raise ValueError("truncated ASAR header")
+            payload_size, json_size = struct.unpack("<II", header[:8])
+            if payload_size != header_size - 4 or json_size > header_size - 8:
+                raise ValueError("invalid ASAR pickle header")
+            # ElectronAsarIntegrity seals the raw JSON header bytes, not the
+            # complete archive. The full-file digest remains a separate build
+            # fingerprint and must never be compared to this metadata field.
+            actual = hashlib.sha256(header[8 : 8 + json_size]).hexdigest()
+    except (OSError, ValueError, struct.error):
+        actual = None
     if not isinstance(expected, str):
         status = "ASAR_INTEGRITY_METADATA_MISSING"
     elif algorithm != "SHA256":
         status = "ASAR_INTEGRITY_ALGORITHM_UNSUPPORTED"
+    elif actual is None:
+        status = "ASAR_INTEGRITY_HEADER_INVALID"
     elif expected.lower() == actual:
         status = "ASAR_INTEGRITY_MATCH"
     else:
@@ -199,6 +222,25 @@ def _asar_integrity(info: dict[str, object], archive: Path) -> dict[str, object]
         "algorithm": algorithm,
         "expected": expected,
         "actual": actual,
+        "scope": "raw-json-header",
+        "archiveSha256": archive_sha256,
+    }
+
+
+def _is_macho_file(path: Path) -> bool:
+    try:
+        magic = path.read_bytes()[:4]
+    except OSError:
+        return False
+    return magic in {
+        b"\xfe\xed\xfa\xce",
+        b"\xce\xfa\xed\xfe",
+        b"\xfe\xed\xfa\xcf",
+        b"\xcf\xfa\xed\xfe",
+        b"\xca\xfe\xba\xbe",
+        b"\xbe\xba\xfe\xca",
+        b"\xca\xfe\xba\xbf",
+        b"\xbf\xba\xfe\xca",
     }
 
 
@@ -212,7 +254,16 @@ def _nested_candidates(app: Path, executable: Path) -> list[Path]:
                 values.add(candidate)
         for name in files:
             candidate = base / name
-            if candidate.suffix in {".dylib", ".node"}:
+            # Bundles may ship Windows/Linux prebuilds with .node suffixes.
+            # They are data on macOS, not nested macOS code-signing targets.
+            # Mach-O debug payloads inside .dSYM bundles are also not runtime
+            # code objects and are covered by the signed resource seal.
+            in_dsym = any(parent.suffix == ".dSYM" for parent in candidate.parents)
+            if (
+                candidate.suffix in {".dylib", ".node"}
+                and not in_dsym
+                and _is_macho_file(candidate)
+            ):
                 values.add(candidate)
     return sorted(values, key=lambda value: value.relative_to(app).as_posix())
 
@@ -369,7 +420,7 @@ def validate_candidate(
         "architectures": architectures,
         "executable": executable.relative_to(candidate).as_posix(),
         "executableSha256": sha256_file(executable),
-        "appAsarSha256": asar["actual"],
+        "appAsarSha256": asar["archiveSha256"],
         "codesign": strict.summary(),
         "gatekeeper": gatekeeper.summary(),
         "signatureIdentity": details,

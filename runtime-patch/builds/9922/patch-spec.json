@@ -1,6 +1,10 @@
 {
   "formatVersion": 1,
-  "patchSpecVersion": "9922.1",
+  "patchSpecVersion": "9922.2",
+  "baseline": {
+    "classification": "TRUSTED_BASELINE",
+    "manifest": "trusted-baseline.json"
+  },
   "target": {
     "version": "26.915.31945",
     "build": "9922",

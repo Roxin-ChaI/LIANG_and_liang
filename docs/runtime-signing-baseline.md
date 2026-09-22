@@ -1,5 +1,15 @@
 # Current Codex signing baseline diagnosis (Build 9922)
 
+> **Phase 7B correction:** This Phase 7A diagnosis is superseded. A freshly
+> downloaded, notarized OpenAI DMG contains the same Build 9922 archive and
+> critical hashes, and both the mounted source and current installed App pass
+> `codesign --verify --deep --strict` with valid XML entitlements. The earlier
+> ASAR mismatch compared the full archive digest with Electron's raw JSON
+> header digest; those are different scopes. The trusted values and current
+> verdict are frozen in `runtime-patch/builds/9922/trusted-baseline.json` and
+> `docs/clean-runtime-baseline.md`. The historical observations below are kept
+> only as provenance for why the clean-baseline gate was added.
+
 ## Scope
 
 This Phase 7A diagnosis is read-only. It inspected
