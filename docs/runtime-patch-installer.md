@@ -51,8 +51,16 @@ Restore stages a verified copy of the backup, atomically replaces the archive, c
 
 An App update invalidates the old recipe by changing the version/build/archive and usually the chunk names and locators. The 9275 installer safely refuses the currently installed 9922 build. Supporting a new build requires a new read-only recon, exact fingerprints, reviewed locators, recipe tests, temporary-copy smoke, and signing analysis.
 
-## Signing limitation and Phase 7 outcome
+## Signing validation and Phase 7B outcome
 
-See `docs/runtime-signing.md`. The current real App has an invalid baseline strict signature and exposes an invalid entitlement blob. It is also build 9922 rather than 9275, so the actual temporary-copy patch/sign smoke stopped before copying or patching. Synthetic full-bundle E2E validates the content patch, deterministic ASAR, idempotence, rollback, and exact restore, but it does not authorize a real install.
+Build 9922 is frozen as a trusted official baseline in
+`runtime-patch/builds/9922/trusted-baseline.json`. The clean-copy smoke copies
+only the mounted official App into a private temporary directory, verifies the
+copy before mutation, applies the matching installer recipe, records the
+expected pre-resign strict-signature failure, preserves the baseline
+entitlement keys during ad-hoc signing, and requires deep/strict verification
+to pass afterward. It also proves signing leaves the patched ASAR unchanged
+and content restore returns the ASAR byte-for-byte to the clean fingerprint.
+Content restore does not recreate the original Apple signature.
 
 Phase 7 leaves `/Applications/ChatGPT.app` unchanged, does not launch another App instance, does not modify `~/.codex`, and does not install a daemon. A controlled real install requires a matching audited build and a resolved entitlement-preserving signing strategy.

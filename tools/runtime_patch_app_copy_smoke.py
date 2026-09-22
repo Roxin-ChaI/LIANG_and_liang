@@ -96,7 +96,17 @@ def signing_snapshot(app: Path, runner: Runner) -> SigningSnapshot:
     )
 
 
-def adhoc_sign(app: Path, baseline: SigningSnapshot, runner: Runner, work_dir: Path) -> dict[str, str]:
+def _entitlement_keys(xml: str | None) -> list[str]:
+    if xml is None:
+        return []
+    try:
+        value = plistlib.loads(xml.encode())
+    except plistlib.InvalidFileException:
+        return []
+    return sorted(value) if isinstance(value, dict) else []
+
+
+def adhoc_sign(app: Path, baseline: SigningSnapshot, runner: Runner, work_dir: Path) -> dict[str, object]:
     if baseline.entitlements_xml is None:
         return {"result": "ADHOC_SIGNING_UNSAFE", "reason": "baseline entitlements are unavailable or invalid"}
     entitlements = work_dir / "preserved-entitlements.plist"
@@ -105,7 +115,16 @@ def adhoc_sign(app: Path, baseline: SigningSnapshot, runner: Runner, work_dir: P
     if signed.returncode != 0:
         return {"result": "ADHOC_SIGNING_FAIL", "reason": "codesign rejected the preserved-entitlements strategy"}
     verified = runner.run(["codesign", "--verify", "--deep", "--strict", "--verbose=2", str(app)])
-    return {"result": "PASS" if verified.returncode == 0 else "FAIL", "reason": "preserved-entitlements ad-hoc signature"}
+    after = signing_snapshot(app, runner)
+    before_keys = _entitlement_keys(baseline.entitlements_xml)
+    after_keys = _entitlement_keys(after.entitlements_xml)
+    return {
+        "result": "PASS" if verified.returncode == 0 else "FAIL",
+        "reason": "preserved-entitlements ad-hoc signature",
+        "expectedEntitlementKeys": before_keys,
+        "actualEntitlementKeys": after_keys,
+        "entitlementsPreserved": before_keys == after_keys,
+    }
 
 
 def _load_target(spec_path: Path) -> dict[str, str]:
@@ -160,12 +179,15 @@ def smoke(
     shutil.copytree(source_app, temp_app, symlinks=True)
     copy_before = fingerprint(temp_app)
     temp_signing_before = signing_snapshot(temp_app, command_runner)
+    if copy_before != before or temp_signing_before.verification != "PASS" or temp_signing_before.entitlements_xml is None:
+        raise RuntimeError("TEMP_COPY_BASELINE_INVALID")
     patch = command_runner.run([sys.executable, str(INSTALLER), "--app", str(temp_app), "--spec", str(spec_path), "--patch"])
     if patch.returncode != 0:
         raise RuntimeError(f"temp patch failed: {patch.stderr or patch.stdout}")
     patched = fingerprint(temp_app)
     unsigned = signing_snapshot(temp_app, command_runner)
     signing = adhoc_sign(temp_app, temp_signing_before, command_runner, parent)
+    signed_patched = fingerprint(temp_app)
     restore = command_runner.run([sys.executable, str(INSTALLER), "--app", str(temp_app), "--restore"])
     if restore.returncode != 0:
         raise RuntimeError(f"temp restore failed: {restore.stderr or restore.stdout}")
@@ -180,6 +202,7 @@ def smoke(
             "tempPatched": asdict(patched),
             "patchedSigning": asdict(unsigned),
             "adhocSigning": signing,
+            "patchedAsarUnchangedBySigning": signed_patched.app_asar_sha256 == patched.app_asar_sha256,
             "contentRestore": "PASS" if restored.app_asar_sha256 == copy_before.app_asar_sha256 else "FAIL",
             "signatureRestore": "NOT_RESTORED_BY_ASAR_CONTENT_RESTORE",
             "bundleIdUnchanged": restored.bundle_identifier == copy_before.bundle_identifier,

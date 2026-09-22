@@ -63,9 +63,16 @@ def test_invalid_entitlements_make_adhoc_strategy_unsafe(tmp_path: Path) -> None
 def test_adhoc_sign_preserves_entitlements_and_strictly_verifies(tmp_path: Path) -> None:
     app = make_minimal_app(tmp_path)
     baseline = smoke.SigningSnapshot("PASS", "com.openai.codex", "TEAM", True, valid_entitlements(), "")
-    runner = FakeRunner([completed(0), completed(0)])
+    runner = FakeRunner([
+        completed(0),
+        completed(0),
+        completed(0),
+        completed(stderr="Identifier=com.openai.codex\nflags=0x10000(runtime)\n"),
+        completed(stdout=valid_entitlements()),
+    ])
     result = smoke.adhoc_sign(app, baseline, runner, tmp_path)
     assert result["result"] == "PASS"
+    assert result["entitlementsPreserved"] is True
     assert runner.commands[0][:5] == ["codesign", "--force", "--deep", "--sign", "-"]
     assert "--entitlements" in runner.commands[0]
     assert runner.commands[1][1:4] == ["--verify", "--deep", "--strict"]
