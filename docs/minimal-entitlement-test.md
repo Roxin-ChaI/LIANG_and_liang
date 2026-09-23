@@ -10,7 +10,7 @@ frozen source is version `26.915.31945`, build `9922`, with `app.asar` SHA256
 9922; a mismatched build produces an empty matrix and no signing plan.
 
 On 2026-09-24, the installed official App was already Build **10789**, ASAR
-SHA256 `c41157d36d701d3228c82e56852f49da2381941a7e10e31aefd`.
+SHA256 `c41157d36d701d3228c82e56852f49da2381941a7e5ccfac2d58b7e10e31aefd`.
 The original official CDN URL now advertises a DMG of 650,455,829 bytes,
 whereas the frozen checksum-verified Build 9922 DMG was 645,200,049 bytes.
 No verified 9922 App/DMG remains in the checked local downloads, project,
