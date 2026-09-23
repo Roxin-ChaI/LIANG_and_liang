@@ -69,6 +69,13 @@ not verified, and no real App startup without login/Keychain access has been
 demonstrated. Per the Phase 8D gate, no entitlement is removed and the minimal
 signing experiment and live runtime smoke are **not run**.
 
+The diagnostic tool also enforces a fail-closed evidence gate: the log must
+name a signed, documented restricted key on the main executable before a
+reduced-entitlement plan can even be reviewed. Passing that gate would **not**
+itself authorize signing or launch; profile, signer, Hardened Runtime,
+credential isolation and Pet-function requirements must still be satisfied.
+The current Build 9922 log fails this gate.
+
 Verdict: `AMFI_CAUSE_UNCONFIRMED` for the specific unsatisfied key;
 `ENTITLEMENT_AUTHORIZATION_FAILED` for the launch failure class.
 

@@ -55,3 +55,17 @@ def test_missing_rejection_is_not_misclassified_as_entitlement_failure() -> None
     assert evidence["failedExecutable"] is None
     assert evidence["failureClass"] == "UNKNOWN"
     assert evidence["verdict"] == "AMFI_CAUSE_UNCONFIRMED"
+
+
+def test_signing_experiment_gate_requires_a_named_signed_restricted_claim() -> None:
+    signed = {"keychain-access-groups", "com.apple.security.cs.allow-jit"}
+    baseline = {"failedExecutable": "Contents/MacOS/ChatGPT", "namedUnsatisfiedEntitlements": []}
+    assert module.experiment_evidence_gate(baseline, signed)["reducedSigningPlanMayBeReviewed"] is False
+    named = {**baseline, "namedUnsatisfiedEntitlements": ["keychain-access-groups"]}
+    allowed = module.experiment_evidence_gate(named, signed)
+    assert allowed["reducedSigningPlanMayBeReviewed"] is True
+    assert allowed["launchAuthorizedByThisGate"] is False
+    for key in ("com.apple.security.cs.allow-jit", "com.apple.private.unlisted"):
+        assert module.experiment_evidence_gate(
+            {**baseline, "namedUnsatisfiedEntitlements": [key]}, signed
+        )["reducedSigningPlanMayBeReviewed"] is False

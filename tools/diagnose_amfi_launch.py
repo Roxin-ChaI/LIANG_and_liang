@@ -42,6 +42,28 @@ def classify_entitlements(keys: list[str]) -> dict[str, str]:
     return {key: CLASSES.get(key, "UNKNOWN") for key in sorted(keys)}
 
 
+def experiment_evidence_gate(evidence: dict[str, object], signed_keys: set[str]) -> dict[str, object]:
+    """Require a named, signed restricted key before any signing plan review.
+
+    Passing this read-only gate is necessary, never sufficient, for creating a
+    reduced-entitlement copy. Identity, profile, Hardened Runtime and
+    credential-isolation checks remain separate requirements.
+    """
+
+    names = evidence.get("namedUnsatisfiedEntitlements")
+    identified = (
+        evidence.get("failedExecutable") == "Contents/MacOS/ChatGPT"
+        and isinstance(names, list)
+        and bool(names)
+        and all(isinstance(key, str) and key in signed_keys and CLASSES.get(key) == "RESTRICTED" for key in names)
+    )
+    return {
+        "namedRestrictedClaimProven": identified,
+        "reducedSigningPlanMayBeReviewed": identified,
+        "launchAuthorizedByThisGate": False,
+    }
+
+
 def parse_amfi_log(log_text: str) -> dict[str, object]:
     """Extract only launch-rejection evidence, never raw log contents."""
 
@@ -130,6 +152,7 @@ def diagnose(app: Path, log_text: str) -> dict[str, object]:
     entitlements = signed_entitlements(parts["main"])
     signed = {name: signer_metadata(path) for name, path in parts.items() if path.exists()}
     evidence = parse_amfi_log(log_text)
+    gate = experiment_evidence_gate(evidence, set(entitlements))
     return {
         "officialMainProfilePresent": (app / "Contents/embedded.provisionprofile").is_file(),
         "signedComponents": signed,
@@ -137,7 +160,7 @@ def diagnose(app: Path, log_text: str) -> dict[str, object]:
         "entitlementCount": len(entitlements),
         "amfi": evidence,
         "phase8cStrictCodesign": "SIGNATURE_STRUCTURE_VALID",
-        "minimalSigningExperimentAllowed": evidence["verdict"] == "EXACT_ENTITLEMENT_IDENTIFIED",
+        "experimentEvidenceGate": gate,
     }
 
 
@@ -149,7 +172,7 @@ def main() -> int:
     args = parser.parse_args()
     report = diagnose(args.app, read_log_window(args.log_start, args.log_end))
     print(json.dumps(report, indent=2, sort_keys=True))
-    return 0 if report["amfi"]["verdict"] == "EXACT_ENTITLEMENT_IDENTIFIED" else 2
+    return 0 if report["experimentEvidenceGate"]["reducedSigningPlanMayBeReviewed"] else 2
 
 
 if __name__ == "__main__":
