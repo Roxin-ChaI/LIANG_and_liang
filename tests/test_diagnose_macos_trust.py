@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from copy import deepcopy
 from pathlib import Path
+import struct
+from unittest.mock import patch
 
 from tools import diagnose_macos_trust as diagnosis
 
@@ -13,6 +15,10 @@ def app(kind: str, structural: str = "STRUCTURAL_SIGNATURE_INTACT", trust: str =
         "present": True,
         "verifyVerbose6": {"structural": structural, "trust": trust},
         "certificates": [{"dateValidity": "VALID"}],
+        "designatedRequirement": {"parseable": True},
+        "certificateChain": {"status": "SUCCESS"},
+        "identity": {"bundleIdentifier": "com.openai.codex"},
+        "asarIntegrity": {"status": "PASS", "archiveSha256": "trusted"},
     }
 
 
@@ -21,14 +27,15 @@ def healthy() -> dict[str, object]:
         "system": {"clockPlausible": True},
         "apps": [app("system"), app("system"), app("official-chatgpt")],
         "trustSettings": {
-            "user": {"explicitDeny": False},
-            "admin": {"explicitDeny": False},
-            "system": {"explicitDeny": False},
+            "user": {"explicitDeny": False, "status": "READABLE"},
+            "admin": {"explicitDeny": False, "status": "READABLE"},
+            "system": {"explicitDeny": False, "status": "READABLE"},
         },
         "roots": {
             "Apple Root CA": {"present": True},
             "Developer ID Certification Authority": {"present": True},
         },
+        "trustedAsarSha256": "trusted",
     }
 
 
@@ -119,6 +126,25 @@ def test_system_apps_and_chatgpt_failure_are_system_wide_only_when_structurally_
     assert classify(value)["classification"] == "CHATGPT_SIGNATURE_SPECIFIC_FAILURE"
 
 
+def test_missing_chain_proof_never_enables_degraded_gate() -> None:
+    value = healthy()
+    for target in value["apps"]:
+        target["verifyVerbose6"]["trust"] = "TRUST_EVALUATION_FAILED"
+    value["apps"][-1]["certificateChain"]["status"] = "CERTIFICATE_CHAIN_UNAVAILABLE"
+    result = classify(value)
+    assert result["classification"] == "SYSTEM_WIDE_TRUST_EVALUATION_BROKEN"
+    assert result["degradedGateSafeToConsider"] is False
+    assert result["phase8Decision"] == "TRUST_FAILURE_MUST_BE_FIXED_FIRST"
+
+
+def test_asar_content_mismatch_never_enables_degraded_gate() -> None:
+    value = healthy()
+    for target in value["apps"]:
+        target["verifyVerbose6"]["trust"] = "TRUST_EVALUATION_FAILED"
+    value["apps"][-1]["asarIntegrity"]["archiveSha256"] = "changed"
+    assert classify(value)["degradedGateSafeToConsider"] is False
+
+
 def test_diagnosis_classifier_has_zero_mutation_guarantee(tmp_path: Path) -> None:
     value = healthy()
     before = deepcopy(value)
@@ -127,3 +153,86 @@ def test_diagnosis_classifier_has_zero_mutation_guarantee(tmp_path: Path) -> Non
     classify(value)
     assert value == before
     assert marker.read_bytes() == b"unchanged"
+
+
+def test_official_download_uses_explicit_non_secret_user_agent(tmp_path: Path) -> None:
+    captured = {}
+    (tmp_path / "download").mkdir()
+
+    class Response:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_args):
+            return False
+
+        def read(self, _size=-1):
+            return b""
+
+    def fake_urlopen(request):
+        captured["headers"] = dict(request.header_items())
+        raise RuntimeError("stop after request inspection")
+
+    with patch.object(diagnosis.tempfile, "mkdtemp", return_value=str(tmp_path / "download")):
+        with patch.object(diagnosis.urllib.request, "urlopen", side_effect=fake_urlopen):
+            try:
+                with diagnosis.official_app_from_dmg():
+                    pass
+            except RuntimeError as error:
+                assert str(error) == "stop after request inspection"
+    assert captured["headers"]["User-agent"] == "curl/8.7.1"
+    assert not any("authorization" in key.lower() for key in captured["headers"])
+
+
+def test_root_lookup_uses_explicit_system_keychains() -> None:
+    class Runner:
+        def __init__(self):
+            self.commands = []
+
+        def run(self, argv, *, cwd=None):
+            self.commands.append(tuple(argv))
+            return diagnosis.CommandResult(
+                tuple(argv), 0, "SHA-256 hash: ABCD", ""
+            )
+
+    runner = Runner()
+    values = diagnosis.inspect_roots(runner)
+    assert all(item["present"] for item in values.values())
+    assert all(
+        "/System/Library/Keychains/SystemRootCertificates.keychain" in command
+        for command in runner.commands
+    )
+
+
+def test_log_query_requests_only_error_and_fault_records() -> None:
+    class Runner:
+        def run(self, argv, *, cwd=None):
+            command = tuple(argv)
+            return diagnosis.CommandResult(command, 0, "", "")
+
+    result = diagnosis.inspect_logs(Runner())
+    assert result["findings"] == []
+
+
+def test_embedded_cms_is_extracted_from_thin_macho(tmp_path: Path) -> None:
+    cms = b"synthetic-cms"
+    wrapper = struct.pack(">II", 0xFADE0B01, 8 + len(cms)) + cms
+    superblob = (
+        struct.pack(">III", 0xFADE0CC0, 20 + len(wrapper), 1)
+        + struct.pack(">II", 0x10000, 20)
+        + wrapper
+    )
+    header = bytearray(32)
+    struct.pack_into("<I", header, 0, 0xFEEDFACF)
+    struct.pack_into("<I", header, 16, 1)
+    load_command = struct.pack("<IIII", 0x1D, 16, 48, len(superblob))
+    executable = tmp_path / "fixture"
+    executable.write_bytes(bytes(header) + load_command + superblob)
+    assert diagnosis._embedded_cms(executable) == cms
+
+
+def test_redaction_removes_home_user_and_hostname() -> None:
+    source = f"{Path.home()} {diagnosis.os.environ.get('USER', '')} {diagnosis.os.uname().nodename}"
+    redacted = diagnosis._redact(source)
+    assert str(Path.home()) not in redacted
+    assert diagnosis.os.uname().nodename not in redacted

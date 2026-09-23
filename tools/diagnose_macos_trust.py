@@ -124,6 +124,9 @@ def _redact(text: str) -> str:
     user = os.environ.get("USER") or ""
     home = os.fspath(Path.home())
     value = text.replace(home, "<HOME>")
+    hostname = os.uname().nodename
+    if hostname:
+        value = value.replace(hostname, "<HOST>")
     if user:
         value = re.sub(rf"(?<![A-Za-z0-9]){re.escape(user)}(?![A-Za-z0-9])", "<USER>", value)
     value = re.sub(
@@ -196,23 +199,100 @@ def parse_certificate_text(text: str, now: datetime) -> dict[str, object]:
     return result
 
 
+def _embedded_cms(executable: Path) -> bytes | None:
+    """Extract the CMS wrapper from a thin 64-bit Mach-O signature."""
+
+    try:
+        data = executable.read_bytes()
+        if len(data) < 32 or struct.unpack_from("<I", data)[0] != 0xFEEDFACF:
+            return None
+        command_count = struct.unpack_from("<I", data, 16)[0]
+        offset = 32
+        signature_offset = signature_size = None
+        for _ in range(command_count):
+            command, command_size = struct.unpack_from("<II", data, offset)
+            if command_size < 8 or offset + command_size > len(data):
+                return None
+            if command == 0x1D and command_size >= 16:
+                signature_offset, signature_size = struct.unpack_from(
+                    "<II", data, offset + 8
+                )
+                break
+            offset += command_size
+        if signature_offset is None or signature_size is None:
+            return None
+        superblob = data[signature_offset : signature_offset + signature_size]
+        magic, length, count = struct.unpack_from(">III", superblob)
+        if magic != 0xFADE0CC0 or length > len(superblob):
+            return None
+        entries = [struct.unpack_from(">II", superblob, 12 + index * 8) for index in range(count)]
+        cms_offset = next(offset for slot, offset in entries if slot == 0x10000)
+        wrapper_magic, wrapper_length = struct.unpack_from(">II", superblob, cms_offset)
+        if wrapper_magic != 0xFADE0B01 or cms_offset + wrapper_length > length:
+            return None
+        return superblob[cms_offset + 8 : cms_offset + wrapper_length]
+    except (OSError, StopIteration, struct.error):
+        return None
+
+
+def _cms_certificate_paths(app: Path, directory: Path, runner: Runner) -> list[Path]:
+    try:
+        info = plistlib.loads((app / "Contents/Info.plist").read_bytes())
+        executable_name = str(info["CFBundleExecutable"])
+    except (OSError, KeyError, plistlib.InvalidFileException):
+        return []
+    cms = _embedded_cms(app / "Contents/MacOS" / executable_name)
+    if not cms:
+        return []
+    cms_path = directory / "signature.cms"
+    bundle_path = directory / "certificates.pem"
+    cms_path.write_bytes(cms)
+    decoded = runner.run(
+        [
+            "openssl",
+            "pkcs7",
+            "-inform",
+            "DER",
+            "-in",
+            str(cms_path),
+            "-print_certs",
+            "-out",
+            str(bundle_path),
+        ]
+    )
+    if decoded.returncode != 0 or not bundle_path.is_file():
+        return []
+    text = bundle_path.read_text(errors="replace")
+    blocks = re.findall(
+        r"-----BEGIN CERTIFICATE-----.*?-----END CERTIFICATE-----",
+        text,
+        flags=re.DOTALL,
+    )
+    paths: list[Path] = []
+    for index, block in enumerate(blocks):
+        path = directory / f"cms-{index}.pem"
+        path.write_text(block + "\n")
+        paths.append(path)
+    return paths
+
+
 def _extract_certificates(
     app: Path, runner: Runner, now: datetime
 ) -> tuple[list[dict[str, object]], list[Path], Path]:
     directory = Path(tempfile.mkdtemp(prefix="liang-trust-certs-"))
     prefix = directory / "signer"
     extraction = runner.run(
-        ["codesign", "-d", "--extract-certificates", str(prefix), str(app)]
+        ["codesign", "-d", f"--extract-certificates={prefix}", str(app)]
     )
     paths = sorted(directory.glob("signer*")) if extraction.returncode == 0 else []
+    if not paths:
+        paths = _cms_certificate_paths(app, directory, runner)
     certificates: list[dict[str, object]] = []
     for path in paths:
         parsed = runner.run(
             [
                 "openssl",
                 "x509",
-                "-inform",
-                "DER",
                 "-in",
                 str(path),
                 "-noout",
@@ -224,10 +304,35 @@ def _extract_certificates(
                 "-sha256",
             ]
         )
+        if path.suffix != ".pem":
+            command = list(parsed.argv)
+            command[2:2] = ["-inform", "DER"]
+            parsed = runner.run(command)
         item = parse_certificate_text(parsed.stdout, now)
         item["index"] = len(certificates)
         item["parseReturncode"] = parsed.returncode
         certificates.append(item)
+    if certificates:
+        subjects = {str(item.get("subject")): index for index, item in enumerate(certificates)}
+        issuer_values = {str(item.get("issuer")) for item in certificates}
+        leaf_index = next(
+            (index for index, item in enumerate(certificates) if str(item.get("subject")) not in issuer_values),
+            0,
+        )
+        ordered_indexes: list[int] = []
+        current = leaf_index
+        while current not in ordered_indexes:
+            ordered_indexes.append(current)
+            issuer = str(certificates[current].get("issuer"))
+            next_index = subjects.get(issuer)
+            if next_index is None or next_index == current:
+                break
+            current = next_index
+        ordered_indexes.extend(index for index in range(len(certificates)) if index not in ordered_indexes)
+        certificates = [certificates[index] for index in ordered_indexes]
+        paths = [paths[index] for index in ordered_indexes]
+        for index, item in enumerate(certificates):
+            item["index"] = index
     return certificates, paths, directory
 
 
@@ -354,7 +459,18 @@ def inspect_roots(runner: Runner) -> dict[str, object]:
     )
     values: dict[str, object] = {}
     for name in names:
-        result = runner.run(["security", "find-certificate", "-a", "-c", name, "-Z"])
+        result = runner.run(
+            [
+                "security",
+                "find-certificate",
+                "-a",
+                "-c",
+                name,
+                "-Z",
+                "/System/Library/Keychains/SystemRootCertificates.keychain",
+                "/Library/Keychains/System.keychain",
+            ]
+        )
         values[name] = {
             "present": result.returncode == 0 and "SHA-256 hash:" in result.combined,
             "returncode": result.returncode,
@@ -399,14 +515,10 @@ def inspect_logs(runner: Runner) -> dict[str, object]:
             "--style",
             "compact",
             "--predicate",
-            'process == "trustd" OR process == "securityd"',
+            '(process == "trustd" OR process == "securityd") AND (messageType == error OR messageType == fault)',
         ]
     )
-    interesting = [
-        line
-        for line in result.combined.splitlines()
-        if "error" in line.lower() or "fault" in line.lower()
-    ][:50]
+    interesting = result.combined.splitlines()[:50]
     return {
         "status": "READABLE" if result.returncode == 0 else "UNAVAILABLE",
         "findings": [_redact(line) for line in interesting],
@@ -480,7 +592,42 @@ def classify_diagnosis(evidence: dict[str, object]) -> dict[str, object]:
         classification = "TRUST_ENVIRONMENT_HEALTHY"
     else:
         classification = "UNKNOWN_TRUST_FAILURE"
-    degraded = classification == "SYSTEM_WIDE_TRUST_EVALUATION_BROKEN"
+    # A system-wide trust error alone is not sufficient to weaken the Phase 8
+    # gate. Every independent content and chain check must be present and pass.
+    settings_readable = all(
+        trust_settings.get(scope, {}).get("status") == "READABLE"
+        for scope in ("user", "admin", "system")
+    )
+    required_apps = len(system_apps) >= 2 and official is not None
+    structural_proofs = required_apps and all(
+        app.get("verifyVerbose6", {}).get("structural")
+        == "STRUCTURAL_SIGNATURE_INTACT"
+        and app.get("designatedRequirement", {}).get("parseable") is True
+        and app.get("certificateChain", {}).get("status") == "SUCCESS"
+        and bool(app.get("certificates"))
+        and all(
+            cert.get("dateValidity") == "VALID"
+            for cert in app.get("certificates", [])
+        )
+        for app in [*system_apps, official]
+    )
+    official_content = bool(official) and all(
+        (
+            official.get("identity", {}).get("bundleIdentifier") == "com.openai.codex",
+            official.get("asarIntegrity", {}).get("status") == "PASS",
+            official.get("asarIntegrity", {}).get("archiveSha256")
+            == evidence.get("trustedAsarSha256"),
+        )
+    )
+    degraded = all(
+        (
+            classification == "SYSTEM_WIDE_TRUST_EVALUATION_BROKEN",
+            settings_readable,
+            structural_proofs,
+            official_content,
+            evidence.get("system", {}).get("clockPlausible") is True,
+        )
+    )
     return {
         "classification": classification,
         "strictTrustGateUsable": classification == "TRUST_ENVIRONMENT_HEALTHY",
@@ -522,6 +669,7 @@ def diagnose(
         "roots": inspect_roots(command_runner),
         "services": inspect_services(command_runner),
         "logs": inspect_logs(command_runner),
+        "trustedAsarSha256": json.loads(TRUSTED_BASELINE.read_text())["appAsar"]["sha256"],
     }
     evidence["decision"] = classify_diagnosis(evidence)
     return evidence
@@ -579,7 +727,11 @@ def official_app_from_dmg() -> Iterator[Path]:
     mount.mkdir()
     device: str | None = None
     try:
-        with urllib.request.urlopen(OFFICIAL_DMG_URL) as response, dmg.open("wb") as output:
+        request = urllib.request.Request(
+            OFFICIAL_DMG_URL,
+            headers={"User-Agent": "curl/8.7.1", "Accept": "application/octet-stream"},
+        )
+        with urllib.request.urlopen(request) as response, dmg.open("wb") as output:
             shutil.copyfileobj(response, output)
         if dmg.stat().st_size != OFFICIAL_DMG_SIZE or sha256_file(dmg) != OFFICIAL_DMG_SHA256:
             raise RuntimeError("OFFICIAL_DMG_FINGERPRINT_MISMATCH")
