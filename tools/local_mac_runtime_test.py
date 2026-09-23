@@ -125,10 +125,15 @@ def prepare(app: Path, phase_root: Path) -> dict[str, object]:
     if info["ElectronAsarIntegrity"]["Resources/app.asar"]["hash"] != header:
         raise LocalRuntimeError("Electron integrity metadata mismatch")
     return {
-        "status": "TEMP_APP_READY_FOR_CONTROLLED_LAUNCH",
+        "status": "TEMP_APP_SIGNED_LAUNCH_UNVERIFIED",
         "appAsarSha256": actual,
         "asarHeaderSha256": header,
         "locatorCount": recipe["locatorCount"],
+        "launchabilityProven": False,
+        "adHocRestrictedEntitlementRisk": (
+            "Strict codesign verification does not prove that macOS AMFI will "
+            "permit an ad-hoc signature with the preserved entitlement set."
+        ),
         **signing,
     }
 

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import json
 import plistlib
 from pathlib import Path
 
@@ -40,3 +41,23 @@ def test_plist_format_selection(tmp_path: Path) -> None:
     for fmt in (plistlib.FMT_BINARY, plistlib.FMT_XML):
         encoded = plistlib.dumps({"ElectronAsarIntegrity": {"Resources/app.asar": {"algorithm": "SHA256"}}}, fmt=fmt)
         assert (encoded.startswith(b"bplist")) == (fmt == plistlib.FMT_BINARY)
+
+
+def test_signed_copy_is_not_reported_as_launchable(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    phase = tmp_path / "phase8c"
+    app = phase / "ChatGPT.app"
+    resources = app / "Contents/Resources"
+    resources.mkdir(parents=True)
+    archive = resources / "app.asar"
+    archive.write_bytes(b"patched")
+    info = {"ElectronAsarIntegrity": {"Resources/app.asar": {"algorithm": "SHA256", "hash": "header"}}}
+    (app / "Contents/Info.plist").write_bytes(plistlib.dumps(info))
+    baseline = phase / "baseline.json"
+    baseline.write_text(json.dumps({"recipeValidation": {"locatorCount": 12, "deterministicPatchedAsarSha256": "patched-hash"}}))
+    monkeypatch.setattr(module, "BASELINE", baseline)
+    monkeypatch.setattr(module, "sha256_file", lambda path: "patched-hash")
+    monkeypatch.setattr(module, "update_integrity", lambda app, expected: "header")
+    monkeypatch.setattr(module, "sign_temporary_app", lambda app, root: {"adHocSigning": "PASS"})
+    result = module.prepare(app, phase)
+    assert result["status"] == "TEMP_APP_SIGNED_LAUNCH_UNVERIFIED"
+    assert result["launchabilityProven"] is False
