@@ -10,6 +10,7 @@ verification.  Unit tests use a fake bundle and a fake command runner.
 from __future__ import annotations
 
 import argparse
+import getpass
 import hashlib
 import json
 import os
@@ -20,7 +21,7 @@ import subprocess
 import tempfile
 from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Mapping, Protocol, Sequence
+from typing import Callable, Mapping, Protocol, Sequence
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,6 +32,13 @@ DEFAULT_BASELINE = ROOT / "runtime-patch/builds/9922/trusted-baseline.json"
 EXPECTED_BUNDLE_ID = "com.openai.codex"
 PHASE_PREFIX = "liang-no-henshin-phase8-"
 SOCKET_NAMESPACE = "liang-no-henshin"
+VM_APP_CANDIDATES = (
+    Path("/Applications/UTM.app"),
+    Path("/Applications/Parallels Desktop.app"),
+    Path("/Applications/VMware Fusion.app"),
+    Path("/Applications/VirtualBox.app"),
+)
+VM_COMMAND_CANDIDATES = ("prlctl", "vmrun", "VBoxManage", "qemu-system-aarch64", "virsh")
 
 
 class IsolationError(RuntimeError):
@@ -111,6 +119,76 @@ class IsolationLayout:
             / f"{SOCKET_NAMESPACE}-{os.getuid()}"
             / "runtime.sock"
         )
+
+
+@dataclass(frozen=True)
+class HostIsolationCandidates:
+    vm_apps_present: tuple[str, ...]
+    vm_commands_present: tuple[str, ...]
+    other_console_session_count: int
+    independent_vm_proven: bool
+    authorized_gui_test_session_proven: bool
+
+
+def inspect_host_isolation_candidates(
+    *,
+    runner: Runner | None = None,
+    current_user: str | None = None,
+    vm_apps: Sequence[Path] = VM_APP_CANDIDATES,
+    which: Callable[[str], str | None] = shutil.which,
+) -> HostIsolationCandidates:
+    """Read-only candidate discovery, never an authorization or launch proof."""
+
+    command_runner = runner or SubprocessRunner()
+    login = current_user or getpass.getuser()
+    sessions = command_runner.run(["who"])
+    console_users = set()
+    if sessions.returncode == 0:
+        for line in sessions.stdout.decode("utf-8", "replace").splitlines():
+            fields = line.split()
+            if len(fields) >= 2 and fields[1] == "console" and fields[0] != login:
+                console_users.add(fields[0])
+    return HostIsolationCandidates(
+        vm_apps_present=tuple(str(path) for path in vm_apps if path.is_dir()),
+        vm_commands_present=tuple(
+            name for name in VM_COMMAND_CANDIDATES if which(name) is not None
+        ),
+        other_console_session_count=len(console_users),
+        # An installed hypervisor or another login name is not proof of a
+        # running isolated VM, permission, separate Keychain or GUI session.
+        independent_vm_proven=False,
+        authorized_gui_test_session_proven=False,
+    )
+
+
+def audit_real_app_isolation(
+    source: SourcePreflight,
+    *,
+    candidates: HostIsolationCandidates | None = None,
+) -> dict[str, object]:
+    """Fail closed before any patched Codex launch under the current account."""
+
+    observed = candidates or inspect_host_isolation_candidates()
+    failures = []
+    if source.status != "PASS":
+        failures.append("trusted-source-preflight")
+    if not observed.independent_vm_proven and not observed.authorized_gui_test_session_proven:
+        failures.append("independent-authorized-gui-environment")
+    failures.extend((
+        "production-keychain-separation",
+        "single-instance-non-redirection",
+        "temporary-patched-app-signature-and-integrity",
+    ))
+    return {
+        "status": "REAL_APP_ISOLATION_BLOCKED",
+        "sourceTrusted": source.status == "PASS",
+        "candidateDiscovery": asdict(observed),
+        "unverifiedRequirements": failures,
+        "productionKeychainAccessExcluded": False,
+        "productionUserDataAccessExcluded": False,
+        "singleInstanceRedirectExcluded": False,
+        "launchAllowed": False,
+    }
 
 
 def sha256_file(path: Path) -> str:
@@ -473,6 +551,7 @@ def main() -> int:
     parser.add_argument("--source-app", type=Path, default=REAL_APP)
     parser.add_argument("--baseline", type=Path, default=DEFAULT_BASELINE)
     parser.add_argument("--prepare", action="store_true")
+    parser.add_argument("--audit-real-app", action="store_true")
     parser.add_argument("--temp-parent", type=Path)
     parser.add_argument("--keep", action="store_true")
     args = parser.parse_args()
@@ -484,6 +563,10 @@ def main() -> int:
         return 2
     report: dict[str, object] = {"sourcePreflight": asdict(preflight)}
     if preflight.status != "PASS":
+        print(json.dumps(report, indent=2, default=str, sort_keys=True))
+        return 2
+    if args.audit_real_app:
+        report["realAppGate"] = audit_real_app_isolation(preflight)
         print(json.dumps(report, indent=2, default=str, sort_keys=True))
         return 2
     if not args.prepare:
