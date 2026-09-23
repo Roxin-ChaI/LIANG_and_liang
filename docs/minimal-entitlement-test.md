@@ -61,6 +61,23 @@ AMFI launch, main/preload/renderer, Bridge, animation, scheduler and visual
 results are `NOT_TESTED`; the absence of an exact source is a `BLOCKED`
 preflight, not a failed minimal-signing launch.
 
+## Controlled-experiment preflight result
+
+The read-only CLI was executed against `/Applications/ChatGPT.app` and returned
+exit status `2` with:
+
+```json
+{"status":"BLOCKED_SOURCE_UNSUPPORTED_BUILD","sourceBuild":"10789","components":[]}
+```
+
+An independent subprocess test ran the same CLI on a synthetic newer-build
+bundle with no `codesign`/`spctl` on `PATH`, and compared every fixture byte
+before and after. It returned the same blocked result with zero writes. This
+validates the source gate only; it does **not** validate signing or launch.
+There was no temporary App, provisioning-profile operation, codesign call,
+AMFI launch, production credential access or Keychain prompt. Commit 2 records
+this blocked experiment honestly rather than claiming a signing failure.
+
 ## Primary references
 
 - [Apple: Creating distribution-signed code for the Mac](https://developer.apple.com/documentation/xcode/creating-distribution-signed-code-for-the-mac/) — restricted entitlements need a matching profile; nested code should be signed inside-out, not with a blanket `--deep` sign.
