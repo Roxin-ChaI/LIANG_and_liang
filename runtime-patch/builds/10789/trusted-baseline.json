@@ -1,0 +1,41 @@
+{
+  "formatVersion": 1,
+  "classification": "TRUSTED_BASELINE",
+  "source": {
+    "kind": "official-openai-dmg",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT.dmg",
+    "cachedFileName": "ChatGPT-26.917.62051-10789.dmg",
+    "dmgSha256": "dc872e7713711cd6b14d22bafe0c0afec6ac0524d0f03ab0ed226f4e40e5848c",
+    "dmgSizeBytes": 650455829,
+    "hdiutilVerify": "PASS"
+  },
+  "identity": {
+    "bundleIdentifier": "com.openai.codex",
+    "teamIdentifier": "2DC432GLL2",
+    "architectures": ["arm64"],
+    "hardenedRuntime": true,
+    "gatekeeper": "PASS",
+    "codesignDeepStrict": "PASS",
+    "nestedSignatures": "PASS",
+    "entitlements": "VALID_XML"
+  },
+  "version": "26.917.62051",
+  "build": "10789",
+  "appAsar": {
+    "sha256": "c41157d36d701d3228c82e56852f49da2381941a7e5ccfac2d58b7e10e31aefd",
+    "electronIntegrity": {
+      "algorithm": "SHA256",
+      "scope": "raw-json-header",
+      "expected": "3cfd8249ac8e4f99b157318543923e18ead06cbf6940e4fa77d14119a0ca579e",
+      "actual": "3cfd8249ac8e4f99b157318543923e18ead06cbf6940e4fa77d14119a0ca579e"
+    }
+  },
+  "executable": {
+    "path": "Contents/MacOS/ChatGPT",
+    "sha256": "aa9e6e1683a8bdc187460fcdbc1fadeb5ff1c48a7cd35cb9c4d15cc678d8681b"
+  },
+  "criticalHashes": {
+    "Info.plist": "72de34cac755730df81020475b0a71805d777370347796614b352e0646d3e562",
+    "CodeResources": "74f6a8f73e726a1aad4dfa4fdd8439ba950729a6854f277442b512f9ae582dbd"
+  }
+}
