@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Read-only, per-component entitlement plan for a trusted Build 9922 App.
+"""Read-only, per-component entitlement plan for a frozen trusted App.
 
 This tool does not copy, modify, sign, or launch an application. It refuses to
-inspect a different build as though it were the frozen Build 9922 baseline.
+inspect a different build as though it were the selected frozen baseline.
 """
 
 from __future__ import annotations
@@ -32,6 +32,7 @@ ELECTRON_RUNTIME_KEYS = frozenset({
     "com.apple.security.cs.disable-library-validation",
     "com.apple.security.cs.allow-dyld-environment-variables",
 })
+CODE_LIBRARY_SUFFIXES = frozenset({".framework", ".dylib", ".so", ".node", ".docktileplugin"})
 
 # These claims cannot be carried across from the OpenAI Developer ID identity
 # to an ad-hoc local test signature. Never synthesize replacement values.
@@ -52,6 +53,7 @@ OFFLINE_OPTIONAL_KEYS = frozenset({
     "com.apple.security.device.camera",
     "com.apple.security.files.user-selected.read-write",
     "com.apple.security.network.client",
+    "com.apple.security.personal-information.addressbook",
     "com.apple.security.personal-information.calendars",
 })
 
@@ -60,22 +62,48 @@ def _run(command: list[str]) -> subprocess.CompletedProcess[bytes]:
     return subprocess.run(command, capture_output=True, check=False)
 
 
+MACHO_MAGICS = frozenset({
+    b"\xfe\xed\xfa\xce", b"\xce\xfa\xed\xfe",
+    b"\xfe\xed\xfa\xcf", b"\xcf\xfa\xed\xfe",
+    b"\xca\xfe\xba\xbe", b"\xbe\xba\xfe\xca",
+    b"\xca\xfe\xba\xbf", b"\xbf\xba\xfe\xca",
+})
+
+
+def _is_macho(path: Path) -> bool:
+    try:
+        with path.open("rb") as handle:
+            return handle.read(4) in MACHO_MAGICS
+    except OSError:
+        return False
+
+
 def discover_components(app: Path) -> list[Path]:
-    """List signed code containers without following Framework symlinks."""
+    """List nested macOS code without following aliases or debug bundles."""
     components = [app]
-    framework_root = app / "Contents/Frameworks"
-    if not framework_root.is_dir():
+    contents = app / "Contents"
+    if not (contents / "Frameworks").is_dir():
         raise ValueError("Frameworks directory is missing")
-    for root, directory_names, file_names in os.walk(framework_root, followlinks=False):
+    for root, directory_names, file_names in os.walk(contents, followlinks=False):
         parent = Path(root)
-        directory_names[:] = [name for name in directory_names if not (parent / name).is_symlink()]
+        directory_names[:] = [
+            name for name in directory_names
+            if not (parent / name).is_symlink() and not name.endswith(".dSYM")
+        ]
         for name in directory_names:
             path = parent / name
-            if path.suffix in {".app", ".framework", ".xpc", ".appex"}:
+            if path.suffix in {".app", ".framework", ".xpc", ".appex", ".docktileplugin"}:
                 components.append(path)
         for name in file_names:
             path = parent / name
-            if path.suffix in {".dylib", ".so"} and path.is_file() and not path.is_symlink():
+            if path.is_symlink() or not path.is_file() or not _is_macho(path):
+                continue
+            # Bundles' primary Mach-O files are signed with their containing
+            # bundle; standalone Helpers and native modules are independent.
+            standalone_helper = "Helpers" in path.parts and not any(
+                ancestor.suffix in {".app", ".xpc"} for ancestor in path.parents if ancestor != app
+            )
+            if path.suffix in {".dylib", ".so", ".node"} or standalone_helper or path.name == "Autoupdate":
                 components.append(path)
     return sorted(set(components), key=lambda path: (len(path.parts), str(path)))
 
@@ -114,10 +142,14 @@ def derive_component(record: dict[str, object]) -> dict[str, object]:
     retained: dict[str, object] = {}
     removed: dict[str, str] = {}
     unknown: list[str] = []
+    library = Path(str(record.get("component", ""))).suffix in CODE_LIBRARY_SUFFIXES
     for key, value in sorted(original.items()):
         if key in ELECTRON_RUNTIME_KEYS:
             if value is True:
-                retained[key] = value
+                if library:
+                    removed[key] = "library/plugin code is not an Electron process executable"
+                else:
+                    retained[key] = value
             else:
                 unknown.append(key)
         elif key in IDENTITY_BOUND_KEYS:

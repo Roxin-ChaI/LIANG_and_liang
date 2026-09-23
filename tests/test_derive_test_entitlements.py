@@ -42,6 +42,29 @@ def test_each_helper_gets_only_its_own_original_runtime_exceptions() -> None:
     assert service["testEntitlements"] == {"com.apple.security.cs.disable-library-validation": True}
 
 
+def test_library_signatures_do_not_request_process_jit_exceptions() -> None:
+    for component in ("Codex Framework.framework", "plugin.node", "libvulkan.dylib", "Pet.docktileplugin"):
+        result = subject.derive_component({
+            "component": component, "hardenedRuntime": True,
+            "originalEntitlements": {"com.apple.security.cs.allow-jit": True},
+        })
+        assert result["testEntitlements"] == {}
+        assert "com.apple.security.cs.allow-jit" in result["removed"]
+
+
+def test_current_computer_use_contacts_claim_is_not_copied_to_offline_pet_test() -> None:
+    result = subject.derive_component({
+        "component": "Contents/Resources/Codex Computer Use.app",
+        "hardenedRuntime": True,
+        "originalEntitlements": {
+            "com.apple.security.personal-information.addressbook": True,
+            "com.apple.security.cs.allow-jit": True,
+        },
+    })
+    assert result["testEntitlements"] == {"com.apple.security.cs.allow-jit": True}
+    assert "com.apple.security.personal-information.addressbook" in result["removed"]
+
+
 def test_unknown_or_sandboxed_component_requires_review() -> None:
     for key, value in (("com.apple.private.unknown", True), ("com.apple.security.app-sandbox", True)):
         record = subject.derive_component({
@@ -61,11 +84,22 @@ def test_component_discovery_skips_framework_symlink(tmp_path: Path) -> None:
     (framework / "Versions/Current").symlink_to("A")
     (framework / "Current").symlink_to("Versions/A")
     dylib = framework / "Versions/A/test.dylib"
-    dylib.write_bytes(b"fixture")
+    dylib.write_bytes(b"\xcf\xfa\xed\xfe" + b"fixture")
+    native = app / "Contents/Resources/native/test.node"
+    native.parent.mkdir(parents=True)
+    native.write_bytes(b"\xcf\xfa\xed\xfe" + b"native fixture")
+    plugin = app / "Contents/PlugIns/Pet.docktileplugin"
+    plugin.mkdir(parents=True)
+    updater = app / "Contents/Frameworks/Sparkle.framework/Versions/B/Autoupdate"
+    updater.parent.mkdir(parents=True)
+    updater.write_bytes(b"\xcf\xfa\xed\xfe" + b"updater fixture")
     names = [path.relative_to(app).as_posix() for path in subject.discover_components(app)]
     assert names[0] == "."
     assert sum(name.endswith("Codex (Renderer).app") for name in names) == 1
     assert "Contents/Frameworks/Codex Framework.framework/Versions/A/test.dylib" in names
+    assert "Contents/Resources/native/test.node" in names
+    assert "Contents/PlugIns/Pet.docktileplugin" in names
+    assert "Contents/Frameworks/Sparkle.framework/Versions/B/Autoupdate" in names
 
 
 def test_inspect_extracts_component_specific_values_without_reading_profile(tmp_path: Path) -> None:
