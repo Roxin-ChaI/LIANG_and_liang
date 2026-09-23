@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liang Runtime Harness</title>
+    <style>
+      html, body { margin: 0; width: 100%; height: 100%; background: #18202b; overflow: hidden; }
+      #stage { width: 100%; height: 100%; position: relative; overflow: hidden; }
+      #pet { position: absolute; left: 96px; top: 42px; width: 192px; height: 208px;
+        background-repeat: no-repeat; background-position: 0 0; image-rendering: pixelated;
+        pointer-events: auto; }
+      #overlay { position: absolute; display: none; image-rendering: pixelated;
+        pointer-events: none; max-width: none; }
+      #label { position: absolute; left: 12px; bottom: 10px; color: #d6e5ff;
+        font: 12px monospace; pointer-events: none; }
+    </style>
+  </head>
+  <body>
+    <div id="stage">
+      <div id="pet"></div>
+      <img id="overlay" alt="">
+      <div id="label">project-owned Electron harness</div>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>

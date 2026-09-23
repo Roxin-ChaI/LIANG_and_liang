@@ -29,6 +29,7 @@ venv/
 *.tmp
 *.temp
 .cache/
+node_modules/
 tmp/
 temp/
 build/pet-payload/

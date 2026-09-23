@@ -1,0 +1,10 @@
+{
+  "exitCode": 0,
+  "pid": 29017,
+  "rendererEventCount": 1,
+  "runtimeExceptions": [],
+  "smoke": true,
+  "socketRemoved": true,
+  "status": "PROJECT_ELECTRON_HARNESS_SMOKE_PASS",
+  "stderrTail": []
+}

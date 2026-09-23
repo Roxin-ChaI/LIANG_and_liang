@@ -1,0 +1,13 @@
+{
+  "name": "liang-runtime-electron-harness",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Project-owned Electron runtime verification, never a patched Codex App",
+  "main": "main.mjs",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "39.8.10"
+  }
+}
