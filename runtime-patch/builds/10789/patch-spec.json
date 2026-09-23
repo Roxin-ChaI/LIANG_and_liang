@@ -1,0 +1,62 @@
+{
+  "formatVersion": 1,
+  "patchSpecVersion": "10789.1",
+  "baseline": {
+    "classification": "TRUSTED_BASELINE",
+    "manifest": "trusted-baseline.json"
+  },
+  "target": {
+    "version": "26.917.62051",
+    "build": "10789",
+    "appAsarSha256": "c41157d36d701d3228c82e56852f49da2381941a7e5ccfac2d58b7e10e31aefd"
+  },
+  "chunks": {
+    "main": {"path": ".vite/build/main-C-Mhak1n.js", "sha256": "457c79be69620d4489e94c14ac665f81731d869635606dcf175b7b4cc2e8b467"},
+    "preload": {"path": ".vite/build/preload.js", "sha256": "cbb4eafff381b835dc9c371c1d9d3c455ab95c1641d955bd975e03e2a88fb2ea"},
+    "loader": {"path": ".vite/build/src-DldfpmrL.js", "sha256": "88ec69722b5d87a7081edf2e2d6a2e21c3f25300cee587363d74b8b87969a412"},
+    "core": {"path": "webview/assets/app-initial-37097744327a.js", "sha256": "a7a8268372f2bfbf41cea885b943e59eb60db1b0bda6a8379b0476aa0ca4e905"},
+    "overlay": {"path": "webview/assets/avatar-overlay-native-page-65b32cd34ff0.js", "sha256": "5f5cd7742a080565315025314352361b0a5b9e025da32dcf39d8953119fbb5cc"},
+    "mascot": {"path": "webview/assets/avatar-mascot-button-d2b99ef2b0aa.js", "sha256": "339ffd71a49837a888fe75d32df8953fd74edde50a910ba058cc24a4d039732a"},
+    "settings": {"path": "webview/assets/pets-settings-route-dff74d2e793d.js", "sha256": "7446636483fb887b4d1e46210949ab32e82ce4140c266d3033f9d5dc7a302c4f"}
+  },
+  "locators": {
+    "mainAvatarLoader": {"target": "main", "expectedMatches": 1, "needle": "loadAvatar(e){return n.gt({appServerClient:this.executionHostRegistry.get(),avatarId:e,preferWsl:!!process.env.WSL_DISTRO_NAME})}"},
+    "mainServiceRegistration": {"target": "main", "expectedMatches": 1, "needle": "V=new Hle(B,u,x),ee=Fit({toggleAvatarOverlay:()=>V.toggleFromHotkey()})"},
+    "preloadExpose": {"target": "preload", "expectedMatches": 1, "needle": "e.contextBridge.exposeInMainWorld(`electronBridge`,z),typeof window<`u`"},
+    "coreDescriptorEntry": {"target": "core", "expectedMatches": 1, "needle": "function Ccc(e,t){let n=Acc[e];"},
+    "coreCompletion": {"target": "core", "expectedMatches": 1, "needle": "a=null;return}i=n,e.style.backgroundPosition=Tcc(wcc(r,i),d),o()"},
+    "overlaySource": {"target": "overlay", "expectedMatches": 1, "needle": "source:vr(c)"},
+    "overlayOwner": {"target": "overlay", "expectedMatches": 1, "needle": "function lf(e){let t=(0,df.c)(13),{frameProps:n"},
+    "overlayFormCommit": {"target": "overlay", "expectedMatches": 1, "needle": "function qf(e){let t=(0,xp.c)(43),{selectedAvatar:n,selectedAvatarId:r}=e"},
+    "overlaySibling": {"target": "overlay", "expectedMatches": 1, "needle": "g=(0,pf.jsx)(Dd,{...n,layout:c}),t[10]=n,t[11]=c,t[12]=g"},
+    "overlayRootClip": {"target": "overlay", "expectedMatches": 1, "needle": "ot(`relative h-screen w-screen bg-transparent`,`overflow-hidden`,xi,Si)"},
+    "overlayUnderlyingState": {"target": "overlay", "expectedMatches": 1, "needle": "state:Rt.mascotState"},
+    "overlayNormalStyle": {"target": "overlay", "expectedMatches": 1, "needle": "style:{...Zo(Rn.width),height:Rn.height}"}
+  },
+  "operations": [
+    {"id": "dual-form-loader-model", "target": "main", "locator": "mainAvatarLoader"},
+    {"id": "source-hot-switch", "target": "overlay", "locator": "overlaySource"},
+    {"id": "transition-descriptor", "target": "core", "locator": "coreDescriptorEntry"},
+    {"id": "transition-completion", "target": "core", "locator": "coreCompletion"},
+    {"id": "oversized-sibling-overlay", "target": "overlay", "locator": "overlaySibling"},
+    {"id": "operation-token-guard", "target": "overlay", "locator": "overlayOwner"},
+    {"id": "local-control-bridge-main", "target": "main", "locator": "mainServiceRegistration"},
+    {"id": "preload-typed-event", "target": "preload", "locator": "preloadExpose"},
+    {"id": "request-target-form-binding", "target": "overlay", "locator": "overlayRootClip"},
+    {"id": "overlay-event-subscription", "target": "overlay", "locator": "overlayFormCommit"},
+    {"id": "transition-underlying-state", "target": "overlay", "locator": "overlayUnderlyingState"},
+    {"id": "transition-normal-suppression", "target": "overlay", "locator": "overlayNormalStyle"}
+  ],
+  "postPatchAssertions": [
+    "__liang10789LoadDualForm",
+    "__liang10789Runtime.hotSource",
+    "__liang10789TransitionDescriptor",
+    "__liang10789Runtime?.complete",
+    "__liang10789Runtime.sibling",
+    "token!==s.operationToken",
+    "__liang10789InstallBridge",
+    "liangNoHenshin",
+    "__liang10789BindControl",
+    "requestTargetForm"
+  ]
+}

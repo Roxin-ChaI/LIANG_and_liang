@@ -37,5 +37,21 @@
   "criticalHashes": {
     "Info.plist": "72de34cac755730df81020475b0a71805d777370347796614b352e0646d3e562",
     "CodeResources": "74f6a8f73e726a1aad4dfa4fdd8439ba950729a6854f277442b512f9ae582dbd"
+  },
+  "chunks": {
+    "main": {"path": ".vite/build/main-C-Mhak1n.js", "sha256": "457c79be69620d4489e94c14ac665f81731d869635606dcf175b7b4cc2e8b467"},
+    "preload": {"path": ".vite/build/preload.js", "sha256": "cbb4eafff381b835dc9c371c1d9d3c455ab95c1641d955bd975e03e2a88fb2ea"},
+    "loader": {"path": ".vite/build/src-DldfpmrL.js", "sha256": "88ec69722b5d87a7081edf2e2d6a2e21c3f25300cee587363d74b8b87969a412"},
+    "core": {"path": "webview/assets/app-initial-37097744327a.js", "sha256": "a7a8268372f2bfbf41cea885b943e59eb60db1b0bda6a8379b0476aa0ca4e905"},
+    "overlay": {"path": "webview/assets/avatar-overlay-native-page-65b32cd34ff0.js", "sha256": "5f5cd7742a080565315025314352361b0a5b9e025da32dcf39d8953119fbb5cc"},
+    "mascot": {"path": "webview/assets/avatar-mascot-button-d2b99ef2b0aa.js", "sha256": "339ffd71a49837a888fe75d32df8953fd74edde50a910ba058cc24a4d039732a"},
+    "settings": {"path": "webview/assets/pets-settings-route-dff74d2e793d.js", "sha256": "7446636483fb887b4d1e46210949ab32e82ce4140c266d3033f9d5dc7a302c4f"}
+  },
+  "recipeValidation": {
+    "locatorCount": 12,
+    "expectedMatchesPerLocator": 1,
+    "dryPatchRuns": 2,
+    "deterministicPatchedAsarSha256": "236cf24c1916e811eea6e55e10591d404b76f8ac1e81974ebe7d845f687e68c0",
+    "patchedElectronIntegrityHeaderSha256": "1c030d9533cd2ab2c2a5d49d15bcf0c6c4eee308be7344875e2e5d66115f1a73"
   }
 }
