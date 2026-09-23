@@ -1,0 +1,11 @@
+{
+  "name": "liang-no-henshin-standalone",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "main.mjs",
+  "scripts": {
+    "test": "node --test *.test.mjs",
+    "start": "../runtime-patch/electron-harness/node_modules/.bin/electron ."
+  }
+}
