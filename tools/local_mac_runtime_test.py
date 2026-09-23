@@ -138,6 +138,21 @@ def prepare(app: Path, phase_root: Path) -> dict[str, object]:
     }
 
 
+def verify_postflight(
+    official_asar: Path, expected_sha256: str, temporary_roots: tuple[Path, ...]
+) -> dict[str, object]:
+    """Read-only recovery check; never inspects production credentials."""
+
+    actual = sha256_file(official_asar)
+    removed = all(not root.exists() for root in temporary_roots)
+    return {
+        "officialAppAsarUnchanged": actual == expected_sha256,
+        "officialAppAsarSha256": actual,
+        "temporaryRootsRemoved": removed,
+        "status": "PASS" if actual == expected_sha256 and removed else "FAIL",
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--app", type=Path, required=True)

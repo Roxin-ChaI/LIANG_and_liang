@@ -61,3 +61,16 @@ def test_signed_copy_is_not_reported_as_launchable(tmp_path: Path, monkeypatch: 
     result = module.prepare(app, phase)
     assert result["status"] == "TEMP_APP_SIGNED_LAUNCH_UNVERIFIED"
     assert result["launchabilityProven"] is False
+
+
+def test_postflight_requires_original_hash_and_removed_temps(tmp_path: Path) -> None:
+    official_asar = tmp_path / "original.asar"
+    official_asar.write_bytes(b"unchanged")
+    expected = module.sha256_file(official_asar)
+    temp = tmp_path / "phase8c-temp"
+    assert module.verify_postflight(official_asar, expected, (temp,))["status"] == "PASS"
+    temp.mkdir()
+    assert module.verify_postflight(official_asar, expected, (temp,))["status"] == "FAIL"
+    temp.rmdir()
+    official_asar.write_bytes(b"changed")
+    assert module.verify_postflight(official_asar, expected, (temp,))["status"] == "FAIL"

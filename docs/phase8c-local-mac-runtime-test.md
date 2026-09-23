@@ -46,6 +46,20 @@ auto-approve a prompt, reuse credentials, or attempt a production-App patch.
   evidence for patched Codex.
 - `READY_FOR_DEPLOYMENT`: NO.
 
+## Recovery audit
+
+The temporary App, temporary `CODEX_HOME`, userData, payload, test socket
+directory and short `$TMPDIR` were removed after confirming no test process
+remained. The official App main PID `52646` stayed alive; its post-test ASAR
+SHA256 still equals the trusted baseline. The post-test production
+`selected-avatar-id` remained `custom:liang-no-henshin`. No pre-test
+`~/.codex/config.toml` hash was captured, so bytewise config equality is
+**not proven**, although this test performed no production-config write.
+The current Codex UI could not be inspected for unsaved work through the
+available computer-use channel; for this reason the production App was never
+quit. No screenshot of patched Codex exists because its main process did not
+initialize.
+
 To resume real-App testing without weakening macOS protections, use a valid
 signing identity and provisioning/entitlement arrangement authorized for the
 temporary App, or revise the test contract to a separately reviewed entitlement
