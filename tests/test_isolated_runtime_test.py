@@ -5,6 +5,7 @@ import json
 import os
 import plistlib
 import struct
+import sys
 from pathlib import Path
 
 import pytest
@@ -13,16 +14,57 @@ from tools import isolated_runtime_test as harness
 
 
 class FakeRunner:
-    def __init__(self, *, codesign_ok: bool = True) -> None:
+    def __init__(
+        self,
+        *,
+        codesign_ok: bool = True,
+        trust_context_ok: bool = True,
+        team_ok: bool = True,
+        entitlements_ok: bool = True,
+        gatekeeper_ok: bool = True,
+    ) -> None:
         self.codesign_ok = codesign_ok
+        self.trust_context_ok = trust_context_ok
+        self.team_ok = team_ok
+        self.entitlements_ok = entitlements_ok
+        self.gatekeeper_ok = gatekeeper_ok
         self.commands: list[tuple[str, ...]] = []
 
     def run(self, argv):
         command = tuple(str(value) for value in argv)
         self.commands.append(command)
-        if command[0] == "codesign":
+        if command[0] == "codesign" and "--verify" in command:
+            allowed = self.trust_context_ok if command[-1] == str(harness.TRUST_CONTROL_APP) else self.codesign_ok
             return harness.CommandResult(
-                command, 0 if self.codesign_ok else 1, b"", b"invalid signature"
+                command, 0 if allowed else 1, b"", b"" if allowed else b"invalid signature"
+            )
+        if command[:3] == ("codesign", "-dv", "--verbose=4"):
+            team = "2DC432GLL2" if self.team_ok else "WRONGTEAM"
+            return harness.CommandResult(
+                command,
+                0,
+                b"",
+                (
+                    f"Identifier=com.openai.codex\nTeamIdentifier={team}\n"
+                    "CodeDirectory flags=0x10000(runtime)\n"
+                ).encode(),
+            )
+        if command[:3] == ("codesign", "-d", "--entitlements"):
+            entitlements = {
+                "com.apple.application-identifier": "2DC432GLL2.com.openai.codex",
+                "com.apple.developer.team-identifier": "2DC432GLL2",
+                "keychain-access-groups": ["2DC432GLL2.*", "2DC432GLL2.com.openai.shared"],
+            }
+            entitlements.update({f"fixture.key.{index}": True for index in range(11)})
+            if not self.entitlements_ok:
+                entitlements["keychain-access-groups"] = ["unexpected"]
+            return harness.CommandResult(command, 0, plistlib.dumps(entitlements), b"")
+        if command[0] == "spctl":
+            return harness.CommandResult(
+                command,
+                0 if self.gatekeeper_ok else 1,
+                b"",
+                b"accepted\nsource=Notarized Developer ID\n" if self.gatekeeper_ok else b"rejected",
             )
         if command[0] == "ditto":
             raise AssertionError("fake preflight tests must not copy an App")
@@ -79,7 +121,10 @@ def make_fixture(tmp_path: Path) -> tuple[Path, Path]:
                 "classification": "TRUSTED_BASELINE",
                 "version": "26.915.31945",
                 "build": "9922",
-                "identity": {"bundleIdentifier": "com.openai.codex"},
+                "identity": {
+                    "bundleIdentifier": "com.openai.codex",
+                    "teamIdentifier": "2DC432GLL2",
+                },
                 "appAsar": {
                     "sha256": hashlib.sha256(archive).hexdigest(),
                     "electronIntegrity": {"actual": header_hash},
@@ -100,16 +145,13 @@ def test_matching_source_passes_all_read_only_gates(tmp_path: Path) -> None:
     assert result.fingerprint_matches is True
     assert result.integrity_matches is True
     assert result.codesign_deep_strict is True
-    assert runner.commands == [
-        (
-            "codesign",
-            "--verify",
-            "--deep",
-            "--strict",
-            "--verbose=4",
-            str(app),
-        )
-    ]
+    assert result.team_identifier_matches is True
+    assert result.entitlements_valid is True
+    assert result.gatekeeper_accepted is True
+    assert runner.commands[0] == (
+        "codesign", "--verify", "--deep", "--strict", "--verbose=4", str(app)
+    )
+    assert len(runner.commands) == 4
 
 
 def test_fingerprint_mismatch_is_unsupported(tmp_path: Path) -> None:
@@ -142,6 +184,42 @@ def test_signature_failure_blocks_even_when_hashes_match(tmp_path: Path) -> None
     assert result.integrity_matches is True
 
 
+def test_restricted_sectrust_context_blocks_without_downgrade(tmp_path: Path) -> None:
+    app, baseline = make_fixture(tmp_path)
+    runner = FakeRunner(codesign_ok=False, trust_context_ok=False)
+    with pytest.raises(harness.IsolationError) as error:
+        harness.verify_source(app, baseline_path=baseline, runner=runner)
+    assert error.value.code == "TRUST_CONTEXT_UNAVAILABLE"
+    assert runner.commands[1][-1] == str(harness.TRUST_CONTROL_APP)
+
+
+def test_cli_reports_unavailable_trust_context_without_traceback(
+    monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    def unavailable(*args: object, **kwargs: object) -> None:
+        raise harness.IsolationError("TRUST_CONTEXT_UNAVAILABLE", "restricted context")
+
+    monkeypatch.setattr(harness, "verify_source", unavailable)
+    monkeypatch.setattr(sys, "argv", ["isolated_runtime_test.py"])
+    assert harness.main() == 2
+    assert json.loads(capsys.readouterr().out)["status"] == "TRUST_CONTEXT_UNAVAILABLE"
+
+
+@pytest.mark.parametrize(
+    ("runner", "status"),
+    [
+        (FakeRunner(team_ok=False), "SOURCE_IDENTITY_INVALID"),
+        (FakeRunner(entitlements_ok=False), "SOURCE_ENTITLEMENTS_INVALID"),
+        (FakeRunner(gatekeeper_ok=False), "SOURCE_GATEKEEPER_REJECTED"),
+    ],
+)
+def test_source_identity_entitlement_and_gatekeeper_fail_closed(
+    tmp_path: Path, runner: FakeRunner, status: str
+) -> None:
+    app, baseline = make_fixture(tmp_path)
+    assert harness.verify_source(app, baseline_path=baseline, runner=runner).status == status
+
+
 def test_layout_and_environment_are_confined_to_random_phase_root(
     tmp_path: Path,
 ) -> None:
@@ -160,10 +238,12 @@ def test_layout_and_environment_are_confined_to_random_phase_root(
         assert result["status"] == "PASS"
         assert all(result["withinPhaseRoot"].values())
         assert result["explicitUserData"] is True
+        assert result["bootstrapUserDataOverride"] is True
         assert result["identityAndKeychainIsolationProven"] is False
         assert result["launchAllowed"] is False
         assert environment["HOME"] == str(layout.home)
         assert environment["CODEX_HOME"] == str(layout.codex_home)
+        assert environment["CODEX_ELECTRON_USER_DATA_PATH"] == str(layout.user_data)
         assert environment["TMPDIR"] == f"{layout.temp}{os.sep}"
         assert not any("API_KEY" in name for name in environment)
         assert layout.socket_path.is_relative_to(layout.root)
@@ -189,6 +269,25 @@ def test_production_alias_or_missing_user_data_flag_fails_closed(
         assert result["status"] == "ISOLATION_NOT_VERIFIED"
         assert result["explicitUserData"] is False
         assert result["withinPhaseRoot"]["codexHome"] is False
+    finally:
+        harness.cleanup(layout)
+
+
+def test_missing_bootstrap_user_data_override_fails_closed(tmp_path: Path) -> None:
+    layout = harness.create_layout(tmp_path)
+    try:
+        environment = harness.isolated_environment(layout)
+        environment.pop("CODEX_ELECTRON_USER_DATA_PATH")
+        result = harness.verify_path_isolation(
+            layout,
+            environment,
+            harness.launch_command(layout),
+            production_app=tmp_path / "Applications/ChatGPT.app",
+            production_codex_home=tmp_path / "production/.codex",
+        )
+        assert result["status"] == "ISOLATION_NOT_VERIFIED"
+        assert result["bootstrapUserDataOverride"] is False
+        assert result["launchAllowed"] is False
     finally:
         harness.cleanup(layout)
 

@@ -26,6 +26,7 @@ from typing import Mapping, Protocol, Sequence
 ROOT = Path(__file__).resolve().parents[1]
 REAL_APP = Path("/Applications/ChatGPT.app")
 REAL_CODEX_HOME = Path.home() / ".codex"
+TRUST_CONTROL_APP = Path("/System/Applications/Calculator.app")
 DEFAULT_BASELINE = ROOT / "runtime-patch/builds/9922/trusted-baseline.json"
 EXPECTED_BUNDLE_ID = "com.openai.codex"
 PHASE_PREFIX = "liang-no-henshin-phase8-"
@@ -83,6 +84,9 @@ class SourcePreflight:
     fingerprint_matches: bool
     integrity_matches: bool
     codesign_deep_strict: bool
+    team_identifier_matches: bool
+    entitlements_valid: bool
+    gatekeeper_accepted: bool
 
 
 @dataclass(frozen=True)
@@ -236,12 +240,67 @@ def verify_source(
         ]
     )
     codesign_ok = signature.returncode == 0
+    if not codesign_ok:
+        # Phase 8A proved that a restricted execution context can falsely
+        # reject even unchanged Apple-signed system Apps. Never downgrade this
+        # gate or treat a hash match as a substitute for SecTrust.
+        control = command_runner.run(
+            ["codesign", "--verify", "--deep", "--strict", "--verbose=4", str(TRUST_CONTROL_APP)]
+        )
+        if control.returncode != 0:
+            raise IsolationError(
+                "TRUST_CONTEXT_UNAVAILABLE",
+                "strict signature evaluation also failed for the system trust control",
+            )
+    details = command_runner.run(["codesign", "-dv", "--verbose=4", str(app)])
+    detail_text = (details.stdout + details.stderr).decode("utf-8", "replace")
+    expected_team = str(identity.get("teamIdentifier", ""))
+    team_matches = (
+        details.returncode == 0
+        and bool(expected_team)
+        and f"TeamIdentifier={expected_team}" in detail_text.splitlines()
+        and f"Identifier={observed.bundle_identifier}" in detail_text.splitlines()
+        and "flags=0x10000(runtime)" in detail_text
+    )
+    entitlement_result = command_runner.run(
+        ["codesign", "-d", "--entitlements", "-", "--xml", str(app)]
+    )
+    entitlements_valid = False
+    if entitlement_result.returncode == 0:
+        try:
+            entitlements = plistlib.loads(entitlement_result.stdout)
+        except (ValueError, plistlib.InvalidFileException):
+            entitlements = None
+        entitlements_valid = (
+            isinstance(entitlements, dict)
+            and len(entitlements) == 14
+            and entitlements.get("com.apple.application-identifier")
+            == f"{expected_team}.{observed.bundle_identifier}"
+            and entitlements.get("com.apple.developer.team-identifier") == expected_team
+            and entitlements.get("keychain-access-groups")
+            == [f"{expected_team}.*", f"{expected_team}.com.openai.shared"]
+        )
+    gatekeeper = command_runner.run(
+        ["spctl", "--assess", "--type", "execute", "--verbose=4", str(app)]
+    )
+    gatekeeper_text = (gatekeeper.stdout + gatekeeper.stderr).decode("utf-8", "replace")
+    gatekeeper_accepted = (
+        gatekeeper.returncode == 0
+        and "accepted" in gatekeeper_text
+        and "source=Notarized Developer ID" in gatekeeper_text
+    )
     if not fingerprint_matches:
         status = "UNSUPPORTED_BUILD"
     elif not integrity_matches:
         status = "ASAR_INTEGRITY_MISMATCH"
     elif not codesign_ok:
         status = "SOURCE_SIGNATURE_INVALID"
+    elif not team_matches:
+        status = "SOURCE_IDENTITY_INVALID"
+    elif not entitlements_valid:
+        status = "SOURCE_ENTITLEMENTS_INVALID"
+    elif not gatekeeper_accepted:
+        status = "SOURCE_GATEKEEPER_REJECTED"
     else:
         status = "PASS"
     return SourcePreflight(
@@ -250,6 +309,9 @@ def verify_source(
         fingerprint_matches=fingerprint_matches,
         integrity_matches=integrity_matches,
         codesign_deep_strict=codesign_ok,
+        team_identifier_matches=team_matches,
+        entitlements_valid=entitlements_valid,
+        gatekeeper_accepted=gatekeeper_accepted,
     )
 
 
@@ -285,6 +347,9 @@ def isolated_environment(layout: IsolationLayout) -> dict[str, str]:
     environment = {
         "HOME": str(layout.home),
         "CODEX_HOME": str(layout.codex_home),
+        # Build 9922 bootstrap sets Electron userData from this environment
+        # variable; --user-data-dir alone does not control that code path.
+        "CODEX_ELECTRON_USER_DATA_PATH": str(layout.user_data),
         "TMPDIR": f"{layout.temp}{os.sep}",
         "XDG_CONFIG_HOME": str(layout.home / ".config"),
         "XDG_CACHE_HOME": str(layout.home / ".cache"),
@@ -336,6 +401,9 @@ def verify_path_isolation(
     command_has_user_data = (
         f"--user-data-dir={layout.user_data}" in command
     )
+    bootstrap_has_user_data = (
+        environment.get("CODEX_ELECTRON_USER_DATA_PATH") == str(layout.user_data)
+    )
     no_production_alias = all(
         (
             layout.app.resolve() != production_app.resolve(),
@@ -343,16 +411,27 @@ def verify_path_isolation(
             not _is_within(layout.socket_path, Path(tempfile.gettempdir()) / f"{SOCKET_NAMESPACE}-{os.getuid()}"),
         )
     )
-    passed = all(within_root.values()) and command_has_user_data and no_production_alias
+    passed = (
+        all(within_root.values())
+        and command_has_user_data
+        and bootstrap_has_user_data
+        and no_production_alias
+    )
     return {
         "status": "PASS" if passed else "ISOLATION_NOT_VERIFIED",
         "withinPhaseRoot": within_root,
         "explicitUserData": command_has_user_data,
+        "bootstrapUserDataOverride": bootstrap_has_user_data,
         "noProductionAlias": no_production_alias,
         "bridgeSocket": str(layout.socket_path),
         # Ad-hoc signing and a separate single-instance audit are required
         # before this can become true.  Path checks alone are insufficient.
         "identityAndKeychainIsolationProven": False,
+        "keychainRisk": (
+            "The source App carries production keychain-access-groups; "
+            "ad-hoc re-signing and temporary filesystem paths alone do not "
+            "prove that production Keychain items cannot be accessed."
+        ),
         "launchAllowed": False,
     }
 
@@ -398,7 +477,11 @@ def main() -> int:
     parser.add_argument("--keep", action="store_true")
     args = parser.parse_args()
 
-    preflight = verify_source(args.source_app, baseline_path=args.baseline)
+    try:
+        preflight = verify_source(args.source_app, baseline_path=args.baseline)
+    except IsolationError as error:
+        print(json.dumps({"status": error.code, "message": str(error)}, indent=2))
+        return 2
     report: dict[str, object] = {"sourcePreflight": asdict(preflight)}
     if preflight.status != "PASS":
         print(json.dumps(report, indent=2, default=str, sort_keys=True))
