@@ -1,5 +1,5 @@
 /** Project-owned standalone macOS desktop pet. Never loads Codex runtime. */
-import { app, BrowserWindow, ipcMain, powerMonitor, screen } from "electron";
+import { app, BrowserWindow, ipcMain, Menu, powerMonitor, screen } from "electron";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -64,7 +64,7 @@ function startTransitionTick() {
     if (after.visualMode !== "TRANSITIONING") {
       stopTransitionTick();
       emit("transition-complete", { transitionId: before.transitionId, form: after.currentForm,
-        normalState: after.normalState, operationToken: token });
+        normalState: after.normalState, underlyingState: after.underlyingState, operationToken: token });
     }
   }, 140);
 }
@@ -97,9 +97,27 @@ async function testControl(command) {
     const image = await window.webContents.capturePage();
     await fs.writeFile(file, image.toPNG());
     emit("capture", { name: command.name, file });
+  } else if (command.type === "inspect") {
+    const dom = await window.webContents.executeJavaScript(`(() => {
+      const pet = document.getElementById('pet');
+      const box = pet.getBoundingClientRect();
+      return { background: getComputedStyle(pet).backgroundImage.slice(0, 60),
+        opacity: getComputedStyle(pet).opacity, size: [box.width, box.height],
+        visibility: document.visibilityState, ready: document.readyState };
+    })()`);
+    emit("inspect", { dom, visible: window.isVisible(), focused: window.isFocused() });
   } else if (command.type === "move") {
     window.setPosition(Math.round(command.x), Math.round(command.y));
     emit("window-position", { bounds: window.getBounds() });
+  } else if (command.type === "simulate-drag") {
+    const before = window.getBounds();
+    window.webContents.sendInputEvent({ type: "mouseMove", x: 96, y: 100 });
+    window.webContents.sendInputEvent({ type: "mouseDown", x: 96, y: 100, button: "left", clickCount: 1 });
+    await new Promise((resolve) => setTimeout(resolve, 60));
+    window.webContents.sendInputEvent({ type: "mouseMove", x: 126, y: 100, button: "left" });
+    await new Promise((resolve) => setTimeout(resolve, 100));
+    window.webContents.sendInputEvent({ type: "mouseUp", x: 126, y: 100, button: "left", clickCount: 1 });
+    emit("synthetic-drag", { before, after: window.getBounds() });
   } else if (command.type === "quit") {
     scheduler.stop();
     stopTransitionTick();
@@ -144,6 +162,23 @@ async function start() {
   ipcMain.on("pet-interaction", (_event, value) => {
     try { dispatch({ type: "interaction", kind: value.kind, value: value.value }, "pointer"); }
     catch (error) { emit("interaction-error", { reason: error.message }); }
+  });
+  ipcMain.on("pet-context-menu", () => {
+    const menu = Menu.buildFromTemplate([
+      { label: "Work state", submenu: [
+        { label: "Idle", click: () => dispatch({ type: "work-state", state: "idle" }, "menu") },
+        { label: "Running", click: () => dispatch({ type: "work-state", state: "running" }, "menu") },
+        { label: "Waiting", click: () => dispatch({ type: "work-state", state: "waiting" }, "menu") },
+        { label: "Review", click: () => dispatch({ type: "work-state", state: "review" }, "menu") },
+      ] },
+      { label: "Form", submenu: [
+        { label: "Gu", click: () => dispatch({ type: "target-form", form: "gu", requestId: `menu-${++requestSerial}` }, "menu") },
+        { label: "Feng", click: () => dispatch({ type: "target-form", form: "feng", requestId: `menu-${++requestSerial}` }, "menu") },
+      ] },
+      { type: "separator" },
+      { label: "Quit Liang no Henshin", click: () => app.quit() },
+    ]);
+    menu.popup({ window });
   });
   ipcMain.on("pet-rendered", (_event, value) => emit("renderer", value));
   window.webContents.on("render-process-gone", (_event, details) => emit("renderer-gone", { reason: details.reason }));

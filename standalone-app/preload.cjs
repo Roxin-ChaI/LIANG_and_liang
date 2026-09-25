@@ -10,5 +10,6 @@ contextBridge.exposeInMainWorld("liangPet", Object.freeze({
   requestState() { ipcRenderer.send("pet-state-request"); },
   moveBy(dx, dy) { ipcRenderer.send("pet-move", { dx, dy }); },
   interaction(kind, value) { ipcRenderer.send("pet-interaction", { kind, value }); },
+  showMenu() { ipcRenderer.send("pet-context-menu"); },
   rendered(payload) { ipcRenderer.send("pet-rendered", payload); },
 }));

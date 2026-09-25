@@ -7,9 +7,22 @@ let enteredAt = performance.now();
 let lastReported = "";
 let drag = null;
 let lastLook = null;
+let imageReady = false;
+let renderSerial = 0;
+const decoded = new Map();
+
+function decode(url) {
+  if (!decoded.has(url)) {
+    const image = new Image();
+    image.src = url;
+    decoded.set(url, image.decode());
+  }
+  return decoded.get(url);
+}
 
 pet.addEventListener("pointerenter", () => window.liangPet.interaction("hover", true));
 pet.addEventListener("pointerleave", () => window.liangPet.interaction("hover", false));
+pet.addEventListener("contextmenu", (event) => { event.preventDefault(); window.liangPet.showMenu(); });
 window.addEventListener("pointermove", (event) => {
   if (drag) return;
   const bounds = pet.getBoundingClientRect();
@@ -29,19 +42,23 @@ window.addEventListener("pointerleave", () => {
 
 pet.addEventListener("pointerdown", (event) => {
   if (event.button !== 0) return;
-  drag = { x: event.screenX, y: event.screenY };
+  const space = event.screenX || event.screenY ? "screen" : "client";
+  drag = { space, x: space === "screen" ? event.screenX : event.clientX,
+    y: space === "screen" ? event.screenY : event.clientY };
   pet.setPointerCapture(event.pointerId);
   pet.classList.add("dragging");
 });
 pet.addEventListener("pointermove", (event) => {
   if (!drag) return;
-  const dx = event.screenX - drag.x;
-  const dy = event.screenY - drag.y;
+  const x = drag.space === "screen" ? event.screenX : event.clientX;
+  const y = drag.space === "screen" ? event.screenY : event.clientY;
+  const dx = x - drag.x;
+  const dy = y - drag.y;
   if (dx || dy) {
     window.liangPet.moveBy(dx, dy);
     if (Math.abs(dx) >= 4) window.liangPet.interaction("drag", dx > 0 ? "running-right" : "running-left");
   }
-  drag = { x: event.screenX, y: event.screenY };
+  drag = { ...drag, x, y };
 });
 function endDrag() {
   drag = null;
@@ -51,11 +68,16 @@ function endDrag() {
 pet.addEventListener("pointerup", endDrag);
 pet.addEventListener("pointercancel", endDrag);
 
-window.liangPet.onState((state) => {
+window.liangPet.onState(async (state) => {
+  const serial = ++renderSerial;
+  await decode(state.normalSource);
+  if (state.overlayImage) await decode(state.overlayImage);
+  if (serial !== renderSerial) return;
   if (!current || state.playbackKey !== current.playbackKey || state.normalState !== current.normalState) {
     enteredAt = performance.now();
   }
   current = state;
+  imageReady = false;
   pet.style.backgroundImage = `url("${state.normalSource}")`;
   pet.style.backgroundSize = `${ATLAS.width}px ${ATLAS.height}px`;
   if (state.visualMode === "TRANSITIONING" && state.overlayImage) {
@@ -72,10 +94,11 @@ window.liangPet.onState((state) => {
     overlay.removeAttribute("src");
     pet.style.opacity = "1";
   }
+  requestAnimationFrame(() => requestAnimationFrame(() => { imageReady = true; }));
 });
 
 function tick(now) {
-  if (current) {
+  if (current && imageReady) {
     let row;
     let frame;
     if (current.normalState.startsWith("look:")) {

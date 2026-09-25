@@ -33,6 +33,8 @@ node_modules/
 tmp/
 temp/
 build/pet-payload/
+dist/
+standalone-app/evidence/
 
 # Local machine configuration backups and unfrozen reference dumps
 backups/
