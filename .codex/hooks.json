@@ -1,0 +1,12 @@
+{
+  "description": "Metadata-only lifecycle probe for the standalone pet; never blocks Codex.",
+  "hooks": {
+    "SessionStart": [{"hooks": [{"type": "command", "command": "/usr/bin/python3 /Users/mac/Projects/liang-no-henshin/tools/codex_hook_probe.py /Users/mac/Projects/liang-no-henshin/.cache/codex-events.sock", "async": true, "timeout": 1}]}],
+    "UserPromptSubmit": [{"hooks": [{"type": "command", "command": "/usr/bin/python3 /Users/mac/Projects/liang-no-henshin/tools/codex_hook_probe.py /Users/mac/Projects/liang-no-henshin/.cache/codex-events.sock", "async": true, "timeout": 1}]}],
+    "PreToolUse": [{"hooks": [{"type": "command", "command": "/usr/bin/python3 /Users/mac/Projects/liang-no-henshin/tools/codex_hook_probe.py /Users/mac/Projects/liang-no-henshin/.cache/codex-events.sock", "async": true, "timeout": 1}]}],
+    "PostToolUse": [{"hooks": [{"type": "command", "command": "/usr/bin/python3 /Users/mac/Projects/liang-no-henshin/tools/codex_hook_probe.py /Users/mac/Projects/liang-no-henshin/.cache/codex-events.sock", "async": true, "timeout": 1}]}],
+    "PermissionRequest": [{"hooks": [{"type": "command", "command": "/usr/bin/python3 /Users/mac/Projects/liang-no-henshin/tools/codex_hook_probe.py /Users/mac/Projects/liang-no-henshin/.cache/codex-events.sock", "async": true, "timeout": 1}]}],
+    "Stop": [{"hooks": [{"type": "command", "command": "/usr/bin/python3 /Users/mac/Projects/liang-no-henshin/tools/codex_hook_probe.py /Users/mac/Projects/liang-no-henshin/.cache/codex-events.sock", "async": true, "timeout": 1}]}],
+    "SessionEnd": [{"hooks": [{"type": "command", "command": "/usr/bin/python3 /Users/mac/Projects/liang-no-henshin/tools/codex_hook_probe.py /Users/mac/Projects/liang-no-henshin/.cache/codex-events.sock", "timeout": 1}]}]
+  }
+}
