@@ -6,6 +6,26 @@ let current = null;
 let enteredAt = performance.now();
 let lastReported = "";
 let drag = null;
+let lastLook = null;
+
+pet.addEventListener("pointerenter", () => window.liangPet.interaction("hover", true));
+pet.addEventListener("pointerleave", () => window.liangPet.interaction("hover", false));
+window.addEventListener("pointermove", (event) => {
+  if (drag) return;
+  const bounds = pet.getBoundingClientRect();
+  const dx = event.clientX - (bounds.left + bounds.width / 2);
+  const dy = event.clientY - (bounds.top + bounds.height / 2);
+  const direction = Math.round((Math.atan2(dx, -dy) * 180 / Math.PI + 360) % 360 / 22.5) % 16;
+  if (direction !== lastLook) {
+    lastLook = direction;
+    window.liangPet.interaction("look", direction);
+  }
+});
+window.addEventListener("pointerleave", () => {
+  lastLook = null;
+  window.liangPet.interaction("look", null);
+  window.liangPet.interaction("hover", false);
+});
 
 pet.addEventListener("pointerdown", (event) => {
   if (event.button !== 0) return;
@@ -17,10 +37,17 @@ pet.addEventListener("pointermove", (event) => {
   if (!drag) return;
   const dx = event.screenX - drag.x;
   const dy = event.screenY - drag.y;
-  if (dx || dy) window.liangPet.moveBy(dx, dy);
+  if (dx || dy) {
+    window.liangPet.moveBy(dx, dy);
+    if (Math.abs(dx) >= 4) window.liangPet.interaction("drag", dx > 0 ? "running-right" : "running-left");
+  }
   drag = { x: event.screenX, y: event.screenY };
 });
-function endDrag() { drag = null; pet.classList.remove("dragging"); }
+function endDrag() {
+  drag = null;
+  pet.classList.remove("dragging");
+  window.liangPet.interaction("drag", null);
+}
 pet.addEventListener("pointerup", endDrag);
 pet.addEventListener("pointercancel", endDrag);
 
@@ -39,11 +66,11 @@ window.liangPet.onState((state) => {
     overlay.style.top = `${24 + layout.offsetTop}px`;
     overlay.style.width = `${layout.canvasWidth}px`;
     overlay.style.height = `${layout.canvasHeight}px`;
-    pet.style.visibility = "hidden";
+    pet.style.opacity = "0";
   } else {
     overlay.style.display = "none";
     overlay.removeAttribute("src");
-    pet.style.visibility = "visible";
+    pet.style.opacity = "1";
   }
 });
 
