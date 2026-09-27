@@ -115,7 +115,11 @@ function tick(now) {
       row = look.state === "look-row-9" ? 9 : 10;
       frame = look.frame;
     } else {
-      const sampled = frameAt(current.normalState, now - enteredAt);
+      const sampled = frameAt(current.normalState, now - enteredAt, {
+        // Desktop's notification row is finite, but an active standalone task owns
+        // Running until Stop/timeout; do not visually fall back to Idle mid-task.
+        held: current.normalState === "running" && current.underlyingState === "running",
+      });
       row = sampled.row;
       frame = sampled.frame;
     }

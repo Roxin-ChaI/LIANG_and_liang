@@ -26,6 +26,17 @@ test("idle loops, while work notifications play three passes then slow idle", ()
   }
 });
 
+test("an actively held Running task keeps row seven past notification completion", () => {
+  for (const elapsed of [0, 819, 820, 2459, 2460, 10_000, 600_000]) {
+    const frame = frameAt("running", elapsed, { held: true });
+    assert.equal(frame.row, 7);
+    assert.equal(frame.state, "running");
+    assert.equal(frame.completed, false);
+  }
+  assert.equal(frameAt("running", 2460).row, 0);
+  assert.equal(frameAt("waiting", 3030).row, 0);
+});
+
 test("all sixteen look directions preserve ordered v2 rows", () => {
   assert.deepEqual(Array.from({ length: 16 }, (_, index) => lookState(index)),
     Array.from({ length: 16 }, (_, index) => ({

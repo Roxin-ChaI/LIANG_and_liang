@@ -27,13 +27,13 @@ function durations(descriptor, slowIdle) {
   return slowIdle ? base.map((value) => value * 6) : base;
 }
 
-export function frameAt(state, elapsedMs, { slowIdle = false } = {}) {
+export function frameAt(state, elapsedMs, { slowIdle = false, held = false } = {}) {
   const descriptor = STATES[state];
   if (!descriptor) throw new TypeError(`unknown animation state: ${state}`);
   if (!Number.isFinite(elapsedMs) || elapsedMs < 0) throw new RangeError("elapsedMs must be non-negative and finite");
   const lengths = durations(descriptor, slowIdle);
   const pass = lengths.reduce((sum, value) => sum + value, 0);
-  if (descriptor.repeat !== Infinity && elapsedMs >= pass * descriptor.repeat) {
+  if (!held && descriptor.repeat !== Infinity && elapsedMs >= pass * descriptor.repeat) {
     return Object.freeze({ ...frameAt("idle", elapsedMs - pass * descriptor.repeat, { slowIdle: true }), completed: true });
   }
   let position = elapsedMs % pass;
