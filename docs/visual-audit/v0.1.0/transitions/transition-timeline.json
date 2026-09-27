@@ -1,0 +1,389 @@
+{
+  "captureKind": "QA2 Electron webContents.capturePage with deterministic frame gate",
+  "build": "/Users/mac/Projects/liang-no-henshin/dist/Liang no Henshin v0.1.0 QA2.app/Contents/MacOS/Electron",
+  "timingNote": "frame-gated capture changes pacing; ungated timings measured separately",
+  "ungatedTimings": [
+    {
+      "transitionId": "gu_to_feng",
+      "frameTimestamps": {
+        "0": 1790525902583,
+        "1": 1790525902817,
+        "2": 1790525903050,
+        "3": 1790525903267,
+        "4": 1790525903500,
+        "5": 1790525903733,
+        "6": 1790525903967,
+        "7": 1790525904200,
+        "8": 1790525904434,
+        "9": 1790525904667
+      },
+      "observedIntervalsMs": [
+        234,
+        233,
+        217,
+        233,
+        233,
+        234,
+        233,
+        234,
+        233
+      ],
+      "lastFrameToCompletionMs": 153
+    },
+    {
+      "transitionId": "feng_to_gu",
+      "frameTimestamps": {
+        "0": 1790525904934,
+        "1": 1790525905167,
+        "2": 1790525905400,
+        "3": 1790525905634,
+        "4": 1790525905867,
+        "5": 1790525906100,
+        "6": 1790525906334,
+        "7": 1790525906567
+      },
+      "observedIntervalsMs": [
+        233,
+        233,
+        234,
+        233,
+        233,
+        234,
+        233
+      ],
+      "lastFrameToCompletionMs": 155
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "idle-gu_to_feng",
+      "source": "gu",
+      "target": "feng",
+      "mode": "idle",
+      "frameCount": 10,
+      "frameTimestamps": [
+        1790525886311,
+        1790525886551,
+        1790525886810,
+        1790525887088,
+        1790525887344,
+        1790525887593,
+        1790525887839,
+        1790525888093,
+        1790525888346,
+        1790525888607
+      ],
+      "gatedIntervalsMs": [
+        240,
+        259,
+        278,
+        256,
+        249,
+        246,
+        254,
+        253,
+        261
+      ],
+      "lastFrameToCompletionMs": 156,
+      "firstFrameBounds": [
+        184,
+        56,
+        360,
+        458
+      ],
+      "lastFrameBounds": [
+        74,
+        54,
+        418,
+        458
+      ],
+      "beforeBounds": [
+        172,
+        56,
+        308,
+        456
+      ],
+      "afterBounds": [
+        152,
+        56,
+        360,
+        456
+      ],
+      "beforeToFirstChangedPixels": 45988,
+      "lastToAfterChangedPixels": 51116
+    },
+    {
+      "label": "idle-feng_to_gu",
+      "source": "feng",
+      "target": "gu",
+      "mode": "idle",
+      "frameCount": 8,
+      "frameTimestamps": [
+        1790525889399,
+        1790525889657,
+        1790525889909,
+        1790525890155,
+        1790525890406,
+        1790525890655,
+        1790525890905,
+        1790525891155
+      ],
+      "gatedIntervalsMs": [
+        258,
+        252,
+        246,
+        251,
+        249,
+        250,
+        250
+      ],
+      "lastFrameToCompletionMs": 154,
+      "firstFrameBounds": [
+        48,
+        54,
+        388,
+        458
+      ],
+      "lastFrameBounds": [
+        72,
+        28,
+        394,
+        458
+      ],
+      "beforeBounds": [
+        152,
+        56,
+        360,
+        456
+      ],
+      "afterBounds": [
+        172,
+        56,
+        308,
+        456
+      ],
+      "beforeToFirstChangedPixels": 52212,
+      "lastToAfterChangedPixels": 45492
+    },
+    {
+      "label": "running-gu_to_feng",
+      "source": "gu",
+      "target": "feng",
+      "mode": "running",
+      "frameCount": 10,
+      "frameTimestamps": [
+        1790525891829,
+        1790525892068,
+        1790525892327,
+        1790525892583,
+        1790525892822,
+        1790525893076,
+        1790525893330,
+        1790525893593,
+        1790525893844,
+        1790525894090
+      ],
+      "gatedIntervalsMs": [
+        239,
+        259,
+        256,
+        239,
+        254,
+        254,
+        263,
+        251,
+        246
+      ],
+      "lastFrameToCompletionMs": 154,
+      "firstFrameBounds": [
+        184,
+        56,
+        360,
+        458
+      ],
+      "lastFrameBounds": [
+        74,
+        54,
+        418,
+        458
+      ],
+      "beforeBounds": [
+        184,
+        60,
+        328,
+        446
+      ],
+      "afterBounds": [
+        154,
+        60,
+        360,
+        456
+      ],
+      "beforeToFirstChangedPixels": 45060,
+      "lastToAfterChangedPixels": 51752
+    },
+    {
+      "label": "running-feng_to_gu",
+      "source": "feng",
+      "target": "gu",
+      "mode": "running",
+      "frameCount": 8,
+      "frameTimestamps": [
+        1790525894783,
+        1790525895040,
+        1790525895290,
+        1790525895538,
+        1790525895790,
+        1790525896037,
+        1790525896271,
+        1790525896521
+      ],
+      "gatedIntervalsMs": [
+        257,
+        250,
+        248,
+        252,
+        247,
+        234,
+        250
+      ],
+      "lastFrameToCompletionMs": 157,
+      "firstFrameBounds": [
+        48,
+        54,
+        388,
+        458
+      ],
+      "lastFrameBounds": [
+        72,
+        28,
+        394,
+        458
+      ],
+      "beforeBounds": [
+        154,
+        60,
+        360,
+        456
+      ],
+      "afterBounds": [
+        184,
+        60,
+        328,
+        446
+      ],
+      "beforeToFirstChangedPixels": 52892,
+      "lastToAfterChangedPixels": 44328
+    },
+    {
+      "label": "hover-gu_to_feng",
+      "source": "gu",
+      "target": "feng",
+      "mode": "hover",
+      "frameCount": 10,
+      "frameTimestamps": [
+        1790525897215,
+        1790525897472,
+        1790525897725,
+        1790525897987,
+        1790525898247,
+        1790525898510,
+        1790525898782,
+        1790525899043,
+        1790525899293,
+        1790525899541
+      ],
+      "gatedIntervalsMs": [
+        257,
+        253,
+        262,
+        260,
+        263,
+        272,
+        261,
+        250,
+        248
+      ],
+      "lastFrameToCompletionMs": 146,
+      "firstFrameBounds": [
+        184,
+        56,
+        360,
+        458
+      ],
+      "lastFrameBounds": [
+        74,
+        54,
+        418,
+        458
+      ],
+      "beforeBounds": [
+        176,
+        60,
+        310,
+        456
+      ],
+      "afterBounds": [
+        152,
+        56,
+        360,
+        456
+      ],
+      "beforeToFirstChangedPixels": 44928,
+      "lastToAfterChangedPixels": 51116
+    },
+    {
+      "label": "hover-feng_to_gu",
+      "source": "feng",
+      "target": "gu",
+      "mode": "hover",
+      "frameCount": 8,
+      "frameTimestamps": [
+        1790525900301,
+        1790525900566,
+        1790525900818,
+        1790525901073,
+        1790525901322,
+        1790525901575,
+        1790525901821,
+        1790525902072
+      ],
+      "gatedIntervalsMs": [
+        265,
+        252,
+        255,
+        249,
+        253,
+        246,
+        251
+      ],
+      "lastFrameToCompletionMs": 146,
+      "firstFrameBounds": [
+        48,
+        54,
+        388,
+        458
+      ],
+      "lastFrameBounds": [
+        72,
+        28,
+        394,
+        458
+      ],
+      "beforeBounds": [
+        152,
+        56,
+        360,
+        456
+      ],
+      "afterBounds": [
+        176,
+        60,
+        310,
+        456
+      ],
+      "beforeToFirstChangedPixels": 52212,
+      "lastToAfterChangedPixels": 44396
+    }
+  ]
+}
