@@ -16,6 +16,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
 const TEST = process.env.LNH_STANDALONE_TEST === "1";
 const TEST_ROOT = TEST ? process.env.LNH_STANDALONE_TEST_ROOT : null;
+const TEST_HOOK_SESSION = TEST ? process.env.LNH_TEST_HOOK_SESSION : null;
 const HOOK_PROJECT_ROOT = process.env.LNH_HOOK_PROJECT_ROOT ?? "/Users/mac/Projects/liang-no-henshin";
 if (TEST && (!TEST_ROOT || !path.isAbsolute(TEST_ROOT))) throw new Error("test mode needs an absolute temporary root");
 if (!path.isAbsolute(HOOK_PROJECT_ROOT)) throw new Error("Hook project root must be absolute");
@@ -115,13 +116,21 @@ async function startHookBridge() {
   if (process.env.LNH_DISABLE_CODEX_EVENTS === "1") return;
   hookTracker = createCodexSessionTracker({
     onState: (state, detail) => dispatch({ type: "work-state", state }, `codex-${detail.reason}`),
-    onEvent: (event, result) => emit("hook-event", { hookEvent: event.event,
-      sessionId: event.session_id, hookTimestamp: event.timestamp,
-      accepted: result.accepted, activeSessions: result.activeSessions }),
+    onEvent: (event, result) => {
+      if (event.event === "Timeout") {
+        emit("hook-timeout", { sessionId: event.session_id, at: event.timestamp });
+      } else {
+        emit("hook-event", { hookEvent: event.event,
+          sessionId: event.session_id, hookTimestamp: event.timestamp,
+          accepted: result.accepted, activeSessions: result.activeSessions });
+      }
+    },
   });
   try {
     hookServer = await createHookForwardServer(path.join(app.getPath("userData"), "codex-hook-forward.sock"),
-      (event) => hookTracker.accept(event));
+      (event) => {
+        if (!TEST_HOOK_SESSION || event?.session_id === TEST_HOOK_SESSION) hookTracker.accept(event);
+      });
     launchHookReceiver();
   } catch (error) {
     hookTracker.stop();
@@ -252,6 +261,17 @@ async function start() {
   window.webContents.on("render-process-gone", (_event, details) => emit("renderer-gone", { reason: details.reason }));
   window.webContents.on("did-fail-load", (_event, code) => emit("renderer-load-failed", { code }));
   await window.loadFile(path.join(HERE, "index.html"));
+  const preloadReady = new Promise((resolve, reject) => {
+    const timer = setTimeout(() => reject(new Error("overlay image preload timed out")), 10_000);
+    ipcMain.once("pet-preload-done", (_event, value) => {
+      clearTimeout(timer);
+      if (value?.success === true && value.count === Object.keys(overlayImages).length) resolve(value);
+      else reject(new Error("overlay image preload failed"));
+    });
+  });
+  window.webContents.send("pet-preload-images", Object.values(overlayImages));
+  await preloadReady;
+  emit("overlay-preloaded", { count: Object.keys(overlayImages).length });
   emit("startup", { pid: process.pid, bounds: window.getBounds(), transparent: true,
     frame: false, initialForm: player.snapshot().currentForm, userData: app.getPath("userData") });
   publish("startup");

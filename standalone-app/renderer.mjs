@@ -20,6 +20,15 @@ function decode(url) {
   return decoded.get(url);
 }
 
+window.liangPet.onPreloadImages(async (images) => {
+  try {
+    await Promise.all(images.map(decode));
+    window.liangPet.preloadDone({ count: images.length, success: true });
+  } catch {
+    window.liangPet.preloadDone({ count: images.length, success: false });
+  }
+});
+
 pet.addEventListener("pointerenter", () => window.liangPet.interaction("hover", true));
 pet.addEventListener("pointerleave", () => window.liangPet.interaction("hover", false));
 pet.addEventListener("contextmenu", (event) => { event.preventDefault(); window.liangPet.showMenu(); });
