@@ -10,6 +10,7 @@ import { loadTransitionAssets } from "../runtime-patch/prototype/transition-asse
 import { createTransitionPlayer } from "../runtime-patch/prototype/transition-player.mjs";
 import { createPetEventAdapter } from "./events.mjs";
 import { createCodexSessionTracker, createHookForwardServer } from "./codex-events.mjs";
+import { createPipelineDiagnostic } from "./pipeline-diagnostic.mjs";
 import { createFormScheduler, expectedFormAt } from "./schedule.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -22,6 +23,8 @@ if (TEST && (!TEST_ROOT || !path.isAbsolute(TEST_ROOT))) throw new Error("test m
 if (!path.isAbsolute(HOOK_PROJECT_ROOT)) throw new Error("Hook project root must be absolute");
 app.setName("Liang no Henshin");
 if (TEST) app.setPath("userData", path.join(TEST_ROOT, "user-data"));
+const diagnose = createPipelineDiagnostic(path.join(app.getPath("userData"), "hook-pipeline.jsonl"),
+  { enabled: process.env.LNH_HOOK_DIAGNOSTICS === "1" });
 
 let window;
 let player;
@@ -38,6 +41,7 @@ let hookRetryTimer = null;
 let hookStopping = false;
 let hookRetryCount = 0;
 let clockOverride = TEST && process.env.LNH_TEST_INITIAL_TIME ? new Date(process.env.LNH_TEST_INITIAL_TIME) : null;
+let lastReportedRow = null;
 
 function clock() { return clockOverride ?? new Date(); }
 function emit(type, payload = {}) {
@@ -57,6 +61,10 @@ function publish(reason) {
   const image = visual.frameSource ? overlayImages[visual.frameSource] : null;
   window.webContents.send("pet-state", {
     ...visual, overlayImage: image, playbackKey: `${visual.playbackEpoch}:${stateEpoch}`,
+  });
+  if (reason.startsWith("codex-") || reason === "renderer-ready") diagnose({
+    stage: "main-to-renderer", reason, state: visual.normalState,
+    underlyingState: visual.underlyingState,
   });
   emit("state", { reason, form: visual.currentForm, target: visual.targetForm,
     normalState: visual.normalState, visualMode: visual.visualMode,
@@ -96,7 +104,10 @@ function launchHookReceiver() {
   hookReceiver = spawn("/usr/bin/python3", [path.join(ROOT, "tools/codex_hook_receiver.py"),
     "--socket", path.join(projectCache, "codex-events.sock"),
     "--log", path.join(projectCache, "codex-events.jsonl"),
-    "--forward-socket", hookServer.socketPath], { stdio: ["ignore", "ignore", "pipe"] });
+    "--forward-socket", hookServer.socketPath,
+    ...(process.env.LNH_HOOK_DIAGNOSTICS === "1" ?
+      ["--diagnostic-log", path.join(projectCache, "codex-forward-diagnostic.jsonl")] : [])],
+  { stdio: ["ignore", "ignore", "pipe"] });
   hookReceiver.stderr.on("data", (chunk) => {
     emit("hook-receiver-stderr", { message: String(chunk).slice(0, 200) });
   });
@@ -115,8 +126,14 @@ function launchHookReceiver() {
 async function startHookBridge() {
   if (process.env.LNH_DISABLE_CODEX_EVENTS === "1") return;
   hookTracker = createCodexSessionTracker({
-    onState: (state, detail) => dispatch({ type: "work-state", state }, `codex-${detail.reason}`),
+    onState: (state, detail) => {
+      diagnose({ stage: "tracker-state", state, reason: detail.reason });
+      dispatch({ type: "work-state", state }, `codex-${detail.reason}`);
+    },
     onEvent: (event, result) => {
+      diagnose({ stage: "tracker-event", event: event.event, sessionId: event.session_id,
+        accepted: result.accepted, activeSessions: result.activeSessions, state: result.state,
+        reason: result.reason });
       if (event.event === "Timeout") {
         emit("hook-timeout", { sessionId: event.session_id, at: event.timestamp });
       } else {
@@ -129,6 +146,7 @@ async function startHookBridge() {
   try {
     hookServer = await createHookForwardServer(path.join(app.getPath("userData"), "codex-hook-forward.sock"),
       (event) => {
+        diagnose({ stage: "electron-received", event: event?.event, sessionId: event?.session_id });
         if (!TEST_HOOK_SESSION || event?.session_id === TEST_HOOK_SESSION) hookTracker.accept(event);
       });
     launchHookReceiver();
@@ -257,7 +275,13 @@ async function start() {
     ]);
     menu.popup({ window });
   });
-  ipcMain.on("pet-rendered", (_event, value) => emit("renderer", value));
+  ipcMain.on("pet-rendered", (_event, value) => {
+    if (value?.row !== lastReportedRow) {
+      lastReportedRow = value?.row;
+      diagnose({ stage: "renderer-row", state: value?.state, row: value?.row });
+    }
+    emit("renderer", value);
+  });
   window.webContents.on("render-process-gone", (_event, details) => emit("renderer-gone", { reason: details.reason }));
   window.webContents.on("did-fail-load", (_event, code) => emit("renderer-load-failed", { code }));
   await window.loadFile(path.join(HERE, "index.html"));

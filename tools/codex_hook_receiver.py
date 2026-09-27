@@ -8,6 +8,8 @@ import os
 from pathlib import Path
 import signal
 import socket
+import stat
+from datetime import datetime, timezone
 
 from codex_hook_probe import EVENTS
 
@@ -36,7 +38,29 @@ def forward_metadata(value: dict[str, str], forward_path: Path | None) -> bool:
         return False
 
 
-def serve(socket_path: Path, log_path: Path, forward_path: Path | None = None) -> None:
+def write_pipeline_diagnostic(path: Path | None, stage: str, value: dict[str, str],
+                              success: bool | None = None) -> None:
+    if path is None:
+        return
+    record = {"stage": stage, "event": value["event"], "session_id": value["session_id"],
+              "observed_at": datetime.now(timezone.utc).isoformat(), "pid": os.getpid()}
+    if success is not None:
+        record["success"] = success
+    try:
+        flags = os.O_WRONLY | os.O_APPEND | os.O_CREAT | getattr(os, "O_NOFOLLOW", 0)
+        fd = os.open(path, flags, 0o600)
+        try:
+            if stat.S_IMODE(os.fstat(fd).st_mode) != 0o600:
+                return
+            os.write(fd, (json.dumps(record, separators=(",", ":")) + "\n").encode())
+        finally:
+            os.close(fd)
+    except OSError:
+        pass  # Tracing must not interrupt the Hook receiver.
+
+
+def serve(socket_path: Path, log_path: Path, forward_path: Path | None = None,
+          diagnostic_path: Path | None = None) -> None:
     socket_path.parent.mkdir(parents=True, exist_ok=True)
     log_path.parent.mkdir(parents=True, exist_ok=True)
     if socket_path.exists():
@@ -68,9 +92,11 @@ def serve(socket_path: Path, log_path: Path, forward_path: Path | None = None) -
                 except (OSError, UnicodeError, ValueError, TypeError):
                     value = None
                 if value is not None:
+                    write_pipeline_diagnostic(diagnostic_path, "python-received", value)
                     with log_path.open("a", encoding="utf-8") as log:
                         log.write(json.dumps(value, separators=(",", ":")) + "\n")
-                    forward_metadata(value, forward_path)
+                    forwarded = forward_metadata(value, forward_path)
+                    write_pipeline_diagnostic(diagnostic_path, "python-forwarded", value, forwarded)
     finally:
         listener.close()
         socket_path.unlink(missing_ok=True)
@@ -83,5 +109,6 @@ if __name__ == "__main__":
     parser.add_argument("--socket", type=Path, required=True)
     parser.add_argument("--log", type=Path, required=True)
     parser.add_argument("--forward-socket", type=Path)
+    parser.add_argument("--diagnostic-log", type=Path)
     arguments = parser.parse_args()
-    serve(arguments.socket, arguments.log, arguments.forward_socket)
+    serve(arguments.socket, arguments.log, arguments.forward_socket, arguments.diagnostic_log)

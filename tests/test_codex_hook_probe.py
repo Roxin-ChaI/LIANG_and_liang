@@ -108,3 +108,31 @@ def test_receiver_forwards_only_minimized_metadata(monkeypatch, tmp_path):
     assert receiver.forward_metadata(value, destination) is True
     assert recorded == [str(destination), value]
     assert receiver.forward_metadata(value, None) is False
+
+
+def test_receiver_pipeline_trace_is_private_and_metadata_only(tmp_path):
+    sys.path.insert(0, str(ROOT / "tools"))
+    import codex_hook_receiver as receiver
+
+    destination = tmp_path / "forward-diagnostic.jsonl"
+    event = {"event": "PreToolUse", "session_id": "desktop-1", "timestamp": "t",
+             "tool_input": "SECRET"}
+    receiver.write_pipeline_diagnostic(destination, "python-forwarded", event, False)
+    saved = destination.read_text()
+    assert destination.stat().st_mode & 0o777 == 0o600
+    assert "SECRET" not in saved
+    assert json.loads(saved)["success"] is False
+    assert json.loads(saved)["stage"] == "python-forwarded"
+
+
+def test_receiver_pipeline_trace_refuses_symlink(tmp_path):
+    sys.path.insert(0, str(ROOT / "tools"))
+    import codex_hook_receiver as receiver
+
+    target = tmp_path / "target"
+    target.write_text("unchanged")
+    link = tmp_path / "diagnostic.jsonl"
+    link.symlink_to(target)
+    receiver.write_pipeline_diagnostic(link, "python-received",
+                                       {"event": "Stop", "session_id": "s"})
+    assert target.read_text() == "unchanged"
