@@ -61,17 +61,37 @@ def wait_all_frames(live: LiveHarness, row: int, count: int, *, timeout: float =
     raise StandaloneQAError(f"row {row} renderer frames incomplete: {sorted(frames)}")
 
 
-def wait_transition(live: LiveHarness, name: str, expected_form: str, count: int, *, after: int):
+def wait_transition(live: LiveHarness, name: str, expected_form: str, count: int, *, after: int,
+                    expected_underlying: str = "review"):
     complete = wait_event(live, lambda e: e.get("type") == "transition-complete"
                           and e.get("transitionId") == name, after=after, timeout=12)
     frames = sorted({e["transitionFrame"] for e in live.events[after:]
                      if e.get("type") == "renderer" and e.get("transitionId") == name
                      and isinstance(e.get("transitionFrame"), int)})
-    if frames != list(range(count)) or complete.get("form") != expected_form or complete.get("underlyingState") != "review":
+    if frames != list(range(count)) or complete.get("form") != expected_form or complete.get("underlyingState") != expected_underlying:
         raise StandaloneQAError(f"{name} renderer frames/form/work incorrect: {frames}, {complete.get('form')}, {complete.get('underlyingState')}")
     wait_event(live, lambda e: e.get("type") == "renderer"
-               and e.get("form") == expected_form and e.get("visualMode") == "NORMAL", after=after)
+               and e.get("form") == expected_form and e.get("visualMode") == "NORMAL"
+               and e.get("normalState", e.get("state")) == expected_underlying,
+               after=after)
     return frames
+
+
+def collect_frame_captures(live: LiveHarness, name: str, count: int, output: Path, *, after: int) -> list[str]:
+    files = []
+    for index in range(count):
+        event = wait_event(live, lambda e: e.get("type") == "frame-capture"
+                           and e.get("transitionId") == name and e.get("frameIndex") == index,
+                           after=after)
+        target = output / f"{name}-{index:02d}.png"
+        shutil.copy2(event["file"], target)
+        with Image.open(target) as image:
+            rgba = image.convert("RGBA")
+            bounds = rgba.getchannel("A").getbbox()
+            if bounds is None:
+                raise StandaloneQAError(f"{name} frame {index} is empty")
+        files.append(str(target))
+    return files
 
 
 def capture(live: LiveHarness, name: str, output: Path):
@@ -140,8 +160,11 @@ def run_session(executable: Path, app_path: Path | None, output: Path, initial: 
                     wait_event(live, lambda e: e.get("type") == "renderer" and e.get("row") == row
                                and e.get("frame") == count - 1, after=after, timeout=6)
                     result[state] = "RENDERER_PASS"
+                    if state == "running":
+                        result["screenshots"]["running"] = capture(live, "running", output)
                 after = command(live, type="interaction", kind="hover", value=True)
                 wait_event(live, lambda e: e.get("type") == "renderer" and e.get("row") == 4, after=after)
+                result["screenshots"]["hover"] = capture(live, "hover", output)
                 command(live, type="interaction", kind="hover", value=False)
                 result["hover"] = "RENDERER_PASS"
                 command(live, type="work", state="idle")
@@ -151,17 +174,41 @@ def run_session(executable: Path, app_path: Path | None, output: Path, initial: 
                                and e.get("frame") == frame, after=after)
                 command(live, type="interaction", kind="look", value=None)
                 result["lookDirections"] = "RENDERER_PASS"
-                command(live, type="work", state="review")
+                command(live, type="work", state="running")
+                after = command(live, type="frame-capture", value=True)
+                wait_event(live, lambda e: e.get("type") == "frame-capture-mode" and e.get("enabled") is True,
+                           after=after)
                 after = command(live, type="form", form="feng")
                 wait_event(live, lambda e: e.get("type") == "renderer" and e.get("transitionId") == "gu_to_feng"
                            and e.get("transitionFrame") == 4, after=after)
+                # A repeated target must not restart the operation. Work can
+                # change under the overlay; the latest state must win.
+                command(live, type="form", form="feng")
+                command(live, type="work", state="waiting")
+                command(live, type="work", state="running")
                 result["screenshots"]["gu_to_feng"] = capture(live, "gu_to_feng", output)
-                result["guToFengFrames"] = wait_transition(live, "gu_to_feng", "feng", 10, after=after)
+                result["guToFengFrames"] = wait_transition(live, "gu_to_feng", "feng", 10, after=after,
+                                                            expected_underlying="running")
+                result["screenshots"]["gu_to_feng_frames"] = collect_frame_captures(
+                    live, "gu_to_feng", 10, output, after=after)
+                result["screenshots"]["feng_after_transition"] = capture(live, "feng_after_transition", output)
                 after = command(live, type="form", form="gu")
                 wait_event(live, lambda e: e.get("type") == "renderer" and e.get("transitionId") == "feng_to_gu"
                            and e.get("transitionFrame") == 3, after=after)
                 result["screenshots"]["feng_to_gu"] = capture(live, "feng_to_gu", output)
-                result["fengToGuFrames"] = wait_transition(live, "feng_to_gu", "gu", 8, after=after)
+                result["fengToGuFrames"] = wait_transition(live, "feng_to_gu", "gu", 8, after=after,
+                                                            expected_underlying="running")
+                result["screenshots"]["feng_to_gu_frames"] = collect_frame_captures(
+                    live, "feng_to_gu", 8, output, after=after)
+                result["screenshots"]["gu_after_transition"] = capture(live, "gu_after_transition", output)
+                command(live, type="frame-capture", value=False)
+                after = command(live, type="interaction", kind="drag", value="running-right")
+                wait_event(live, lambda e: e.get("type") == "renderer" and e.get("row") == 1, after=after)
+                result["screenshots"]["drag_right"] = capture(live, "drag_right", output)
+                after = command(live, type="interaction", kind="drag", value="running-left")
+                wait_event(live, lambda e: e.get("type") == "renderer" and e.get("row") == 2, after=after)
+                result["screenshots"]["drag_left"] = capture(live, "drag_left", output)
+                command(live, type="interaction", kind="drag", value=None)
                 after = command(live, type="simulate-drag")
                 drag = wait_event(live, lambda e: e.get("type") == "synthetic-drag", after=after)
                 result["drag"] = drag
@@ -170,6 +217,9 @@ def run_session(executable: Path, app_path: Path | None, output: Path, initial: 
                 if not any(e.get("type") == "state" and e.get("normalState") == "running-right"
                            for e in live.events[after:]):
                     raise StandaloneQAError("drag did not select the running-right row")
+                command(live, type="interaction", kind="hover", value=False)
+                command(live, type="interaction", kind="drag", value=None)
+                command(live, type="interaction", kind="look", value=None)
                 for at, form in (("2026-09-14T09:00:00+08:00", "feng"),
                                  ("2026-09-14T12:00:00+08:00", "gu"),
                                  ("2026-09-14T14:00:00+08:00", "feng"),
@@ -178,7 +228,8 @@ def run_session(executable: Path, app_path: Path | None, output: Path, initial: 
                     wait_event(live, lambda e: e.get("type") == "schedule" and e.get("expectedForm") == form,
                                after=after)
                     transition = "gu_to_feng" if form == "feng" else "feng_to_gu"
-                    wait_transition(live, transition, form, 10 if form == "feng" else 8, after=after)
+                    wait_transition(live, transition, form, 10 if form == "feng" else 8, after=after,
+                                    expected_underlying="running")
                 result["scheduleE2E"] = "PASS"
             result["events"] = len(live.events)
             if not all(e.get("hitbox") == {"width": 192, "height": 208}

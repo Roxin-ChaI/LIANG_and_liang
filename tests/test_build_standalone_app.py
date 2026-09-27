@@ -8,7 +8,7 @@ from tools import build_standalone_app as subject
 def test_bundle_inventory_contains_exact_form_and_transition_inputs() -> None:
     files = subject.source_files()
     paths = {relative.as_posix() for _, relative in files}
-    assert len(paths) == len(files) == 38
+    assert len(paths) == len(files) == 39
     assert "assets/builds/gu/spritesheet.webp" in paths
     assert "assets/builds/feng/spritesheet.webp" in paths
     assert sum(path.startswith("assets/transform-overlay/gu_to_feng/") for path in paths) == 10

@@ -44,6 +44,8 @@ let hookStopping = false;
 let hookRetryCount = 0;
 let clockOverride = TEST && process.env.LNH_TEST_INITIAL_TIME ? new Date(process.env.LNH_TEST_INITIAL_TIME) : null;
 let lastReportedRow = null;
+let captureFrames = false;
+const capturedFrames = new Set();
 
 function clock() { return clockOverride ?? new Date(); }
 function emit(type, payload = {}) {
@@ -201,6 +203,10 @@ async function testControl(command) {
     const image = await window.webContents.capturePage();
     await fs.writeFile(file, image.toPNG());
     emit("capture", { name: command.name, file });
+  } else if (command.type === "frame-capture") {
+    captureFrames = command.value === true;
+    if (captureFrames) capturedFrames.clear();
+    emit("frame-capture-mode", { enabled: captureFrames });
   } else if (command.type === "inspect") {
     const dom = await window.webContents.executeJavaScript(`(() => {
       const pet = document.getElementById('pet');
@@ -291,7 +297,19 @@ async function start() {
       diagnose({ stage: "renderer-row", state: value?.state, row: value?.row });
     }
     emit("renderer", value);
-    acknowledgeTransitionFrame(value);
+    if (TEST && captureFrames && value?.visualMode === "TRANSITIONING") {
+      const key = `${value.operationToken}:${value.transitionFrame}`;
+      if (capturedFrames.has(key)) return;
+      capturedFrames.add(key);
+      // Capture the actual composed window before allowing the next frame.
+      // This QA-only gate keeps the evidence sequence deterministic.
+      const filename = `${value.transitionId}-${String(value.transitionFrame).padStart(2, "0")}.png`;
+      const file = path.join(TEST_ROOT, filename);
+      void window.webContents.capturePage().then((image) => fs.writeFile(file, image.toPNG()))
+        .then(() => { emit("frame-capture", { file, transitionId: value.transitionId,
+          frameIndex: value.transitionFrame }); acknowledgeTransitionFrame(value); })
+        .catch((error) => emit("frame-capture-error", { reason: error.message }));
+    } else acknowledgeTransitionFrame(value);
   });
   window.webContents.on("render-process-gone", (_event, details) => emit("renderer-gone", { reason: details.reason }));
   window.webContents.on("did-fail-load", (_event, code) => emit("renderer-load-failed", { code }));
