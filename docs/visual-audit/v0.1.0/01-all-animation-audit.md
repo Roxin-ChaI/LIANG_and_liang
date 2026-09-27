@@ -1,0 +1,15 @@
+# v0.1.0 QA2 full-animation audit — observed window output
+
+Scope: isolated launches of the existing `Liang no Henshin v0.1.0 QA2.app`, once as Gu and once as Feng, at forced Electron device-scale factors 1 and 2. The incumbent pet and Codex were not replaced. `webContents.capturePage()` recorded the real QA2 renderer window; GIFs are sequences of those captures, not an OS-level monitor recording. A physical Retina-monitor/display-compositor test is **NOT_VERIFIED**.
+
+Evidence: [Gu contact sheet](gu-contact-sheet.png), [Feng contact sheet](feng-contact-sheet.png), [Gu window recording](gu-window-recording.gif), [Feng window recording](feng-window-recording.gif), [Gu 16 looks](gu-look-directions.png), [Feng 16 looks](feng-look-directions.png), and [per-frame measurements](metrics.json). Raw screenshot sequences and traces remain in ignored `standalone-app/evidence/v010-visual-audit{,-1x}/`; curated copies are versioned here.
+
+All nine normal v2 rows rendered every expected frame index in both forms at both requested scales. Both 16-direction look sets rendered. This is *frame coverage*, not a visual-quality PASS. Frames are not required to have equal overall bounding boxes: turning a head, lifting a hand and a small hover jump legitimately alter silhouette.
+
+## Reproducible observations
+
+- **V-01, P1 — Gu baseline/height discontinuity.** Start Gu Idle, then enter Waving, Failed, Waiting, Running or Review, then return to Idle. Actual QA2 window alpha baseline is 227.5 CSS px in Idle/drag but 222.5 CSS px in those five states: 5 px upward and shorter, with no jump intended by the action. [Idle versus Running](gu-idle-vs-running-baseline.png) makes the foot mismatch visible. Hover baseline varies by up to 4 px by design and is *not* included in this defect. Source-versus-renderer attribution remains for the consolidated report.
+- **V-02, P2 — Feng Failed has repeated inert frames.** Trigger Failed and watch the 8-frame row. In the captured window frames 0→1, 3→4 and 6→7 are exactly identical RGB/alpha; other changes are confined to a tiny eye region. [Frame 0 versus 4](feng-failed-frame-0-vs-4.png) shows the weak action. The row is structurally valid but does not convincingly convey the requested brief setback.
+- **V-03, P2 — Feng Idle has repeated frames.** Leave Feng idle. Captured frames 0→1 and 4→5 are identical RGB/alpha; the remaining changes are restricted to the eye region. It may be acceptably restrained artistically, but is listed as a visual-content concern rather than an animation-engine failure.
+
+Head/shoulder changes in Gu/Feng drag poses and the 3–4 px hover foot rise were inspected as plausible action, not categorized as malformed scale from overall bbox alone. At forced 1x/2x, characters stayed within the transparent window and hard-edged sprites were visible; external Retina and physical pointer behavior are not established by this capture path. Runtime state-interruption and transition behavior are audited separately. No approved atlas or frame was changed.

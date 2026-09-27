@@ -1,0 +1,2012 @@
+{
+  "captureKind": "Electron webContents.capturePage of isolated QA2 window",
+  "displayScaleNote": "1x and 2x forced device-scale-factor; external Retina monitor not proven",
+  "forms": {
+    "gu": {
+      "2xCaptureCount": 117,
+      "1xCaptureCount": 125,
+      "2xMissingFrames": {
+        "idle": [],
+        "running-right": [],
+        "running-left": [],
+        "waving": [],
+        "jumping": [],
+        "failed": [],
+        "waiting": [],
+        "running": [],
+        "review": []
+      },
+      "1xMissingFrames": {
+        "idle": [],
+        "running-right": [],
+        "running-left": [],
+        "waving": [],
+        "jumping": [],
+        "failed": [],
+        "waiting": [],
+        "running": [],
+        "review": []
+      },
+      "rows": {
+        "idle": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "baselinesCssPx": [
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5
+          ],
+          "overallAlphaCentersCssPx": [
+            120.0,
+            122.5,
+            123.5,
+            122.5,
+            122.5,
+            120.0
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                172,
+                56,
+                314,
+                240
+              ],
+              "alphaBbox": [
+                172,
+                56,
+                314,
+                240
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                176,
+                58,
+                316,
+                240
+              ],
+              "alphaBbox": [
+                176,
+                58,
+                316,
+                240
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                176,
+                58,
+                316,
+                240
+              ],
+              "alphaBbox": [
+                176,
+                58,
+                316,
+                240
+              ]
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                176,
+                56,
+                314,
+                240
+              ],
+              "alphaBbox": [
+                176,
+                56,
+                314,
+                240
+              ]
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": [
+                172,
+                56,
+                314,
+                240
+              ],
+              "alphaBbox": [
+                172,
+                56,
+                314,
+                240
+              ]
+            }
+          ]
+        },
+        "running-right": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "baselinesCssPx": [
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5
+          ],
+          "overallAlphaCentersCssPx": [
+            128.0,
+            129.5,
+            126.5,
+            126.5,
+            125.0,
+            127.0,
+            128.0,
+            129.5
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                178,
+                56,
+                340,
+                456
+              ],
+              "alphaBbox": [
+                178,
+                56,
+                340,
+                456
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                172,
+                58,
+                340,
+                456
+              ],
+              "alphaBbox": [
+                172,
+                58,
+                340,
+                456
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                172,
+                56,
+                334,
+                456
+              ],
+              "alphaBbox": [
+                172,
+                56,
+                334,
+                456
+              ]
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                168,
+                56,
+                332,
+                456
+              ],
+              "alphaBbox": [
+                168,
+                56,
+                332,
+                456
+              ]
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": [
+                168,
+                58,
+                332,
+                456
+              ],
+              "alphaBbox": [
+                168,
+                58,
+                332,
+                456
+              ]
+            },
+            {
+              "from": 5,
+              "to": 6,
+              "rgbBbox": [
+                178,
+                58,
+                334,
+                456
+              ],
+              "alphaBbox": [
+                178,
+                58,
+                334,
+                456
+              ]
+            },
+            {
+              "from": 6,
+              "to": 7,
+              "rgbBbox": [
+                178,
+                56,
+                334,
+                456
+              ],
+              "alphaBbox": [
+                178,
+                56,
+                334,
+                456
+              ]
+            }
+          ]
+        },
+        "running-left": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "baselinesCssPx": [
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5
+          ],
+          "overallAlphaCentersCssPx": [
+            128.0,
+            126.5,
+            129.5,
+            129.5,
+            131.0,
+            129.0,
+            128.0,
+            126.5
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                172,
+                56,
+                334,
+                456
+              ],
+              "alphaBbox": [
+                172,
+                56,
+                334,
+                456
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                172,
+                58,
+                340,
+                456
+              ],
+              "alphaBbox": [
+                172,
+                58,
+                340,
+                456
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                178,
+                56,
+                340,
+                456
+              ],
+              "alphaBbox": [
+                178,
+                56,
+                340,
+                456
+              ]
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                180,
+                56,
+                344,
+                456
+              ],
+              "alphaBbox": [
+                180,
+                56,
+                344,
+                456
+              ]
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": [
+                180,
+                58,
+                344,
+                456
+              ],
+              "alphaBbox": [
+                180,
+                58,
+                344,
+                456
+              ]
+            },
+            {
+              "from": 5,
+              "to": 6,
+              "rgbBbox": [
+                178,
+                58,
+                334,
+                456
+              ],
+              "alphaBbox": [
+                178,
+                58,
+                334,
+                456
+              ]
+            },
+            {
+              "from": 6,
+              "to": 7,
+              "rgbBbox": [
+                178,
+                56,
+                334,
+                456
+              ],
+              "alphaBbox": [
+                178,
+                56,
+                334,
+                456
+              ]
+            }
+          ]
+        },
+        "waving": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "baselinesCssPx": [
+            222.5,
+            222.5,
+            222.5,
+            222.5
+          ],
+          "overallAlphaCentersCssPx": [
+            128.5,
+            128.0,
+            128.0,
+            127.5
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                180,
+                58,
+                332,
+                446
+              ],
+              "alphaBbox": [
+                180,
+                58,
+                332,
+                446
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                174,
+                58,
+                338,
+                446
+              ],
+              "alphaBbox": [
+                174,
+                58,
+                338,
+                446
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                174,
+                58,
+                338,
+                446
+              ],
+              "alphaBbox": [
+                174,
+                58,
+                338,
+                446
+              ]
+            }
+          ]
+        },
+        "jumping": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "baselinesCssPx": [
+            227.5,
+            226.5,
+            223.5,
+            225.5,
+            227.5
+          ],
+          "overallAlphaCentersCssPx": [
+            121.5,
+            121.5,
+            121.5,
+            121.5,
+            121.5
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                176,
+                58,
+                310,
+                456
+              ],
+              "alphaBbox": [
+                176,
+                58,
+                310,
+                456
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                176,
+                52,
+                310,
+                454
+              ],
+              "alphaBbox": [
+                176,
+                52,
+                310,
+                454
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                176,
+                52,
+                310,
+                452
+              ],
+              "alphaBbox": [
+                176,
+                52,
+                310,
+                452
+              ]
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                176,
+                56,
+                310,
+                456
+              ],
+              "alphaBbox": [
+                176,
+                56,
+                310,
+                456
+              ]
+            }
+          ]
+        },
+        "failed": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "baselinesCssPx": [
+            222.5,
+            222.5,
+            222.5,
+            222.5,
+            222.5,
+            222.5,
+            222.5,
+            222.5
+          ],
+          "overallAlphaCentersCssPx": [
+            122.5,
+            122.5,
+            122.0,
+            123.0,
+            125.5,
+            122.5,
+            119.0,
+            122.5
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                176,
+                58,
+                314,
+                446
+              ],
+              "alphaBbox": [
+                176,
+                62,
+                312,
+                446
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                174,
+                58,
+                314,
+                446
+              ],
+              "alphaBbox": [
+                174,
+                58,
+                314,
+                446
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                168,
+                58,
+                324,
+                446
+              ],
+              "alphaBbox": [
+                168,
+                58,
+                324,
+                446
+              ]
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                168,
+                58,
+                330,
+                446
+              ],
+              "alphaBbox": [
+                168,
+                58,
+                330,
+                446
+              ]
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": [
+                168,
+                58,
+                330,
+                446
+              ],
+              "alphaBbox": [
+                168,
+                58,
+                330,
+                446
+              ]
+            },
+            {
+              "from": 5,
+              "to": 6,
+              "rgbBbox": [
+                164,
+                58,
+                322,
+                446
+              ],
+              "alphaBbox": [
+                164,
+                58,
+                322,
+                446
+              ]
+            },
+            {
+              "from": 6,
+              "to": 7,
+              "rgbBbox": [
+                164,
+                58,
+                314,
+                446
+              ],
+              "alphaBbox": [
+                164,
+                58,
+                314,
+                446
+              ]
+            }
+          ]
+        },
+        "waiting": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "baselinesCssPx": [
+            222.5,
+            222.5,
+            222.5,
+            222.5,
+            222.5,
+            222.5
+          ],
+          "overallAlphaCentersCssPx": [
+            128.0,
+            128.0,
+            128.5,
+            128.0,
+            128.0,
+            128.0
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                190,
+                60,
+                324,
+                442
+              ],
+              "alphaBbox": [
+                188,
+                58,
+                324,
+                446
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                190,
+                62,
+                324,
+                442
+              ],
+              "alphaBbox": [
+                188,
+                60,
+                326,
+                446
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                190,
+                64,
+                324,
+                442
+              ],
+              "alphaBbox": [
+                188,
+                62,
+                326,
+                446
+              ]
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                190,
+                62,
+                322,
+                444
+              ],
+              "alphaBbox": [
+                188,
+                60,
+                324,
+                446
+              ]
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": [
+                190,
+                62,
+                322,
+                444
+              ],
+              "alphaBbox": [
+                188,
+                60,
+                324,
+                446
+              ]
+            }
+          ]
+        },
+        "running": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "baselinesCssPx": [
+            222.5,
+            222.5,
+            222.5,
+            222.5,
+            222.5,
+            222.5
+          ],
+          "overallAlphaCentersCssPx": [
+            128.0,
+            127.5,
+            127.5,
+            128.5,
+            128.0,
+            128.0
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                186,
+                60,
+                328,
+                444
+              ],
+              "alphaBbox": [
+                180,
+                58,
+                330,
+                446
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                186,
+                60,
+                328,
+                444
+              ],
+              "alphaBbox": [
+                180,
+                58,
+                330,
+                446
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                186,
+                62,
+                328,
+                444
+              ],
+              "alphaBbox": [
+                184,
+                60,
+                330,
+                446
+              ]
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                186,
+                62,
+                328,
+                444
+              ],
+              "alphaBbox": [
+                184,
+                58,
+                330,
+                446
+              ]
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": [
+                186,
+                62,
+                326,
+                444
+              ],
+              "alphaBbox": [
+                184,
+                58,
+                328,
+                446
+              ]
+            }
+          ]
+        },
+        "review": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "baselinesCssPx": [
+            222.5,
+            222.5,
+            222.5,
+            222.5,
+            222.5,
+            222.5
+          ],
+          "overallAlphaCentersCssPx": [
+            128.0,
+            127.5,
+            127.5,
+            128.0,
+            128.0,
+            128.0
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                186,
+                60,
+                324,
+                442
+              ],
+              "alphaBbox": [
+                184,
+                58,
+                326,
+                446
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                186,
+                64,
+                326,
+                442
+              ],
+              "alphaBbox": [
+                184,
+                62,
+                326,
+                446
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                188,
+                64,
+                326,
+                442
+              ],
+              "alphaBbox": [
+                184,
+                62,
+                326,
+                446
+              ]
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                188,
+                64,
+                326,
+                444
+              ],
+              "alphaBbox": [
+                186,
+                62,
+                326,
+                446
+              ]
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": [
+                188,
+                60,
+                326,
+                444
+              ],
+              "alphaBbox": [
+                186,
+                58,
+                326,
+                446
+              ]
+            }
+          ]
+        }
+      },
+      "lookCount": 16
+    },
+    "feng": {
+      "2xCaptureCount": 117,
+      "1xCaptureCount": 126,
+      "2xMissingFrames": {
+        "idle": [],
+        "running-right": [],
+        "running-left": [],
+        "waving": [],
+        "jumping": [],
+        "failed": [],
+        "waiting": [],
+        "running": [],
+        "review": []
+      },
+      "1xMissingFrames": {
+        "idle": [],
+        "running-right": [],
+        "running-left": [],
+        "waving": [],
+        "jumping": [],
+        "failed": [],
+        "waiting": [],
+        "running": [],
+        "review": []
+      },
+      "rows": {
+        "idle": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "baselinesCssPx": [
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5
+          ],
+          "overallAlphaCentersCssPx": [
+            128.0,
+            128.0,
+            128.0,
+            128.0,
+            128.0,
+            128.0
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": null,
+              "alphaBbox": null
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                216,
+                124,
+                258,
+                130
+              ],
+              "alphaBbox": null
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                216,
+                124,
+                258,
+                130
+              ],
+              "alphaBbox": null
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                216,
+                124,
+                258,
+                130
+              ],
+              "alphaBbox": null
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": null,
+              "alphaBbox": null
+            }
+          ]
+        },
+        "running-right": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "baselinesCssPx": [
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5
+          ],
+          "overallAlphaCentersCssPx": [
+            128.0,
+            132.0,
+            130.0,
+            130.0,
+            127.5,
+            132.0,
+            128.5,
+            128.0
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                170,
+                60,
+                356,
+                456
+              ],
+              "alphaBbox": [
+                170,
+                58,
+                356,
+                456
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                164,
+                58,
+                356,
+                456
+              ],
+              "alphaBbox": [
+                164,
+                58,
+                356,
+                456
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                164,
+                58,
+                356,
+                456
+              ],
+              "alphaBbox": [
+                164,
+                58,
+                356,
+                456
+              ]
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                160,
+                58,
+                348,
+                456
+              ],
+              "alphaBbox": [
+                160,
+                58,
+                350,
+                456
+              ]
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": [
+                160,
+                58,
+                368,
+                456
+              ],
+              "alphaBbox": [
+                160,
+                58,
+                368,
+                456
+              ]
+            },
+            {
+              "from": 5,
+              "to": 6,
+              "rgbBbox": [
+                160,
+                58,
+                368,
+                456
+              ],
+              "alphaBbox": [
+                160,
+                58,
+                368,
+                456
+              ]
+            },
+            {
+              "from": 6,
+              "to": 7,
+              "rgbBbox": [
+                172,
+                56,
+                342,
+                456
+              ],
+              "alphaBbox": [
+                172,
+                56,
+                342,
+                456
+              ]
+            }
+          ]
+        },
+        "running-left": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "baselinesCssPx": [
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5
+          ],
+          "overallAlphaCentersCssPx": [
+            128.0,
+            124.0,
+            126.0,
+            126.0,
+            128.5,
+            124.0,
+            127.5,
+            128.0
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                156,
+                60,
+                342,
+                456
+              ],
+              "alphaBbox": [
+                156,
+                58,
+                342,
+                456
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                156,
+                58,
+                348,
+                456
+              ],
+              "alphaBbox": [
+                156,
+                58,
+                348,
+                456
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                156,
+                58,
+                348,
+                456
+              ],
+              "alphaBbox": [
+                156,
+                58,
+                348,
+                456
+              ]
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                164,
+                58,
+                352,
+                456
+              ],
+              "alphaBbox": [
+                162,
+                58,
+                352,
+                456
+              ]
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": [
+                144,
+                58,
+                352,
+                456
+              ],
+              "alphaBbox": [
+                144,
+                58,
+                352,
+                456
+              ]
+            },
+            {
+              "from": 5,
+              "to": 6,
+              "rgbBbox": [
+                144,
+                58,
+                352,
+                456
+              ],
+              "alphaBbox": [
+                144,
+                58,
+                352,
+                456
+              ]
+            },
+            {
+              "from": 6,
+              "to": 7,
+              "rgbBbox": [
+                170,
+                56,
+                340,
+                456
+              ],
+              "alphaBbox": [
+                170,
+                56,
+                340,
+                456
+              ]
+            }
+          ]
+        },
+        "waving": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "baselinesCssPx": [
+            227.5,
+            227.5,
+            227.5,
+            227.5
+          ],
+          "overallAlphaCentersCssPx": [
+            126.0,
+            127.0,
+            120.5,
+            125.0
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                140,
+                56,
+                366,
+                456
+              ],
+              "alphaBbox": [
+                140,
+                56,
+                366,
+                456
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                118,
+                56,
+                366,
+                456
+              ],
+              "alphaBbox": [
+                118,
+                58,
+                366,
+                456
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                118,
+                56,
+                364,
+                456
+              ],
+              "alphaBbox": [
+                118,
+                56,
+                364,
+                456
+              ]
+            }
+          ]
+        },
+        "jumping": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "baselinesCssPx": [
+            227.5,
+            226.5,
+            224.5,
+            226.5,
+            227.5
+          ],
+          "overallAlphaCentersCssPx": [
+            128.0,
+            128.0,
+            128.0,
+            128.0,
+            128.0
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                152,
+                54,
+                360,
+                456
+              ],
+              "alphaBbox": [
+                152,
+                54,
+                360,
+                456
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                152,
+                50,
+                360,
+                454
+              ],
+              "alphaBbox": [
+                152,
+                50,
+                360,
+                454
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                152,
+                50,
+                360,
+                454
+              ],
+              "alphaBbox": [
+                152,
+                50,
+                360,
+                454
+              ]
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                152,
+                54,
+                360,
+                456
+              ],
+              "alphaBbox": [
+                152,
+                54,
+                360,
+                456
+              ]
+            }
+          ]
+        },
+        "failed": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "baselinesCssPx": [
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5
+          ],
+          "overallAlphaCentersCssPx": [
+            128.0,
+            128.0,
+            128.0,
+            128.0,
+            128.0,
+            128.0,
+            128.0,
+            128.0
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": null,
+              "alphaBbox": null
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                216,
+                124,
+                258,
+                130
+              ],
+              "alphaBbox": null
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                216,
+                124,
+                258,
+                130
+              ],
+              "alphaBbox": null
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": null,
+              "alphaBbox": null
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": [
+                216,
+                124,
+                258,
+                130
+              ],
+              "alphaBbox": null
+            },
+            {
+              "from": 5,
+              "to": 6,
+              "rgbBbox": [
+                216,
+                124,
+                258,
+                130
+              ],
+              "alphaBbox": null
+            },
+            {
+              "from": 6,
+              "to": 7,
+              "rgbBbox": null,
+              "alphaBbox": null
+            }
+          ]
+        },
+        "waiting": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "baselinesCssPx": [
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5
+          ],
+          "overallAlphaCentersCssPx": [
+            128.0,
+            128.0,
+            128.0,
+            128.0,
+            128.0,
+            128.0
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                202,
+                110,
+                288,
+                144
+              ],
+              "alphaBbox": null
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                202,
+                110,
+                288,
+                144
+              ],
+              "alphaBbox": null
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                202,
+                110,
+                288,
+                144
+              ],
+              "alphaBbox": null
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                202,
+                110,
+                288,
+                144
+              ],
+              "alphaBbox": null
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": [
+                202,
+                110,
+                288,
+                144
+              ],
+              "alphaBbox": null
+            }
+          ]
+        },
+        "running": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "baselinesCssPx": [
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5
+          ],
+          "overallAlphaCentersCssPx": [
+            128.5,
+            128.5,
+            128.5,
+            128.5,
+            128.5,
+            128.5
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                156,
+                60,
+                318,
+                300
+              ],
+              "alphaBbox": [
+                156,
+                144,
+                284,
+                300
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                160,
+                60,
+                318,
+                300
+              ],
+              "alphaBbox": [
+                160,
+                142,
+                286,
+                300
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                160,
+                60,
+                318,
+                300
+              ],
+              "alphaBbox": [
+                160,
+                140,
+                286,
+                300
+              ]
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                160,
+                60,
+                318,
+                300
+              ],
+              "alphaBbox": [
+                160,
+                140,
+                280,
+                300
+              ]
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": [
+                156,
+                60,
+                318,
+                300
+              ],
+              "alphaBbox": [
+                156,
+                144,
+                284,
+                298
+              ]
+            }
+          ]
+        },
+        "review": {
+          "capturedFrames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "baselinesCssPx": [
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5,
+            227.5
+          ],
+          "overallAlphaCentersCssPx": [
+            124.0,
+            124.0,
+            124.0,
+            123.5,
+            124.0,
+            124.0
+          ],
+          "adjacentDifference": [
+            {
+              "from": 0,
+              "to": 1,
+              "rgbBbox": [
+                142,
+                56,
+                344,
+                298
+              ],
+              "alphaBbox": [
+                144,
+                56,
+                310,
+                298
+              ]
+            },
+            {
+              "from": 1,
+              "to": 2,
+              "rgbBbox": [
+                142,
+                58,
+                344,
+                298
+              ],
+              "alphaBbox": [
+                144,
+                140,
+                280,
+                296
+              ]
+            },
+            {
+              "from": 2,
+              "to": 3,
+              "rgbBbox": [
+                140,
+                56,
+                344,
+                298
+              ],
+              "alphaBbox": [
+                140,
+                138,
+                280,
+                294
+              ]
+            },
+            {
+              "from": 3,
+              "to": 4,
+              "rgbBbox": [
+                140,
+                56,
+                344,
+                298
+              ],
+              "alphaBbox": [
+                140,
+                138,
+                280,
+                298
+              ]
+            },
+            {
+              "from": 4,
+              "to": 5,
+              "rgbBbox": [
+                142,
+                56,
+                344,
+                298
+              ],
+              "alphaBbox": [
+                144,
+                56,
+                310,
+                286
+              ]
+            }
+          ]
+        }
+      },
+      "lookCount": 16
+    }
+  }
+}
