@@ -78,3 +78,33 @@ def test_receiver_rejects_extra_fields():
     from codex_hook_receiver import accept_metadata
     assert accept_metadata({"event": "Stop", "session_id": "s", "timestamp": "t",
                             "prompt": "SECRET"}) is None
+
+
+def test_receiver_forwards_only_minimized_metadata(monkeypatch, tmp_path):
+    sys.path.insert(0, str(ROOT / "tools"))
+    import codex_hook_receiver as receiver
+
+    recorded = []
+
+    class FakeSocket:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_args):
+            return False
+
+        def settimeout(self, timeout):
+            assert timeout == 0.05
+
+        def connect(self, destination):
+            recorded.append(destination)
+
+        def sendall(self, wire):
+            recorded.append(json.loads(wire))
+
+    monkeypatch.setattr(receiver.socket, "socket", lambda *_args: FakeSocket())
+    value = {"event": "PreToolUse", "session_id": "desktop", "timestamp": "t"}
+    destination = tmp_path / "forward.sock"
+    assert receiver.forward_metadata(value, destination) is True
+    assert recorded == [str(destination), value]
+    assert receiver.forward_metadata(value, None) is False

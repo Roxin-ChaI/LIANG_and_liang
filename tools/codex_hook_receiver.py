@@ -22,7 +22,21 @@ def accept_metadata(value: object) -> dict[str, str] | None:
     return value
 
 
-def serve(socket_path: Path, log_path: Path) -> None:
+def forward_metadata(value: dict[str, str], forward_path: Path | None) -> bool:
+    """Best-effort delivery to the standalone pet; logging stays independent."""
+    if forward_path is None:
+        return False
+    try:
+        with socket.socket(socket.AF_UNIX, socket.SOCK_STREAM) as client:
+            client.settimeout(0.05)
+            client.connect(str(forward_path))
+            client.sendall((json.dumps(value, separators=(",", ":")) + "\n").encode("utf-8"))
+        return True
+    except OSError:
+        return False
+
+
+def serve(socket_path: Path, log_path: Path, forward_path: Path | None = None) -> None:
     socket_path.parent.mkdir(parents=True, exist_ok=True)
     log_path.parent.mkdir(parents=True, exist_ok=True)
     if socket_path.exists():
@@ -56,6 +70,7 @@ def serve(socket_path: Path, log_path: Path) -> None:
                 if value is not None:
                     with log_path.open("a", encoding="utf-8") as log:
                         log.write(json.dumps(value, separators=(",", ":")) + "\n")
+                    forward_metadata(value, forward_path)
     finally:
         listener.close()
         socket_path.unlink(missing_ok=True)
@@ -67,5 +82,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--socket", type=Path, required=True)
     parser.add_argument("--log", type=Path, required=True)
+    parser.add_argument("--forward-socket", type=Path)
     arguments = parser.parse_args()
-    serve(arguments.socket, arguments.log)
+    serve(arguments.socket, arguments.log, arguments.forward_socket)

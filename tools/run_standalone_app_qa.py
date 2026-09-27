@@ -106,6 +106,7 @@ def run_session(executable: Path, app_path: Path | None, output: Path, initial: 
             "PATH": os.environ.get("PATH", "/usr/bin:/bin:/usr/sbin:/sbin"),
             "LANG": "en_US.UTF-8",
             "LNH_STANDALONE_TEST": "1",
+            "LNH_DISABLE_CODEX_EVENTS": "1",
             "LNH_STANDALONE_TEST_ROOT": str(temporary_root),
             "LNH_TEST_INITIAL_TIME": initial,
         }

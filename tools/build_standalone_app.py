@@ -21,8 +21,10 @@ BUNDLE_ID = "com.liang-no-henshin.standalone"
 APP_FILES = (
     "standalone-app/main.mjs", "standalone-app/preload.cjs",
     "standalone-app/renderer.mjs", "standalone-app/animation.mjs",
-    "standalone-app/events.mjs", "standalone-app/schedule.mjs",
+    "standalone-app/events.mjs", "standalone-app/codex-events.mjs",
+    "standalone-app/schedule.mjs",
     "standalone-app/index.html", "standalone-app/style.css",
+    "tools/codex_hook_receiver.py", "tools/codex_hook_probe.py",
     "runtime-patch/prototype/dual-form-source.mjs",
     "runtime-patch/prototype/transition-assets.mjs",
     "runtime-patch/prototype/transition-player.mjs",

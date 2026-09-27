@@ -1,5 +1,6 @@
 /** Project-owned standalone macOS desktop pet. Never loads Codex runtime. */
 import { app, BrowserWindow, ipcMain, Menu, powerMonitor, screen } from "electron";
+import { spawn } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -8,13 +9,16 @@ import { createDualFormSourceRegistry } from "../runtime-patch/prototype/dual-fo
 import { loadTransitionAssets } from "../runtime-patch/prototype/transition-assets.mjs";
 import { createTransitionPlayer } from "../runtime-patch/prototype/transition-player.mjs";
 import { createPetEventAdapter } from "./events.mjs";
+import { createCodexSessionTracker, createHookForwardServer } from "./codex-events.mjs";
 import { createFormScheduler, expectedFormAt } from "./schedule.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
 const TEST = process.env.LNH_STANDALONE_TEST === "1";
 const TEST_ROOT = TEST ? process.env.LNH_STANDALONE_TEST_ROOT : null;
+const HOOK_PROJECT_ROOT = process.env.LNH_HOOK_PROJECT_ROOT ?? "/Users/mac/Projects/liang-no-henshin";
 if (TEST && (!TEST_ROOT || !path.isAbsolute(TEST_ROOT))) throw new Error("test mode needs an absolute temporary root");
+if (!path.isAbsolute(HOOK_PROJECT_ROOT)) throw new Error("Hook project root must be absolute");
 app.setName("Liang no Henshin");
 if (TEST) app.setPath("userData", path.join(TEST_ROOT, "user-data"));
 
@@ -26,11 +30,17 @@ let transitionTimer = null;
 let stateEpoch = 0;
 let requestSerial = 0;
 let overlayImages;
+let hookTracker;
+let hookServer;
+let hookReceiver;
+let hookRetryTimer = null;
+let hookStopping = false;
+let hookRetryCount = 0;
 let clockOverride = TEST && process.env.LNH_TEST_INITIAL_TIME ? new Date(process.env.LNH_TEST_INITIAL_TIME) : null;
 
 function clock() { return clockOverride ?? new Date(); }
 function emit(type, payload = {}) {
-  if (TEST) process.stdout.write(`${JSON.stringify({ type, ...payload })}\n`);
+  if (TEST) process.stdout.write(`${JSON.stringify({ type, observedAt: Date.now(), ...payload })}\n`);
 }
 async function dataUrl(relative, mime) {
   const bytes = await fs.readFile(path.join(ROOT, relative));
@@ -79,6 +89,63 @@ function dispatch(event, reason = "event") {
   return result;
 }
 
+function launchHookReceiver() {
+  if (hookStopping) return;
+  const projectCache = path.join(HOOK_PROJECT_ROOT, ".cache");
+  hookReceiver = spawn("/usr/bin/python3", [path.join(ROOT, "tools/codex_hook_receiver.py"),
+    "--socket", path.join(projectCache, "codex-events.sock"),
+    "--log", path.join(projectCache, "codex-events.jsonl"),
+    "--forward-socket", hookServer.socketPath], { stdio: ["ignore", "ignore", "pipe"] });
+  hookReceiver.stderr.on("data", (chunk) => {
+    emit("hook-receiver-stderr", { message: String(chunk).slice(0, 200) });
+  });
+  hookReceiver.once("error", (error) => emit("hook-receiver-error", { code: error.code }));
+  hookReceiver.once("close", (code, signal) => {
+    hookReceiver = null;
+    if (hookStopping) return;
+    hookRetryCount += 1;
+    const delay = Math.min(30_000, 1000 * (2 ** Math.min(5, hookRetryCount - 1)));
+    emit("hook-receiver-disconnected", { code, signal, retryMs: delay });
+    hookRetryTimer = setTimeout(() => { hookRetryTimer = null; launchHookReceiver(); }, delay);
+  });
+  emit("hook-receiver-started", { pid: hookReceiver.pid });
+}
+
+async function startHookBridge() {
+  if (process.env.LNH_DISABLE_CODEX_EVENTS === "1") return;
+  hookTracker = createCodexSessionTracker({
+    onState: (state, detail) => dispatch({ type: "work-state", state }, `codex-${detail.reason}`),
+    onEvent: (event, result) => emit("hook-event", { hookEvent: event.event,
+      sessionId: event.session_id, hookTimestamp: event.timestamp,
+      accepted: result.accepted, activeSessions: result.activeSessions }),
+  });
+  try {
+    hookServer = await createHookForwardServer(path.join(app.getPath("userData"), "codex-hook-forward.sock"),
+      (event) => hookTracker.accept(event));
+    launchHookReceiver();
+  } catch (error) {
+    hookTracker.stop();
+    hookTracker = null;
+    emit("hook-bridge-error", { code: error.code ?? "UNKNOWN" });
+  }
+}
+
+async function stopHookBridge() {
+  hookStopping = true;
+  if (hookRetryTimer !== null) clearTimeout(hookRetryTimer);
+  hookRetryTimer = null;
+  hookTracker?.stop();
+  const child = hookReceiver;
+  if (child) {
+    const ended = new Promise((resolve) => child.once("close", resolve));
+    child.kill("SIGTERM");
+    await Promise.race([ended, new Promise((resolve) => setTimeout(resolve, 1500))]);
+  }
+  hookReceiver = null;
+  if (hookServer) await hookServer.close();
+  hookServer = null;
+}
+
 async function testControl(command) {
   if (command.type === "work") dispatch({ type: "work-state", state: command.state }, "test-work");
   else if (command.type === "form") dispatch({ type: "target-form", form: command.form,
@@ -121,6 +188,7 @@ async function testControl(command) {
   } else if (command.type === "quit") {
     scheduler.stop();
     stopTransitionTick();
+    await stopHookBridge();
     emit("quit");
     app.quit();
   } else throw new TypeError("unsupported test command");
@@ -193,6 +261,7 @@ async function start() {
   } });
   await scheduler.reconcile("startup");
   powerMonitor.on("resume", () => { void scheduler.reconcile("resume"); });
+  await startHookBridge();
   if (TEST) {
     let pending = "";
     process.stdin.setEncoding("utf8");
@@ -211,3 +280,9 @@ async function start() {
 
 app.whenReady().then(start).catch((error) => { console.error(error); emit("fatal", { reason: error.message }); app.exit(1); });
 app.on("window-all-closed", () => { scheduler?.stop(); stopTransitionTick(); app.quit(); });
+app.on("before-quit", (event) => {
+  if (!hookStopping && hookServer) {
+    event.preventDefault();
+    void stopHookBridge().finally(() => app.quit());
+  }
+});
