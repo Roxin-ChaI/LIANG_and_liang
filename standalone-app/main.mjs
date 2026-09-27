@@ -1,5 +1,5 @@
 /** Project-owned standalone macOS desktop pet. Never loads Codex runtime. */
-import { app, BrowserWindow, ipcMain, Menu, powerMonitor, screen } from "electron";
+import { app, BrowserWindow, ipcMain, Menu, powerMonitor, screen, systemPreferences } from "electron";
 import { spawn } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -31,6 +31,7 @@ let window;
 let player;
 let adapter;
 let scheduler;
+let clockNotification = null;
 let transitionTimer = null;
 let stateEpoch = 0;
 let requestSerial = 0;
@@ -309,12 +310,20 @@ async function start() {
   emit("startup", { pid: process.pid, bounds: window.getBounds(), transparent: true,
     frame: false, initialForm: player.snapshot().currentForm, userData: app.getPath("userData") });
   publish("startup");
-  scheduler = createFormScheduler({ now: clock, onTarget: async (form, metadata) => {
+  scheduler = createFormScheduler({ now: clock, onError: (error) => emit("schedule-error", { reason: error.message }),
+    onTarget: async (form, metadata) => {
     dispatch({ type: "target-form", form, animate: metadata.reason !== "startup",
       requestId: `schedule-${++requestSerial}` }, `schedule-${metadata.reason}`);
   } });
   await scheduler.reconcile("startup");
-  powerMonitor.on("resume", () => { void scheduler.reconcile("resume"); });
+  const reconcileSafely = (reason) => { void scheduler.reconcile(reason).catch((error) =>
+    emit("schedule-error", { reason: error.message })); };
+  powerMonitor.on("resume", () => reconcileSafely("resume"));
+  app.on("activate", () => reconcileSafely("activate"));
+  if (process.platform === "darwin") {
+    clockNotification = systemPreferences.subscribeLocalNotification("NSSystemClockDidChangeNotification",
+      () => reconcileSafely("system-clock-change"));
+  }
   await startHookBridge();
   if (TEST) {
     let pending = "";
@@ -335,6 +344,10 @@ async function start() {
 app.whenReady().then(start).catch((error) => { console.error(error); emit("fatal", { reason: error.message }); app.exit(1); });
 app.on("window-all-closed", () => { scheduler?.stop(); stopTransitionTick(); app.quit(); });
 app.on("before-quit", (event) => {
+  if (clockNotification !== null) {
+    systemPreferences.unsubscribeLocalNotification(clockNotification);
+    clockNotification = null;
+  }
   if (!hookStopping && hookServer) {
     event.preventDefault();
     void stopHookBridge().finally(() => app.quit());

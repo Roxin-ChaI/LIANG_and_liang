@@ -41,23 +41,37 @@ export function nextTransition(now) {
 
 /** One wake timer, plus explicit resume/reconcile for sleep and clock changes. */
 export function createFormScheduler({ now = () => new Date(), setTimer = setTimeout,
-  clearTimer = clearTimeout, onTarget }) {
+  clearTimer = clearTimeout, onTarget, onError = () => {}, clockCheckMs = 60_000 }) {
   if (typeof onTarget !== "function") throw new TypeError("onTarget is required");
+  if (!Number.isFinite(clockCheckMs) || clockCheckMs <= 0) throw new TypeError("clockCheckMs must be positive");
   let timer = null;
   let active = true;
   let generation = 0;
-  async function reconcile(reason = "startup") {
-    if (!active) return null;
+  let pending = Promise.resolve();
+  function reconcile(reason = "startup") {
+    if (!active) return Promise.resolve(null);
     const id = ++generation;
     if (timer !== null) clearTimer(timer);
     timer = null;
-    const current = now();
-    const target = expectedFormAt(current);
-    await onTarget(target, { reason, currentTime: current });
-    if (!active || id !== generation) return null;
-    const next = nextTransition(now());
-    timer = setTimer(() => { void reconcile("boundary"); }, Math.max(1, next.valueOf() - now().valueOf()));
-    return Object.freeze({ expectedForm: target, nextTransition: next });
+    const task = pending.catch(() => {}).then(async () => {
+      if (!active || id !== generation) return null;
+      // Read the clock only when this turn is able to apply; an older async
+      // delivery is allowed to finish first, then the newest decision wins.
+      const current = now();
+      const target = expectedFormAt(current);
+      await onTarget(target, { reason, currentTime: current });
+      if (!active || id !== generation) return null;
+      const afterDelivery = now();
+      const next = nextTransition(afterDelivery);
+      const remaining = Math.max(1, next.valueOf() - afterDelivery.valueOf());
+      const checkingClock = remaining > clockCheckMs;
+      timer = setTimer(() => {
+        void reconcile(checkingClock ? "clock-check" : "boundary").catch(onError);
+      }, Math.min(remaining, clockCheckMs));
+      return Object.freeze({ expectedForm: target, nextTransition: next });
+    });
+    pending = task;
+    return task;
   }
   function stop() {
     active = false;
