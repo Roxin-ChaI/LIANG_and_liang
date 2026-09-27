@@ -50,8 +50,6 @@ def audit(output: Path) -> dict:
             wait_event(live, lambda e: e.get("type") == "renderer"
                        and e.get("row") == 7 and e.get("frame") == 2, after=begin)
             duplicate = command(live, type="work", state="running")
-            wait_event(live, lambda e: e.get("type") == "state"
-                       and e.get("reason") == "test-work", after=duplicate)
             time.sleep(0.08)
             restart = unexpected_restart(live.events, after=duplicate)
             command(live, type="work", state="idle")

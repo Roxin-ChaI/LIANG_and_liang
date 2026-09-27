@@ -79,6 +79,7 @@ pet.addEventListener("pointercancel", endDrag);
 
 window.liangPet.onState(async (state) => {
   const serial = ++renderSerial;
+  lastReported = "";
   await decode(state.normalSource);
   if (state.overlayImage) await decode(state.overlayImage);
   if (serial !== renderSerial) return;
@@ -128,11 +129,17 @@ function tick(now) {
     const reportKey = `${current.playbackKey}:${current.visualMode}:${current.frameIndex}:${row}:${frame}`;
     if (reportKey !== lastReported) {
       lastReported = reportKey;
-      window.liangPet.rendered({ form: current.currentForm, state: current.normalState,
+      const serial = renderSerial;
+      const payload = { form: current.currentForm, state: current.normalState,
         row, frame, visualMode: current.visualMode, transitionId: current.transitionId,
-        transitionFrame: current.frameIndex, overlayVisible: overlay.style.display === "block",
+        transitionFrame: current.frameIndex, operationToken: current.operationToken,
+        overlayVisible: overlay.style.display === "block",
         windowTransparent: getComputedStyle(document.body).backgroundColor === "rgba(0, 0, 0, 0)",
-        hitbox: { width: CELL.width, height: CELL.height } });
+        hitbox: { width: CELL.width, height: CELL.height } };
+      // Report only after the computed cell/overlay has survived a paint boundary.
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        if (serial === renderSerial) window.liangPet.rendered(payload);
+      }));
     }
   }
   requestAnimationFrame(tick);

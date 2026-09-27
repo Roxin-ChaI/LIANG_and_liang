@@ -11,6 +11,7 @@ import { createTransitionPlayer } from "../runtime-patch/prototype/transition-pl
 import { createPetEventAdapter } from "./events.mjs";
 import { createCodexSessionTracker, createHookForwardServer } from "./codex-events.mjs";
 import { createPipelineDiagnostic } from "./pipeline-diagnostic.mjs";
+import { isCurrentTransitionPaint, shouldRestartPlayback } from "./playback-contract.mjs";
 import { createFormScheduler, expectedFormAt } from "./schedule.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -52,7 +53,7 @@ async function dataUrl(relative, mime) {
   return `data:${mime};base64,${bytes.toString("base64")}`;
 }
 function stopTransitionTick() {
-  if (transitionTimer !== null) clearInterval(transitionTimer);
+  if (transitionTimer !== null) clearTimeout(transitionTimer);
   transitionTimer = null;
 }
 function publish(reason) {
@@ -73,15 +74,19 @@ function publish(reason) {
 }
 function startTransitionTick() {
   stopTransitionTick();
-  if (player.snapshot().visualMode !== "TRANSITIONING") return;
-  const token = player.snapshot().operationToken;
-  transitionTimer = setInterval(() => {
-    if (player.snapshot().operationToken !== token) { stopTransitionTick(); return; }
-    const before = player.snapshot();
+  // The renderer starts the timer only after it has displayed this frame.
+  // A main-process interval can outrun decoding/painting and skip visible frames.
+}
+function acknowledgeTransitionFrame(value) {
+  const before = player.snapshot();
+  if (transitionTimer !== null || !isCurrentTransitionPaint(before, value)) return;
+  const token = before.operationToken;
+  transitionTimer = setTimeout(() => {
+    transitionTimer = null;
+    if (player.snapshot().operationToken !== token) return;
     const after = player.advance(140);
     publish("transition-tick");
     if (after.visualMode !== "TRANSITIONING") {
-      stopTransitionTick();
       emit("transition-complete", { transitionId: before.transitionId, form: after.currentForm,
         normalState: after.normalState, underlyingState: after.underlyingState, operationToken: token });
     }
@@ -91,7 +96,11 @@ function dispatch(event, reason = "event") {
   const before = player.snapshot();
   const result = adapter.dispatch(event);
   const after = player.snapshot();
-  if (event.type === "work-state" || after.normalState !== before.normalState) stateEpoch += 1;
+  if (shouldRestartPlayback(before, after)) stateEpoch += 1;
+  if (after.normalState === before.normalState && after.underlyingState === before.underlyingState
+      && after.currentForm === before.currentForm && after.targetForm === before.targetForm
+      && after.visualMode === before.visualMode && after.operationToken === before.operationToken
+      && after.playbackEpoch === before.playbackEpoch) return result;
   publish(reason);
   if (after.visualMode === "TRANSITIONING" && before.operationToken !== after.operationToken) startTransitionTick();
   else if (after.visualMode !== "TRANSITIONING") stopTransitionTick();
@@ -281,6 +290,7 @@ async function start() {
       diagnose({ stage: "renderer-row", state: value?.state, row: value?.row });
     }
     emit("renderer", value);
+    acknowledgeTransitionFrame(value);
   });
   window.webContents.on("render-process-gone", (_event, details) => emit("renderer-gone", { reason: details.reason }));
   window.webContents.on("did-fail-load", (_event, code) => emit("renderer-load-failed", { code }));
