@@ -34,6 +34,11 @@ def curate(raw: Path, output: Path, direction: str | None = None) -> dict:
         summary["scenarios"].append({
             "label": label, "source": scenario["source"], "target": scenario["target"],
             "mode": scenario["mode"], "frameCount": scenario["frameCount"],
+            "completion": scenario["complete"],
+            "normalRendererAfterCompletion": next((event for event in trace["events"]
+                if event.get("type") == "renderer" and event.get("visualMode") == "NORMAL"
+                and event.get("form") == scenario["target"]
+                and event.get("observedAt", 0) >= scenario["complete"]["observedAt"]), None),
             "frameTimestamps": [item["observedAt"] for item in scenario["frames"]],
             "gatedIntervalsMs": scenario["observedIntervalsMs"],
             "lastFrameToCompletionMs": scenario["lastFrameToCompletionMs"],

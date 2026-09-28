@@ -1,0 +1,299 @@
+{
+  "captureKind": "QA2 Electron webContents.capturePage with deterministic frame gate",
+  "build": "/Users/mac/Projects/liang-no-henshin/dist/Liang no Henshin v0.1.0 Rework1.app/Contents/MacOS/Electron",
+  "timingNote": "frame-gated capture changes pacing; ungated timings measured separately",
+  "ungatedTimings": [
+    {
+      "transitionId": "gu_to_feng",
+      "frameTimestamps": {
+        "0": 1790595882849,
+        "1": 1790595883083,
+        "2": 1790595883316,
+        "3": 1790595883533,
+        "4": 1790595883766,
+        "5": 1790595884000,
+        "6": 1790595884234,
+        "7": 1790595884466,
+        "8": 1790595884699,
+        "9": 1790595884933
+      },
+      "observedIntervalsMs": [
+        234,
+        233,
+        217,
+        233,
+        234,
+        234,
+        232,
+        233,
+        234
+      ],
+      "lastFrameToCompletionMs": 147
+    },
+    {
+      "transitionId": "feng_to_gu",
+      "frameTimestamps": {
+        "0": 1790595885150,
+        "1": 1790595885383,
+        "2": 1790595885616,
+        "3": 1790595885850,
+        "4": 1790595886083,
+        "5": 1790595886316,
+        "6": 1790595886550,
+        "7": 1790595886783
+      },
+      "observedIntervalsMs": [
+        233,
+        233,
+        234,
+        233,
+        233,
+        234,
+        233
+      ],
+      "lastFrameToCompletionMs": 156
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "idle-feng_to_gu",
+      "source": "feng",
+      "target": "gu",
+      "mode": "idle",
+      "frameCount": 8,
+      "completion": {
+        "type": "transition-complete",
+        "observedAt": 1790595870657,
+        "transitionId": "feng_to_gu",
+        "form": "gu",
+        "normalState": "idle",
+        "underlyingState": "idle",
+        "operationToken": "form-operation-2"
+      },
+      "normalRendererAfterCompletion": {
+        "type": "renderer",
+        "observedAt": 1790595870733,
+        "form": "gu",
+        "state": "idle",
+        "row": 0,
+        "frame": 0,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-2",
+        "overlayVisible": false,
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      "frameTimestamps": [
+        1790595868777,
+        1790595869017,
+        1790595869256,
+        1790595869507,
+        1790595869754,
+        1790595870000,
+        1790595870256,
+        1790595870501
+      ],
+      "gatedIntervalsMs": [
+        240,
+        239,
+        251,
+        247,
+        246,
+        256,
+        245
+      ],
+      "lastFrameToCompletionMs": 156,
+      "firstFrameBounds": [
+        48,
+        54,
+        388,
+        458
+      ],
+      "lastFrameBounds": [
+        72,
+        28,
+        394,
+        458
+      ],
+      "beforeBounds": [
+        152,
+        56,
+        360,
+        456
+      ],
+      "afterBounds": [
+        172,
+        56,
+        308,
+        456
+      ],
+      "beforeToFirstChangedPixels": 52212,
+      "lastToAfterChangedPixels": 45492
+    },
+    {
+      "label": "running-feng_to_gu",
+      "source": "feng",
+      "target": "gu",
+      "mode": "running",
+      "frameCount": 8,
+      "completion": {
+        "type": "transition-complete",
+        "observedAt": 1790595876473,
+        "transitionId": "feng_to_gu",
+        "form": "gu",
+        "normalState": "running",
+        "underlyingState": "running",
+        "operationToken": "form-operation-4"
+      },
+      "normalRendererAfterCompletion": {
+        "type": "renderer",
+        "observedAt": 1790595876550,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 0,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-4",
+        "overlayVisible": false,
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      "frameTimestamps": [
+        1790595874584,
+        1790595874822,
+        1790595875072,
+        1790595875322,
+        1790595875571,
+        1790595875820,
+        1790595876071,
+        1790595876320
+      ],
+      "gatedIntervalsMs": [
+        238,
+        250,
+        250,
+        249,
+        249,
+        251,
+        249
+      ],
+      "lastFrameToCompletionMs": 153,
+      "firstFrameBounds": [
+        48,
+        54,
+        388,
+        458
+      ],
+      "lastFrameBounds": [
+        72,
+        28,
+        394,
+        458
+      ],
+      "beforeBounds": [
+        154,
+        60,
+        360,
+        456
+      ],
+      "afterBounds": [
+        184,
+        70,
+        328,
+        456
+      ],
+      "beforeToFirstChangedPixels": 52920,
+      "lastToAfterChangedPixels": 44908
+    },
+    {
+      "label": "hover-feng_to_gu",
+      "source": "feng",
+      "target": "gu",
+      "mode": "hover",
+      "frameCount": 8,
+      "completion": {
+        "type": "transition-complete",
+        "observedAt": 1790595882282,
+        "transitionId": "feng_to_gu",
+        "form": "gu",
+        "normalState": "jumping",
+        "underlyingState": "idle",
+        "operationToken": "form-operation-6"
+      },
+      "normalRendererAfterCompletion": {
+        "type": "renderer",
+        "observedAt": 1790595882350,
+        "form": "gu",
+        "state": "jumping",
+        "row": 4,
+        "frame": 0,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-6",
+        "overlayVisible": false,
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      "frameTimestamps": [
+        1790595880383,
+        1790595880651,
+        1790595880906,
+        1790595881155,
+        1790595881404,
+        1790595881638,
+        1790595881887,
+        1790595882136
+      ],
+      "gatedIntervalsMs": [
+        268,
+        255,
+        249,
+        249,
+        234,
+        249,
+        249
+      ],
+      "lastFrameToCompletionMs": 146,
+      "firstFrameBounds": [
+        48,
+        54,
+        388,
+        458
+      ],
+      "lastFrameBounds": [
+        72,
+        28,
+        394,
+        458
+      ],
+      "beforeBounds": [
+        152,
+        56,
+        360,
+        456
+      ],
+      "afterBounds": [
+        176,
+        60,
+        310,
+        456
+      ],
+      "beforeToFirstChangedPixels": 52212,
+      "lastToAfterChangedPixels": 44396
+    }
+  ]
+}

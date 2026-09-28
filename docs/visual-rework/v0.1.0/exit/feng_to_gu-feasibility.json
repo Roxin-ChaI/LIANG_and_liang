@@ -1,0 +1,121 @@
+{
+  "direction": "feng_to_gu",
+  "endpointFrame": 7,
+  "guAtlas": "/Users/mac/Projects/liang-no-henshin/assets/rework/v0.1.0/gu/spritesheet.webp",
+  "projectionNote": "diagnostic crop of normal pet area excludes oversized aura; actual App uses full overlay",
+  "cases": [
+    {
+      "mode": "idle",
+      "canonicalAnchors": {
+        "head": {
+          "centerX": 88.0,
+          "width": 68,
+          "top": 4,
+          "bottom": 69
+        },
+        "shoulders": {
+          "centerX": 94.5,
+          "width": 51,
+          "top": 80,
+          "bottom": 119
+        },
+        "shoes": {
+          "centerX": 94.5,
+          "width": 49,
+          "top": 190,
+          "bottom": 203
+        }
+      },
+      "endpointAnchors": {
+        "head": {
+          "centerX": 96.5,
+          "width": 67,
+          "top": 5,
+          "bottom": 69
+        },
+        "shoulders": {
+          "centerX": 103.0,
+          "width": 54,
+          "top": 80,
+          "bottom": 119
+        },
+        "shoes": {
+          "centerX": 102.5,
+          "width": 51,
+          "top": 190,
+          "bottom": 203
+        }
+      },
+      "alignment": {
+        "bestIntegerDx": -8,
+        "centerResiduals": {
+          "head": 0.5,
+          "shoulders": 0.5,
+          "shoes": 0.0
+        },
+        "maximumResidual": 0.5,
+        "rigidAnchorPass": true,
+        "note": "proxy geometry only; a pass cannot certify facial/pose identity"
+      },
+      "status": "MANUAL_VISUAL_QA",
+      "reason": "proxy geometry does not certify facial/arm/torso pose continuity"
+    },
+    {
+      "mode": "running",
+      "canonicalAnchors": {
+        "head": {
+          "centerX": 96.0,
+          "width": 68,
+          "top": 12,
+          "bottom": 69
+        },
+        "shoulders": {
+          "centerX": 100.5,
+          "width": 57,
+          "top": 80,
+          "bottom": 119
+        },
+        "shoes": {
+          "centerX": 100.0,
+          "width": 56,
+          "top": 190,
+          "bottom": 202
+        }
+      },
+      "endpointAnchors": {
+        "head": {
+          "centerX": 96.5,
+          "width": 67,
+          "top": 5,
+          "bottom": 69
+        },
+        "shoulders": {
+          "centerX": 103.0,
+          "width": 54,
+          "top": 80,
+          "bottom": 119
+        },
+        "shoes": {
+          "centerX": 102.5,
+          "width": 51,
+          "top": 190,
+          "bottom": 203
+        }
+      },
+      "alignment": {
+        "bestIntegerDx": -2,
+        "centerResiduals": {
+          "head": -1.5,
+          "shoulders": 0.5,
+          "shoes": 0.5
+        },
+        "maximumResidual": 1.5,
+        "rigidAnchorPass": true,
+        "note": "proxy geometry only; a pass cannot certify facial/pose identity"
+      },
+      "status": "MANUAL_VISUAL_QA",
+      "reason": "proxy geometry does not certify facial/arm/torso pose continuity"
+    }
+  ],
+  "appliedToRuntime": false
+}
