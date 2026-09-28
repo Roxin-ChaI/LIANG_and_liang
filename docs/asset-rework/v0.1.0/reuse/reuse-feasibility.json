@@ -1,0 +1,70 @@
+{
+  "status": "NEEDS_MANUAL_ART_REDESIGN",
+  "packagingEligible": false,
+  "animationFramesGenerated": false,
+  "sourceFramesModified": false,
+  "inputHashes": {
+    "assets/transform-overlay/gu_to_feng/gu_to_feng_01.png": "5fa685154a3e66acaab13360d4f6a3cb25e0df9843516abf17c03d0dcc91abe2",
+    "assets/transform-overlay/gu_to_feng/gu_to_feng_02.png": "59239d574a72a9d45fe994735e2c7fbed8f1e89fd60110b3144359f6b6904de6",
+    "assets/transform-overlay/gu_to_feng/gu_to_feng_03.png": "46adf7783f25230b8f2d61f013aff10fd6628d29195876a987bd6d2fb2d918e0",
+    "assets/transform-overlay/gu_to_feng/gu_to_feng_04.png": "e70bb21ad20c068bf7455135eee5f10b7b1a089ccb29884714f2620acb97aab6",
+    "assets/transform-overlay/gu_to_feng/gu_to_feng_05.png": "0eaafed69fd7f93126e34090d6d899b0127f48c94664a0b7dd698aebab503c78",
+    "assets/transform-overlay/gu_to_feng/gu_to_feng_06.png": "4f0b86380b21d32806cf69b5af31b3aea561334fc49d012a1a9c71d367f1f69f",
+    "assets/transform-overlay/gu_to_feng/gu_to_feng_07.png": "406edd1127d2f2874c77c11f2d47a4e55b7a4e5590e53a03b446aa2657656111",
+    "assets/transform-overlay/gu_to_feng/gu_to_feng_08.png": "6821b4c683e7ac7fcfea23040fdddef8498a2f243b556ba734d78de2ff1a211e",
+    "assets/transform-overlay/gu_to_feng/gu_to_feng_09.png": "d79ffb339ea493279b9e5f0faa0b1e640a0aa658cb9785fab4615de2f323c1d8",
+    "assets/transform-overlay/gu_to_feng/gu_to_feng_10.png": "f9b344d49e11000c613a6ae4b654a4cf90e18aee38f8d6a0518c6e8949d23ecd",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_01.png": "006f98c261817cb23081ea1cfc1b37871e5e76c744a24e3879ec16c617fb4e9c",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_02.png": "26a1fd7a0662c59457fd7bd42726febfabba7984685b2d65d496527f081418de",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_03.png": "fa84eadb4c1e7dcb4a5c16ac672312613b1a4018983f1d12f7ca730b3d5fc5e0",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_04.png": "11840bf444cf50b6da23b78019a0cf4a2b33a3fe84d56d345566ed59da83bbf4",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_05.png": "ebd9278d705fd4625bd9218b41546b64f310e566246d5114467f25da3e60f8d2",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_06.png": "c5c8b0b44155c10cd6d9790065aaa892ffe8355cac49380e774c7652e4324084",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_07.png": "0a06b37a1dcd8609a46abe872d1f013023e4599f403f4342db6d20dba37f56ba",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_08.png": "2381807ba12708e071579f8688cb91dff0d4d9d9024343d60dd3057d3cd9339c"
+  },
+  "cases": [
+    {
+      "state": "idle",
+      "canonicalFrame": 0,
+      "testedTranslations": [
+        -16,
+        16
+      ],
+      "verticalTranslation": 0,
+      "sourceFrameCount": 18,
+      "bestWholePoseReuse": {
+        "differentPixels": 9874,
+        "direction": "feng_to_gu",
+        "frame": 7,
+        "dx": -8
+      },
+      "exactWholePoseMatch": false,
+      "boundaryOnlyForwardNextFrameDifferentPixels": 11252,
+      "boundaryOnlyReversePreviousFrameDifferentPixels": 11211
+    },
+    {
+      "state": "running",
+      "canonicalFrame": 0,
+      "testedTranslations": [
+        -16,
+        16
+      ],
+      "verticalTranslation": 0,
+      "sourceFrameCount": 18,
+      "bestWholePoseReuse": {
+        "differentPixels": 11149,
+        "direction": "feng_to_gu",
+        "frame": 7,
+        "dx": -2
+      },
+      "exactWholePoseMatch": false,
+      "boundaryOnlyForwardNextFrameDifferentPixels": 11463,
+      "boundaryOnlyReversePreviousFrameDifferentPixels": 11614
+    }
+  ],
+  "scope": "18 frozen whole-pose frames and baseline-preserving integer translations; not proof about every possible hand edit",
+  "metricLimit": "pixel differences alone do not establish visual failure; independent pose/neighbor review is mandatory",
+  "diagnosticOnly": "projected 192x208 images on comparison sheet may crop aura; full original oversized stages are shown separately",
+  "missingWork": "state-matched Gu entrance and late Gu convergence intermediate artwork; no head/body splice or pixel dissolve accepted"
+}

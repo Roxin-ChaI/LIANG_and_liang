@@ -1,0 +1,10 @@
+{
+  "reviewMode": "independent static contact-sheet visual QA; not actual-window timing approval",
+  "feasibility": "NEEDS_MANUAL_ART_REDESIGN",
+  "idleForward": "Small canonical-to-old-frame1 head/face variations are warnings alone, not automatically a hard fail.",
+  "runningForward": "Canonical-to-old-frame1 visibly changes head height/proportions relative to grounded feet.",
+  "reverse": "Frame6-to-canonical changes tilted head to upright while narrowing torso and foot spacing; intentional contraction is not itself a failure.",
+  "boundaryOnlyReuse": "Fixes one boundary but retains or relocates its adjacent pose join; rigid translation does not repair head shape.",
+  "neededWork": "Intermediate character drawings for continuous anatomical pose convergence.",
+  "limits": "Actual window playback must judge severity; smaller Idle differences can be accepted only by explicit visual review, not raw pixel counts."
+}
