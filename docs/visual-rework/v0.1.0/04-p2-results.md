@@ -23,3 +23,5 @@
 Window captures are real Electron `capturePage`, not source PNG substitutions; the GIF is a captured-window sequence, not OS-compositor video. Test-clock and work commands are explicit QA stimuli, **not** real Desktop Hooks. The Hook definition and frozen Gu/Feng/transition files remain unchanged. Only the approved Gu registration derivative from Commit 1 is packaged via `--gu-atlas`.
 
 P2 artistic limitations are not claimed fixed because tests pass. Final P1/P2 review remains mandatory; no Tag or release candidate is approved here.
+
+**Final-run qualification:** the final Rework3 repeat completed the queued 10/8 reversal, but a later competing-state burst stalled at frame 4 with no renderer paint acknowledgment. Thus V-08's immediate hard-removal behavior is corrected, **not** a global cancellation/liveness PASS. The previously suspected R-01 now has a retained live failure; [final failure evidence](final/races/race-failure.json) supersedes any implication that the success trace proves the queue always settles. Its root is still HYPOTHESIS and it blocks release.

@@ -1,0 +1,152 @@
+{
+  "review": "independent final visual QA",
+  "date": "2026-09-28",
+  "version": "v0.1.0 Visual Rework",
+  "verdict": "VISUAL_QA_FAIL",
+  "visual_qa": "fail",
+  "release_candidate_approved": false,
+  "review_mode": "labeled visual review, not blind direction certification",
+  "evidence_root": "docs/visual-rework/v0.1.0/final",
+  "method": {
+    "basis": "Direct visual inspection of the Gu and Feng contact sheets, labeled look sheets, all six transition sheets, and the Gu Idle versus Running comparison. Numerical geometry did not substitute for pose approval.",
+    "capture_type": "Electron capturePage window captures; captured-window GIF sequences are not OS-compositor video.",
+    "mutations": "This review JSON only. No image generation, redraw, frozen-pixel edits, runtime changes, commits, packaging, or application replacement.",
+    "diagnostic_candidates": "Endpoint rigid diagnostic candidates are not treated as runtime evidence or approved replacements."
+  },
+  "issues": [
+    {
+      "id": "V-01",
+      "severity": "P1",
+      "status": "FIXED_REGISTRATION_ONLY",
+      "remaining_p1": false,
+      "judgment": "Gu Waving, Failed, Waiting, Running and Review shoes now sit on the same apparent grounded baseline as Idle. Running is still a slightly more compact head/upper-body drawing; this is not a remaining foot-registration defect and is not approved as transition-pose continuity.",
+      "evidence": ["gu-contact-sheet.png", "gu-idle-vs-running-baseline.png"]
+    },
+    {
+      "id": "V-02",
+      "severity": "P2",
+      "status": "NOT_FIXED_ASSET_REWORK_REQUIRED",
+      "remaining_p1": false,
+      "judgment": "Feng Failed retains the chin-hand stance and nearly unchanged shoulders/torso across the eight displayed cells. Eye closure and a small head change are visible, but the row reads as a restrained thinking/blink pose rather than a clear failure reaction.",
+      "evidence": ["feng-contact-sheet.png: failed 0-7"]
+    },
+    {
+      "id": "V-03",
+      "severity": "P2",
+      "status": "NOT_FIXED_MANUAL_VISUAL_QA",
+      "remaining_p1": false,
+      "judgment": "Feng Idle has visible eye micro-variation, while chest, shoulder and stance movement are very slight. The sheet supports a quiet blink loop, but does not establish a readily visible breath. Manual acceptance of this restraint remains required.",
+      "evidence": ["feng-contact-sheet.png: idle 0-5"]
+    },
+    {
+      "id": "V-04",
+      "severity": "P1",
+      "status": "NOT_FIXED_ASSET_REWORK_REQUIRED",
+      "remaining_p1": true,
+      "judgment": "Before to forward frame 0 changes Gu's head/face/shoulder drawing and horizontal registration. Held Running is the clearest case: the grounded work figure changes abruptly into a taller-head endpoint drawing despite the shoes remaining grounded. Hover also resets its head orientation. Idle shows a smaller but visible repositioning/alternate drawing. These are endpoint pose changes, not merely moving hands or the intentional Gu-to-Feng growth in frames 2-4.",
+      "evidence": ["transitions/idle-gu_to_feng-sheet.png: before to 0", "transitions/running-gu_to_feng-sheet.png: before to 0", "transitions/hover-gu_to_feng-sheet.png: before to 0"]
+    },
+    {
+      "id": "V-05",
+      "severity": "P1",
+      "status": "NOT_FIXED_ASSET_REWORK_REQUIRED",
+      "remaining_p1": true,
+      "judgment": "Reverse frame 7 to after changes Gu's head/face/upper-body drawing and lateral position. In held Running the final transition figure has a taller head silhouette than the recovered work figure at the same shoe baseline. Hover adds an abrupt gaze/pose change; Idle also visibly shifts. Earlier Feng shrinking and the hand lowering are coherent transformation/gesture changes, but do not resolve the final endpoint handoff.",
+      "evidence": ["transitions/idle-feng_to_gu-sheet.png: 7 to after", "transitions/running-feng_to_gu-sheet.png: 7 to after", "transitions/hover-feng_to_gu-sheet.png: 7 to after"]
+    },
+    {
+      "id": "V-06",
+      "severity": "P2",
+      "status": "NOT_FIXED_ASSET_REWORK_REQUIRED",
+      "remaining_p1": false,
+      "judgment": "Forward frame 1 to 2 introduces a prominent full-body cyan outline, followed by a much larger bright burst at frame 3. Reverse frame 6 still has conspicuous white residual sparks, then frame 7 is clean. The material effect stages remain stepped; their optical cadence cannot be certified from still sheets.",
+      "evidence": ["transitions/idle-gu_to_feng-sheet.png: 1-3", "transitions/running-gu_to_feng-sheet.png: 1-3", "transitions/hover-gu_to_feng-sheet.png: 1-3", "transitions/idle-feng_to_gu-sheet.png: 6-7", "transitions/running-feng_to_gu-sheet.png: 6-7", "transitions/hover-feng_to_gu-sheet.png: 6-7"]
+    },
+    {
+      "id": "LOOK-FENG-000",
+      "severity": "P1",
+      "status": "FAIL_AMBIGUOUS_CARDINAL",
+      "remaining_p1": true,
+      "judgment": "The labeled Feng 000/up pose remains largely frontal and the face/chin does not clearly aim upward at the displayed size. By contrast, 022.5-067.5 show a raised chin and an obvious upward profile. I cannot certify 000 as unmistakably up from this image. This is a labeled visual judgment, not a blind classification result.",
+      "evidence": ["feng-look-directions.png: 000, 022.5, 045, 067.5"]
+    }
+  ],
+  "row_review": {
+    "gu": {
+      "identity": "Same black hair, glasses, navy suit and slim build remain recognizable. The work-family head drawing is slightly more compact than Idle, but no within-row anatomical scaling drift is evident in the inspected sheets.",
+      "idle": "Visible blink micro-variation; calm stance.",
+      "running_right_and_left": "Opposite head/body orientations and visibly different leg positions; still sheets do not certify optical gait cadence.",
+      "waving": "Raised hand is normal gesture motion, not size drift.",
+      "jumping": "Small vertical hop changes position rather than anatomical size.",
+      "failed": "Lowered head/shoulders read as dejection; this lean is not size drift.",
+      "waiting": "Eye/head variation is subtle and state distinction is weak.",
+      "running": "Grounded focused hand motion rather than literal foot-running.",
+      "review": "Hand to face and head lean remain attached and coherent."
+    },
+    "feng": {
+      "identity": "Blue suit, glasses, muscular shoulders, face and stance remain recognizable across the standard rows. Arm motion, leaning and the small hop do not show conspicuous anatomical scaling drift.",
+      "idle": "Weak breath cue; V-03 remains manual.",
+      "running_right_and_left": "Facing and alternating leg poses are visible; optical cadence remains unverified.",
+      "waving": "Hand raises beside the head without apparent body-size change.",
+      "jumping": "Small vertical hop preserves the stance and body construction.",
+      "failed": "Weak failure expression; V-02 remains unresolved.",
+      "waiting_and_running": "Mostly preserve the chin-hand thinking stance, with subtle face variation; state distinction is restrained.",
+      "review": "Hand lowers and returns with a small head change; this is gesture motion rather than anatomical drift."
+    },
+    "scope_limit": "The inspected sheets show populated, recognizable figures with no conspicuous body collapse. This statement does not replace alpha, clipping, atlas, or source-integrity validation."
+  },
+  "look_review": {
+    "blind_direction_certification": "NOT_PERFORMED",
+    "gu": {
+      "evidence": "gu-look-directions.png",
+      "continuity": "Feet and lower torso remain broadly anchored. Head yaw advances from right through down to left; no conspicuous scale pop or gross reversal is visible in the ordered stills. Near-vertical diagonals are subtle.",
+      "directions": [
+        {"degree": "000", "expected": "up", "verdict": "pass", "observed": "up", "reason": "Eyes sit high under the glasses/brows and the open face reads raised relative to the down pose."},
+        {"degree": "022.5", "expected": "up-right", "verdict": "warning", "observed": "up with subtle right cue", "horizontal": "Face is nearly frontal; slight rightward eye/face bias.", "vertical": "Raised-eye/up family continues.", "reason": "Right component is weak near the vertical axis."},
+        {"degree": "045", "expected": "up-right", "verdict": "pass", "observed": "up-right", "horizontal": "Nose/face projects screen-right and left-side ear is exposed.", "vertical": "Eyes and chin remain raised.", "reason": "Both axes read in the ordered family."},
+        {"degree": "067.5", "expected": "up-right", "verdict": "pass", "observed": "up-right", "horizontal": "Head is turned screen-right.", "vertical": "Face remains angled slightly upward.", "reason": "Coherent progression toward right."},
+        {"degree": "090", "expected": "right", "verdict": "pass", "observed": "right", "reason": "Nose and glasses/face surface extend toward screen-right; the opposing left cardinal turns the other way."},
+        {"degree": "112.5", "expected": "down-right", "verdict": "pass", "observed": "down-right", "horizontal": "Nose/face remains toward screen-right.", "vertical": "Eyes/chin lower from the right cardinal.", "reason": "Downward progression is visible."},
+        {"degree": "135", "expected": "down-right", "verdict": "pass", "observed": "down-right", "horizontal": "Rightward yaw remains visible.", "vertical": "Face and gaze tilt downward.", "reason": "Both axes retained."},
+        {"degree": "157.5", "expected": "down-right", "verdict": "warning", "observed": "down with subtle right cue", "horizontal": "Residual right profile remains but is subdued.", "vertical": "Chin/eyes lower clearly.", "reason": "Near-down horizontal cue is restrained."},
+        {"degree": "180", "expected": "down", "verdict": "pass", "observed": "down", "reason": "Head/chin lowers, bangs cover more forehead and gaze is beneath the brows."},
+        {"degree": "202.5", "expected": "down-left", "verdict": "warning", "observed": "down with subtle left cue", "horizontal": "Nose/face begins shifting screen-left.", "vertical": "Lowered chin/eyes remain.", "reason": "Left component is subtle near down."},
+        {"degree": "225", "expected": "down-left", "verdict": "pass", "observed": "down-left", "horizontal": "Face/nose points screen-left with right-side ear exposed.", "vertical": "Chin/gaze remain lowered.", "reason": "Both axes visible."},
+        {"degree": "247.5", "expected": "down-left", "verdict": "pass", "observed": "down-left", "horizontal": "Leftward profile is apparent.", "vertical": "Eyes/chin remain below the left cardinal's level.", "reason": "Coherent movement toward left."},
+        {"degree": "270", "expected": "left", "verdict": "pass", "observed": "left", "reason": "Nose/face surface projects screen-left and right-side ear is visible; it opposes 090."},
+        {"degree": "292.5", "expected": "up-left", "verdict": "warning", "observed": "left with subtle up cue", "horizontal": "Leftward face bias persists.", "vertical": "Chin/eyes begin rising from 270 but the change is slight.", "reason": "Up component is restrained."},
+        {"degree": "315", "expected": "up-left", "verdict": "warning", "observed": "up with subtle left cue", "horizontal": "Head returns almost frontal with a weak left bias.", "vertical": "Open eyes/raised face return to the up family.", "reason": "Left axis is subtle rather than an obvious wrong-quadrant pose."},
+        {"degree": "337.5", "expected": "up-left", "verdict": "warning", "observed": "up with very subtle left cue", "horizontal": "Nearly frontal face; left cue is weak.", "vertical": "Raised gaze continues toward 000.", "reason": "Near-up direction needs blind/manual axis confirmation."}
+      ]
+    },
+    "feng": {
+      "evidence": "feng-look-directions.png",
+      "continuity": "Body/feet stay broadly anchored and the head turns across both sides without obvious scale drift. The up-left 337.5 head is raised and in profile, while 000 abruptly returns to a frontal, less upward pose; the up cardinal is not certified.",
+      "directions": [
+        {"degree": "000", "expected": "up", "verdict": "fail", "observed": "forward or ambiguous up", "reason": "Frontal face/chin lacks the obvious raised pitch visible in adjacent up-right and up-left poses; the eye cue alone is not clear enough at displayed size."},
+        {"degree": "022.5", "expected": "up-right", "verdict": "pass", "observed": "up-right", "horizontal": "Nose/face projects screen-right with left ear exposed.", "vertical": "Chin lifts and gaze points above the frontal level.", "reason": "Both axes read clearly."},
+        {"degree": "045", "expected": "up-right", "verdict": "pass", "observed": "up-right", "horizontal": "Right profile remains visible.", "vertical": "Raised chin/eyes persist.", "reason": "Coherent raised right family."},
+        {"degree": "067.5", "expected": "up-right", "verdict": "pass", "observed": "up-right", "horizontal": "Strong right profile.", "vertical": "Chin remains slightly lifted.", "reason": "Moves naturally toward right."},
+        {"degree": "090", "expected": "right", "verdict": "pass", "observed": "right", "reason": "Nose and glasses face screen-right and gaze is lateral, opposing 270."},
+        {"degree": "112.5", "expected": "down-right", "verdict": "pass", "observed": "down-right", "horizontal": "Face remains in right profile.", "vertical": "Eyes/chin lower from 090.", "reason": "Both axes present."},
+        {"degree": "135", "expected": "down-right", "verdict": "pass", "observed": "down-right", "horizontal": "Residual rightward yaw is visible.", "vertical": "Head bends downward and bangs cover more face.", "reason": "Coherent downward progression."},
+        {"degree": "157.5", "expected": "down-right", "verdict": "warning", "observed": "down with subtle right cue", "horizontal": "Right bias is slight as the face returns toward center.", "vertical": "Eyes/chin are clearly lowered.", "reason": "Near-down horizontal cue is subtle."},
+        {"degree": "180", "expected": "down", "verdict": "pass", "observed": "down", "reason": "Bowed head, lowered glasses/eyes and chin point downward."},
+        {"degree": "202.5", "expected": "down-left", "verdict": "warning", "observed": "down with subtle left cue", "horizontal": "Nose/face starts turning screen-left.", "vertical": "Head and eyes stay lowered.", "reason": "Near-down left cue is restrained."},
+        {"degree": "225", "expected": "down-left", "verdict": "pass", "observed": "down-left", "horizontal": "Face and nose turn screen-left.", "vertical": "Chin/eyes remain lowered.", "reason": "Both axes visible."},
+        {"degree": "247.5", "expected": "down-left", "verdict": "pass", "observed": "down-left", "horizontal": "Left profile is apparent.", "vertical": "Eyes/chin stay slightly down.", "reason": "Coherent approach to left."},
+        {"degree": "270", "expected": "left", "verdict": "pass", "observed": "left", "reason": "Nose and glasses/face surface project screen-left with right ear exposed; clearly opposes 090."},
+        {"degree": "292.5", "expected": "up-left", "verdict": "pass", "observed": "up-left", "horizontal": "Strong leftward profile remains.", "vertical": "Chin/eyes lift from 270.", "reason": "Both axes present."},
+        {"degree": "315", "expected": "up-left", "verdict": "pass", "observed": "up-left", "horizontal": "Face/nose projects left.", "vertical": "Raised chin and upward gaze are visible.", "reason": "Coherent raised left family."},
+        {"degree": "337.5", "expected": "up-left", "verdict": "warning", "observed": "up-left", "horizontal": "Still a strong left profile rather than nearly vertical.", "vertical": "Chin/gaze remain raised.", "reason": "Intended quadrant reads, but the following 000 changes to a much more frontal/lower head pose."}
+      ]
+    }
+  },
+  "manual_checks": [
+    {"item": "Optical animation cadence and effect onset", "status": "UNKNOWN_MANUAL_VISUAL_QA", "reason": "Still contact sheets and capturePage GIF sequences do not measure actual display/compositor onset or certify 140 ms optical cadence."},
+    {"item": "Physical mouse hover/drag and real Desktop Hook interaction", "status": "NOT_OBSERVED_MANUAL_VISUAL_QA", "reason": "Captured scripted states do not certify physical interaction."},
+    {"item": "External Retina display sharpness and scale", "status": "NOT_OBSERVED_MANUAL_VISUAL_QA", "reason": "No external display was inspected by this worker."},
+    {"item": "Blind direction certification", "status": "NOT_PERFORMED", "reason": "This worker saw labeled direction sheets; these judgments cannot substitute for isolated unlabeled axis reviewers."}
+  ],
+  "summary": "V-01 grounded registration is visually improved. V-04 and V-05 remain P1 endpoint pose/registration discontinuities, and Feng 000/up is not visually certifiable as an unmistakable cardinal. V-02, V-03 and V-06 remain P2 artistic/manual limitations. No release candidate is visually approved."
+}

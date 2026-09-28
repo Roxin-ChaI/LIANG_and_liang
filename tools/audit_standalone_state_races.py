@@ -72,6 +72,31 @@ def curate_race_evidence(raw: Path, output: Path) -> dict:
     return compact
 
 
+def curate_race_failure(raw: Path, output: Path) -> dict:
+    """Retain observed first missing stage, not a fabricated successful trace."""
+    events = json.loads((raw / "race-events-debug.json").read_text())
+    relevant = [item for item in events if item.get("type") in (
+        "state", "renderer", "transition-dwell-start", "transition-dwell-end",
+        "transition-complete", "form-request-queued")]
+    last_state = next(item for item in reversed(relevant) if item["type"] == "state")
+    token, frame = last_state["operationToken"], last_state["frameIndex"]
+    operation = [item for item in relevant if item.get("operationToken") == token]
+    report = {"status": "LIVE_RACE_FAIL", "firstMissingObservedStage": "renderer post-paint acknowledgment",
+              "rootCause": "HYPOTHESIS: renderer async/report scheduling; not proven",
+              "lastPublishedFrame": frame, "operationToken": token,
+              "completionObserved": any(item["type"] == "transition-complete" for item in operation),
+              "framePaintObserved": any(item["type"] == "renderer"
+                                        and item.get("transitionFrame") == frame for item in operation),
+              "events": operation,
+              "completedEarlierOperations": [item for item in relevant if item["type"] == "transition-complete"]}
+    output.mkdir(parents=True, exist_ok=True)
+    source = raw / "after-competing-states.png"
+    if source.is_file():
+        shutil.copy2(source, output / "stalled-after-competing-states.png")
+    (output / "race-failure.json").write_text(json.dumps(report, indent=2) + "\n")
+    return report
+
+
 def audit(output: Path, executable: Path) -> dict:
     output.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="liang-race-audit-") as temporary:

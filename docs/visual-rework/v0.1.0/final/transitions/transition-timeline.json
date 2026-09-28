@@ -1,0 +1,897 @@
+{
+  "captureKind": "QA2 Electron webContents.capturePage with deterministic frame gate",
+  "build": "/Users/mac/Projects/liang-no-henshin/dist/Liang no Henshin v0.1.0 Rework3.app/Contents/MacOS/Electron",
+  "timingNote": "frame-gated capture changes pacing; ungated timings measured separately",
+  "ungatedTimings": [
+    {
+      "transitionId": "gu_to_feng",
+      "frameTimestamps": {
+        "0": 1790597574638,
+        "1": 1790597574871,
+        "2": 1790597575104,
+        "3": 1790597575338,
+        "4": 1790597575571,
+        "5": 1790597575805,
+        "6": 1790597576040,
+        "7": 1790597576271,
+        "8": 1790597576504,
+        "9": 1790597576721
+      },
+      "observedIntervalsMs": [
+        233,
+        233,
+        234,
+        233,
+        234,
+        235,
+        231,
+        233,
+        217
+      ],
+      "lastFrameToCompletionMs": 151,
+      "dwellDiagnostics": [
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597574638,
+          "monotonicMs": 1139828405.12475,
+          "operationToken": "form-operation-7",
+          "frame": 0,
+          "publishToAckMs": 75.1409170627594,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597574788,
+          "monotonicMs": 1139828555.737875,
+          "operationToken": "form-operation-7",
+          "frame": 0,
+          "elapsedMs": 150.60391688346863
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597574871,
+          "monotonicMs": 1139828638.72575,
+          "operationToken": "form-operation-7",
+          "frame": 1,
+          "publishToAckMs": 82.89479088783264,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597575021,
+          "monotonicMs": 1139828788.211708,
+          "operationToken": "form-operation-7",
+          "frame": 1,
+          "elapsedMs": 149.48295903205872
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597575105,
+          "monotonicMs": 1139828871.834166,
+          "operationToken": "form-operation-7",
+          "frame": 2,
+          "publishToAckMs": 83.5766248703003,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597575254,
+          "monotonicMs": 1139829021.60825,
+          "operationToken": "form-operation-7",
+          "frame": 2,
+          "elapsedMs": 149.7707920074463
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597575338,
+          "monotonicMs": 1139829105.527958,
+          "operationToken": "form-operation-7",
+          "frame": 3,
+          "publishToAckMs": 83.86325001716614,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597575486,
+          "monotonicMs": 1139829252.948958,
+          "operationToken": "form-operation-7",
+          "frame": 3,
+          "elapsedMs": 147.41329193115234
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597575571,
+          "monotonicMs": 1139829338.748958,
+          "operationToken": "form-operation-7",
+          "frame": 4,
+          "publishToAckMs": 85.62174987792969,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597575722,
+          "monotonicMs": 1139829489.106875,
+          "operationToken": "form-operation-7",
+          "frame": 4,
+          "elapsedMs": 150.3498330116272
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597575805,
+          "monotonicMs": 1139829572.17775,
+          "operationToken": "form-operation-7",
+          "frame": 5,
+          "publishToAckMs": 82.98291683197021,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597575956,
+          "monotonicMs": 1139829722.952375,
+          "operationToken": "form-operation-7",
+          "frame": 5,
+          "elapsedMs": 150.76787495613098
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597576040,
+          "monotonicMs": 1139829807.491416,
+          "operationToken": "form-operation-7",
+          "frame": 6,
+          "publishToAckMs": 84.45325016975403,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597576190,
+          "monotonicMs": 1139829957.815083,
+          "operationToken": "form-operation-7",
+          "frame": 6,
+          "elapsedMs": 150.31554198265076
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597576271,
+          "monotonicMs": 1139830038.7365,
+          "operationToken": "form-operation-7",
+          "frame": 7,
+          "publishToAckMs": 80.83937501907349,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597576422,
+          "monotonicMs": 1139830189.609416,
+          "operationToken": "form-operation-7",
+          "frame": 7,
+          "elapsedMs": 150.86358404159546
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597576504,
+          "monotonicMs": 1139830271.815083,
+          "operationToken": "form-operation-7",
+          "frame": 8,
+          "publishToAckMs": 82.11387515068054,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597576650,
+          "monotonicMs": 1139830417.118958,
+          "operationToken": "form-operation-7",
+          "frame": 8,
+          "elapsedMs": 145.29504203796387
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597576721,
+          "monotonicMs": 1139830488.851833,
+          "operationToken": "form-operation-7",
+          "frame": 9,
+          "publishToAckMs": 71.6666669845581,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597576872,
+          "monotonicMs": 1139830639.372875,
+          "operationToken": "form-operation-7",
+          "frame": 9,
+          "elapsedMs": 150.51504111289978
+        }
+      ]
+    },
+    {
+      "transitionId": "feng_to_gu",
+      "frameTimestamps": {
+        "0": 1790597576955,
+        "1": 1790597577190,
+        "2": 1790597577421,
+        "3": 1790597577655,
+        "4": 1790597577888,
+        "5": 1790597578122,
+        "6": 1790597578355,
+        "7": 1790597578589
+      },
+      "observedIntervalsMs": [
+        235,
+        231,
+        234,
+        233,
+        234,
+        233,
+        234
+      ],
+      "lastFrameToCompletionMs": 151,
+      "dwellDiagnostics": [
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597576955,
+          "monotonicMs": 1139830722.1185,
+          "operationToken": "form-operation-8",
+          "frame": 0,
+          "publishToAckMs": 61.41145896911621,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597577105,
+          "monotonicMs": 1139830872.529708,
+          "operationToken": "form-operation-8",
+          "frame": 0,
+          "elapsedMs": 150.40308284759521
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597577190,
+          "monotonicMs": 1139830957.841416,
+          "operationToken": "form-operation-8",
+          "frame": 1,
+          "publishToAckMs": 85.22883296012878,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597577340,
+          "monotonicMs": 1139831107.637,
+          "operationToken": "form-operation-8",
+          "frame": 1,
+          "elapsedMs": 149.78970909118652
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597577421,
+          "monotonicMs": 1139831188.844541,
+          "operationToken": "form-operation-8",
+          "frame": 2,
+          "publishToAckMs": 81.13154196739197,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597577572,
+          "monotonicMs": 1139831339.259541,
+          "operationToken": "form-operation-8",
+          "frame": 2,
+          "elapsedMs": 150.40637493133545
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597577655,
+          "monotonicMs": 1139831422.161166,
+          "operationToken": "form-operation-8",
+          "frame": 3,
+          "publishToAckMs": 82.8150839805603,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597577806,
+          "monotonicMs": 1139831573.00875,
+          "operationToken": "form-operation-8",
+          "frame": 3,
+          "elapsedMs": 150.83812499046326
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597577888,
+          "monotonicMs": 1139831655.680208,
+          "operationToken": "form-operation-8",
+          "frame": 4,
+          "publishToAckMs": 82.57245802879333,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597578039,
+          "monotonicMs": 1139831806.065,
+          "operationToken": "form-operation-8",
+          "frame": 4,
+          "elapsedMs": 150.37641716003418
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597578122,
+          "monotonicMs": 1139831889.468708,
+          "operationToken": "form-operation-8",
+          "frame": 5,
+          "publishToAckMs": 83.31370806694031,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597578271,
+          "monotonicMs": 1139832038.484958,
+          "operationToken": "form-operation-8",
+          "frame": 5,
+          "elapsedMs": 149.01062488555908
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597578355,
+          "monotonicMs": 1139832122.233041,
+          "operationToken": "form-operation-8",
+          "frame": 6,
+          "publishToAckMs": 83.6721670627594,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597578505,
+          "monotonicMs": 1139832272.608666,
+          "operationToken": "form-operation-8",
+          "frame": 6,
+          "elapsedMs": 150.36583280563354
+        },
+        {
+          "type": "transition-dwell-start",
+          "observedAt": 1790597578589,
+          "monotonicMs": 1139832356.487416,
+          "operationToken": "form-operation-8",
+          "frame": 7,
+          "publishToAckMs": 83.76608300209045,
+          "visibility": "visible",
+          "configuredDwellMs": 140
+        },
+        {
+          "type": "transition-dwell-end",
+          "observedAt": 1790597578740,
+          "monotonicMs": 1139832507.161958,
+          "operationToken": "form-operation-8",
+          "frame": 7,
+          "elapsedMs": 150.6689579486847
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "idle-gu_to_feng",
+      "source": "gu",
+      "target": "feng",
+      "mode": "idle",
+      "frameCount": 10,
+      "completion": {
+        "type": "transition-complete",
+        "observedAt": 1790597559506,
+        "monotonicMs": 1139813272.79975,
+        "transitionId": "gu_to_feng",
+        "form": "feng",
+        "normalState": "idle",
+        "underlyingState": "idle",
+        "operationToken": "form-operation-1"
+      },
+      "normalRendererAfterCompletion": {
+        "type": "renderer",
+        "observedAt": 1790597559640,
+        "monotonicMs": 1139813406.515916,
+        "form": "feng",
+        "state": "idle",
+        "row": 0,
+        "frame": 0,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-1",
+        "overlayVisible": false,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      "frameTimestamps": [
+        1790597557048,
+        1790597557285,
+        1790597557546,
+        1790597557798,
+        1790597558070,
+        1790597558332,
+        1790597558605,
+        1790597558861,
+        1790597559108,
+        1790597559360
+      ],
+      "gatedIntervalsMs": [
+        237,
+        261,
+        252,
+        272,
+        262,
+        273,
+        256,
+        247,
+        252
+      ],
+      "lastFrameToCompletionMs": 146,
+      "firstFrameBounds": [
+        184,
+        56,
+        360,
+        458
+      ],
+      "lastFrameBounds": [
+        74,
+        54,
+        418,
+        458
+      ],
+      "beforeBounds": [
+        172,
+        56,
+        308,
+        456
+      ],
+      "afterBounds": [
+        152,
+        56,
+        360,
+        456
+      ],
+      "beforeToFirstChangedPixels": 45988,
+      "lastToAfterChangedPixels": 51116
+    },
+    {
+      "label": "idle-feng_to_gu",
+      "source": "feng",
+      "target": "gu",
+      "mode": "idle",
+      "frameCount": 8,
+      "completion": {
+        "type": "transition-complete",
+        "observedAt": 1790597562346,
+        "monotonicMs": 1139816112.882958,
+        "transitionId": "feng_to_gu",
+        "form": "gu",
+        "normalState": "idle",
+        "underlyingState": "idle",
+        "operationToken": "form-operation-2"
+      },
+      "normalRendererAfterCompletion": {
+        "type": "renderer",
+        "observedAt": 1790597562421,
+        "monotonicMs": 1139816188.04375,
+        "form": "gu",
+        "state": "idle",
+        "row": 0,
+        "frame": 0,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-2",
+        "overlayVisible": false,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      "frameTimestamps": [
+        1790597560407,
+        1790597560658,
+        1790597560911,
+        1790597561150,
+        1790597561391,
+        1790597561635,
+        1790597561890,
+        1790597562196
+      ],
+      "gatedIntervalsMs": [
+        251,
+        253,
+        239,
+        241,
+        244,
+        255,
+        306
+      ],
+      "lastFrameToCompletionMs": 150,
+      "firstFrameBounds": [
+        48,
+        54,
+        388,
+        458
+      ],
+      "lastFrameBounds": [
+        72,
+        28,
+        394,
+        458
+      ],
+      "beforeBounds": [
+        152,
+        56,
+        360,
+        456
+      ],
+      "afterBounds": [
+        172,
+        56,
+        308,
+        456
+      ],
+      "beforeToFirstChangedPixels": 52212,
+      "lastToAfterChangedPixels": 45492
+    },
+    {
+      "label": "running-gu_to_feng",
+      "source": "gu",
+      "target": "feng",
+      "mode": "running",
+      "frameCount": 10,
+      "completion": {
+        "type": "transition-complete",
+        "observedAt": 1790597565477,
+        "monotonicMs": 1139819244.35225,
+        "transitionId": "gu_to_feng",
+        "form": "feng",
+        "normalState": "running",
+        "underlyingState": "running",
+        "operationToken": "form-operation-3"
+      },
+      "normalRendererAfterCompletion": {
+        "type": "renderer",
+        "observedAt": 1790597565555,
+        "monotonicMs": 1139819321.770041,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 0,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-3",
+        "overlayVisible": false,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      "frameTimestamps": [
+        1790597563053,
+        1790597563293,
+        1790597563542,
+        1790597563806,
+        1790597564066,
+        1790597564331,
+        1790597564577,
+        1790597564827,
+        1790597565078,
+        1790597565327
+      ],
+      "gatedIntervalsMs": [
+        240,
+        249,
+        264,
+        260,
+        265,
+        246,
+        250,
+        251,
+        249
+      ],
+      "lastFrameToCompletionMs": 150,
+      "firstFrameBounds": [
+        184,
+        56,
+        360,
+        458
+      ],
+      "lastFrameBounds": [
+        74,
+        54,
+        418,
+        458
+      ],
+      "beforeBounds": [
+        184,
+        70,
+        328,
+        456
+      ],
+      "afterBounds": [
+        154,
+        60,
+        360,
+        456
+      ],
+      "beforeToFirstChangedPixels": 45572,
+      "lastToAfterChangedPixels": 51752
+    },
+    {
+      "label": "running-feng_to_gu",
+      "source": "feng",
+      "target": "gu",
+      "mode": "running",
+      "frameCount": 8,
+      "completion": {
+        "type": "transition-complete",
+        "observedAt": 1790597568176,
+        "monotonicMs": 1139821943.290916,
+        "transitionId": "feng_to_gu",
+        "form": "gu",
+        "normalState": "running",
+        "underlyingState": "running",
+        "operationToken": "form-operation-4"
+      },
+      "normalRendererAfterCompletion": {
+        "type": "renderer",
+        "observedAt": 1790597568255,
+        "monotonicMs": 1139822021.880583,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 0,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-4",
+        "overlayVisible": false,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      "frameTimestamps": [
+        1790597566288,
+        1790597566544,
+        1790597566793,
+        1790597567044,
+        1790597567285,
+        1790597567523,
+        1790597567775,
+        1790597568026
+      ],
+      "gatedIntervalsMs": [
+        256,
+        249,
+        251,
+        241,
+        238,
+        252,
+        251
+      ],
+      "lastFrameToCompletionMs": 150,
+      "firstFrameBounds": [
+        48,
+        54,
+        388,
+        458
+      ],
+      "lastFrameBounds": [
+        72,
+        28,
+        394,
+        458
+      ],
+      "beforeBounds": [
+        154,
+        60,
+        360,
+        456
+      ],
+      "afterBounds": [
+        184,
+        70,
+        328,
+        456
+      ],
+      "beforeToFirstChangedPixels": 52920,
+      "lastToAfterChangedPixels": 44908
+    },
+    {
+      "label": "hover-gu_to_feng",
+      "source": "gu",
+      "target": "feng",
+      "mode": "hover",
+      "frameCount": 10,
+      "completion": {
+        "type": "transition-complete",
+        "observedAt": 1790597571325,
+        "monotonicMs": 1139825092.5505,
+        "transitionId": "gu_to_feng",
+        "form": "feng",
+        "normalState": "jumping",
+        "underlyingState": "idle",
+        "operationToken": "form-operation-5"
+      },
+      "normalRendererAfterCompletion": {
+        "type": "renderer",
+        "observedAt": 1790597571406,
+        "monotonicMs": 1139825172.804833,
+        "form": "feng",
+        "state": "jumping",
+        "row": 4,
+        "frame": 0,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-5",
+        "overlayVisible": false,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      "frameTimestamps": [
+        1790597568902,
+        1790597569158,
+        1790597569414,
+        1790597569656,
+        1790597569902,
+        1790597570160,
+        1790597570418,
+        1790597570681,
+        1790597570932,
+        1790597571175
+      ],
+      "gatedIntervalsMs": [
+        256,
+        256,
+        242,
+        246,
+        258,
+        258,
+        263,
+        251,
+        243
+      ],
+      "lastFrameToCompletionMs": 150,
+      "firstFrameBounds": [
+        184,
+        56,
+        360,
+        458
+      ],
+      "lastFrameBounds": [
+        74,
+        54,
+        418,
+        458
+      ],
+      "beforeBounds": [
+        176,
+        60,
+        310,
+        456
+      ],
+      "afterBounds": [
+        152,
+        56,
+        360,
+        456
+      ],
+      "beforeToFirstChangedPixels": 44928,
+      "lastToAfterChangedPixels": 51116
+    },
+    {
+      "label": "hover-feng_to_gu",
+      "source": "feng",
+      "target": "gu",
+      "mode": "hover",
+      "frameCount": 8,
+      "completion": {
+        "type": "transition-complete",
+        "observedAt": 1790597574059,
+        "monotonicMs": 1139827826.520125,
+        "transitionId": "feng_to_gu",
+        "form": "gu",
+        "normalState": "jumping",
+        "underlyingState": "idle",
+        "operationToken": "form-operation-6"
+      },
+      "normalRendererAfterCompletion": {
+        "type": "renderer",
+        "observedAt": 1790597574140,
+        "monotonicMs": 1139827907.276125,
+        "form": "gu",
+        "state": "jumping",
+        "row": 4,
+        "frame": 0,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-6",
+        "overlayVisible": false,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      "frameTimestamps": [
+        1790597572153,
+        1790597572411,
+        1790597572661,
+        1790597572911,
+        1790597573160,
+        1790597573405,
+        1790597573658,
+        1790597573909
+      ],
+      "gatedIntervalsMs": [
+        258,
+        250,
+        250,
+        249,
+        245,
+        253,
+        251
+      ],
+      "lastFrameToCompletionMs": 150,
+      "firstFrameBounds": [
+        48,
+        54,
+        388,
+        458
+      ],
+      "lastFrameBounds": [
+        72,
+        28,
+        394,
+        458
+      ],
+      "beforeBounds": [
+        152,
+        56,
+        360,
+        456
+      ],
+      "afterBounds": [
+        176,
+        60,
+        310,
+        456
+      ],
+      "beforeToFirstChangedPixels": 52212,
+      "lastToAfterChangedPixels": 44396
+    }
+  ]
+}

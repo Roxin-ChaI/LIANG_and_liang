@@ -13,4 +13,4 @@ The separate Rework1 App was built with an explicit `--gu-atlas` override that o
 
 The original work poses remain ~194 px tall versus ~200 px Idle because translation cannot and must not change their proportions. This commit fixes **only the confirmed foot-position defect**, not any remaining pose/identity judgment, transition endpoint problem or P2. It does not establish VISUAL_QA_PASS. No current App bundle was overwritten or relaunched; only a new `dist/Liang no Henshin v0.1.0 Rework1.app` was used with temporary userData.
 
-Relevant tests:5 PASS (pixel-preservation/clipping/build override and existing builder tests); live baseline predicate PASS; v2 validator PASS. Original-audit xfail remains against the historical frozen source; a new candidate assertion is required to pass.
+Relevant tests:6 PASS (pixel-preservation/clipping/build override/window baseline and existing builder tests); live baseline predicate PASS; v2 validator PASS. Original-audit xfail remains against the historical frozen source; a new candidate assertion is required to pass.
