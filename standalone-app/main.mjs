@@ -340,6 +340,11 @@ async function start() {
   });
   window.webContents.on("render-process-gone", (_event, details) => emit("renderer-gone", { reason: details.reason }));
   window.webContents.on("did-fail-load", (_event, code) => emit("renderer-load-failed", { code }));
+  if (TEST) window.webContents.on("console-message", (details) => {
+    if (details.level === "error") emit("renderer-error", {
+      message: details.message.slice(0, 240), line: details.lineNumber,
+    });
+  });
   await window.loadFile(path.join(HERE, "index.html"));
   const preloadReady = new Promise((resolve, reject) => {
     const timer = setTimeout(() => reject(new Error("overlay image preload timed out")), 10_000);

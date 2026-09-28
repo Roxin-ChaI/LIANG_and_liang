@@ -21,6 +21,7 @@ BUNDLE_ID = "com.liang-no-henshin.standalone"
 APP_FILES = (
     "standalone-app/main.mjs", "standalone-app/preload.cjs",
     "standalone-app/renderer.mjs", "standalone-app/animation.mjs",
+    "standalone-app/paint-ack.mjs",
     "standalone-app/events.mjs", "standalone-app/codex-events.mjs",
     "standalone-app/playback-contract.mjs",
     "standalone-app/form-request-queue.mjs",

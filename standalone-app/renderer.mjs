@@ -1,21 +1,30 @@
 import { ATLAS, CELL, cellPosition, frameAt, lookState } from "./animation.mjs";
+import { createPaintAckGate } from "./paint-ack.mjs";
 
 const pet = document.getElementById("pet");
 const overlay = document.getElementById("overlay");
 let current = null;
 let enteredAt = performance.now();
-let lastReported = "";
 let drag = null;
 let lastLook = null;
 let imageReady = false;
 let renderSerial = 0;
 const decoded = new Map();
+const reportPaint = createPaintAckGate({
+  schedule: requestAnimationFrame,
+  send: payload => window.liangPet.rendered(payload),
+  currentSerial: () => renderSerial,
+});
 
 function decode(url) {
   if (!decoded.has(url)) {
     const image = new Image();
     image.src = url;
-    decoded.set(url, image.decode());
+    const promise = image.decode().catch(error => {
+      decoded.delete(url);
+      throw error;
+    });
+    decoded.set(url, promise);
   }
   return decoded.get(url);
 }
@@ -79,9 +88,15 @@ pet.addEventListener("pointercancel", endDrag);
 
 window.liangPet.onState(async (state) => {
   const serial = ++renderSerial;
-  lastReported = "";
-  await decode(state.normalSource);
-  if (state.overlayImage) await decode(state.overlayImage);
+  imageReady = false;
+  try {
+    await decode(state.normalSource);
+    if (state.overlayImage) await decode(state.overlayImage);
+  } catch {
+    // Do not acknowledge an image that has never decoded or skip its frame.
+    console.error("pet frame decode failed");
+    return;
+  }
   if (serial !== renderSerial) return;
   if (!current || state.playbackKey !== current.playbackKey || state.normalState !== current.normalState) {
     enteredAt = performance.now();
@@ -104,31 +119,35 @@ window.liangPet.onState(async (state) => {
     overlay.removeAttribute("src");
     pet.style.opacity = "1";
   }
-  requestAnimationFrame(() => requestAnimationFrame(() => { imageReady = true; }));
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    if (serial === renderSerial) imageReady = true;
+  }));
 });
 
 function tick(now) {
-  if (current && imageReady) {
-    let row;
-    let frame;
-    if (current.normalState.startsWith("look:")) {
-      const look = lookState(Number(current.normalState.slice(5)));
-      row = look.state === "look-row-9" ? 9 : 10;
-      frame = look.frame;
-    } else {
-      const sampled = frameAt(current.normalState, now - enteredAt, {
-        // Desktop's notification row is finite, but an active standalone task owns
-        // Running until Stop/timeout; do not visually fall back to Idle mid-task.
-        held: current.normalState === "running" && current.underlyingState === "running",
-      });
-      row = sampled.row;
-      frame = sampled.frame;
-    }
-    const position = cellPosition(row, frame);
-    pet.style.backgroundPosition = `${position.x}px ${position.y}px`;
-    const reportKey = `${current.playbackKey}:${current.visualMode}:${current.frameIndex}:${row}:${frame}`;
-    if (reportKey !== lastReported) {
-      lastReported = reportKey;
+  try {
+    if (current && imageReady) {
+      let row;
+      let frame;
+      if (current.normalState.startsWith("look:")) {
+        const look = lookState(Number(current.normalState.slice(5)));
+        row = look.state === "look-row-9" ? 9 : 10;
+        frame = look.frame;
+      } else {
+        // RAF timestamps describe the beginning of a callback batch; a state
+        // epoch sampled asynchronously with performance.now() can be newer.
+        // A not-yet-started normal animation is frame 0, never negative age.
+        const sampled = frameAt(current.normalState, Math.max(0, now - enteredAt), {
+          // Desktop's notification row is finite, but an active standalone task owns
+          // Running until Stop/timeout; do not visually fall back to Idle mid-task.
+          held: current.normalState === "running" && current.underlyingState === "running",
+        });
+        row = sampled.row;
+        frame = sampled.frame;
+      }
+      const position = cellPosition(row, frame);
+      pet.style.backgroundPosition = `${position.x}px ${position.y}px`;
+      const reportKey = `${current.playbackKey}:${current.operationToken}:${current.visualMode}:${current.frameIndex}:${row}:${frame}`;
       const serial = renderSerial;
       const payload = { form: current.currentForm, state: current.normalState,
         row, frame, visualMode: current.visualMode, transitionId: current.transitionId,
@@ -137,13 +156,14 @@ function tick(now) {
         visibility: document.visibilityState,
         windowTransparent: getComputedStyle(document.body).backgroundColor === "rgba(0, 0, 0, 0)",
         hitbox: { width: CELL.width, height: CELL.height } };
-      // Report only after the computed cell/overlay has survived a paint boundary.
-      requestAnimationFrame(() => requestAnimationFrame(() => {
-        if (serial === renderSerial) window.liangPet.rendered(payload);
-      }));
+      // Deduplicate successful delivery, not the act of queueing a callback.
+      reportPaint({ serial, key: reportKey, payload });
     }
+  } finally {
+    // An unexpected sampling error remains visible but cannot permanently
+    // destroy the sole RAF chain and leave main waiting for frame4 forever.
+    requestAnimationFrame(tick);
   }
-  requestAnimationFrame(tick);
 }
 requestAnimationFrame(tick);
 window.liangPet.requestState();

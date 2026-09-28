@@ -1,0 +1,21 @@
+{
+  "evidenceKind": "DETERMINISTIC_ACTUAL_SOURCE_UNIT_REPRODUCTION_NOT_LIVE",
+  "baselineCommit": "24b0df1",
+  "historicalLiveRootCause": "NOT_PROVEN_WITHOUT_ERROR_TRACE",
+  "injectedOrdering": "RAF batch timestamp 100 precedes asynchronous state epoch 100.25",
+  "before": {
+    "errors": [
+      {
+        "name": "RangeError",
+        "message": "elapsedMs must be non-negative and finite"
+      }
+    ],
+    "frame4Acknowledged": false,
+    "pendingRafCallbacks": 0
+  },
+  "after": {
+    "errors": [],
+    "frame4Acknowledged": true,
+    "pendingRafCallbacks": 1
+  }
+}
