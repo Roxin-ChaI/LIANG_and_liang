@@ -1,0 +1,13 @@
+{
+  "status": "ENDPOINT_ART_APPROVED",
+  "decisionSource": "Explicit user approval in Transition Full Animation Rework request",
+  "scope": "Idle canonical endpoints only",
+  "runningApproved": false,
+  "fullAnimationApproved": false,
+  "approvedFiles": {
+    "A-gu-to-feng-entry.png": "6c925bbcd1386cad107cdffb5aa7569d9ace295790cb9542d7dd0629f074cab3",
+    "B-gu-to-feng-exit.png": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+    "C-feng-to-gu-entry.png": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+    "D-feng-to-gu-exit.png": "6c925bbcd1386cad107cdffb5aa7569d9ace295790cb9542d7dd0629f074cab3"
+  }
+}

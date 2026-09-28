@@ -1,0 +1,402 @@
+{
+  "status": "AWAITING_MANUAL_ENDPOINT_APPROVAL",
+  "technicalPass": true,
+  "approvalScope": "Idle canonical frame0 only; not Running/hover/drag or full transition approval",
+  "centerConvention": "x=96 registration anchor; measured asymmetric alpha/head/body hulls are not recentered",
+  "bboxConvention": "half-open; head0:70/body70:208 fixed QA bands, NOT anatomical masks",
+  "operation": "exact RGBA extraction; no translation, resizing, drawing, interpolation or effects",
+  "intermediateFramesGenerated": 0,
+  "animationGenerated": false,
+  "runtimeEligible": false,
+  "humanApproval": "PENDING",
+  "endpoints": [
+    {
+      "id": "A",
+      "name": "gu-to-feng-entry",
+      "form": "gu",
+      "file": "A-gu-to-feng-entry.png",
+      "canonicalSource": "assets/builds/gu/spritesheet.webp",
+      "row": 0,
+      "frame": 0,
+      "sourceSha256": "b6a3f086a9fdb9a4cb7c86d047991e1d3ff9a7a2ab740e4c2f705b42b9d08908",
+      "pngSha256": "6c925bbcd1386cad107cdffb5aa7569d9ace295790cb9542d7dd0629f074cab3",
+      "humanApproval": "PENDING",
+      "rgbaDifferentPixels": 0,
+      "baselineY": 203,
+      "registrationAnchorX": 96,
+      "measuredBodyBandCenterX": 95.5,
+      "metrics": {
+        "alphaBbox": [
+          54,
+          4,
+          122,
+          204
+        ],
+        "headReferenceBbox": [
+          54,
+          4,
+          122,
+          70
+        ],
+        "bodyReferenceBbox": [
+          69,
+          70,
+          122,
+          204
+        ],
+        "shoeReferenceBbox": [
+          70,
+          190,
+          119,
+          204
+        ],
+        "pixelSha256": "e12f8f315e36d704a910406d1a8b9a0a9ea7779b3b61b3a92443cdf7b3be72fb",
+        "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+      },
+      "canonicalMetrics": {
+        "alphaBbox": [
+          54,
+          4,
+          122,
+          204
+        ],
+        "headReferenceBbox": [
+          54,
+          4,
+          122,
+          70
+        ],
+        "bodyReferenceBbox": [
+          69,
+          70,
+          122,
+          204
+        ],
+        "shoeReferenceBbox": [
+          70,
+          190,
+          119,
+          204
+        ],
+        "pixelSha256": "e12f8f315e36d704a910406d1a8b9a0a9ea7779b3b61b3a92443cdf7b3be72fb",
+        "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+      },
+      "headPositionDelta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bodyBboxDelta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        9357
+      ],
+      "canonicalComponentSizes8": [
+        9357
+      ],
+      "touchesCellEdge": false,
+      "technicalPass": true
+    },
+    {
+      "id": "B",
+      "name": "gu-to-feng-exit",
+      "form": "feng",
+      "file": "B-gu-to-feng-exit.png",
+      "canonicalSource": "assets/builds/feng/spritesheet.webp",
+      "row": 0,
+      "frame": 0,
+      "sourceSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+      "pngSha256": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+      "humanApproval": "PENDING",
+      "rgbaDifferentPixels": 0,
+      "baselineY": 203,
+      "registrationAnchorX": 96,
+      "measuredBodyBandCenterX": 96.0,
+      "metrics": {
+        "alphaBbox": [
+          44,
+          4,
+          148,
+          204
+        ],
+        "headReferenceBbox": [
+          51,
+          4,
+          137,
+          70
+        ],
+        "bodyReferenceBbox": [
+          44,
+          70,
+          148,
+          204
+        ],
+        "shoeReferenceBbox": [
+          48,
+          190,
+          141,
+          204
+        ],
+        "pixelSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+        "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+      },
+      "canonicalMetrics": {
+        "alphaBbox": [
+          44,
+          4,
+          148,
+          204
+        ],
+        "headReferenceBbox": [
+          51,
+          4,
+          137,
+          70
+        ],
+        "bodyReferenceBbox": [
+          44,
+          70,
+          148,
+          204
+        ],
+        "shoeReferenceBbox": [
+          48,
+          190,
+          141,
+          204
+        ],
+        "pixelSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+        "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+      },
+      "headPositionDelta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bodyBboxDelta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        11975
+      ],
+      "canonicalComponentSizes8": [
+        11975
+      ],
+      "touchesCellEdge": false,
+      "technicalPass": true
+    },
+    {
+      "id": "C",
+      "name": "feng-to-gu-entry",
+      "form": "feng",
+      "file": "C-feng-to-gu-entry.png",
+      "canonicalSource": "assets/builds/feng/spritesheet.webp",
+      "row": 0,
+      "frame": 0,
+      "sourceSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+      "pngSha256": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+      "humanApproval": "PENDING",
+      "rgbaDifferentPixels": 0,
+      "baselineY": 203,
+      "registrationAnchorX": 96,
+      "measuredBodyBandCenterX": 96.0,
+      "metrics": {
+        "alphaBbox": [
+          44,
+          4,
+          148,
+          204
+        ],
+        "headReferenceBbox": [
+          51,
+          4,
+          137,
+          70
+        ],
+        "bodyReferenceBbox": [
+          44,
+          70,
+          148,
+          204
+        ],
+        "shoeReferenceBbox": [
+          48,
+          190,
+          141,
+          204
+        ],
+        "pixelSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+        "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+      },
+      "canonicalMetrics": {
+        "alphaBbox": [
+          44,
+          4,
+          148,
+          204
+        ],
+        "headReferenceBbox": [
+          51,
+          4,
+          137,
+          70
+        ],
+        "bodyReferenceBbox": [
+          44,
+          70,
+          148,
+          204
+        ],
+        "shoeReferenceBbox": [
+          48,
+          190,
+          141,
+          204
+        ],
+        "pixelSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+        "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+      },
+      "headPositionDelta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bodyBboxDelta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        11975
+      ],
+      "canonicalComponentSizes8": [
+        11975
+      ],
+      "touchesCellEdge": false,
+      "technicalPass": true
+    },
+    {
+      "id": "D",
+      "name": "feng-to-gu-exit",
+      "form": "gu",
+      "file": "D-feng-to-gu-exit.png",
+      "canonicalSource": "assets/builds/gu/spritesheet.webp",
+      "row": 0,
+      "frame": 0,
+      "sourceSha256": "b6a3f086a9fdb9a4cb7c86d047991e1d3ff9a7a2ab740e4c2f705b42b9d08908",
+      "pngSha256": "6c925bbcd1386cad107cdffb5aa7569d9ace295790cb9542d7dd0629f074cab3",
+      "humanApproval": "PENDING",
+      "rgbaDifferentPixels": 0,
+      "baselineY": 203,
+      "registrationAnchorX": 96,
+      "measuredBodyBandCenterX": 95.5,
+      "metrics": {
+        "alphaBbox": [
+          54,
+          4,
+          122,
+          204
+        ],
+        "headReferenceBbox": [
+          54,
+          4,
+          122,
+          70
+        ],
+        "bodyReferenceBbox": [
+          69,
+          70,
+          122,
+          204
+        ],
+        "shoeReferenceBbox": [
+          70,
+          190,
+          119,
+          204
+        ],
+        "pixelSha256": "e12f8f315e36d704a910406d1a8b9a0a9ea7779b3b61b3a92443cdf7b3be72fb",
+        "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+      },
+      "canonicalMetrics": {
+        "alphaBbox": [
+          54,
+          4,
+          122,
+          204
+        ],
+        "headReferenceBbox": [
+          54,
+          4,
+          122,
+          70
+        ],
+        "bodyReferenceBbox": [
+          69,
+          70,
+          122,
+          204
+        ],
+        "shoeReferenceBbox": [
+          70,
+          190,
+          119,
+          204
+        ],
+        "pixelSha256": "e12f8f315e36d704a910406d1a8b9a0a9ea7779b3b61b3a92443cdf7b3be72fb",
+        "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+      },
+      "headPositionDelta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bodyBboxDelta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        9357
+      ],
+      "canonicalComponentSizes8": [
+        9357
+      ],
+      "touchesCellEdge": false,
+      "technicalPass": true
+    }
+  ]
+}

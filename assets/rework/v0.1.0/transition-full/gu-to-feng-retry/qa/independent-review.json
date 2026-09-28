@@ -1,0 +1,15 @@
+{
+  "reviewer": "independent manual_endpoint_review worker",
+  "status": "VISUAL_QA_FAIL",
+  "runtimeEligible": false,
+  "idleActualAppGate": "BLOCKED",
+  "runningApproved": false,
+  "structuralResult": "Ten complete frames, no clipping, no isolated pixels, sole baseline203; structural pass is not visual approval",
+  "observed": [
+    {"frames": [8, 9], "severity": "P1", "finding": "Frame08 stance/chest silhouette exceeds target Feng;09 abruptly narrows and switches from rounded frontal face to sharp turned canonical Feng face"},
+    {"frames": [0, 1], "severity": "P2", "finding": "Hair top drops4 to11, total height200 to193; face/hair also shift right, producing an entry shortening"},
+    {"frames": [2, 3], "severity": "P2", "finding": "Both hands rise from sides to chest without a readable intermediate arm position"}
+  ],
+  "allowedChange": "07 to08 remains in one pose family; progressive broadening is intended, but must converge rather than overshoot the approved endpoint",
+  "scope": "Static contact sheet and adjacent overlays only; no real-window Idle/Running playback claimed"
+}

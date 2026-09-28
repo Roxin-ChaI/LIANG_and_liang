@@ -1,0 +1,10 @@
+{
+  "visualQa": "PASS_FOR_STATIC_ENDPOINT_CANDIDATES_ONLY",
+  "reviewer": "independent manual_endpoint_review worker; read-only",
+  "humanApproval": "PENDING",
+  "observed": "A/D preserve Gu standing identity and complete feet; B/C preserve Feng chin-rest pose and identity. Canonical/candidate comparisons are readable and exact-white overlays show no mismatch. No visible clipping or defect found.",
+  "registration": "x96 is the registration anchor; Gu body-band bbox proxy95.5 and Feng96 retain the originals. Do not recenter or half-pixel resample. Fixed QA bands are not anatomical masks.",
+  "scope": "Formal atlas Idle row0/frame0 only",
+  "notReviewed": ["intermediate frames", "full transition", "Running handoff", "hover/drag", "runtime animation"],
+  "approvalLimit": "Independent technical visual review cannot substitute for explicit user visual approval. No ENDPOINT_ART_APPROVED designation."
+}

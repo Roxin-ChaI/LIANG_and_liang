@@ -1,0 +1,16 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "transparent_background": true,
+  "referenceFiles": [
+    "assets/rework/v0.1.0/manual-transition-endpoints/A-gu-to-feng-entry.png",
+    "assets/rework/v0.1.0/manual-transition-endpoints/B-gu-to-feng-exit.png"
+  ],
+  "attempts": [
+    {"attempt": 1, "result": "GENERATED_BUT_VISUAL_QA_FAILED", "retainedSource": "../sources/gu-to-feng-generated.png", "sourceSize": [1904, 826], "promptFile": "prompt.txt"},
+    {"attempt": 2, "result": "TRANSPORT_FAILURE_NO_IMAGE", "error": "connection failed: error sending request", "promptFile": "retry-prompt.txt", "additionalReference": "qa/contact-sheet.png"},
+    {"attempt": 3, "result": "TRANSPORT_RETRY_SUCCEEDED_BUT_VISUAL_QA_FAILED", "retainedSource": "../sources/gu-to-feng-generated-retry.png", "sourceSize": [1905, 825], "promptFile": "retry-prompt.txt", "additionalReference": "qa/contact-sheet.png", "sameRequestAsAttempt2": true}
+  ],
+  "cliUsed": false,
+  "proceduralCharacterSynthesisUsed": false,
+  "approvedForRuntime": false
+}

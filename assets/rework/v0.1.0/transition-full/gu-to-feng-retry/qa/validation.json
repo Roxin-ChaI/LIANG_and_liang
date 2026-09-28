@@ -1,0 +1,607 @@
+{
+  "direction": "gu_to_feng",
+  "frameCount": 10,
+  "frameSize": [
+    192,
+    208
+  ],
+  "sourceSize": [
+    1905,
+    825
+  ],
+  "sourceSha256": "8f156ebe6b67600c186d1b2dbf9ec319362d17b69b5d6876832ddd8024c16718",
+  "processing": "one shared nearest-neighbor grid normalization, binary alpha threshold128, zero transparent RGB, integer-only registration; exact approved endpoints",
+  "bboxConvention": "head0:70 and body70:208 are reference bands NOT anatomical masks",
+  "status": "CANDIDATE_REJECTED",
+  "runtimeEligible": false,
+  "idleApproved": false,
+  "runningApproved": false,
+  "frames": [
+    {
+      "index": 0,
+      "origin": "approved/A-gu-to-feng-entry.png",
+      "integerShift": [
+        0,
+        0
+      ],
+      "hardenedPartialAlphaPixels": 0,
+      "registrationAnchorX": 96,
+      "alphaBbox": [
+        54,
+        4,
+        122,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        54,
+        4,
+        122,
+        70
+      ],
+      "bodyReferenceBbox": [
+        69,
+        70,
+        122,
+        204
+      ],
+      "bodyBandCenterX": 95.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        9357
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "frames/gu_to_feng_00.png",
+      "pngSha256": "6c925bbcd1386cad107cdffb5aa7569d9ace295790cb9542d7dd0629f074cab3"
+    },
+    {
+      "index": 1,
+      "origin": "generated grid cell; no character synthesis in extraction",
+      "integerShift": [
+        -9,
+        -2
+      ],
+      "hardenedPartialAlphaPixels": 11436,
+      "registrationAnchorX": 96,
+      "alphaBbox": [
+        59,
+        11,
+        128,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        59,
+        11,
+        128,
+        70
+      ],
+      "bodyReferenceBbox": [
+        65,
+        70,
+        127,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        9907
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "frames/gu_to_feng_01.png",
+      "pngSha256": "5462076ff8a95dcef8cf2368b8eafe9356908d0ea7ae6abcde41a359613881c7"
+    },
+    {
+      "index": 2,
+      "origin": "generated grid cell; no character synthesis in extraction",
+      "integerShift": [
+        -6,
+        -2
+      ],
+      "hardenedPartialAlphaPixels": 11841,
+      "registrationAnchorX": 96,
+      "alphaBbox": [
+        60,
+        11,
+        130,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        60,
+        11,
+        130,
+        70
+      ],
+      "bodyReferenceBbox": [
+        63,
+        70,
+        130,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        10444
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "frames/gu_to_feng_02.png",
+      "pngSha256": "f4a55a1ffecdff7ca2643cc8edb3eac90b400e3fdd7b3f6aca3f84291ea1e169"
+    },
+    {
+      "index": 3,
+      "origin": "generated grid cell; no character synthesis in extraction",
+      "integerShift": [
+        -1,
+        -2
+      ],
+      "hardenedPartialAlphaPixels": 12926,
+      "registrationAnchorX": 96,
+      "alphaBbox": [
+        51,
+        11,
+        141,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        59,
+        11,
+        128,
+        70
+      ],
+      "bodyReferenceBbox": [
+        51,
+        70,
+        141,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        11176
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "frames/gu_to_feng_03.png",
+      "pngSha256": "ba70fdf420bc5690798c4650bcf906bb62d85645d140ef1fa1a35f0e9ecf3922"
+    },
+    {
+      "index": 4,
+      "origin": "generated grid cell; no character synthesis in extraction",
+      "integerShift": [
+        -2,
+        -2
+      ],
+      "hardenedPartialAlphaPixels": 13976,
+      "registrationAnchorX": 96,
+      "alphaBbox": [
+        47,
+        10,
+        145,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        60,
+        10,
+        129,
+        70
+      ],
+      "bodyReferenceBbox": [
+        47,
+        70,
+        145,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        11938
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "frames/gu_to_feng_04.png",
+      "pngSha256": "2f7502738e7d46c154ed8edda9cd5bed574c35c7147ac3e4b12e7e102f7868e9"
+    },
+    {
+      "index": 5,
+      "origin": "generated grid cell; no character synthesis in extraction",
+      "integerShift": [
+        -4,
+        1
+      ],
+      "hardenedPartialAlphaPixels": 13851,
+      "registrationAnchorX": 96,
+      "alphaBbox": [
+        47,
+        11,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        61,
+        11,
+        127,
+        70
+      ],
+      "bodyReferenceBbox": [
+        47,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        11808
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "frames/gu_to_feng_05.png",
+      "pngSha256": "4a6f9ccfb0ce133fdba82db61a430b5a216bce757fe770c3839241735354aa79"
+    },
+    {
+      "index": 6,
+      "origin": "generated grid cell; no character synthesis in extraction",
+      "integerShift": [
+        -8,
+        1
+      ],
+      "hardenedPartialAlphaPixels": 14887,
+      "registrationAnchorX": 96,
+      "alphaBbox": [
+        44,
+        11,
+        149,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        61,
+        11,
+        127,
+        70
+      ],
+      "bodyReferenceBbox": [
+        44,
+        70,
+        149,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        12470
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "frames/gu_to_feng_06.png",
+      "pngSha256": "8494bd71640ab636ea24124ab62e3eb2f0a8a495d3ce35dc5173838614038ce9"
+    },
+    {
+      "index": 7,
+      "origin": "generated grid cell; no character synthesis in extraction",
+      "integerShift": [
+        -8,
+        1
+      ],
+      "hardenedPartialAlphaPixels": 15505,
+      "registrationAnchorX": 96,
+      "alphaBbox": [
+        42,
+        10,
+        151,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        59,
+        10,
+        126,
+        70
+      ],
+      "bodyReferenceBbox": [
+        42,
+        70,
+        151,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        13208
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "frames/gu_to_feng_07.png",
+      "pngSha256": "b91b116405f23e28815fb34a3e8ce17dbd7c1f675aee46d55ebf001d348d2885"
+    },
+    {
+      "index": 8,
+      "origin": "generated grid cell; no character synthesis in extraction",
+      "integerShift": [
+        -6,
+        1
+      ],
+      "hardenedPartialAlphaPixels": 16729,
+      "registrationAnchorX": 96,
+      "alphaBbox": [
+        36,
+        8,
+        156,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        56,
+        8,
+        123,
+        70
+      ],
+      "bodyReferenceBbox": [
+        36,
+        70,
+        156,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        14132
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "frames/gu_to_feng_08.png",
+      "pngSha256": "6853ae2c85a1ea39f06c4971ea668570a4f9f4290193d48dd89b77b7d6bbe8a5"
+    },
+    {
+      "index": 9,
+      "origin": "approved/B-gu-to-feng-exit.png",
+      "integerShift": [
+        0,
+        0
+      ],
+      "hardenedPartialAlphaPixels": 0,
+      "registrationAnchorX": 96,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "bodyReferenceBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        11975
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "frames/gu_to_feng_09.png",
+      "pngSha256": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b"
+    }
+  ],
+  "adjacentPairs": [
+    {
+      "from": 0,
+      "to": 1,
+      "baselineDelta": 0,
+      "headBandBboxDelta": [
+        5,
+        7,
+        6,
+        0
+      ],
+      "bodyBandBboxDelta": [
+        -4,
+        0,
+        5,
+        0
+      ],
+      "rgbaChangedPixels": 10670
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "baselineDelta": 0,
+      "headBandBboxDelta": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "bodyBandBboxDelta": [
+        -2,
+        0,
+        3,
+        0
+      ],
+      "rgbaChangedPixels": 10614
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "baselineDelta": 0,
+      "headBandBboxDelta": [
+        -1,
+        0,
+        -2,
+        0
+      ],
+      "bodyBandBboxDelta": [
+        -12,
+        0,
+        11,
+        0
+      ],
+      "rgbaChangedPixels": 11877
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "baselineDelta": 0,
+      "headBandBboxDelta": [
+        1,
+        -1,
+        1,
+        0
+      ],
+      "bodyBandBboxDelta": [
+        -4,
+        0,
+        4,
+        0
+      ],
+      "rgbaChangedPixels": 12192
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "baselineDelta": 0,
+      "headBandBboxDelta": [
+        1,
+        1,
+        -2,
+        0
+      ],
+      "bodyBandBboxDelta": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "rgbaChangedPixels": 12969
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "baselineDelta": 0,
+      "headBandBboxDelta": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bodyBandBboxDelta": [
+        -3,
+        0,
+        3,
+        0
+      ],
+      "rgbaChangedPixels": 12748
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "baselineDelta": 0,
+      "headBandBboxDelta": [
+        -2,
+        -1,
+        -1,
+        0
+      ],
+      "bodyBandBboxDelta": [
+        -2,
+        0,
+        2,
+        0
+      ],
+      "rgbaChangedPixels": 13358
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "baselineDelta": 0,
+      "headBandBboxDelta": [
+        -3,
+        -2,
+        -3,
+        0
+      ],
+      "bodyBandBboxDelta": [
+        -6,
+        0,
+        5,
+        0
+      ],
+      "rgbaChangedPixels": 14492
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "baselineDelta": 0,
+      "headBandBboxDelta": [
+        -5,
+        -4,
+        14,
+        0
+      ],
+      "bodyBandBboxDelta": [
+        8,
+        0,
+        -8,
+        0
+      ],
+      "rgbaChangedPixels": 15315
+    }
+  ],
+  "structuralPass": true,
+  "visualVerdict": "VISUAL_QA_FAIL"
+}

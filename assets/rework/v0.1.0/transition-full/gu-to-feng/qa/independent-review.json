@@ -1,0 +1,16 @@
+{
+  "reviewer": "independent manual_endpoint_review worker",
+  "status": "VISUAL_QA_FAIL",
+  "runtimeEligible": false,
+  "idleActualAppGate": "NOT_READY",
+  "runningApproved": false,
+  "observed": [
+    {"frames": [0, 1], "severity": "P1", "finding": "Hair top drops from y4 to y11 while soles remain203; whole height changes200 to193, causing an entry size pop"},
+    {"frames": [8, 9], "severity": "P1", "finding": "Rounded forward-facing generated head cuts to canonical Feng sharper turned face, hair and glasses relationship; final head/posture change is concentrated at the boundary"},
+    {"frames": [4, 5], "severity": "P2", "finding": "Both hands move from sides to chest; live timing would require additional motion review"},
+    {"frames": [2], "severity": "P2", "finding": "Deterministic connected-component check detects one isolated pixel"}
+  ],
+  "allowedChange": "Frames01 through08 gradually broaden shoulders/chest and stance; those changes are intended, not failures merely because bbox changes",
+  "scope": "Static candidate contact and adjacent overlays only, not real-window Idle or Running QA",
+  "retry": "Targeted redraw initially returned no image (connection failure); identical transport retry subsequently generated the separately rejected gu-to-feng-retry candidate"
+}
