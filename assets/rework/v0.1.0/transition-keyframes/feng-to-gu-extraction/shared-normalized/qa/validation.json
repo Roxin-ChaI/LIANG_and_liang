@@ -1,0 +1,488 @@
+{
+  "status": "EXTRACTION_PASS_ART_UNAPPROVED",
+  "sourceSha256": "2ad692f77a5bc11d8b03bae3e3c3fe94c9d519a47df8a6bfebe4da8a885f273e",
+  "poseCount": 8,
+  "authorization": "User explicitly allowed ONE common nearest-neighbor normalization after native-size conflict was demonstrated",
+  "sharedScale": 0.42105263157894735,
+  "sourceRegionsFromActualBounds": true,
+  "perPoseScale": false,
+  "scaleInterpolation": "NEAREST only, one resize from original region per pose",
+  "nativeRgbaEvidence": "../qa/validation.json and ../native-inspection-frames/ retain original RGBA unchanged",
+  "redrawOperations": 0,
+  "foregroundLostToCanvas": 0,
+  "normalCanvas": [
+    192,
+    208
+  ],
+  "runtimeCanvas": [
+    208,
+    224
+  ],
+  "runtimeOffset": [
+    -9,
+    -14
+  ],
+  "logicalRegistration": {
+    "x": 96,
+    "baseline": 203
+  },
+  "alphaValues": [
+    0,
+    255
+  ],
+  "hiddenTransparentRgb": 0,
+  "identityApproved": false,
+  "endpointContinuityApproved": false,
+  "appIntegrated": false,
+  "runtimeEligible": false,
+  "frames": [
+    {
+      "index": 0,
+      "sourceRegion": [
+        0,
+        0,
+        426,
+        484
+      ],
+      "subjectCoreBbox": [
+        78,
+        8,
+        351,
+        483
+      ],
+      "subjectCorePixels": 78318,
+      "lowerBodyAnchorX": 213.0,
+      "sourceSoleY": 482,
+      "sharedScale": 0.42105263157894735,
+      "sourceRegionSize": [
+        426,
+        484
+      ],
+      "singleNearestResizeSize": [
+        179,
+        204
+      ],
+      "integerShift": [
+        6,
+        1
+      ],
+      "alphaHardenedPixels": 15401,
+      "alphaPolicy": "threshold128; RGB unchanged for kept pixels, transparent RGB zero",
+      "normalAlphaBbox": [
+        39,
+        5,
+        153,
+        204
+      ],
+      "normalLowerBodyCenterX": 95.5,
+      "normalBaselineY": 203,
+      "foregroundLostToCanvas": 0,
+      "normalFile": "normal-frames/feng_to_gu_00.png",
+      "runtimeFile": "runtime-frames/feng_to_gu_00.png",
+      "normalSha256": "6870e4dbd20a22ec5c6ca158a3b86b240bd9b756cf1aa1e0e537234b1cc16629",
+      "runtimeSha256": "8fe8fb5101c0ac194696f4f70c0c27664d85b980f17a6012e4c1aecf08654e0f",
+      "runtimeCanvas": [
+        208,
+        224
+      ],
+      "runtimeBaselineY": 217,
+      "runtimeRegistrationX": 105,
+      "logicalRegistration": {
+        "x": 96,
+        "baseline": 203
+      }
+    },
+    {
+      "index": 1,
+      "sourceRegion": [
+        426,
+        0,
+        857,
+        484
+      ],
+      "subjectCoreBbox": [
+        501,
+        8,
+        757,
+        483
+      ],
+      "subjectCorePixels": 76185,
+      "lowerBodyAnchorX": 632.5,
+      "sourceSoleY": 482,
+      "sharedScale": 0.42105263157894735,
+      "sourceRegionSize": [
+        431,
+        484
+      ],
+      "singleNearestResizeSize": [
+        181,
+        204
+      ],
+      "integerShift": [
+        10,
+        1
+      ],
+      "alphaHardenedPixels": 14724,
+      "alphaPolicy": "threshold128; RGB unchanged for kept pixels, transparent RGB zero",
+      "normalAlphaBbox": [
+        42,
+        5,
+        149,
+        204
+      ],
+      "normalLowerBodyCenterX": 96.5,
+      "normalBaselineY": 203,
+      "foregroundLostToCanvas": 0,
+      "normalFile": "normal-frames/feng_to_gu_01.png",
+      "runtimeFile": "runtime-frames/feng_to_gu_01.png",
+      "normalSha256": "cf2e0ea3083b7d82d2d564c566eb13c78de7eaea49de50f46f23e73c42f98350",
+      "runtimeSha256": "9d1d85a4e3405c1266416e5e62ef430dcad6b450c5f6f219099f24a063c380f7",
+      "runtimeCanvas": [
+        208,
+        224
+      ],
+      "runtimeBaselineY": 217,
+      "runtimeRegistrationX": 105,
+      "logicalRegistration": {
+        "x": 96,
+        "baseline": 203
+      }
+    },
+    {
+      "index": 2,
+      "sourceRegion": [
+        857,
+        0,
+        1292,
+        484
+      ],
+      "subjectCoreBbox": [
+        957,
+        9,
+        1186,
+        483
+      ],
+      "subjectCorePixels": 70641,
+      "lowerBodyAnchorX": 1074.5,
+      "sourceSoleY": 482,
+      "sharedScale": 0.42105263157894735,
+      "sourceRegionSize": [
+        435,
+        484
+      ],
+      "singleNearestResizeSize": [
+        183,
+        204
+      ],
+      "integerShift": [
+        5,
+        1
+      ],
+      "alphaHardenedPixels": 13750,
+      "alphaPolicy": "threshold128; RGB unchanged for kept pixels, transparent RGB zero",
+      "normalAlphaBbox": [
+        47,
+        5,
+        143,
+        204
+      ],
+      "normalLowerBodyCenterX": 96.0,
+      "normalBaselineY": 203,
+      "foregroundLostToCanvas": 0,
+      "normalFile": "normal-frames/feng_to_gu_02.png",
+      "runtimeFile": "runtime-frames/feng_to_gu_02.png",
+      "normalSha256": "79eac6e993922ac571f66daabf92b5112b5b77a290743cb85378d816b0317052",
+      "runtimeSha256": "7026e79d7dff618ebe3b1757b1df9e84759f4f0ea9e1554e4a47c4615446499b",
+      "runtimeCanvas": [
+        208,
+        224
+      ],
+      "runtimeBaselineY": 217,
+      "runtimeRegistrationX": 105,
+      "logicalRegistration": {
+        "x": 96,
+        "baseline": 203
+      }
+    },
+    {
+      "index": 3,
+      "sourceRegion": [
+        1292,
+        0,
+        1704,
+        484
+      ],
+      "subjectCoreBbox": [
+        1398,
+        9,
+        1595,
+        483
+      ],
+      "subjectCorePixels": 65529,
+      "lowerBodyAnchorX": 1505.5,
+      "sourceSoleY": 482,
+      "sharedScale": 0.42105263157894735,
+      "sourceRegionSize": [
+        412,
+        484
+      ],
+      "singleNearestResizeSize": [
+        173,
+        204
+      ],
+      "integerShift": [
+        6,
+        1
+      ],
+      "alphaHardenedPixels": 12603,
+      "alphaPolicy": "threshold128; RGB unchanged for kept pixels, transparent RGB zero",
+      "normalAlphaBbox": [
+        51,
+        5,
+        133,
+        204
+      ],
+      "normalLowerBodyCenterX": 96.0,
+      "normalBaselineY": 203,
+      "foregroundLostToCanvas": 0,
+      "normalFile": "normal-frames/feng_to_gu_03.png",
+      "runtimeFile": "runtime-frames/feng_to_gu_03.png",
+      "normalSha256": "7bd9e029ae5900ba644e02af4a7dfc9baf157bd6cb48380e828af1085d620414",
+      "runtimeSha256": "fe8c30c05ed979c48db2b4b50a12ac74430ac4eca524160aa65cd74dcbf0094f",
+      "runtimeCanvas": [
+        208,
+        224
+      ],
+      "runtimeBaselineY": 217,
+      "runtimeRegistrationX": 105,
+      "logicalRegistration": {
+        "x": 96,
+        "baseline": 203
+      }
+    },
+    {
+      "index": 4,
+      "sourceRegion": [
+        0,
+        484,
+        429,
+        923
+      ],
+      "subjectCoreBbox": [
+        124,
+        486,
+        308,
+        912
+      ],
+      "subjectCorePixels": 57374,
+      "lowerBodyAnchorX": 217.5,
+      "sourceSoleY": 911,
+      "sharedScale": 0.42105263157894735,
+      "sourceRegionSize": [
+        429,
+        439
+      ],
+      "singleNearestResizeSize": [
+        181,
+        185
+      ],
+      "integerShift": [
+        4,
+        24
+      ],
+      "alphaHardenedPixels": 11096,
+      "alphaPolicy": "threshold128; RGB unchanged for kept pixels, transparent RGB zero",
+      "normalAlphaBbox": [
+        57,
+        25,
+        134,
+        204
+      ],
+      "normalLowerBodyCenterX": 96.0,
+      "normalBaselineY": 203,
+      "foregroundLostToCanvas": 0,
+      "normalFile": "normal-frames/feng_to_gu_04.png",
+      "runtimeFile": "runtime-frames/feng_to_gu_04.png",
+      "normalSha256": "563c9e8f1cf466f1be2d88cae0e79376d1223d535dabbdf1b1aa46d310a43513",
+      "runtimeSha256": "5014db2c0e680c84053fe6d9caeb7b49ab3856c3c33f76af1b1d8a6b5e255e89",
+      "runtimeCanvas": [
+        208,
+        224
+      ],
+      "runtimeBaselineY": 217,
+      "runtimeRegistrationX": 105,
+      "logicalRegistration": {
+        "x": 96,
+        "baseline": 203
+      }
+    },
+    {
+      "index": 5,
+      "sourceRegion": [
+        429,
+        484,
+        853,
+        923
+      ],
+      "subjectCoreBbox": [
+        550,
+        486,
+        724,
+        912
+      ],
+      "subjectCorePixels": 55481,
+      "lowerBodyAnchorX": 644.5,
+      "sourceSoleY": 911,
+      "sharedScale": 0.42105263157894735,
+      "sourceRegionSize": [
+        424,
+        439
+      ],
+      "singleNearestResizeSize": [
+        179,
+        185
+      ],
+      "integerShift": [
+        4,
+        24
+      ],
+      "alphaHardenedPixels": 10578,
+      "alphaPolicy": "threshold128; RGB unchanged for kept pixels, transparent RGB zero",
+      "normalAlphaBbox": [
+        56,
+        25,
+        128,
+        204
+      ],
+      "normalLowerBodyCenterX": 95.5,
+      "normalBaselineY": 203,
+      "foregroundLostToCanvas": 0,
+      "normalFile": "normal-frames/feng_to_gu_05.png",
+      "runtimeFile": "runtime-frames/feng_to_gu_05.png",
+      "normalSha256": "a00d65bfaf3e72a3a01edae03984070b5483f11afac5c46311de23c47a2afffd",
+      "runtimeSha256": "89fb6bfca0d538661438a6d9e3650357ae9f8b7a7ad2287fa3f44468d80344d1",
+      "runtimeCanvas": [
+        208,
+        224
+      ],
+      "runtimeBaselineY": 217,
+      "runtimeRegistrationX": 105,
+      "logicalRegistration": {
+        "x": 96,
+        "baseline": 203
+      }
+    },
+    {
+      "index": 6,
+      "sourceRegion": [
+        853,
+        484,
+        1277,
+        923
+      ],
+      "subjectCoreBbox": [
+        982,
+        490,
+        1142,
+        911
+      ],
+      "subjectCorePixels": 51791,
+      "lowerBodyAnchorX": 1070.5,
+      "sourceSoleY": 910,
+      "sharedScale": 0.42105263157894735,
+      "sourceRegionSize": [
+        424,
+        439
+      ],
+      "singleNearestResizeSize": [
+        179,
+        185
+      ],
+      "integerShift": [
+        4,
+        24
+      ],
+      "alphaHardenedPixels": 9950,
+      "alphaPolicy": "threshold128; RGB unchanged for kept pixels, transparent RGB zero",
+      "normalAlphaBbox": [
+        59,
+        27,
+        126,
+        204
+      ],
+      "normalLowerBodyCenterX": 96.0,
+      "normalBaselineY": 203,
+      "foregroundLostToCanvas": 0,
+      "normalFile": "normal-frames/feng_to_gu_06.png",
+      "runtimeFile": "runtime-frames/feng_to_gu_06.png",
+      "normalSha256": "82f883008ae8df5aec75f43f3ca4fd339d8b2bd6660c41534c6cadc85e3b7bb3",
+      "runtimeSha256": "8003d7e9ea144b71fef410ab87237b50ae74d7541b6891530659a20a531a5232",
+      "runtimeCanvas": [
+        208,
+        224
+      ],
+      "runtimeBaselineY": 217,
+      "runtimeRegistrationX": 105,
+      "logicalRegistration": {
+        "x": 96,
+        "baseline": 203
+      }
+    },
+    {
+      "index": 7,
+      "sourceRegion": [
+        1277,
+        484,
+        1704,
+        923
+      ],
+      "subjectCoreBbox": [
+        1412,
+        490,
+        1568,
+        911
+      ],
+      "subjectCorePixels": 49168,
+      "lowerBodyAnchorX": 1500.0,
+      "sourceSoleY": 910,
+      "sharedScale": 0.42105263157894735,
+      "sourceRegionSize": [
+        427,
+        439
+      ],
+      "singleNearestResizeSize": [
+        180,
+        185
+      ],
+      "integerShift": [
+        2,
+        24
+      ],
+      "alphaHardenedPixels": 9511,
+      "alphaPolicy": "threshold128; RGB unchanged for kept pixels, transparent RGB zero",
+      "normalAlphaBbox": [
+        59,
+        27,
+        124,
+        204
+      ],
+      "normalLowerBodyCenterX": 96.0,
+      "normalBaselineY": 203,
+      "foregroundLostToCanvas": 0,
+      "normalFile": "normal-frames/feng_to_gu_07.png",
+      "runtimeFile": "runtime-frames/feng_to_gu_07.png",
+      "normalSha256": "a3d9edc0ed7d5e473dee0993335ae494c65b027dc6aa4e1be401c4045d125fc8",
+      "runtimeSha256": "1d72d78aa5a2c251269707234f4df99f3a0cd4784538309a02cf592a4bc57c5f",
+      "runtimeCanvas": [
+        208,
+        224
+      ],
+      "runtimeBaselineY": 217,
+      "runtimeRegistrationX": 105,
+      "logicalRegistration": {
+        "x": 96,
+        "baseline": 203
+      }
+    }
+  ]
+}

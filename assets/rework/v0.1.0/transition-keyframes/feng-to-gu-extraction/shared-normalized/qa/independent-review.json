@@ -1,0 +1,17 @@
+{
+  "reviewer": "manual_endpoint_review",
+  "scope": "extraction completeness only; not full animation or endpoint approval",
+  "extractionVisual": "PASS",
+  "sourceArtIncomplete": false,
+  "completeHairHandsShoes": [0, 1, 2, 3, 4, 5, 6, 7],
+  "observedCropOrNeighborContamination": false,
+  "sourceArtConcerns": [
+    {"pair": "03->04", "severity": "P1", "observation": "character height drops about20 normalized pixels; already present in source"},
+    {"frames": [5, 6, 7], "severity": "P2", "observation": "late poses are nearly static"},
+    {"frame": 7, "severity": "P1", "observation": "newly drawn Gu approximation, not exact approved Gu endpoint; canonical seam and identity unapproved"}
+  ],
+  "identityApproved": false,
+  "endpointContinuityApproved": false,
+  "runningApproved": false,
+  "runtimeEligible": false
+}

@@ -1,0 +1,309 @@
+{
+  "status": "NATIVE_EXTRACTION_PASS_RUNTIME_CANVAS_BLOCKED",
+  "sourceSha256": "2ad692f77a5bc11d8b03bae3e3c3fe94c9d519a47df8a6bfebe4da8a885f273e",
+  "sourceSize": [
+    1704,
+    923
+  ],
+  "poseCount": 8,
+  "subjectDetector": "hatch-pet alpha>16 components; eight substantial cores",
+  "regionPolicy": "actual core gaps; every original RGBA pixel retained exactly once, including faint fringe and detached marks",
+  "nativeCanvas": [
+    464,
+    511
+  ],
+  "nativeRegistrationX": 231,
+  "nativeBaselineY": 490,
+  "runtimeCanvas": [
+    208,
+    224
+  ],
+  "runtimeAnchorX": 105,
+  "runtimeBaselineY": 217,
+  "logicalRegistration": {
+    "x": 96,
+    "baseline": 203
+  },
+  "sourceReconstructedExactly": true,
+  "resizeOperationsOnAssets": 0,
+  "redrawOperations": 0,
+  "runtimeEligible": false,
+  "sourceArtIncomplete": false,
+  "visualIdentityApproved": false,
+  "blocker": "SCALING_FORBIDDEN_NATIVE_POSES_EXCEED_EXISTING_RUNTIME_CANVAS",
+  "previewOnlyScale": 0.5,
+  "frames": [
+    {
+      "index": 0,
+      "sourceRegion": [
+        0,
+        0,
+        426,
+        484
+      ],
+      "subjectCoreBbox": [
+        78,
+        8,
+        351,
+        483
+      ],
+      "subjectCorePixels": 78318,
+      "lowerBodyAnchorX": 213.0,
+      "sourceSoleY": 482,
+      "file": "native-inspection-frames/feng_to_gu_00.png",
+      "pngSha256": "5d314aba17613dd28ed288ebef93a28a37d57f1c6a7c97a4b0da498aae9f2fc4",
+      "nativePaste": [
+        18,
+        8
+      ],
+      "nativeSoleY": 490,
+      "nativeLowerBodyAnchorX": 231.0,
+      "sourceRgbaPreserved": true,
+      "requestedRuntimeCoreBbox": [
+        -30,
+        -257,
+        243,
+        218
+      ],
+      "fitsUnscaledRuntime": false
+    },
+    {
+      "index": 1,
+      "sourceRegion": [
+        426,
+        0,
+        857,
+        484
+      ],
+      "subjectCoreBbox": [
+        501,
+        8,
+        757,
+        483
+      ],
+      "subjectCorePixels": 76185,
+      "lowerBodyAnchorX": 632.5,
+      "sourceSoleY": 482,
+      "file": "native-inspection-frames/feng_to_gu_01.png",
+      "pngSha256": "850a0bb7ee84783b95470e791760831226ec07709d9272a828c0756aeb9d0269",
+      "nativePaste": [
+        24,
+        8
+      ],
+      "nativeSoleY": 490,
+      "nativeLowerBodyAnchorX": 230.5,
+      "sourceRgbaPreserved": true,
+      "requestedRuntimeCoreBbox": [
+        -27,
+        -257,
+        229,
+        218
+      ],
+      "fitsUnscaledRuntime": false
+    },
+    {
+      "index": 2,
+      "sourceRegion": [
+        857,
+        0,
+        1292,
+        484
+      ],
+      "subjectCoreBbox": [
+        957,
+        9,
+        1186,
+        483
+      ],
+      "subjectCorePixels": 70641,
+      "lowerBodyAnchorX": 1074.5,
+      "sourceSoleY": 482,
+      "file": "native-inspection-frames/feng_to_gu_02.png",
+      "pngSha256": "0b907165bdf0732298042d3c2a33877a7fabe82bbc28048ff15c3f3ab6f3cc98",
+      "nativePaste": [
+        14,
+        8
+      ],
+      "nativeSoleY": 490,
+      "nativeLowerBodyAnchorX": 231.5,
+      "sourceRgbaPreserved": true,
+      "requestedRuntimeCoreBbox": [
+        -13,
+        -256,
+        216,
+        218
+      ],
+      "fitsUnscaledRuntime": false
+    },
+    {
+      "index": 3,
+      "sourceRegion": [
+        1292,
+        0,
+        1704,
+        484
+      ],
+      "subjectCoreBbox": [
+        1398,
+        9,
+        1595,
+        483
+      ],
+      "subjectCorePixels": 65529,
+      "lowerBodyAnchorX": 1505.5,
+      "sourceSoleY": 482,
+      "file": "native-inspection-frames/feng_to_gu_03.png",
+      "pngSha256": "6fb543e2159b773d04835453c0919e08864cd2c64c3275d83d158297c3114b63",
+      "nativePaste": [
+        18,
+        8
+      ],
+      "nativeSoleY": 490,
+      "nativeLowerBodyAnchorX": 231.5,
+      "sourceRgbaPreserved": true,
+      "requestedRuntimeCoreBbox": [
+        -2,
+        -256,
+        195,
+        218
+      ],
+      "fitsUnscaledRuntime": false
+    },
+    {
+      "index": 4,
+      "sourceRegion": [
+        0,
+        484,
+        429,
+        923
+      ],
+      "subjectCoreBbox": [
+        124,
+        486,
+        308,
+        912
+      ],
+      "subjectCorePixels": 57374,
+      "lowerBodyAnchorX": 217.5,
+      "sourceSoleY": 911,
+      "file": "native-inspection-frames/feng_to_gu_04.png",
+      "pngSha256": "4212b7d687678edb6c59dd84d8028cefa22df25c71fe90a0188e6b7ac2f18474",
+      "nativePaste": [
+        14,
+        63
+      ],
+      "nativeSoleY": 490,
+      "nativeLowerBodyAnchorX": 231.5,
+      "sourceRgbaPreserved": true,
+      "requestedRuntimeCoreBbox": [
+        12,
+        -208,
+        196,
+        218
+      ],
+      "fitsUnscaledRuntime": false
+    },
+    {
+      "index": 5,
+      "sourceRegion": [
+        429,
+        484,
+        853,
+        923
+      ],
+      "subjectCoreBbox": [
+        550,
+        486,
+        724,
+        912
+      ],
+      "subjectCorePixels": 55481,
+      "lowerBodyAnchorX": 644.5,
+      "sourceSoleY": 911,
+      "file": "native-inspection-frames/feng_to_gu_05.png",
+      "pngSha256": "e4209f23315f8e2a6e51e57b378f005bd0b3a1246fa2f0a3cbc798ac99a5c8c1",
+      "nativePaste": [
+        16,
+        63
+      ],
+      "nativeSoleY": 490,
+      "nativeLowerBodyAnchorX": 231.5,
+      "sourceRgbaPreserved": true,
+      "requestedRuntimeCoreBbox": [
+        10,
+        -208,
+        184,
+        218
+      ],
+      "fitsUnscaledRuntime": false
+    },
+    {
+      "index": 6,
+      "sourceRegion": [
+        853,
+        484,
+        1277,
+        923
+      ],
+      "subjectCoreBbox": [
+        982,
+        490,
+        1142,
+        911
+      ],
+      "subjectCorePixels": 51791,
+      "lowerBodyAnchorX": 1070.5,
+      "sourceSoleY": 910,
+      "file": "native-inspection-frames/feng_to_gu_06.png",
+      "pngSha256": "40f803b5109832cabc978e8e53481f91ebb4081f74c4525ed82d2772b6eab361",
+      "nativePaste": [
+        14,
+        64
+      ],
+      "nativeSoleY": 490,
+      "nativeLowerBodyAnchorX": 231.5,
+      "sourceRgbaPreserved": true,
+      "requestedRuntimeCoreBbox": [
+        16,
+        -203,
+        176,
+        218
+      ],
+      "fitsUnscaledRuntime": false
+    },
+    {
+      "index": 7,
+      "sourceRegion": [
+        1277,
+        484,
+        1704,
+        923
+      ],
+      "subjectCoreBbox": [
+        1412,
+        490,
+        1568,
+        911
+      ],
+      "subjectCorePixels": 49168,
+      "lowerBodyAnchorX": 1500.0,
+      "sourceSoleY": 910,
+      "file": "native-inspection-frames/feng_to_gu_07.png",
+      "pngSha256": "2853a089c7bad2d21f76b66ed86f4a1c6a51ae1d4b95e287fd80a2484b183ef1",
+      "nativePaste": [
+        8,
+        64
+      ],
+      "nativeSoleY": 490,
+      "nativeLowerBodyAnchorX": 231.0,
+      "sourceRgbaPreserved": true,
+      "requestedRuntimeCoreBbox": [
+        17,
+        -203,
+        173,
+        218
+      ],
+      "fitsUnscaledRuntime": false
+    }
+  ]
+}
