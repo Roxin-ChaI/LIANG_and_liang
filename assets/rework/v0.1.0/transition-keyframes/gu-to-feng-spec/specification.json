@@ -1,0 +1,228 @@
+{
+  "status": "KEYFRAME_SPECIFICATION_ONLY",
+  "scope": "Idle canonical; Running NOT APPROVED",
+  "sequence": [
+    "A",
+    "K1",
+    "K2",
+    "K3",
+    "B"
+  ],
+  "newPoseCount": 3,
+  "canvas": [
+    192,
+    208
+  ],
+  "registrationX": 96,
+  "baselineY": 203,
+  "endpointOperation": "exact frozen PNG copy; no recoloring, translating or resampling",
+  "generatedArtworkCount": 0,
+  "fullAnimationAllowed": false,
+  "appIntegrationAllowed": false,
+  "manualApprovalRequired": true,
+  "runtimeEligible": false,
+  "landmarkConvention": "half-open; anatomical head/shoulder guides are manual approximate visual annotations, not segmentation ground truth; headCap0:55/body70:208 are fixed alpha reference bands, not anatomy",
+  "uncertainty": "Feng chin partly hand-occluded; Gu jaw roughly y78-84, Feng y54-60; re-annotate candidates rather than measuring shoulders as head",
+  "effects": {
+    "preferred": "none for keyframe approval; character change is primary",
+    "allowed": "small attached hard-edge accents only outside face/glasses/shirt/torso/feet",
+    "forbidden": "glow, blur, aura, detached speckles, effects used to hide silhouette/face changes"
+  },
+  "pairChecks": [
+    "head center delta and hair-top continuity",
+    "baseline exactly203",
+    "body band bbox and monotonic width evidence",
+    "manual shoulder width",
+    "face/glasses/hair identity",
+    "hand/leg pose continuity",
+    "visual center distinct from registration anchor"
+  ],
+  "gatePolicy": "metrics only flag evidence; obvious visual snap is FAIL even if metrics pass; no KEYFRAME_ART_APPROVED before user approval; no remaining five frames",
+  "endpoints": [
+    {
+      "id": "A",
+      "file": "assets/rework/v0.1.0/manual-transition-endpoints/A-gu-to-feng-entry.png",
+      "sha256": "6c925bbcd1386cad107cdffb5aa7569d9ace295790cb9542d7dd0629f074cab3",
+      "alphaBbox": [
+        54,
+        4,
+        122,
+        204
+      ],
+      "bodyReferenceBandBbox": [
+        69,
+        70,
+        122,
+        204
+      ],
+      "headApproxBbox": [
+        54,
+        4,
+        122,
+        84
+      ],
+      "headApproxCenter": [
+        88.0,
+        44.0
+      ],
+      "hairTopY": 4,
+      "chinYVisualRange": [
+        78,
+        84
+      ],
+      "headCapBbox0to55": [
+        54,
+        4,
+        122,
+        55
+      ],
+      "shoulderGuidePoints": [
+        [
+          75,
+          83
+        ],
+        [
+          108,
+          83
+        ]
+      ],
+      "shoulderGuideWidth": 33,
+      "registrationX": 96,
+      "baselineY": 203
+    },
+    {
+      "id": "B",
+      "file": "assets/rework/v0.1.0/manual-transition-endpoints/B-gu-to-feng-exit.png",
+      "sha256": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "bodyReferenceBandBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "headApproxBbox": [
+        64,
+        4,
+        113,
+        58
+      ],
+      "headApproxCenter": [
+        88.5,
+        31.0
+      ],
+      "hairTopY": 4,
+      "chinYVisualRange": [
+        54,
+        60
+      ],
+      "headCapBbox0to55": [
+        64,
+        4,
+        113,
+        55
+      ],
+      "shoulderGuidePoints": [
+        [
+          60,
+          65
+        ],
+        [
+          128,
+          65
+        ]
+      ],
+      "shoulderGuideWidth": 68,
+      "registrationX": 96,
+      "baselineY": 203
+    }
+  ],
+  "poses": [
+    {
+      "id": "K1",
+      "progress": 0.1,
+      "headApproxBboxTarget": [
+        55,
+        4,
+        122,
+        81
+      ],
+      "headCenterXRange": [
+        86,
+        91
+      ],
+      "hairTopYRange": [
+        3,
+        6
+      ],
+      "shoulderGuideWidthRange": [
+        33,
+        40
+      ],
+      "bodyBandWidthRange": [
+        53,
+        61
+      ],
+      "action": "Charge: still recognizably Gu; tiny straightening, shoulders still narrow; hands barely begin leaving resting position; no sudden chin-hand pose"
+    },
+    {
+      "id": "K2",
+      "progress": 0.5,
+      "headApproxBboxTarget": [
+        59,
+        4,
+        118,
+        71
+      ],
+      "headCenterXRange": [
+        86,
+        91
+      ],
+      "hairTopYRange": [
+        3,
+        6
+      ],
+      "shoulderGuideWidthRange": [
+        46,
+        55
+      ],
+      "bodyBandWidthRange": [
+        70,
+        86
+      ],
+      "action": "Mid Transformation: genuinely intermediate torso/shoulders, legs gradually widen; same face turning slightly, hand travels gradually toward chin"
+    },
+    {
+      "id": "K3",
+      "progress": 0.9,
+      "headApproxBboxTarget": [
+        63,
+        4,
+        114,
+        61
+      ],
+      "headCenterXRange": [
+        86,
+        91
+      ],
+      "hairTopYRange": [
+        3,
+        6
+      ],
+      "shoulderGuideWidthRange": [
+        62,
+        68
+      ],
+      "bodyBandWidthRange": [
+        95,
+        104
+      ],
+      "action": "Pre-Feng: nearly exact B stance, face angle, hair and hand-to-chin pose; no frontal round face, enlarged skull or over-wide body before B"
+    }
+  ]
+}
