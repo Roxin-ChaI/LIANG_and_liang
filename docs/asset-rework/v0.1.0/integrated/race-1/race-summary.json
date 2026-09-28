@@ -1,0 +1,1221 @@
+{
+  "cancelledTransition": {
+    "lastRenderer": {
+      "type": "renderer",
+      "observedAt": 1790603881535,
+      "monotonicMs": 1146135549.818333,
+      "form": "gu",
+      "state": "running",
+      "row": 7,
+      "frame": 4,
+      "visualMode": "NORMAL",
+      "transitionId": null,
+      "transitionFrame": null,
+      "operationToken": "form-operation-2",
+      "overlayVisible": false,
+      "visibility": "visible",
+      "windowTransparent": true,
+      "hitbox": {
+        "width": 192,
+        "height": 208
+      }
+    },
+    "completions": [
+      {
+        "type": "transition-complete",
+        "observedAt": 1790603879179,
+        "monotonicMs": 1146133193.228958,
+        "transitionId": "gu_to_feng",
+        "form": "feng",
+        "normalState": "running",
+        "underlyingState": "running",
+        "operationToken": "form-operation-1"
+      },
+      {
+        "type": "transition-complete",
+        "observedAt": 1790603881013,
+        "monotonicMs": 1146135027.482708,
+        "transitionId": "feng_to_gu",
+        "form": "gu",
+        "normalState": "running",
+        "underlyingState": "running",
+        "operationToken": "form-operation-2"
+      }
+    ],
+    "fullOperationEvents": [
+      {
+        "type": "state",
+        "observedAt": 1790603876355,
+        "monotonicMs": 1146130369.472416,
+        "reason": "test-work",
+        "form": "gu",
+        "target": "gu",
+        "normalState": "running",
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "frameIndex": null,
+        "operationToken": null
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603876358,
+        "monotonicMs": 1146130372.455916,
+        "reason": "schedule-test-clock",
+        "form": "gu",
+        "target": "feng",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "frameIndex": 0,
+        "operationToken": "form-operation-1"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603876952,
+        "monotonicMs": 1146130966.418041,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 4,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 0,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603877000,
+        "monotonicMs": 1146131014.52175,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 5,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 0,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603877104,
+        "monotonicMs": 1146131117.951,
+        "reason": "transition-tick",
+        "form": "gu",
+        "target": "feng",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "frameIndex": 1,
+        "operationToken": "form-operation-1"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603877183,
+        "monotonicMs": 1146131197.791875,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 5,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 1,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603877217,
+        "monotonicMs": 1146131231.202208,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 0,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 1,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603877338,
+        "monotonicMs": 1146131352.354916,
+        "reason": "transition-tick",
+        "form": "gu",
+        "target": "feng",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "frameIndex": 2,
+        "operationToken": "form-operation-1"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603877338,
+        "monotonicMs": 1146131352.572458,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 1,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 1,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603877417,
+        "monotonicMs": 1146131430.939458,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 1,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 2,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603877450,
+        "monotonicMs": 1146131464.4585,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 2,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 2,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603877571,
+        "monotonicMs": 1146131585.374583,
+        "reason": "transition-tick",
+        "form": "gu",
+        "target": "feng",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "frameIndex": 3,
+        "operationToken": "form-operation-1"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603877650,
+        "monotonicMs": 1146131664.851833,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 3,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 3,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603877700,
+        "monotonicMs": 1146131714.686166,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 4,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 3,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603877805,
+        "monotonicMs": 1146131819.012541,
+        "reason": "transition-tick",
+        "form": "gu",
+        "target": "feng",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "frameIndex": 4,
+        "operationToken": "form-operation-1"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603877882,
+        "monotonicMs": 1146131896.063833,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 5,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 4,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603878032,
+        "monotonicMs": 1146132046.422708,
+        "reason": "transition-tick",
+        "form": "gu",
+        "target": "feng",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "frameIndex": 5,
+        "operationToken": "form-operation-1"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603878105,
+        "monotonicMs": 1146132119.738875,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 0,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 5,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603878148,
+        "monotonicMs": 1146132162.59,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 1,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 5,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603878257,
+        "monotonicMs": 1146132271.203083,
+        "reason": "transition-tick",
+        "form": "gu",
+        "target": "feng",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "frameIndex": 6,
+        "operationToken": "form-operation-1"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603878333,
+        "monotonicMs": 1146132347.740083,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 2,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 6,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603878400,
+        "monotonicMs": 1146132414.554458,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 3,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 6,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603878476,
+        "monotonicMs": 1146132490.739375,
+        "reason": "transition-tick",
+        "form": "gu",
+        "target": "feng",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "frameIndex": 7,
+        "operationToken": "form-operation-1"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603878560,
+        "monotonicMs": 1146132574.777833,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 4,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 7,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603878634,
+        "monotonicMs": 1146132648.102791,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 5,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 7,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603878714,
+        "monotonicMs": 1146132727.940875,
+        "reason": "transition-tick",
+        "form": "gu",
+        "target": "feng",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "frameIndex": 8,
+        "operationToken": "form-operation-1"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603878783,
+        "monotonicMs": 1146132797.861458,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 5,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 8,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603878850,
+        "monotonicMs": 1146132864.727833,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 0,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 8,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603878940,
+        "monotonicMs": 1146132953.98375,
+        "reason": "transition-tick",
+        "form": "gu",
+        "target": "feng",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "frameIndex": 9,
+        "operationToken": "form-operation-1"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603879028,
+        "monotonicMs": 1146133042.833041,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 1,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 9,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603879100,
+        "monotonicMs": 1146133114.73975,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 2,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "gu_to_feng",
+        "transitionFrame": 9,
+        "operationToken": "form-operation-1",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "transition-complete",
+        "observedAt": 1790603879179,
+        "monotonicMs": 1146133193.228958,
+        "transitionId": "gu_to_feng",
+        "form": "feng",
+        "normalState": "running",
+        "underlyingState": "running",
+        "operationToken": "form-operation-1"
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603879182,
+        "monotonicMs": 1146133196.176375,
+        "reason": "deferred-form",
+        "form": "feng",
+        "target": "gu",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "frameIndex": 0,
+        "operationToken": "form-operation-2"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603879300,
+        "monotonicMs": 1146133314.581208,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 0,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 0,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603879394,
+        "monotonicMs": 1146133408.061875,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 1,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 0,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603879453,
+        "monotonicMs": 1146133467.008166,
+        "reason": "transition-tick",
+        "form": "feng",
+        "target": "gu",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "frameIndex": 1,
+        "operationToken": "form-operation-2"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603879533,
+        "monotonicMs": 1146133547.872333,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 2,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 1,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603879617,
+        "monotonicMs": 1146133631.243125,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 3,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 1,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603879677,
+        "monotonicMs": 1146133691.75625,
+        "reason": "transition-tick",
+        "form": "feng",
+        "target": "gu",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "frameIndex": 2,
+        "operationToken": "form-operation-2"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603879762,
+        "monotonicMs": 1146133776.303583,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 4,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 2,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603879867,
+        "monotonicMs": 1146133881.4225,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 5,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 2,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603879910,
+        "monotonicMs": 1146133924.044916,
+        "reason": "transition-tick",
+        "form": "feng",
+        "target": "gu",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "frameIndex": 3,
+        "operationToken": "form-operation-2"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603879984,
+        "monotonicMs": 1146133997.998375,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 5,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 3,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603880083,
+        "monotonicMs": 1146134097.782416,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 0,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 3,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603880131,
+        "monotonicMs": 1146134145.021666,
+        "reason": "transition-tick",
+        "form": "feng",
+        "target": "gu",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "frameIndex": 4,
+        "operationToken": "form-operation-2"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603880200,
+        "monotonicMs": 1146134214.488,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 1,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 4,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603880334,
+        "monotonicMs": 1146134348.190958,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 2,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 4,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603880343,
+        "monotonicMs": 1146134357.604333,
+        "reason": "transition-tick",
+        "form": "feng",
+        "target": "gu",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "frameIndex": 5,
+        "operationToken": "form-operation-2"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603880415,
+        "monotonicMs": 1146134429.328708,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 2,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 5,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603880450,
+        "monotonicMs": 1146134464.542791,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 3,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 5,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603880567,
+        "monotonicMs": 1146134581.036875,
+        "reason": "transition-tick",
+        "form": "feng",
+        "target": "gu",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "frameIndex": 6,
+        "operationToken": "form-operation-2"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603880634,
+        "monotonicMs": 1146134648.300333,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 4,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 6,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603880684,
+        "monotonicMs": 1146134698.382458,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 5,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 6,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603880789,
+        "monotonicMs": 1146134803.89425,
+        "reason": "transition-tick",
+        "form": "feng",
+        "target": "gu",
+        "normalState": "running",
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "frameIndex": 7,
+        "operationToken": "form-operation-2"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603880867,
+        "monotonicMs": 1146134881.502041,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 5,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 7,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603880900,
+        "monotonicMs": 1146134914.890625,
+        "form": "feng",
+        "state": "running",
+        "row": 7,
+        "frame": 0,
+        "visualMode": "TRANSITIONING",
+        "transitionId": "feng_to_gu",
+        "transitionFrame": 7,
+        "operationToken": "form-operation-2",
+        "overlayVisible": true,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "transition-complete",
+        "observedAt": 1790603881013,
+        "monotonicMs": 1146135027.482708,
+        "transitionId": "feng_to_gu",
+        "form": "gu",
+        "normalState": "running",
+        "underlyingState": "running",
+        "operationToken": "form-operation-2"
+      },
+      {
+        "type": "state",
+        "observedAt": 1790603881016,
+        "monotonicMs": 1146135030.430833,
+        "reason": "transition-tick",
+        "form": "gu",
+        "target": "gu",
+        "normalState": "running",
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "frameIndex": null,
+        "operationToken": "form-operation-2"
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603881083,
+        "monotonicMs": 1146135097.919583,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 0,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-2",
+        "overlayVisible": false,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603881183,
+        "monotonicMs": 1146135197.923333,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 1,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-2",
+        "overlayVisible": false,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603881302,
+        "monotonicMs": 1146135316.490708,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 2,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-2",
+        "overlayVisible": false,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603881417,
+        "monotonicMs": 1146135431.245125,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 3,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-2",
+        "overlayVisible": false,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      },
+      {
+        "type": "renderer",
+        "observedAt": 1790603881535,
+        "monotonicMs": 1146135549.818333,
+        "form": "gu",
+        "state": "running",
+        "row": 7,
+        "frame": 4,
+        "visualMode": "NORMAL",
+        "transitionId": null,
+        "transitionFrame": null,
+        "operationToken": "form-operation-2",
+        "overlayVisible": false,
+        "visibility": "visible",
+        "windowTransparent": true,
+        "hitbox": {
+          "width": 192,
+          "height": 208
+        }
+      }
+    ],
+    "queuedRequests": [
+      {
+        "type": "form-request-queued",
+        "observedAt": 1790603877958,
+        "monotonicMs": 1146131972.23925,
+        "form": "gu",
+        "requestId": "schedule-3",
+        "operationToken": "form-operation-1"
+      }
+    ]
+  },
+  "competingStates": {
+    "operationToken": "form-operation-3",
+    "completion": {
+      "type": "transition-complete",
+      "observedAt": 1790603883883,
+      "monotonicMs": 1146137897.813125,
+      "transitionId": "gu_to_feng",
+      "form": "feng",
+      "normalState": "review",
+      "underlyingState": "review",
+      "operationToken": "form-operation-3"
+    },
+    "lastRenderer": {
+      "type": "renderer",
+      "observedAt": 1790603883966,
+      "monotonicMs": 1146137980.376125,
+      "form": "feng",
+      "state": "review",
+      "row": 8,
+      "frame": 0,
+      "visualMode": "NORMAL",
+      "transitionId": null,
+      "transitionFrame": null,
+      "operationToken": "form-operation-3",
+      "overlayVisible": false,
+      "visibility": "visible",
+      "windowTransparent": true,
+      "hitbox": {
+        "width": 192,
+        "height": 208
+      }
+    }
+  },
+  "consecutiveTransitions": [
+    {
+      "at": "2026-09-15T09:00:00+08:00",
+      "expected": "feng",
+      "completion": {
+        "type": "transition-complete",
+        "observedAt": 1790603888331,
+        "monotonicMs": 1146142345.995833,
+        "transitionId": "gu_to_feng",
+        "form": "feng",
+        "normalState": "review",
+        "underlyingState": "review",
+        "operationToken": "form-operation-5"
+      }
+    },
+    {
+      "at": "2026-09-15T12:00:00+08:00",
+      "expected": "gu",
+      "completion": {
+        "type": "transition-complete",
+        "observedAt": 1790603890248,
+        "monotonicMs": 1146144263.032,
+        "transitionId": "feng_to_gu",
+        "form": "gu",
+        "normalState": "review",
+        "underlyingState": "review",
+        "operationToken": "form-operation-6"
+      }
+    }
+  ]
+}

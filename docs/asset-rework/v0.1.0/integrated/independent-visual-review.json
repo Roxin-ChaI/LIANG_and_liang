@@ -1,0 +1,18 @@
+{
+  "verdict": "VISUAL_QA_FAIL",
+  "reviewer": "independent endpoint_visual_review worker; read-only actual-window sheets",
+  "scope": "Unchanged original transitions with isolated AckFix renderer",
+  "severityAssessment": "P2 in the current captures; historical audit classified V-04/V-05 as P1. No automatic downgrade or release approval.",
+  "entryExit": {
+    "idleGuToFeng": "PASS_WITH_WARNING: small hair/face difference before-to-0; Feng takeover continuous",
+    "runningGuToFeng": "FAIL: head/face suddenly higher and elongated at before-to-0 while shoes stay grounded",
+    "idleFengToGu": "PASS_WITH_WARNING: small head/face difference at 7-to-after",
+    "runningFengToGu": "FAIL: head drops and proportions change at 7-to-after, outside the intended morph",
+    "hoverBothDirections": "PASS_WITH_WARNING: Gu boundary changes turned head to frontal pose"
+  },
+  "intentionalChange": "Shoulder/chest growth and contraction and leg-spacing changes are allowed. Reverse6-to-7 differences partly belong to intentional final contraction, not automatically P1.",
+  "registration": "Grounded foot registration broadly stable; main remaining defect is relative Gu head/body construction",
+  "playerComparison": "Prior-vs-fixed boundary artwork remains the same; ordered 10/8 displayed stages do not approve artwork",
+  "newAssetIntegration": "NOT_TESTED / BLOCKED_ART",
+  "limits": "Personally inspected four required full-window sheets, four prior-vs-fixed sheets and two Hover sheets. GIF viewer returned first frame only; reviewer cannot independently certify motion cadence. Frame-gated captures are not natural-time video."
+}

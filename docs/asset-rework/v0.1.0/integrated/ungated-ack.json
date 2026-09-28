@@ -1,0 +1,131 @@
+{
+  "status": "PAINT_DWELL_COMPLETION_PASS",
+  "visualArtworkApproved": false,
+  "errors": [],
+  "operations": [
+    {
+      "operationToken": "form-operation-1",
+      "direction": "gu_to_feng",
+      "orderedPaintedFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "dwellFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "completionCount": 1,
+      "pass": true,
+      "finalForm": "feng",
+      "restoredState": "idle",
+      "frame4PaintObserved": true
+    },
+    {
+      "operationToken": "form-operation-2",
+      "direction": "feng_to_gu",
+      "orderedPaintedFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dwellFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "completionCount": 1,
+      "pass": true,
+      "finalForm": "gu",
+      "restoredState": "idle",
+      "frame4PaintObserved": true
+    },
+    {
+      "operationToken": "form-operation-3",
+      "direction": "gu_to_feng",
+      "orderedPaintedFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "dwellFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "completionCount": 1,
+      "pass": true,
+      "finalForm": "feng",
+      "restoredState": "running",
+      "frame4PaintObserved": true
+    },
+    {
+      "operationToken": "form-operation-4",
+      "direction": "feng_to_gu",
+      "orderedPaintedFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dwellFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "completionCount": 1,
+      "pass": true,
+      "finalForm": "gu",
+      "restoredState": "running",
+      "frame4PaintObserved": true
+    }
+  ]
+}

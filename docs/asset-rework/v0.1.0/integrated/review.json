@@ -1,0 +1,43 @@
+{
+  "verdict": "VISUAL_QA_FAIL",
+  "releaseCandidateApproved": false,
+  "tagCreated": false,
+  "incumbentAppReplaced": false,
+  "assetGate": "NEEDS_MANUAL_ART_REDESIGN",
+  "transitionAnimationFilesModified": 0,
+  "newTransitionAnimationFilesGenerated": 0,
+  "newArtworkIntegratedTest": "NOT_TESTED / BLOCKED_ART",
+  "historicalUnresolvedIssues": ["V-04", "V-05"],
+  "playerTestVerdict": "PAINT_DWELL_COMPLETION_PASS",
+  "liveCompletedOperations": 24,
+  "orderedTransitionFrameAcknowledgments": 216,
+  "frame4StallsObservedInFixedRuns": 0,
+  "exactHistoricalStallRootCause": "NOT_PROVEN_WITHOUT_OLD_RENDERER_ERROR_TRACE",
+  "confirmedDeterministicFailureMechanism": "negative RAF age throws RangeError before sole RAF chain requeues",
+  "realWindowCoverage": {
+    "gatedFrameByFrame": "Idle / Running / Hover, both directions, 6 sequences",
+    "ungatedTimingPass": "both directions, 2 sequences",
+    "raceRuns": "2 independent launches, 6 operations each: reverse at frame4, duplicate, work/hover burst, consecutive forms",
+    "ungatedWindowGIF": "Idle / Running, both directions, 4 sequences with observed capture intervals"
+  },
+  "limits": [
+    "Finite successful runs cannot prove all possible stalls absent",
+    "Unit RAF ordering is injected; not the historical live exception trace",
+    "capturePage is actual Electron composed window, not OS desktop screen recording",
+    "Frame-gated GIF is a reconstructed frame sequence, not natural-time recording",
+    "Ungated GIF uses sampled actual windows, GIF timing quantization and capture load",
+    "No new artwork was generated, therefore artwork rework cannot be marked PASS",
+    "Latest independent visual review calls Running boundary defect P2, versus historical P1; endpoint approval remains withheld"
+  ],
+  "protectedInputs": {
+    "formalGuSha256": "b6a3f086a9fdb9a4cb7c86d047991e1d3ff9a7a2ab740e4c2f705b42b9d08908",
+    "formalFengSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+    "existingRegisteredGuCandidateSha256": "b5b6b6b4fd437164282c5ba4c3b1de8f4b74e0184148eba344118e5e0fa97968",
+    "original18OverlayFrameChecksums": "PASS",
+    "gitProtectedPathsComparedWith24b0df1": "UNCHANGED",
+    "formalCodexAppAndHooks": "No modification actions performed"
+  },
+  "regression": {"pythonPassed": 303, "pythonExpectedFailures": 1, "pythonSubtestsPassed": 12,
+                 "nodePassed": 216, "unexpectedFailures": 0},
+  "cleanup": "Every isolated test App exited normally; temporary HOME/userData directories removed. No AckFix/diagnosis test process remains. QA candidate builds kept only in ignored dist; no production installation."
+}

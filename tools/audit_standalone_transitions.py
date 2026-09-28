@@ -168,7 +168,8 @@ def record_session(output: Path, executable: Path) -> dict:
                                     and item.get("operationToken") == complete.get("operationToken")]})
             events = [item for item in live.events if item.get("type") in
                       ("state", "renderer", "transition-complete", "frame-capture-error", "test-error",
-                       "transition-dwell-start", "transition-dwell-end")]
+                       "transition-dwell-start", "transition-dwell-end", "renderer-error",
+                       "renderer-gone", "renderer-load-failed")]
             report = {"captureKind": "QA2 Electron webContents.capturePage with deterministic frame gate",
                       "build": str(executable), "startup": startup,
                       "scenarios": scenarios, "ungatedTimings": ungated, "events": events}
