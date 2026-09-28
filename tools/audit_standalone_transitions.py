@@ -162,9 +162,13 @@ def record_session(output: Path, executable: Path) -> dict:
                                                         for i in range(COUNTS[transition_id] - 1)
                                                         if i in timestamps and i + 1 in timestamps],
                                 "lastFrameToCompletionMs": complete["observedAt"]
-                                - timestamps[max(timestamps)]})
+                                - timestamps[max(timestamps)],
+                                "dwellDiagnostics": [item for item in live.events[after_index:]
+                                    if item.get("type") in ("transition-dwell-start", "transition-dwell-end")
+                                    and item.get("operationToken") == complete.get("operationToken")]})
             events = [item for item in live.events if item.get("type") in
-                      ("state", "renderer", "transition-complete", "frame-capture-error", "test-error")]
+                      ("state", "renderer", "transition-complete", "frame-capture-error", "test-error",
+                       "transition-dwell-start", "transition-dwell-end")]
             report = {"captureKind": "QA2 Electron webContents.capturePage with deterministic frame gate",
                       "build": str(executable), "startup": startup,
                       "scenarios": scenarios, "ungatedTimings": ungated, "events": events}

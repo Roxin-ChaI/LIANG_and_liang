@@ -13,6 +13,7 @@ import { createCodexSessionTracker, createHookForwardServer } from "./codex-even
 import { createPipelineDiagnostic } from "./pipeline-diagnostic.mjs";
 import { isCurrentTransitionPaint, shouldRestartPlayback } from "./playback-contract.mjs";
 import { createFormScheduler, expectedFormAt } from "./schedule.mjs";
+import { createFormRequestQueue } from "./form-request-queue.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -46,10 +47,13 @@ let clockOverride = TEST && process.env.LNH_TEST_INITIAL_TIME ? new Date(process
 let lastReportedRow = null;
 let captureFrames = false;
 const capturedFrames = new Set();
+const formRequests = createFormRequestQueue();
+let lastTransitionPublish = null;
 
 function clock() { return clockOverride ?? new Date(); }
 function emit(type, payload = {}) {
-  if (TEST) process.stdout.write(`${JSON.stringify({ type, observedAt: Date.now(), ...payload })}\n`);
+  if (TEST) process.stdout.write(`${JSON.stringify({ type, observedAt: Date.now(),
+    monotonicMs: Number(process.hrtime.bigint()) / 1e6, ...payload })}\n`);
 }
 async function dataUrl(relative, mime) {
   const bytes = await fs.readFile(path.join(ROOT, relative));
@@ -63,6 +67,9 @@ function publish(reason) {
   if (!window || window.isDestroyed()) return;
   const visual = player.snapshot();
   const image = visual.frameSource ? overlayImages[visual.frameSource] : null;
+  if (TEST && visual.visualMode === "TRANSITIONING") lastTransitionPublish = {
+    token: visual.operationToken, frame: visual.frameIndex, at: Number(process.hrtime.bigint()) / 1e6,
+  };
   window.webContents.send("pet-state", {
     ...visual, overlayImage: image, playbackKey: `${visual.playbackEpoch}:${stateEpoch}`,
   });
@@ -84,19 +91,39 @@ function acknowledgeTransitionFrame(value) {
   const before = player.snapshot();
   if (transitionTimer !== null || !isCurrentTransitionPaint(before, value)) return;
   const token = before.operationToken;
+  const ackAt = TEST ? Number(process.hrtime.bigint()) / 1e6 : 0;
+  const publishToAckMs = TEST && lastTransitionPublish?.token === token
+    && lastTransitionPublish.frame === before.frameIndex ? ackAt - lastTransitionPublish.at : null;
+  emit("transition-dwell-start", { operationToken: token, frame: before.frameIndex,
+    publishToAckMs, visibility: value.visibility ?? "unknown", configuredDwellMs: 140 });
   transitionTimer = setTimeout(() => {
     transitionTimer = null;
     if (player.snapshot().operationToken !== token) return;
+    emit("transition-dwell-end", { operationToken: token, frame: before.frameIndex,
+      elapsedMs: TEST ? Number(process.hrtime.bigint()) / 1e6 - ackAt : null });
     const after = player.advance(140);
-    publish("transition-tick");
     if (after.visualMode !== "TRANSITIONING") {
       emit("transition-complete", { transitionId: before.transitionId, form: after.currentForm,
         normalState: after.normalState, underlyingState: after.underlyingState, operationToken: token });
+      const pending = formRequests.take();
+      if (pending) {
+        // Last frame has completed its full dwell. Do not flash a normal atlas
+        // between the settled transition and a requested reverse sequence.
+        dispatch(pending, "deferred-form");
+        return;
+      }
     }
+    publish("transition-tick");
   }, 140);
 }
 function dispatch(event, reason = "event") {
   const before = player.snapshot();
+  const decision = formRequests.consider(event, before);
+  if (decision.deferred) {
+    emit("form-request-queued", { form: decision.target, requestId: decision.requestId,
+      operationToken: before.operationToken });
+    return { accepted: true, queued: true, targetForm: decision.target };
+  }
   const result = adapter.dispatch(event);
   const after = player.snapshot();
   if (shouldRestartPlayback(before, after)) stateEpoch += 1;

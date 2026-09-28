@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Observe scheduler/animation races in isolated packaged QA2, without fixing them."""
+"""Observe scheduler/animation races in an isolated packaged candidate."""
 
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ from pathlib import Path
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from tools.audit_standalone_visual import QA2
+from tools.audit_standalone_visual import QA2, screenshot, video_gif
 from tools.run_electron_harness import LiveHarness
 from tools.run_standalone_app_qa import ROOT, StandaloneQAError, command, wait_event
 
@@ -45,10 +45,18 @@ def curate_race_evidence(raw: Path, output: Path) -> dict:
              "after-competing-states", "gu-review-after-consecutive")
     for name in names:
         shutil.copy2(raw / f"{name}.png", output / f"{name}.png")
+    recording = raw / "reverse-request-window-recording.gif"
+    if recording.is_file():
+        shutil.copy2(recording, output / recording.name)
+    full = report["cancelledTransition"].get("fullOperationEvents", [])
+    debug = json.loads((raw / "race-events-debug.json").read_text())
     compact = {
         "cancelledTransition": {
             "lastRenderer": report["cancelledTransition"]["outcome"]["lastRenderer"],
             "completions": report["cancelledTransition"]["outcome"]["completions"],
+            "fullOperationEvents": [item for item in full if item.get("type") in
+                                    ("state", "renderer", "transition-complete")],
+            "queuedRequests": [item for item in debug if item.get("type") == "form-request-queued"],
         },
         "competingStates": {
             "operationToken": report["competingStates"]["operationToken"],
@@ -87,7 +95,8 @@ def audit(output: Path, executable: Path) -> dict:
             command(live, type="move", x=20, y=20)
             command(live, type="work", state="running")
             # At 09:00, Gu→Feng starts while Running is held. At frame 4,
-            # jump the injected clock to 12:00: latest schedule must win.
+            # jump the injected clock to 12:00: observe immediate cancellation
+            # or the rework's full-sequence/latest-target deferred policy.
             start = command(live, type="clock", value="2026-09-14T09:00:00+08:00")
             wait_event(live, lambda item: item.get("type") == "renderer"
                        and item.get("transitionId") == "gu_to_feng"
@@ -96,9 +105,17 @@ def audit(output: Path, executable: Path) -> dict:
             cancel = command(live, type="clock", value="2026-09-14T12:00:00+08:00")
             wait_event(live, lambda item: item.get("type") == "schedule"
                        and item.get("expectedForm") == "gu", after=cancel)
-            wait_event(live, lambda item: item.get("type") == "renderer"
-                       and item.get("form") == "gu" and item.get("visualMode") == "NORMAL"
-                       and item.get("row") == 7, after=cancel)
+            captures = []
+            deadline = time.monotonic() + 12
+            while not any(item.get("type") == "renderer" and item.get("form") == "gu"
+                          and item.get("visualMode") == "NORMAL" and item.get("row") == 7
+                          for item in live.events[cancel:]):
+                if time.monotonic() > deadline:
+                    raise StandaloneQAError("reverse target did not settle to Gu Running")
+                captures.append(screenshot(live, root, output, f"reverse-{len(captures):03d}"))
+                time.sleep(0.045)
+            if captures:
+                video_gif(captures, output / "reverse-request-window-recording.gif")
             cancelled = capture(live, output, "gu-running-after-cancel")
             cancel_outcome = visual_outcome(live.events, after=cancel)
             # New afternoon peak, with competing work/interaction updates and
@@ -154,7 +171,8 @@ def audit(output: Path, executable: Path) -> dict:
             end = capture(live, output, "gu-review-after-consecutive")
             report = {"startup": startup, "cancelledTransition": {
                         "beforeScreenshot": mid, "afterScreenshot": cancelled,
-                        "outcome": cancel_outcome},
+                        "outcome": cancel_outcome, "captures": captures,
+                        "fullOperationEvents": list(live.events[start:cancel]) + cancel_outcome["events"]},
                       "competingStates": {"operationToken": token, "completion": complete,
                                           "normalRenderer": normal, "afterScreenshot": after,
                                           "outcome": race_outcome},

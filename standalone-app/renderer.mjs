@@ -134,6 +134,7 @@ function tick(now) {
         row, frame, visualMode: current.visualMode, transitionId: current.transitionId,
         transitionFrame: current.frameIndex, operationToken: current.operationToken,
         overlayVisible: overlay.style.display === "block",
+        visibility: document.visibilityState,
         windowTransparent: getComputedStyle(document.body).backgroundColor === "rgba(0, 0, 0, 0)",
         hitbox: { width: CELL.width, height: CELL.height } };
       // Report only after the computed cell/overlay has survived a paint boundary.

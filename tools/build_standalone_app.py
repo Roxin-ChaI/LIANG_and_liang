@@ -23,6 +23,7 @@ APP_FILES = (
     "standalone-app/renderer.mjs", "standalone-app/animation.mjs",
     "standalone-app/events.mjs", "standalone-app/codex-events.mjs",
     "standalone-app/playback-contract.mjs",
+    "standalone-app/form-request-queue.mjs",
     "standalone-app/pipeline-diagnostic.mjs",
     "standalone-app/schedule.mjs",
     "standalone-app/index.html", "standalone-app/style.css",
