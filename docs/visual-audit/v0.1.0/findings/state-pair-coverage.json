@@ -1,0 +1,1190 @@
+{
+  "gu": {
+    "pairs": [
+      {
+        "from": "idle",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      }
+    ],
+    "finiteHandoffs": [
+      {
+        "from": "waving",
+        "row": 0,
+        "frame": 0
+      },
+      {
+        "from": "failed",
+        "row": 0,
+        "frame": 0
+      },
+      {
+        "from": "waiting",
+        "row": 0,
+        "frame": 0
+      },
+      {
+        "from": "review",
+        "row": 0,
+        "frame": 0
+      }
+    ],
+    "coverageNote": "post-paint boundary captures, not high-speed optical proof of every transient"
+  },
+  "feng": {
+    "pairs": [
+      {
+        "from": "idle",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "idle",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-right",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running-left",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waving",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "jumping",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "failed",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "waiting",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "running",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "idle",
+        "row": 0,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "running-right",
+        "row": 1,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "running-left",
+        "row": 2,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "waving",
+        "row": 3,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "jumping",
+        "row": 4,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "failed",
+        "row": 5,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "waiting",
+        "row": 6,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "running",
+        "row": 7,
+        "empty": false,
+        "touchesWindowEdge": false
+      },
+      {
+        "from": "review",
+        "to": "review",
+        "row": 8,
+        "empty": false,
+        "touchesWindowEdge": false
+      }
+    ],
+    "finiteHandoffs": [
+      {
+        "from": "waving",
+        "row": 0,
+        "frame": 0
+      },
+      {
+        "from": "failed",
+        "row": 0,
+        "frame": 0
+      },
+      {
+        "from": "waiting",
+        "row": 0,
+        "frame": 0
+      },
+      {
+        "from": "review",
+        "row": 0,
+        "frame": 0
+      }
+    ],
+    "coverageNote": "post-paint boundary captures, not high-speed optical proof of every transient"
+  }
+}

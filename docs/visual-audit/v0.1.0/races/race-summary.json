@@ -1,0 +1,81 @@
+{
+  "cancelledTransition": {
+    "lastRenderer": {
+      "type": "renderer",
+      "observedAt": 1790526875669,
+      "form": "gu",
+      "state": "running",
+      "row": 7,
+      "frame": 2,
+      "visualMode": "NORMAL",
+      "transitionId": null,
+      "transitionFrame": null,
+      "operationToken": "form-operation-2",
+      "overlayVisible": false,
+      "windowTransparent": true,
+      "hitbox": {
+        "width": 192,
+        "height": 208
+      }
+    },
+    "completions": []
+  },
+  "competingStates": {
+    "operationToken": "form-operation-3",
+    "completion": {
+      "type": "transition-complete",
+      "observedAt": 1790526878041,
+      "transitionId": "gu_to_feng",
+      "form": "feng",
+      "normalState": "review",
+      "underlyingState": "review",
+      "operationToken": "form-operation-3"
+    },
+    "lastRenderer": {
+      "type": "renderer",
+      "observedAt": 1790526878169,
+      "form": "feng",
+      "state": "review",
+      "row": 8,
+      "frame": 0,
+      "visualMode": "NORMAL",
+      "transitionId": null,
+      "transitionFrame": null,
+      "operationToken": "form-operation-3",
+      "overlayVisible": false,
+      "windowTransparent": true,
+      "hitbox": {
+        "width": 192,
+        "height": 208
+      }
+    }
+  },
+  "consecutiveTransitions": [
+    {
+      "at": "2026-09-15T09:00:00+08:00",
+      "expected": "feng",
+      "completion": {
+        "type": "transition-complete",
+        "observedAt": 1790526882540,
+        "transitionId": "gu_to_feng",
+        "form": "feng",
+        "normalState": "review",
+        "underlyingState": "review",
+        "operationToken": "form-operation-5"
+      }
+    },
+    {
+      "at": "2026-09-15T12:00:00+08:00",
+      "expected": "gu",
+      "completion": {
+        "type": "transition-complete",
+        "observedAt": 1790526884508,
+        "transitionId": "feng_to_gu",
+        "form": "gu",
+        "normalState": "review",
+        "underlyingState": "review",
+        "operationToken": "form-operation-6"
+      }
+    }
+  ]
+}
