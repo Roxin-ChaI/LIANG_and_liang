@@ -1,0 +1,328 @@
+{
+  "status": "REJECTED_GRID_DIAGNOSTIC_ONLY",
+  "runtimeEligible": false,
+  "playableFramesEmitted": 0,
+  "direction": "feng_to_gu",
+  "sourceSize": [
+    1704,
+    923
+  ],
+  "sourceSha256": "2ad692f77a5bc11d8b03bae3e3c3fe94c9d519a47df8a6bfebe4da8a885f273e",
+  "cells": [
+    {
+      "index": 0,
+      "partialAlphaPixels": 16953,
+      "proposedIntegerShift": null,
+      "registrationError": "integer registration would crop generated artwork",
+      "alphaBbox": [
+        36,
+        4,
+        158,
+        208
+      ],
+      "baselineY": 207,
+      "headReferenceBbox": [
+        56,
+        4,
+        133,
+        70
+      ],
+      "bodyReferenceBbox": [
+        36,
+        70,
+        158,
+        208
+      ],
+      "bodyBandCenterX": 97.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        14892
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 1,
+      "partialAlphaPixels": 16092,
+      "proposedIntegerShift": null,
+      "registrationError": "integer registration would crop generated artwork",
+      "alphaBbox": [
+        34,
+        4,
+        149,
+        208
+      ],
+      "baselineY": 207,
+      "headReferenceBbox": [
+        52,
+        4,
+        125,
+        70
+      ],
+      "bodyReferenceBbox": [
+        34,
+        70,
+        149,
+        208
+      ],
+      "bodyBandCenterX": 91.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        14503
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 2,
+      "partialAlphaPixels": 15096,
+      "proposedIntegerShift": [
+        -3,
+        -4
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        48,
+        5,
+        150,
+        208
+      ],
+      "baselineY": 207,
+      "headReferenceBbox": [
+        59,
+        5,
+        124,
+        70
+      ],
+      "bodyReferenceBbox": [
+        48,
+        70,
+        150,
+        208
+      ],
+      "bodyBandCenterX": 99.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        13371
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 3,
+      "partialAlphaPixels": 13859,
+      "proposedIntegerShift": [
+        -2,
+        -4
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        55,
+        5,
+        142,
+        208
+      ],
+      "baselineY": 207,
+      "headReferenceBbox": [
+        61,
+        5,
+        126,
+        70
+      ],
+      "bodyReferenceBbox": [
+        55,
+        70,
+        142,
+        208
+      ],
+      "bodyBandCenterX": 98.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        12479
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 4,
+      "partialAlphaPixels": 13519,
+      "proposedIntegerShift": [
+        -1,
+        1
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        40,
+        0,
+        150,
+        203
+      ],
+      "baselineY": 202,
+      "headReferenceBbox": [
+        40,
+        0,
+        150,
+        70
+      ],
+      "bodyReferenceBbox": [
+        56,
+        70,
+        138,
+        203
+      ],
+      "bodyBandCenterX": 97.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        11364,
+        304,
+        274
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 5,
+      "partialAlphaPixels": 12862,
+      "proposedIntegerShift": [
+        -2,
+        1
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        40,
+        0,
+        146,
+        203
+      ],
+      "baselineY": 202,
+      "headReferenceBbox": [
+        40,
+        0,
+        146,
+        70
+      ],
+      "bodyReferenceBbox": [
+        61,
+        70,
+        134,
+        203
+      ],
+      "bodyBandCenterX": 97.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        11007,
+        292,
+        280
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 6,
+      "partialAlphaPixels": 12119,
+      "proposedIntegerShift": [
+        -2,
+        1
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        53,
+        0,
+        141,
+        203
+      ],
+      "baselineY": 202,
+      "headReferenceBbox": [
+        53,
+        0,
+        141,
+        70
+      ],
+      "bodyReferenceBbox": [
+        66,
+        70,
+        130,
+        203
+      ],
+      "bodyBandCenterX": 98.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        10241,
+        278,
+        257
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 7,
+      "partialAlphaPixels": 11488,
+      "proposedIntegerShift": [
+        -4,
+        1
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        61,
+        0,
+        134,
+        203
+      ],
+      "baselineY": 202,
+      "headReferenceBbox": [
+        61,
+        0,
+        134,
+        70
+      ],
+      "bodyReferenceBbox": [
+        70,
+        70,
+        130,
+        203
+      ],
+      "bodyBandCenterX": 100.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        9736,
+        255,
+        242
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    }
+  ],
+  "warning": "QA-only grid division may cut artwork; no production frames or corrective per-pose scaling emitted"
+}

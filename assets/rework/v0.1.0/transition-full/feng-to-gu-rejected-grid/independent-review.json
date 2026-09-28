@@ -1,0 +1,13 @@
+{
+  "reviewer": "independent manual_endpoint_review worker",
+  "status": "VISUAL_QA_FAIL",
+  "runtimeEligible": false,
+  "runningApproved": false,
+  "observed": [
+    {"severity": "P1", "finding": "Eight full poses exist in the generated source, but first-row shoes extend past the fixed half-height grid boundary; standard4x2 extraction would cut shoes"},
+    {"severity": "P1", "finding": "Final generated Gu approximation has not sufficiently converged to approved D face and suit silhouette; endpoint replacement is not evidence of adjacent continuity"}
+  ],
+  "allowedChange": "Lowering the chin hand, narrowing shoulders and closing the stance are readable intended changes",
+  "scope": "Static generated source and fixed-grid diagnosis; no actual App playback or Running approval",
+  "idleActualAppGate": "NOT_READY"
+}

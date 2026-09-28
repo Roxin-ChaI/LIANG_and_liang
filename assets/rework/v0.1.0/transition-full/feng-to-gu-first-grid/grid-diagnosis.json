@@ -1,0 +1,334 @@
+{
+  "status": "REJECTED_GRID_DIAGNOSTIC_ONLY",
+  "runtimeEligible": false,
+  "playableFramesEmitted": 0,
+  "direction": "feng_to_gu",
+  "sourceSize": [
+    1704,
+    923
+  ],
+  "sourceSha256": "94a17494cb063603cc69218fc2c0bd5af00ba1e472bc14407d3ba366403727af",
+  "cells": [
+    {
+      "index": 0,
+      "partialAlphaPixels": 15511,
+      "proposedIntegerShift": [
+        -2,
+        -4
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        41,
+        5,
+        154,
+        208
+      ],
+      "baselineY": 207,
+      "headReferenceBbox": [
+        59,
+        5,
+        131,
+        70
+      ],
+      "bodyReferenceBbox": [
+        41,
+        70,
+        154,
+        208
+      ],
+      "bodyBandCenterX": 97.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        13095
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 1,
+      "partialAlphaPixels": 14753,
+      "proposedIntegerShift": [
+        2,
+        -4
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        40,
+        5,
+        148,
+        208
+      ],
+      "baselineY": 207,
+      "headReferenceBbox": [
+        57,
+        5,
+        130,
+        70
+      ],
+      "bodyReferenceBbox": [
+        40,
+        70,
+        148,
+        208
+      ],
+      "bodyBandCenterX": 94.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        12913
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 2,
+      "partialAlphaPixels": 14108,
+      "proposedIntegerShift": [
+        2,
+        -4
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        45,
+        7,
+        143,
+        208
+      ],
+      "baselineY": 207,
+      "headReferenceBbox": [
+        55,
+        7,
+        119,
+        70
+      ],
+      "bodyReferenceBbox": [
+        45,
+        70,
+        143,
+        208
+      ],
+      "bodyBandCenterX": 94.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        12068
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 3,
+      "partialAlphaPixels": 12499,
+      "proposedIntegerShift": [
+        1,
+        -4
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        56,
+        9,
+        134,
+        208
+      ],
+      "baselineY": 207,
+      "headReferenceBbox": [
+        60,
+        9,
+        118,
+        70
+      ],
+      "bodyReferenceBbox": [
+        56,
+        70,
+        134,
+        208
+      ],
+      "bodyBandCenterX": 95.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        10784
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 4,
+      "partialAlphaPixels": 12055,
+      "proposedIntegerShift": [
+        -2,
+        1
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        45,
+        0,
+        146,
+        203
+      ],
+      "baselineY": 202,
+      "headReferenceBbox": [
+        45,
+        0,
+        146,
+        70
+      ],
+      "bodyReferenceBbox": [
+        59,
+        70,
+        137,
+        203
+      ],
+      "bodyBandCenterX": 98.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        9760,
+        284,
+        240
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 5,
+      "partialAlphaPixels": 11700,
+      "proposedIntegerShift": [
+        -2,
+        1
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        47,
+        0,
+        144,
+        203
+      ],
+      "baselineY": 202,
+      "headReferenceBbox": [
+        47,
+        0,
+        144,
+        70
+      ],
+      "bodyReferenceBbox": [
+        65,
+        70,
+        132,
+        203
+      ],
+      "bodyBandCenterX": 98.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        9412,
+        272,
+        254
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 6,
+      "partialAlphaPixels": 10864,
+      "proposedIntegerShift": [
+        -2,
+        1
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        50,
+        0,
+        137,
+        203
+      ],
+      "baselineY": 202,
+      "headReferenceBbox": [
+        50,
+        0,
+        137,
+        70
+      ],
+      "bodyReferenceBbox": [
+        70,
+        70,
+        127,
+        203
+      ],
+      "bodyBandCenterX": 98.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        8659,
+        265,
+        231
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    },
+    {
+      "index": 7,
+      "partialAlphaPixels": 10085,
+      "proposedIntegerShift": [
+        -2,
+        1
+      ],
+      "registrationError": null,
+      "alphaBbox": [
+        61,
+        0,
+        128,
+        203
+      ],
+      "baselineY": 202,
+      "headReferenceBbox": [
+        61,
+        0,
+        128,
+        70
+      ],
+      "bodyReferenceBbox": [
+        70,
+        70,
+        126,
+        203
+      ],
+      "bodyBandCenterX": 98.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        8274,
+        246,
+        193
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": true
+    }
+  ],
+  "warning": "QA-only grid division may cut artwork; no production frames or corrective per-pose scaling emitted"
+}

@@ -61,6 +61,8 @@ def register(image: Image.Image) -> tuple[Image.Image, list[int]]:
     info = metrics(image)
     if info["baselineY"] is None or info["bodyBandCenterX"] is None:
         raise ValueError("empty generated character cell")
+    if info["touchesCellEdge"]:
+        raise ValueError("generated grid cell touches edge; reject potentially clipped artwork")
     dx = round(96 - info["bodyBandCenterX"])
     dy = 203 - info["baselineY"]
     # No fitting/scaling individual poses and no silently cropped translations.

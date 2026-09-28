@@ -1,0 +1,38 @@
+{
+  "verdict": "VISUAL_QA_FAIL",
+  "endpointApproval": "ENDPOINT_ART_APPROVED_IDLE_CANONICAL_ONLY",
+  "stageResults": {
+    "guToFeng10": "CANDIDATES_GENERATED_BUT_VISUAL_QA_FAILED",
+    "fengToGu8": "SOURCE_GENERATED_BUT_GRID_EXTRACTION_REJECTED",
+    "idleActualAppQA": "NOT_TESTED_BLOCKED_BY_ASSET_QA",
+    "runningEndpointAudit": "NOT_TESTED",
+    "runningSpecificEndpoints": "UNKNOWN",
+    "final24Cycles": "NOT_TESTED"
+  },
+  "regression": {
+    "targetedTestsPassed": 17,
+    "python": {"passed": 320, "xfailed": 1, "subtestsPassed": 12, "exitCode": 0, "command": ".venv/bin/python -m pytest -q"},
+    "node": {"passed": 216, "failed": 0, "exitCode": 0, "scope": "installer, bridge, historical build fixtures, prototype, reference, standalone-app"},
+    "historicalXfail": "test_visual_audit_findings.py: original frozen Gu work rows retain198 baseline; previously corrected candidate atlas remains unchanged",
+    "gitDiffCheck": "PASS"
+  },
+  "protectedSha256": {
+    "assets/builds/gu/spritesheet.webp": "b6a3f086a9fdb9a4cb7c86d047991e1d3ff9a7a2ab740e4c2f705b42b9d08908",
+    "assets/builds/feng/spritesheet.webp": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+    "assets/rework/v0.1.0/gu/spritesheet.webp": "b5b6b6b4fd437164282c5ba4c3b1de8f4b74e0184148eba344118e5e0fa97968",
+    "assets/transform-overlay.sha256": "8e40d1ed88f0d19dc931f9a13aff0b2b2c2c388d5ccde60aeffb544ee52f983b",
+    "runtime-patch/prototype/transition-player.mjs": "e4f966e421bc0edbc2c15ce70758c37e13e96f9422d59df53bc482c3cb364879",
+    "standalone-app/renderer.mjs": "93927fb181e24867c2b014a9f1c7f2f7d1b27da2e0b6eb40a0077a43ed62dabc",
+    "standalone-app/schedule.mjs": "c30d2536157f2bb8713d6b743d10c25961398f79336aca100224a40ab3ce4c12",
+    ".codex/hooks.json": "22de678d81469f0ccb2c74181e36f7404f773b7eaf1d2efb916c53bbcc40e84f"
+  },
+  "frozenOverlayFrames": {"checked": 18, "allManifestHashesMatch": true},
+  "protectedPathsGitDiffFromPhaseBaseline": "EMPTY",
+  "currentAppReplaced": false,
+  "playerSchedulerHooksModified": false,
+  "tagCreated": false,
+  "qaAppLaunched": false,
+  "cleanup": {"generatedToolTemporaryPngsRemoved": 4, "byteIdenticalProjectCopiesRetained": 4, "emptyGenerationDirectoriesRemoved": 2, "qaAppOrSocketCreated": false},
+  "firstEvidenceCommit": "23071d7a2cb96dff1abf9560936e0f987bcf1a60",
+  "warning": "Automated regression and structure PASS do not approve rejected artwork or substitute for real-window QA"
+}

@@ -1,0 +1,16 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "transparent_background": true,
+  "referenceFiles": [
+    "assets/rework/v0.1.0/manual-transition-endpoints/C-feng-to-gu-entry.png",
+    "assets/rework/v0.1.0/manual-transition-endpoints/D-feng-to-gu-exit.png"
+  ],
+  "attempts": [
+    {"attempt": 1, "retainedSource": "../sources/feng-to-gu-generated-first.png", "result": "GENERATED_BUT_VISUAL_QA_FAILED", "promptFile": "prompt.txt"},
+    {"attempt": 2, "retainedSource": "../sources/feng-to-gu-generated-retry.png", "sourceSize": [1704, 923], "result": "REJECTED_FIXED_GRID_AND_ENDPOINT_CONTINUITY", "promptFile": "retry-prompt.txt", "additionalReference": "../sources/feng-to-gu-generated-first.png"}
+  ],
+  "cliUsed": false,
+  "proceduralCharacterSynthesisUsed": false,
+  "playableFramesEmitted": 0,
+  "approvedForRuntime": false
+}
