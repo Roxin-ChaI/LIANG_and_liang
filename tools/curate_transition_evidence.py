@@ -15,13 +15,15 @@ if __package__ in (None, ""):
 from tools.audit_standalone_transitions import changed_pixel_count
 
 
-def curate(raw: Path, output: Path) -> dict:
+def curate(raw: Path, output: Path, direction: str | None = None) -> dict:
     trace = json.loads((raw / "transition-trace.json").read_text())
     output.mkdir(parents=True, exist_ok=True)
     summary = {"captureKind": trace["captureKind"], "build": trace["build"],
                "timingNote": "frame-gated capture changes pacing; ungated timings measured separately",
                "ungatedTimings": trace["ungatedTimings"], "scenarios": []}
     for scenario in trace["scenarios"]:
+        if direction and f'{scenario["source"]}_to_{scenario["target"]}' != direction:
+            continue
         label = scenario["label"]
         for suffix in ("sheet.png", "window-recording.gif"):
             shutil.copy2(raw / f"{label}-{suffix}", output / f"{label}-{suffix}")
@@ -52,8 +54,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--raw", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--direction", choices=("gu_to_feng", "feng_to_gu"))
     args = parser.parse_args()
-    result = curate(args.raw, args.output)
+    result = curate(args.raw, args.output, args.direction)
     print(json.dumps({"scenarios": [entry["label"] for entry in result["scenarios"]],
                       "output": str(args.output)}, indent=2))
     return 0
