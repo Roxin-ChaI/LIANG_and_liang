@@ -53,10 +53,10 @@ def command(*args: str) -> None:
         raise RuntimeError(f"command failed: {args[0]} ({result.returncode}): {result.stderr.decode('utf-8', 'replace')[:250]}")
 
 
-def source_files() -> list[tuple[Path, Path]]:
+def source_files(gu_atlas: Path | None = None) -> list[tuple[Path, Path]]:
     files = []
     for relative in APP_FILES:
-        source = ROOT / relative
+        source = gu_atlas if relative == "assets/builds/gu/spritesheet.webp" and gu_atlas else ROOT / relative
         if not source.is_file() or source.is_symlink():
             raise RuntimeError(f"missing or unsafe source file: {relative}")
         files.append((source, Path(relative)))
@@ -65,12 +65,12 @@ def source_files() -> list[tuple[Path, Path]]:
     return files
 
 
-def build(destination: Path = DIST) -> dict[str, object]:
+def build(destination: Path = DIST, *, gu_atlas: Path | None = None) -> dict[str, object]:
     if destination.exists() or destination.is_symlink():
         raise RuntimeError("destination already exists; refusing to overwrite")
     if not ELECTRON_APP.is_dir():
         raise RuntimeError("project Electron runtime is not installed")
-    files = source_files()
+    files = source_files(gu_atlas)
     destination.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="liang-app-build-", dir=destination.parent) as temporary:
         temporary_root = Path(temporary)
@@ -119,9 +119,10 @@ def build(destination: Path = DIST) -> dict[str, object]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=DIST)
+    parser.add_argument("--gu-atlas", type=Path, help="explicit candidate input; source frozen atlas is not replaced")
     args = parser.parse_args()
     try:
-        result = build(args.output)
+        result = build(args.output, gu_atlas=args.gu_atlas)
     except (OSError, RuntimeError) as error:
         print(json.dumps({"status": "BUILD_FAILED", "reason": str(error)}))
         return 2

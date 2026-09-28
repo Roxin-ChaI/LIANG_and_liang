@@ -1,0 +1,220 @@
+{
+  "source": "assets/builds/gu/spritesheet.webp",
+  "output": "assets/rework/v0.1.0/gu/spritesheet.webp",
+  "sourceSha256": "b6a3f086a9fdb9a4cb7c86d047991e1d3ff9a7a2ab740e4c2f705b42b9d08908",
+  "candidateSha256": "b5b6b6b4fd437164282c5ba4c3b1de8f4b74e0184148eba344118e5e0fa97968",
+  "operation": "integer translation; no scaling, interpolation, palette edits or reorder",
+  "baseline": 203,
+  "changes": [
+    {
+      "state": "waving",
+      "frame": 0,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "waving",
+      "frame": 1,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "waving",
+      "frame": 2,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "waving",
+      "frame": 3,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "failed",
+      "frame": 0,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "failed",
+      "frame": 1,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "failed",
+      "frame": 2,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "failed",
+      "frame": 3,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "failed",
+      "frame": 4,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "failed",
+      "frame": 5,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "failed",
+      "frame": 6,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "failed",
+      "frame": 7,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "waiting",
+      "frame": 0,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "waiting",
+      "frame": 1,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "waiting",
+      "frame": 2,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "waiting",
+      "frame": 3,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "waiting",
+      "frame": 4,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "waiting",
+      "frame": 5,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "running",
+      "frame": 0,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "running",
+      "frame": 1,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "running",
+      "frame": 2,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "running",
+      "frame": 3,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "running",
+      "frame": 4,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "running",
+      "frame": 5,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "review",
+      "frame": 0,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "review",
+      "frame": 1,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "review",
+      "frame": 2,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "review",
+      "frame": 3,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "review",
+      "frame": 4,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    },
+    {
+      "state": "review",
+      "frame": 5,
+      "dy": 5,
+      "beforeBaseline": 198,
+      "afterBaseline": 203
+    }
+  ]
+}
