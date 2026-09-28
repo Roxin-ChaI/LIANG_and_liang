@@ -1,0 +1,348 @@
+{
+  "status": "KEYFRAME_QA_FAIL",
+  "parentConstraintVerdict": "KEYFRAME_QA_FAIL",
+  "parentConstraintEvidence": "qa/parent-constraint-resolution.json",
+  "sourceSha256": "ba80830b5de8c3ff965066d7f47fc2ebfed925d9bc6f1de886b6ccfeff23d7c4",
+  "sourceSize": [
+    2100,
+    749
+  ],
+  "poseCount": 5,
+  "newArtworkCount": 3,
+  "fullAnimationGenerated": false,
+  "appIntegrated": false,
+  "runtimeEligible": false,
+  "manualApproval": "PENDING",
+  "commonNearestScale": 0.2849002849002849,
+  "perPoseScale": false,
+  "bboxConvention": "half-open; anatomical head/shoulder guides are manual approximate visual annotations, not segmentation ground truth; headCap0:55/body70:208 are fixed alpha reference bands, not anatomy",
+  "headMeasurement": "head-cap0:55 proxy only; anatomical head/shoulders require independent manual annotation, not assumed from specification targets",
+  "frames": [
+    {
+      "id": "A",
+      "origin": "exact approved PNG",
+      "alphaBbox": [
+        54,
+        4,
+        122,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        54,
+        4,
+        122,
+        70
+      ],
+      "bodyReferenceBbox": [
+        69,
+        70,
+        122,
+        204
+      ],
+      "bodyBandCenterX": 95.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        9357
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "keys/A.png",
+      "sha256": "6c925bbcd1386cad107cdffb5aa7569d9ace295790cb9542d7dd0629f074cab3",
+      "headCapBbox0to55": [
+        54,
+        4,
+        122,
+        55
+      ]
+    },
+    {
+      "id": "K1",
+      "origin": "generated intermediate artwork, not transformed endpoints",
+      "sourceRegion": [
+        0,
+        0,
+        752,
+        749
+      ],
+      "sourceResizeSize": [
+        214,
+        213
+      ],
+      "commonScale": 0.2849002849002849,
+      "integerShift": [
+        -52,
+        -3
+      ],
+      "alphaHardenedPixels": 9176,
+      "lowerBodyAnchorX": 96.5,
+      "headCapBbox0to55": [
+        62,
+        7,
+        119,
+        55
+      ],
+      "alphaBbox": [
+        62,
+        7,
+        122,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        62,
+        7,
+        119,
+        70
+      ],
+      "bodyReferenceBbox": [
+        62,
+        70,
+        122,
+        204
+      ],
+      "bodyBandCenterX": 92.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        8451
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "keys/K1.png",
+      "sha256": "5db31a23a5c89ac0ed5d244092e4ac260eab53b38486ba09e134fa97fb2b0156"
+    },
+    {
+      "id": "K2",
+      "origin": "generated intermediate artwork, not transformed endpoints",
+      "sourceRegion": [
+        752,
+        0,
+        1319,
+        749
+      ],
+      "sourceResizeSize": [
+        162,
+        213
+      ],
+      "commonScale": 0.2849002849002849,
+      "integerShift": [
+        13,
+        -3
+      ],
+      "alphaHardenedPixels": 11560,
+      "lowerBodyAnchorX": 96.0,
+      "headCapBbox0to55": [
+        66,
+        6,
+        121,
+        55
+      ],
+      "alphaBbox": [
+        53,
+        6,
+        139,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        63,
+        6,
+        128,
+        70
+      ],
+      "bodyReferenceBbox": [
+        53,
+        70,
+        139,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        10537
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "keys/K2.png",
+      "sha256": "651c626fd47d76c2e77c44b7c00d8c755bd361c405bc49fd62e03670a10fd88f"
+    },
+    {
+      "id": "K3",
+      "origin": "generated intermediate artwork, not transformed endpoints",
+      "sourceRegion": [
+        1319,
+        0,
+        2100,
+        749
+      ],
+      "sourceResizeSize": [
+        223,
+        213
+      ],
+      "commonScale": 0.2849002849002849,
+      "integerShift": [
+        6,
+        -3
+      ],
+      "alphaHardenedPixels": 13686,
+      "lowerBodyAnchorX": 95.5,
+      "headCapBbox0to55": [
+        61,
+        4,
+        116,
+        55
+      ],
+      "alphaBbox": [
+        42,
+        4,
+        149,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        51,
+        4,
+        136,
+        70
+      ],
+      "bodyReferenceBbox": [
+        42,
+        70,
+        149,
+        204
+      ],
+      "bodyBandCenterX": 95.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        12456
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "keys/K3.png",
+      "sha256": "41e7493cc2a51cdefa577418709891f80f0f379f648bb96be98f3199bb60f42e"
+    },
+    {
+      "id": "B",
+      "origin": "exact approved PNG",
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "bodyReferenceBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        11975
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false,
+      "file": "keys/B.png",
+      "sha256": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+      "headCapBbox0to55": [
+        64,
+        4,
+        113,
+        55
+      ]
+    }
+  ],
+  "adjacentPairs": [
+    {
+      "pair": "A->K1",
+      "baselineDelta": 0,
+      "headCapCenterDelta": [
+        2.5,
+        1.5
+      ],
+      "bodyBandBboxDelta": [
+        -7,
+        0,
+        0,
+        0
+      ],
+      "rgbaChangedPixels": 9953
+    },
+    {
+      "pair": "K1->K2",
+      "baselineDelta": 0,
+      "headCapCenterDelta": [
+        3.0,
+        -0.5
+      ],
+      "bodyBandBboxDelta": [
+        -9,
+        0,
+        17,
+        0
+      ],
+      "rgbaChangedPixels": 11915
+    },
+    {
+      "pair": "K2->K3",
+      "baselineDelta": 0,
+      "headCapCenterDelta": [
+        -5.0,
+        -1.0
+      ],
+      "bodyBandBboxDelta": [
+        -11,
+        0,
+        10,
+        0
+      ],
+      "rgbaChangedPixels": 13326
+    },
+    {
+      "pair": "K3->B",
+      "baselineDelta": 0,
+      "headCapCenterDelta": [
+        0.0,
+        0.0
+      ],
+      "bodyBandBboxDelta": [
+        2,
+        0,
+        -1,
+        0
+      ],
+      "rgbaChangedPixels": 12838
+    }
+  ],
+  "structuralPass": true,
+  "independentVisualQa": "AWAITING_MANUAL_KEYFRAME_APPROVAL",
+  "landmarkEvidence": "qa/landmark-comparison.json"
+}

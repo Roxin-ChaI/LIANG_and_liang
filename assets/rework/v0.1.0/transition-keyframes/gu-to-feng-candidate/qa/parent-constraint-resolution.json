@@ -1,0 +1,14 @@
+{
+  "reviewedBy": "parent",
+  "verdict": "KEYFRAME_QA_FAIL",
+  "independentVerdictPreserved": "AWAITING_MANUAL_KEYFRAME_APPROVAL",
+  "scope": "static three-key candidate gate against committed K1 Charge specification; no claim of measured App playback",
+  "observed": [
+    {"pair":"A->K1","severity":"P1","reason":"K1 should remain near Gu with tiny change, but visible head width falls68->56 and approximate height80->65 before appreciable torso growth; hair top4->8. This is too much early anatomy change for Charge."},
+    {"pair":"A->K1","severity":"P1","reason":"Resting hand leaps to chest rather than just starting to leave rest; K2 already reaches chin, concentrating the intended hand trajectory too early."}
+  ],
+  "evidence": ["contact-sheet.png", "pair-1.png", "landmark-comparison.json", "../../gu-to-feng-spec/specification.json"],
+  "manualApproval": "PENDING",
+  "remainingFiveFramesAllowed": false,
+  "runtimeEligible": false
+}

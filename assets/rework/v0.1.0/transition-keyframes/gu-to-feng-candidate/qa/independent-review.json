@@ -1,0 +1,24 @@
+{
+  "reviewer": "manual_endpoint_review",
+  "candidate": "gu-to-feng-candidate",
+  "visualVerdict": "AWAITING_MANUAL_KEYFRAME_APPROVAL",
+  "annotationUncertainty": "Manual anatomical approximations, roughly +/-3px; hand, neck and shoulder excluded from head bbox. These are not segmentation masks.",
+  "frames": [
+    {"id":"A","headApproxBbox":[54,4,122,84],"shoulderGuidePoints":[[75,83],[108,83]],"visualNotes":"Frozen Gu, large head, relaxed arms, narrow stance."},
+    {"id":"K1","headApproxBbox":[62,8,118,73],"shoulderGuidePoints":[[76,71],[110,73]],"visualNotes":"Same hair/glasses; head noticeably smaller earlier than torso strengthening; hand rises toward chest."},
+    {"id":"K2","headApproxBbox":[66,6,122,65],"shoulderGuidePoints":[[65,69],[125,69]],"visualNotes":"Stronger torso/wider stance, hand near chin; head sits few pixels farther right than neighbors."},
+    {"id":"K3","headApproxBbox":[61,4,116,63],"shoulderGuidePoints":[[59,65],[130,67]],"visualNotes":"Feng-like chin gesture and broad stance; no visible bulk overshoot; complete shoes/hands."},
+    {"id":"B","headApproxBbox":[64,4,113,58],"shoulderGuidePoints":[[60,65],[128,65]],"visualNotes":"Frozen Feng; K3 intended ending pose, slightly narrower/angular head."}
+  ],
+  "adjacentPairs": [
+    {"pair":"A->K1","verdict":"warning","reason":"Visible head-size/chin-height change while body remains slender; static gap alone does not establish playback snapping."},
+    {"pair":"K1->K2","verdict":"warning","reason":"Hand/stance strengthen coherently, head shifts right about3-4px."},
+    {"pair":"K2->K3","verdict":"warning","reason":"Strengthening progresses, head returns left about5px; future in-betweens must not introduce sway."},
+    {"pair":"K3->B","verdict":"pass","reason":"Gesture/stance/volume converge; slightly narrower/angular face without terminal width collapse."}
+  ],
+  "observedIssues": [
+    {"id":"EARLY_HEAD_CHANGE","severity":"P2","frames":["A","K1"],"note":"Review early head-size change manually; do not infer playback from static keys."},
+    {"id":"HEAD_CENTER_DETOUR","severity":"P2","frames":["K1","K2","K3"],"note":"Lateral head-center detour despite stable feet."}
+  ],
+  "scope":"Static key poses only; no human approval, full animation, Running approval or App launch. Parent's specification constraint resolution is recorded separately."
+}

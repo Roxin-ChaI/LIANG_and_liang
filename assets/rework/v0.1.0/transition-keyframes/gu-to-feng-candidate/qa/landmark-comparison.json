@@ -1,0 +1,270 @@
+{
+  "status": "AWAITING_MANUAL_KEYFRAME_APPROVAL",
+  "manualApproval": "PENDING",
+  "runtimeEligible": false,
+  "annotationConvention": "independent approximate anatomical ROIs; half-open logical192x208 coordinates; not automatic segmentation",
+  "annotationUncertainty": "Manual anatomical approximations, roughly +/-3px; hand, neck and shoulder excluded from head bbox. These are not segmentation masks.",
+  "reviewer": "manual_endpoint_review",
+  "frames": [
+    {
+      "id": "A",
+      "headApproxBbox": [
+        54,
+        4,
+        122,
+        84
+      ],
+      "headApproxCenter": [
+        88.0,
+        44.0
+      ],
+      "shoulderGuidePoints": [
+        [
+          75,
+          83
+        ],
+        [
+          108,
+          83
+        ]
+      ],
+      "shoulderGuideWidth": 33,
+      "bodyReferenceBbox": [
+        69,
+        70,
+        122,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBandCenterX": 95.5,
+      "visualNotes": "Frozen Gu, large head, relaxed arms, narrow stance."
+    },
+    {
+      "id": "K1",
+      "headApproxBbox": [
+        62,
+        8,
+        118,
+        73
+      ],
+      "headApproxCenter": [
+        90.0,
+        40.5
+      ],
+      "shoulderGuidePoints": [
+        [
+          76,
+          71
+        ],
+        [
+          110,
+          73
+        ]
+      ],
+      "shoulderGuideWidth": 34,
+      "bodyReferenceBbox": [
+        62,
+        70,
+        122,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBandCenterX": 92.0,
+      "visualNotes": "Same hair/glasses; head noticeably smaller earlier than torso strengthening; hand rises toward chest."
+    },
+    {
+      "id": "K2",
+      "headApproxBbox": [
+        66,
+        6,
+        122,
+        65
+      ],
+      "headApproxCenter": [
+        94.0,
+        35.5
+      ],
+      "shoulderGuidePoints": [
+        [
+          65,
+          69
+        ],
+        [
+          125,
+          69
+        ]
+      ],
+      "shoulderGuideWidth": 60,
+      "bodyReferenceBbox": [
+        53,
+        70,
+        139,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBandCenterX": 96.0,
+      "visualNotes": "Stronger torso/wider stance, hand near chin; head sits few pixels farther right than neighbors."
+    },
+    {
+      "id": "K3",
+      "headApproxBbox": [
+        61,
+        4,
+        116,
+        63
+      ],
+      "headApproxCenter": [
+        88.5,
+        33.5
+      ],
+      "shoulderGuidePoints": [
+        [
+          59,
+          65
+        ],
+        [
+          130,
+          67
+        ]
+      ],
+      "shoulderGuideWidth": 71,
+      "bodyReferenceBbox": [
+        42,
+        70,
+        149,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBandCenterX": 95.5,
+      "visualNotes": "Feng-like chin gesture and broad stance; no visible bulk overshoot; complete shoes/hands."
+    },
+    {
+      "id": "B",
+      "headApproxBbox": [
+        64,
+        4,
+        113,
+        58
+      ],
+      "headApproxCenter": [
+        88.5,
+        31.0
+      ],
+      "shoulderGuidePoints": [
+        [
+          60,
+          65
+        ],
+        [
+          128,
+          65
+        ]
+      ],
+      "shoulderGuideWidth": 68,
+      "bodyReferenceBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBandCenterX": 96.0,
+      "visualNotes": "Frozen Feng; K3 intended ending pose, slightly narrower/angular head."
+    }
+  ],
+  "adjacentPairs": [
+    {
+      "pair": "A->K1",
+      "verdict": "warning",
+      "reason": "Visible head-size/chin-height change while body remains slender; static gap alone does not establish playback snapping.",
+      "headCenterDelta": [
+        2.0,
+        -3.5
+      ],
+      "baselineDelta": 0,
+      "bodyBboxDelta": [
+        -7,
+        0,
+        0,
+        0
+      ],
+      "shoulderWidthDelta": 1,
+      "visualBodyCenterDelta": -3.5
+    },
+    {
+      "pair": "K1->K2",
+      "verdict": "warning",
+      "reason": "Hand/stance strengthen coherently, head shifts right about3-4px.",
+      "headCenterDelta": [
+        4.0,
+        -5.0
+      ],
+      "baselineDelta": 0,
+      "bodyBboxDelta": [
+        -9,
+        0,
+        17,
+        0
+      ],
+      "shoulderWidthDelta": 26,
+      "visualBodyCenterDelta": 4.0
+    },
+    {
+      "pair": "K2->K3",
+      "verdict": "warning",
+      "reason": "Strengthening progresses, head returns left about5px; future in-betweens must not introduce sway.",
+      "headCenterDelta": [
+        -5.5,
+        -2.0
+      ],
+      "baselineDelta": 0,
+      "bodyBboxDelta": [
+        -11,
+        0,
+        10,
+        0
+      ],
+      "shoulderWidthDelta": 11,
+      "visualBodyCenterDelta": -0.5
+    },
+    {
+      "pair": "K3->B",
+      "verdict": "pass",
+      "reason": "Gesture/stance/volume converge; slightly narrower/angular face without terminal width collapse.",
+      "headCenterDelta": [
+        0.0,
+        -2.5
+      ],
+      "baselineDelta": 0,
+      "bodyBboxDelta": [
+        2,
+        0,
+        -1,
+        0
+      ],
+      "shoulderWidthDelta": -3,
+      "visualBodyCenterDelta": 0.5
+    }
+  ],
+  "observedIssues": [
+    {
+      "id": "EARLY_HEAD_CHANGE",
+      "severity": "P2",
+      "frames": [
+        "A",
+        "K1"
+      ],
+      "note": "Review early head-size change manually; do not infer playback from static keys."
+    },
+    {
+      "id": "HEAD_CENTER_DETOUR",
+      "severity": "P2",
+      "frames": [
+        "K1",
+        "K2",
+        "K3"
+      ],
+      "note": "Lateral head-center detour despite stable feet."
+    }
+  ]
+}

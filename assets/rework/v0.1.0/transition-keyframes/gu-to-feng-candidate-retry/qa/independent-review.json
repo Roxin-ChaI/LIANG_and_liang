@@ -1,0 +1,25 @@
+{
+  "reviewer": "manual_endpoint_review",
+  "candidate": "gu-to-feng-candidate-retry",
+  "visualVerdict": "KEYFRAME_QA_FAIL",
+  "annotationUncertainty": "目测解剖近似，约 +/-3px；半开 logical192x208 坐标。头框排除手、颈肩；肩点不是手臂外轮廓或分割真值。",
+  "frames": [
+    {"id":"A","headApproxBbox":[54,4,122,84],"shoulderGuidePoints":[[75,83],[108,83]],"visualNotes":"固定 Gu：大头、低肩、双手下垂、窄站姿。"},
+    {"id":"K1","headApproxBbox":[63,5,120,73],"shoulderGuidePoints":[[75,73],[110,73]],"visualNotes":"双手下垂保留 Gu 姿态；头57x68，较 A68x80 明显缩小，脸和下巴更短。头顶未明显下落，但比例提前变化。"},
+    {"id":"K2","headApproxBbox":[68,5,123,64],"shoulderGuidePoints":[[65,68],[127,70]],"visualNotes":"抬手至胸前，肩胸/站距扩大；头55x59，中心位于邻帧右侧。"},
+    {"id":"K3","headApproxBbox":[64,4,116,62],"shoulderGuidePoints":[[60,65],[130,67]],"visualNotes":"扶下巴、宽肩/站姿接近 Feng；头52x58，完整，无明显体积过冲。"},
+    {"id":"B","headApproxBbox":[64,4,113,58],"shoulderGuidePoints":[[60,65],[128,65]],"visualNotes":"固定 Feng：与 K3 同一终点姿态族，脸略窄/更有角度。"}
+  ],
+  "adjacentPairs": [
+    {"pair":"A->K1","verdict":"fail","reason":"保留站姿却提前显著缩小头部及脸长，未满足 Charge 仍接近 Gu 的小幅变化要求；依据阶段身份和比例，不是推断播放跳帧。"},
+    {"pair":"K1->K2","verdict":"warning","reason":"下垂手到胸前、身体强化合理；K2 头仍偏小，中心右移约4px。"},
+    {"pair":"K2->K3","verdict":"warning","reason":"胸前手到扶下巴、身体增强合理；头中心回移约5px，后续需保持连续。"},
+    {"pair":"K3->B","verdict":"pass","reason":"姿态、肩胸、站距和视觉中心收敛到 canonical Feng，未见此前末端突然收窄。"}
+  ],
+  "observedIssues": [
+    {"id":"K1_PREMATURE_HEAD_SHRINK","severity":"P1","frames":["A","K1"],"note":"K1 近 Gu 阶段未满足，阻止关键帧通过。"},
+    {"id":"K2_SMALL_HEAD","severity":"P2","frames":["K2"],"note":"中间阶段头偏短，需结合 K1 修复复核。"},
+    {"id":"HEAD_CENTER_DETOUR","severity":"P2","frames":["K1","K2","K3"],"note":"右移再左移；脚底注册稳定不能替代头部连续性。"}
+  ],
+  "scope":"仅三张静态关键帧。本次按明确 Charge 阶段约束判 FAIL；首轮独立静态 verdict 保留，parent constraint resolution 单独记录。无人工批准/完整动画/Running/App 启动。"
+}

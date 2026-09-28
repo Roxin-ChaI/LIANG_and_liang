@@ -1,0 +1,278 @@
+{
+  "status": "KEYFRAME_QA_FAIL",
+  "manualApproval": "PENDING",
+  "runtimeEligible": false,
+  "annotationConvention": "independent approximate anatomical ROIs; half-open logical192x208 coordinates; not automatic segmentation",
+  "annotationUncertainty": "\u76ee\u6d4b\u89e3\u5256\u8fd1\u4f3c\uff0c\u7ea6 +/-3px\uff1b\u534a\u5f00 logical192x208 \u5750\u6807\u3002\u5934\u6846\u6392\u9664\u624b\u3001\u9888\u80a9\uff1b\u80a9\u70b9\u4e0d\u662f\u624b\u81c2\u5916\u8f6e\u5ed3\u6216\u5206\u5272\u771f\u503c\u3002",
+  "reviewer": "manual_endpoint_review",
+  "frames": [
+    {
+      "id": "A",
+      "headApproxBbox": [
+        54,
+        4,
+        122,
+        84
+      ],
+      "headApproxCenter": [
+        88.0,
+        44.0
+      ],
+      "shoulderGuidePoints": [
+        [
+          75,
+          83
+        ],
+        [
+          108,
+          83
+        ]
+      ],
+      "shoulderGuideWidth": 33,
+      "bodyReferenceBbox": [
+        69,
+        70,
+        122,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBandCenterX": 95.5,
+      "visualNotes": "\u56fa\u5b9a Gu\uff1a\u5927\u5934\u3001\u4f4e\u80a9\u3001\u53cc\u624b\u4e0b\u5782\u3001\u7a84\u7ad9\u59ff\u3002"
+    },
+    {
+      "id": "K1",
+      "headApproxBbox": [
+        63,
+        5,
+        120,
+        73
+      ],
+      "headApproxCenter": [
+        91.5,
+        39.0
+      ],
+      "shoulderGuidePoints": [
+        [
+          75,
+          73
+        ],
+        [
+          110,
+          73
+        ]
+      ],
+      "shoulderGuideWidth": 35,
+      "bodyReferenceBbox": [
+        66,
+        70,
+        122,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBandCenterX": 94.0,
+      "visualNotes": "\u53cc\u624b\u4e0b\u5782\u4fdd\u7559 Gu \u59ff\u6001\uff1b\u593457x68\uff0c\u8f83 A68x80 \u660e\u663e\u7f29\u5c0f\uff0c\u8138\u548c\u4e0b\u5df4\u66f4\u77ed\u3002\u5934\u9876\u672a\u660e\u663e\u4e0b\u843d\uff0c\u4f46\u6bd4\u4f8b\u63d0\u524d\u53d8\u5316\u3002"
+    },
+    {
+      "id": "K2",
+      "headApproxBbox": [
+        68,
+        5,
+        123,
+        64
+      ],
+      "headApproxCenter": [
+        95.5,
+        34.5
+      ],
+      "shoulderGuidePoints": [
+        [
+          65,
+          68
+        ],
+        [
+          127,
+          70
+        ]
+      ],
+      "shoulderGuideWidth": 62,
+      "bodyReferenceBbox": [
+        53,
+        70,
+        139,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBandCenterX": 96.0,
+      "visualNotes": "\u62ac\u624b\u81f3\u80f8\u524d\uff0c\u80a9\u80f8/\u7ad9\u8ddd\u6269\u5927\uff1b\u593455x59\uff0c\u4e2d\u5fc3\u4f4d\u4e8e\u90bb\u5e27\u53f3\u4fa7\u3002"
+    },
+    {
+      "id": "K3",
+      "headApproxBbox": [
+        64,
+        4,
+        116,
+        62
+      ],
+      "headApproxCenter": [
+        90.0,
+        33.0
+      ],
+      "shoulderGuidePoints": [
+        [
+          60,
+          65
+        ],
+        [
+          130,
+          67
+        ]
+      ],
+      "shoulderGuideWidth": 70,
+      "bodyReferenceBbox": [
+        45,
+        70,
+        149,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBandCenterX": 97.0,
+      "visualNotes": "\u6276\u4e0b\u5df4\u3001\u5bbd\u80a9/\u7ad9\u59ff\u63a5\u8fd1 Feng\uff1b\u593452x58\uff0c\u5b8c\u6574\uff0c\u65e0\u660e\u663e\u4f53\u79ef\u8fc7\u51b2\u3002"
+    },
+    {
+      "id": "B",
+      "headApproxBbox": [
+        64,
+        4,
+        113,
+        58
+      ],
+      "headApproxCenter": [
+        88.5,
+        31.0
+      ],
+      "shoulderGuidePoints": [
+        [
+          60,
+          65
+        ],
+        [
+          128,
+          65
+        ]
+      ],
+      "shoulderGuideWidth": 68,
+      "bodyReferenceBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBandCenterX": 96.0,
+      "visualNotes": "\u56fa\u5b9a Feng\uff1a\u4e0e K3 \u540c\u4e00\u7ec8\u70b9\u59ff\u6001\u65cf\uff0c\u8138\u7565\u7a84/\u66f4\u6709\u89d2\u5ea6\u3002"
+    }
+  ],
+  "adjacentPairs": [
+    {
+      "pair": "A->K1",
+      "verdict": "fail",
+      "reason": "\u4fdd\u7559\u7ad9\u59ff\u5374\u63d0\u524d\u663e\u8457\u7f29\u5c0f\u5934\u90e8\u53ca\u8138\u957f\uff0c\u672a\u6ee1\u8db3 Charge \u4ecd\u63a5\u8fd1 Gu \u7684\u5c0f\u5e45\u53d8\u5316\u8981\u6c42\uff1b\u4f9d\u636e\u9636\u6bb5\u8eab\u4efd\u548c\u6bd4\u4f8b\uff0c\u4e0d\u662f\u63a8\u65ad\u64ad\u653e\u8df3\u5e27\u3002",
+      "headCenterDelta": [
+        3.5,
+        -5.0
+      ],
+      "baselineDelta": 0,
+      "bodyBboxDelta": [
+        -3,
+        0,
+        0,
+        0
+      ],
+      "shoulderWidthDelta": 2,
+      "visualBodyCenterDelta": -1.5
+    },
+    {
+      "pair": "K1->K2",
+      "verdict": "warning",
+      "reason": "\u4e0b\u5782\u624b\u5230\u80f8\u524d\u3001\u8eab\u4f53\u5f3a\u5316\u5408\u7406\uff1bK2 \u5934\u4ecd\u504f\u5c0f\uff0c\u4e2d\u5fc3\u53f3\u79fb\u7ea64px\u3002",
+      "headCenterDelta": [
+        4.0,
+        -4.5
+      ],
+      "baselineDelta": 0,
+      "bodyBboxDelta": [
+        -13,
+        0,
+        17,
+        0
+      ],
+      "shoulderWidthDelta": 27,
+      "visualBodyCenterDelta": 2.0
+    },
+    {
+      "pair": "K2->K3",
+      "verdict": "warning",
+      "reason": "\u80f8\u524d\u624b\u5230\u6276\u4e0b\u5df4\u3001\u8eab\u4f53\u589e\u5f3a\u5408\u7406\uff1b\u5934\u4e2d\u5fc3\u56de\u79fb\u7ea65px\uff0c\u540e\u7eed\u9700\u4fdd\u6301\u8fde\u7eed\u3002",
+      "headCenterDelta": [
+        -5.5,
+        -1.5
+      ],
+      "baselineDelta": 0,
+      "bodyBboxDelta": [
+        -8,
+        0,
+        10,
+        0
+      ],
+      "shoulderWidthDelta": 8,
+      "visualBodyCenterDelta": 1.0
+    },
+    {
+      "pair": "K3->B",
+      "verdict": "pass",
+      "reason": "\u59ff\u6001\u3001\u80a9\u80f8\u3001\u7ad9\u8ddd\u548c\u89c6\u89c9\u4e2d\u5fc3\u6536\u655b\u5230 canonical Feng\uff0c\u672a\u89c1\u6b64\u524d\u672b\u7aef\u7a81\u7136\u6536\u7a84\u3002",
+      "headCenterDelta": [
+        -1.5,
+        -2.0
+      ],
+      "baselineDelta": 0,
+      "bodyBboxDelta": [
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "shoulderWidthDelta": -2,
+      "visualBodyCenterDelta": -1.0
+    }
+  ],
+  "observedIssues": [
+    {
+      "id": "K1_PREMATURE_HEAD_SHRINK",
+      "severity": "P1",
+      "frames": [
+        "A",
+        "K1"
+      ],
+      "note": "K1 \u8fd1 Gu \u9636\u6bb5\u672a\u6ee1\u8db3\uff0c\u963b\u6b62\u5173\u952e\u5e27\u901a\u8fc7\u3002"
+    },
+    {
+      "id": "K2_SMALL_HEAD",
+      "severity": "P2",
+      "frames": [
+        "K2"
+      ],
+      "note": "\u4e2d\u95f4\u9636\u6bb5\u5934\u504f\u77ed\uff0c\u9700\u7ed3\u5408 K1 \u4fee\u590d\u590d\u6838\u3002"
+    },
+    {
+      "id": "HEAD_CENTER_DETOUR",
+      "severity": "P2",
+      "frames": [
+        "K1",
+        "K2",
+        "K3"
+      ],
+      "note": "\u53f3\u79fb\u518d\u5de6\u79fb\uff1b\u811a\u5e95\u6ce8\u518c\u7a33\u5b9a\u4e0d\u80fd\u66ff\u4ee3\u5934\u90e8\u8fde\u7eed\u6027\u3002"
+    }
+  ]
+}

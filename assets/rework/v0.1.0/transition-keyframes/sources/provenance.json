@@ -1,0 +1,16 @@
+{
+  "generationMode": "built-in imagegen; no CLI",
+  "job": "three intermediate key poses only, coherent K1/K2/K3 family",
+  "attemptCount": 2,
+  "fullAnimationGenerated": false,
+  "appIntegrated": false,
+  "sourceFiles": [
+    {"file": "gu-to-feng-three-keys.png", "sha256": "ba80830b5de8c3ff965066d7f47fc2ebfed925d9bc6f1de886b6ccfeff23d7c4", "size": [2100, 749], "workerQa": "three complete separated figures, but K1 hand too high, K2 already at chin, K3 oversized head relative to approved Feng"},
+    {"file": "gu-to-feng-three-keys-retry.png", "sha256": "3ab9e1349074cb695d4c08c6c9f3dd5a730d22b1cc88ab44e54ad9f809bb39f1", "size": [2098, 749], "workerQa": "hand progression improved rest to abdomen to chin; K1 head still undersized relative to approved Gu"}
+  ],
+  "promptSet": ["../gu-to-feng-spec/keyframe-prompt.md", "../gu-to-feng-candidate-retry/targeted-repair-prompt.md"],
+  "references": ["../../manual-transition-endpoints/A-gu-to-feng-entry.png", "../../manual-transition-endpoints/B-gu-to-feng-exit.png", "../gu-to-feng-spec/layout-guide.png"],
+  "temporarySelectedSources": "removed only after project copy SHA256 matched",
+  "runtimeEligible": false,
+  "manualApproval": "PENDING"
+}
