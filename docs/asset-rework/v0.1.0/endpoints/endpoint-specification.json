@@ -1,0 +1,556 @@
+{
+  "schemaVersion": 1,
+  "status": "SPECIFICATION_ONLY",
+  "normalCell": [
+    192,
+    208
+  ],
+  "logicalAnchor": {
+    "x": 96,
+    "baselineY": 203
+  },
+  "bboxConvention": "half-open [left,top,right,bottom], normal-cell coordinates",
+  "canonicalGu": "gu-idle-00.png",
+  "canonicalFeng": "feng-idle-00.png",
+  "stateMatchedReferences": [
+    {
+      "form": "gu",
+      "state": "idle",
+      "row": 0,
+      "frame": 0,
+      "referenceFile": "gu-idle-00.png",
+      "atlas": "assets/rework/v0.1.0/gu/spritesheet.webp",
+      "atlasSha256": "b5b6b6b4fd437164282c5ba4c3b1de8f4b74e0184148eba344118e5e0fa97968",
+      "alphaBbox": [
+        54,
+        4,
+        122,
+        204
+      ],
+      "headReferenceBbox": [
+        54,
+        4,
+        122,
+        70
+      ],
+      "bodyReferenceBbox": [
+        69,
+        70,
+        122,
+        204
+      ],
+      "shoeReferenceBbox": [
+        70,
+        190,
+        119,
+        204
+      ],
+      "pixelSha256": "e12f8f315e36d704a910406d1a8b9a0a9ea7779b3b61b3a92443cdf7b3be72fb",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    },
+    {
+      "form": "gu",
+      "state": "running",
+      "row": 7,
+      "frame": 0,
+      "referenceFile": "gu-running-00.png",
+      "atlas": "assets/rework/v0.1.0/gu/spritesheet.webp",
+      "atlasSha256": "b5b6b6b4fd437164282c5ba4c3b1de8f4b74e0184148eba344118e5e0fa97968",
+      "alphaBbox": [
+        60,
+        11,
+        132,
+        204
+      ],
+      "headReferenceBbox": [
+        60,
+        11,
+        131,
+        70
+      ],
+      "bodyReferenceBbox": [
+        68,
+        70,
+        132,
+        204
+      ],
+      "shoeReferenceBbox": [
+        71,
+        190,
+        130,
+        204
+      ],
+      "pixelSha256": "485deb080bb065fabc2a7647f504f05230cd2baff2528d6bf40cb04d22a330b1",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    },
+    {
+      "form": "gu",
+      "state": "running",
+      "row": 7,
+      "frame": 1,
+      "referenceFile": "gu-running-01.png",
+      "atlas": "assets/rework/v0.1.0/gu/spritesheet.webp",
+      "atlasSha256": "b5b6b6b4fd437164282c5ba4c3b1de8f4b74e0184148eba344118e5e0fa97968",
+      "alphaBbox": [
+        58,
+        10,
+        133,
+        204
+      ],
+      "headReferenceBbox": [
+        58,
+        10,
+        130,
+        70
+      ],
+      "bodyReferenceBbox": [
+        59,
+        70,
+        133,
+        204
+      ],
+      "shoeReferenceBbox": [
+        69,
+        190,
+        129,
+        204
+      ],
+      "pixelSha256": "b4f628f12aa9075e1d5898ab6851acbc8789ed90083be514642e87f43533b68c",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    },
+    {
+      "form": "gu",
+      "state": "running",
+      "row": 7,
+      "frame": 2,
+      "referenceFile": "gu-running-02.png",
+      "atlas": "assets/rework/v0.1.0/gu/spritesheet.webp",
+      "atlasSha256": "b5b6b6b4fd437164282c5ba4c3b1de8f4b74e0184148eba344118e5e0fa97968",
+      "alphaBbox": [
+        60,
+        11,
+        131,
+        204
+      ],
+      "headReferenceBbox": [
+        60,
+        11,
+        131,
+        70
+      ],
+      "bodyReferenceBbox": [
+        60,
+        70,
+        131,
+        204
+      ],
+      "shoeReferenceBbox": [
+        70,
+        190,
+        129,
+        204
+      ],
+      "pixelSha256": "6e7c5b6732ebd073fdc26ac39676645dddb9140aed2959555856ac681a85a672",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    },
+    {
+      "form": "gu",
+      "state": "running",
+      "row": 7,
+      "frame": 3,
+      "referenceFile": "gu-running-03.png",
+      "atlas": "assets/rework/v0.1.0/gu/spritesheet.webp",
+      "atlasSha256": "b5b6b6b4fd437164282c5ba4c3b1de8f4b74e0184148eba344118e5e0fa97968",
+      "alphaBbox": [
+        60,
+        12,
+        133,
+        204
+      ],
+      "headReferenceBbox": [
+        60,
+        12,
+        131,
+        70
+      ],
+      "bodyReferenceBbox": [
+        66,
+        70,
+        133,
+        204
+      ],
+      "shoeReferenceBbox": [
+        70,
+        190,
+        130,
+        204
+      ],
+      "pixelSha256": "3fb5f81cd9b35d6cbebe4cc37b08950ac95a6d078a1d36872368110a278f9b8d",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    },
+    {
+      "form": "gu",
+      "state": "running",
+      "row": 7,
+      "frame": 4,
+      "referenceFile": "gu-running-04.png",
+      "atlas": "assets/rework/v0.1.0/gu/spritesheet.webp",
+      "atlasSha256": "b5b6b6b4fd437164282c5ba4c3b1de8f4b74e0184148eba344118e5e0fa97968",
+      "alphaBbox": [
+        60,
+        10,
+        132,
+        204
+      ],
+      "headReferenceBbox": [
+        60,
+        10,
+        130,
+        70
+      ],
+      "bodyReferenceBbox": [
+        60,
+        70,
+        132,
+        204
+      ],
+      "shoeReferenceBbox": [
+        70,
+        190,
+        129,
+        204
+      ],
+      "pixelSha256": "4361b517242feb5eaa3fed2a0fd13d161eb4a1944f41be4f21e00d6624cb7fde",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    },
+    {
+      "form": "gu",
+      "state": "running",
+      "row": 7,
+      "frame": 5,
+      "referenceFile": "gu-running-05.png",
+      "atlas": "assets/rework/v0.1.0/gu/spritesheet.webp",
+      "atlasSha256": "b5b6b6b4fd437164282c5ba4c3b1de8f4b74e0184148eba344118e5e0fa97968",
+      "alphaBbox": [
+        60,
+        11,
+        132,
+        204
+      ],
+      "headReferenceBbox": [
+        60,
+        11,
+        129,
+        70
+      ],
+      "bodyReferenceBbox": [
+        68,
+        70,
+        132,
+        204
+      ],
+      "shoeReferenceBbox": [
+        70,
+        190,
+        128,
+        204
+      ],
+      "pixelSha256": "690017b404403adc9f60105519f74fe78902ffab51d9619fcc1c1b23ea62773f",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    },
+    {
+      "form": "feng",
+      "state": "idle",
+      "row": 0,
+      "frame": 0,
+      "referenceFile": "feng-idle-00.png",
+      "atlas": "assets/builds/feng/spritesheet.webp",
+      "atlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "headReferenceBbox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "bodyReferenceBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "shoeReferenceBbox": [
+        48,
+        190,
+        141,
+        204
+      ],
+      "pixelSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    },
+    {
+      "form": "feng",
+      "state": "running",
+      "row": 7,
+      "frame": 0,
+      "referenceFile": "feng-running-00.png",
+      "atlas": "assets/builds/feng/spritesheet.webp",
+      "atlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+      "alphaBbox": [
+        45,
+        6,
+        148,
+        204
+      ],
+      "headReferenceBbox": [
+        52,
+        6,
+        137,
+        70
+      ],
+      "bodyReferenceBbox": [
+        45,
+        70,
+        148,
+        204
+      ],
+      "shoeReferenceBbox": [
+        47,
+        190,
+        141,
+        204
+      ],
+      "pixelSha256": "a2f78a145e965c18b559ab95425935f603e19d60cac3cef79a3b1cee681e26ae",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    },
+    {
+      "form": "feng",
+      "state": "running",
+      "row": 7,
+      "frame": 1,
+      "referenceFile": "feng-running-01.png",
+      "atlas": "assets/builds/feng/spritesheet.webp",
+      "atlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+      "alphaBbox": [
+        45,
+        6,
+        148,
+        204
+      ],
+      "headReferenceBbox": [
+        53,
+        6,
+        137,
+        70
+      ],
+      "bodyReferenceBbox": [
+        45,
+        70,
+        148,
+        204
+      ],
+      "shoeReferenceBbox": [
+        47,
+        190,
+        141,
+        204
+      ],
+      "pixelSha256": "467b412d4d9c2e56aa96d752e486c937ef4336ec80dca65b329a9adaec6ca7f8",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    },
+    {
+      "form": "feng",
+      "state": "running",
+      "row": 7,
+      "frame": 2,
+      "referenceFile": "feng-running-02.png",
+      "atlas": "assets/builds/feng/spritesheet.webp",
+      "atlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+      "alphaBbox": [
+        45,
+        6,
+        148,
+        204
+      ],
+      "headReferenceBbox": [
+        53,
+        6,
+        137,
+        70
+      ],
+      "bodyReferenceBbox": [
+        45,
+        70,
+        148,
+        204
+      ],
+      "shoeReferenceBbox": [
+        47,
+        190,
+        141,
+        204
+      ],
+      "pixelSha256": "73088ca243773a058fa67052de9893a8a19e92a4a5fee18bf47be1de821f044f",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    },
+    {
+      "form": "feng",
+      "state": "running",
+      "row": 7,
+      "frame": 3,
+      "referenceFile": "feng-running-03.png",
+      "atlas": "assets/builds/feng/spritesheet.webp",
+      "atlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+      "alphaBbox": [
+        45,
+        6,
+        148,
+        204
+      ],
+      "headReferenceBbox": [
+        54,
+        6,
+        137,
+        70
+      ],
+      "bodyReferenceBbox": [
+        45,
+        70,
+        148,
+        204
+      ],
+      "shoeReferenceBbox": [
+        47,
+        190,
+        141,
+        204
+      ],
+      "pixelSha256": "bc5a93eebcd23bf9ec6b3775e23c0b3783a093583bf380413c6967c7a271bbe1",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    },
+    {
+      "form": "feng",
+      "state": "running",
+      "row": 7,
+      "frame": 4,
+      "referenceFile": "feng-running-04.png",
+      "atlas": "assets/builds/feng/spritesheet.webp",
+      "atlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+      "alphaBbox": [
+        45,
+        6,
+        148,
+        204
+      ],
+      "headReferenceBbox": [
+        53,
+        6,
+        137,
+        70
+      ],
+      "bodyReferenceBbox": [
+        45,
+        70,
+        148,
+        204
+      ],
+      "shoeReferenceBbox": [
+        47,
+        190,
+        141,
+        204
+      ],
+      "pixelSha256": "5b8bd187c5ac00b5d3ff3ba719788ef4f0c5505ea6b44238f42ca9d1fc9e1998",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    },
+    {
+      "form": "feng",
+      "state": "running",
+      "row": 7,
+      "frame": 5,
+      "referenceFile": "feng-running-05.png",
+      "atlas": "assets/builds/feng/spritesheet.webp",
+      "atlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+      "alphaBbox": [
+        45,
+        6,
+        148,
+        204
+      ],
+      "headReferenceBbox": [
+        52,
+        6,
+        137,
+        70
+      ],
+      "bodyReferenceBbox": [
+        45,
+        70,
+        148,
+        204
+      ],
+      "shoeReferenceBbox": [
+        47,
+        190,
+        141,
+        204
+      ],
+      "pixelSha256": "a2f78a145e965c18b559ab95425935f603e19d60cac3cef79a3b1cee681e26ae",
+      "referenceNote": "fixed pixel bands are QA reference regions, not anatomical segmentation"
+    }
+  ],
+  "handoffRule": "Idle uses canonical frame0; Running uses the actual displayed row7 frame, not forced Idle",
+  "endpointRule": "subject RGBA equals the matching canonical reference at entry0/exitLast; no boundary-only recolor/translate/scale",
+  "subjectMasks": "manual subject/effect masks required for any reauthored effect-bearing frame; blue-color threshold is not a subject mask",
+  "directions": {
+    "gu_to_feng": {
+      "frameCount": 10,
+      "layout": {
+        "anchorX": 112,
+        "anchorY": 221,
+        "canvasHeight": 240,
+        "canvasWidth": 224,
+        "offsetLeft": -16,
+        "offsetTop": -18,
+        "petAnchorX": 96,
+        "petBaselineY": 203
+      },
+      "effectRegionInNormalCoordinates": [
+        -16,
+        -18,
+        208,
+        222
+      ],
+      "endpointEffects": "none at start0 and final endpoint; no foreground effect occlusion of face/torso",
+      "interiorEffects": "secondary, hard-edge, attached/peripheral; retain 4px canvas safety margin"
+    },
+    "feng_to_gu": {
+      "frameCount": 8,
+      "layout": {
+        "anchorX": 105,
+        "anchorY": 217,
+        "canvasHeight": 224,
+        "canvasWidth": 208,
+        "offsetLeft": -9,
+        "offsetTop": -14,
+        "petAnchorX": 96,
+        "petBaselineY": 203
+      },
+      "effectRegionInNormalCoordinates": [
+        -9,
+        -14,
+        199,
+        210
+      ],
+      "endpointEffects": "none at start0 and final endpoint; no foreground effect occlusion of face/torso",
+      "interiorEffects": "secondary, hard-edge, attached/peripheral; retain 4px canvas safety margin"
+    }
+  },
+  "approval": "new artwork needs independent visual approval; geometry is necessary, not sufficient",
+  "animationFilesGenerated": false
+}
