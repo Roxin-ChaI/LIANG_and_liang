@@ -1,0 +1,18 @@
+{
+  "reviewer": "bridge_static_visual",
+  "sourceRgbaSha256": "cb5d9386568f6c67b9ed9e28448fe9a16dd4b6127bbbbc8b251897b5aba80a97",
+  "candidateRgbaSha256": "47f5d1290be140b0fc38a27d1d795d06e972c0fc7180ca5e4074f954fabd93c4",
+  "checks": {
+    "faceIdentity": {"status": "PASS", "reason": "侧分刘海、眉眼、双镜框及鼻梁连接、鼻口位置仍可辨认为 K3 同一人物；缩小后的眼镜与脸型没有明显破损。"},
+    "headContinuity": {"status": "PASS", "reason": "头部轮廓略收窄、下巴上移，发顶与侧分方向保持连续；耳朵及下颌没有突兀缺口或轮廓跳变。"},
+    "neckCollarConnection": {"status": "PASS", "reason": "肤色颈部连续接入白色衬衫领口，两侧衣领与深色翻领相连，没有悬空头部、透明裂缝或断开的领线。"},
+    "bodyProgression": {"status": "PASS", "reason": "变化集中于肩、胸与上臂宽度，形成从 K3 开始扩张的身体；腰带及腿部维持原有比例和位置。"},
+    "armAttachment": {"status": "PASS", "reason": "袖子从肩部连续连接至肘部、袖口与手，增宽后的上臂没有脱离躯干，手腕没有截断或悬空。"},
+    "clothSeams": {"status": "PASS", "reason": "白衬衫中线、翻领、胸腹横向衣褶及下摆保持可读连续结构；没有明显错层、裂缝或破坏轮廓的拼接痕迹。"},
+    "feetFixed": {"status": "PASS", "reason": "裤脚和双鞋形状、水平位置与落地高度一致，鞋底贴合同一基线；差异图下部显示一致区域。"},
+    "noPixelArtifacts": {"status": "PASS", "reason": "nearest3x 图像边缘清晰，未见模糊插值、孤立杂点、透明孔洞、裁切或不连贯的新增轮廓块。"},
+    "incomingContinuity": {"status": "PASS", "reason": "并排仍呈现同一人物、同一站姿和服装，局部头部缩小与肩胸手臂扩张的静态衔接成立。"}
+  },
+  "verdict": "K3_KB1_STATIC_PASS",
+  "scope": "independent static visual QA only; user art approval pending, no App/runtime test"
+}

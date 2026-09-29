@@ -1,0 +1,160 @@
+{
+  "status": "AWAITING_INDEPENDENT_STATIC_REVIEW",
+  "technicalPass": true,
+  "checks": {
+    "exactDocumentedLocalDerivation": true,
+    "headGuideMatchesActualPartHull": true,
+    "numericBudget": true,
+    "lower164FeetByteIdentical": true,
+    "sourcePaletteOnly": true,
+    "binaryAlpha": true,
+    "noHiddenRGB": true,
+    "noClipping": true,
+    "noIsolatedPixels": true,
+    "oneConnectedCharacter": true,
+    "noNewTransparentHoles": true
+  },
+  "source": {
+    "headBbox": [
+      54,
+      4,
+      122,
+      84
+    ],
+    "headSize": [
+      68,
+      80
+    ],
+    "headCenter": [
+      88.0,
+      44.0
+    ],
+    "headGuideApproximate": false,
+    "headGuideUncertaintyPx": 0,
+    "bodyBbox": [
+      60,
+      70,
+      129,
+      204
+    ],
+    "bodyWidth": 69,
+    "bodyBandCenterX": 94.5,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "cb5d9386568f6c67b9ed9e28448fe9a16dd4b6127bbbbc8b251897b5aba80a97"
+  },
+  "candidate": {
+    "headBbox": [
+      57,
+      4,
+      119,
+      78
+    ],
+    "headSize": [
+      62,
+      74
+    ],
+    "headCenter": [
+      88.0,
+      41.0
+    ],
+    "headGuideApproximate": false,
+    "headGuideUncertaintyPx": 0,
+    "bodyBbox": [
+      54,
+      70,
+      135,
+      204
+    ],
+    "bodyWidth": 81,
+    "bodyBandCenterX": 94.5,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "47f5d1290be140b0fc38a27d1d795d06e972c0fc7180ca5e4074f954fabd93c4"
+  },
+  "pair": {
+    "numericPass": true,
+    "checks": {
+      "headSizeAtMost6": true,
+      "headCenterXAtMost3": true,
+      "headCenterYAtMost4": true,
+      "bodyGrowth0to15": true,
+      "baseline203": true,
+      "registration96": true
+    },
+    "headSizeDelta": [
+      -6,
+      -6
+    ],
+    "headCenterDelta": [
+      0.0,
+      -3.0
+    ],
+    "bodyWidthDelta": 12,
+    "bodyBboxDelta": [
+      -6,
+      0,
+      6,
+      0
+    ],
+    "bodyBandCenterDelta": 0.0,
+    "baselineDelta": 0,
+    "headEndpointUncertaintyPx": 0,
+    "faceIdentity": "MANUAL_VISUAL_QA",
+    "armPose": "MANUAL_VISUAL_QA",
+    "staticVerdict": "NOT_VERIFIED"
+  },
+  "measured": {
+    "alphaBbox": [
+      54,
+      4,
+      135,
+      204
+    ],
+    "baselineY": 203,
+    "headReferenceBbox": [
+      57,
+      4,
+      119,
+      70
+    ],
+    "bodyReferenceBbox": [
+      54,
+      70,
+      135,
+      204
+    ],
+    "bodyBandCenterX": 94.5,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "hiddenRgbPixels": 0,
+    "connectedComponentSizes8": [
+      10223
+    ],
+    "isolatedSinglePixels": 0,
+    "touchesCellEdge": false
+  },
+  "changedPixels": 7514,
+  "changedBbox": [
+    54,
+    4,
+    135,
+    164
+  ],
+  "method": "local head part NEAREST only; native jacket/neck/forearm copies; no whole-person resampling",
+  "headGuideWarning": "historical neck-inclusive head reference part, not exact anatomical skull segmentation",
+  "localChainAllowed": false,
+  "artApproval": "PENDING_USER",
+  "runtimeEligible": false,
+  "planSha256": "8c70406eb3a5ea238702265c4986b169853af7513b0226a2463ad63b0fc76e22",
+  "candidatePngSha256": "4d1b307e3e251352d3cc165c95f85009d445f797efd94bfeb28fe682a30cd837",
+  "candidateRgbaSha256": "47f5d1290be140b0fc38a27d1d795d06e972c0fc7180ca5e4074f954fabd93c4",
+  "sourceRgbaSha256": "cb5d9386568f6c67b9ed9e28448fe9a16dd4b6127bbbbc8b251897b5aba80a97",
+  "newPoses": [
+    "KB1"
+  ],
+  "aiUsed": false,
+  "approvedFilesModified": false
+}

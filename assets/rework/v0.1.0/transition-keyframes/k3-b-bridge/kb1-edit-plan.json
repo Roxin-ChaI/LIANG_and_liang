@@ -1,0 +1,22 @@
+{
+  "id": "KB1_BOUNDED_LOCAL_V1",
+  "source": "K3",
+  "sourceRgbaSha256": "cb5d9386568f6c67b9ed9e28448fe9a16dd4b6127bbbbc8b251897b5aba80a97",
+  "headSourceBbox": [54, 4, 122, 84],
+  "headTargetBbox": [57, 4, 119, 78],
+  "headResampler": "NEAREST",
+  "sourceBodyColumns": [60, 84, 103, 129],
+  "bodyStartY": 78,
+  "neckRowOffset": 6,
+  "neckTaperEveryRows": 5,
+  "bodyBands": [[78,81,1],[81,84,2],[84,87,3],[87,90,4],[90,94,5],[94,120,6],[120,124,5],[124,128,4],[128,132,3],[132,136,2],[136,140,1]],
+  "armSourceBox": [60,130,84,164],
+  "armShift": [1,-1],
+  "lowerLockFromY": 164,
+  "globalScaling": false,
+  "globalTranslation": false,
+  "aiGeneration": false,
+  "effects": false,
+  "interpolation": false,
+  "note": "Head, face, glasses, hair and the existing neck/upper collar reference raster change together once, not a replacement face. Body uses native row/panel copies and same-row cloth edge donors. One-pixel forearm rise starts the pose change. Independent neck/identity/seam review mandatory. No B pixel used."
+}
