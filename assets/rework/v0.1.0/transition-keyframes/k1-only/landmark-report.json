@@ -1,0 +1,47 @@
+{
+  "status": "K1_QA_FAIL",
+  "frozenA": {
+    "headBbox": [54,4,122,84],
+    "headSize": [68,80],
+    "headCenter": [88,44],
+    "bodyReferenceBbox70to208": [69,70,122,204],
+    "shoulderWidth": 33,
+    "baselineY": 203,
+    "editTargetHeadCenter": [504,452],
+    "editTargetBaselineY": 611
+  },
+  "candidateAttempts": [
+    {
+      "id": "attempt-1",
+      "sourceSize": [1254,1254],
+      "nativeHeadApproxSize": [83,96],
+      "nativeHeadApproxCenter": [617.5,554],
+      "deltaFromUnscaledEditTargetHeadCenter": [113.5,102],
+      "nativeHardForegroundSize": [82,242],
+      "nativeHardBaselineY": 747,
+      "deltaFromUnscaledEditTargetBaselineY": 136
+    },
+    {
+      "id": "attempt-2",
+      "sourceSize": [1254,1254],
+      "nativeHeadApproxSize": [82,95],
+      "nativeHeadApproxCenter": [617,554.5],
+      "deltaFromUnscaledEditTargetHeadCenter": [113,102.5],
+      "nativeHardForegroundSize": [81,241],
+      "nativeHardBaselineY": 747,
+      "deltaFromUnscaledEditTargetBaselineY": 136
+    }
+  ],
+  "uncertaintyPx": 4,
+  "warning": "native head annotations approximate; no logical192x208 transformation accepted. Coordinates compare unchanged edit target versus native result, NOT normalized character poses. Whole-foreground bbox is NOT head/body anatomy.",
+  "shoulderWidthComparison": "NOT_VERIFIED: native slot already failed",
+  "bodyBboxComparison": "NOT_VERIFIED: no accepted canonical body70:208 registration",
+  "exactFaceIdentity": "NOT_VERIFIED",
+  "alphaPolicy": "raw source retained unchanged; threshold128 only for diagnostic hard-alpha bounds/QA overlays",
+  "spriteResizeOperations": 0,
+  "candidate192x208Emitted": false,
+  "A_K1": "FAIL",
+  "K1_K2": "NOT_EXECUTED_A_K1_NOT_PASS",
+  "K1_APPROVED": false,
+  "runtimeEligible": false
+}

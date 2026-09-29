@@ -74,3 +74,9 @@ def test_old_k1_fails_new_limits_without_modifying_it():
     assert report["status"] == "K1_QA_FAIL" and not report["localChainAllowed"]
     assert not report["numeric"]["checks"]["headWidth"]
     assert not report["numeric"]["checks"]["headHeight"]
+
+
+def test_empty_candidate_fails_without_anatomical_measurements_or_crash():
+    report = assess(Image.new("RGBA",(192,208)),annotation())
+    assert report["status"] == "K1_QA_FAIL" and report["numeric"] is None
+    assert not report["localChainAllowed"]

@@ -1,0 +1,30 @@
+{
+  "generation": "builtin ImageGen transparent edit; single K1 only",
+  "imagegenCLIUsed": false,
+  "attemptLimit": 2,
+  "attemptsUsed": 2,
+  "approvedEndpointsModified": false,
+  "K2K3Modified": false,
+  "playerSchedulerHooksModified": false,
+  "appStartedOrIntegrated": false,
+  "attempts": [
+    {
+      "id": "attempt-1",
+      "prompt": "prompt.md",
+      "source": "sources/K1-attempt-1-native.png",
+      "sourceSha256": "cb985e7521bca5389e684ff7e00d8fe0025c6bfbb1cbd3fd376ef9a67cd2b33c",
+      "verdict": "K1_QA_FAIL",
+      "reason": "1254x1254, enlarged/moved native artwork, outside fixed1024 edit-target slot"
+    },
+    {
+      "id": "attempt-2",
+      "prompt": "retry-prompt.md",
+      "source": "sources/K1-attempt-2-native.png",
+      "sourceSha256": "4c126bc75ea6904f778de83097c531b0eeb2538622bf5fbac247ead7e7b339bb",
+      "verdict": "K1_QA_FAIL",
+      "reason": "single padded reference retry still1254x1254, enlarged/moved artwork; no forbidden whole-character fitting attempted"
+    }
+  ],
+  "cleanup": "generated_images PNG caches removed only after byte-identical project copies and SHA256 verification; complete rejected sources retained in project",
+  "approval": "NONE"
+}

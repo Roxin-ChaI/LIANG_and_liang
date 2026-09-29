@@ -1,0 +1,38 @@
+{
+  "status": "K1_QA_FAIL",
+  "processing": {
+    "status": "SOURCE_LAYOUT_FAIL",
+    "reason": "unexpected native dimensions; no whole-character resizing permitted",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "resizeOperations": 0,
+    "integerRegistrationOperations": 0,
+    "alphaHardenedPixels": 0
+  },
+  "candidateEmitted": false,
+  "reason": "unexpected native dimensions; no whole-character resizing permitted",
+  "localChainAllowed": false,
+  "runtimeEligible": false,
+  "headLandmarks": "NOT_VERIFIED: source cannot enter fixed canvas without forbidden fitting",
+  "sourceSha256": "4c126bc75ea6904f778de83097c531b0eeb2538622bf5fbac247ead7e7b339bb",
+  "sourceRetained": "raw-native.png",
+  "nativeSourceGeometry": {
+    "coordinateSpace": "native source; not192x208 runtime coordinates",
+    "sourceSize": [1254,1254],
+    "sourceMode": "RGBA",
+    "alphaBbox": [210,400,685,812],
+    "alphaBboxSize": [475,412],
+    "lowestNonzeroAlphaY": 811,
+    "hardAlphaBboxAt128": [577,507,658,748],
+    "hardAlphaBboxSizeAt128": [81,241],
+    "lowestHardAlphaY": 747,
+    "partialAlphaPixels": 15808,
+    "alphaUniqueValueCount": 248,
+    "warning": "whole-foreground bbox is not anatomical head/body; no fitting performed"
+  },
+  "newPose": "K1 only",
+  "K2K3Regenerated": false,
+  "appIntegrated": false
+}

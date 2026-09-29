@@ -1,0 +1,51 @@
+{
+  "reviewer": "manual_endpoint_review",
+  "recommendation": "FAIL_NATIVE_SLOT_CONTRACT",
+  "coordinateSpace": "source1254x1254 only; no accepted logical192x208 mapping",
+  "attempts": [
+    {
+      "id": "attempt-1",
+      "verdict": "fail",
+      "sourceHeadAnnotation": {
+        "status": "APPROXIMATE_NOT_VERIFIED",
+        "bboxHalfOpen": [576,506,659,602],
+        "widthApprox": 83,
+        "heightApprox": 96,
+        "uncertaintyPx": 4,
+        "uncertaintyReason": "especially chin/neck boundary; not anatomical segmentation ground truth",
+        "shoulderPoints": "NOT_VERIFIED"
+      },
+      "qualitativeChecks": {
+        "stillGu": "pass",
+        "nonFeng": "pass",
+        "noClip": "pass",
+        "exactUnchangedFace": "NOT_VERIFIED",
+        "neckAndProportions": "Gu-like large head, narrow body and resting hands; neck/shoulder relation still needs a compliant native candidate"
+      }
+    },
+    {
+      "id": "attempt-2",
+      "verdict": "fail",
+      "sourceHeadAnnotation": {
+        "status": "APPROXIMATE_NOT_VERIFIED",
+        "bboxHalfOpen": [576,507,658,602],
+        "widthApprox": 82,
+        "heightApprox": 95,
+        "uncertaintyPx": 4,
+        "uncertaintyReason": "especially chin/neck boundary; independently inspected, not copied from attempt1",
+        "shoulderPoints": "NOT_VERIFIED"
+      },
+      "qualitativeChecks": {
+        "stillGu": "pass",
+        "nonFeng": "pass",
+        "noClip": "pass",
+        "exactUnchangedFace": "NOT_VERIFIED",
+        "neckAndProportions": "Gu-like head/body relation and narrow stance; face broadly similar, never pixel-exact approval"
+      },
+      "additionalConcern": "Bright blue shoulder strokes absent from A; guide residue versus intentional detail NOT_VERIFIED"
+    }
+  ],
+  "approval": "NONE",
+  "K2K3Reviewed": false,
+  "scope": "read-only native art and QA inspection; no normalized candidate, no App integration, no Running approval"
+}
