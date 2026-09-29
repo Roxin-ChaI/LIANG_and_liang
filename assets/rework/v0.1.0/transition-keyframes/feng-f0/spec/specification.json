@@ -1,0 +1,113 @@
+{
+  "id": "F0_TRANSITION_ENDPOINT_SPEC_V1",
+  "status": "SPECIFICATION_ONLY",
+  "generatedImages": 0,
+  "sourceSha256": {
+    "KB2": "622c81f99cde42f5846044a391424e7f4a8afa326d2c5e235470b2cacb618b19",
+    "B": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+    "formalFengAtlas": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a"
+  },
+  "canvas": [
+    192,
+    208
+  ],
+  "baselineY": 203,
+  "registrationX": 96,
+  "KB2": {
+    "headBbox": [
+      60,
+      4,
+      116,
+      72
+    ],
+    "headSize": [
+      56,
+      68
+    ],
+    "headCenter": [
+      88.0,
+      38.0
+    ],
+    "headGuideApproximate": false,
+    "headGuideUncertaintyPx": 0,
+    "bodyBbox": [
+      48,
+      70,
+      141,
+      204
+    ],
+    "bodyWidth": 93,
+    "bodyBandCenterX": 94.5,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870"
+  },
+  "B": {
+    "headBbox": [
+      64,
+      4,
+      113,
+      58
+    ],
+    "headSize": [
+      49,
+      54
+    ],
+    "headCenter": [
+      88.5,
+      31.0
+    ],
+    "headGuideApproximate": true,
+    "headGuideUncertaintyPx": 3,
+    "bodyBbox": [
+      44,
+      70,
+      148,
+      204
+    ],
+    "bodyWidth": 104,
+    "bodyBandCenterX": 96.0,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+  },
+  "F0TargetGuide": {
+    "headWidthPx": [
+      49,
+      52
+    ],
+    "headHeightPx": [
+      54,
+      57
+    ],
+    "headCenterX": [
+      86,
+      91
+    ],
+    "headCenterY": [
+      29,
+      34
+    ],
+    "bodyBandWidthPx": [
+      99,
+      104
+    ],
+    "baselineY": 203,
+    "registrationX": 96
+  },
+  "identity": "fully Feng: canonical Feng hair, face, glasses, broad shoulders, muscular torso, and tailored blue suit; no Gu body proportions",
+  "pose": "front-facing upright neutral finish; hands low or finishing a modest charge, not fingertip-to-chin; legs only gradually widen from KB2",
+  "separateChannels": {
+    "KB2_to_F0": "complete form/identity morph; hand and stance trajectories remain locally continuous",
+    "F0_to_FengIdle": "finish only pose: arm rises, fist sets and feet widen; no significant skull or shoulder change"
+  },
+  "oneDirectStepFromKB2CanMeetOldHeadGuideBudget": false,
+  "reason": "nominal KB2 56x68 to nearest Feng-like F0 52x57 still reduces guide height by 11px, exceeding the previous 6px/link budget",
+  "optionalMorphBridge": "one extra shape bridge may split the height/center change; each resulting link must pass identity, arm, stance and garment visual QA",
+  "F0_to_BPolicy": "if the arm-to-chin, fist or wide-stance pose still snaps, require a separate Feng entry animation; never add unlimited morph bridges",
+  "notAutomatedArtApproval": true,
+  "approvedAssetsMayBeEdited": false,
+  "appIntegrationAllowed": false,
+  "fullAnimationAllowed": false,
+  "tagAllowed": false
+}
