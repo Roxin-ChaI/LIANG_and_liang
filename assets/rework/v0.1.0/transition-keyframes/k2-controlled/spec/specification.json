@@ -1,0 +1,85 @@
+{
+  "id": "K2_CONTROLLED_REGION_V1",
+  "status": "SPECIFICATION_ONLY",
+  "source": "assets/rework/v0.1.0/transition-keyframes/k1-locked/candidate/K1.png",
+  "sourceSha256": "3fe2510fce45d2e7fb63e2018f79fe69ef9f05c470634903fa580700acc9e246",
+  "sourceApproval": "K1_ART_APPROVED: explicit user approval in this task; prior QA records unchanged",
+  "canvas": [
+    192,
+    208
+  ],
+  "registrationX": 96,
+  "baselineY": 203,
+  "K1HeadBbox": [
+    54,
+    4,
+    122,
+    84
+  ],
+  "K1HeadSize": [
+    68,
+    80
+  ],
+  "K1HeadCenter": [
+    88,
+    44
+  ],
+  "headSizePermittedRange": [
+    [
+      64,
+      72
+    ],
+    [
+      76,
+      84
+    ]
+  ],
+  "maxHeadCenterDeltaPx": [
+    3,
+    3
+  ],
+  "controlledDerivationStricterRule": "reuse whole y0:84 RGBA byte-identically; effective head delta0",
+  "lockedPolicy": "whole y0:84; neck/collar x84:103,y84:101; outside x63:129,y84:146; all lower body/hands/feet y146:208",
+  "lockedReferenceByteSha256": "224aea3fa6eeeb63f7dca9382b35328393fe54cdb58eec44c0b957ef218583f4",
+  "editableBbox": [
+    63,
+    84,
+    129,
+    146
+  ],
+  "maskConvention": "L255 selected, row-major RGBA including transparent RGB/alpha",
+  "K1ShoulderAnatomicalGuide": {
+    "points": [
+      [
+        75,
+        83
+      ],
+      [
+        108,
+        83
+      ]
+    ],
+    "width": 33
+  },
+  "maxAnatomicalShoulderGrowthPx": 12,
+  "shoulderMeasurementPolicy": "upper guide y83 remains locked; alpha hull of band84:100 is a separate cap/upper-arm proxy, never an anatomical substitute; independent visual review required",
+  "K1ShoulderCapBandBbox": [
+    69,
+    84,
+    120,
+    100
+  ],
+  "K1ShoulderCapBandWidth": 51,
+  "maxCapHullGrowthPx": 12,
+  "minCapHullGrowthPx": 2,
+  "maxBodyEdgeExpansionPx": 6,
+  "maxBodyBandCenterDeltaPx": 1,
+  "bodyPolicy": "gradual bilateral upper-jacket/arm thickening only; fixed lower body; not inflated to fit existing K3",
+  "effects": "none; character change must be visible without energy overlays",
+  "method": "explicit bounded integer pixel translations plus documented K1 RGBA cloth donors; no interpolation, whole-person scaling, AI generation, new head or face",
+  "independentStaticReviewRequired": true,
+  "userArtApproval": "PENDING",
+  "K3BModificationAllowed": false,
+  "appIntegrationAllowed": false,
+  "runtimeEligible": false
+}
