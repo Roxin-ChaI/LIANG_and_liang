@@ -1,0 +1,136 @@
+{
+  "status": "AWAITING_INDEPENDENT_K3_REVIEW",
+  "technicalPass": true,
+  "checks": {
+    "lockedByteIdentical": true,
+    "headByteIdentical": true,
+    "handsLowerBodyByteIdentical": true,
+    "headSizeWithin5": true,
+    "headCenterWithin3": true,
+    "baseline203": true,
+    "bodyEdgesGradual": true,
+    "bodyWidthGrowthWithin14": true,
+    "bodyCenterStable": true,
+    "capGrowth10to14": true,
+    "paletteFromK2": true,
+    "binaryAlpha": true,
+    "noHiddenRGB": true,
+    "noClipping": true,
+    "noIsolatedPixels": true,
+    "oneConnectedCharacter": true,
+    "noNewTransparentHoles": true
+  },
+  "headBbox": [
+    54,
+    4,
+    122,
+    84
+  ],
+  "headSize": [
+    68,
+    80
+  ],
+  "headCenter": [
+    88.0,
+    44.0
+  ],
+  "headCenterDelta": [
+    0.0,
+    0.0
+  ],
+  "registrationX": 96,
+  "registrationPolicy": "no transform; original head/neck/feet remain fixed",
+  "baselineY": 203,
+  "bodyBbox": [
+    60,
+    70,
+    129,
+    204
+  ],
+  "bodyEdgeExpansion": [
+    5,
+    5
+  ],
+  "bodyWidthGrowth": 10,
+  "bodyBandCenterX": 94.5,
+  "upperShoulderGuide": {
+    "K2Width": 33,
+    "K3Width": 33,
+    "note": "y83 locked guide, not lower-cap anatomy"
+  },
+  "shoulderCapBand": {
+    "K2Bbox": [
+      65,
+      84,
+      124,
+      100
+    ],
+    "K3Bbox": [
+      60,
+      84,
+      129,
+      100
+    ],
+    "widthGrowth": 10
+  },
+  "lockedByteComparison": {
+    "referenceSha256": "1c55cb90c4d3258f35f609a41fb213cbcf66b2502dcce7454200f6cc243fac37",
+    "candidateSha256": "1c55cb90c4d3258f35f609a41fb213cbcf66b2502dcce7454200f6cc243fac37",
+    "byteCount": 144684,
+    "differentBytes": 0
+  },
+  "rgbaChangedPixels": 1966,
+  "rgbaChangedBbox": [
+    60,
+    84,
+    129,
+    140
+  ],
+  "measured": {
+    "alphaBbox": [
+      54,
+      4,
+      129,
+      204
+    ],
+    "baselineY": 203,
+    "headReferenceBbox": [
+      54,
+      4,
+      122,
+      70
+    ],
+    "bodyReferenceBbox": [
+      60,
+      70,
+      129,
+      204
+    ],
+    "bodyBandCenterX": 94.5,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "hiddenRgbPixels": 0,
+    "connectedComponentSizes8": [
+      10043
+    ],
+    "isolatedSinglePixels": 0,
+    "touchesCellEdge": false
+  },
+  "localChainAllowed": false,
+  "userK3ArtApproval": "PENDING",
+  "runtimeEligible": false,
+  "sourceSha256": "565122ea1364eebd56a0d6d3b53934bef8d45d53cb1787eedf4ee1f812cdfcec",
+  "candidatePngSha256": "2b5651503d4d223d5c670152a1425ebafd6d55b5802f55794c6c70b3624876f6",
+  "candidateRgbaSha256": "cb5d9386568f6c67b9ed9e28448fe9a16dd4b6127bbbbc8b251897b5aba80a97",
+  "pixelEditPlanSha256": "56a8da8c20452f4c8cccd557a3cee763dc5d4b27ff0fbb330365b1e21a16d3d9",
+  "method": "bounded native K2 jacket/upper-arm panel copies; same-row original K2 panel-edge cloth donors complete seams; no whole-side or whole-person scale",
+  "newPoses": [
+    "K3"
+  ],
+  "aiUsed": false,
+  "globalScaling": false,
+  "retryCount": 0,
+  "BModified": false
+}

@@ -1,0 +1,24 @@
+{
+  "id": "K3_LOCAL_JACKET_PROGRESSION_V1",
+  "sourceSha256": "565122ea1364eebd56a0d6d3b53934bef8d45d53cb1787eedf4ee1f812cdfcec",
+  "method": "bounded native K2 jacket/upper-arm panel copies; same-row original K2 panel-edge cloth donors complete seams; no whole-side or whole-person scale",
+  "leftSourceColumns": [65,84],
+  "rightSourceColumns": [103,124],
+  "rowBands": [
+    {"y": [84,87], "outwardPixels": 1},
+    {"y": [87,90], "outwardPixels": 2},
+    {"y": [90,93], "outwardPixels": 3},
+    {"y": [93,96], "outwardPixels": 4},
+    {"y": [96,120], "outwardPixels": 5},
+    {"y": [120,124], "outwardPixels": 4},
+    {"y": [124,132], "outwardPixels": 3},
+    {"y": [132,136], "outwardPixels": 2},
+    {"y": [136,140], "outwardPixels": 1}
+  ],
+  "headNeckEdited": false,
+  "handsLegsFeetEdited": false,
+  "effects": false,
+  "globalScalingOrTranslation": false,
+  "interpolation": false,
+  "aiGeneration": false
+}

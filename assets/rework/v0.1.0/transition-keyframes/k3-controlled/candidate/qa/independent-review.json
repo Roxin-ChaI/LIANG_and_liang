@@ -1,0 +1,16 @@
+{
+  "reviewer": "controlled_k3_visual",
+  "verdict": "K2_K3_STATIC_PASS",
+  "reviewedRgbaSha256": "cb5d9386568f6c67b9ed9e28448fe9a16dd4b6127bbbbc8b251897b5aba80a97",
+  "checks": {
+    "identity": {"status": "PASS", "reason": "Native and nearest3x views retain the same face, glasses, hair, expression and palette."},
+    "headNeckUnchanged": {"status": "PASS", "reason": "Actual RGBA comparison confirms rows 0–83 are identical."},
+    "shoulderGrowthGradual": {"status": "PASS", "reason": "Upper jacket sides expand from 1 pixel per side at row 84 to 5 pixels per side around rows 99–119, then taper back to the locked cuffs. This supports gradual jacket-cap growth; it does not establish anatomical shoulder growth."},
+    "bodyPoseProgressive": {"status": "PASS", "reason": "The broader chest and upper arms are visibly readable at native size. The stance remains stable. Progress is restrained and carried by jacket volume rather than newly depicted muscular anatomy."},
+    "clothSeamsPlausible": {"status": "PASS", "reason": "Lapel edges, folds and sleeve outlines remain connected. The expanded cloth reads as a fuller suit without a conspicuous splice, horizontal seam band or broken cuff attachment."},
+    "handsLegsFeetStable": {"status": "PASS", "reason": "Actual RGBA comparison confirms rows 140–207 are identical, preserving hands, cuffs, legs, feet and baseline."},
+    "K2K3Continuity": {"status": "PASS", "reason": "Side-by-side review shows local upper-body widening without head shrink, face drift, pose change or registration jump."},
+    "noPixelArtifacts": {"status": "PASS", "reason": "Changes are confined to [60,84,129,140). K3 has one connected opaque component, no enclosed transparent holes, only alpha 0/255, and zero hidden RGB beneath transparent pixels."}
+  },
+  "remainingJudgment": "Human artistic approval remains necessary for whether this restrained fuller-jacket step is sufficiently expressive toward Feng. Static incoming QA alone does not approve animation timing, runtime behavior, or K3→B continuity."
+}
