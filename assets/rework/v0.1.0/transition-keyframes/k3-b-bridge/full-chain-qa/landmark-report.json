@@ -1,0 +1,428 @@
+{
+  "status": "AWAITING_INDEPENDENT_FINAL_ENDPOINT_REVIEW",
+  "landmarks": {
+    "A": {
+      "headBbox": [
+        54,
+        4,
+        122,
+        84
+      ],
+      "headSize": [
+        68,
+        80
+      ],
+      "headCenter": [
+        88.0,
+        44.0
+      ],
+      "headGuideApproximate": false,
+      "headGuideUncertaintyPx": 0,
+      "bodyBbox": [
+        69,
+        70,
+        122,
+        204
+      ],
+      "bodyWidth": 53,
+      "bodyBandCenterX": 95.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "e12f8f315e36d704a910406d1a8b9a0a9ea7779b3b61b3a92443cdf7b3be72fb"
+    },
+    "K1": {
+      "headBbox": [
+        54,
+        4,
+        122,
+        84
+      ],
+      "headSize": [
+        68,
+        80
+      ],
+      "headCenter": [
+        88.0,
+        44.0
+      ],
+      "headGuideApproximate": false,
+      "headGuideUncertaintyPx": 0,
+      "bodyBbox": [
+        69,
+        70,
+        121,
+        204
+      ],
+      "bodyWidth": 52,
+      "bodyBandCenterX": 95.0,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "4b7f491d14f0bcdcf033fee3d180139cb9966094c8cbecb992be35b7a795c698"
+    },
+    "K2": {
+      "headBbox": [
+        54,
+        4,
+        122,
+        84
+      ],
+      "headSize": [
+        68,
+        80
+      ],
+      "headCenter": [
+        88.0,
+        44.0
+      ],
+      "headGuideApproximate": false,
+      "headGuideUncertaintyPx": 0,
+      "bodyBbox": [
+        65,
+        70,
+        124,
+        204
+      ],
+      "bodyWidth": 59,
+      "bodyBandCenterX": 94.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "3462ff0391745732801c58d2538f50c78a66b0bc39d66beabef8efc7d5b30e98"
+    },
+    "K3": {
+      "headBbox": [
+        54,
+        4,
+        122,
+        84
+      ],
+      "headSize": [
+        68,
+        80
+      ],
+      "headCenter": [
+        88.0,
+        44.0
+      ],
+      "headGuideApproximate": false,
+      "headGuideUncertaintyPx": 0,
+      "bodyBbox": [
+        60,
+        70,
+        129,
+        204
+      ],
+      "bodyWidth": 69,
+      "bodyBandCenterX": 94.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "cb5d9386568f6c67b9ed9e28448fe9a16dd4b6127bbbbc8b251897b5aba80a97"
+    },
+    "KB1": {
+      "headBbox": [
+        57,
+        4,
+        119,
+        78
+      ],
+      "headSize": [
+        62,
+        74
+      ],
+      "headCenter": [
+        88.0,
+        41.0
+      ],
+      "headGuideApproximate": false,
+      "headGuideUncertaintyPx": 0,
+      "bodyBbox": [
+        54,
+        70,
+        135,
+        204
+      ],
+      "bodyWidth": 81,
+      "bodyBandCenterX": 94.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "47f5d1290be140b0fc38a27d1d795d06e972c0fc7180ca5e4074f954fabd93c4"
+    },
+    "KB2": {
+      "headBbox": [
+        60,
+        4,
+        116,
+        72
+      ],
+      "headSize": [
+        56,
+        68
+      ],
+      "headCenter": [
+        88.0,
+        38.0
+      ],
+      "headGuideApproximate": false,
+      "headGuideUncertaintyPx": 0,
+      "bodyBbox": [
+        48,
+        70,
+        141,
+        204
+      ],
+      "bodyWidth": 93,
+      "bodyBandCenterX": 94.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870"
+    },
+    "B": {
+      "headBbox": [
+        64,
+        4,
+        113,
+        58
+      ],
+      "headSize": [
+        49,
+        54
+      ],
+      "headCenter": [
+        88.5,
+        31.0
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyWidth": 104,
+      "bodyBandCenterX": 96.0,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    }
+  },
+  "pairs": {
+    "A_K1": {
+      "numericPass": false,
+      "checks": {
+        "headSizeAtMost6": true,
+        "headCenterXAtMost3": true,
+        "headCenterYAtMost4": true,
+        "bodyGrowth0to15": false,
+        "baseline203": true,
+        "registration96": true
+      },
+      "headSizeDelta": [
+        0,
+        0
+      ],
+      "headCenterDelta": [
+        0.0,
+        0.0
+      ],
+      "bodyWidthDelta": -1,
+      "bodyBboxDelta": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "bodyBandCenterDelta": -0.5,
+      "baselineDelta": 0,
+      "headEndpointUncertaintyPx": 0,
+      "faceIdentity": "MANUAL_VISUAL_QA",
+      "armPose": "MANUAL_VISUAL_QA",
+      "staticVerdict": "PASS_USER_ART_APPROVAL_AND_ORIGINAL_TECHNICAL_GATE",
+      "approval": "PASS_CURRENT_USER_ART_APPROVAL_AND_ORIGINAL_TECHNICAL_GATE",
+      "newBridgeBudgetApplies": false,
+      "effectiveGatePass": true
+    },
+    "K1_K2": {
+      "numericPass": true,
+      "checks": {
+        "headSizeAtMost6": true,
+        "headCenterXAtMost3": true,
+        "headCenterYAtMost4": true,
+        "bodyGrowth0to15": true,
+        "baseline203": true,
+        "registration96": true
+      },
+      "headSizeDelta": [
+        0,
+        0
+      ],
+      "headCenterDelta": [
+        0.0,
+        0.0
+      ],
+      "bodyWidthDelta": 7,
+      "bodyBboxDelta": [
+        -4,
+        0,
+        3,
+        0
+      ],
+      "bodyBandCenterDelta": -0.5,
+      "baselineDelta": 0,
+      "headEndpointUncertaintyPx": 0,
+      "faceIdentity": "MANUAL_VISUAL_QA",
+      "armPose": "MANUAL_VISUAL_QA",
+      "staticVerdict": "PASS_USER_ART_APPROVAL_AND_ORIGINAL_TECHNICAL_GATE",
+      "approval": "PASS_CURRENT_USER_ART_APPROVAL_AND_ORIGINAL_TECHNICAL_GATE",
+      "newBridgeBudgetApplies": false,
+      "effectiveGatePass": true
+    },
+    "K2_K3": {
+      "numericPass": true,
+      "checks": {
+        "headSizeAtMost6": true,
+        "headCenterXAtMost3": true,
+        "headCenterYAtMost4": true,
+        "bodyGrowth0to15": true,
+        "baseline203": true,
+        "registration96": true
+      },
+      "headSizeDelta": [
+        0,
+        0
+      ],
+      "headCenterDelta": [
+        0.0,
+        0.0
+      ],
+      "bodyWidthDelta": 10,
+      "bodyBboxDelta": [
+        -5,
+        0,
+        5,
+        0
+      ],
+      "bodyBandCenterDelta": 0.0,
+      "baselineDelta": 0,
+      "headEndpointUncertaintyPx": 0,
+      "faceIdentity": "MANUAL_VISUAL_QA",
+      "armPose": "MANUAL_VISUAL_QA",
+      "staticVerdict": "PASS_USER_ART_APPROVAL_AND_ORIGINAL_TECHNICAL_GATE",
+      "approval": "PASS_CURRENT_USER_ART_APPROVAL_AND_ORIGINAL_TECHNICAL_GATE",
+      "newBridgeBudgetApplies": false,
+      "effectiveGatePass": true
+    },
+    "K3_KB1": {
+      "numericPass": true,
+      "checks": {
+        "headSizeAtMost6": true,
+        "headCenterXAtMost3": true,
+        "headCenterYAtMost4": true,
+        "bodyGrowth0to15": true,
+        "baseline203": true,
+        "registration96": true
+      },
+      "headSizeDelta": [
+        -6,
+        -6
+      ],
+      "headCenterDelta": [
+        0.0,
+        -3.0
+      ],
+      "bodyWidthDelta": 12,
+      "bodyBboxDelta": [
+        -6,
+        0,
+        6,
+        0
+      ],
+      "bodyBandCenterDelta": 0.0,
+      "baselineDelta": 0,
+      "headEndpointUncertaintyPx": 0,
+      "faceIdentity": "MANUAL_VISUAL_QA",
+      "armPose": "MANUAL_VISUAL_QA",
+      "staticVerdict": "PASS_FRESH_INDEPENDENT_INCOMING_REVIEW_REQUIRED_BY_CALLER",
+      "newBridgeBudgetApplies": true,
+      "effectiveGatePass": true
+    },
+    "KB1_KB2": {
+      "numericPass": true,
+      "checks": {
+        "headSizeAtMost6": true,
+        "headCenterXAtMost3": true,
+        "headCenterYAtMost4": true,
+        "bodyGrowth0to15": true,
+        "baseline203": true,
+        "registration96": true
+      },
+      "headSizeDelta": [
+        -6,
+        -6
+      ],
+      "headCenterDelta": [
+        0.0,
+        -3.0
+      ],
+      "bodyWidthDelta": 12,
+      "bodyBboxDelta": [
+        -6,
+        0,
+        6,
+        0
+      ],
+      "bodyBandCenterDelta": 0.0,
+      "baselineDelta": 0,
+      "headEndpointUncertaintyPx": 0,
+      "faceIdentity": "MANUAL_VISUAL_QA",
+      "armPose": "MANUAL_VISUAL_QA",
+      "staticVerdict": "PASS_FRESH_INDEPENDENT_INCOMING_REVIEW_REQUIRED_BY_CALLER",
+      "newBridgeBudgetApplies": true,
+      "effectiveGatePass": true
+    },
+    "KB2_B": {
+      "numericPass": false,
+      "checks": {
+        "headSizeAtMost6": false,
+        "headCenterXAtMost3": true,
+        "headCenterYAtMost4": false,
+        "bodyGrowth0to15": true,
+        "baseline203": true,
+        "registration96": true
+      },
+      "headSizeDelta": [
+        -7,
+        -14
+      ],
+      "headCenterDelta": [
+        0.5,
+        -7.0
+      ],
+      "bodyWidthDelta": 11,
+      "bodyBboxDelta": [
+        -4,
+        0,
+        7,
+        0
+      ],
+      "bodyBandCenterDelta": 1.5,
+      "baselineDelta": 0,
+      "headEndpointUncertaintyPx": 3,
+      "faceIdentity": "MANUAL_VISUAL_QA",
+      "armPose": "MANUAL_VISUAL_QA",
+      "staticVerdict": "NOT_VERIFIED"
+    }
+  },
+  "previousApprovedChainTechnicalPass": {
+    "A_K1": true,
+    "K1_K2": true,
+    "K2_K3": true
+  },
+  "K3_KB1": "STATIC_PASS",
+  "KB1_KB2": "STATIC_PASS",
+  "bridgeFramesGenerated": 2,
+  "additionalFramesGenerated": 0,
+  "approvedInputsModified": false,
+  "newBridgeUserArtApproval": "PENDING",
+  "fullAnimationAllowed": false,
+  "runtimeEligible": false
+}

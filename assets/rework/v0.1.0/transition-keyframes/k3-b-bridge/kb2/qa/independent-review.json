@@ -1,0 +1,18 @@
+{
+  "reviewer": "bridge_static_visual",
+  "sourceRgbaSha256": "47f5d1290be140b0fc38a27d1d795d06e972c0fc7180ca5e4074f954fabd93c4",
+  "candidateRgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870",
+  "checks": {
+    "faceIdentity": {"status": "PASS", "reason": "双镜框、鼻梁连接、眉眼、鼻口及脸部轮廓可辨；第二次缩小压缩了细节，但未见眼镜断裂或脸型明显损坏。"},
+    "headContinuity": {"status": "PASS", "reason": "侧分刘海、发顶方向和耳部保持一致；头部收窄、下巴上移，轮廓没有突兀缺口或碎块。"},
+    "neckCollarConnection": {"status": "PASS", "reason": "肤色颈部连续接入白色领口，领边与翻领相连，没有悬空、透明裂缝或断开的领线。"},
+    "bodyProgression": {"status": "PASS", "reason": "肩胸和上臂继续扩张，腰带、裤腿、鞋保持尺度位置；外轮廓连续，无脱离身体的拼接块。"},
+    "armAttachment": {"status": "PASS", "reason": "肩、肘、袖口和手腕保持相接；左前臂与手小幅向内上移，没有断开。"},
+    "clothSeams": {"status": "PASS", "reason": "既有横向条纹随身体变宽延长，中线、翻领、袖侧线、下摆仍连续；未见新断层、衣片重叠或透明接缝。"},
+    "feetFixed": {"status": "PASS", "reason": "裤脚和双鞋轮廓、横向位置与落地高度一致，同一脚底基线。"},
+    "noPixelArtifacts": {"status": "PASS", "reason": "像素边缘清晰，未见模糊插值、新孤立杂点、孔洞、裁切或破坏轮廓的碎像素。"},
+    "incomingContinuity": {"status": "PASS", "reason": "同一人物、服装和站姿，局部缩头、扩肩胸与前臂小动作的静态衔接成立。"}
+  },
+  "verdict": "KB1_KB2_STATIC_PASS",
+  "scope": "actual independent static QA only; user art approval pending, no runtime test"
+}

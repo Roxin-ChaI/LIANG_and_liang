@@ -1,0 +1,21 @@
+{
+  "id": "KB2_BOUNDED_LOCAL_V1",
+  "sourceRgbaSha256": "47f5d1290be140b0fc38a27d1d795d06e972c0fc7180ca5e4074f954fabd93c4",
+  "headSourceBbox": [57,4,119,78],
+  "headTargetBbox": [60,4,116,72],
+  "headResampler": "NEAREST",
+  "sourceBodyColumns": [54,84,103,135],
+  "bodyStartY": 72,
+  "neckRowOffset": 6,
+  "neckTaperEveryRows": 5,
+  "bodyBands": [[72,75,1],[75,78,2],[78,81,3],[81,84,4],[84,90,5],[90,120,6],[120,124,5],[124,128,4],[128,132,3],[132,136,2],[136,140,1]],
+  "armSourceBox": [54,128,84,164],
+  "armShift": [2,-2],
+  "lowerLockFromY": 164,
+  "globalScaling": false,
+  "globalTranslation": false,
+  "aiGeneration": false,
+  "effects": false,
+  "interpolation": false,
+  "note": "Only a bounded second bridge from reviewed KB1. Local identity-part NEAREST, native jacket/neck copies, small forearm onset. Not a full Feng pose or a claim that remaining B arm/stance/palette changes are solved. No B donors."
+}

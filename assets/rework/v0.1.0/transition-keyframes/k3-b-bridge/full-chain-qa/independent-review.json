@@ -1,0 +1,24 @@
+{
+  "reviewer": "bridge_static_visual",
+  "kb2RgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870",
+  "bRgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+  "KB2_B": "FAIL",
+  "faceIdentity": "PASS",
+  "armPoseContinuity": "FAIL",
+  "reason": "KB2→B 仍有明显姿态和形态跳变。头部再缩小上移、左手从髋侧到下巴、窄站姿直接展开，外套宽胸横褶直接到收腰斜褶。身份可辨，尾段连续性不成立。B guide ±3px 且下颌被手遮挡，不是精确解剖；判断依据实际并排和完整链图。",
+  "remainingPoseChanges": [
+    {"part": "head", "evidence": "56×68→近似49×54，头中心约上移7px；KB2 的脸与发部仍更大。"},
+    {"part": "screenLeftArm", "evidence": "髋侧手只轻微内收，B 的屈肘跨胸/手指到下巴的主要变化仍留在最后一步。"},
+    {"part": "screenRightArm", "evidence": "贴身垂手直接到外展臂、抬腕握拳与肌肉袖褶重排。"},
+    {"part": "stanceAndFeet", "evidence": "平行窄腿直接到宽站姿，膝线裤褶改变、鞋横移；基线相同不能消除跳变。"},
+    {"part": "torsoAndClothing", "evidence": "宽胸低肩线横褶直接到高肩收腰斜褶，外套下摆与腰带高度也变化。"}
+  ],
+  "fullChainAssessment": {
+    "status": "FAIL",
+    "reason": "K3→KB1→KB2 逐步缩头扩上身，但站姿几乎不动，手尚未进入抬到下巴的主动作；剩余变化集中到 B。",
+    "oneBridgeArtisticallyEnough": false,
+    "twoBridgesArtisticallyEnough": false,
+    "bridgeSufficiencyReason": "一或两张均不足；缺口还包括姿态和衣服结构，后续具体帧数必须由实际 artwork 检查决定。"
+  },
+  "scope": "actual independent static QA only; no App integration, no full-animation fill"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "B_BRIDGE_QA_FAIL_MORE_ART_SCOPE_REQUIRED",
+  "B_BRIDGE_ART_APPROVED": false,
+  "wholeChainStaticPass": false,
+  "K3_KB1": "STATIC_PASS",
+  "KB1_KB2": "STATIC_PASS",
+  "KB2_B": "STATIC_FAIL",
+  "independentReviewFresh": true,
+  "outgoingNumericPass": false,
+  "actualBridgeFrames": 2,
+  "twoBridgesSufficient": false,
+  "additionalBridgeFramesAuthorized": false,
+  "nominalAdditionalBridgeLowerBound": 2,
+  "fullAnimationAllowed": false,
+  "runtimeEligible": false,
+  "manualUserReviewNewBridges": "NOT_PERFORMED"
+}
