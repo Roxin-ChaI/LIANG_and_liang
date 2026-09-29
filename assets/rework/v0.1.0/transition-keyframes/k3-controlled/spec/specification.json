@@ -1,0 +1,124 @@
+{
+  "id": "K3_CONTROLLED_REGION_V1",
+  "status": "SPECIFICATION_ONLY",
+  "generatedPoses": 0,
+  "source": "assets/rework/v0.1.0/transition-keyframes/k2-controlled/candidate-locked-hands/K2.png",
+  "sourceSha256": "565122ea1364eebd56a0d6d3b53934bef8d45d53cb1787eedf4ee1f812cdfcec",
+  "sourceApproval": "K2_ART_APPROVED: explicit user statement in current K3 task; historical K2 QA files stay unchanged",
+  "canvas": [
+    192,
+    208
+  ],
+  "registrationX": 96,
+  "baselineY": 203,
+  "K2HeadBbox": [
+    54,
+    4,
+    122,
+    84
+  ],
+  "K2HeadSize": [
+    68,
+    80
+  ],
+  "K2HeadCenter": [
+    88,
+    44
+  ],
+  "headSizePermittedRange": [
+    [
+      63,
+      73
+    ],
+    [
+      75,
+      85
+    ]
+  ],
+  "maxHeadCenterDeltaPx": [
+    3,
+    3
+  ],
+  "derivationStricterRule": "whole y0:84 RGBA unchanged; effective head size/center delta0; no face/hair/eyeglass repaint",
+  "editableBbox": [
+    58,
+    84,
+    131,
+    140
+  ],
+  "lockedPolicy": "whole y0:84 including transparent bytes; neck/collar x84:103,y84:101; all y140:208 hands/cuffs/legs/feet; outside conservative edit rectangle",
+  "maskConvention": "L255 selected; row-major RGBA includes transparent RGB/alpha",
+  "lockedReferenceByteSha256": "1c55cb90c4d3258f35f609a41fb213cbcf66b2502dcce7454200f6cc243fac37",
+  "upperShoulderGuide": {
+    "points": [
+      [
+        75,
+        83
+      ],
+      [
+        108,
+        83
+      ]
+    ],
+    "width": 33,
+    "policy": "locked guide y83, not the widened lower-cap anatomical width"
+  },
+  "maxAnatomicalShoulderGrowthPx": 14,
+  "K2ShoulderCapBandBbox": [
+    65,
+    84,
+    124,
+    100
+  ],
+  "K2ShoulderCapBandWidth": 59,
+  "capBandGrowthTargetPx": [
+    10,
+    14
+  ],
+  "shoulderPolicy": "cap band84:100 alpha hull is a conservative proxy, not skeletal shoulder width; report it separately and require independent visual anatomy/pose review",
+  "K2BodyBandBbox": [
+    65,
+    70,
+    124,
+    204
+  ],
+  "maxBodyEdgeExpansionPx": 7,
+  "maxBodyWidthGrowthPx": 14,
+  "maxBodyBandCenterDeltaPx": 1,
+  "bodyPolicy": "another gradual bilateral upper-jacket/upper-arm step; no45px jump, whole-person fit or reshaping approved K2 to accommodate B",
+  "BReference": {
+    "source": "assets/rework/v0.1.0/manual-transition-endpoints/B-gu-to-feng-exit.png",
+    "sha256": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+    "bodyBandBbox": [
+      44,
+      70,
+      148,
+      204
+    ],
+    "headApproxBbox": [
+      64,
+      4,
+      113,
+      58
+    ],
+    "headApproxSize": [
+      49,
+      54
+    ],
+    "headApproxCenter": [
+      88.5,
+      31
+    ],
+    "anatomicalUncertaintyPx": 3,
+    "note": "manual historical guide, chin partly hand-occluded; not exact segmentation"
+  },
+  "endpointRisk": "K2-relative \u00b15px head budget cannot erase B's approximate19x26px head difference in one step; inspect K3->B separately, use B_TRANSITION_BRIDGE_REQUIRED for visible discontinuity; do not relax incoming budget",
+  "method": "bounded native local integer copies with documented K2 cloth donors only; no global scale/translation, interpolation or AI",
+  "effects": "none preferred; body change primary, no overlay hiding geometry",
+  "independentStaticReviewRequired": true,
+  "userK3ArtApproval": "PENDING",
+  "appIntegrationAllowed": false,
+  "fullAnimationAllowed": false,
+  "runtimeEligible": false,
+  "approvedInputsModificationAllowed": false
+}
