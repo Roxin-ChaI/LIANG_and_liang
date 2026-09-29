@@ -1,0 +1,69 @@
+{
+  "id": "K1_ONLY_CONSTRAINTS_V2",
+  "supersedes": "K1 only in gu-to-feng-spec/specification.json; K2/K3 untouched",
+  "scope": "Idle canonical A; only beginning Charge / tiny straightening, still clearly Gu",
+  "canvas": [
+    192,
+    208
+  ],
+  "headWidthRange": [
+    65,
+    69
+  ],
+  "headHeightRange": [
+    77,
+    81
+  ],
+  "maxHeadCenterDeltaX": 2,
+  "maxHeadCenterDeltaY": 2,
+  "baselineY": 203,
+  "maxShoulderWidthDelta": 4,
+  "maxBodyLeftDelta": 3,
+  "maxBodyRightDelta": 3,
+  "canonical": {
+    "headBbox": [
+      54,
+      4,
+      122,
+      84
+    ],
+    "headCenter": [
+      88,
+      44
+    ],
+    "shoulderPoints": [
+      [
+        75,
+        83
+      ],
+      [
+        108,
+        83
+      ]
+    ],
+    "shoulderWidth": 33,
+    "bodyReferenceBbox": [
+      69,
+      70,
+      122,
+      204
+    ]
+  },
+  "measurement": "head/shoulders independently pixel-reviewed anatomical annotations; body alpha band70:208 remains fixed, not whole-pose bbox; uncertain anatomy never PASS",
+  "maxAnnotationUncertaintyPx": 1,
+  "candidateAttemptsMaximum": 2,
+  "processing": "NO sprite resize, warp, fit or interpolation; fixed canvas crop only; binary-alpha hardening may be recorded, never anatomical correction",
+  "visualChecks": [
+    "faceIdentity",
+    "stillGu",
+    "neckUnchanged",
+    "noPrematureFeng",
+    "poseContinuity",
+    "noClipping"
+  ],
+  "nextGate": "A_K1_PASS is NOT K1_APPROVED; only then inspect frozen K2 without changing it",
+  "candidateGenerated": false,
+  "appIntegrationAllowed": false,
+  "fullAnimationAllowed": false,
+  "runtimeEligible": false
+}
