@@ -1,0 +1,19 @@
+{
+  "reviewer": "controlled_k2_visual",
+  "verdict": "K1_K2_STATIC_PASS",
+  "reviewedFile": "assets/rework/v0.1.0/transition-keyframes/k2-controlled/candidate-locked-hands/K2.png",
+  "reviewedRgbaSha256": "3462ff0391745732801c58d2538f50c78a66b0bc39d66beabef8efc7d5b30e98",
+  "checks": {
+    "identity": {"status": "PASS", "reason": "K2 remains recognizably the same Gu: unchanged hair, glasses, face, neck, expression, stance and outfit."},
+    "headNeckUnchanged": {"status": "PASS", "reason": "Independent pixel comparison confirms rows 0–83 are exactly K1."},
+    "shoulderGrowthGradual": {"status": "PASS", "reason": "Upper-jacket and upper-arm silhouette widens by a modest, readable step. The locked shoulder apex stays stable; this is apparent fullness below it, not demonstrated anatomical shoulder widening."},
+    "bodyIntermediate": {"status": "PASS", "reason": "The fuller jacket begins a stronger upper-body impression while retaining Gu's narrow lower body and subdued posture. It does not visually jump to a dramatically transformed physique."},
+    "clothSeamsPlausible": {"status": "PASS", "reason": "Lapels, sleeve outlines, dark folds and cuff joins remain connected at native size and nearest 3×. The jacket is slightly boxier, but no major seam break or implausible cloth discontinuity is visible."},
+    "handsLegsFeetStable": {"status": "PASS", "reason": "Independent comparison confirms all rows 140–207 exactly match K1, preserving full hands, cuffs, legs, feet and baseline."},
+    "K1K2Continuity": {"status": "PASS", "reason": "The change reads as localized jacket/upper-arm expansion with stable registration and identity. No head, stance or hand jump is visible."},
+    "noPixelArtifacts": {"status": "PASS", "reason": "No visible holes, isolated stray pixels, torn outlines or major donor-fill artifacts in native and nearest-3× contacts."}
+  },
+  "independentPixelEvidence": {"changedPixels": 1904, "changedBboxExclusive": [65,84,124,140]},
+  "remainingHumanArtJudgement": "The strengthening is subtle and reads primarily as a fuller jacket/upper-arm silhouette; a more confident pose is not established by these locked regions. Whether this amount and interpretation of growth satisfies the intended transformation remains a human art decision.",
+  "scope": "Independent static K1→K2 review only. No K3 review, runtime approval, or user K2_ART_APPROVED is implied. Rejected draft was not used for this verdict."
+}

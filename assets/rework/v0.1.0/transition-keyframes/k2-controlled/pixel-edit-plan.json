@@ -1,0 +1,22 @@
+{
+  "id": "K2_LOCAL_JACKET_THICKENING_V1",
+  "sourceSha256": "3fe2510fce45d2e7fb63e2018f79fe69ef9f05c470634903fa580700acc9e246",
+  "method": "bounded integer copies of two native K1 jacket/upper-arm panels; gap cloth pixels use the adjacent immutable K1 panel-edge donor at the same row",
+  "leftSourceColumns": [69, 84],
+  "rightSourceColumns": [103, 121],
+  "rowBands": [
+    {"y": [84, 88], "outwardPixels": 1},
+    {"y": [88, 92], "outwardPixels": 2},
+    {"y": [92, 96], "outwardPixels": 3},
+    {"y": [96, 124], "outwardPixels": 4},
+    {"y": [124, 132], "outwardPixels": 3},
+    {"y": [132, 136], "outwardPixels": 2},
+    {"y": [136, 140], "outwardPixels": 1}
+  ],
+  "headNeckEdited": false,
+  "handsLegsFeetEdited": false,
+  "energyEffects": false,
+  "globalScalingOrTranslation": false,
+  "interpolation": false,
+  "aiGeneration": false
+}

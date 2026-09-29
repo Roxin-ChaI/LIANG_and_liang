@@ -1,0 +1,132 @@
+{
+  "status": "AWAITING_INDEPENDENT_K2_REVIEW",
+  "technicalPass": true,
+  "checks": {
+    "lockedByteIdentical": true,
+    "headByteIdentical": true,
+    "headSizeWithin4": true,
+    "headCenterWithin3": true,
+    "baseline203": true,
+    "bodyEdgesGradual": true,
+    "bodyCenterStable": true,
+    "capGrowthWithin12": true,
+    "paletteFromK1": true,
+    "binaryAlpha": true,
+    "noHiddenRGB": true,
+    "noClipping": true,
+    "noIsolatedPixels": true,
+    "oneConnectedCharacter": true,
+    "noNewTransparentHoles": true
+  },
+  "headBbox": [
+    54,
+    4,
+    122,
+    84
+  ],
+  "headSize": [
+    68,
+    80
+  ],
+  "headCenter": [
+    88.0,
+    44.0
+  ],
+  "headCenterDelta": [
+    0.0,
+    0.0
+  ],
+  "registrationX": 96,
+  "registrationPolicy": "no registration transform; original head/neck/feet held fixed",
+  "baselineY": 203,
+  "bodyBbox": [
+    65,
+    70,
+    124,
+    204
+  ],
+  "bodyEdgeExpansion": [
+    4,
+    3
+  ],
+  "bodyBandCenterX": 94.5,
+  "upperShoulderGuide": {
+    "K1Width": 33,
+    "K2Width": 33,
+    "note": "y83 guide locked; not a measurement of the lower cap expansion"
+  },
+  "shoulderCapBand": {
+    "K1Bbox": [
+      69,
+      84,
+      120,
+      100
+    ],
+    "K2Bbox": [
+      65,
+      84,
+      124,
+      100
+    ],
+    "widthGrowth": 8
+  },
+  "lockedByteComparison": {
+    "referenceSha256": "224aea3fa6eeeb63f7dca9382b35328393fe54cdb58eec44c0b957ef218583f4",
+    "candidateSha256": "224aea3fa6eeeb63f7dca9382b35328393fe54cdb58eec44c0b957ef218583f4",
+    "byteCount": 144668,
+    "differentBytes": 0
+  },
+  "rgbaChangedPixels": 2099,
+  "rgbaChangedBbox": [
+    65,
+    84,
+    124,
+    146
+  ],
+  "measured": {
+    "alphaBbox": [
+      54,
+      4,
+      124,
+      204
+    ],
+    "baselineY": 203,
+    "headReferenceBbox": [
+      54,
+      4,
+      122,
+      70
+    ],
+    "bodyReferenceBbox": [
+      65,
+      70,
+      124,
+      204
+    ],
+    "bodyBandCenterX": 94.5,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "hiddenRgbPixels": 0,
+    "connectedComponentSizes8": [
+      9679
+    ],
+    "isolatedSinglePixels": 0,
+    "touchesCellEdge": false
+  },
+  "userArtApproval": "PENDING",
+  "localChainAllowed": false,
+  "runtimeEligible": false,
+  "sourceSha256": "3fe2510fce45d2e7fb63e2018f79fe69ef9f05c470634903fa580700acc9e246",
+  "candidatePngSha256": "9998f35c291119ff13577548dcc476c57c5767c77a72a5254a5f5d57e4fd1363",
+  "candidateRgbaSha256": "255eb4c986a9cef5f9fb3aa991366fce4442b1464a94c628d018859422e6270e",
+  "pixelEditPlanSha256": "2d37524783e5077f499fb038fa63ae5821104f025364dc20fa24d91d9dd6b4f2",
+  "method": "bounded integer copies of two native K1 jacket/upper-arm panels; gap cloth pixels use the adjacent immutable K1 panel-edge donor at the same row",
+  "newPoses": [
+    "K2"
+  ],
+  "aiUsed": false,
+  "scale": "none; QA magnification only uses nearest-neighbor",
+  "retryCount": 0
+}

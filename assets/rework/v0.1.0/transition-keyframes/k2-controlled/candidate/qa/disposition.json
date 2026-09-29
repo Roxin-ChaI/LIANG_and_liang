@@ -1,0 +1,12 @@
+{
+  "status": "REJECTED_DRAFT_HAND_LOCK_POLICY",
+  "candidatePngSha256": "9998f35c291119ff13577548dcc476c57c5767c77a72a5254a5f5d57e4fd1363",
+  "candidateRgbaSha256": "255eb4c986a9cef5f9fb3aa991366fce4442b1464a94c628d018859422e6270e",
+  "reason": "Draft taper y142:146 moves upper hand skin despite the chosen stricter hands-unmodified policy. Original initial numeric report is retained as historical evidence, not a final PASS.",
+  "originalRowBands": [[84,88,1],[88,92,2],[92,96,3],[96,128,4],[128,136,3],[136,142,2],[142,146,1]],
+  "originalSourceColumns": {"left": [69,84], "right": [103,121]},
+  "finalCandidate": "../candidate-locked-hands/K2.png",
+  "userArtApproval": "NOT_REQUESTED",
+  "localChainAllowed": false,
+  "runtimeEligible": false
+}

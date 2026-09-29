@@ -104,6 +104,7 @@ def assess(candidate: Image.Image) -> dict:
     checks = {
         "lockedByteIdentical": original == actual,
         "headByteIdentical": k1.crop((0, 0, 192, 84)).tobytes() == candidate.crop((0, 0, 192, 84)).tobytes(),
+        "handsLowerBodyByteIdentical": k1.crop((0, 140, 192, 208)).tobytes() == candidate.crop((0, 140, 192, 208)).tobytes(),
         "headSizeWithin4": bool(head_size and abs(head_size[0]-68) <= 4 and abs(head_size[1]-80) <= 4),
         "headCenterWithin3": bool(head_delta and all(abs(v) <= 3 for v in head_delta)),
         "baseline203": info["baselineY"] == 203,

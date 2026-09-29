@@ -1,0 +1,123 @@
+{
+  "status": "K1_K2_STATIC_PASS",
+  "technicalPass": true,
+  "checks": {
+    "lockedByteIdentical": true,
+    "headByteIdentical": true,
+    "handsLowerBodyByteIdentical": true,
+    "headSizeWithin4": true,
+    "headCenterWithin3": true,
+    "baseline203": true,
+    "bodyEdgesGradual": true,
+    "bodyCenterStable": true,
+    "capGrowthWithin12": true,
+    "paletteFromK1": true,
+    "binaryAlpha": true,
+    "noHiddenRGB": true,
+    "noClipping": true,
+    "noIsolatedPixels": true,
+    "oneConnectedCharacter": true,
+    "noNewTransparentHoles": true
+  },
+  "headBbox": [
+    54,
+    4,
+    122,
+    84
+  ],
+  "headSize": [
+    68,
+    80
+  ],
+  "headCenter": [
+    88.0,
+    44.0
+  ],
+  "headCenterDelta": [
+    0.0,
+    0.0
+  ],
+  "registrationX": 96,
+  "registrationPolicy": "no registration transform; original head/neck/feet held fixed",
+  "baselineY": 203,
+  "bodyBbox": [
+    65,
+    70,
+    124,
+    204
+  ],
+  "bodyEdgeExpansion": [
+    4,
+    3
+  ],
+  "bodyBandCenterX": 94.5,
+  "upperShoulderGuide": {
+    "K1Width": 33,
+    "K2Width": 33,
+    "note": "y83 guide locked; not a measurement of the lower cap expansion"
+  },
+  "shoulderCapBand": {
+    "K1Bbox": [
+      69,
+      84,
+      120,
+      100
+    ],
+    "K2Bbox": [
+      65,
+      84,
+      124,
+      100
+    ],
+    "widthGrowth": 8
+  },
+  "lockedByteComparison": {
+    "referenceSha256": "224aea3fa6eeeb63f7dca9382b35328393fe54cdb58eec44c0b957ef218583f4",
+    "candidateSha256": "224aea3fa6eeeb63f7dca9382b35328393fe54cdb58eec44c0b957ef218583f4",
+    "byteCount": 144668,
+    "differentBytes": 0
+  },
+  "rgbaChangedPixels": 1904,
+  "rgbaChangedBbox": [
+    65,
+    84,
+    124,
+    140
+  ],
+  "measured": {
+    "alphaBbox": [
+      54,
+      4,
+      124,
+      204
+    ],
+    "baselineY": 203,
+    "headReferenceBbox": [
+      54,
+      4,
+      122,
+      70
+    ],
+    "bodyReferenceBbox": [
+      65,
+      70,
+      124,
+      204
+    ],
+    "bodyBandCenterX": 94.5,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "hiddenRgbPixels": 0,
+    "connectedComponentSizes8": [
+      9639
+    ],
+    "isolatedSinglePixels": 0,
+    "touchesCellEdge": false
+  },
+  "userArtApproval": "PENDING",
+  "localChainAllowed": true,
+  "runtimeEligible": false,
+  "independentReviewFresh": true
+}
