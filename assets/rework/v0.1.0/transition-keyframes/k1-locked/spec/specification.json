@@ -1,0 +1,59 @@
+{
+  "id": "K1_LOCKED_REGION_V1",
+  "status": "SPECIFICATION_ONLY",
+  "source": "assets/rework/v0.1.0/manual-transition-endpoints/A-gu-to-feng-entry.png",
+  "sourceSha256": "6c925bbcd1386cad107cdffb5aa7569d9ace295790cb9542d7dd0629f074cab3",
+  "canvas": [
+    192,
+    208
+  ],
+  "registrationX": 96,
+  "baselineY": 203,
+  "headBbox": [
+    54,
+    4,
+    122,
+    84
+  ],
+  "headSize": [
+    68,
+    80
+  ],
+  "headCenter": [
+    88,
+    44
+  ],
+  "maxHeadCenterDelta": 1,
+  "effectiveHeadDeltaRequired": 0,
+  "lockedPolicy": "entire y0:90 incl transparent pixels; neck/collar x84:103,y90:101; outside conservative body edit rectangle; feet/lower legs y180:208",
+  "editableBbox": [
+    66,
+    90,
+    126,
+    180
+  ],
+  "maskConvention": "L binary255 selected; row-major RGBA bytes incl transparent RGB/alpha",
+  "lockedPixelCount": 34745,
+  "editablePixelCount": 5191,
+  "lockedReferenceByteSha256": "61d9eb419f5449d61cad2616bd5154a674c46e9c9b3a58d684adbac614207dc9",
+  "shoulderGuidePoints": [
+    [
+      75,
+      83
+    ],
+    [
+      108,
+      83
+    ]
+  ],
+  "shoulderGuideWidth": 33,
+  "shoulderGuidePolicy": "same canonical guide because its entire supporting region is byte-locked; separate band90:110 hull is a geometric proxy, not shoulder anatomy",
+  "maxShoulderWidthDelta": 4,
+  "maxBodyEdgeDelta": 3,
+  "method": "explicit A-origin local integer pixel copies/hand edits only; no whole-person scaling, translation, interpolation, AI or head repair",
+  "effects": "none preferred; no detached/soft accents or head overlays",
+  "visualReviewRequired": true,
+  "appIntegrationAllowed": false,
+  "K2K3ModificationAllowed": false,
+  "runtimeEligible": false
+}
