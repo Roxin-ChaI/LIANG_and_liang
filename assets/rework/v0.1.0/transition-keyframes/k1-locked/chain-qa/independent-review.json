@@ -1,0 +1,21 @@
+{
+  "reviewer":"locked_k1_visual",
+  "A_K1_static_verdict":"A_K1_STATIC_PASS",
+  "K1_K2_static_verdict":"K2_REWORK_REQUIRED",
+  "severity":"P1",
+  "scope":"Independent static visual inspection of native, nearest3x chain and overlay sheets; no runtime assessment",
+  "checks":{
+    "headScaleAndProportionContinuity":{"status":"fail","observation":"K2 head conspicuously smaller/shorter at similar total height; chin and neck rise substantially, confirmed in nearest3x"},
+    "bodyProportionContinuity":{"status":"fail","observation":"Abrupt broadening of chest, shoulders, arms and legs; smaller head plus expanded body visibly changes build"},
+    "headPlacementContinuity":{"status":"fail","observation":"Head shifts right and face/chin move up; displaced/reduced silhouette visible in overlay"},
+    "identityContinuity":{"status":"fail","observation":"Hair/glasses retain cues, but narrower face, smaller head, sharper expression and new proportions create conspicuous redesign between keys"},
+    "individualHandArmPlausibility":{"status":"pass","observation":"K2 raised fist, bent elbow and opposite hanging hand remain readable and attached"},
+    "overallKeyposeProgression":{"status":"fail","observation":"Tiny K1 arm gathering to K2 raised fist/wide stance combines an abrupt head/body scale change; proportion discontinuity prevents continuous chain"},
+    "baselineAndClipping":{"status":"pass","observation":"Complete silhouettes/shoes on same baseline; spread feet are stance change, not clipping"}
+  },
+  "landmarkInterpretation":"Historical K2 estimates support review with ±3px uncertainty; failure independently visible at native size",
+  "recommendedTarget":"Rework K2 head size/placement and body proportions around locked near-Gu K1; do not enlarge/distort K1",
+  "USER_ART_APPROVAL":"PENDING",
+  "runtimeApproval":"NOT_GRANTED",
+  "K3Assessment":"NOT_PERFORMED"
+}

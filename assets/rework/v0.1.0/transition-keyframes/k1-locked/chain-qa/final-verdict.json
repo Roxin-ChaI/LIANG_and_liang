@@ -1,0 +1,17 @@
+{
+  "status":"K2_REWORK_REQUIRED",
+  "severity":"P1",
+  "A_K1":"A_K1_STATIC_PASS",
+  "K1Constraints":"PASS",
+  "K1UserArtApproval":"PENDING",
+  "K1ChargeCue":"MANUAL_VISUAL_QA",
+  "K1_K2":"STATIC_VISUAL_FAIL",
+  "wholeKeyframeChain":"KEYFRAME_QA_FAIL",
+  "evidence":["contact-sheet.png","contact-sheet-nearest3x.png","K1-K2-overlay-contact.png","landmark-report.json","independent-review.json"],
+  "K1ModifiedToAccommodateK2":false,
+  "K2K3Modified":false,
+  "additionalFramesProduced":0,
+  "fullAnimationApproved":false,
+  "runtimeEligible":false,
+  "appIntegrated":false
+}

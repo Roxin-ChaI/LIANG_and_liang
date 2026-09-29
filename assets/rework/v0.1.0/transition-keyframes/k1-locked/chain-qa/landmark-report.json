@@ -1,0 +1,71 @@
+{
+  "status": "AWAITING_INDEPENDENT_CHAIN_REVIEW",
+  "A_K1": "A_K1_STATIC_PASS",
+  "K1_K2": {
+    "headSize": {
+      "K1": [
+        68,
+        80
+      ],
+      "K2Approx": [
+        55,
+        59
+      ],
+      "deltaApprox": [
+        -13,
+        -21
+      ]
+    },
+    "headCenter": {
+      "K1": [
+        88,
+        44
+      ],
+      "K2Approx": [
+        95.5,
+        34.5
+      ],
+      "deltaApprox": [
+        7.5,
+        -9.5
+      ]
+    },
+    "shoulderGuideWidth": {
+      "K1": 33,
+      "K2Approx": 62,
+      "deltaApprox": 29
+    },
+    "historicalK2AnnotationUncertaintyPx": 3,
+    "bodyBandBbox": {
+      "K1": [
+        69,
+        70,
+        121,
+        204
+      ],
+      "K2": [
+        53,
+        70,
+        139,
+        204
+      ],
+      "delta": [
+        -16,
+        0,
+        18,
+        0
+      ]
+    },
+    "baselineDelta": 0,
+    "warning": "guide estimates are review evidence, not an automatic visual FAIL; original K2 annotation is preserved"
+  },
+  "K1Sha256": "3fe2510fce45d2e7fb63e2018f79fe69ef9f05c470634903fa580700acc9e246",
+  "K2Sha256": "057eb3762789c5b388e09063180279a6043ceeed55a20db4e53f7661e9130c37",
+  "K2Source": "assets/rework/v0.1.0/transition-keyframes/gu-to-feng-candidate-retry/keys/K2.png",
+  "K2Modified": false,
+  "K3Modified": false,
+  "newPosesGenerated": 0,
+  "userArtApproval": "PENDING",
+  "runtimeEligible": false,
+  "scope": "static only; no App integration, full animation or playback-speed changes"
+}
