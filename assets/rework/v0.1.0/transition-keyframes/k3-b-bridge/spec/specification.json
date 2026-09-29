@@ -1,0 +1,147 @@
+{
+  "id": "K3_B_BRIDGE_CONTRACT_V1",
+  "status": "SPECIFICATION_ONLY",
+  "generatedPoses": 0,
+  "frozenFiles": {
+    "A": {
+      "path": "assets/rework/v0.1.0/manual-transition-endpoints/A-gu-to-feng-entry.png",
+      "sha256": "6c925bbcd1386cad107cdffb5aa7569d9ace295790cb9542d7dd0629f074cab3"
+    },
+    "K1": {
+      "path": "assets/rework/v0.1.0/transition-keyframes/k1-locked/candidate/K1.png",
+      "sha256": "3fe2510fce45d2e7fb63e2018f79fe69ef9f05c470634903fa580700acc9e246"
+    },
+    "K2": {
+      "path": "assets/rework/v0.1.0/transition-keyframes/k2-controlled/candidate-locked-hands/K2.png",
+      "sha256": "565122ea1364eebd56a0d6d3b53934bef8d45d53cb1787eedf4ee1f812cdfcec"
+    },
+    "K3": {
+      "path": "assets/rework/v0.1.0/transition-keyframes/k3-controlled/candidate/K3.png",
+      "sha256": "2b5651503d4d223d5c670152a1425ebafd6d55b5802f55794c6c70b3624876f6"
+    },
+    "B": {
+      "path": "assets/rework/v0.1.0/manual-transition-endpoints/B-gu-to-feng-exit.png",
+      "sha256": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b"
+    }
+  },
+  "approvalProvenance": "current user explicitly approves K1/K2/K3 and A->K1->K2->K3; historical QA is not rewritten",
+  "canvas": [
+    192,
+    208
+  ],
+  "registrationX": 96,
+  "baselineY": 203,
+  "limits": {
+    "headSize": 6,
+    "headCenterX": 3,
+    "headCenterY": 4,
+    "bodyWidth": 15
+  },
+  "K3": {
+    "headBbox": [
+      54,
+      4,
+      122,
+      84
+    ],
+    "headSize": [
+      68,
+      80
+    ],
+    "headCenter": [
+      88.0,
+      44.0
+    ],
+    "headGuideApproximate": false,
+    "headGuideUncertaintyPx": 0,
+    "bodyBbox": [
+      60,
+      70,
+      129,
+      204
+    ],
+    "bodyWidth": 69,
+    "bodyBandCenterX": 94.5,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "cb5d9386568f6c67b9ed9e28448fe9a16dd4b6127bbbbc8b251897b5aba80a97"
+  },
+  "B": {
+    "headBbox": [
+      64,
+      4,
+      113,
+      58
+    ],
+    "headSize": [
+      49,
+      54
+    ],
+    "headCenter": [
+      88.5,
+      31.0
+    ],
+    "headGuideApproximate": true,
+    "headGuideUncertaintyPx": 3,
+    "bodyBbox": [
+      44,
+      70,
+      148,
+      204
+    ],
+    "bodyWidth": 104,
+    "bodyBandCenterX": 96.0,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+  },
+  "guideWarning": "K3 reference includes lower neck/collar; B chin hand-occluded, manual +/-3px; not exact skull segmentation",
+  "capacity": [
+    {
+      "bridges": 1,
+      "segments": 2,
+      "requiredSegmentsByNominalGuide": {
+        "headWidth": 4,
+        "headHeight": 5,
+        "headCenterX": 1,
+        "headCenterY": 4,
+        "bodyWidth": 3
+      },
+      "nominalMinimumBridges": 4,
+      "numericCapacitySufficient": false,
+      "meaning": "lower bound from nominal guides only, not a promise of face/arm/pose continuity",
+      "headGuideUncertaintyPx": 3
+    },
+    {
+      "bridges": 2,
+      "segments": 3,
+      "requiredSegmentsByNominalGuide": {
+        "headWidth": 4,
+        "headHeight": 5,
+        "headCenterX": 1,
+        "headCenterY": 4,
+        "bodyWidth": 3
+      },
+      "nominalMinimumBridges": 4,
+      "numericCapacitySufficient": false,
+      "meaning": "lower bound from nominal guides only, not a promise of face/arm/pose continuity",
+      "headGuideUncertaintyPx": 3
+    }
+  ],
+  "twoBridgeFeasibility": "INSUFFICIENT_NOMINAL_HEAD_HEIGHT_AND_CENTER_BUDGET",
+  "authorizedNewPoses": [
+    "KB1",
+    "KB2 only after KB2_REQUIRED"
+  ],
+  "KB1": "from K3: local head decrease up to6px/axis, center up to4px up; body grows up to15px; begin arm pose; still not full Feng",
+  "KB2": "from fresh static-pass KB1 only; same budgets; final KB2->B evaluated independently, never waived",
+  "localHeadMethod": "nearest-neighbor anatomical-part raster only, retaining original face/hair/glasses palette; no whole-person scaling",
+  "bodyMethod": "documented native integer cloth/limb copies, limited donor repairs; visual seam/identity gate mandatory",
+  "effects": "none; never hide differences",
+  "globalScalingAllowed": false,
+  "faceIdentityGate": "independent visual PASS and eventual human art approval; numeric bbox is insufficient",
+  "failurePolicy": "incoming KB1 FAIL stops; insufficient outgoing KB1->B gives KB2_REQUIRED; KB2->B FAIL blocks completion and asks for more art scope, not KB3 synthesis",
+  "appIntegrationAllowed": false,
+  "fullAnimationAllowed": false,
+  "runtimeEligible": false
+}
