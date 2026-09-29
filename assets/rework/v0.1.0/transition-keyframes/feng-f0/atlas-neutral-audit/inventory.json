@@ -1,0 +1,2327 @@
+{
+  "status": "ATLAS_SCAN_COMPLETE_VISUAL_RANKING_PENDING",
+  "atlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+  "atlasSize": [
+    1536,
+    2288
+  ],
+  "cellSize": [
+    192,
+    208
+  ],
+  "slotsScanned": 88,
+  "nonemptyFrames": 74,
+  "emptySlots": 14,
+  "rowNames": [
+    "idle",
+    "running-right",
+    "running-left",
+    "waving",
+    "jumping",
+    "failed",
+    "waiting",
+    "running",
+    "review",
+    "look-row-9",
+    "look-row-10"
+  ],
+  "KB2RgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870",
+  "formalIdle0RgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+  "headGuideWarning": "upperRegionBboxApprox is alpha in y0:70; arms/shoulders can contaminate it. It is NOT a segmented anatomical head; shortlisted candidates require manual head guides and independent visual review.",
+  "registrationWarning": "registrationX=96 is the atlas cell anchor, not a proof that each asymmetric silhouette's center is exactly 96.",
+  "duplicatePixelFamilies": [
+    [
+      "idle:0",
+      "idle:1",
+      "idle:4",
+      "idle:5",
+      "idle:6",
+      "jumping:0",
+      "jumping:4",
+      "failed:0",
+      "failed:1",
+      "failed:6",
+      "failed:7"
+    ],
+    [
+      "idle:2",
+      "failed:2",
+      "failed:5"
+    ],
+    [
+      "idle:3",
+      "failed:3",
+      "failed:4"
+    ],
+    [
+      "jumping:1",
+      "jumping:3"
+    ],
+    [
+      "running:0",
+      "running:5"
+    ],
+    [
+      "review:0",
+      "review:5"
+    ]
+  ],
+  "records": [
+    {
+      "state": "idle",
+      "row": 0,
+      "frame": 0,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "frame": 1,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "frame": 2,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "7f3a6ecaca07e962cdb7d0e8f96bb41dc12323e82694d566d9c23e90dd083faf"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "frame": 3,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "fe0414d41943c44d3f6e9b34660f227c5f097108902ee35a6353506587d7f389"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "frame": 4,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "frame": 5,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "frame": 6,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "frame": 7,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frame": 0,
+      "nonempty": true,
+      "alphaBbox": [
+        53,
+        5,
+        139,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        53,
+        70,
+        139,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        60,
+        5,
+        131,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "ba21529f62ca3d8498bcb65f1b77125126673c26d27fe6d5606ccd9ec00e6ece"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frame": 1,
+      "nonempty": true,
+      "alphaBbox": [
+        54,
+        5,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        54,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 100.0,
+      "upperRegionBboxApprox": [
+        63,
+        5,
+        139,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "7824752ece6caaf0885ad9359f262343e0c822ba21e05e88df071b0ca133f2c4"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frame": 2,
+      "nonempty": true,
+      "alphaBbox": [
+        50,
+        5,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        50,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 98.0,
+      "upperRegionBboxApprox": [
+        61,
+        5,
+        136,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "f6a4e3f4904c10a541a07b1973b304fbd4e445881c0edb01e219312be4564fdb"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frame": 3,
+      "nonempty": true,
+      "alphaBbox": [
+        58,
+        5,
+        138,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        58,
+        70,
+        133,
+        204
+      ],
+      "bodyBandCenterX": 95.5,
+      "upperRegionBboxApprox": [
+        65,
+        5,
+        138,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "306081778da2b5d615eb53760be03ee6126d3e6d19e504e27f7ae9d89942635e"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frame": 4,
+      "nonempty": true,
+      "alphaBbox": [
+        48,
+        5,
+        143,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        48,
+        70,
+        143,
+        204
+      ],
+      "bodyBandCenterX": 95.5,
+      "upperRegionBboxApprox": [
+        63,
+        5,
+        138,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "4bc984284c00bdc4be386fc23a01eb05f55556fbae2e915e38a6888561bcb03a"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frame": 5,
+      "nonempty": true,
+      "alphaBbox": [
+        48,
+        5,
+        152,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        48,
+        70,
+        152,
+        204
+      ],
+      "bodyBandCenterX": 100.0,
+      "upperRegionBboxApprox": [
+        67,
+        5,
+        141,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "ba71e5dcc5b77cc27cfc6a2006313f0ae6aa1ec445905e01331a8304d5f76608"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frame": 6,
+      "nonempty": true,
+      "alphaBbox": [
+        54,
+        5,
+        139,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        54,
+        70,
+        139,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "upperRegionBboxApprox": [
+        60,
+        5,
+        132,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "5620cb1d9ca9b6ab75ec2f8685346535942f82ddf3d0b11f305c0db17ee622a5"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frame": 7,
+      "nonempty": true,
+      "alphaBbox": [
+        55,
+        4,
+        137,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        55,
+        70,
+        137,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        62,
+        4,
+        134,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "b3f393b99a9db168048177adae45643a39f9904d91b050a8463a359b4a9c01e3"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frame": 0,
+      "nonempty": true,
+      "alphaBbox": [
+        53,
+        5,
+        139,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        53,
+        70,
+        139,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        61,
+        5,
+        132,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "325187c46ffa017e3641252c5a661345003583e0117b2b7bc5cc5b4da823c455"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frame": 1,
+      "nonempty": true,
+      "alphaBbox": [
+        46,
+        5,
+        138,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        46,
+        70,
+        138,
+        204
+      ],
+      "bodyBandCenterX": 92.0,
+      "upperRegionBboxApprox": [
+        53,
+        5,
+        129,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "364e032c9bd31ad9cd90fd3c3053eaa2acb0150a91d3391b45998c7bbf51fdc8"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frame": 2,
+      "nonempty": true,
+      "alphaBbox": [
+        46,
+        5,
+        142,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        46,
+        70,
+        142,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        56,
+        5,
+        131,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "bf1f03acc6b0fab139033d93033ac8f5117d5bade840daad6c6ae6c163f74d8a"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frame": 3,
+      "nonempty": true,
+      "alphaBbox": [
+        54,
+        5,
+        134,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        59,
+        70,
+        134,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "upperRegionBboxApprox": [
+        54,
+        5,
+        127,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "a47e8fefae95e26271d3deca970634ed008448d8ef94c36d479c9d4a9cccfae9"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frame": 4,
+      "nonempty": true,
+      "alphaBbox": [
+        49,
+        5,
+        144,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        49,
+        70,
+        144,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "upperRegionBboxApprox": [
+        54,
+        5,
+        129,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "f785606df87ef7d6af0a206e1950abf0db71893998f708444cfe615ce174227e"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frame": 5,
+      "nonempty": true,
+      "alphaBbox": [
+        40,
+        5,
+        144,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        40,
+        70,
+        144,
+        204
+      ],
+      "bodyBandCenterX": 92.0,
+      "upperRegionBboxApprox": [
+        51,
+        5,
+        125,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "79dd9c402f2fe3dd8a2a9635b994668c2eb761e7a9442fbe8a802b92af49d214"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frame": 6,
+      "nonempty": true,
+      "alphaBbox": [
+        53,
+        5,
+        138,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        53,
+        70,
+        138,
+        204
+      ],
+      "bodyBandCenterX": 95.5,
+      "upperRegionBboxApprox": [
+        60,
+        5,
+        132,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "3c0ffcb8c0a9da76cadd05e365a6e2bd8d8d6a133b149c317a48b0909c3a215d"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frame": 7,
+      "nonempty": true,
+      "alphaBbox": [
+        55,
+        4,
+        137,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        55,
+        70,
+        137,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        58,
+        4,
+        130,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "518042c8d5b1122d37285eeed4c4e0affd66aa089936eaafb3fd6b4e85746466"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frame": 0,
+      "nonempty": true,
+      "alphaBbox": [
+        38,
+        5,
+        150,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        38,
+        70,
+        150,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        51,
+        5,
+        135,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "ded77c8888ce46f705abe410df56c53aec05b04950e206b48fb221dc5647d42d"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frame": 1,
+      "nonempty": true,
+      "alphaBbox": [
+        39,
+        4,
+        151,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        39,
+        70,
+        151,
+        204
+      ],
+      "bodyBandCenterX": 95.0,
+      "upperRegionBboxApprox": [
+        40,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "da201f6dad8802fc647efcee406525a5d8f93929ae10ff4899cad23f14d66590"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frame": 2,
+      "nonempty": true,
+      "alphaBbox": [
+        27,
+        4,
+        150,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        35,
+        70,
+        150,
+        204
+      ],
+      "bodyBandCenterX": 92.5,
+      "upperRegionBboxApprox": [
+        27,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "19e640a128be17f6ba07ef3854329a1bb22555a03dd62ce683f2767bb6c5c5c5"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frame": 3,
+      "nonempty": true,
+      "alphaBbox": [
+        36,
+        4,
+        150,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        36,
+        70,
+        150,
+        204
+      ],
+      "bodyBandCenterX": 93.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "c15639036a64162f08f02565d82a594a87543a309d7451b8f92e2e8af2b9fd23"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frame": 4,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frame": 5,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frame": 6,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frame": 7,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frame": 0,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frame": 1,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        3,
+        148,
+        203
+      ],
+      "baselineY": 202,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        203
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        50,
+        3,
+        139,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "5928924a16fdeb9666892fa56d87585b25534bb498b05128eba34385a0c61d6e"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frame": 2,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        1,
+        148,
+        201
+      ],
+      "baselineY": 200,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        201
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        49,
+        1,
+        139,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "e665b8fa21219c2505ebc69ae49f4ea443d1bd0e325f1c31e07433640b470aa3"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frame": 3,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        3,
+        148,
+        203
+      ],
+      "baselineY": 202,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        203
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        50,
+        3,
+        139,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "5928924a16fdeb9666892fa56d87585b25534bb498b05128eba34385a0c61d6e"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frame": 4,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frame": 5,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frame": 6,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frame": 7,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frame": 0,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frame": 1,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frame": 2,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "7f3a6ecaca07e962cdb7d0e8f96bb41dc12323e82694d566d9c23e90dd083faf"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frame": 3,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "fe0414d41943c44d3f6e9b34660f227c5f097108902ee35a6353506587d7f389"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frame": 4,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "fe0414d41943c44d3f6e9b34660f227c5f097108902ee35a6353506587d7f389"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frame": 5,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "7f3a6ecaca07e962cdb7d0e8f96bb41dc12323e82694d566d9c23e90dd083faf"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frame": 6,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frame": 7,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frame": 0,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        6,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        53,
+        6,
+        136,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "c79d2a37654d4ce23f945f1fb2705f47cd645ccb586252d0881a32fa8c0b9cd8"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frame": 1,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        6,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        53,
+        6,
+        136,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "fe12aec08285985381e1f36fe35e938fa752d40fe2d5cfe114c9ab414dfcc75a"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frame": 2,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        6,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        53,
+        6,
+        136,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "c75301de395a82dfa772324e712e8cd33469aaa517d8c5258e497d6c6652dc3a"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frame": 3,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        6,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        53,
+        6,
+        136,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "16cd32ba925e85ca052ea0c94c6e7d1330c9b3ef35ddd7951c769e4f8487f9d9"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frame": 4,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        6,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        53,
+        6,
+        136,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "7a443f1f8d4ae6f98efb5b1432173c54e90407ec7a1886ba70e5d45017658b27"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frame": 5,
+      "nonempty": true,
+      "alphaBbox": [
+        44,
+        6,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.0,
+      "upperRegionBboxApprox": [
+        53,
+        6,
+        136,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "6d73c0c8972f4d08c20212ff1cba9a83040d5ffc5a721a0f84c8cebf412229cc"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frame": 6,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frame": 7,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frame": 0,
+      "nonempty": true,
+      "alphaBbox": [
+        45,
+        6,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        45,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "upperRegionBboxApprox": [
+        52,
+        6,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "a2f78a145e965c18b559ab95425935f603e19d60cac3cef79a3b1cee681e26ae"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frame": 1,
+      "nonempty": true,
+      "alphaBbox": [
+        45,
+        6,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        45,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "upperRegionBboxApprox": [
+        53,
+        6,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "467b412d4d9c2e56aa96d752e486c937ef4336ec80dca65b329a9adaec6ca7f8"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frame": 2,
+      "nonempty": true,
+      "alphaBbox": [
+        45,
+        6,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        45,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "upperRegionBboxApprox": [
+        53,
+        6,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "73088ca243773a058fa67052de9893a8a19e92a4a5fee18bf47be1de821f044f"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frame": 3,
+      "nonempty": true,
+      "alphaBbox": [
+        45,
+        6,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        45,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "upperRegionBboxApprox": [
+        54,
+        6,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "bc5a93eebcd23bf9ec6b3775e23c0b3783a093583bf380413c6967c7a271bbe1"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frame": 4,
+      "nonempty": true,
+      "alphaBbox": [
+        45,
+        6,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        45,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "upperRegionBboxApprox": [
+        53,
+        6,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "5b8bd187c5ac00b5d3ff3ba719788ef4f0c5505ea6b44238f42ca9d1fc9e1998"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frame": 5,
+      "nonempty": true,
+      "alphaBbox": [
+        45,
+        6,
+        148,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        45,
+        70,
+        148,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "upperRegionBboxApprox": [
+        52,
+        6,
+        137,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "a2f78a145e965c18b559ab95425935f603e19d60cac3cef79a3b1cee681e26ae"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frame": 6,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frame": 7,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frame": 0,
+      "nonempty": true,
+      "alphaBbox": [
+        39,
+        4,
+        145,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        39,
+        70,
+        145,
+        204
+      ],
+      "bodyBandCenterX": 92.0,
+      "upperRegionBboxApprox": [
+        48,
+        4,
+        133,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "fecd35e5b383b6219a19683681f531c9bff359a88824291e7ae4a8cfc9e757b8"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frame": 1,
+      "nonempty": true,
+      "alphaBbox": [
+        39,
+        4,
+        145,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        39,
+        70,
+        145,
+        204
+      ],
+      "bodyBandCenterX": 92.0,
+      "upperRegionBboxApprox": [
+        47,
+        4,
+        133,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "d6e7a74c78bea027e128eea8aa9e545bcc2910f5e3e0dd2261aeca6edaf87093"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frame": 2,
+      "nonempty": true,
+      "alphaBbox": [
+        39,
+        4,
+        145,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        39,
+        70,
+        145,
+        204
+      ],
+      "bodyBandCenterX": 92.0,
+      "upperRegionBboxApprox": [
+        47,
+        4,
+        133,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "67ee015e82880afbd997b007a4a82dd250b99e997f1f0ef5d0850cda9a03fa4d"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frame": 3,
+      "nonempty": true,
+      "alphaBbox": [
+        38,
+        4,
+        145,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        38,
+        70,
+        145,
+        204
+      ],
+      "bodyBandCenterX": 91.5,
+      "upperRegionBboxApprox": [
+        47,
+        4,
+        133,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "f8561de2eebd656109db4802b9f50bb52a71c2b60b3ffa2ed5aa3847b0e87128"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frame": 4,
+      "nonempty": true,
+      "alphaBbox": [
+        39,
+        4,
+        145,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        39,
+        70,
+        145,
+        204
+      ],
+      "bodyBandCenterX": 92.0,
+      "upperRegionBboxApprox": [
+        48,
+        4,
+        133,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "b13b1b2ffd3be48f11f8a1a090d3d9300a3777ecc86d27dbc23391849ca29c7c"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frame": 5,
+      "nonempty": true,
+      "alphaBbox": [
+        39,
+        4,
+        145,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        39,
+        70,
+        145,
+        204
+      ],
+      "bodyBandCenterX": 92.0,
+      "upperRegionBboxApprox": [
+        48,
+        4,
+        133,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "fecd35e5b383b6219a19683681f531c9bff359a88824291e7ae4a8cfc9e757b8"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frame": 6,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frame": 7,
+      "nonempty": false,
+      "alphaBbox": null,
+      "baselineY": null,
+      "bodyBbox": null,
+      "bodyBandCenterX": null,
+      "upperRegionBboxApprox": null,
+      "registrationX": 96,
+      "rgbaSha256": "30d4da31db85877f0102e0d56b9559e9d4400fde83c253a19c7c1988b4ed0c64"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "frame": 0,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        49,
+        4,
+        134,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "08fbc52b99bba048990786d28a66370bc75bcf97cbd682a367372390f1044170"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "frame": 1,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        52,
+        4,
+        131,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "adcc010cfa28150eb82d672a946f9eab249ebc6e197f50fbe70bc5fa16ceb781"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "frame": 2,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        131,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "affd0ccccbc73ad7fa70d228ade3bb1dbd892359c9461c993e5721ddcc61ad2c"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "frame": 3,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        131,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "07bc0a04a189eaf6379641230355eeba16a491710c26027ac61dd1e01e0c0863"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "frame": 4,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        49,
+        4,
+        134,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "eb24a52bacfbc4220af6e33c2d7d0b7587d073e27d3b275b34bfad04b0b3dd89"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "frame": 5,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        131,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "38d596e7bcad82551d938f00c0e561e22e49488356765ee3f93a01ae6e450b8f"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "frame": 6,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        132,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "ab64f66b0a4a9d463effb39e1a14b7d6892d1874e8a85da43f901aae4b33d883"
+    },
+    {
+      "state": "look-row-9",
+      "row": 9,
+      "frame": 7,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        131,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "e5e921ba4b69e9852fda427d5426488cb485e9ee344e09bd8c12660c4be9ca9a"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "frame": 0,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        49,
+        4,
+        134,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "eae2c11ceb9799447431e4d8a061421b7fee1ee784ca338bba611ed2b2ee1e50"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "frame": 1,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        129,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "c999391d9f3b610980bdc02dc959454c6047d832c9ae703bee3289b809f50442"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "frame": 2,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        50,
+        4,
+        130,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "28cd7a952009eae3424f477c1586d8fb9d22307bb77731c0b53ec3f339e9ecf0"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "frame": 3,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        50,
+        4,
+        129,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "84dd8c336e975ee3b0768ef0b2cfe8e691beb9caa1fe46a88884e43392d90c4b"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "frame": 4,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        48,
+        4,
+        134,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "79011c2da6ff7bb30c5db7ea45e000b7e4e94190b551fefb832ae85df42b5193"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "frame": 5,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        130,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "23f5244b9dd579249f2a747abcd1afb8eac7470b8c48dcb6a26d6a34e30cae77"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "frame": 6,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        130,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "cee23c204a257e53b24adf259509cf5d47b419c8f6e2d036faf2b715037fce4c"
+    },
+    {
+      "state": "look-row-10",
+      "row": 10,
+      "frame": 7,
+      "nonempty": true,
+      "alphaBbox": [
+        42,
+        4,
+        146,
+        204
+      ],
+      "baselineY": 203,
+      "bodyBbox": [
+        42,
+        70,
+        146,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "upperRegionBboxApprox": [
+        51,
+        4,
+        130,
+        70
+      ],
+      "registrationX": 96,
+      "rgbaSha256": "0c81bffeeffdf82d6fae487aaf92de0d094954ee6fc25ada18bc7a408a94a065"
+    }
+  ],
+  "sourcePixelsModified": false,
+  "F0Selected": false
+}
