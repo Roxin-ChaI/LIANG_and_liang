@@ -1,0 +1,19 @@
+{
+  "reviewer": "independent static visual reviewer: b_endpoint_compat",
+  "reviewedBRgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+  "reviewedKB2RgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870",
+  "headIsCanonicalDesign": "CONFIRMED",
+  "identityContinuityFeasibleWithTwoMoreFrames": "UNLIKELY",
+  "chinHandIdleEndpointSuitability": "UNSUITABLE",
+  "verdict": "B_ENDPOINT_REWORK_REQUIRED",
+  "observations": [
+    "B is pixel-identical to formal Feng Idle frame 0; the small head and wide body are canonical, not a slicing or registration error.",
+    "KB2 still has Gu-side hanging hands, narrow parallel legs, and a dark broad jacket; B has a screen-left finger at the chin, a screen-right fist, a wide stance, and a bright tailored jacket.",
+    "The existing chain reads as progressively shrinking the head and widening a Gu silhouette, then suddenly switching to a fully posed Feng. B is a valid idle pose and a pixel-exact idle handoff, but not a suitable final transformation pose for this chain."
+  ],
+  "limits": [
+    "Static evidence cannot prove that all possible future hand-drawn morphs would fail.",
+    "The current B head guide is approximate because a hand occludes the chin; the artistic verdict does not rely on the guide alone.",
+    "KB3 and KB4 were not created or evaluated."
+  ]
+}

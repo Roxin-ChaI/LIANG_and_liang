@@ -1,0 +1,131 @@
+{
+  "status": "AWAITING_INDEPENDENT_B_ART_COMPATIBILITY_REVIEW",
+  "technicalPass": true,
+  "checks": {
+    "frozenBMatchesFormalFengIdle0RawRgba": true,
+    "BMatchesC": true,
+    "BHasCanvasSafetyMargin": true,
+    "binaryAlpha": true,
+    "noHiddenRgb": true,
+    "baseline203": true,
+    "noClipping": true,
+    "singleCharacter": true
+  },
+  "B": {
+    "headBbox": [
+      64,
+      4,
+      113,
+      58
+    ],
+    "headSize": [
+      49,
+      54
+    ],
+    "headCenter": [
+      88.5,
+      31.0
+    ],
+    "headGuideApproximate": true,
+    "headGuideUncertaintyPx": 3,
+    "bodyBbox": [
+      44,
+      70,
+      148,
+      204
+    ],
+    "bodyWidth": 104,
+    "bodyBandCenterX": 96.0,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+  },
+  "GuA": {
+    "headBbox": [
+      54,
+      4,
+      122,
+      84
+    ],
+    "headSize": [
+      68,
+      80
+    ],
+    "headCenter": [
+      88.0,
+      44.0
+    ],
+    "headGuideApproximate": false,
+    "headGuideUncertaintyPx": 0,
+    "bodyBbox": [
+      69,
+      70,
+      122,
+      204
+    ],
+    "bodyWidth": 53,
+    "bodyBandCenterX": 95.5,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "e12f8f315e36d704a910406d1a8b9a0a9ea7779b3b61b3a92443cdf7b3be72fb"
+  },
+  "KB2": {
+    "headBbox": [
+      60,
+      4,
+      116,
+      72
+    ],
+    "headSize": [
+      56,
+      68
+    ],
+    "headCenter": [
+      88.0,
+      38.0
+    ],
+    "headGuideApproximate": false,
+    "headGuideUncertaintyPx": 0,
+    "bodyBbox": [
+      48,
+      70,
+      141,
+      204
+    ],
+    "bodyWidth": 93,
+    "bodyBandCenterX": 94.5,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870"
+  },
+  "BFullAlphaBbox": [
+    44,
+    4,
+    148,
+    204
+  ],
+  "BVisibleMarginPx": {
+    "left": 44,
+    "top": 4,
+    "right": 44,
+    "bottom": 4
+  },
+  "BFormalFengIdentityEvidence": "exact RGBA equality to formal v2 atlas Idle row0/frame0 and approved Feng idle strip frame0",
+  "BIsUsableTransitionEndpoint": "NOT_YET_PROVEN_BY_CANONICAL_EQUALITY",
+  "headGuideCaveat": "B49x54 manually approximated \u00b13px; chin occluded by finger; guide not skull segmentation",
+  "headSizeGuToBApproxDelta": [
+    -19,
+    -26
+  ],
+  "coordinateErrorCause": "EXCLUDED_IF_CHECKS_PASS",
+  "changeStillToReview": "large anatomical head/face proportions; hand-to-chin vs Gu hands-at-side; wide stance; jacket cut, lapels, palette and expression",
+  "hashes": {
+    "B": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+    "KB2": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870",
+    "FengAtlas": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+    "FengIdle0": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+  },
+  "newArtGenerated": 0,
+  "approvedImagesModified": false,
+  "runtimeEligible": false
+}
