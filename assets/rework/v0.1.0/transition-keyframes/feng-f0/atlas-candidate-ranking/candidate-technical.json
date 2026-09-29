@@ -1,0 +1,191 @@
+{
+  "status": "THREE_CANDIDATES_EXTRACTED_RANKING_PENDING",
+  "sourceAtlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+  "shortlistCount": 3,
+  "shortlist": [
+    {
+      "candidate": "F0-A",
+      "row": 8,
+      "frame": 4,
+      "state": "review",
+      "headBboxGuideApprox": [
+        64,
+        4,
+        114,
+        59
+      ],
+      "headSizeGuideApprox": [
+        50,
+        55
+      ],
+      "headCenterGuideApprox": [
+        89.0,
+        31.5
+      ],
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        39,
+        70,
+        145,
+        204
+      ],
+      "bodyBandCenterX": 92.0,
+      "baselineY": 203,
+      "registrationX": 96,
+      "alphaBbox": [
+        39,
+        4,
+        145,
+        204
+      ],
+      "rgbaSha256": "b13b1b2ffd3be48f11f8a1a090d3d9300a3777ecc86d27dbc23391849ca29c7c",
+      "armPose": "INDEPENDENT_VISUAL_REVIEW_REQUIRED",
+      "legStance": "INDEPENDENT_VISUAL_REVIEW_REQUIRED",
+      "KB2ToCandidate": "INDEPENDENT_VISUAL_REVIEW_REQUIRED",
+      "candidateToFormalFengIdle": "INDEPENDENT_VISUAL_REVIEW_REQUIRED"
+    },
+    {
+      "candidate": "F0-B",
+      "row": 1,
+      "frame": 6,
+      "state": "running-right",
+      "headBboxGuideApprox": [
+        72,
+        5,
+        124,
+        61
+      ],
+      "headSizeGuideApprox": [
+        52,
+        56
+      ],
+      "headCenterGuideApprox": [
+        98.0,
+        33.0
+      ],
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        54,
+        70,
+        139,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "alphaBbox": [
+        54,
+        5,
+        139,
+        204
+      ],
+      "rgbaSha256": "5620cb1d9ca9b6ab75ec2f8685346535942f82ddf3d0b11f305c0db17ee622a5",
+      "armPose": "INDEPENDENT_VISUAL_REVIEW_REQUIRED",
+      "legStance": "INDEPENDENT_VISUAL_REVIEW_REQUIRED",
+      "KB2ToCandidate": "INDEPENDENT_VISUAL_REVIEW_REQUIRED",
+      "candidateToFormalFengIdle": "INDEPENDENT_VISUAL_REVIEW_REQUIRED"
+    },
+    {
+      "candidate": "F0-C",
+      "row": 3,
+      "frame": 0,
+      "state": "waving",
+      "headBboxGuideApprox": [
+        64,
+        5,
+        114,
+        60
+      ],
+      "headSizeGuideApprox": [
+        50,
+        55
+      ],
+      "headCenterGuideApprox": [
+        89.0,
+        32.5
+      ],
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        38,
+        70,
+        150,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "baselineY": 203,
+      "registrationX": 96,
+      "alphaBbox": [
+        38,
+        5,
+        150,
+        204
+      ],
+      "rgbaSha256": "ded77c8888ce46f705abe410df56c53aec05b04950e206b48fb221dc5647d42d",
+      "armPose": "INDEPENDENT_VISUAL_REVIEW_REQUIRED",
+      "legStance": "INDEPENDENT_VISUAL_REVIEW_REQUIRED",
+      "KB2ToCandidate": "INDEPENDENT_VISUAL_REVIEW_REQUIRED",
+      "candidateToFormalFengIdle": "INDEPENDENT_VISUAL_REVIEW_REQUIRED"
+    }
+  ],
+  "KB2": {
+    "headBbox": [
+      60,
+      4,
+      116,
+      72
+    ],
+    "headSize": [
+      56,
+      68
+    ],
+    "headCenter": [
+      88.0,
+      38.0
+    ],
+    "headGuideApproximate": false,
+    "headGuideUncertaintyPx": 0,
+    "bodyBbox": [
+      48,
+      70,
+      141,
+      204
+    ],
+    "bodyWidth": 93,
+    "bodyBandCenterX": 94.5,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870"
+  },
+  "formalFengIdle": {
+    "headBbox": [
+      64,
+      4,
+      113,
+      58
+    ],
+    "headSize": [
+      49,
+      54
+    ],
+    "headCenter": [
+      88.5,
+      31.0
+    ],
+    "headGuideApproximate": true,
+    "headGuideUncertaintyPx": 3,
+    "bodyBbox": [
+      44,
+      70,
+      148,
+      204
+    ],
+    "bodyWidth": 104,
+    "bodyBandCenterX": 96.0,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+  },
+  "guideWarning": "Head guides are visual approximations \u00b13px; raised hands and collars can obscure the face. Body-band bbox includes limbs, not isolated shoulders.",
+  "candidateSourceCellsModified": false,
+  "approvedF0": null
+}

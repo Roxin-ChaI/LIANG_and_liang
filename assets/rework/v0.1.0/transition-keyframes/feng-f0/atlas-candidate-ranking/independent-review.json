@@ -1,0 +1,47 @@
+{
+  "reviewer": "independent static visual reviewer: feng_neutral_independent_review",
+  "sourceAtlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+  "verdict": "NO_EXISTING_FENG_ENDPOINT",
+  "rankedCandidates": [
+    {
+      "candidate": "F0-A",
+      "row": 8,
+      "frame": 4,
+      "state": "review",
+      "rgbaSha256": "b13b1b2ffd3be48f11f8a1a090d3d9300a3777ecc86d27dbc23391849ca29c7c",
+      "qualified": false,
+      "armPose": "Near-frontal Feng; screen-left elbow remains bent across the torso with hand lowered to lower chest/waist, other fist low.",
+      "legStance": "Wide planted Idle-like stance, much farther apart than KB2's narrow parallel feet.",
+      "KB2ToCandidate": "Large head/face scale and expression change, simultaneous finished suit/shoulder expansion and wide-leg snap; not a continuous one-step morph.",
+      "candidateToFormalFengIdle": "Mostly a hand rise to the chin and slight pose settling, but the single-frame hand move remains visible; shape is relatively close.",
+      "reason": "Relative best among existing frames, not a qualified F0: low-ish hand does not cure KB2-to-Feng stance, face and torso jump."
+    },
+    {
+      "candidate": "F0-B",
+      "row": 1,
+      "frame": 6,
+      "state": "running-right",
+      "rgbaSha256": "5620cb1d9ca9b6ab75ec2f8685346535942f82ddf3d0b11f305c0db17ee622a5",
+      "qualified": false,
+      "armPose": "Both fists hang low; shoulders and arms are angled with rightward drag motion.",
+      "legStance": "Closer crossing/stepping feet than Feng Idle, but one leg is visibly moving rather than a planted neutral stance.",
+      "KB2ToCandidate": "Lower arms and closer feet help, but the head turns right and the torso pitches into a directional gait; face and shoulder structure still change quickly.",
+      "candidateToFormalFengIdle": "Requires head and torso reorientation, broad stance, apparent shoulder/body expansion, and the finger-to-chin arm move; not merely pose settling.",
+      "reason": "Directional active stride is not a frontal finishing pose. Mirrored running-left frame has the same defect."
+    },
+    {
+      "candidate": "F0-C",
+      "row": 3,
+      "frame": 0,
+      "state": "waving",
+      "rgbaSha256": "ded77c8888ce46f705abe410df56c53aec05b04950e206b48fb221dc5647d42d",
+      "qualified": false,
+      "armPose": "Near-frontal finished Feng, but screen-left hand is already lifted beside the cheek/upper chest; not naturally low.",
+      "legStance": "Broad planted Feng stance already established.",
+      "KB2ToCandidate": "Hand, body width, suit, face proportions and stance all jump together from KB2.",
+      "candidateToFormalFengIdle": "Raised hand must redirect to the finger-to-chin gesture; not an already-neutral endpoint.",
+      "reason": "It substitutes one conspicuous gesture for another and does not separate morph from pose."
+    }
+  ],
+  "limits": "Visual ranking is static; head guides in candidate-technical.json are approximate, and bbox/baseline cannot override arm, face or stance discontinuity."
+}
