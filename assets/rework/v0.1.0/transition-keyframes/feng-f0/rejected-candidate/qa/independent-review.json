@@ -1,0 +1,12 @@
+{
+  "reviewer": "independent static visual reviewer: f0_candidate_visual_gate",
+  "reviewedCandidateSha256": "43c6ff659e1d091967022f72537b6b934efb9c6e8209b25254662e7cc35baf4f",
+  "verdict": "VISUAL_FAIL",
+  "observations": [
+    "The attempted edit is 1205x1305 rather than native 192x208.",
+    "Hair, face, glasses, suit, hands, trousers, and feet are rendered anew across the whole figure; the result is not a controlled local KB2 edit.",
+    "Low hands and a narrow stance are conceptually present, but its face and full-body geometry neither preserve KB2's contours nor consistently match the approved Feng B identity.",
+    "Nearest-neighbor downsampling cannot recover source pixel provenance, exact registration, sole, or a continuous KB2-to-F0 trajectory."
+  ],
+  "decision": "Do not promote the candidate to F0 or use it in the App."
+}
