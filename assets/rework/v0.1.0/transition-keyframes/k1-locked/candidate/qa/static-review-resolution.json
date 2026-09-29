@@ -1,0 +1,109 @@
+{
+  "status": "A_K1_STATIC_PASS",
+  "technicalPass": true,
+  "checks": {
+    "lockedRegionByteIdentical": true,
+    "headByteIdentical": true,
+    "headBboxExact": true,
+    "baseline203": true,
+    "bodyLeftWithin3": true,
+    "bodyRightWithin3": true,
+    "shoulderGuideLocked": true,
+    "shoulderBandProxyWithin4": true,
+    "binaryAlpha": true,
+    "noHiddenRGB": true,
+    "noClipping": true,
+    "noIsolatedPixels": true,
+    "oneConnectedCharacter": true
+  },
+  "lockedByteComparison": {
+    "referenceSha256": "61d9eb419f5449d61cad2616bd5154a674c46e9c9b3a58d684adbac614207dc9",
+    "candidateSha256": "61d9eb419f5449d61cad2616bd5154a674c46e9c9b3a58d684adbac614207dc9",
+    "byteCount": 138980,
+    "differentBytes": 0,
+    "changedLockedPixels": 0
+  },
+  "headBbox": [
+    54,
+    4,
+    122,
+    84
+  ],
+  "headSize": [
+    68,
+    80
+  ],
+  "headCenter": [
+    88,
+    44
+  ],
+  "headCenterDelta": [
+    0,
+    0
+  ],
+  "registrationX": 96,
+  "registrationOperation": "none; feet/neck/head anchored to A",
+  "bodyEdgeDelta": [
+    0,
+    -1
+  ],
+  "shoulderGuideWidthDelta": 0,
+  "shoulderBandHullWidthDelta": 0,
+  "baselineDelta": 0,
+  "rgbaChangedPixels": 860,
+  "rgbaChangedBbox": [
+    69,
+    128,
+    122,
+    160
+  ],
+  "measured": {
+    "alphaBbox": [
+      54,
+      4,
+      122,
+      204
+    ],
+    "baselineY": 203,
+    "headReferenceBbox": [
+      54,
+      4,
+      122,
+      70
+    ],
+    "bodyReferenceBbox": [
+      69,
+      70,
+      121,
+      204
+    ],
+    "bodyBandCenterX": 95.0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "hiddenRgbPixels": 0,
+    "connectedComponentSizes8": [
+      9295
+    ],
+    "isolatedSinglePixels": 0,
+    "touchesCellEdge": false
+  },
+  "visualApproval": "NOT_VERIFIED",
+  "localChainAllowed": true,
+  "runtimeEligible": false,
+  "independentStaticChecks": {
+    "identity": "pass",
+    "lockedRegions": "pass",
+    "headNeckProportions": "pass",
+    "seamsAndHoles": "pass",
+    "handArmPlausibility": "pass",
+    "noClip": "pass",
+    "AtoK1Continuity": "pass",
+    "restrainedGuAppearance": "pass"
+  },
+  "reviewedPixelsMatch": true,
+  "chargeIntent": "unknown",
+  "userArtApproval": "PENDING",
+  "approvalScope": "A->K1 static continuity only; never full chain, animation or App approval"
+}

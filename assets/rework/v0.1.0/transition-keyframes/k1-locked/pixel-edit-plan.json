@@ -1,0 +1,17 @@
+{
+  "id": "K1_LOCAL_ARM_TENSION_V1",
+  "source": "approved A; source hash verified before every derivation",
+  "meaning": "still Gu; barely beginning charge by drawing resting forearms/hands inward1px",
+  "operations": [
+    {"id":"left-lower-arm","sourceBox":[69,128,84,158],"integerDelta":[1,0]},
+    {"id":"right-lower-arm","sourceBox":[106,128,122,160],"integerDelta":[-1,0]}
+  ],
+  "vacatedPixels": "clear only source-minus-destination positions to transparent RGBA0000",
+  "copyPolicy": "copy exact original A RGBA bytes from source into destination; immutable A donors, no interpolation or new colors",
+  "headOperation": "NONE",
+  "shoulderOperation": "NONE",
+  "feetOperation": "NONE",
+  "effects": "NONE",
+  "globalScaleOrTranslation": "NONE",
+  "runtimeEligible": false
+}

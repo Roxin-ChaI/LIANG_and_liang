@@ -1,7 +1,7 @@
 from PIL import Image
 import pytest
 
-from tools.locked_transition_k1 import HEAD, assess, masks, masked_bytes, prepare_spec, specification
+from tools.locked_transition_k1 import HEAD, OUTPUT, assess, masks, masked_bytes, prepare_spec, specification
 from tools.specify_transition_keyframes import approved_inputs
 
 
@@ -69,3 +69,9 @@ def test_partial_alpha_in_editable_area_fails():
     rgba = a.getpixel((74,130))
     a.putpixel((74,130),(*rgba[:3],127))
     assert not assess(a)["checks"]["binaryAlpha"]
+
+
+def test_committed_masks_match_exact_runtime_selection_without_mask_relaxation():
+    for name,expected in zip(("locked-mask.png","editable-mask.png"),masks()):
+        with Image.open(OUTPUT/"spec"/name) as actual:
+            assert actual.mode == expected.mode and actual.tobytes() == expected.tobytes()

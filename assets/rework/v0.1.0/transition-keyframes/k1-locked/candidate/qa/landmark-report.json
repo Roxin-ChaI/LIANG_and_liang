@@ -1,0 +1,139 @@
+{
+  "status": "AWAITING_INDEPENDENT_PIXEL_REVIEW",
+  "technicalPass": true,
+  "checks": {
+    "lockedRegionByteIdentical": true,
+    "headByteIdentical": true,
+    "headBboxExact": true,
+    "baseline203": true,
+    "bodyLeftWithin3": true,
+    "bodyRightWithin3": true,
+    "shoulderGuideLocked": true,
+    "shoulderBandProxyWithin4": true,
+    "binaryAlpha": true,
+    "noHiddenRGB": true,
+    "noClipping": true,
+    "noIsolatedPixels": true,
+    "oneConnectedCharacter": true
+  },
+  "lockedByteComparison": {
+    "referenceSha256": "61d9eb419f5449d61cad2616bd5154a674c46e9c9b3a58d684adbac614207dc9",
+    "candidateSha256": "61d9eb419f5449d61cad2616bd5154a674c46e9c9b3a58d684adbac614207dc9",
+    "byteCount": 138980,
+    "differentBytes": 0,
+    "changedLockedPixels": 0
+  },
+  "headBbox": [
+    54,
+    4,
+    122,
+    84
+  ],
+  "headSize": [
+    68,
+    80
+  ],
+  "headCenter": [
+    88,
+    44
+  ],
+  "headCenterDelta": [
+    0,
+    0
+  ],
+  "registrationX": 96,
+  "registrationOperation": "none; feet/neck/head anchored to A",
+  "bodyEdgeDelta": [
+    0,
+    -1
+  ],
+  "shoulderGuideWidthDelta": 0,
+  "shoulderBandHullWidthDelta": 0,
+  "baselineDelta": 0,
+  "rgbaChangedPixels": 860,
+  "rgbaChangedBbox": [
+    69,
+    128,
+    122,
+    160
+  ],
+  "measured": {
+    "alphaBbox": [
+      54,
+      4,
+      122,
+      204
+    ],
+    "baselineY": 203,
+    "headReferenceBbox": [
+      54,
+      4,
+      122,
+      70
+    ],
+    "bodyReferenceBbox": [
+      69,
+      70,
+      121,
+      204
+    ],
+    "bodyBandCenterX": 95.0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "hiddenRgbPixels": 0,
+    "connectedComponentSizes8": [
+      9295
+    ],
+    "isolatedSinglePixels": 0,
+    "touchesCellEdge": false
+  },
+  "visualApproval": "NOT_VERIFIED",
+  "localChainAllowed": false,
+  "runtimeEligible": false,
+  "sourceSha256": "6c925bbcd1386cad107cdffb5aa7569d9ace295790cb9542d7dd0629f074cab3",
+  "candidateSha256": "3fe2510fce45d2e7fb63e2018f79fe69ef9f05c470634903fa580700acc9e246",
+  "method": "explicit user-authorized local integer A pixel derivation",
+  "operations": [
+    {
+      "id": "left-lower-arm",
+      "sourceBox": [
+        69,
+        128,
+        84,
+        158
+      ],
+      "integerDelta": [
+        1,
+        0
+      ],
+      "copiedPixels": 450,
+      "clearedVacatedPixels": 30,
+      "donor": "exact immutable A pixel",
+      "interpolation": false
+    },
+    {
+      "id": "right-lower-arm",
+      "sourceBox": [
+        106,
+        128,
+        122,
+        160
+      ],
+      "integerDelta": [
+        -1,
+        0
+      ],
+      "copiedPixels": 512,
+      "clearedVacatedPixels": 32,
+      "donor": "exact immutable A pixel",
+      "interpolation": false
+    }
+  ],
+  "globalScaleOperations": 0,
+  "AIUsed": false,
+  "effectsAdded": false,
+  "K2K3Modified": false,
+  "appIntegrated": false
+}

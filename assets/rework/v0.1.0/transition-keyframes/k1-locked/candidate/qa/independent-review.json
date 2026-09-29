@@ -1,0 +1,20 @@
+{
+  "reviewer":"locked_k1_visual",
+  "reviewedRgbaSha256":"4b7f491d14f0bcdcf033fee3d180139cb9966094c8cbecb992be35b7a795c698",
+  "verdict":"A_K1_STATIC_PASS",
+  "scope":"Internal static QA only; native contact sheet, nearest3x diagnostic, overlay, difference mask and byte/landmark reports inspected",
+  "checks":{
+    "identity":{"status":"pass","observation":"Hair silhouette, face, glasses, ears and expression visually match A"},
+    "lockedRegions":{"status":"pass","observation":"Zero changed locked pixels; visual comparison supports unchanged head and upper neck"},
+    "headNeckProportions":{"status":"pass","observation":"No visible head displacement, neck shortening, shoulder enlargement or body proportion drift"},
+    "seamsAndHoles":{"status":"pass","observation":"Nearest3x shows continuous sleeve/wrist boundaries without pasted edges, disconnected pixels or new holes"},
+    "handArmPlausibility":{"status":"pass","observation":"Hands remain attached to cuffs; tiny inward adjustment preserves finger shapes and plausible hanging forearms"},
+    "noClip":{"status":"pass","observation":"Hair, hands and both shoes remain complete; soles meet the same baseline"},
+    "AtoK1Continuity":{"status":"pass","observation":"Native K1 almost identical to A; enlarged inspection reveals minute inward gathering of lower arms, no abrupt pose jump"},
+    "restrainedGuAppearance":{"status":"pass","observation":"Slight build and ordinary suit silhouette retained; no muscular Feng-like expansion"},
+    "chargeIntentReadability":{"status":"unknown","observation":"Native-size change too subtle to establish distinct charge expression confidently; barely beginning charge requires user artistic judgment"}
+  },
+  "USER_ART_APPROVAL":"PENDING",
+  "runtimeApproval":"NOT_GRANTED",
+  "K2K3Approval":"NOT_ASSESSED"
+}
