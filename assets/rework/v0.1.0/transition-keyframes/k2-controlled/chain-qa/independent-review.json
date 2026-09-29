@@ -1,0 +1,17 @@
+{
+  "reviewer": "controlled_k2_visual",
+  "verdict": "K3_REWORK_REQUIRED",
+  "K1_K2": "PASS",
+  "K2_K3": "FAIL",
+  "reviewedK2RgbaSha256": "3462ff0391745732801c58d2538f50c78a66b0bc39d66beabef8efc7d5b30e98",
+  "reviewedK3RgbaSha256": "30329a34f4019e35b64fb5ea87633db630343a1ba8597bb60bb355ec80fbaad4",
+  "observedSevereJumps": [
+    {"region": "head and face", "observation": "At both native and nearest-3× sizes, K3's head becomes conspicuously smaller relative to the body. Its chin/neck junction rises, and its face changes from the large, subdued Gu proportions to a sharper, more mature-looking face.", "impact": "This reads as an abrupt proportional and expression change, rather than the next gradual strengthening step."},
+    {"region": "torso and arms", "observation": "K2 retains a slender body inside a slightly fuller jacket. K3 suddenly presents a much broader, muscular chest, substantial upper arms and a wider waist/hip silhouette.", "impact": "The physical transformation skips a visible intermediate stage. The cap-band measurements corroborate this visual jump but are not anatomical shoulder-width measurements."},
+    {"region": "pose and limbs", "observation": "K3 changes simultaneously to a wide planted stance, thicker separated legs, one bent arm with a hand at the face, and a larger clenched opposite hand.", "impact": "Multiple large pose and physique changes occur together. The stable foot baseline does not preserve visual continuity."},
+    {"region": "overall rendering", "observation": "K3's brighter blue suit, broader folds and smaller facial features create a substantially different visual balance from the dark, compact K1/K2 figures.", "impact": "The combined change reads closer to an advanced transformed character than a nearby continuation of K2."}
+  ],
+  "K1K2Reason": "K1→K2 still reads as a modest local jacket/upper-arm expansion with the same identity, head, hands and stance. The preceding static pass remains valid.",
+  "scope": "Read-only static chain QA of the supplied contacts and overlay. Both raw RGBA hashes and K3's supplied immutable PNG hash were independently verified. No assets were changed, generated, integrated or run.",
+  "remainingManualApproval": "K3 needs a new human-art-reviewed intermediate design. Preserve K1 and the reviewed K2 instead of enlarging K2 to accommodate this historical K3. This report grants no user art approval or runtime approval."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "K3_REWORK_REQUIRED",
+  "K1_K2": "K1_K2_STATIC_PASS",
+  "K2_K3": "STATIC_FAIL",
+  "userK2ArtApproval": "PENDING",
+  "runtimeEligible": false,
+  "scope": "static only, no App or complete animation approval",
+  "K2ModifiedForK3": false,
+  "K3Modified": false
+}

@@ -1,0 +1,91 @@
+{
+  "status": "AWAITING_INDEPENDENT_CHAIN_REVIEW",
+  "K1_K2": "K1_K2_STATIC_PASS",
+  "K2_K3": {
+    "headSize": {
+      "K2": [
+        68,
+        80
+      ],
+      "K3Approx": [
+        52,
+        58
+      ],
+      "deltaApprox": [
+        -16,
+        -22
+      ]
+    },
+    "headCenter": {
+      "K2": [
+        88,
+        44
+      ],
+      "K3Approx": [
+        90,
+        33
+      ],
+      "deltaApprox": [
+        2,
+        -11
+      ]
+    },
+    "historicalK3AnatomicalAnnotationUncertaintyPx": 3,
+    "upperShoulderGuide": {
+      "K2LockedWidth": 33,
+      "K3ApproxWidth": 70,
+      "deltaApprox": 37,
+      "warning": "different anatomical guide heights: K2y83 locked; K3y65:67 historical annotation. Not alpha-hull width or a new exact segmentation."
+    },
+    "shoulderCapBand": {
+      "K2Bbox": [
+        65,
+        84,
+        124,
+        100
+      ],
+      "K3Bbox": [
+        45,
+        84,
+        146,
+        100
+      ],
+      "widthDelta": 42,
+      "warning": "same exact band84:100 alpha hull, not anatomical shoulder width"
+    },
+    "bodyBandBbox": {
+      "K2": [
+        65,
+        70,
+        124,
+        204
+      ],
+      "K3": [
+        45,
+        70,
+        149,
+        204
+      ],
+      "delta": [
+        -20,
+        0,
+        25,
+        0
+      ]
+    },
+    "baselineDelta": 0,
+    "numericEvidenceOnly": true,
+    "visualVerdict": "AWAITING_INDEPENDENT_REVIEW"
+  },
+  "K2Sha256": "565122ea1364eebd56a0d6d3b53934bef8d45d53cb1787eedf4ee1f812cdfcec",
+  "K3Sha256": "bf2ce6f91fd6a545ffaec47b82227b55e9ae7d19d69ffcbd2e9e6a322f934314",
+  "K2RgbaSha256": "3462ff0391745732801c58d2538f50c78a66b0bc39d66beabef8efc7d5b30e98",
+  "K3RgbaSha256": "30329a34f4019e35b64fb5ea87633db630343a1ba8597bb60bb355ec80fbaad4",
+  "K3Source": "assets/rework/v0.1.0/transition-keyframes/gu-to-feng-candidate-retry/keys/K3.png",
+  "newPosesGenerated": 0,
+  "K1Modified": false,
+  "K2ModifiedForK3": false,
+  "K3Modified": false,
+  "userK2ArtApproval": "PENDING",
+  "runtimeEligible": false
+}
