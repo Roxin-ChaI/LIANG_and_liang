@@ -1,0 +1,17 @@
+{
+  "reviewer": "controlled_k3_visual",
+  "verdict": "B_TRANSITION_BRIDGE_REQUIRED",
+  "K2_K3": "PASS",
+  "K3_B": "FAIL",
+  "reviewedK3RgbaSha256": "cb5d9386568f6c67b9ed9e28448fe9a16dd4b6127bbbbc8b251897b5aba80a97",
+  "reviewedBRgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+  "observations": [
+    "K2→K3 remains a readable, restrained jacket expansion with identical head, face, hands and lower-body pose.",
+    "K3→B visibly switches from large-headed, slender proportions to a smaller-headed, substantially broader figure. The head shrink is conspicuous at native size; historical head-guide uncertainty does not change that judgment.",
+    "B raises its screen-left hand from the hip to the chin, bends that elbow across the torso, and spreads both legs and feet. These are major pose changes without intervening poses.",
+    "The broad chest, upper arms and brighter suit shading arrive together in B. K3’s fuller jacket alone does not bridge that combined anatomical and rendering change.",
+    "Both sprites share baseline 203 and a similar horizontal body center. Stable registration prevents a whole-sprite slide but does not resolve the head, limb and proportion snap.",
+    "Hair, glasses and suit preserve recognizable character cues, but facial proportions and expression change abruptly."
+  ],
+  "remainingArtisticJudgment": "A separately reviewed transition bridge is required between the unchanged K3 and frozen B. Its poses and pacing remain artistic decisions. This verdict is static QA, not user art approval or runtime approval."
+}

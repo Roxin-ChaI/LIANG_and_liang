@@ -1,0 +1,92 @@
+{
+  "status": "AWAITING_INDEPENDENT_CHAIN_REVIEW",
+  "K2_K3": "K2_K3_STATIC_PASS",
+  "K3_B": {
+    "headSize": {
+      "K3": [
+        68,
+        80
+      ],
+      "BApprox": [
+        49,
+        54
+      ],
+      "deltaApprox": [
+        -19,
+        -26
+      ]
+    },
+    "headCenter": {
+      "K3": [
+        88,
+        44
+      ],
+      "BApprox": [
+        88.5,
+        31
+      ],
+      "deltaApprox": [
+        0.5,
+        -13
+      ]
+    },
+    "BAnatomicalGuideUncertaintyPx": 3,
+    "headGuideWarning": "B is a historical manual guide with hand-occluded chin, not exact segmentation",
+    "upperShoulderGuide": {
+      "K3LockedWidth": 33,
+      "BApproxWidth": 68,
+      "deltaApprox": 35,
+      "warning": "K3y83 vs By65 annotations, not a same-band exact skeletal measurement"
+    },
+    "shoulderCapBand": {
+      "K3Bbox": [
+        60,
+        84,
+        129,
+        100
+      ],
+      "BBbox": [
+        44,
+        84,
+        144,
+        100
+      ],
+      "widthDelta": 31,
+      "warning": "same alpha band84:100; jacket/arm hull, not anatomical shoulder width"
+    },
+    "bodyBandBbox": {
+      "K3": [
+        60,
+        70,
+        129,
+        204
+      ],
+      "B": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "delta": [
+        -16,
+        0,
+        19,
+        0
+      ],
+      "widthDelta": 35
+    },
+    "bodyBandCenterDelta": 1.5,
+    "baselineDelta": 0,
+    "numericEvidenceOnly": true,
+    "visualVerdict": "AWAITING_INDEPENDENT_REVIEW"
+  },
+  "K3Sha256": "2b5651503d4d223d5c670152a1425ebafd6d55b5802f55794c6c70b3624876f6",
+  "BSha256": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+  "K3RgbaSha256": "cb5d9386568f6c67b9ed9e28448fe9a16dd4b6127bbbbc8b251897b5aba80a97",
+  "BRgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+  "newPosesGenerated": 0,
+  "BModified": false,
+  "K3ModifiedForB": false,
+  "userK3ArtApproval": "PENDING",
+  "runtimeEligible": false
+}

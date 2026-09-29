@@ -1,0 +1,13 @@
+{
+  "status": "B_TRANSITION_BRIDGE_REQUIRED",
+  "K2_K3": "K2_K3_STATIC_PASS",
+  "K3_B": "STATIC_FAIL",
+  "K3ArtGate": "FAIL_OUTGOING_LINK",
+  "bridgeFramesRequired": true,
+  "bridgeFrameCount": "NOT_SPECIFIED_PENDING_ART_DESIGN",
+  "bridgeFramesGenerated": 0,
+  "K1K2K3BModifiedForOutgoingMatch": false,
+  "userK3ArtApproval": "PENDING",
+  "runtimeEligible": false,
+  "scope": "paired static QA only; no App, full animation or user/release approval"
+}
