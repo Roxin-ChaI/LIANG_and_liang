@@ -1,0 +1,13 @@
+{
+  "status": "KB2_REQUIRED",
+  "incoming": "K3_KB1_STATIC_PASS",
+  "outgoing": "STATIC_FAIL",
+  "numericPass": false,
+  "independentReviewFresh": true,
+  "KB2Allowed": true,
+  "B_BRIDGE_ART_APPROVED": false,
+  "userArtApproval": "PENDING",
+  "fullAnimationAllowed": false,
+  "runtimeEligible": false,
+  "approvedFilesModified": false
+}

@@ -1,0 +1,100 @@
+{
+  "status": "AWAITING_INDEPENDENT_ENDPOINT_REVIEW",
+  "incoming": "K3_KB1_STATIC_PASS",
+  "KB1": {
+    "headBbox": [
+      57,
+      4,
+      119,
+      78
+    ],
+    "headSize": [
+      62,
+      74
+    ],
+    "headCenter": [
+      88.0,
+      41.0
+    ],
+    "headGuideApproximate": false,
+    "headGuideUncertaintyPx": 0,
+    "bodyBbox": [
+      54,
+      70,
+      135,
+      204
+    ],
+    "bodyWidth": 81,
+    "bodyBandCenterX": 94.5,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "47f5d1290be140b0fc38a27d1d795d06e972c0fc7180ca5e4074f954fabd93c4"
+  },
+  "B": {
+    "headBbox": [
+      64,
+      4,
+      113,
+      58
+    ],
+    "headSize": [
+      49,
+      54
+    ],
+    "headCenter": [
+      88.5,
+      31.0
+    ],
+    "headGuideApproximate": true,
+    "headGuideUncertaintyPx": 3,
+    "bodyBbox": [
+      44,
+      70,
+      148,
+      204
+    ],
+    "bodyWidth": 104,
+    "bodyBandCenterX": 96.0,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+  },
+  "pair": {
+    "numericPass": false,
+    "checks": {
+      "headSizeAtMost6": false,
+      "headCenterXAtMost3": true,
+      "headCenterYAtMost4": false,
+      "bodyGrowth0to15": false,
+      "baseline203": true,
+      "registration96": true
+    },
+    "headSizeDelta": [
+      -13,
+      -20
+    ],
+    "headCenterDelta": [
+      0.5,
+      -10.0
+    ],
+    "bodyWidthDelta": 23,
+    "bodyBboxDelta": [
+      -10,
+      0,
+      13,
+      0
+    ],
+    "bodyBandCenterDelta": 1.5,
+    "baselineDelta": 0,
+    "headEndpointUncertaintyPx": 3,
+    "faceIdentity": "MANUAL_VISUAL_QA",
+    "armPose": "MANUAL_VISUAL_QA",
+    "staticVerdict": "NOT_VERIFIED"
+  },
+  "newPosesGenerated": 0,
+  "remainingArmPose": "KB1 only1px inward/up forearm onset; B bends screen-left hand to chin and spreads stance; manual visual comparison required",
+  "BModified": false,
+  "KB1ModifiedForB": false,
+  "runtimeEligible": false,
+  "fullAnimationAllowed": false
+}

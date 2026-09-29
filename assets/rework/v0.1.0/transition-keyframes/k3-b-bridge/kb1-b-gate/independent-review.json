@@ -1,0 +1,18 @@
+{
+  "reviewer": "bridge_static_visual",
+  "kb1RgbaSha256": "47f5d1290be140b0fc38a27d1d795d06e972c0fc7180ca5e4074f954fabd93c4",
+  "bRgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287",
+  "KB1_B": "FAIL",
+  "faceIdentity": "PASS",
+  "armPoseContinuity": "FAIL",
+  "reason": "实际并排图与完整链图显示 KB1→B 明显跳变：头部进一步缩小、肩胸突然变宽、屏幕左手从身体侧面直接到下巴、双腿从近乎并拢直接到宽站姿。同一人物识别仍成立，但衔接不连续。B 下颌被手遮挡的 guide 是近似测量；即使考虑 ±3px，图中突变仍然明显。",
+  "remainingPoseChanges": [
+    {"part": "head", "evidence": "62×74→近似49×54，中心约上移10px，B guide ±3px；视觉比例突变。"},
+    {"part": "body", "evidence": "身体参考宽度 +23px；肩更高更宽，桶形外套直接变成收腰强壮轮廓。"},
+    {"part": "screenLeftArm", "evidence": "髋侧垂手直接到手指抵下巴，缺少抬手和屈肘阶段。"},
+    {"part": "screenRightArm", "evidence": "垂下的窄袖/手直接到更宽的外展上臂和握拳，肩肘腕同时变化。"},
+    {"part": "legsAndFeet", "evidence": "平行窄站姿直接到双腿外展，裤褶与膝线改变，鞋横向移开；基线相同不足以消除跳变。"},
+    {"part": "garment", "evidence": "横向胸腹衣褶/直翻领直接到斜翻领、收腰外套和屈臂斜褶。"}
+  ],
+  "scope": "actual independent static review only; no App playback or user art approval"
+}
