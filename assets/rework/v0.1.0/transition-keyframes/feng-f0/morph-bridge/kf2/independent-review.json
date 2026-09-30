@@ -1,0 +1,19 @@
+{
+  "reviewer": "independent visual reviewer /root/f0_visual_gate",
+  "candidatePngSha256": "1917e459ee6554d29625649c15a87edd7f4029b42338a8645304cab5fa847676",
+  "candidateRgbaSha256": "b2d7e5e94ba26d1ee19440b8040a3bb9a357897068af099170286f8c5322a5d0",
+  "pairs": {
+    "KF1_KF2": {
+      "verdict": "PASS",
+      "checks": {"head":"PASS","face":"PASS","arms":"PASS","suit":"PASS","pose":"PASS","alpha":"PASS"},
+      "reason": "Head/hair/glasses, neutral eyes and mouth, centerline, feet and sole remain continuous. Hands move moderately outward with attached bent arms; lapels and sleeve fragments form an intermediate clothing step. No visible alpha hole or detached seam."
+    },
+    "KF2_F0": {
+      "verdict": "FAIL",
+      "checks": {"head":"PASS","face":"FAIL","arms":"PASS","suit":"FAIL","pose":"FAIL","alpha":"PASS"},
+      "reason": "KF2 retains relaxed droopy eyes and broad pale glasses. F0 abruptly introduces sharply lowered brows/narrow eyes, a changed mouth/jaw reading and brighter swept hair. Slim straight trouser legs change to bulky folded blue pants, and the dark fragmentary jacket changes to a complete bright tailored suit in one frame. Aligned hands/feet do not conceal the visible snap."
+    }
+  },
+  "evidence": "Native and nearest-3x contact sheets, original KF1/KF2/F0 PNGs and both adjacent overlays inspected.",
+  "scope": "Independent static bridge QA. No App integration, dynamic runtime test or human final art approval."
+}
