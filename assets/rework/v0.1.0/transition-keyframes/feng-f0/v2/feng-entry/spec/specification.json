@@ -1,0 +1,127 @@
+{
+  "status": "SPECIFICATION_ONLY",
+  "createdFrames": 0,
+  "canvas": [
+    192,
+    208
+  ],
+  "baselineY": 203,
+  "registrationX": 96,
+  "sourceSha256": "aac220fa47dd2a14a66928d98327fdec1a0d1a1d2cf43ac671fbd6342dc271f9",
+  "targetSha256": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+  "entrySequence": [
+    "F0-v2",
+    "E1",
+    "E2",
+    "E3",
+    "Idle B"
+  ],
+  "entryFrameCount": 4,
+  "F0ExcludedFromFrameCount": true,
+  "headGuide": {
+    "F0-v2": [
+      63,
+      4,
+      113,
+      59
+    ],
+    "Idle B": [
+      64,
+      4,
+      113,
+      58
+    ],
+    "maxSizeDeltaEachStep": 2,
+    "maxCenterMovementEachStep": 2,
+    "caveat": "B's chin is partly occluded by a finger; head guide is approximate"
+  },
+  "motions": {
+    "E1": {
+      "face": "first slight brow/eye focus; preserve both glasses and facial outline",
+      "leftHand": "begin upward movement from low hand; elbow remains attached",
+      "rightHand": "retain low hand",
+      "feet": "both feet near F0, weight prepares to transfer",
+      "suit": "small elbow and lapel fold response only"
+    },
+    "E2": {
+      "face": "intermediate gaze, neither relaxed F0 nor abrupt full B",
+      "leftHand": "rise to mid chest with a readable elbow path",
+      "rightHand": "begin fist curl without abrupt relocation",
+      "feet": "one foot begins outward step, other remains support",
+      "suit": "sleeve, waist and lapel folds follow pose"
+    },
+    "E3": {
+      "face": "near B expression but still same identity and head size",
+      "leftHand": "fingertips approach lip, no final teleport",
+      "rightHand": "near B fist position",
+      "feet": "both feet near final wide stance, consistent baseline",
+      "suit": "near-final tailored folds, stable torso volume"
+    },
+    "Idle B": {
+      "face": "exact approved Feng Idle expression",
+      "leftHand": "finger completes lip contact",
+      "feet": "exact approved wide stance",
+      "source": "approved B pixels exactly, never modified"
+    }
+  },
+  "trajectoryGuides": {
+    "leftFootCenterX": [
+      82.5,
+      82.5,
+      74,
+      68,
+      65.5
+    ],
+    "rightFootCenterX": [
+      109,
+      109,
+      116,
+      125,
+      127.5
+    ],
+    "leftSkinHandCenterApprox": [
+      [
+        69,
+        143
+      ],
+      [
+        72,
+        123
+      ],
+      [
+        78,
+        100
+      ],
+      [
+        83,
+        75
+      ],
+      "target hand near lips"
+    ],
+    "guideOnly": true
+  },
+  "gates": {
+    "perAdjacent": [
+      "head size and center stable",
+      "same face and glasses",
+      "continuous left arm/elbow/hand trajectory",
+      "continuous right fist and hand position",
+      "one foot supports each outward step",
+      "trouser/thigh/calf volume reads as pose, not body morph",
+      "garment folds follow limb motion",
+      "RGBA alpha binary, no clipping or holes"
+    ],
+    "E1E2StopOnFail": true,
+    "E3RequiresE1E2Pass": true,
+    "fullStaticReviewRequired": true,
+    "geometryAloneCannotApprove": true
+  },
+  "preservation": {
+    "frozenKeyframesEditable": false,
+    "F0Editable": false,
+    "formalAtlasEditable": false,
+    "runtimeIntegration": false
+  },
+  "sourceEntryAuditStatus": "ENTRY_VISUAL_REVIEW_REQUIRED",
+  "artApproval": "PENDING"
+}
