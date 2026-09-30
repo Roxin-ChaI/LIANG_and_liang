@@ -1,0 +1,217 @@
+{
+  "status": "SPECIFICATION_ONLY",
+  "imageOutputs": 0,
+  "sources": {
+    "KB2": {
+      "path": "/Users/mac/Projects/liang-no-henshin/assets/rework/v0.1.0/transition-keyframes/k3-b-bridge/kb2/KB2.png",
+      "sha256": "622c81f99cde42f5846044a391424e7f4a8afa326d2c5e235470b2cacb618b19"
+    },
+    "F0": {
+      "path": "/Users/mac/Projects/liang-no-henshin/assets/rework/v0.1.0/transition-keyframes/feng-f0/manual-pixel-art/F0.png",
+      "sha256": "9e3a64dd388318fa2d48ca630e71a765e3302093f9ff9c6571f8eadef38b8f84",
+      "artApproved": false
+    }
+  },
+  "canvas": [
+    192,
+    208
+  ],
+  "baseline": 203,
+  "registration": 96,
+  "limits": {
+    "headSize": 6,
+    "headCenterX": 3,
+    "headCenterY": 4,
+    "bodyWidth": 10,
+    "handCenterX": 8,
+    "handCenterY": 6
+  },
+  "headGuides": {
+    "KB2": [
+      60,
+      4,
+      116,
+      72
+    ],
+    "KF1": [
+      61,
+      4,
+      115,
+      68
+    ],
+    "KF2": [
+      62,
+      4,
+      114,
+      63
+    ],
+    "F0": [
+      64,
+      4,
+      114,
+      59
+    ]
+  },
+  "endpoints": {
+    "KB2": {
+      "headBbox": [
+        60,
+        4,
+        116,
+        72
+      ],
+      "headSize": [
+        56,
+        68
+      ],
+      "headCenter": [
+        88.0,
+        38.0
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        48,
+        70,
+        141,
+        204
+      ],
+      "bodyWidth": 93,
+      "bodyBandCenterX": 94.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870"
+    },
+    "F0": {
+      "headBbox": [
+        64,
+        4,
+        114,
+        59
+      ],
+      "headSize": [
+        50,
+        55
+      ],
+      "headCenter": [
+        89.0,
+        31.5
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        47,
+        70,
+        145,
+        204
+      ],
+      "bodyWidth": 98,
+      "bodyBandCenterX": 96.0,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "9b3eccc0cd2de5ae91a0fed0f20ea672c9b52dd7c3dee988951ec09e949ceef1"
+    }
+  },
+  "endpointHandSkinGuides": {
+    "KB2": {
+      "left": {
+        "skinBbox": [
+          76,
+          139,
+          84,
+          154
+        ],
+        "center": [
+          80.0,
+          146.5
+        ]
+      },
+      "right": {
+        "skinBbox": [
+          106,
+          144,
+          116,
+          159
+        ],
+        "center": [
+          111.0,
+          151.5
+        ]
+      }
+    },
+    "F0": {
+      "left": {
+        "skinBbox": [
+          56,
+          134,
+          72,
+          150
+        ],
+        "center": [
+          64.0,
+          142.0
+        ]
+      },
+      "right": {
+        "skinBbox": [
+          120,
+          134,
+          136,
+          150
+        ],
+        "center": [
+          128.0,
+          142.0
+        ]
+      }
+    }
+  },
+  "targetHandCenters": {
+    "KF1": {
+      "left": [
+        75,
+        145
+      ],
+      "right": [
+        116,
+        148
+      ]
+    },
+    "KF2": {
+      "left": [
+        69,
+        143.5
+      ],
+      "right": [
+        122,
+        145
+      ]
+    }
+  },
+  "channels": {
+    "KF1": {
+      "identity": "KB2 hair/face/glasses source pixels, explicit local row/column removal only; relaxed expression retained",
+      "suit": "dark navy still dominant; initial blue shoulder/lapel accents and first tailored seam, no wholesale jacket replacement",
+      "arms": "hands move outward about 5px, slightly up; original low forearms and small hand shapes remain",
+      "legs": "feet and soles byte-identical to KB2; posture straightens above ankles"
+    },
+    "KF2": {
+      "identity": "further bounded skull reduction; modest brow/lid tightening; no abrupt full-face replacement",
+      "suit": "blue tailored torso mostly developed; F0 sleeve/jacket structure emerges gradually",
+      "arms": "hands advance about 6px toward F0 low fists; clench and cuff shape develop",
+      "legs": "approach F0 neutral stance without a broad Feng Idle foot jump"
+    },
+    "F0": {
+      "identity": "retained finished Feng face/pose; complete blue tailored suit and low arms"
+    }
+  },
+  "method": "hand-selected native pixel parts, explicit row/column maps and palette/seam edits; no whole-character scaling or AI generation",
+  "gates": [
+    "Commit 2 must stop on KB2->KF1 visual FAIL",
+    "KF2 requires fresh incoming KF1 PASS",
+    "KF1->KF2 and KF2->F0 require independent face/arm/suit review",
+    "full K3->F0 chain required before F0_ART_APPROVED"
+  ],
+  "runtimeIntegration": false,
+  "F0ToIdleAudit": false
+}
