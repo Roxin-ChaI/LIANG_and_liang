@@ -1,0 +1,51 @@
+{
+  "method": "manual native-pixel placement; approved Feng Review row 8 frame 4",
+  "donorAtlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+  "donorCellRgbaSha256": "b13b1b2ffd3be48f11f8a1a090d3d9300a3777ecc86d27dbc23391849ca29c7c",
+  "frozenKB2Sha256": "622c81f99cde42f5846044a391424e7f4a8afa326d2c5e235470b2cacb618b19",
+  "head": "source exact pixels in y=0..64",
+  "torsoAndArms": "source right half copied in y=65..114; low right arm reflected to left around seam x=95.5",
+  "legs": "source lower-right pixels reflected to left; each leg moved inward by an integer 0..6 px over y=115..203",
+  "manualSeam": "at most two explicit waist pixels from neighboring approved source pixels",
+  "globalScaling": false,
+  "interpolation": false,
+  "aiImageGeneration": false,
+  "counts": {
+    "approved_head_pixels": 2682,
+    "approved_right_side_pixels": 2065,
+    "mirrored_left_suit_pixels": 2065,
+    "integer_leg_repositions": 5532,
+    "manual_seam_pixels": 0
+  },
+  "landmarks": {
+    "headBbox": [
+      64,
+      4,
+      114,
+      59
+    ],
+    "headSize": [
+      50,
+      55
+    ],
+    "headCenter": [
+      89.0,
+      31.5
+    ],
+    "headGuideApproximate": true,
+    "headGuideUncertaintyPx": 3,
+    "bodyBbox": [
+      47,
+      70,
+      145,
+      204
+    ],
+    "bodyWidth": 98,
+    "bodyBandCenterX": 96.0,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "59b52e88d61a6b5a398b27499b1bd0e5841a8e8183ff384c3961633f52582a31"
+  },
+  "outputSha256": "507e1753cfcd8e8d26ff0f030f51fb5b435ef8c59462bcbec63947968b6bedda",
+  "outputRgbaSha256": "59b52e88d61a6b5a398b27499b1bd0e5841a8e8183ff384c3961633f52582a31"
+}
