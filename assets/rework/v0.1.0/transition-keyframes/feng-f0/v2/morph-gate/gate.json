@@ -1,0 +1,551 @@
+{
+  "status": "F0_MORPH_ENDPOINT_APPROVED",
+  "technicalPass": true,
+  "checks": {
+    "nativeRGBA": true,
+    "documentedPixels": true,
+    "expressionByteIdentical": true,
+    "handsFeetByteIdentical": true,
+    "headGuideHull": true,
+    "geometryBudget": true,
+    "completedHeadSize": true,
+    "broadBodyBand": true,
+    "binaryAlpha": true,
+    "zeroHiddenRGB": true,
+    "noClip": true,
+    "oneCharacter": true,
+    "noIsolatedPixels": true,
+    "noNewAlphaHoles": true,
+    "paletteFromKF2": true
+  },
+  "landmarks": {
+    "KF2": {
+      "headBbox": [
+        62,
+        4,
+        114,
+        63
+      ],
+      "headSize": [
+        52,
+        59
+      ],
+      "headCenter": [
+        88.0,
+        33.5
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        47,
+        70,
+        147,
+        204
+      ],
+      "bodyWidth": 100,
+      "bodyBandCenterX": 97.0,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "b2d7e5e94ba26d1ee19440b8040a3bb9a357897068af099170286f8c5322a5d0"
+    },
+    "F0-v2": {
+      "headBbox": [
+        63,
+        4,
+        113,
+        59
+      ],
+      "headSize": [
+        50,
+        55
+      ],
+      "headCenter": [
+        88.0,
+        31.5
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        46,
+        70,
+        147,
+        204
+      ],
+      "bodyWidth": 101,
+      "bodyBandCenterX": 96.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "c060a646f93c49a2a37daf1a15152c8fbad9e3500c9b48e289581333bb53f9ab"
+    }
+  },
+  "delta": {
+    "headSizeDelta": [
+      -2,
+      -4
+    ],
+    "headCenterDelta": [
+      0.0,
+      -2.0
+    ],
+    "bodyWidthDelta": 1,
+    "handCenterDelta": {
+      "left": [
+        0.0,
+        0.0
+      ],
+      "right": [
+        0.0,
+        0.0
+      ]
+    },
+    "checks": {
+      "headSize": true,
+      "headCenterX": true,
+      "headCenterY": true,
+      "bodyWidth": true,
+      "hands": true,
+      "baseline203": true,
+      "registration96": true
+    },
+    "numericPass": true,
+    "visualPass": null,
+    "face": "INDEPENDENT_VISUAL_QA",
+    "suit": "INDEPENDENT_VISUAL_QA",
+    "arms": "INDEPENDENT_VISUAL_QA",
+    "artApproved": false
+  },
+  "hands": {
+    "KF2": {
+      "left": {
+        "skinBbox": [
+          63,
+          135,
+          75,
+          151
+        ],
+        "center": [
+          69.0,
+          143.0
+        ]
+      },
+      "right": {
+        "skinBbox": [
+          116,
+          135,
+          128,
+          151
+        ],
+        "center": [
+          122.0,
+          143.0
+        ]
+      }
+    },
+    "F0-v2": {
+      "left": {
+        "skinBbox": [
+          63,
+          135,
+          75,
+          151
+        ],
+        "center": [
+          69.0,
+          143.0
+        ]
+      },
+      "right": {
+        "skinBbox": [
+          116,
+          135,
+          128,
+          151
+        ],
+        "center": [
+          122.0,
+          143.0
+        ]
+      }
+    }
+  },
+  "lockedRegions": [
+    {
+      "box": [
+        60,
+        130,
+        79,
+        155
+      ],
+      "byteIdentical": true,
+      "referenceSha256": "b3b9def4e0853d33e08a0b36c190d6dea80f827fffa177db0b2cd8f585429eb7",
+      "actualSha256": "b3b9def4e0853d33e08a0b36c190d6dea80f827fffa177db0b2cd8f585429eb7"
+    },
+    {
+      "box": [
+        112,
+        130,
+        135,
+        155
+      ],
+      "byteIdentical": true,
+      "referenceSha256": "712f3aea78c2cb6f22e04594a0bdacff25941f2fa01af2ec240f64e8d4cd8119",
+      "actualSha256": "712f3aea78c2cb6f22e04594a0bdacff25941f2fa01af2ec240f64e8d4cd8119"
+    },
+    {
+      "box": [
+        0,
+        192,
+        192,
+        208
+      ],
+      "byteIdentical": true,
+      "referenceSha256": "92daec7ab44624c2e33dcd6f7b9db2be14d29d4fe4924b6abf4b8834743dca4c",
+      "actualSha256": "92daec7ab44624c2e33dcd6f7b9db2be14d29d4fe4924b6abf4b8834743dca4c"
+    }
+  ],
+  "expressionByteIdentical": true,
+  "metrics": {
+    "alphaBbox": [
+      46,
+      4,
+      147,
+      204
+    ],
+    "baselineY": 203,
+    "headReferenceBbox": [
+      56,
+      4,
+      131,
+      70
+    ],
+    "bodyReferenceBbox": [
+      46,
+      70,
+      147,
+      204
+    ],
+    "bodyBandCenterX": 96.5,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "hiddenRgbPixels": 0,
+    "connectedComponentSizes8": [
+      11333
+    ],
+    "isolatedSinglePixels": 0,
+    "touchesCellEdge": false
+  },
+  "changedPixels": 5536,
+  "rgbaSha256": "c060a646f93c49a2a37daf1a15152c8fbad9e3500c9b48e289581333bb53f9ab",
+  "recipe": {
+    "method": "KF2 native pixels plus explicit local edits",
+    "operations": [
+      {
+        "part": "head shell",
+        "sourceBox": [
+          62,
+          4,
+          114,
+          63
+        ],
+        "targetBox": [
+          63,
+          4,
+          113,
+          59
+        ],
+        "removedColumns": [
+          63,
+          112
+        ],
+        "removedRows": [
+          10,
+          20,
+          58,
+          62
+        ]
+      },
+      {
+        "part": "collar and upper torso",
+        "sourceRowOffsets": [
+          [
+            59,
+            72,
+            4
+          ],
+          [
+            72,
+            81,
+            3
+          ],
+          [
+            81,
+            90,
+            2
+          ],
+          [
+            90,
+            99,
+            1
+          ]
+        ]
+      },
+      {
+        "part": "shoulder caps",
+        "yRange": [
+          73,
+          107
+        ],
+        "outwardPixels": 1
+      },
+      {
+        "part": "basic jacket",
+        "box": [
+          76,
+          75,
+          117,
+          137
+        ],
+        "source": "KF2 blue swatches",
+        "minInteriorBrightnessSum": 95
+      },
+      {
+        "part": "straight trousers",
+        "bands": [
+          [
+            138,
+            163,
+            3
+          ],
+          [
+            163,
+            177,
+            2
+          ],
+          [
+            177,
+            187,
+            1
+          ],
+          [
+            187,
+            192,
+            0
+          ]
+        ],
+        "leftInsertionColumn": 86,
+        "rightInsertionColumn": 108,
+        "source": "KF2 only"
+      },
+      {
+        "part": "right thigh insertion seam",
+        "pixels": [
+          [
+            106,
+            143
+          ],
+          [
+            107,
+            143
+          ],
+          [
+            106,
+            144
+          ],
+          [
+            107,
+            144
+          ],
+          [
+            106,
+            145
+          ],
+          [
+            107,
+            145
+          ],
+          [
+            106,
+            146
+          ],
+          [
+            107,
+            146
+          ],
+          [
+            106,
+            147
+          ],
+          [
+            107,
+            147
+          ],
+          [
+            106,
+            148
+          ],
+          [
+            107,
+            148
+          ],
+          [
+            106,
+            149
+          ],
+          [
+            107,
+            149
+          ],
+          [
+            106,
+            150
+          ],
+          [
+            107,
+            150
+          ],
+          [
+            106,
+            151
+          ],
+          [
+            107,
+            151
+          ],
+          [
+            106,
+            152
+          ],
+          [
+            107,
+            152
+          ],
+          [
+            106,
+            153
+          ],
+          [
+            107,
+            153
+          ],
+          [
+            106,
+            154
+          ],
+          [
+            107,
+            154
+          ],
+          [
+            107,
+            155
+          ],
+          [
+            107,
+            156
+          ]
+        ],
+        "donorColumn": 108,
+        "sameRow": true
+      },
+      {
+        "part": "manual side seams",
+        "strokes": [
+          [
+            [
+              79,
+              112
+            ],
+            [
+              78,
+              119
+            ],
+            [
+              80,
+              127
+            ]
+          ],
+          [
+            [
+              111,
+              112
+            ],
+            [
+              113,
+              120
+            ],
+            [
+              111,
+              128
+            ]
+          ]
+        ],
+        "rgba": [
+          40,
+          53,
+          113,
+          255
+        ]
+      }
+    ],
+    "expression": {
+      "source": [
+        67,
+        28,
+        110,
+        56
+      ],
+      "target": [
+        67,
+        26,
+        110,
+        54
+      ],
+      "byteIdentical": true
+    },
+    "inPlaceLocks": [
+      [
+        60,
+        130,
+        79,
+        155
+      ],
+      [
+        112,
+        130,
+        135,
+        155
+      ],
+      [
+        0,
+        192,
+        192,
+        208
+      ]
+    ],
+    "aiGeneration": false,
+    "wholeCharacterScaling": false,
+    "interpolation": false,
+    "newBridgeFrames": 0,
+    "retiredF0PixelsUsed": 0,
+    "BPixelDonorsUsed": 0
+  },
+  "morphApproved": true,
+  "entryAuditAllowed": true,
+  "humanApproval": "PENDING",
+  "sourceSha256": "1917e459ee6554d29625649c15a87edd7f4029b42338a8645304cab5fa847676",
+  "candidateSha256": "aac220fa47dd2a14a66928d98327fdec1a0d1a1d2cf43ac671fbd6342dc271f9",
+  "reviewFresh": true,
+  "semanticChecks": {
+    "headContinuity": true,
+    "completedFengForm": true,
+    "face": true,
+    "arms": true,
+    "pants": true,
+    "jacketStructure": true,
+    "pixelIntegrity": true
+  },
+  "approvalScope": "project static Morph gate; not human approval, entry approval or runtime validation",
+  "runtimeIntegrationAllowed": false
+}

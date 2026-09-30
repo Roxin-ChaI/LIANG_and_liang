@@ -1,0 +1,19 @@
+{
+  "reviewer": "Codex primary agent, direct native/nearest-3x image inspection",
+  "scope": "static Morph only",
+  "sourceSha256": "1917e459ee6554d29625649c15a87edd7f4029b42338a8645304cab5fa847676",
+  "candidateSha256": "aac220fa47dd2a14a66928d98327fdec1a0d1a1d2cf43ac671fbd6342dc271f9",
+  "checks": {
+    "headContinuity": {"status":"PASS","reason":"Same dark fringe, facial outline and glasses remain readable. The small upward head/collar adjustment does not introduce a new face or a horizontal jump."},
+    "completedFengForm": {"status":"PASS","reason":"The small head, broad shoulder/upper-arm mass, strong chest and tapered blue jacket read as the completed strong form in a neutral narrow stance. Relaxed brows are intentionally retained; stance/performance are deferred. This judgement is visual, not inferred solely from body-band width."},
+    "face": {"status":"PASS","reason":"KF2 brows, eyes, pale glasses, nose and relaxed mouth persist. There is no immediate sharp-expression transplant; the verified facial crop has only moved upward two pixels."},
+    "arms": {"status":"PASS","reason":"Low bent arms retain the same hand and cuff positions; shoulder/collar development remains attached. No chin gesture or forearm teleport appears."},
+    "pants": {"status":"PASS","reason":"Straight dark-blue legs thicken slightly while the inner gap, knees and source shoes stay recognizable. No sudden folded, bulky-pants replacement or wide stance occurs."},
+    "jacketStructure": {"status":"PASS","reason":"Existing blue lapels, white shirt, sleeve shapes and waist continue into a fuller upper torso with modest side shaping. Fine shading remains intermediate, as allowed for the neutral endpoint, rather than replacing the full suit in this step."},
+    "pixelIntegrity": {"status":"PASS","reason":"Native and enlarged images show hard edges, intact feet/hair/hands and attached limbs. Technical checks confirm no new internal transparency seam, isolated component or blended candidate colors."}
+  },
+  "evidence": ["candidate/contact-sheet.png", "candidate/contact-sheet-nearest3x.png", "candidate/F0-v2.png", "candidate/KF2-F0-v2-overlay.png", "candidate/semantic-change-mask.png"],
+  "verdict": "PASS",
+  "humanApproval": "PENDING",
+  "limitations": ["Static review only; no App integration or playback test.", "The older angular elbow silhouette remains inherited; this gate evaluates the adjacent Morph step.", "F0-v2 to B still needs a separate Entry audit."]
+}
