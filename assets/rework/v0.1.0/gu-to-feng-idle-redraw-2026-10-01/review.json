@@ -1,0 +1,287 @@
+{
+  "status": "ART_CANDIDATE_NOT_APPROVED",
+  "date": "2026-10-01",
+  "generator": "built-in image_gen",
+  "selectedAttempt": 2,
+  "sourceSha256": "6ab0b63b97dc160fe294a4760b6ab0d2b7ee1ee7685923570adf2a23eff0e1a7",
+  "sourceSize": [
+    1773,
+    887
+  ],
+  "transitionFrameCount": 10,
+  "idleFrameCount": 0,
+  "runtimeEligible": false,
+  "appIntegrated": false,
+  "visualApproval": "PENDING_USER_REVIEW",
+  "idleStyleExactMatch": "NOT_CONFIRMED",
+  "hardEdgeAlphaPass": false,
+  "notes": [
+    "Frames are lossless raw art crops, not 224x240 runtime sprites.",
+    "The original alpha is preserved; partial-alpha edges require further art preparation.",
+    "The candidate still needs native-scale identity/proportion and animation continuity approval.",
+    "The selected second attempt improved gutters; the third attempt made early Gu too stern.",
+    "Idle is not copied into the ten-frame animation. No reverse-direction asset was edited."
+  ],
+  "frames": [
+    {
+      "frame": 1,
+      "sourceRect": [
+        0,
+        0,
+        354,
+        443
+      ],
+      "canvas": [
+        355,
+        444
+      ],
+      "visibleAlpha128Bbox": [
+        139,
+        69,
+        255,
+        419
+      ],
+      "originalPixelsPreserved": true,
+      "partialAlphaPixels": 35300,
+      "hiddenRgbPixels": 121,
+      "idleInserted": false,
+      "scaling": null,
+      "path": "assets/rework/v0.1.0/gu-to-feng-idle-redraw-2026-10-01/frames/gu_to_feng_01.png",
+      "sha256": "99c3d0d1de6d74e6786d44e4fa09fbdc9cd49d304b5d8eba94556bc7dfb82bc2"
+    },
+    {
+      "frame": 2,
+      "sourceRect": [
+        354,
+        0,
+        709,
+        443
+      ],
+      "canvas": [
+        355,
+        444
+      ],
+      "visibleAlpha128Bbox": [
+        114,
+        68,
+        242,
+        419
+      ],
+      "originalPixelsPreserved": true,
+      "partialAlphaPixels": 37969,
+      "hiddenRgbPixels": 173,
+      "idleInserted": false,
+      "scaling": null,
+      "path": "assets/rework/v0.1.0/gu-to-feng-idle-redraw-2026-10-01/frames/gu_to_feng_02.png",
+      "sha256": "239ba69038cc0b85ac5f8139cd7604b5d40e31354cb90b37ba1ae4a447e0ac58"
+    },
+    {
+      "frame": 3,
+      "sourceRect": [
+        709,
+        0,
+        1063,
+        443
+      ],
+      "canvas": [
+        355,
+        444
+      ],
+      "visibleAlpha128Bbox": [
+        92,
+        62,
+        274,
+        419
+      ],
+      "originalPixelsPreserved": true,
+      "partialAlphaPixels": 49959,
+      "hiddenRgbPixels": 80,
+      "idleInserted": false,
+      "scaling": null,
+      "path": "assets/rework/v0.1.0/gu-to-feng-idle-redraw-2026-10-01/frames/gu_to_feng_03.png",
+      "sha256": "7dab39bd385acecb6510cb29be3caad9557337b7e265803116d431c90363a734"
+    },
+    {
+      "frame": 4,
+      "sourceRect": [
+        1063,
+        0,
+        1418,
+        443
+      ],
+      "canvas": [
+        355,
+        444
+      ],
+      "visibleAlpha128Bbox": [
+        70,
+        56,
+        294,
+        419
+      ],
+      "originalPixelsPreserved": true,
+      "partialAlphaPixels": 59514,
+      "hiddenRgbPixels": 101,
+      "idleInserted": false,
+      "scaling": null,
+      "path": "assets/rework/v0.1.0/gu-to-feng-idle-redraw-2026-10-01/frames/gu_to_feng_04.png",
+      "sha256": "48f286b1e95cbcdc5f7ba69e2391dcd941e879861501cf0b06465e8fc924e5e5"
+    },
+    {
+      "frame": 5,
+      "sourceRect": [
+        1418,
+        0,
+        1773,
+        443
+      ],
+      "canvas": [
+        355,
+        444
+      ],
+      "visibleAlpha128Bbox": [
+        50,
+        48,
+        300,
+        419
+      ],
+      "originalPixelsPreserved": true,
+      "partialAlphaPixels": 65024,
+      "hiddenRgbPixels": 102,
+      "idleInserted": false,
+      "scaling": null,
+      "path": "assets/rework/v0.1.0/gu-to-feng-idle-redraw-2026-10-01/frames/gu_to_feng_05.png",
+      "sha256": "90b07f98531923504ee1064bc39f4f11166b72b66c9514d3579cb0d8556f1288"
+    },
+    {
+      "frame": 6,
+      "sourceRect": [
+        0,
+        443,
+        354,
+        887
+      ],
+      "canvas": [
+        355,
+        444
+      ],
+      "visibleAlpha128Bbox": [
+        83,
+        24,
+        312,
+        389
+      ],
+      "originalPixelsPreserved": true,
+      "partialAlphaPixels": 59410,
+      "hiddenRgbPixels": 210,
+      "idleInserted": false,
+      "scaling": null,
+      "path": "assets/rework/v0.1.0/gu-to-feng-idle-redraw-2026-10-01/frames/gu_to_feng_06.png",
+      "sha256": "9aa9af7e9888c7ca433cbe09d364a0804995348147f0c38a7f9ee8a098776d0c"
+    },
+    {
+      "frame": 7,
+      "sourceRect": [
+        354,
+        443,
+        709,
+        887
+      ],
+      "canvas": [
+        355,
+        444
+      ],
+      "visibleAlpha128Bbox": [
+        74,
+        21,
+        296,
+        390
+      ],
+      "originalPixelsPreserved": true,
+      "partialAlphaPixels": 60665,
+      "hiddenRgbPixels": 191,
+      "idleInserted": false,
+      "scaling": null,
+      "path": "assets/rework/v0.1.0/gu-to-feng-idle-redraw-2026-10-01/frames/gu_to_feng_07.png",
+      "sha256": "a68a8918bd4e034294437b37aa0afcc995c2f5e8f3d182db656fa168e63ae71a"
+    },
+    {
+      "frame": 8,
+      "sourceRect": [
+        709,
+        443,
+        1063,
+        887
+      ],
+      "canvas": [
+        355,
+        444
+      ],
+      "visibleAlpha128Bbox": [
+        68,
+        23,
+        293,
+        390
+      ],
+      "originalPixelsPreserved": true,
+      "partialAlphaPixels": 60711,
+      "hiddenRgbPixels": 139,
+      "idleInserted": false,
+      "scaling": null,
+      "path": "assets/rework/v0.1.0/gu-to-feng-idle-redraw-2026-10-01/frames/gu_to_feng_08.png",
+      "sha256": "b98550e75a40117ade16e1f26c9c57e45f37820f77c215e6610d0e1410eda95f"
+    },
+    {
+      "frame": 9,
+      "sourceRect": [
+        1063,
+        443,
+        1418,
+        887
+      ],
+      "canvas": [
+        355,
+        444
+      ],
+      "visibleAlpha128Bbox": [
+        71,
+        24,
+        298,
+        390
+      ],
+      "originalPixelsPreserved": true,
+      "partialAlphaPixels": 58680,
+      "hiddenRgbPixels": 194,
+      "idleInserted": false,
+      "scaling": null,
+      "path": "assets/rework/v0.1.0/gu-to-feng-idle-redraw-2026-10-01/frames/gu_to_feng_09.png",
+      "sha256": "5221de39d9ff7224572f2a19f8d5b81d23845123b58d6336022e3d3fe1b10637"
+    },
+    {
+      "frame": 10,
+      "sourceRect": [
+        1418,
+        443,
+        1773,
+        887
+      ],
+      "canvas": [
+        355,
+        444
+      ],
+      "visibleAlpha128Bbox": [
+        58,
+        21,
+        297,
+        390
+      ],
+      "originalPixelsPreserved": true,
+      "partialAlphaPixels": 60979,
+      "hiddenRgbPixels": 140,
+      "idleInserted": false,
+      "scaling": null,
+      "path": "assets/rework/v0.1.0/gu-to-feng-idle-redraw-2026-10-01/frames/gu_to_feng_10.png",
+      "sha256": "705b2ff6a43b0ad9df9d9716bbe3a4bb57ce49094d7302b1246c6dc200ac41d1"
+    }
+  ]
+}

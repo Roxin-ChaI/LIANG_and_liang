@@ -1,0 +1,29 @@
+Use case: stylized-concept
+Asset type: production pixel-art character transformation animation spritesheet, new GU TO FENG artwork, 10 transition frames only.
+
+REFERENCE ROLES:
+Image 1 (assets/gu/idle.png): approved GU IDLE character and exact pixel-art style. Image 2 (assets/feng/idle.png): approved FENG IDLE character and exact pixel-art style. Images 3 and 4: native 192x208 canonical sprites showing the same two approved Idle appearances at game scale. These are immutable design references, not frames to repeat in the delivered animation.
+
+PRIMARY REQUEST:
+Redraw a coherent ten-frame Gu -> Feng transformation in EXACTLY the same illustrated pixel-art style as these Idle references: same man, same short black hair, thin black rectangular glasses, white open-collar shirt, tailored dark-blue suit, black shoes. Gu starts slender, narrow-shouldered, tired and slightly stooped; Feng becomes strong, broad-shouldered, upright, sharp-eyed and stern. The transformation must read as the SAME character becoming stronger. Match the reference outline thickness, angular pixel clusters, face rendering, highlights, navy palette, suit construction and anatomy. Keep elbows, forearms, wrists, hands, knees, trouser volume and shoes naturally connected and consistent. No balloon muscles, no spherical shoulder pads, no pasted-on hands, no chopped sleeves.
+
+OUTPUT COMPOSITION:
+One transparent RGBA spritesheet, exactly TEN complete full-body sprites arranged in a strict 5 columns by 2 rows grid, read left-to-right across the top row then left-to-right across the bottom row. Prefer canvas 2240x960 with equal 448x480 cells. Every cell has generous transparent gutters on all sides. Every shoe must be completely visible; no sprite, effect or hair touches a cell edge. Every figure centered at the same local horizontal registration and every shoe on the same local ground baseline. Same locked frontal camera and total character height across all ten frames. No grid lines, labels, titles, numbers, decorations, ground shadows, background or extra preview Idle figures. There are ten actual transition poses, not eight transition poses padded by two Idles.
+
+TIMELINE — each of the ten sprites must contribute to the motion:
+1. Very early charge: unmistakably Gu, almost identical to Gu Idle silhouette, tiny straightening and slight finger tension. Head position remains aligned with Gu.
+2. Gu becomes attentive; shoulders only slightly lift; fingers begin curling.
+3. Torso straightens, shoulders expand modestly, both arms still low and anatomically relaxed.
+4. First clear middle stage: broader jacket and chest, face gradually firms, head proportion changes gradually.
+5. True midpoint Gu/Feng body, coherent tailored sleeves and gradual trouser thickening; same identity.
+6. Increasingly Feng: upright, strong shoulders, sharper eyes; viewer-left hand begins a SMALL natural upward movement toward the chest, viewer-right hand begins to close into a low fist.
+7. Almost Feng proportions; viewer-left elbow bends naturally and hand rises toward the upper chest; legs widen gradually by small foot steps.
+8. Fully Feng proportions and identity; viewer-left forearm continues toward chin, right fist remains low, stance nearly the approved Feng stance.
+9. Settling: index finger approaches the lips in the EXACT approved Feng Idle hand orientation, small remaining sleeve and stance movement.
+10. Final transition settling pose very close to approved Feng Idle, finger just short of its resting contact and tiny residual motion. It must blend immediately into the approved Feng Idle. Do not add a separate Idle cell or repeat canonical Idle as a counted frame.
+
+EFFECTS:
+Character transformation is primary. A few restrained hard-edged electric-blue pixel sparks may emerge around the outside silhouette in frames 3-7 and fade completely by frame 10. Never cover face, glasses, hands, jacket or legs; no large aura or glow wall.
+
+PIXEL RULES:
+Crisp hard-edge pixel-art sprites, same detail density and pixel-cluster language as the references, transparent background with genuine alpha, never a green screen or drawn checkerboard. No antialiasing, no blur, no smooth vector curves, no painted airbrush, no motion blur, no pixel fragments left dangling. No text or UI. Do not change art style mid-sequence. Smooth small incremental anatomy and pose changes; do not keep a Gu face for nine frames and suddenly replace it with Feng at frame ten. Preserve full body at every cell.

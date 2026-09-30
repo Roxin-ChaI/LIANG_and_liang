@@ -1,0 +1,135 @@
+{
+  "status": "VISUAL_QA_FAIL",
+  "approval": "NOT_APPROVED",
+  "purpose": "QA display only, not runtime normalization",
+  "transitionFrameCount": 10,
+  "externalIdleHolds": 2,
+  "candidateCommonNearestScale": 0.5390835579514824,
+  "sourceHeightRange": [
+    350,
+    371
+  ],
+  "sourcePixelsModified": false,
+  "geometry": [
+    {
+      "frame": 1,
+      "sourceHeightAlpha128": 350,
+      "displayHeightAlpha128": 189,
+      "displayTopY": 75,
+      "displaySoleY": 263,
+      "displayTranslation": [
+        23,
+        38
+      ]
+    },
+    {
+      "frame": 2,
+      "sourceHeightAlpha128": 351,
+      "displayHeightAlpha128": 189,
+      "displayTopY": 75,
+      "displaySoleY": 263,
+      "displayTranslation": [
+        33,
+        38
+      ]
+    },
+    {
+      "frame": 3,
+      "sourceHeightAlpha128": 357,
+      "displayHeightAlpha128": 193,
+      "displayTopY": 71,
+      "displaySoleY": 263,
+      "displayTranslation": [
+        33,
+        38
+      ]
+    },
+    {
+      "frame": 4,
+      "sourceHeightAlpha128": 363,
+      "displayHeightAlpha128": 196,
+      "displayTopY": 68,
+      "displaySoleY": 263,
+      "displayTranslation": [
+        33,
+        38
+      ]
+    },
+    {
+      "frame": 5,
+      "sourceHeightAlpha128": 371,
+      "displayHeightAlpha128": 200,
+      "displayTopY": 64,
+      "displaySoleY": 263,
+      "displayTranslation": [
+        36,
+        38
+      ]
+    },
+    {
+      "frame": 6,
+      "sourceHeightAlpha128": 365,
+      "displayHeightAlpha128": 196,
+      "displayTopY": 68,
+      "displaySoleY": 263,
+      "displayTranslation": [
+        24,
+        55
+      ]
+    },
+    {
+      "frame": 7,
+      "sourceHeightAlpha128": 369,
+      "displayHeightAlpha128": 199,
+      "displayTopY": 65,
+      "displaySoleY": 263,
+      "displayTranslation": [
+        30,
+        54
+      ]
+    },
+    {
+      "frame": 8,
+      "sourceHeightAlpha128": 367,
+      "displayHeightAlpha128": 198,
+      "displayTopY": 66,
+      "displaySoleY": 263,
+      "displayTranslation": [
+        32,
+        54
+      ]
+    },
+    {
+      "frame": 9,
+      "sourceHeightAlpha128": 366,
+      "displayHeightAlpha128": 197,
+      "displayTopY": 67,
+      "displaySoleY": 263,
+      "displayTranslation": [
+        33,
+        54
+      ]
+    },
+    {
+      "frame": 10,
+      "sourceHeightAlpha128": 369,
+      "displayHeightAlpha128": 199,
+      "displayTopY": 65,
+      "displaySoleY": 263,
+      "displayTranslation": [
+        38,
+        54
+      ]
+    }
+  ],
+  "refs": {
+    "assets/rework/v0.1.0/manual-transition-endpoints/A-gu-to-feng-entry.png": "6c925bbcd1386cad107cdffb5aa7569d9ace295790cb9542d7dd0629f074cab3",
+    "assets/rework/v0.1.0/manual-transition-endpoints/B-gu-to-feng-exit.png": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b"
+  },
+  "blockers": [
+    "First generated pose is shorter than canonical Gu under a single common scale; entry head position jumps.",
+    "The generated face/hair and suit rendition does not yet exactly match canonical Idle artwork.",
+    "Original generated PNGs retain partial-alpha edge pixels; strict hard-edge pixel alpha not met."
+  ],
+  "appIntegrated": false
+}

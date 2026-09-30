@@ -50,3 +50,11 @@ shasum -a 256 -c assets-frozen.sha256
 说明：`feng_to_gu` 目录原保存为 `feng_tu_gu_*.png`，本轮仅按统一命名重命名为 `feng_to_gu_*.png`，未改动图片内容。
 
 范围外：`pic/` 下两张既有 PNG 与本轮批准素材无关，未纳入冻结。
+
+## 2026-10-01 用户确认：保留 Feng → Gu，重绘 Gu → Feng
+
+- 用户明确满意上一版 Feng → Gu **8 帧**，后续不再修改。冻结包括 `assets/transform-overlay/feng_to_gu/` 中实际运行的八张 PNG 及 `assets/transform/feng_to_gu/` 中的对应原始素材。没有新的明确授权时，不重绘、缩放、重排或覆盖它们。
+- 对应 SHA256 固定记录在 `docs/transition-redraw/v0.1.0/feng-to-gu-approved-2026-10-01.json`。
+- Gu → Feng 另行重绘，沿用 **10 个变身动作帧**；Gu Idle 与 Feng Idle 仅作前后参照，均不计入十帧，不以复制 Idle 补足数量。
+- 新稿的画风、脸部身份、头身比、西装结构均以 `assets/gu/idle.png`、`assets/feng/idle.png` 和正式 atlas 的 Idle 为准。旧 E1/E2/E3 不作新稿的形体参考。
+- 新稿保存为独立候选，视觉审批与运行素材替换分开；现有 Gu/Feng 标准 atlas 和已运行素材保留。

@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-01",
+  "timezone": "Asia/Shanghai",
+  "status": "USER_APPROVED_FROZEN",
+  "userDecision": "Feng → Gu 这8帧的动画满意，往后不再做修改。",
+  "direction": "feng_to_gu",
+  "frameCount": 8,
+  "playOrder": [
+    "feng_to_gu_01.png",
+    "feng_to_gu_02.png",
+    "feng_to_gu_03.png",
+    "feng_to_gu_04.png",
+    "feng_to_gu_05.png",
+    "feng_to_gu_06.png",
+    "feng_to_gu_07.png",
+    "feng_to_gu_08.png"
+  ],
+  "runtimeFiles": {
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_01.png": "006f98c261817cb23081ea1cfc1b37871e5e76c744a24e3879ec16c617fb4e9c",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_02.png": "26a1fd7a0662c59457fd7bd42726febfabba7984685b2d65d496527f081418de",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_03.png": "fa84eadb4c1e7dcb4a5c16ac672312613b1a4018983f1d12f7ca730b3d5fc5e0",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_04.png": "11840bf444cf50b6da23b78019a0cf4a2b33a3fe84d56d345566ed59da83bbf4",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_05.png": "ebd9278d705fd4625bd9218b41546b64f310e566246d5114467f25da3e60f8d2",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_06.png": "c5c8b0b44155c10cd6d9790065aaa892ffe8355cac49380e774c7652e4324084",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_07.png": "0a06b37a1dcd8609a46abe872d1f013023e4599f403f4342db6d20dba37f56ba",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_08.png": "2381807ba12708e071579f8688cb91dff0d4d9d9024343d60dd3057d3cd9339c"
+  },
+  "sourceFiles": {
+    "assets/transform/feng_to_gu/feng_to_gu_01.png": "a02f8febd5bcde4b1b81c211fbd94e1c77078ed701342f65d653f14af22c4d69",
+    "assets/transform/feng_to_gu/feng_to_gu_02.png": "c7ef34451075b7cffe03cfd4dfed0370721d721979017c2322b6116b3011b38b",
+    "assets/transform/feng_to_gu/feng_to_gu_03.png": "ca67381278402fe0caae35a397caf0e8aaae46514a3abf2af5844688de8ec647",
+    "assets/transform/feng_to_gu/feng_to_gu_04.png": "9db70d39adbd2c479fc13fb2b2cedc51fc37cb1acfcc9adda8256f54667b24d8",
+    "assets/transform/feng_to_gu/feng_to_gu_05.png": "5ed10f3d8e8633ba9b56f14b5aa08aa5520c11775ee423a835dc65e34e2e884b",
+    "assets/transform/feng_to_gu/feng_to_gu_06.png": "a382eae13884cf1982b160cd108757456a6005caac5c5d777452524a53dd24b0",
+    "assets/transform/feng_to_gu/feng_to_gu_07.png": "53720ec9ec089d6e87d7bebd43a81c407072fd51c547333091b768d792d75af5",
+    "assets/transform/feng_to_gu/feng_to_gu_08.png": "b99bfa5889aefaddcff8228261a2c77ca3b6f83d74f91cc7eec0dd4bdc0eabe0"
+  },
+  "newForwardArt": {
+    "direction": "gu_to_feng",
+    "transitionFrameCount": 10,
+    "idleFramesIncluded": 0,
+    "idleStyleReferences": [
+      "assets/gu/idle.png",
+      "assets/feng/idle.png"
+    ],
+    "status": "REDRAW_CANDIDATE_PENDING_VISUAL_APPROVAL"
+  }
+}
