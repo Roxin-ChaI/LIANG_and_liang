@@ -1,0 +1,152 @@
+{
+  "status": "SPECIFICATION_ONLY",
+  "generatedCandidates": 0,
+  "source": "assets/rework/v0.1.0/transition-keyframes/feng-f0/morph-bridge/kf2/KF2.png",
+  "sourceSha256": "1917e459ee6554d29625649c15a87edd7f4029b42338a8645304cab5fa847676",
+  "retiredF0": "preserved as historical evidence, rejected as final candidate",
+  "canvas": [
+    192,
+    208
+  ],
+  "baselineY": 203,
+  "registrationX": 96,
+  "sourceLandmark": {
+    "headBbox": [
+      62,
+      4,
+      114,
+      63
+    ],
+    "headSize": [
+      52,
+      59
+    ],
+    "headCenter": [
+      88.0,
+      33.5
+    ],
+    "headGuideApproximate": true,
+    "headGuideUncertaintyPx": 3,
+    "bodyBbox": [
+      47,
+      70,
+      147,
+      204
+    ],
+    "bodyWidth": 100,
+    "bodyBandCenterX": 97.0,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "b2d7e5e94ba26d1ee19440b8040a3bb9a357897068af099170286f8c5322a5d0"
+  },
+  "targetHeadGuide": [
+    63,
+    4,
+    113,
+    59
+  ],
+  "morph": {
+    "meaning": "completed Feng body, neutral finishing pose; relaxed source expression intentionally retained",
+    "mustComplete": [
+      "Feng head-size range",
+      "broad shoulders and strong torso",
+      "basic blue tailored suit silhouette"
+    ],
+    "headWidthRange": [
+      49,
+      52
+    ],
+    "headHeightRange": [
+      54,
+      57
+    ],
+    "maxHeadSizeDelta": 6,
+    "maxHeadCenterDelta": [
+      3,
+      4
+    ],
+    "bodyBandWidthRange": [
+      96,
+      104
+    ],
+    "maxBodyWidthDelta": 10,
+    "maxTrouserOuterEdgeMove": 3,
+    "facePixelLock": {
+      "source": [
+        67,
+        28,
+        110,
+        56
+      ],
+      "target": [
+        67,
+        26,
+        110,
+        54
+      ],
+      "rule": "exact RGBA crop, integer 2px upward placement only; no expression edits"
+    },
+    "handsPixelLocks": [
+      [
+        60,
+        130,
+        79,
+        155
+      ],
+      [
+        112,
+        130,
+        135,
+        155
+      ]
+    ],
+    "feetPixelLock": [
+      0,
+      192,
+      192,
+      208
+    ],
+    "locksIncludeTransparentPixels": true,
+    "deferred": [
+      "sharp Feng facial performance",
+      "hand to chin",
+      "wide stance",
+      "deep trouser folds",
+      "final Idle garment detailing"
+    ],
+    "visualChecks": [
+      "same character",
+      "head continuity",
+      "completed Feng torso and shoulders",
+      "arm continuity",
+      "pants continuity",
+      "jacket continuity"
+    ]
+  },
+  "entry": {
+    "onlyAfter": "F0_MORPH_ENDPOINT_APPROVED",
+    "allowed": [
+      "relaxed to sharp expression",
+      "raise arm",
+      "fist adjustment",
+      "widen stance",
+      "finish suit detailing"
+    ],
+    "forbidden": [
+      "large skull rescaling",
+      "another body-form change",
+      "identity replacement"
+    ],
+    "ifDirectConnectionFails": "FENG_ENTRY_ANIMATION_REQUIRED; plan 2-4 separate poses, no generation this phase",
+    "notPartOfMorphFrameBudget": true
+  },
+  "method": "hand-selected native pixel copies, documented part maps and explicit pixel/seam edits",
+  "aiGeneration": false,
+  "globalScaling": false,
+  "interpolation": false,
+  "newBridgeFramesAllowed": false,
+  "approvedInputsEditable": false,
+  "geometryAloneApprovesArt": false,
+  "runtimeIntegrationAllowed": false,
+  "humanApproval": "PENDING"
+}
