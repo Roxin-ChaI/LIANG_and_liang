@@ -1,0 +1,175 @@
+{
+  "status": "FENG_ENTRY_ANIMATION_REQUIRED",
+  "morphStatus": "F0_MORPH_ENDPOINT_APPROVED",
+  "sourceSha256": "aac220fa47dd2a14a66928d98327fdec1a0d1a1d2cf43ac671fbd6342dc271f9",
+  "targetSha256": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+  "landmarks": {
+    "F0-v2": {
+      "headBbox": [
+        63,
+        4,
+        113,
+        59
+      ],
+      "headSize": [
+        50,
+        55
+      ],
+      "headCenter": [
+        88.0,
+        31.5
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        46,
+        70,
+        147,
+        204
+      ],
+      "bodyWidth": 101,
+      "bodyBandCenterX": 96.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "c060a646f93c49a2a37daf1a15152c8fbad9e3500c9b48e289581333bb53f9ab"
+    },
+    "B": {
+      "headBbox": [
+        64,
+        4,
+        113,
+        58
+      ],
+      "headSize": [
+        49,
+        54
+      ],
+      "headCenter": [
+        88.5,
+        31.0
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        44,
+        70,
+        148,
+        204
+      ],
+      "bodyWidth": 104,
+      "bodyBandCenterX": 96.0,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "17d6608ea37c508f465c4add9bd628c5ef09d9051a949d31ff9bd2ce6b0a1287"
+    }
+  },
+  "footGuides": {
+    "F0-v2": {
+      "left": {
+        "bbox": [
+          70,
+          192,
+          95,
+          204
+        ],
+        "centerX": 82.5
+      },
+      "right": {
+        "bbox": [
+          99,
+          192,
+          119,
+          204
+        ],
+        "centerX": 109.0
+      }
+    },
+    "B": {
+      "left": {
+        "bbox": [
+          48,
+          192,
+          83,
+          203
+        ],
+        "centerX": 65.5
+      },
+      "right": {
+        "bbox": [
+          114,
+          192,
+          141,
+          204
+        ],
+        "centerX": 127.5
+      }
+    }
+  },
+  "delta": {
+    "headSize": [
+      -1,
+      -1
+    ],
+    "headCenter": [
+      0.5,
+      -0.5
+    ],
+    "bodyBandWidth": 3,
+    "feetCenterX": {
+      "left": -17.0,
+      "right": 18.5
+    }
+  },
+  "guideWarning": "Body band includes raised arms; head includes a partly hand-occluded chin in B. Numbers cannot prove limb-volume equivalence under different poses.",
+  "entryPlan": {
+    "plannedPoseCount": 4,
+    "generatedPoses": 0,
+    "isPartOfMorphBudget": false,
+    "E1": "Begin raising viewer-left forearm from the low pose; slight brow engagement. Keep skull/shoulders and foot registration stable; prepare weight transfer.",
+    "E2": "Forearm reaches mid chest; progressively focus eyes. One foot begins the outward step; jacket folds follow the moving elbow.",
+    "E3": "Fingertips approach the chin, expression nears B. The other foot completes the wider stance; trouser contours follow leg rotation rather than inflating volume.",
+    "E4": "Settle into the exact frozen B pose, completing the fingertip contact, fist and suit detailing. No final-frame body rescale or newly replaced face.",
+    "constraints": [
+      "Each adjacent step needs actual manual visual QA",
+      "Head size/center remain near the already Feng endpoint",
+      "Track hand trajectory and planted/supporting feet",
+      "Do not hide another body-form change inside Entry",
+      "Do not use speed changes to conceal a bad connection"
+    ]
+  },
+  "runtimeIntegrationAllowed": false,
+  "entryArtApproved": false,
+  "humanApproval": "PENDING",
+  "reviewFresh": true,
+  "directConnectionPass": false,
+  "visualReview": {
+    "reviewer": "Codex primary agent, direct native and nearest-3x static image inspection",
+    "sourceSha256": "aac220fa47dd2a14a66928d98327fdec1a0d1a1d2cf43ac671fbd6342dc271f9",
+    "targetSha256": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+    "checks": {
+      "expression": {
+        "status": "FAIL",
+        "reason": "A direct cut replaces the relaxed eyes/brows and mouth reading with B's sharp focused expression, brighter hair shading and firmer facial lines. Entry should stage the expression rather than treating this as another Morph frame."
+      },
+      "armTrajectory": {
+        "status": "FAIL",
+        "reason": "The viewer-left hand jumps from below the waist to the lips; elbow direction and jacket sleeve folds change substantially. The other hand shifts outward as the arm opens. Intermediate arm positions are required."
+      },
+      "stance": {
+        "status": "FAIL",
+        "reason": "The narrow planted feet become B's wide stance. Sole-band centers move -17px and +18.5px; baseline equality does not make this a continuous step."
+      },
+      "suitDetails": {
+        "status": "FAIL",
+        "reason": "The lapel, shirt, hem and trouser-fold arrangements change with the lifted arm and spread legs. A direct cut visibly changes these structures at once; the details should follow the staged pose."
+      },
+      "formProportions": {
+        "status": "NOT_PROVEN",
+        "reason": "Head guides differ only -1px per axis and body-band width +3px. Both poses read broad/strong, but arms and legs are differently oriented. Equal scalar bounds cannot prove exact limb-volume equivalence; the future entry art must check pose-normalized thigh/calf and torso volume, without concealing another body-form change."
+      }
+    },
+    "verdict": "FENG_ENTRY_ANIMATION_REQUIRED",
+    "scope": "static Entry audit and four-pose plan only; no Entry artwork or runtime test",
+    "humanApproval": "PENDING"
+  }
+}
