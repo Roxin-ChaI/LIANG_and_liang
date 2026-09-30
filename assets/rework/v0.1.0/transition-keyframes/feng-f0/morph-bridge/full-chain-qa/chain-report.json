@@ -1,0 +1,701 @@
+{
+  "status": "MANUAL_BRIDGE_QA_FAIL",
+  "F0ArtApproved": false,
+  "F0ToIdleAuditAllowed": false,
+  "runtimeIntegrationAllowed": false,
+  "scope": "static source-pixel chain only; no App or F0 to Idle test",
+  "frames": {
+    "K3": {
+      "path": "/Users/mac/Projects/liang-no-henshin/assets/rework/v0.1.0/transition-keyframes/k3-controlled/candidate/K3.png",
+      "pngSha256": "2b5651503d4d223d5c670152a1425ebafd6d55b5802f55794c6c70b3624876f6",
+      "rgbaSha256": "cb5d9386568f6c67b9ed9e28448fe9a16dd4b6127bbbbc8b251897b5aba80a97"
+    },
+    "KB1": {
+      "path": "/Users/mac/Projects/liang-no-henshin/assets/rework/v0.1.0/transition-keyframes/k3-b-bridge/kb1/KB1.png",
+      "pngSha256": "4d1b307e3e251352d3cc165c95f85009d445f797efd94bfeb28fe682a30cd837",
+      "rgbaSha256": "47f5d1290be140b0fc38a27d1d795d06e972c0fc7180ca5e4074f954fabd93c4"
+    },
+    "KB2": {
+      "path": "/Users/mac/Projects/liang-no-henshin/assets/rework/v0.1.0/transition-keyframes/k3-b-bridge/kb2/KB2.png",
+      "pngSha256": "622c81f99cde42f5846044a391424e7f4a8afa326d2c5e235470b2cacb618b19",
+      "rgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870"
+    },
+    "KF1": {
+      "path": "/Users/mac/Projects/liang-no-henshin/assets/rework/v0.1.0/transition-keyframes/feng-f0/morph-bridge/kf1/KF1.png",
+      "pngSha256": "c189516b94db095e71a83460c7f2e831ca44841a6c97564f48252445ade1407b",
+      "rgbaSha256": "b49521b2f9b62e818361032f1f341062cf2c5299d420a21e7ac126a4955b493a"
+    },
+    "KF2": {
+      "path": "/Users/mac/Projects/liang-no-henshin/assets/rework/v0.1.0/transition-keyframes/feng-f0/morph-bridge/kf2/KF2.png",
+      "pngSha256": "1917e459ee6554d29625649c15a87edd7f4029b42338a8645304cab5fa847676",
+      "rgbaSha256": "b2d7e5e94ba26d1ee19440b8040a3bb9a357897068af099170286f8c5322a5d0"
+    },
+    "F0": {
+      "path": "/Users/mac/Projects/liang-no-henshin/assets/rework/v0.1.0/transition-keyframes/feng-f0/manual-pixel-art/F0.png",
+      "pngSha256": "9e3a64dd388318fa2d48ca630e71a765e3302093f9ff9c6571f8eadef38b8f84",
+      "rgbaSha256": "9b3eccc0cd2de5ae91a0fed0f20ea672c9b52dd7c3dee988951ec09e949ceef1"
+    }
+  },
+  "landmarks": {
+    "K3": {
+      "headBbox": [
+        54,
+        4,
+        122,
+        84
+      ],
+      "headSize": [
+        68,
+        80
+      ],
+      "headCenter": [
+        88.0,
+        44.0
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        60,
+        70,
+        129,
+        204
+      ],
+      "bodyWidth": 69,
+      "bodyBandCenterX": 94.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "cb5d9386568f6c67b9ed9e28448fe9a16dd4b6127bbbbc8b251897b5aba80a97"
+    },
+    "KB1": {
+      "headBbox": [
+        57,
+        4,
+        119,
+        78
+      ],
+      "headSize": [
+        62,
+        74
+      ],
+      "headCenter": [
+        88.0,
+        41.0
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        54,
+        70,
+        135,
+        204
+      ],
+      "bodyWidth": 81,
+      "bodyBandCenterX": 94.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "47f5d1290be140b0fc38a27d1d795d06e972c0fc7180ca5e4074f954fabd93c4"
+    },
+    "KB2": {
+      "headBbox": [
+        60,
+        4,
+        116,
+        72
+      ],
+      "headSize": [
+        56,
+        68
+      ],
+      "headCenter": [
+        88.0,
+        38.0
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        48,
+        70,
+        141,
+        204
+      ],
+      "bodyWidth": 93,
+      "bodyBandCenterX": 94.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870"
+    },
+    "KF1": {
+      "headBbox": [
+        61,
+        4,
+        115,
+        68
+      ],
+      "headSize": [
+        54,
+        64
+      ],
+      "headCenter": [
+        88.0,
+        36.0
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        47,
+        70,
+        142,
+        204
+      ],
+      "bodyWidth": 95,
+      "bodyBandCenterX": 94.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "b49521b2f9b62e818361032f1f341062cf2c5299d420a21e7ac126a4955b493a"
+    },
+    "KF2": {
+      "headBbox": [
+        62,
+        4,
+        114,
+        63
+      ],
+      "headSize": [
+        52,
+        59
+      ],
+      "headCenter": [
+        88.0,
+        33.5
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        47,
+        70,
+        147,
+        204
+      ],
+      "bodyWidth": 100,
+      "bodyBandCenterX": 97.0,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "b2d7e5e94ba26d1ee19440b8040a3bb9a357897068af099170286f8c5322a5d0"
+    },
+    "F0": {
+      "headBbox": [
+        64,
+        4,
+        114,
+        59
+      ],
+      "headSize": [
+        50,
+        55
+      ],
+      "headCenter": [
+        89.0,
+        31.5
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        47,
+        70,
+        145,
+        204
+      ],
+      "bodyWidth": 98,
+      "bodyBandCenterX": 96.0,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "9b3eccc0cd2de5ae91a0fed0f20ea672c9b52dd7c3dee988951ec09e949ceef1"
+    }
+  },
+  "handGuides": {
+    "K3": {
+      "left": {
+        "skinBbox": [
+          73,
+          142,
+          81,
+          157
+        ],
+        "center": [
+          77.0,
+          149.5
+        ]
+      },
+      "right": {
+        "skinBbox": [
+          106,
+          144,
+          116,
+          159
+        ],
+        "center": [
+          111.0,
+          151.5
+        ]
+      }
+    },
+    "KB1": {
+      "left": {
+        "skinBbox": [
+          74,
+          141,
+          82,
+          156
+        ],
+        "center": [
+          78.0,
+          148.5
+        ]
+      },
+      "right": {
+        "skinBbox": [
+          106,
+          144,
+          116,
+          159
+        ],
+        "center": [
+          111.0,
+          151.5
+        ]
+      }
+    },
+    "KB2": {
+      "left": {
+        "skinBbox": [
+          76,
+          139,
+          84,
+          154
+        ],
+        "center": [
+          80.0,
+          146.5
+        ]
+      },
+      "right": {
+        "skinBbox": [
+          106,
+          144,
+          116,
+          159
+        ],
+        "center": [
+          111.0,
+          151.5
+        ]
+      }
+    },
+    "KF1": {
+      "left": {
+        "skinBbox": [
+          71,
+          137,
+          79,
+          152
+        ],
+        "center": [
+          75.0,
+          144.5
+        ]
+      },
+      "right": {
+        "skinBbox": [
+          111,
+          141,
+          121,
+          156
+        ],
+        "center": [
+          116.0,
+          148.5
+        ]
+      }
+    },
+    "KF2": {
+      "left": {
+        "skinBbox": [
+          63,
+          135,
+          75,
+          151
+        ],
+        "center": [
+          69.0,
+          143.0
+        ]
+      },
+      "right": {
+        "skinBbox": [
+          116,
+          135,
+          128,
+          151
+        ],
+        "center": [
+          122.0,
+          143.0
+        ]
+      }
+    },
+    "F0": {
+      "left": {
+        "skinBbox": [
+          56,
+          134,
+          72,
+          150
+        ],
+        "center": [
+          64.0,
+          142.0
+        ]
+      },
+      "right": {
+        "skinBbox": [
+          120,
+          134,
+          136,
+          150
+        ],
+        "center": [
+          128.0,
+          142.0
+        ]
+      }
+    }
+  },
+  "pairs": {
+    "K3_KB1": {
+      "numericPass": true,
+      "checks": {
+        "headSizeAtMost6": true,
+        "headCenterXAtMost3": true,
+        "headCenterYAtMost4": true,
+        "bodyGrowth0to15": true,
+        "baseline203": true,
+        "registration96": true
+      },
+      "headSizeDelta": [
+        -6,
+        -6
+      ],
+      "headCenterDelta": [
+        0.0,
+        -3.0
+      ],
+      "bodyWidthDelta": 12,
+      "bodyBboxDelta": [
+        -6,
+        0,
+        6,
+        0
+      ],
+      "bodyBandCenterDelta": 0.0,
+      "baselineDelta": 0,
+      "headEndpointUncertaintyPx": 3,
+      "faceIdentity": "MANUAL_VISUAL_QA",
+      "armPose": "MANUAL_VISUAL_QA",
+      "staticVerdict": "NOT_VERIFIED",
+      "visualPass": true,
+      "reviewFresh": true,
+      "visualEvidence": {
+        "reviewer": "bridge_static_visual",
+        "sourceRgbaSha256": "cb5d9386568f6c67b9ed9e28448fe9a16dd4b6127bbbbc8b251897b5aba80a97",
+        "candidateRgbaSha256": "47f5d1290be140b0fc38a27d1d795d06e972c0fc7180ca5e4074f954fabd93c4",
+        "checks": {
+          "faceIdentity": {
+            "status": "PASS",
+            "reason": "\u4fa7\u5206\u5218\u6d77\u3001\u7709\u773c\u3001\u53cc\u955c\u6846\u53ca\u9f3b\u6881\u8fde\u63a5\u3001\u9f3b\u53e3\u4f4d\u7f6e\u4ecd\u53ef\u8fa8\u8ba4\u4e3a K3 \u540c\u4e00\u4eba\u7269\uff1b\u7f29\u5c0f\u540e\u7684\u773c\u955c\u4e0e\u8138\u578b\u6ca1\u6709\u660e\u663e\u7834\u635f\u3002"
+          },
+          "headContinuity": {
+            "status": "PASS",
+            "reason": "\u5934\u90e8\u8f6e\u5ed3\u7565\u6536\u7a84\u3001\u4e0b\u5df4\u4e0a\u79fb\uff0c\u53d1\u9876\u4e0e\u4fa7\u5206\u65b9\u5411\u4fdd\u6301\u8fde\u7eed\uff1b\u8033\u6735\u53ca\u4e0b\u988c\u6ca1\u6709\u7a81\u5140\u7f3a\u53e3\u6216\u8f6e\u5ed3\u8df3\u53d8\u3002"
+          },
+          "neckCollarConnection": {
+            "status": "PASS",
+            "reason": "\u80a4\u8272\u9888\u90e8\u8fde\u7eed\u63a5\u5165\u767d\u8272\u886c\u886b\u9886\u53e3\uff0c\u4e24\u4fa7\u8863\u9886\u4e0e\u6df1\u8272\u7ffb\u9886\u76f8\u8fde\uff0c\u6ca1\u6709\u60ac\u7a7a\u5934\u90e8\u3001\u900f\u660e\u88c2\u7f1d\u6216\u65ad\u5f00\u7684\u9886\u7ebf\u3002"
+          },
+          "bodyProgression": {
+            "status": "PASS",
+            "reason": "\u53d8\u5316\u96c6\u4e2d\u4e8e\u80a9\u3001\u80f8\u4e0e\u4e0a\u81c2\u5bbd\u5ea6\uff0c\u5f62\u6210\u4ece K3 \u5f00\u59cb\u6269\u5f20\u7684\u8eab\u4f53\uff1b\u8170\u5e26\u53ca\u817f\u90e8\u7ef4\u6301\u539f\u6709\u6bd4\u4f8b\u548c\u4f4d\u7f6e\u3002"
+          },
+          "armAttachment": {
+            "status": "PASS",
+            "reason": "\u8896\u5b50\u4ece\u80a9\u90e8\u8fde\u7eed\u8fde\u63a5\u81f3\u8098\u90e8\u3001\u8896\u53e3\u4e0e\u624b\uff0c\u589e\u5bbd\u540e\u7684\u4e0a\u81c2\u6ca1\u6709\u8131\u79bb\u8eaf\u5e72\uff0c\u624b\u8155\u6ca1\u6709\u622a\u65ad\u6216\u60ac\u7a7a\u3002"
+          },
+          "clothSeams": {
+            "status": "PASS",
+            "reason": "\u767d\u886c\u886b\u4e2d\u7ebf\u3001\u7ffb\u9886\u3001\u80f8\u8179\u6a2a\u5411\u8863\u8936\u53ca\u4e0b\u6446\u4fdd\u6301\u53ef\u8bfb\u8fde\u7eed\u7ed3\u6784\uff1b\u6ca1\u6709\u660e\u663e\u9519\u5c42\u3001\u88c2\u7f1d\u6216\u7834\u574f\u8f6e\u5ed3\u7684\u62fc\u63a5\u75d5\u8ff9\u3002"
+          },
+          "feetFixed": {
+            "status": "PASS",
+            "reason": "\u88e4\u811a\u548c\u53cc\u978b\u5f62\u72b6\u3001\u6c34\u5e73\u4f4d\u7f6e\u4e0e\u843d\u5730\u9ad8\u5ea6\u4e00\u81f4\uff0c\u978b\u5e95\u8d34\u5408\u540c\u4e00\u57fa\u7ebf\uff1b\u5dee\u5f02\u56fe\u4e0b\u90e8\u663e\u793a\u4e00\u81f4\u533a\u57df\u3002"
+          },
+          "noPixelArtifacts": {
+            "status": "PASS",
+            "reason": "nearest3x \u56fe\u50cf\u8fb9\u7f18\u6e05\u6670\uff0c\u672a\u89c1\u6a21\u7cca\u63d2\u503c\u3001\u5b64\u7acb\u6742\u70b9\u3001\u900f\u660e\u5b54\u6d1e\u3001\u88c1\u5207\u6216\u4e0d\u8fde\u8d2f\u7684\u65b0\u589e\u8f6e\u5ed3\u5757\u3002"
+          },
+          "incomingContinuity": {
+            "status": "PASS",
+            "reason": "\u5e76\u6392\u4ecd\u5448\u73b0\u540c\u4e00\u4eba\u7269\u3001\u540c\u4e00\u7ad9\u59ff\u548c\u670d\u88c5\uff0c\u5c40\u90e8\u5934\u90e8\u7f29\u5c0f\u4e0e\u80a9\u80f8\u624b\u81c2\u6269\u5f20\u7684\u9759\u6001\u8854\u63a5\u6210\u7acb\u3002"
+          }
+        },
+        "verdict": "K3_KB1_STATIC_PASS",
+        "scope": "independent static visual QA only; user art approval pending, no App/runtime test"
+      },
+      "budgetScope": "previous approved bridge contract"
+    },
+    "KB1_KB2": {
+      "numericPass": true,
+      "checks": {
+        "headSizeAtMost6": true,
+        "headCenterXAtMost3": true,
+        "headCenterYAtMost4": true,
+        "bodyGrowth0to15": true,
+        "baseline203": true,
+        "registration96": true
+      },
+      "headSizeDelta": [
+        -6,
+        -6
+      ],
+      "headCenterDelta": [
+        0.0,
+        -3.0
+      ],
+      "bodyWidthDelta": 12,
+      "bodyBboxDelta": [
+        -6,
+        0,
+        6,
+        0
+      ],
+      "bodyBandCenterDelta": 0.0,
+      "baselineDelta": 0,
+      "headEndpointUncertaintyPx": 3,
+      "faceIdentity": "MANUAL_VISUAL_QA",
+      "armPose": "MANUAL_VISUAL_QA",
+      "staticVerdict": "NOT_VERIFIED",
+      "visualPass": true,
+      "reviewFresh": true,
+      "visualEvidence": {
+        "reviewer": "bridge_static_visual",
+        "sourceRgbaSha256": "47f5d1290be140b0fc38a27d1d795d06e972c0fc7180ca5e4074f954fabd93c4",
+        "candidateRgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870",
+        "checks": {
+          "faceIdentity": {
+            "status": "PASS",
+            "reason": "\u53cc\u955c\u6846\u3001\u9f3b\u6881\u8fde\u63a5\u3001\u7709\u773c\u3001\u9f3b\u53e3\u53ca\u8138\u90e8\u8f6e\u5ed3\u53ef\u8fa8\uff1b\u7b2c\u4e8c\u6b21\u7f29\u5c0f\u538b\u7f29\u4e86\u7ec6\u8282\uff0c\u4f46\u672a\u89c1\u773c\u955c\u65ad\u88c2\u6216\u8138\u578b\u660e\u663e\u635f\u574f\u3002"
+          },
+          "headContinuity": {
+            "status": "PASS",
+            "reason": "\u4fa7\u5206\u5218\u6d77\u3001\u53d1\u9876\u65b9\u5411\u548c\u8033\u90e8\u4fdd\u6301\u4e00\u81f4\uff1b\u5934\u90e8\u6536\u7a84\u3001\u4e0b\u5df4\u4e0a\u79fb\uff0c\u8f6e\u5ed3\u6ca1\u6709\u7a81\u5140\u7f3a\u53e3\u6216\u788e\u5757\u3002"
+          },
+          "neckCollarConnection": {
+            "status": "PASS",
+            "reason": "\u80a4\u8272\u9888\u90e8\u8fde\u7eed\u63a5\u5165\u767d\u8272\u9886\u53e3\uff0c\u9886\u8fb9\u4e0e\u7ffb\u9886\u76f8\u8fde\uff0c\u6ca1\u6709\u60ac\u7a7a\u3001\u900f\u660e\u88c2\u7f1d\u6216\u65ad\u5f00\u7684\u9886\u7ebf\u3002"
+          },
+          "bodyProgression": {
+            "status": "PASS",
+            "reason": "\u80a9\u80f8\u548c\u4e0a\u81c2\u7ee7\u7eed\u6269\u5f20\uff0c\u8170\u5e26\u3001\u88e4\u817f\u3001\u978b\u4fdd\u6301\u5c3a\u5ea6\u4f4d\u7f6e\uff1b\u5916\u8f6e\u5ed3\u8fde\u7eed\uff0c\u65e0\u8131\u79bb\u8eab\u4f53\u7684\u62fc\u63a5\u5757\u3002"
+          },
+          "armAttachment": {
+            "status": "PASS",
+            "reason": "\u80a9\u3001\u8098\u3001\u8896\u53e3\u548c\u624b\u8155\u4fdd\u6301\u76f8\u63a5\uff1b\u5de6\u524d\u81c2\u4e0e\u624b\u5c0f\u5e45\u5411\u5185\u4e0a\u79fb\uff0c\u6ca1\u6709\u65ad\u5f00\u3002"
+          },
+          "clothSeams": {
+            "status": "PASS",
+            "reason": "\u65e2\u6709\u6a2a\u5411\u6761\u7eb9\u968f\u8eab\u4f53\u53d8\u5bbd\u5ef6\u957f\uff0c\u4e2d\u7ebf\u3001\u7ffb\u9886\u3001\u8896\u4fa7\u7ebf\u3001\u4e0b\u6446\u4ecd\u8fde\u7eed\uff1b\u672a\u89c1\u65b0\u65ad\u5c42\u3001\u8863\u7247\u91cd\u53e0\u6216\u900f\u660e\u63a5\u7f1d\u3002"
+          },
+          "feetFixed": {
+            "status": "PASS",
+            "reason": "\u88e4\u811a\u548c\u53cc\u978b\u8f6e\u5ed3\u3001\u6a2a\u5411\u4f4d\u7f6e\u4e0e\u843d\u5730\u9ad8\u5ea6\u4e00\u81f4\uff0c\u540c\u4e00\u811a\u5e95\u57fa\u7ebf\u3002"
+          },
+          "noPixelArtifacts": {
+            "status": "PASS",
+            "reason": "\u50cf\u7d20\u8fb9\u7f18\u6e05\u6670\uff0c\u672a\u89c1\u6a21\u7cca\u63d2\u503c\u3001\u65b0\u5b64\u7acb\u6742\u70b9\u3001\u5b54\u6d1e\u3001\u88c1\u5207\u6216\u7834\u574f\u8f6e\u5ed3\u7684\u788e\u50cf\u7d20\u3002"
+          },
+          "incomingContinuity": {
+            "status": "PASS",
+            "reason": "\u540c\u4e00\u4eba\u7269\u3001\u670d\u88c5\u548c\u7ad9\u59ff\uff0c\u5c40\u90e8\u7f29\u5934\u3001\u6269\u80a9\u80f8\u4e0e\u524d\u81c2\u5c0f\u52a8\u4f5c\u7684\u9759\u6001\u8854\u63a5\u6210\u7acb\u3002"
+          }
+        },
+        "verdict": "KB1_KB2_STATIC_PASS",
+        "scope": "actual independent static QA only; user art approval pending, no runtime test"
+      },
+      "budgetScope": "previous approved bridge contract"
+    },
+    "KB2_KF1": {
+      "headSizeDelta": [
+        -2,
+        -4
+      ],
+      "headCenterDelta": [
+        0.0,
+        -2.0
+      ],
+      "bodyWidthDelta": 2,
+      "handCenterDelta": {
+        "left": [
+          -5.0,
+          -2.0
+        ],
+        "right": [
+          5.0,
+          -3.0
+        ]
+      },
+      "checks": {
+        "headSize": true,
+        "headCenterX": true,
+        "headCenterY": true,
+        "bodyWidth": true,
+        "hands": true,
+        "baseline203": true,
+        "registration96": true
+      },
+      "numericPass": true,
+      "visualPass": true,
+      "face": "INDEPENDENT_VISUAL_QA",
+      "suit": "INDEPENDENT_VISUAL_QA",
+      "arms": "INDEPENDENT_VISUAL_QA",
+      "artApproved": false,
+      "reviewFresh": true,
+      "visualEvidence": {
+        "reviewer": "independent visual reviewer /root/f0_visual_gate",
+        "candidatePngSha256": "c189516b94db095e71a83460c7f2e831ca44841a6c97564f48252445ade1407b",
+        "candidateRgbaSha256": "b49521b2f9b62e818361032f1f341062cf2c5299d420a21e7ac126a4955b493a",
+        "verdict": "PASS",
+        "checks": {
+          "face": "PASS",
+          "head": "PASS",
+          "arms": "PASS",
+          "suit": "PASS",
+          "legs": "PASS",
+          "alpha": "PASS"
+        },
+        "evidence": "Native and nearest-3x contact sheets, both PNGs, difference mask and overlay were inspected.",
+        "reason": "KF1 retains KB2 hair, glasses, neutral expression, head position, narrow stance and sole. Hands move modestly outward with attached bent arms. Lapels and blue highlights begin over the same shoulder/torso silhouette, without an obvious transparency hole or identity break.",
+        "warnings": [
+          "Viewer-right sleeve has an angular flat outer ledge inherited from the boxy KB2 geometry; it remains connected."
+        ],
+        "scope": "KB2 to KF1 only. The retained F0 is a future endpoint and was not approved by this incoming gate."
+      },
+      "budgetScope": "KF1/KF2 manual morphology contract"
+    },
+    "KF1_KF2": {
+      "headSizeDelta": [
+        -2,
+        -5
+      ],
+      "headCenterDelta": [
+        0.0,
+        -2.5
+      ],
+      "bodyWidthDelta": 5,
+      "handCenterDelta": {
+        "left": [
+          -6.0,
+          -1.5
+        ],
+        "right": [
+          6.0,
+          -5.5
+        ]
+      },
+      "checks": {
+        "headSize": true,
+        "headCenterX": true,
+        "headCenterY": true,
+        "bodyWidth": true,
+        "hands": true,
+        "baseline203": true,
+        "registration96": true
+      },
+      "numericPass": true,
+      "visualPass": true,
+      "face": "INDEPENDENT_VISUAL_QA",
+      "suit": "INDEPENDENT_VISUAL_QA",
+      "arms": "INDEPENDENT_VISUAL_QA",
+      "artApproved": false,
+      "reviewFresh": true,
+      "visualEvidence": {
+        "verdict": "PASS",
+        "checks": {
+          "head": "PASS",
+          "face": "PASS",
+          "arms": "PASS",
+          "suit": "PASS",
+          "pose": "PASS",
+          "alpha": "PASS"
+        },
+        "reason": "Head/hair/glasses, neutral eyes and mouth, centerline, feet and sole remain continuous. Hands move moderately outward with attached bent arms; lapels and sleeve fragments form an intermediate clothing step. No visible alpha hole or detached seam."
+      },
+      "budgetScope": "KF1/KF2 manual morphology contract"
+    },
+    "KF2_F0": {
+      "headSizeDelta": [
+        -2,
+        -4
+      ],
+      "headCenterDelta": [
+        1.0,
+        -2.0
+      ],
+      "bodyWidthDelta": -2,
+      "handCenterDelta": {
+        "left": [
+          -5.0,
+          -1.0
+        ],
+        "right": [
+          6.0,
+          -1.0
+        ]
+      },
+      "checks": {
+        "headSize": true,
+        "headCenterX": true,
+        "headCenterY": true,
+        "bodyWidth": true,
+        "hands": true,
+        "baseline203": true,
+        "registration96": true
+      },
+      "numericPass": true,
+      "visualPass": false,
+      "face": "INDEPENDENT_VISUAL_QA",
+      "suit": "INDEPENDENT_VISUAL_QA",
+      "arms": "INDEPENDENT_VISUAL_QA",
+      "artApproved": false,
+      "reviewFresh": true,
+      "visualEvidence": {
+        "verdict": "FAIL",
+        "checks": {
+          "head": "PASS",
+          "face": "FAIL",
+          "arms": "PASS",
+          "suit": "FAIL",
+          "pose": "FAIL",
+          "alpha": "PASS"
+        },
+        "reason": "KF2 retains relaxed droopy eyes and broad pale glasses. F0 abruptly introduces sharply lowered brows/narrow eyes, a changed mouth/jaw reading and brighter swept hair. Slim straight trouser legs change to bulky folded blue pants, and the dark fragmentary jacket changes to a complete bright tailored suit in one frame. Aligned hands/feet do not conceal the visible snap."
+      },
+      "budgetScope": "KF1/KF2 manual morphology contract"
+    }
+  },
+  "guideWarning": "Head guides include some neck/collar pixels; body band includes arms, not anatomical shoulder width. Registration x=96 is a canvas anchor, not every silhouette midpoint.",
+  "observations": {
+    "arms": "Small outward hand steps remain attached; the final step changes forearm inclination rather than teleporting hands.",
+    "expression": "KF2 retains relaxed Gu eyes; F0 introduces sharp Feng brows/eyes, mouth/jaw and brighter hair in one step: FAIL.",
+    "clothing": "Upper blue tailoring develops, but KF2 slim trousers and fragmentary jacket become complete thick blue suit/pants at F0: FAIL.",
+    "footprint": "All baselines are 203; F0 has a different sole/stance outline. Numeric registration cannot prove pose continuity."
+  },
+  "nextAction": "Keep F0 identity and frozen predecessors. Further manual face/garment/leg progression requires renewed art scope, not weaker geometry gates or App integration."
+}
