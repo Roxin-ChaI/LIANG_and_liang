@@ -58,3 +58,4 @@ shasum -a 256 -c assets-frozen.sha256
 - Gu → Feng 另行重绘，沿用 **10 个变身动作帧**；Gu Idle 与 Feng Idle 仅作前后参照，均不计入十帧，不以复制 Idle 补足数量。
 - 新稿的画风、脸部身份、头身比、西装结构均以 `assets/gu/idle.png`、`assets/feng/idle.png` 和正式 atlas 的 Idle 为准。旧 E1/E2/E3 不作新稿的形体参考。
 - 新稿保存为独立候选，视觉审批与运行素材替换分开；现有 Gu/Feng 标准 atlas 和已运行素材保留。
+- 同日用户追加不可放宽的“Idle 完全一致”要求；执行 `docs/transition-redraw/v0.1.0/strict-idle-appearance-contract.md` 与实际 Idle 像素指标。所有未知/失败项都阻止批准，不得用“风格接近”或纯 bbox PASS 代替。
