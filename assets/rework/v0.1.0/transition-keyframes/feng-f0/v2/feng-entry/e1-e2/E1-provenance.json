@@ -1,0 +1,36 @@
+{
+  "sourceF0Sha256": "aac220fa47dd2a14a66928d98327fdec1a0d1a1d2cf43ac671fbd6342dc271f9",
+  "frame": "E1",
+  "localForearmNearestAngle": -32,
+  "forearmShiftX": -15,
+  "forearmSourceMask": "explicit LEFT_ARM_SOURCE polygon",
+  "forearmCopiedPixels": 557,
+  "browPixels": [
+    [
+      72,
+      35
+    ],
+    [
+      73,
+      35
+    ],
+    [
+      99,
+      35
+    ],
+    [
+      100,
+      35
+    ]
+  ],
+  "leftFootOutwardPx": 0,
+  "rightHandShift": [
+    0,
+    0
+  ],
+  "rightHandLocalRowsRemoved": [],
+  "globalScaling": false,
+  "wholeCharacterRotation": false,
+  "aiGeneration": false,
+  "colorInterpolation": false
+}

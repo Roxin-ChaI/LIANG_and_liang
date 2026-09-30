@@ -1,0 +1,327 @@
+{
+  "E1": {
+    "status": "VISUAL_REVIEW_REQUIRED",
+    "technicalPass": true,
+    "checks": {
+      "documentedPixels": true,
+      "nativeRGBA": true,
+      "binaryAlpha": true,
+      "zeroHiddenRGB": true,
+      "singleCharacter": true,
+      "noIsolated": true,
+      "noClipping": true,
+      "baseline203": true,
+      "headSizeFixed": true,
+      "noNewAlphaHoles": true,
+      "sameSkullContour": true
+    },
+    "metrics": {
+      "alphaBbox": [
+        41,
+        4,
+        147,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        56,
+        4,
+        131,
+        70
+      ],
+      "bodyReferenceBbox": [
+        41,
+        70,
+        147,
+        204
+      ],
+      "bodyBandCenterX": 94.0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        11328
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false
+    },
+    "landmark": {
+      "headBbox": [
+        63,
+        4,
+        113,
+        59
+      ],
+      "headSize": [
+        50,
+        55
+      ],
+      "headCenter": [
+        88.0,
+        31.5
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        41,
+        70,
+        147,
+        204
+      ],
+      "bodyWidth": 106,
+      "bodyBandCenterX": 94.0,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "2c116fe056696b9606c783a717de67476d5b88b0b1d0fd8bebeb484c6c482c6e"
+    },
+    "hands": {
+      "left": [
+        63,
+        124,
+        79,
+        138
+      ],
+      "right": [
+        116,
+        135,
+        128,
+        151
+      ]
+    },
+    "feet": {
+      "left": {
+        "bbox": [
+          70,
+          192,
+          95,
+          204
+        ],
+        "centerX": 82.5
+      },
+      "right": {
+        "bbox": [
+          99,
+          192,
+          119,
+          204
+        ],
+        "centerX": 109.0
+      }
+    },
+    "recipe": {
+      "sourceF0Sha256": "aac220fa47dd2a14a66928d98327fdec1a0d1a1d2cf43ac671fbd6342dc271f9",
+      "frame": "E1",
+      "localForearmNearestAngle": -32,
+      "forearmShiftX": -15,
+      "forearmSourceMask": "explicit LEFT_ARM_SOURCE polygon",
+      "forearmCopiedPixels": 557,
+      "browPixels": [
+        [
+          72,
+          35
+        ],
+        [
+          73,
+          35
+        ],
+        [
+          99,
+          35
+        ],
+        [
+          100,
+          35
+        ]
+      ],
+      "leftFootOutwardPx": 0,
+      "rightHandShift": [
+        0,
+        0
+      ],
+      "rightHandLocalRowsRemoved": [],
+      "globalScaling": false,
+      "wholeCharacterRotation": false,
+      "aiGeneration": false,
+      "colorInterpolation": false
+    },
+    "artApproved": false
+  },
+  "E2": {
+    "status": "VISUAL_REVIEW_REQUIRED",
+    "technicalPass": true,
+    "checks": {
+      "documentedPixels": true,
+      "nativeRGBA": true,
+      "binaryAlpha": true,
+      "zeroHiddenRGB": true,
+      "singleCharacter": true,
+      "noIsolated": true,
+      "noClipping": true,
+      "baseline203": true,
+      "headSizeFixed": true,
+      "noNewAlphaHoles": true,
+      "sameSkullContour": true
+    },
+    "metrics": {
+      "alphaBbox": [
+        46,
+        4,
+        147,
+        204
+      ],
+      "baselineY": 203,
+      "headReferenceBbox": [
+        56,
+        4,
+        131,
+        70
+      ],
+      "bodyReferenceBbox": [
+        46,
+        70,
+        147,
+        204
+      ],
+      "bodyBandCenterX": 96.5,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "hiddenRgbPixels": 0,
+      "connectedComponentSizes8": [
+        10756
+      ],
+      "isolatedSinglePixels": 0,
+      "touchesCellEdge": false
+    },
+    "landmark": {
+      "headBbox": [
+        63,
+        4,
+        113,
+        59
+      ],
+      "headSize": [
+        50,
+        55
+      ],
+      "headCenter": [
+        88.0,
+        31.5
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        46,
+        70,
+        147,
+        204
+      ],
+      "bodyWidth": 101,
+      "bodyBandCenterX": 96.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "7cb173cbbe79824de82271333d6a0e33e14e7198cb04c69dd5cfad950470902d"
+    },
+    "hands": {
+      "left": [
+        69,
+        104,
+        87,
+        117
+      ],
+      "right": [
+        120,
+        133,
+        132,
+        147
+      ]
+    },
+    "feet": {
+      "left": {
+        "bbox": [
+          62,
+          192,
+          87,
+          204
+        ],
+        "centerX": 74.5
+      },
+      "right": {
+        "bbox": [
+          99,
+          192,
+          119,
+          204
+        ],
+        "centerX": 109.0
+      }
+    },
+    "recipe": {
+      "sourceF0Sha256": "aac220fa47dd2a14a66928d98327fdec1a0d1a1d2cf43ac671fbd6342dc271f9",
+      "frame": "E2",
+      "localForearmNearestAngle": -65,
+      "forearmShiftX": -17,
+      "forearmSourceMask": "explicit LEFT_ARM_SOURCE polygon",
+      "forearmCopiedPixels": 557,
+      "browPixels": [
+        [
+          72,
+          35
+        ],
+        [
+          73,
+          35
+        ],
+        [
+          99,
+          35
+        ],
+        [
+          100,
+          35
+        ],
+        [
+          76,
+          36
+        ],
+        [
+          77,
+          36
+        ],
+        [
+          95,
+          36
+        ],
+        [
+          96,
+          36
+        ],
+        [
+          81,
+          37
+        ],
+        [
+          93,
+          37
+        ]
+      ],
+      "leftFootOutwardPx": 8,
+      "rightHandShift": [
+        4,
+        -2
+      ],
+      "rightHandLocalRowsRemoved": [
+        146,
+        148
+      ],
+      "globalScaling": false,
+      "wholeCharacterRotation": false,
+      "aiGeneration": false,
+      "colorInterpolation": false
+    },
+    "artApproved": false
+  }
+}

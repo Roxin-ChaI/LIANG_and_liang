@@ -1,0 +1,12 @@
+{
+  "reviewer":"Codex primary agent, native and nearest-3x source/candidate inspection",
+  "sourceSha256":"aac220fa47dd2a14a66928d98327fdec1a0d1a1d2cf43ac671fbd6342dc271f9",
+  "E1Sha256":"bd9c0bbd6c9672e67322ea9d0581d8f3985fcc933ac8801c011a6d11623c9b8c",
+  "E2Sha256":"387b3ac21644c5bf8a33c4cbef8e05e4fa574622cbb12d0347ad1a9b6577901d",
+  "pairs":{
+    "F0_E1":{"verdict":"PASS","checks":{"identity":"PASS","head":"PASS","armTrajectory":"PASS","fist":"PASS","expression":"PASS","stance":"PASS","legVolume":"PASS","suit":"PASS","alpha":"PASS"},"reason":"Head, suit torso, both legs and right hand stay recognizable. The left hand rises modestly from the low pose while the elbow remains attached. Four brow pixels begin the expression. No sole or leg-volume jump. The source angular outer sleeve remains noticeable but not a new identity/pose discontinuity."},
+    "E1_E2":{"verdict":"PASS","checks":{"identity":"PASS","head":"PASS","armTrajectory":"PASS","fist":"PASS","expression":"PASS","stance":"PASS","legVolume":"PASS","suit":"PASS","alpha":"PASS"},"reason":"Left hand rises from waist to chest along the same elbow arc; right low hand moves a few pixels and shortens slightly toward a fist. Six additional brow pixels tighten the gaze. Only left leg/foot takes an 8px outward step while the right remains planted. Trouser thickness and basic jacket identity remain stable."}
+  },
+  "scope":"static two-link gate; no E3 or App playback approval",
+  "humanApproval":"PENDING"
+}
