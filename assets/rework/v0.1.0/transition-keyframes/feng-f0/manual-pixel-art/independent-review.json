@@ -1,0 +1,15 @@
+{
+  "reviewer": "independent visual QA worker",
+  "reviewedF0Sha256": "9e3a64dd388318fa2d48ca630e71a765e3302093f9ff9c6571f8eadef38b8f84",
+  "verdict": "FAIL",
+  "kb2ToF0": {
+    "headAndBaseline": "Top/center and sole are roughly aligned; Feng head is still markedly shorter in one step.",
+    "feet": "Revised narrow-foot placement is much closer to KB2 and removes the original wide-leg snap.",
+    "arms": "KB2 hands near the inner thighs jump roughly 15-20 px outward to F0 fists; forearm pose changes suddenly.",
+    "bodyAndSuit": "Dark blocky horizontal KB2 jacket changes abruptly to bright blue tailored lapels and shading.",
+    "face": "Relaxed/open-eyed KB2 expression changes to furrowed/narrow-eyed Feng expression in one frame."
+  },
+  "f0ToBAdvisoryOnly": "The finished Feng identity, head, suit and baseline are reasonably coherent; B raises a hand and widens its stance. This is not a formal endpoint audit while KB2-to-F0 is failed.",
+  "reason": "The remaining arm, suit, face and head-height changes are conspicuous single-frame jumps despite the improved foot registration.",
+  "approval": false
+}

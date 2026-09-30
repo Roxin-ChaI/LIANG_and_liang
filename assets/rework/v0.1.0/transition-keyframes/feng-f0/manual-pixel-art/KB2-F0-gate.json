@@ -1,0 +1,118 @@
+{
+  "status": "F0_MANUAL_QA_FAIL",
+  "sourceHashes": {
+    "KB2": "622c81f99cde42f5846044a391424e7f4a8afa326d2c5e235470b2cacb618b19",
+    "B": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+    "formalFengAtlas": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a"
+  },
+  "F0Sha256": "9e3a64dd388318fa2d48ca630e71a765e3302093f9ff9c6571f8eadef38b8f84",
+  "F0RgbaSha256": "9b3eccc0cd2de5ae91a0fed0f20ea672c9b52dd7c3dee988951ec09e949ceef1",
+  "checks": {
+    "nativeCanvas192x208": true,
+    "modeRGBA": true,
+    "exactlyReproducibleFromApprovedPixels": true,
+    "approvedInputsUnchanged": true,
+    "binaryAlpha": true,
+    "transparentRGBZero": true,
+    "noAIGenerationOrResampling": true,
+    "baseline203": true,
+    "registration96": true
+  },
+  "KB2Landmarks": {
+    "headBbox": [
+      60,
+      4,
+      116,
+      72
+    ],
+    "headSize": [
+      56,
+      68
+    ],
+    "headCenter": [
+      88.0,
+      38.0
+    ],
+    "headGuideApproximate": false,
+    "headGuideUncertaintyPx": 0,
+    "bodyBbox": [
+      48,
+      70,
+      141,
+      204
+    ],
+    "bodyWidth": 93,
+    "bodyBandCenterX": 94.5,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870"
+  },
+  "F0Landmarks": {
+    "headBbox": [
+      64,
+      4,
+      114,
+      59
+    ],
+    "headSize": [
+      50,
+      55
+    ],
+    "headCenter": [
+      89.0,
+      31.5
+    ],
+    "headGuideApproximate": true,
+    "headGuideUncertaintyPx": 3,
+    "bodyBbox": [
+      47,
+      70,
+      145,
+      204
+    ],
+    "bodyWidth": 98,
+    "bodyBandCenterX": 96.0,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "9b3eccc0cd2de5ae91a0fed0f20ea672c9b52dd7c3dee988951ec09e949ceef1"
+  },
+  "delta": {
+    "numericPass": false,
+    "checks": {
+      "headSizeAtMost6": false,
+      "headCenterXAtMost3": true,
+      "headCenterYAtMost4": false,
+      "bodyGrowth0to15": true,
+      "baseline203": true,
+      "registration96": true
+    },
+    "headSizeDelta": [
+      -6,
+      -13
+    ],
+    "headCenterDelta": [
+      1.0,
+      -6.5
+    ],
+    "bodyWidthDelta": 5,
+    "bodyBboxDelta": [
+      -1,
+      0,
+      4,
+      0
+    ],
+    "bodyBandCenterDelta": 1.5,
+    "baselineDelta": 0,
+    "headEndpointUncertaintyPx": 3,
+    "faceIdentity": "MANUAL_VISUAL_QA",
+    "armPose": "MANUAL_VISUAL_QA",
+    "staticVerdict": "NOT_VERIFIED"
+  },
+  "headGuideCaveat": "F0 head guide approximates anatomical skull; it is not automated face segmentation. Independent visual review is mandatory.",
+  "numericPass": false,
+  "visualPass": false,
+  "artApproved": false,
+  "F0ToIdleAuditAllowed": false,
+  "independentReviewFresh": true,
+  "nextAction": "Stop before F0\u2192Idle audit. Direct KB2\u2192finished Feng needs further manually approved morphology/pose art; do not weaken the F0 identity or numeric gate."
+}

@@ -52,6 +52,7 @@ def construct() -> tuple[Image.Image, dict]:
     src, dst = source.load(), out.load()
     counts = {"approved_head_pixels": 0, "approved_right_side_pixels": 0,
               "mirrored_left_suit_pixels": 0, "integer_leg_repositions": 0,
+              "integer_arm_repositions": 0,
               "manual_seam_pixels": 0}
 
     # True Feng face/hair/glasses, without a hand against the chin. No change
@@ -74,18 +75,21 @@ def construct() -> tuple[Image.Image, dict]:
                 counts["approved_right_side_pixels"] += 1
                 counts["mirrored_left_suit_pixels"] += 1
 
-    # Do not scale/warp a full body. Shift each lower leg by a bounded integer
-    # number of native pixels to put F0 between KB2 and the broad Feng Idle.
+    # Do not scale/warp a full body. Place the forearms and lower legs as
+    # separate approved-pixel parts. The lower fists move inward gradually;
+    # the feet end nearer KB2 than the formal Feng Idle wide stance.
     for y in range(115, 204):
-        inward = min(6, max(0, (y - 115) * 6 // 88))
+        leg_inward = min(18, max(0, (y - 115) * 18 // 88))
+        arm_inward = min(10, max(0, (y - 115) * 10 // 45))
         for x in range(96, 192):
             pixel = src[x, y]
             if not pixel[3]:
                 continue
-            nx = x - inward
+            is_lower_arm = y <= 160 and x >= 123
+            nx = x - (arm_inward if is_lower_arm else leg_inward)
             dst[nx, y] = pixel
             dst[191 - nx, y] = pixel
-            counts["integer_leg_repositions"] += 2
+            counts["integer_arm_repositions" if is_lower_arm else "integer_leg_repositions"] += 2
 
     # At the waist-to-leg seam the source's fine black outlines leave a
     # one-pixel notch after the first integer inward step. Repair it explicitly
@@ -107,7 +111,8 @@ def construct() -> tuple[Image.Image, dict]:
         "frozenKB2Sha256": digest(KB2),
         "head": "source exact pixels in y=0..64",
         "torsoAndArms": "source right half copied in y=65..114; low right arm reflected to left around seam x=95.5",
-        "legs": "source lower-right pixels reflected to left; each leg moved inward by an integer 0..6 px over y=115..203",
+        "legs": "source lower-right pixels reflected to left; each leg moved inward by an integer 0..18 px over y=115..203",
+        "forearms": "right arm x>=123 in y=115..160 moved inward by 0..10 integer pixels, then reflected",
         "manualSeam": "at most two explicit waist pixels from neighboring approved source pixels",
         "globalScaling": False, "interpolation": False, "aiImageGeneration": False,
         "counts": counts,

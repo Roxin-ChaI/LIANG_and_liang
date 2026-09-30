@@ -5,7 +5,8 @@
   "frozenKB2Sha256": "622c81f99cde42f5846044a391424e7f4a8afa326d2c5e235470b2cacb618b19",
   "head": "source exact pixels in y=0..64",
   "torsoAndArms": "source right half copied in y=65..114; low right arm reflected to left around seam x=95.5",
-  "legs": "source lower-right pixels reflected to left; each leg moved inward by an integer 0..6 px over y=115..203",
+  "legs": "source lower-right pixels reflected to left; each leg moved inward by an integer 0..18 px over y=115..203",
+  "forearms": "right arm x>=123 in y=115..160 moved inward by 0..10 integer pixels, then reflected",
   "manualSeam": "at most two explicit waist pixels from neighboring approved source pixels",
   "globalScaling": false,
   "interpolation": false,
@@ -14,7 +15,8 @@
     "approved_head_pixels": 2682,
     "approved_right_side_pixels": 2065,
     "mirrored_left_suit_pixels": 2065,
-    "integer_leg_repositions": 5532,
+    "integer_leg_repositions": 4260,
+    "integer_arm_repositions": 1272,
     "manual_seam_pixels": 0
   },
   "landmarks": {
@@ -44,8 +46,8 @@
     "bodyBandCenterX": 96.0,
     "baselineY": 203,
     "registrationX": 96,
-    "rgbaSha256": "59b52e88d61a6b5a398b27499b1bd0e5841a8e8183ff384c3961633f52582a31"
+    "rgbaSha256": "9b3eccc0cd2de5ae91a0fed0f20ea672c9b52dd7c3dee988951ec09e949ceef1"
   },
-  "outputSha256": "507e1753cfcd8e8d26ff0f030f51fb5b435ef8c59462bcbec63947968b6bedda",
-  "outputRgbaSha256": "59b52e88d61a6b5a398b27499b1bd0e5841a8e8183ff384c3961633f52582a31"
+  "outputSha256": "9e3a64dd388318fa2d48ca630e71a765e3302093f9ff9c6571f8eadef38b8f84",
+  "outputRgbaSha256": "9b3eccc0cd2de5ae91a0fed0f20ea672c9b52dd7c3dee988951ec09e949ceef1"
 }
