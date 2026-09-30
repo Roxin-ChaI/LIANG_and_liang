@@ -1,0 +1,11 @@
+{
+  "reviewer": "independent visual reviewer /root/f0_visual_gate",
+  "candidatePngSha256": "c189516b94db095e71a83460c7f2e831ca44841a6c97564f48252445ade1407b",
+  "candidateRgbaSha256": "b49521b2f9b62e818361032f1f341062cf2c5299d420a21e7ac126a4955b493a",
+  "verdict": "PASS",
+  "checks": {"face":"PASS","head":"PASS","arms":"PASS","suit":"PASS","legs":"PASS","alpha":"PASS"},
+  "evidence": "Native and nearest-3x contact sheets, both PNGs, difference mask and overlay were inspected.",
+  "reason": "KF1 retains KB2 hair, glasses, neutral expression, head position, narrow stance and sole. Hands move modestly outward with attached bent arms. Lapels and blue highlights begin over the same shoulder/torso silhouette, without an obvious transparency hole or identity break.",
+  "warnings": ["Viewer-right sleeve has an angular flat outer ledge inherited from the boxy KB2 geometry; it remains connected."],
+  "scope": "KB2 to KF1 only. The retained F0 is a future endpoint and was not approved by this incoming gate."
+}

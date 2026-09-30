@@ -1,0 +1,200 @@
+{
+  "status": "INDEPENDENT_VISUAL_QA_REQUIRED",
+  "checks": {
+    "exactDocumentedEdit": true,
+    "canvas192x208RGBA": true,
+    "feetByteIdenticalFrom164": true,
+    "binaryAlpha": true,
+    "zeroHiddenRGB": true,
+    "noClip": true,
+    "noIsolatedPixel": true,
+    "oneConnectedCharacter": true,
+    "noNewInteriorAlphaHoles": true,
+    "headHullMatchesGuide": true,
+    "motionBudget": true
+  },
+  "technicalPass": true,
+  "KB2": {
+    "headBbox": [
+      60,
+      4,
+      116,
+      72
+    ],
+    "headSize": [
+      56,
+      68
+    ],
+    "headCenter": [
+      88.0,
+      38.0
+    ],
+    "headGuideApproximate": true,
+    "headGuideUncertaintyPx": 3,
+    "bodyBbox": [
+      48,
+      70,
+      141,
+      204
+    ],
+    "bodyWidth": 93,
+    "bodyBandCenterX": 94.5,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870"
+  },
+  "KF1": {
+    "headBbox": [
+      61,
+      4,
+      115,
+      68
+    ],
+    "headSize": [
+      54,
+      64
+    ],
+    "headCenter": [
+      88.0,
+      36.0
+    ],
+    "headGuideApproximate": true,
+    "headGuideUncertaintyPx": 3,
+    "bodyBbox": [
+      47,
+      70,
+      142,
+      204
+    ],
+    "bodyWidth": 95,
+    "bodyBandCenterX": 94.5,
+    "baselineY": 203,
+    "registrationX": 96,
+    "rgbaSha256": "b49521b2f9b62e818361032f1f341062cf2c5299d420a21e7ac126a4955b493a"
+  },
+  "handGuides": {
+    "KB2": {
+      "left": {
+        "skinBbox": [
+          76,
+          139,
+          84,
+          154
+        ],
+        "center": [
+          80.0,
+          146.5
+        ]
+      },
+      "right": {
+        "skinBbox": [
+          106,
+          144,
+          116,
+          159
+        ],
+        "center": [
+          111.0,
+          151.5
+        ]
+      }
+    },
+    "KF1": {
+      "left": {
+        "skinBbox": [
+          71,
+          137,
+          79,
+          152
+        ],
+        "center": [
+          75.0,
+          144.5
+        ]
+      },
+      "right": {
+        "skinBbox": [
+          111,
+          141,
+          121,
+          156
+        ],
+        "center": [
+          116.0,
+          148.5
+        ]
+      }
+    }
+  },
+  "delta": {
+    "headSizeDelta": [
+      -2,
+      -4
+    ],
+    "headCenterDelta": [
+      0.0,
+      -2.0
+    ],
+    "bodyWidthDelta": 2,
+    "handCenterDelta": {
+      "left": [
+        -5.0,
+        -2.0
+      ],
+      "right": [
+        5.0,
+        -3.0
+      ]
+    },
+    "checks": {
+      "headSize": true,
+      "headCenterX": true,
+      "headCenterY": true,
+      "bodyWidth": true,
+      "hands": true,
+      "baseline203": true,
+      "registration96": true
+    },
+    "numericPass": true,
+    "visualPass": null,
+    "face": "INDEPENDENT_VISUAL_QA",
+    "suit": "INDEPENDENT_VISUAL_QA",
+    "arms": "INDEPENDENT_VISUAL_QA",
+    "artApproved": false
+  },
+  "metrics": {
+    "alphaBbox": [
+      47,
+      4,
+      142,
+      204
+    ],
+    "baselineY": 203,
+    "headReferenceBbox": [
+      61,
+      4,
+      121,
+      70
+    ],
+    "bodyReferenceBbox": [
+      47,
+      70,
+      142,
+      204
+    ],
+    "bodyBandCenterX": 94.5,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "hiddenRgbPixels": 0,
+    "connectedComponentSizes8": [
+      10605
+    ],
+    "isolatedSinglePixels": 0,
+    "touchesCellEdge": false
+  },
+  "candidateRgbaSha256": "b49521b2f9b62e818361032f1f341062cf2c5299d420a21e7ac126a4955b493a",
+  "KF2Allowed": false,
+  "F0ArtApproved": false
+}

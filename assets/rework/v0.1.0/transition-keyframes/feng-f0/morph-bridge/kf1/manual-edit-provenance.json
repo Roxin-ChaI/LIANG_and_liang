@@ -1,0 +1,286 @@
+{
+  "source": "frozen KB2",
+  "sourceRgbaSha256": "db38c6a2e55496a399ce6d6af8b6111e420e88c805fe3795e861bbf12e75e870",
+  "headEdit": {
+    "sourceBox": [
+      60,
+      4,
+      116,
+      72
+    ],
+    "targetBox": [
+      61,
+      4,
+      115,
+      68
+    ],
+    "removedSourceColumns": [
+      62,
+      113
+    ],
+    "removedSourceRows": [
+      14,
+      27,
+      57,
+      67
+    ],
+    "faceExpressionEdits": 0,
+    "resampling": false
+  },
+  "body": {
+    "liftBands": [
+      [
+        68,
+        126,
+        4
+      ],
+      [
+        126,
+        138,
+        3
+      ],
+      [
+        138,
+        151,
+        2
+      ],
+      [
+        151,
+        164,
+        1
+      ],
+      [
+        164,
+        208,
+        0
+      ]
+    ],
+    "outerClothColumnsShift": 1,
+    "seamColumns": [
+      84,
+      104
+    ],
+    "feetLockFromY": 164
+  },
+  "arms": {
+    "left": {
+      "sourcePolygon": [
+        [
+          62,
+          119
+        ],
+        [
+          75,
+          122
+        ],
+        [
+          82,
+          133
+        ],
+        [
+          85,
+          139
+        ],
+        [
+          85,
+          155
+        ],
+        [
+          73,
+          155
+        ],
+        [
+          73,
+          139
+        ],
+        [
+          61,
+          129
+        ]
+      ],
+      "shift": [
+        -5,
+        -2
+      ]
+    },
+    "right": {
+      "sourcePolygon": [
+        [
+          120,
+          121
+        ],
+        [
+          134,
+          119
+        ],
+        [
+          136,
+          132
+        ],
+        [
+          124,
+          140
+        ],
+        [
+          118,
+          144
+        ],
+        [
+          118,
+          161
+        ],
+        [
+          104,
+          161
+        ],
+        [
+          104,
+          142
+        ],
+        [
+          113,
+          134
+        ]
+      ],
+      "shift": [
+        5,
+        -3
+      ]
+    }
+  },
+  "cloth": {
+    "palette": [
+      [
+        16,
+        20,
+        39,
+        255
+      ],
+      [
+        23,
+        29,
+        54,
+        255
+      ],
+      [
+        28,
+        36,
+        69,
+        255
+      ],
+      [
+        33,
+        43,
+        85,
+        255
+      ],
+      [
+        39,
+        51,
+        97,
+        255
+      ]
+    ],
+    "upperPanelBrushPixels": 615,
+    "leftSeam": [
+      [
+        78,
+        75
+      ],
+      [
+        69,
+        83
+      ],
+      [
+        73,
+        87
+      ],
+      [
+        70,
+        93
+      ],
+      [
+        77,
+        104
+      ]
+    ],
+    "rightSeam": [
+      [
+        111,
+        76
+      ],
+      [
+        120,
+        85
+      ],
+      [
+        116,
+        89
+      ],
+      [
+        119,
+        94
+      ],
+      [
+        111,
+        104
+      ]
+    ],
+    "lowerJacket": "source structure retained; no finished Feng torso copy"
+  },
+  "manualOutlineRepair": [
+    {
+      "xy": [
+        123,
+        140
+      ],
+      "rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reason": "vacated detached cuff outline"
+    },
+    {
+      "xy": [
+        70,
+        136
+      ],
+      "rgba": [
+        12,
+        15,
+        30,
+        255
+      ]
+    },
+    {
+      "xy": [
+        71,
+        137
+      ],
+      "rgba": [
+        12,
+        15,
+        30,
+        255
+      ]
+    }
+  ],
+  "vacatedElbowRepair": {
+    "box": [
+      60,
+      115,
+      85,
+      138
+    ],
+    "onlyClearPixels": true,
+    "donor": "KB2 original cloth rows y+4/y+3"
+  },
+  "aiGeneration": false,
+  "globalScaling": false,
+  "interpolation": false,
+  "effects": false,
+  "approvedSourcesModified": false,
+  "candidatePngSha256": "c189516b94db095e71a83460c7f2e831ca44841a6c97564f48252445ade1407b"
+}
