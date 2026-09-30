@@ -1,0 +1,295 @@
+{
+  "method": "KF2 native pixels plus explicit local edits",
+  "operations": [
+    {
+      "part": "head shell",
+      "sourceBox": [
+        62,
+        4,
+        114,
+        63
+      ],
+      "targetBox": [
+        63,
+        4,
+        113,
+        59
+      ],
+      "removedColumns": [
+        63,
+        112
+      ],
+      "removedRows": [
+        10,
+        20,
+        58,
+        62
+      ]
+    },
+    {
+      "part": "collar and upper torso",
+      "sourceRowOffsets": [
+        [
+          59,
+          72,
+          4
+        ],
+        [
+          72,
+          81,
+          3
+        ],
+        [
+          81,
+          90,
+          2
+        ],
+        [
+          90,
+          99,
+          1
+        ]
+      ]
+    },
+    {
+      "part": "shoulder caps",
+      "yRange": [
+        73,
+        107
+      ],
+      "outwardPixels": 1
+    },
+    {
+      "part": "basic jacket",
+      "box": [
+        76,
+        75,
+        117,
+        137
+      ],
+      "source": "KF2 blue swatches",
+      "minInteriorBrightnessSum": 95
+    },
+    {
+      "part": "straight trousers",
+      "bands": [
+        [
+          138,
+          163,
+          3
+        ],
+        [
+          163,
+          177,
+          2
+        ],
+        [
+          177,
+          187,
+          1
+        ],
+        [
+          187,
+          192,
+          0
+        ]
+      ],
+      "leftInsertionColumn": 86,
+      "rightInsertionColumn": 108,
+      "source": "KF2 only"
+    },
+    {
+      "part": "right thigh insertion seam",
+      "pixels": [
+        [
+          106,
+          143
+        ],
+        [
+          107,
+          143
+        ],
+        [
+          106,
+          144
+        ],
+        [
+          107,
+          144
+        ],
+        [
+          106,
+          145
+        ],
+        [
+          107,
+          145
+        ],
+        [
+          106,
+          146
+        ],
+        [
+          107,
+          146
+        ],
+        [
+          106,
+          147
+        ],
+        [
+          107,
+          147
+        ],
+        [
+          106,
+          148
+        ],
+        [
+          107,
+          148
+        ],
+        [
+          106,
+          149
+        ],
+        [
+          107,
+          149
+        ],
+        [
+          106,
+          150
+        ],
+        [
+          107,
+          150
+        ],
+        [
+          106,
+          151
+        ],
+        [
+          107,
+          151
+        ],
+        [
+          106,
+          152
+        ],
+        [
+          107,
+          152
+        ],
+        [
+          106,
+          153
+        ],
+        [
+          107,
+          153
+        ],
+        [
+          106,
+          154
+        ],
+        [
+          107,
+          154
+        ],
+        [
+          107,
+          155
+        ],
+        [
+          107,
+          156
+        ]
+      ],
+      "donorColumn": 108,
+      "sameRow": true
+    },
+    {
+      "part": "manual side seams",
+      "strokes": [
+        [
+          [
+            79,
+            112
+          ],
+          [
+            78,
+            119
+          ],
+          [
+            80,
+            127
+          ]
+        ],
+        [
+          [
+            111,
+            112
+          ],
+          [
+            113,
+            120
+          ],
+          [
+            111,
+            128
+          ]
+        ]
+      ],
+      "rgba": [
+        40,
+        53,
+        113,
+        255
+      ]
+    }
+  ],
+  "expression": {
+    "source": [
+      67,
+      28,
+      110,
+      56
+    ],
+    "target": [
+      67,
+      26,
+      110,
+      54
+    ],
+    "byteIdentical": true
+  },
+  "inPlaceLocks": [
+    [
+      60,
+      130,
+      79,
+      155
+    ],
+    [
+      112,
+      130,
+      135,
+      155
+    ],
+    [
+      0,
+      192,
+      192,
+      208
+    ]
+  ],
+  "aiGeneration": false,
+  "wholeCharacterScaling": false,
+  "interpolation": false,
+  "newBridgeFrames": 0,
+  "retiredF0PixelsUsed": 0,
+  "BPixelDonorsUsed": 0,
+  "sourceSha256": "1917e459ee6554d29625649c15a87edd7f4029b42338a8645304cab5fa847676",
+  "outputSha256": "aac220fa47dd2a14a66928d98327fdec1a0d1a1d2cf43ac671fbd6342dc271f9"
+}

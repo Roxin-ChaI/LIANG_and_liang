@@ -1,0 +1,29 @@
+{
+  "colors": {
+    "head": [
+      227,
+      159,
+      64,
+      255
+    ],
+    "upperSuit": [
+      61,
+      155,
+      232,
+      255
+    ],
+    "pants": [
+      150,
+      93,
+      223,
+      255
+    ]
+  },
+  "changedPixelsByRegion": {
+    "head": 2230,
+    "upperSuit": 2443,
+    "pants": 863
+  },
+  "meaning": "spatial edit classification, not automatic expression or garment semantics",
+  "expressionLock": "exact source crop moved 2px upward"
+}
