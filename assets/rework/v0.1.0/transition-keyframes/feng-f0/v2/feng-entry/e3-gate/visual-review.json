@@ -1,0 +1,12 @@
+{
+  "reviewer":"Codex primary agent, direct native/nearest-3x frame and adjacent overlay inspection",
+  "sourceE2Sha256":"387b3ac21644c5bf8a33c4cbef8e05e4fa574622cbb12d0347ad1a9b6577901d",
+  "E3Sha256":"028468cb2ff10c6486ba1defa18d3401b0bc0acb648376da962462f4a879286b",
+  "targetBSha256":"4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+  "pairs":{
+    "E2_E3":{"verdict":"PASS","checks":{"faceHair":"PASS","headPosition":"PASS","leftArmAndFinger":"PASS","rightFist":"PASS","stance":"PASS","pantsVolume":"PASS","suitStructure":"PASS","alpha":"PASS"},"reason":"Same hair/head and basic suit. Brow pixels progress, left hand moves up with attached sleeve, right hand remains the low forming fist. The second foot takes the outward step with unchanged slim trouser volume; baseline and hard pixels remain intact."},
+    "E3_B":{"verdict":"FAIL","checks":{"faceHair":"FAIL","headPosition":"PASS","leftArmAndFinger":"FAIL","rightFist":"FAIL","stance":"PASS","pantsVolume":"FAIL","suitStructure":"FAIL","alpha":"PASS"},"reason":"Final B suddenly introduces sharper eyes/hair styling, a higher finger touching the lip, slimmer upper arm sleeves and fuller tailored garments. E3 sole centers are close, but approved B trouser widths are substantially greater at the same scan lines (y150: 13/13 versus 21/25). These changes are visible in a single cut, despite matching head guides and baseline."}
+  },
+  "scope":"static E3-to-B gate; no human approval or App runtime playback",
+  "humanApproval":"PENDING"
+}

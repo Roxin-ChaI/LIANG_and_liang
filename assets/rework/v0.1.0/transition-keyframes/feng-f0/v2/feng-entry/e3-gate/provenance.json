@@ -1,0 +1,16 @@
+{
+  "sourceE2Sha256": "387b3ac21644c5bf8a33c4cbef8e05e4fa574622cbb12d0347ad1a9b6577901d",
+  "sourceF0": "approved native left-arm pixels",
+  "forearmAngleNearest": -85,
+  "forearmShift": [
+    -10,
+    -16
+  ],
+  "forearmCopiedPixels": 281,
+  "leftLegMaxShift": 6,
+  "rightLegMaxShift": 14,
+  "BPixelReuse": "two local brow/eye windows only",
+  "globalScaling": false,
+  "interpolation": false,
+  "aiGeneration": false
+}

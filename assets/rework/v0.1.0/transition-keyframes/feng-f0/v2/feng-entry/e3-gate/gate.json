@@ -1,0 +1,230 @@
+{
+  "technicalPass": true,
+  "E3": {
+    "technicalPass": true,
+    "checks": {
+      "exactRecipe": true,
+      "nativeRGBA": true,
+      "binaryAlpha": true,
+      "zeroHiddenRGB": true,
+      "baseline203": true,
+      "headGuideStable": true,
+      "singleConnected": true,
+      "noIsolated": true,
+      "noClip": true,
+      "noNewHoles": true
+    },
+    "landmark": {
+      "headBbox": [
+        63,
+        4,
+        113,
+        59
+      ],
+      "headSize": [
+        50,
+        55
+      ],
+      "headCenter": [
+        88.0,
+        31.5
+      ],
+      "headGuideApproximate": true,
+      "headGuideUncertaintyPx": 3,
+      "bodyBbox": [
+        46,
+        70,
+        147,
+        204
+      ],
+      "bodyWidth": 101,
+      "bodyBandCenterX": 96.5,
+      "baselineY": 203,
+      "registrationX": 96,
+      "rgbaSha256": "baec7bc9d7bca4eb7c53b0fab0ac9b9e20f1c14724d8f90d2406ce018189f7fe"
+    },
+    "hands": {
+      "left": [
+        86,
+        110,
+        87,
+        111
+      ],
+      "right": [
+        120,
+        133,
+        132,
+        147
+      ]
+    },
+    "feet": {
+      "left": {
+        "bbox": [
+          56,
+          192,
+          82,
+          204
+        ],
+        "centerX": 69.0
+      },
+      "right": {
+        "bbox": [
+          112,
+          192,
+          133,
+          204
+        ],
+        "centerX": 122.5
+      }
+    },
+    "recipe": {
+      "sourceE2Sha256": "387b3ac21644c5bf8a33c4cbef8e05e4fa574622cbb12d0347ad1a9b6577901d",
+      "sourceF0": "approved native left-arm pixels",
+      "forearmAngleNearest": -85,
+      "forearmShift": [
+        -10,
+        -16
+      ],
+      "forearmCopiedPixels": 281,
+      "leftLegMaxShift": 6,
+      "rightLegMaxShift": 14,
+      "BPixelReuse": "two local brow/eye windows only",
+      "globalScaling": false,
+      "interpolation": false,
+      "aiGeneration": false
+    },
+    "visualPass": null,
+    "entryApproved": false
+  },
+  "sourceE2Sha256": "387b3ac21644c5bf8a33c4cbef8e05e4fa574622cbb12d0347ad1a9b6577901d",
+  "E3Sha256": "028468cb2ff10c6486ba1defa18d3401b0bc0acb648376da962462f4a879286b",
+  "targetBSha256": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+  "footGuides": {
+    "E2": {
+      "left": {
+        "bbox": [
+          62,
+          192,
+          87,
+          204
+        ],
+        "centerX": 74.5
+      },
+      "right": {
+        "bbox": [
+          99,
+          192,
+          119,
+          204
+        ],
+        "centerX": 109.0
+      }
+    },
+    "E3": {
+      "left": {
+        "bbox": [
+          56,
+          192,
+          82,
+          204
+        ],
+        "centerX": 69.0
+      },
+      "right": {
+        "bbox": [
+          112,
+          192,
+          133,
+          204
+        ],
+        "centerX": 122.5
+      }
+    },
+    "B": {
+      "left": {
+        "bbox": [
+          48,
+          192,
+          83,
+          203
+        ],
+        "centerX": 65.5
+      },
+      "right": {
+        "bbox": [
+          114,
+          192,
+          141,
+          204
+        ],
+        "centerX": 127.5
+      }
+    }
+  },
+  "opaqueLegWidthsByRow": {
+    "E2": {
+      "150": [
+        13,
+        12
+      ],
+      "160": [
+        14,
+        18
+      ],
+      "170": [
+        17,
+        17
+      ],
+      "180": [
+        16,
+        16
+      ]
+    },
+    "E3": {
+      "150": [
+        13,
+        13
+      ],
+      "160": [
+        14,
+        19
+      ],
+      "170": [
+        17,
+        17
+      ],
+      "180": [
+        16,
+        16
+      ]
+    },
+    "B": {
+      "150": [
+        21,
+        25
+      ],
+      "160": [
+        19,
+        22
+      ],
+      "170": [
+        21,
+        22
+      ],
+      "180": [
+        20,
+        19
+      ]
+    }
+  },
+  "entryApproved": false,
+  "fullChainAllowed": false,
+  "status": "ENTRY_QA_FAIL",
+  "reviewFresh": true,
+  "visualPairPass": {
+    "E2_E3": true,
+    "E3_B": false
+  },
+  "runtimeIntegrationAllowed": false,
+  "scope": "static E3/Idle gate; no human approval or runtime playback"
+}
