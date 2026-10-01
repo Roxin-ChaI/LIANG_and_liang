@@ -1,0 +1,22 @@
+---
+description: Animation candidates must include frame-accurate GIF previews and explicit human visual review
+alwaysApply: true
+---
+
+# Animation candidate review
+
+For every new or repaired animation candidate in this project:
+
+- Deliver a GIF showing every candidate frame in its original order, plus a numbered contact sheet.
+- State frame count, per-frame timing, loop behavior, source version and any preview-only transformations.
+- Do not substitute static images or automated metrics for human visual review.
+- Preserve original PNGs and alpha. GIF palette/background limitations are preview-only.
+- Do not add, omit, mirror, interpolate or accelerate frames to conceal defects.
+- If preview alignment is necessary, also provide an unaligned source-order preview and disclose offsets.
+- Use only a common nearest-neighbor display scale; do not fit individual frames differently.
+- Idle reference holds are labeled separately and never counted as transformation frames.
+- A request to continue or approval of an action proposal is not approval of the resulting art.
+- Stop on obvious deformation; present evidence for human review before generating more frames.
+- Do not integrate candidates into the running App or formal atlas before the required approval.
+
+Example: deliver `keyposes-4-frames.gif`, `contact-sheet.png`, and timing/alignment metadata with status `PENDING_USER_REVIEW`.

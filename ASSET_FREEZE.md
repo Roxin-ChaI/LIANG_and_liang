@@ -59,3 +59,10 @@ shasum -a 256 -c assets-frozen.sha256
 - 新稿的画风、脸部身份、头身比、西装结构均以 `assets/gu/idle.png`、`assets/feng/idle.png` 和正式 atlas 的 Idle 为准。旧 E1/E2/E3 不作新稿的形体参考。
 - 新稿保存为独立候选，视觉审批与运行素材替换分开；现有 Gu/Feng 标准 atlas 和已运行素材保留。
 - 同日用户追加不可放宽的“Idle 完全一致”要求；执行 `docs/transition-redraw/v0.1.0/strict-idle-appearance-contract.md` 与实际 Idle 像素指标。所有未知/失败项都阻止批准，不得用“风格接近”或纯 bbox PASS 代替。
+
+## 2026-10-01 用户追加：所有动画候选必须附 GIF 审阅
+
+- 后续每一版动画候选均提供原顺序 GIF、逐帧图及帧数/时长说明，再交用户人工审核。
+- 预览对齐、统一 nearest-neighbor 展示缩放、GIF 配色及背景限制必须注明；如做对齐，同时提供原位置版本。
+- 不以静态图、自动化检查或“继续”代替视觉批准，不为掩盖缺陷而省帧、插帧或加速。
+- 具体执行规则：`.cursor/rules/animation-visual-review.mdc`。
