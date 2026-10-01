@@ -1,0 +1,26 @@
+{
+  "status": "MOTION_APPROVED_TECHNICAL_GATE_FAIL",
+  "reviewDate": "2026-10-01",
+  "userStatement": "动作通过",
+  "scope": "Motion of the four Gu rightward side-shuffle keyposes shown in the GIF",
+  "sourceSha256": "4325836d4f6327964a72783de919d7aa25698d411b71bf407097511b93e3deab",
+  "reviewedPreview": "qa-motion/keyposes-4-frames.gif",
+  "frameOrder": [1, 2, 3, 4],
+  "durationMs": 250,
+  "motionApproved": true,
+  "productionArtApproved": false,
+  "exactIdleAppearanceApproved": false,
+  "runtimeReady": false,
+  "remainingGates": [
+    "192x208 native cells with consistent registration and baseline",
+    "Hard-edge RGBA with no unintended partial alpha or hidden background",
+    "Exact approved Idle appearance and proportions",
+    "Human review of processed candidate GIF and contact sheet"
+  ],
+  "constraints": [
+    "Preserve approved motion and original source PNG",
+    "No per-frame fitting, smoothing or undisclosed alpha thresholding",
+    "Do not treat nearest-neighbor resizing as proof of hard-edge or identity compliance",
+    "No additional frames, leftward derivation or App integration under this approval"
+  ]
+}

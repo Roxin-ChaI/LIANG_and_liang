@@ -1,6 +1,8 @@
 {
-  "status": "POSE_REVIEW_PENDING_TECHNICAL_GATE_FAIL",
+  "status": "MOTION_APPROVED_TECHNICAL_GATE_FAIL",
   "motionProposalApproved": true,
+  "fourKeyposeMotionApproved": true,
+  "humanReview": "motion-approval.json",
   "artApproved": false,
   "generatedUsing": "built-in image_gen",
   "imagegenCliUsed": false,

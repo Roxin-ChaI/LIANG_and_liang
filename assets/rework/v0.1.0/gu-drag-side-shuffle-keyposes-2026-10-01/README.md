@@ -1,7 +1,10 @@
 # Gu rightward side-shuffle — pose preview only
 
-The user approved the motion proposal, not this generated art.
-Status: `POSE_REVIEW_PENDING_TECHNICAL_GATE_FAIL`.
+The user explicitly approved the four-pose GIF motion with “动作通过” on
+2026-10-01. See `motion-approval.json` for the exact approval scope.
+Status: `MOTION_APPROVED_TECHNICAL_GATE_FAIL`.
+This approves motion, not native pixel quality, exact Idle appearance or runtime use.
+The original `qa-motion/preview.json` remains the pre-review generation record.
 
 Four proposed poses, from left to right:
 
@@ -11,8 +14,8 @@ Four proposed poses, from left to right:
 4. Screen-left foot lands closer, ready for another small shuffle.
 
 The new strip does not show the obvious crossed legs from attempt 01. This is
-an assistant visual observation, not human approval of motion or Idle identity.
-All four poses and their face/upper-body consistency need human review.
+an assistant visual observation. The motion now has human approval;
+face/upper-body consistency with canonical Idle remains unapproved.
 
 ## Hard constraints not yet passed
 
