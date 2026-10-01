@@ -1,0 +1,204 @@
+{
+  "evidence": "DETERMINISTIC_ACTUAL_RENDERER_HARNESS_NOT_LIVE_MOUSE",
+  "verdict": "SLOW_DRAG_DIRECTION_TRIGGER_GAP_REPRODUCED",
+  "fastRight": {
+    "deltas": [
+      5
+    ],
+    "moves": [
+      [
+        5,
+        0
+      ]
+    ],
+    "during": [
+      [
+        "drag",
+        "running-right"
+      ]
+    ],
+    "afterRelease": [
+      [
+        "drag",
+        "running-right"
+      ],
+      [
+        "drag",
+        null
+      ]
+    ]
+  },
+  "fastLeft": {
+    "deltas": [
+      -5
+    ],
+    "moves": [
+      [
+        -5,
+        0
+      ]
+    ],
+    "during": [
+      [
+        "drag",
+        "running-left"
+      ]
+    ],
+    "afterRelease": [
+      [
+        "drag",
+        "running-left"
+      ],
+      [
+        "drag",
+        null
+      ]
+    ]
+  },
+  "slowRight": {
+    "deltas": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "moves": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "during": [],
+    "afterRelease": [
+      [
+        "drag",
+        null
+      ]
+    ]
+  },
+  "slowLeft": {
+    "deltas": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "moves": [
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "during": [],
+    "afterRelease": [
+      [
+        "drag",
+        null
+      ]
+    ]
+  }
+}
