@@ -1,10 +1,13 @@
 # Gu native Idle-pixel shuffle — v1 candidate
 
-Status: `TECHNICAL_PASS_VISUAL_REVIEW_PENDING`. Not runtime material.
+Status: `FOUR_KEYPOSES_HUMAN_APPROVED`. Not runtime material.
+The user approved this rendering with “审核通过进入下一步”. Approval is bound
+to the four PNG hashes in `human-approval.json`. The generated QA report below
+is retained as a historical pre-approval record.
 
-The user approved the previous four-pose motion concept and then the proposal
-to derive native pixels from canonical Idle. This new rendering has **not**
-received human visual approval. It is not an eight-frame animation.
+The user approved the previous four-pose motion concept, the proposal to derive
+native pixels from canonical Idle, and finally these four rendered keyposes.
+It is not an eight-frame animation; new in-betweens require their own review.
 
 ## What changed
 
