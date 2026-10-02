@@ -1,8 +1,0 @@
-{
-  "date": "2026-10-02",
-  "status": "SUPERSEDED_BY_USER_SELECTED_ORIGINAL_SIDE_SHUFFLE",
-  "reason": "User finds motion too weak and requests return to earlier generated four-pose version",
-  "replacementBaseline": "assets/rework/v0.1.0/gu-drag-side-shuffle-keyposes-2026-10-01/source-preview.png",
-  "runtimeModified": false,
-  "filesDeleted": false
-}
