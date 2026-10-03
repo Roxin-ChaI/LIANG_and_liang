@@ -22,6 +22,7 @@ APP_FILES = (
     "standalone-app/main.mjs", "standalone-app/preload.cjs",
     "standalone-app/renderer.mjs", "standalone-app/animation.mjs",
     "standalone-app/paint-ack.mjs",
+    "standalone-app/asset-selection.mjs", "standalone-app/drag-direction.mjs",
     "standalone-app/events.mjs", "standalone-app/codex-events.mjs",
     "standalone-app/playback-contract.mjs",
     "standalone-app/form-request-queue.mjs",
@@ -57,8 +58,16 @@ def command(*args: str) -> None:
 
 def source_files(gu_atlas: Path | None = None) -> list[tuple[Path, Path]]:
     files = []
+    config = ROOT / "standalone-app/asset-overrides.json"
+    mappings = json.loads(config.read_text()) if config.exists() else {}
+    for logical, selected in mappings.items():
+        if not all(isinstance(p, str) and p.startswith("assets/") and ".." not in Path(p).parts
+                   for p in (logical, selected)):
+            raise RuntimeError("unsafe asset selection")
+        if not (ROOT / selected).resolve().is_relative_to(ROOT.resolve()):
+            raise RuntimeError("asset selection escapes project")
     for relative in APP_FILES:
-        source = gu_atlas if relative == "assets/builds/gu/spritesheet.webp" and gu_atlas else ROOT / relative
+        source = gu_atlas if relative == "assets/builds/gu/spritesheet.webp" and gu_atlas else ROOT / mappings.get(relative, relative)
         if not source.is_file() or source.is_symlink():
             raise RuntimeError(f"missing or unsafe source file: {relative}")
         files.append((source, Path(relative)))

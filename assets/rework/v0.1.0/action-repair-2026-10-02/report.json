@@ -1,0 +1,387 @@
+{
+  "sources": {
+    "assets/builds/gu/spritesheet.webp": "b6a3f086a9fdb9a4cb7c86d047991e1d3ff9a7a2ab740e4c2f705b42b9d08908",
+    "assets/builds/feng/spritesheet.webp": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a"
+  },
+  "operations": [
+    {
+      "form": "gu",
+      "state": "failed",
+      "operation": "selected eye-repair strip copied exactly",
+      "sha256": "bac76edd6b3ca04460597bdabbfc9cd233fdd12abd8106bd7125411470b31501"
+    },
+    {
+      "form": "gu",
+      "state": "waiting",
+      "operation": "selected eye-repair strip copied exactly",
+      "sha256": "73084170f0052f77bab3cea137c3c0ed7cd1c461e2999af5d1475ac2f556d14b"
+    },
+    {
+      "form": "gu",
+      "row": 3,
+      "frame": 1,
+      "removedBoundaryPixels": 95,
+      "handCuffProtection": true
+    },
+    {
+      "form": "gu",
+      "row": 3,
+      "frame": 2,
+      "removedBoundaryPixels": 105,
+      "handCuffProtection": true
+    },
+    {
+      "form": "gu",
+      "row": 3,
+      "frame": 3,
+      "removedBoundaryPixels": 86,
+      "handCuffProtection": true
+    },
+    {
+      "form": "gu",
+      "row": 3,
+      "frame": 4,
+      "removedBoundaryPixels": 104,
+      "handCuffProtection": true
+    },
+    {
+      "form": "gu",
+      "direction": 0.0,
+      "lookChangedPixels": 0,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 22.5,
+      "lookChangedPixels": 821,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 45.0,
+      "lookChangedPixels": 858,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 67.5,
+      "lookChangedPixels": 889,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 90.0,
+      "lookChangedPixels": 893,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 112.5,
+      "lookChangedPixels": 886,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 135.0,
+      "lookChangedPixels": 888,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 157.5,
+      "lookChangedPixels": 880,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 180.0,
+      "lookChangedPixels": 778,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 202.5,
+      "lookChangedPixels": 956,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 225.0,
+      "lookChangedPixels": 956,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 247.5,
+      "lookChangedPixels": 965,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 270.0,
+      "lookChangedPixels": 976,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 292.5,
+      "lookChangedPixels": 951,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 315.0,
+      "lookChangedPixels": 962,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "gu",
+      "direction": 337.5,
+      "lookChangedPixels": 970,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "row": 1,
+      "frame": 1,
+      "removedBoundaryPixels": 148,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 1,
+      "frame": 2,
+      "removedBoundaryPixels": 159,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 1,
+      "frame": 3,
+      "removedBoundaryPixels": 154,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 1,
+      "frame": 4,
+      "removedBoundaryPixels": 148,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 1,
+      "frame": 5,
+      "removedBoundaryPixels": 138,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 1,
+      "frame": 6,
+      "removedBoundaryPixels": 157,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 1,
+      "frame": 7,
+      "removedBoundaryPixels": 132,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 1,
+      "frame": 8,
+      "removedBoundaryPixels": 119,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 2,
+      "frame": 1,
+      "removedBoundaryPixels": 148,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 2,
+      "frame": 2,
+      "removedBoundaryPixels": 159,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 2,
+      "frame": 3,
+      "removedBoundaryPixels": 154,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 2,
+      "frame": 4,
+      "removedBoundaryPixels": 148,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 2,
+      "frame": 5,
+      "removedBoundaryPixels": 138,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 2,
+      "frame": 6,
+      "removedBoundaryPixels": 157,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 2,
+      "frame": 7,
+      "removedBoundaryPixels": 132,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 2,
+      "frame": 8,
+      "removedBoundaryPixels": 119,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 3,
+      "frame": 1,
+      "removedBoundaryPixels": 151,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 3,
+      "frame": 2,
+      "removedBoundaryPixels": 141,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 3,
+      "frame": 3,
+      "removedBoundaryPixels": 180,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "row": 3,
+      "frame": 4,
+      "removedBoundaryPixels": 160,
+      "handCuffProtection": true
+    },
+    {
+      "form": "feng",
+      "direction": 0.0,
+      "lookChangedPixels": 0,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 22.5,
+      "lookChangedPixels": 1766,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 45.0,
+      "lookChangedPixels": 1802,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 67.5,
+      "lookChangedPixels": 1795,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 90.0,
+      "lookChangedPixels": 1718,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 112.5,
+      "lookChangedPixels": 1758,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 135.0,
+      "lookChangedPixels": 1722,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 157.5,
+      "lookChangedPixels": 1705,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 180.0,
+      "lookChangedPixels": 1758,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 202.5,
+      "lookChangedPixels": 1677,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 225.0,
+      "lookChangedPixels": 1657,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 247.5,
+      "lookChangedPixels": 1662,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 270.0,
+      "lookChangedPixels": 1720,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 292.5,
+      "lookChangedPixels": 1670,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 315.0,
+      "lookChangedPixels": 1665,
+      "headUpperPixelsUnchanged": true
+    },
+    {
+      "form": "feng",
+      "direction": 337.5,
+      "lookChangedPixels": 1678,
+      "headUpperPixelsUnchanged": true
+    }
+  ],
+  "visualStatus": "REQUIRES_REVIEW",
+  "forwardTransition": {
+    "source": "historical trial 2",
+    "count": 10,
+    "operation": "exact RGBA copy at (16,18); no resize; logical registration x96 baseline203"
+  },
+  "sourceHashesUnchanged": true
+}

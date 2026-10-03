@@ -4,8 +4,8 @@ export const ATLAS = Object.freeze({ width: 1536, height: 2288 });
 
 export const STATES = Object.freeze({
   idle: Object.freeze({ row: 0, frames: 6, durations: [280, 110, 110, 140, 140, 320], repeat: Infinity }),
-  "running-right": Object.freeze({ row: 1, frames: 8, duration: 120, lastDuration: 220, repeat: Infinity }),
-  "running-left": Object.freeze({ row: 2, frames: 8, duration: 120, lastDuration: 220, repeat: Infinity }),
+  "running-right": Object.freeze({ row: 1, frames: 8, duration: 120, lastDuration: 120, repeat: Infinity }),
+  "running-left": Object.freeze({ row: 2, frames: 8, duration: 120, lastDuration: 120, repeat: Infinity }),
   waving: Object.freeze({ row: 3, frames: 4, duration: 140, lastDuration: 280, repeat: 3 }),
   jumping: Object.freeze({ row: 4, frames: 5, duration: 140, lastDuration: 280, repeat: Infinity }),
   failed: Object.freeze({ row: 5, frames: 8, duration: 140, lastDuration: 240, repeat: 3 }),

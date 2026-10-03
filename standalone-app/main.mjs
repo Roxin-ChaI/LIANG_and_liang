@@ -14,9 +14,11 @@ import { createPipelineDiagnostic } from "./pipeline-diagnostic.mjs";
 import { isCurrentTransitionPaint, shouldRestartPlayback } from "./playback-contract.mjs";
 import { createFormScheduler, expectedFormAt } from "./schedule.mjs";
 import { createFormRequestQueue } from "./form-request-queue.mjs";
+import { createAssetReader } from "./asset-selection.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
+const readAsset = await createAssetReader(ROOT);
 const TEST = process.env.LNH_STANDALONE_TEST === "1";
 const TEST_ROOT = TEST ? process.env.LNH_STANDALONE_TEST_ROOT : null;
 const TEST_HOOK_SESSION = TEST ? process.env.LNH_TEST_HOOK_SESSION : null;
@@ -56,7 +58,7 @@ function emit(type, payload = {}) {
     monotonicMs: Number(process.hrtime.bigint()) / 1e6, ...payload })}\n`);
 }
 async function dataUrl(relative, mime) {
-  const bytes = await fs.readFile(path.join(ROOT, relative));
+  const bytes = await readAsset(path.join(ROOT, relative));
   return `data:${mime};base64,${bytes.toString("base64")}`;
 }
 function stopTransitionTick() {
@@ -268,7 +270,7 @@ async function start() {
   const [gu, feng, assets] = await Promise.all([
     dataUrl("assets/builds/gu/spritesheet.webp", "image/webp"),
     dataUrl("assets/builds/feng/spritesheet.webp", "image/webp"),
-    loadTransitionAssets({ projectRoot: ROOT }),
+    loadTransitionAssets({ projectRoot: ROOT, readFile: readAsset }),
   ]);
   const registry = createDualFormSourceRegistry({ mode: "dual-form", native: { petId: "custom:liang-no-henshin" },
     forms: {

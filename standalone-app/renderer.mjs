@@ -1,5 +1,6 @@
 import { ATLAS, CELL, cellPosition, frameAt, lookState } from "./animation.mjs";
 import { createPaintAckGate } from "./paint-ack.mjs";
+import { createDragDirection } from "./drag-direction.mjs";
 
 const pet = document.getElementById("pet");
 const overlay = document.getElementById("overlay");
@@ -62,7 +63,7 @@ pet.addEventListener("pointerdown", (event) => {
   if (event.button !== 0) return;
   const space = event.screenX || event.screenY ? "screen" : "client";
   drag = { space, x: space === "screen" ? event.screenX : event.clientX,
-    y: space === "screen" ? event.screenY : event.clientY };
+    y: space === "screen" ? event.screenY : event.clientY, direction: createDragDirection() };
   pet.setPointerCapture(event.pointerId);
   pet.classList.add("dragging");
 });
@@ -74,7 +75,8 @@ pet.addEventListener("pointermove", (event) => {
   const dy = y - drag.y;
   if (dx || dy) {
     window.liangPet.moveBy(dx, dy);
-    if (Math.abs(dx) >= 4) window.liangPet.interaction("drag", dx > 0 ? "running-right" : "running-left");
+    const direction = drag.direction(dx);
+    if (direction) window.liangPet.interaction("drag", direction);
   }
   drag = { ...drag, x, y };
 });

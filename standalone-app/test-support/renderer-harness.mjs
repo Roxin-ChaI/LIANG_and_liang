@@ -5,6 +5,7 @@ import fs from "node:fs";
 import vm from "node:vm";
 import * as animation from "../animation.mjs";
 import { createPaintAckGate } from "../paint-ack.mjs";
+import { createDragDirection } from "../drag-direction.mjs";
 
 export function rendererHarness({ source, libraries = {} } = {}) {
   const code = source ?? fs.readFileSync(new URL("../renderer.mjs", import.meta.url), "utf8");
@@ -12,15 +13,19 @@ export function rendererHarness({ source, libraries = {} } = {}) {
   let raf = [];
   const errors = [], reports = [], decoded = [], waiting = new Map();
   const callbacks = {};
+  const pointerCallbacks = {};
+  const interactions = [], moves = [];
   const element = () => ({ style: {}, classList: { add() {}, remove() {} },
-    addEventListener() {}, setPointerCapture() {}, removeAttribute() {},
+    addEventListener(name, fn) { pointerCallbacks[name] = fn; }, setPointerCapture() {}, removeAttribute() {},
     getBoundingClientRect: () => ({ left: 32, top: 24, width: 192, height: 208 }) });
   const elements = { pet: element(), overlay: element() };
-  const context = vm.createContext({ ...animation, createPaintAckGate, ...libraries,
+  const context = vm.createContext({ ...animation, createPaintAckGate, createDragDirection, ...libraries,
     document: { getElementById: id => elements[id], visibilityState: "visible", body: {} },
     window: { addEventListener() {}, liangPet: {
       onState(fn) { callbacks.state = fn; }, onPreloadImages(fn) { callbacks.preload = fn; },
       rendered(value) { reports.push(value); }, preloadDone() {}, requestState() {},
+      interaction(kind, value) { interactions.push({kind, value}); },
+      moveBy(x, y) { moves.push({x, y}); },
     } },
     Image: class {
       decode() { decoded.push(this.src); return waiting.get(this.src)?.promise ?? Promise.resolve(); }
@@ -31,7 +36,8 @@ export function rendererHarness({ source, libraries = {} } = {}) {
   });
   vm.runInContext(code.replace(/^import[^\n]+\n/gm, ""), context, { filename: "actual-renderer.mjs" });
   return {
-    reports, errors, decoded,
+    reports, errors, decoded, interactions, moves,
+    pointer(name, event = {}) { pointerCallbacks[name]({button: 0, pointerId: 1, ...event}); },
     setNow(value) { now = value; },
     receive(value) { return callbacks.state(value); },
     holdDecode(url) {
