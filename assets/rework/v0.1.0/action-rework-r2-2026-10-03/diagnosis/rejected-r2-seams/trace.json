@@ -1,0 +1,150 @@
+{
+  "status": "VISUAL_QA_FAIL",
+  "look": [
+    {
+      "frame": 1,
+      "degrees": 0.0,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 1,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 187
+    },
+    {
+      "frame": 2,
+      "degrees": 22.5,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 1,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 197
+    },
+    {
+      "frame": 3,
+      "degrees": 45.0,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 1,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 197
+    },
+    {
+      "frame": 4,
+      "degrees": 67.5,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 1,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 195
+    },
+    {
+      "frame": 5,
+      "degrees": 90.0,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 1,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 178
+    },
+    {
+      "frame": 6,
+      "degrees": 112.5,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 1,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 202
+    },
+    {
+      "frame": 7,
+      "degrees": 135.0,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 2,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 203
+    },
+    {
+      "frame": 8,
+      "degrees": 157.5,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 3,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 206
+    },
+    {
+      "frame": 9,
+      "degrees": 180.0,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 1,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 169
+    },
+    {
+      "frame": 10,
+      "degrees": 202.5,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 2,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 214
+    },
+    {
+      "frame": 11,
+      "degrees": 225.0,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 1,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 226
+    },
+    {
+      "frame": 12,
+      "degrees": 247.5,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 1,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 229
+    },
+    {
+      "frame": 13,
+      "degrees": 270.0,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 1,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 191
+    },
+    {
+      "frame": 14,
+      "degrees": 292.5,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 1,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 208
+    },
+    {
+      "frame": 15,
+      "degrees": 315.0,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 2,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 216
+    },
+    {
+      "frame": 16,
+      "degrees": 337.5,
+      "r1ToR2HandRoiChanged": 0,
+      "r2DeletedSkinPixels": 1,
+      "r1BelowY74EqualsFixedUp": true,
+      "headMaskContainsHandSkin": 241
+    }
+  ],
+  "failedCompositingBoundaries": [
+    71,
+    116
+  ],
+  "failedOrdinalToPlannedRuntimeFrame": [
+    1,
+    4,
+    5,
+    8
+  ],
+  "scope": "All 16 Look frames; all 4 Failed keyposes and their source layers. No new art.",
+  "dynamicPlaybackObserved": "NOT_VERIFIED; slow GIF files are evidence outputs, not proof of having watched playback",
+  "sourceHashes": {
+    "assets/builds/gu/spritesheet.webp": "b6a3f086a9fdb9a4cb7c86d047991e1d3ff9a7a2ab740e4c2f705b42b9d08908",
+    "assets/builds/feng/spritesheet.webp": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+    "standalone-app/asset-overrides.json": "887c3be3c245978ceeb422cc13562e452ec9466b6267f1aabf269b59158ffb1d"
+  }
+}

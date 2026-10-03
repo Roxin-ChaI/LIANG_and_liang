@@ -1,0 +1,372 @@
+{
+  "edges": [
+    {
+      "candidate": "feng-waving-edge",
+      "removedPixels": [
+        122,
+        100,
+        116,
+        115
+      ],
+      "restoredOriginalClothing": true,
+      "status": "USER_APPROVED"
+    },
+    {
+      "candidate": "feng-review-edge",
+      "removedPixels": [
+        109,
+        98,
+        107,
+        98,
+        105,
+        109
+      ],
+      "restoredOriginalClothing": true,
+      "status": "USER_APPROVED"
+    },
+    {
+      "candidate": "feng-look-edge",
+      "removedPixels": [
+        64,
+        56,
+        50,
+        49,
+        56,
+        56,
+        53,
+        54,
+        57,
+        58,
+        61,
+        62,
+        59,
+        56,
+        68,
+        61
+      ],
+      "restoredOriginalClothing": false,
+      "status": "USER_REJECTED_HAND_TEAR"
+    }
+  ],
+  "failed": {
+    "candidate": "feng-failed-keyposes",
+    "runtimeFramesRepresented": [
+      1,
+      4,
+      5,
+      8
+    ],
+    "notCompleteAnimation": true,
+    "armDonor": "feng review frame 03",
+    "blinkDonor": "feng idle frame 04",
+    "headDonor": "complete approved review frame 03 head, no mixed face silhouette",
+    "status": "USER_REJECTED_COMPOSITE_TEAR"
+  },
+  "drag": [
+    {
+      "form": "gu",
+      "source": "original running-right frame 07",
+      "hip": 143,
+      "split": 100,
+      "stepTrajectory": [
+        {
+          "frame": 1,
+          "left": [
+            6,
+            0
+          ],
+          "right": [
+            -6,
+            0
+          ],
+          "bbox": [
+            58,
+            4,
+            134,
+            204
+          ]
+        },
+        {
+          "frame": 2,
+          "left": [
+            3,
+            0
+          ],
+          "right": [
+            -3,
+            2
+          ],
+          "bbox": [
+            57,
+            5,
+            138,
+            204
+          ]
+        },
+        {
+          "frame": 3,
+          "left": [
+            0,
+            0
+          ],
+          "right": [
+            0,
+            2
+          ],
+          "bbox": [
+            57,
+            5,
+            135,
+            204
+          ]
+        },
+        {
+          "frame": 4,
+          "left": [
+            -3,
+            0
+          ],
+          "right": [
+            3,
+            1
+          ],
+          "bbox": [
+            54,
+            4,
+            134,
+            204
+          ]
+        },
+        {
+          "frame": 5,
+          "left": [
+            -6,
+            0
+          ],
+          "right": [
+            6,
+            0
+          ],
+          "bbox": [
+            51,
+            5,
+            134,
+            204
+          ]
+        },
+        {
+          "frame": 6,
+          "left": [
+            -3,
+            2
+          ],
+          "right": [
+            3,
+            0
+          ],
+          "bbox": [
+            54,
+            5,
+            133,
+            204
+          ]
+        },
+        {
+          "frame": 7,
+          "left": [
+            0,
+            2
+          ],
+          "right": [
+            0,
+            0
+          ],
+          "bbox": [
+            57,
+            5,
+            135,
+            204
+          ]
+        },
+        {
+          "frame": 8,
+          "left": [
+            3,
+            1
+          ],
+          "right": [
+            -3,
+            0
+          ],
+          "bbox": [
+            59,
+            4,
+            135,
+            204
+          ]
+        }
+      ],
+      "status": "SELF_CHECK_FAIL_DO_NOT_USE",
+      "reason": "fixed-x leg split cuts overlapping limb pixels; visible vertical trouser tear",
+      "nextGate": "MANUAL_LEG_KEYPOSE_REVIEW_REQUIRED",
+      "originalUpperMotionRetainedAbove": 138
+    },
+    {
+      "form": "feng",
+      "source": "original running-right frame 07",
+      "hip": 128,
+      "split": 100,
+      "stepTrajectory": [
+        {
+          "frame": 1,
+          "left": [
+            6,
+            0
+          ],
+          "right": [
+            -6,
+            0
+          ],
+          "bbox": [
+            53,
+            5,
+            139,
+            204
+          ]
+        },
+        {
+          "frame": 2,
+          "left": [
+            3,
+            0
+          ],
+          "right": [
+            -3,
+            2
+          ],
+          "bbox": [
+            54,
+            5,
+            139,
+            204
+          ]
+        },
+        {
+          "frame": 3,
+          "left": [
+            0,
+            0
+          ],
+          "right": [
+            0,
+            2
+          ],
+          "bbox": [
+            50,
+            5,
+            141,
+            204
+          ]
+        },
+        {
+          "frame": 4,
+          "left": [
+            -3,
+            0
+          ],
+          "right": [
+            3,
+            1
+          ],
+          "bbox": [
+            53,
+            5,
+            139,
+            204
+          ]
+        },
+        {
+          "frame": 5,
+          "left": [
+            -6,
+            0
+          ],
+          "right": [
+            6,
+            0
+          ],
+          "bbox": [
+            50,
+            5,
+            139,
+            204
+          ]
+        },
+        {
+          "frame": 6,
+          "left": [
+            -3,
+            2
+          ],
+          "right": [
+            3,
+            0
+          ],
+          "bbox": [
+            53,
+            5,
+            140,
+            204
+          ]
+        },
+        {
+          "frame": 7,
+          "left": [
+            0,
+            2
+          ],
+          "right": [
+            0,
+            0
+          ],
+          "bbox": [
+            54,
+            5,
+            139,
+            204
+          ]
+        },
+        {
+          "frame": 8,
+          "left": [
+            3,
+            1
+          ],
+          "right": [
+            -3,
+            0
+          ],
+          "bbox": [
+            55,
+            5,
+            139,
+            204
+          ]
+        }
+      ],
+      "status": "SELF_CHECK_FAIL_DO_NOT_USE",
+      "reason": "fixed-x leg split cuts overlapping limb pixels; visible vertical trouser tear",
+      "nextGate": "MANUAL_LEG_KEYPOSE_REVIEW_REQUIRED",
+      "originalUpperMotionRetainedAbove": 123
+    }
+  ],
+  "inputs": {
+    "assets/rework/v0.1.0/action-repair-2026-10-02/gu.webp": "d9520dd59d65fdb5ae3db6ff765e76ccf8b6374da0f714b821d9069fd1d68a55",
+    "assets/rework/v0.1.0/action-repair-2026-10-02/feng.webp": "442c84a8ac01b0fcbb516b94d852db4960e60195dd6bd6446944195a7c0cb9bb",
+    "assets/builds/gu/spritesheet.webp": "b6a3f086a9fdb9a4cb7c86d047991e1d3ff9a7a2ab740e4c2f705b42b9d08908",
+    "assets/builds/feng/spritesheet.webp": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+    "standalone-app/asset-overrides.json": "887c3be3c245978ceeb422cc13562e452ec9466b6267f1aabf269b59158ffb1d"
+  },
+  "sourceAndSelectionUnchanged": true,
+  "candidateOnly": true
+}
