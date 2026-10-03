@@ -1,0 +1,208 @@
+{
+  "status": "SELF_REVIEW_PENDING",
+  "runtimeIntegrated": false,
+  "sourceSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+  "source": "assets/builds/feng/spritesheet.webp",
+  "frames": [
+    {
+      "frame": 1,
+      "direction": 0.0,
+      "changedPixels": 59,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 2,
+      "direction": 22.5,
+      "changedPixels": 703,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 3,
+      "direction": 45.0,
+      "changedPixels": 698,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 4,
+      "direction": 67.5,
+      "changedPixels": 696,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 5,
+      "direction": 90.0,
+      "changedPixels": 698,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 6,
+      "direction": 112.5,
+      "changedPixels": 696,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 7,
+      "direction": 135.0,
+      "changedPixels": 698,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 8,
+      "direction": 157.5,
+      "changedPixels": 695,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 9,
+      "direction": 180.0,
+      "changedPixels": 731,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 10,
+      "direction": 202.5,
+      "changedPixels": 705,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 11,
+      "direction": 225.0,
+      "changedPixels": 708,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 12,
+      "direction": 247.5,
+      "changedPixels": 711,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 13,
+      "direction": 270.0,
+      "changedPixels": 714,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 14,
+      "direction": 292.5,
+      "changedPixels": 703,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 15,
+      "direction": 315.0,
+      "changedPixels": 716,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    },
+    {
+      "frame": 16,
+      "direction": 337.5,
+      "changedPixels": 709,
+      "fullHandCuffChannelPixelIdentical": true,
+      "bbox": [
+        42,
+        4,
+        146,
+        204
+      ]
+    }
+  ],
+  "method": "Original direction head, hand, cuff and central torso retained; only outer shoulders copied from original Up; constrained exterior cleanup",
+  "protectedRectangle": [
+    62,
+    44,
+    115,
+    108
+  ],
+  "dynamicPlayback": "NOT_VERIFIED"
+}

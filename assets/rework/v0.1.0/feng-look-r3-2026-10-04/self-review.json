@@ -1,0 +1,26 @@
+{
+  "status": "AWAITING_USER_REVIEW",
+  "scope": "Feng Look only",
+  "staticReview": {
+    "reviewer": "assistant",
+    "framesInspected": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+    "evidence": ["contact.png", "compare-01-04.png", "compare-05-08.png", "compare-09-12.png", "compare-13-16.png", "loop-16-to-01.png"],
+    "previousHorizontalPalmSeam": "NOT_OBSERVED_IN_R3",
+    "newOuterShoulderTear": "NOT_OBSERVED_IN_INSPECTED_STILLS",
+    "loopBoundary": "Both boundary frames inspected; source direction and hand-pose changes remain, not a newly interpolated motion"
+  },
+  "automatedChecks": {
+    "relatedTestsPassed": 34,
+    "frameSize": [192, 208],
+    "baseline": 203,
+    "rgba": true,
+    "binaryAlpha": true,
+    "transparentRgbZero": true,
+    "oneConnectedComponentPerFrame": true,
+    "protectedChannelByteIdentical": true,
+    "allDirectionsInOriginalOrder": true
+  },
+  "dynamicPlaybackObserved": "NOT_VERIFIED",
+  "runtimeIntegrated": false,
+  "userApproval": "PENDING"
+}
