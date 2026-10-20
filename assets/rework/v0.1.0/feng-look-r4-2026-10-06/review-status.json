@@ -1,0 +1,9 @@
+{
+  "reviewDate": "2026-10-20",
+  "status": "USER_REJECTED",
+  "verdict": "VISUAL_QA_FAIL",
+  "userFeedback": "look r4 否决",
+  "generatorLocked": true,
+  "runtimePromoted": false,
+  "approvedDerivationSource": false
+}

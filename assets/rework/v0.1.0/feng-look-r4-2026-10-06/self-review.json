@@ -1,0 +1,25 @@
+{
+  "status": "USER_REJECTED",
+  "userApproval": "REJECTED",
+  "reviewDate": "2026-10-20",
+  "completeLookApproved": false,
+  "framesInspected": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+  "structuralReview": {
+    "handElbowCuffLapelAndJacket": "Same complete approved Idle pixels in every frame",
+    "newDonorSeams": "No regional body donor compositing performed",
+    "newColorDiscontinuity": "No clothing colors changed relative to approved Idle",
+    "evidence": ["structural-comparison.png", "contact.png", "all-eyes-and-sleeves.png"]
+  },
+  "motionLimitations": {
+    "headTurn": "Removed in this alternative candidate; fixed approved Idle silhouette",
+    "directionSlots": 16,
+    "uniquePixelFrames": 7,
+    "assessment": "Cannot claim restoration of the previous head-turn motion or sixteen visually distinct directions"
+  },
+  "verification": {
+    "newRegressionTestsPassed": 4,
+    "relatedTestsPassed": 33,
+    "dynamicPlaybackObserved": "NOT_VERIFIED",
+    "appIntegrated": false
+  }
+}

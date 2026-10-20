@@ -1,0 +1,8 @@
+{
+  "status": "USER_REJECTED",
+  "verdict": "VISUAL_QA_FAIL",
+  "feedback": "手部、手肘、袖口撕裂严重；西装领口与其他西装部分有明显色差",
+  "supersedes": "self-review.json static observation",
+  "runtimeIntegrated": false,
+  "date": "2026-10-06"
+}

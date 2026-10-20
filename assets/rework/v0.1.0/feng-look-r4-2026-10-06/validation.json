@@ -1,0 +1,191 @@
+{
+  "status": "USER_REJECTED",
+  "userApproval": "REJECTED",
+  "reviewDate": "2026-10-20",
+  "method": "Single coherent approved Idle body and head; only pupils inside explicit eye apertures change",
+  "scopeChange": "Head silhouette remains fixed; Look expresses gaze direction only",
+  "sourceSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+  "runtimeIntegrated": false,
+  "exteriorMattePixelsRemoved": 0,
+  "eyeMaskPixels": 20,
+  "distinctPixelFrames": 7,
+  "frames": [
+    {
+      "frame": 1,
+      "direction": 0.0,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 2,
+      "direction": 22.5,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 3,
+      "direction": 45.0,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 4,
+      "direction": 67.5,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 5,
+      "direction": 90.0,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 6,
+      "direction": 112.5,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 7,
+      "direction": 135.0,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 8,
+      "direction": 157.5,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 9,
+      "direction": 180.0,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 10,
+      "direction": 202.5,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 11,
+      "direction": 225.0,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 12,
+      "direction": 247.5,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 13,
+      "direction": 270.0,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 14,
+      "direction": 292.5,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 15,
+      "direction": 315.0,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    },
+    {
+      "frame": 16,
+      "direction": 337.5,
+      "outsideEyeMaskPixelIdentical": true,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ]
+    }
+  ],
+  "dynamicPlaybackObserved": "NOT_VERIFIED"
+}

@@ -1,0 +1,49 @@
+{
+  "reviewDate": "2026-10-03",
+  "latestReviewDate": "2026-10-20",
+  "runtimePromoted": false,
+  "generatorLocked": true,
+  "items": {
+    "feng-waving-edge": {
+      "status": "USER_APPROVED",
+      "reason": "白边通过",
+      "stripSha256": "ae65364d9abe8a4badaf885915535cd7813b9c9cad454a06affc7328f6872e99"
+    },
+    "feng-review-edge": {
+      "status": "USER_APPROVED",
+      "reason": "白边通过",
+      "stripSha256": "dab503c281df0c3178a4a5404654f164dc5390183d147e5588248bf104730de9"
+    },
+    "feng-look-edge": {
+      "status": "USER_REJECTED",
+      "reason": "手部撕裂；不得作为后续派生或集成来源",
+      "stripSha256": "2b67158331a965f9b6609877716a72ea483f461c303fe3b45d6f49bba50e56ce"
+    },
+    "feng-failed-keyposes": {
+      "status": "USER_REJECTED",
+      "reconfirmedDate": "2026-10-20",
+      "reason": "整体画面撕裂；不得补帧或集成",
+      "stripSha256": "3091e10d54b260086fb9f7960f274193d922e814a222f5f7faf3026c66203fba"
+    },
+    "gu-drag-right": {
+      "status": "USER_REJECTED",
+      "reviewDate": "2026-10-20",
+      "scope": "当前动作及返工候选；白边历史批准不等于动作批准"
+    },
+    "gu-drag-left": {
+      "status": "USER_REJECTED",
+      "reviewDate": "2026-10-20",
+      "scope": "当前动作及返工候选"
+    },
+    "feng-drag-right": {
+      "status": "USER_REJECTED",
+      "reviewDate": "2026-10-20",
+      "scope": "当前动作及返工候选"
+    },
+    "feng-drag-left": {
+      "status": "USER_REJECTED",
+      "reviewDate": "2026-10-20",
+      "scope": "当前动作及返工候选"
+    }
+  }
+}
