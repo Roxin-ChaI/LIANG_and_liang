@@ -1,0 +1,11 @@
+Targeted built-in image edit of source-upper-edit.png.
+References: exact Idle local target + Gu Failed (motion only).
+Keep 2x2 layout, scale, palette, hard edges and transparency.
+Correct weak motion: top-left unchanged; top-right small natural downward pitch
+with eye/glasses line about 2 native pixels lower; bottom-left deeper restrained
+nod with eyes closed and face plane pitched down, not merely shut eyelids;
+bottom-right halfway recovery with eyes open.
+Never shrink/enlarge the skull, change Feng identity, translate the entire crop,
+or modify fists, wrist, cuff, lapel, shoulder or jacket.
+Only the head local edit is consumed; fist pixels are retained from the first
+candidate, body from original Idle. No CLI.

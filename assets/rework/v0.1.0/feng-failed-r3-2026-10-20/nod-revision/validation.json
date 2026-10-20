@@ -1,0 +1,345 @@
+{
+  "status": "CANDIDATE_READY_FOR_USER_REVIEW",
+  "userApproval": "PENDING",
+  "selfReview": {
+    "scope": "Native + 4x ordered frames + 6x hands/cuffs, not App runtime QA",
+    "userApproval": "PENDING",
+    "observations": [
+      "Clearer downward facial pitch than the rejected first trial",
+      "No visible duplicate finger, detached wrist, elbow or lapel tearing in reviewed sheets",
+      "Same fixed fist pixels during frames 2-7; original pointing/resting hands at 1/8",
+      "Head outer footprint restored from Idle; facial planes change inside it"
+    ],
+    "limitations": [
+      "Generated local facial art is not pixel-identical to the original face",
+      "Automated geometric checks cannot certify perceived identity or motion quality",
+      "No user approval or live App integration is claimed"
+    ]
+  },
+  "runtimeIntegrated": false,
+  "imagegenUsed": true,
+  "normalization": "shared fixed input-cell coordinates, nearest-neighbor; no body resampling",
+  "poseOrder": [
+    null,
+    0,
+    1,
+    2,
+    2,
+    3,
+    0,
+    null
+  ],
+  "durationsMs": [
+    280,
+    140,
+    160,
+    160,
+    260,
+    180,
+    160,
+    400
+  ],
+  "hold": "Frames 4/5 intentionally repeat for the closed-eye pause; 1/8 exact Idle",
+  "sourceAtlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+  "frames": [
+    {
+      "frame": 1,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 0,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true,
+        "headFootprintMatchesIdle": true,
+        "raisedWristOriginal": true,
+        "lowerWristOriginal": true
+      },
+      "headBbox": [
+        64,
+        4,
+        113,
+        61
+      ],
+      "headSize": [
+        49,
+        57
+      ],
+      "headCenter": [
+        88.0,
+        32.0
+      ]
+    },
+    {
+      "frame": 2,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2391,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true,
+        "headFootprintMatchesIdle": true,
+        "raisedWristOriginal": true,
+        "lowerWristOriginal": true
+      },
+      "headBbox": [
+        64,
+        4,
+        113,
+        61
+      ],
+      "headSize": [
+        49,
+        57
+      ],
+      "headCenter": [
+        88.0,
+        32.0
+      ]
+    },
+    {
+      "frame": 3,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2323,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true,
+        "headFootprintMatchesIdle": true,
+        "raisedWristOriginal": true,
+        "lowerWristOriginal": true
+      },
+      "headBbox": [
+        64,
+        4,
+        113,
+        61
+      ],
+      "headSize": [
+        49,
+        57
+      ],
+      "headCenter": [
+        88.0,
+        32.0
+      ]
+    },
+    {
+      "frame": 4,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2330,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true,
+        "headFootprintMatchesIdle": true,
+        "raisedWristOriginal": true,
+        "lowerWristOriginal": true
+      },
+      "headBbox": [
+        64,
+        4,
+        113,
+        61
+      ],
+      "headSize": [
+        49,
+        57
+      ],
+      "headCenter": [
+        88.0,
+        32.0
+      ]
+    },
+    {
+      "frame": 5,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2330,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true,
+        "headFootprintMatchesIdle": true,
+        "raisedWristOriginal": true,
+        "lowerWristOriginal": true
+      },
+      "headBbox": [
+        64,
+        4,
+        113,
+        61
+      ],
+      "headSize": [
+        49,
+        57
+      ],
+      "headCenter": [
+        88.0,
+        32.0
+      ]
+    },
+    {
+      "frame": 6,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2420,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true,
+        "headFootprintMatchesIdle": true,
+        "raisedWristOriginal": true,
+        "lowerWristOriginal": true
+      },
+      "headBbox": [
+        64,
+        4,
+        113,
+        61
+      ],
+      "headSize": [
+        49,
+        57
+      ],
+      "headCenter": [
+        88.0,
+        32.0
+      ]
+    },
+    {
+      "frame": 7,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2391,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true,
+        "headFootprintMatchesIdle": true,
+        "raisedWristOriginal": true,
+        "lowerWristOriginal": true
+      },
+      "headBbox": [
+        64,
+        4,
+        113,
+        61
+      ],
+      "headSize": [
+        49,
+        57
+      ],
+      "headCenter": [
+        88.0,
+        32.0
+      ]
+    },
+    {
+      "frame": 8,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 0,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true,
+        "headFootprintMatchesIdle": true,
+        "raisedWristOriginal": true,
+        "lowerWristOriginal": true
+      },
+      "headBbox": [
+        64,
+        4,
+        113,
+        61
+      ],
+      "headSize": [
+        49,
+        57
+      ],
+      "headCenter": [
+        88.0,
+        32.0
+      ]
+    }
+  ],
+  "structuralChecksPassed": true,
+  "headSilhouetteLocked": true,
+  "upperSource": "/Users/mac/Projects/liang-no-henshin/assets/rework/v0.1.0/feng-failed-r3-2026-10-20/nod-revision/source-upper-edit.png"
+}

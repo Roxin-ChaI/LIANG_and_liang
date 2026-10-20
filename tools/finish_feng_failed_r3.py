@@ -57,8 +57,8 @@ def palette_match(pixels, reference):
     return p
 
 
-def local_edits(idle):
-    raw = Image.open(OUT / "source-upper-edit.png").convert("RGBA")
+def local_edits(idle, source_path=None):
+    raw = Image.open(source_path or OUT / "source-upper-edit.png").convert("RGBA")
     source = np.array(idle)
     results = []
     for i in range(4):
@@ -73,46 +73,52 @@ def local_edits(idle):
     return results
 
 
-def build():
+def build(output=OUT, upper_source=None, lock_head_silhouette=False):
+    output.mkdir(parents=True, exist_ok=True)
     idle = cell(Image.open(FENG).convert("RGBA"), 0, 0)
     p = np.array(idle)
     head, raised, lower = masks(idle)
-    edits = local_edits(idle)
+    edits = local_edits(idle, upper_source)
     # Same palm pixels throughout the hold: no independently moving AI hands.
-    fist = edits[0]
+    fist = local_edits(idle)[0] if upper_source else edits[0]
     small = Image.open(OUT / "source-lower-hand.png").convert("RGBA")
     small = small.resize((26, 30), Image.Resampling.NEAREST)
     layer = Image.new("RGBA", (192, 208)); layer.paste(small, (124, 126))
     lower_fist = palette_match(np.array(layer), p[130:151])
     editable = head | raised | lower
-    Image.fromarray(editable.astype(np.uint8) * 255).save(OUT / "editable-mask.png")
-    Image.fromarray((~editable).astype(np.uint8) * 255).save(OUT / "locked-mask.png")
+    Image.fromarray(editable.astype(np.uint8) * 255).save(output / "editable-mask.png")
+    Image.fromarray((~editable).astype(np.uint8) * 255).save(output / "locked-mask.png")
     frames = []
     for i, pose in enumerate(POSE_ORDER):
         q = p.copy()
         if pose is not None:
             q[head] = edits[pose][head]
+            if lock_head_silhouette:
+                # Preserve the exact canonical head footprint. Empty generated
+                # edge samples fall back to Idle, never a stretched/shifted head.
+                edge = head & ((p[:, :, 3] == 0) | (edits[pose][:, :, 3] == 0))
+                q[edge] = p[edge]
             q[raised] = fist[raised]
             q[lower] = lower_fist[lower]
         q[q[:, :, 3] == 0] = 0
         im = Image.fromarray(q)
-        im.save(OUT / f"failed-{i+1:02d}.png")
+        im.save(output / f"failed-{i+1:02d}.png")
         frames.append(im)
     strip = Image.new("RGBA", (1536, 208))
     for i, im in enumerate(frames): strip.paste(im, (192*i, 0))
-    strip.save(OUT / "feng-failed.png")
-    save_contact(frames, OUT / "contact.png")
-    save_preview(frames, DURATIONS, OUT / "preview.gif")
-    save_preview(frames, [600]*8, OUT / "preview-slow.gif")
+    strip.save(output / "feng-failed.png")
+    save_contact(frames, output / "contact.png")
+    save_preview(frames, DURATIONS, output / "preview.gif")
+    save_preview(frames, [600]*8, output / "preview-slow.gif")
     details = [im.crop((56, 0, 120, 88)) for im in frames]
-    save_preview(details, DURATIONS, OUT / "head-hand-preview.gif", display_size=(384,528))
+    save_preview(details, DURATIONS, output / "head-hand-preview.gif", display_size=(384,528))
     board = Image.new("RGB", (8*256, 376), (45,39,48))
     draw = ImageDraw.Draw(board)
     for i, im in enumerate(details):
         im = im.resize((256,352), Image.Resampling.NEAREST)
         board.paste(im, (i*256,24), im.getchannel("A"))
         draw.text((i*256+6,5), f"{i+1:02d}", fill="white")
-    board.save(OUT / "head-hand-contact.png")
+    board.save(output / "head-hand-contact.png")
     comparisons = []
     for im in frames:
         pair = Image.new("RGBA", (384,232))
@@ -120,7 +126,7 @@ def build():
         d=ImageDraw.Draw(pair);d.text((6,4),"FENG IDLE / LOCKED",fill="white")
         d.text((198,4),"FAILED / CANDIDATE",fill="white")
         comparisons.append(pair)
-    save_preview(comparisons,DURATIONS,OUT/"idle-comparison.gif",display_size=(768,464))
+    save_preview(comparisons,DURATIONS,output/"idle-comparison.gif",display_size=(768,464))
     report = {
         "status": "SELF_REVIEW_REJECTED_NOD_TOO_WEAK", "userApproval": "PENDING",
         "selfReview": {
@@ -137,7 +143,7 @@ def build():
     for i, im in enumerate(frames):
         q = np.array(im); changed = np.any(q != p, axis=2)
         diff = np.zeros_like(q); diff[changed] = [255,70,150,255]
-        Image.fromarray(diff).save(OUT / f"diff-{i+1:02d}.png")
+        Image.fromarray(diff).save(output / f"diff-{i+1:02d}.png")
         b=im.getbbox()
         checks={
             "lockedPixelsIdentical": bool(np.array_equal(q[~editable],p[~editable])),
@@ -150,7 +156,9 @@ def build():
         }
         report["frames"].append({"frame":i+1,"bbox":b,"changedPixels":int(changed.sum()),"checks":checks})
     report["structuralChecksPassed"]=all(all(f["checks"].values()) for f in report["frames"])
-    (OUT/"validation.json").write_text(json.dumps(report,indent=2)+"\n")
+    report["headSilhouetteLocked"] = lock_head_silhouette
+    report["upperSource"] = str(upper_source or OUT / "source-upper-edit.png")
+    (output/"validation.json").write_text(json.dumps(report,indent=2)+"\n")
     return report
 
 
