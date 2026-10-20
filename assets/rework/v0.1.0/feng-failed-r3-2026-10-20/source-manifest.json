@@ -1,0 +1,14 @@
+{
+  "status": "PREPARED_LOCAL_EDIT_INPUTS",
+  "userApproval": "PENDING",
+  "runtimeIntegrated": false,
+  "frameCount": 8,
+  "cell": [
+    192,
+    208
+  ],
+  "sources": {
+    "assets/builds/feng/spritesheet.webp": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+    "assets/rework/v0.1.0/action-repair-2026-10-02/gu.webp": "d9520dd59d65fdb5ae3db6ff765e76ccf8b6374da0f714b821d9069fd1d68a55"
+  }
+}
