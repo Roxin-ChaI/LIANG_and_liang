@@ -1,0 +1,131 @@
+{
+  "status": "FOUR_CARDINAL_KEYPOSES_ART_APPROVED",
+  "userApproval": "APPROVED",
+  "approvalRecord": "review-status.json",
+  "runtimeIntegrated": false,
+  "complete16DirectionAnimation": false,
+  "imagegenUsed": true,
+  "mode": "built-in imagegen; no CLI",
+  "sourceIdle": "assets/builds/feng/spritesheet.webp:row0/frame0",
+  "officialAtlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+  "headOnlyNormalization": {
+    "xScale": 0.13764044943820225,
+    "yScale": 0.1557377049180328,
+    "resampler": "NEAREST",
+    "uniformScale": false,
+    "sameFactorsForAllPoses": true
+  },
+  "palette": "nearest existing Idle head RGB, no dither or blended color",
+  "registrationX": 96,
+  "baselineY": 203,
+  "sourceHeadReferenceBbox": [
+    64,
+    4,
+    113,
+    61
+  ],
+  "frames": [
+    {
+      "direction": 0,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2069,
+      "checks": {
+        "rgba192x208": true,
+        "bodyFromY61Identical": true,
+        "handsAndCollarIdentical": true,
+        "baseline203": true,
+        "fullFigureBboxUnchanged": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true
+      },
+      "componentSizes": [
+        11890
+      ]
+    },
+    {
+      "direction": 90,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2106,
+      "checks": {
+        "rgba192x208": true,
+        "bodyFromY61Identical": true,
+        "handsAndCollarIdentical": true,
+        "baseline203": true,
+        "fullFigureBboxUnchanged": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true
+      },
+      "componentSizes": [
+        11888
+      ]
+    },
+    {
+      "direction": 180,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2042,
+      "checks": {
+        "rgba192x208": true,
+        "bodyFromY61Identical": true,
+        "handsAndCollarIdentical": true,
+        "baseline203": true,
+        "fullFigureBboxUnchanged": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true
+      },
+      "componentSizes": [
+        11783
+      ]
+    },
+    {
+      "direction": 270,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2072,
+      "checks": {
+        "rgba192x208": true,
+        "bodyFromY61Identical": true,
+        "handsAndCollarIdentical": true,
+        "baseline203": true,
+        "fullFigureBboxUnchanged": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true
+      },
+      "componentSizes": [
+        11862
+      ]
+    }
+  ],
+  "selfReview": {
+    "scope": "native-size and 5x static head/hand/collar comparison",
+    "findings": "Full sleeve, elbow, cuff and suit copied from Idle. First composition rejected for duplicate finger and neck fragments. Head-only edit used for current candidate.",
+    "notClaimed": [
+      "user art approval",
+      "16-direction continuity",
+      "App playback QA"
+    ]
+  },
+  "structuralChecksPassed": true
+}

@@ -1,0 +1,18 @@
+{
+  "status": "FOUR_CARDINAL_KEYPOSES_ART_APPROVED",
+  "userApproval": "APPROVED",
+  "reviewDate": "2026-10-20",
+  "userFeedback": "feng look 审核通过",
+  "scope": "R6 four cardinal keyposes shown in gu-reference-preview.gif",
+  "directions": [0, 90, 180, 270],
+  "generatorLocked": true,
+  "runtimeIntegrated": false,
+  "complete16DirectionAnimation": false,
+  "sha256": {
+    "cardinal-01.png": "54aeccceb556d7f3e6f1635e28a670ee3d4b8fff9ec81c1177b7544368d0d7c4",
+    "cardinal-02.png": "58b07ce3842495f7a5423d424f75800cf3cc971124cf6e61e12e6097dd1485bf",
+    "cardinal-03.png": "e5c524c71b978aef1530cd509e0101149122a1a74b3f65a6934c84fc8e005a53",
+    "cardinal-04.png": "6aa863e7db00b03ca34c033c310d30cb4ba5d88f606f1f136db9940b2723179e"
+  },
+  "excluded": "trial-*, raw-normalized-* and full-body generated source are not approved runtime artwork"
+}

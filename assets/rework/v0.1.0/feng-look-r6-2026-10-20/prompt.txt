@@ -1,0 +1,17 @@
+Use case: identity-preserve.
+Asset: a precise four-keyframe pixel-art edit of Liang Wenfeng's Look animation.
+Image 1 (edit target): four identical APPROVED FENG IDLE sprites, on a 1024x1024 RGBA canvas, in a fixed 2x2 layout. Edit this image.
+Image 2 (motion reference ONLY): GU showing the four head gestures. Borrow ONLY its head orientation and gaze, never Gu's face, head size, thin physique, hair, clothes or tired demeanor.
+Image 3 (identity reference): high-resolution approved FENG IDLE.
+
+Keep Image 1's exact canvas and four sprite positions, character scale, palette, pixel density, identical strong body silhouette, blue jacket, lapels, cuffs, arm positions, hand shape, leg stance and shoes. Change ONLY head orientation and gaze:
+top left: chin slightly raised, eyes looking upward, a visibly pitched-up head as in Gu reference;
+top right: a clearly readable approximately 25-degree head turn toward SCREEN RIGHT, with natural three-quarter perspective in the nose, glasses, cheek, ear and hair;
+bottom left: head pitched down approximately 12 degrees, gaze lowered, as in Gu reference;
+bottom right: approximately 25-degree head turn toward SCREEN LEFT, three-quarter head perspective.
+These must be proper drawn views of the SAME FENG, not pupils moved in a front face and not a squeezed/sheared front face.
+
+Identity invariant: same adult male with the exact approved Feng swept black hairstyle, sharply angled serious brows, rectangular thin-frame glasses, angular face, small head relative to broad muscular shoulders, upright commanding demeanor. Head size must stay the same as Image 1 (about 98 pixels wide at this 2x layout scale); NEVER adopt Gu's larger chibi head, round face or body.
+The raised hand/finger and ENTIRE wrist, cuff, forearm, elbow, shoulder are fixed and continuous exactly as Image 1. The head turns behind the fixed foreground fingertip: naturally resolve occlusion, never splice two palms or create a duplicate finger. The other hand stays in place. Body and clothing shading must be identical across the four cells. No mismatched lapel patch.
+The underlying runtime art is 192x208 pixels per character, shown with exact 2x nearest-neighbor pixel blocks in the target. Preserve the hard-edged pixel-art grid and small color clusters, no smooth illustration, no antialiasing, no blur, no gradients.
+Return exactly the same 1024x1024 layout and proportions with four complete sprites, genuinely transparent background. No text, no labels, no outlines around frames, no checkerboard, no white matte, no added effects.
