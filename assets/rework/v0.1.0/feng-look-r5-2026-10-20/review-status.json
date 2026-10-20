@@ -1,0 +1,8 @@
+{
+  "status": "USER_REJECTED",
+  "verdict": "VISUAL_QA_FAIL",
+  "reviewDate": "2026-10-20",
+  "feedback": "面部动作参考 Gu Look，维持 Feng 形象；R5 未理解要求",
+  "generatorLocked": true,
+  "runtimePromoted": false
+}
