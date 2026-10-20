@@ -1,0 +1,32 @@
+Use case: identity-preserve / precise-object-edit
+Asset: local pixel-art animation edits, NOT a new character.
+Image 1: EDIT TARGET, four repeated crops of the exact approved Feng Idle.
+Image 2: motion reference ONLY, Gu Failed. Never copy Gu's face, hair or body.
+
+Edit Image 1 in place, maintaining its exact 1024 x 1024 layout, equal 512px quadrants,
+subject positions and coarse pixel-grid scale (each source pixel enlarged 6x).
+Return RGBA with genuinely transparent background. No checkerboard or matte.
+Keep the same adult male Feng identity, short black hair silhouette, narrow rectangular
+glasses, sharp eyebrows, jaw, same head size and same blue suit/white shirt.
+No extra detail, no painterly texture, no antialiasing, no blur, no outlines around cells,
+no text, no effects, no extra limbs. Do not change any jacket, lapel, collar, wrist,
+elbow or sleeve pixel. Do not turn the head sideways.
+
+Only edit the head's downward-nod expression and the raised hand's fingers.
+The raised wrist and palm remain at the EXACT current coordinates in ALL panels.
+The index finger resting at the lips must curl down into the EXISTING palm:
+make a small realistic clenched fist at that original palm location, not a new arm pose.
+Uncover the mouth/chin formerly behind the extended finger. Do not move the fist
+to the chest or toward the cheek. Same fist in all panels.
+
+Reading order:
+TOP LEFT: eyes tense/slightly lowered, essentially original head pose; fingers now curled.
+TOP RIGHT: gentle downward nod, eyes looking down, head remains same size, hair crown
+stays at the same height, chin drops at most 1-2 source pixels, fist stays fixed.
+BOTTOM LEFT: slightly stronger but small downward nod, closed eyes behind UNCHANGED
+glasses, restrained frustration; no sad/weak Gu expression, no changed skull proportions.
+BOTTOM RIGHT: recovery halfway toward neutral, eyes reopened, still looking slightly
+down. Same jaw, glasses, hair, head dimensions and fist position.
+
+The reference is only for the sequence pause → nod → eyes close → recover.
+Preserve Feng's cold, strong character and the exact Idle pixel-art rendering.

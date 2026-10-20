@@ -1,0 +1,197 @@
+{
+  "status": "SELF_REVIEW_REJECTED_NOD_TOO_WEAK",
+  "userApproval": "PENDING",
+  "selfReview": {
+    "bodySeams": "No visible new elbow/cuff/lapel tearing in native and 4x contact sheets",
+    "motion": "Predominantly eyelid motion; downward pitch is not clear enough against Gu reference",
+    "decision": "Do not integrate; revise only local head motion"
+  },
+  "runtimeIntegrated": false,
+  "imagegenUsed": true,
+  "normalization": "shared fixed input-cell coordinates, nearest-neighbor; no body resampling",
+  "poseOrder": [
+    null,
+    0,
+    1,
+    2,
+    2,
+    3,
+    0,
+    null
+  ],
+  "durationsMs": [
+    280,
+    140,
+    160,
+    160,
+    260,
+    180,
+    160,
+    400
+  ],
+  "hold": "Frames 4/5 intentionally repeat for the closed-eye pause; 1/8 exact Idle",
+  "sourceAtlasSha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+  "frames": [
+    {
+      "frame": 1,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 0,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true
+      }
+    },
+    {
+      "frame": 2,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2454,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true
+      }
+    },
+    {
+      "frame": 3,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2474,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true
+      }
+    },
+    {
+      "frame": 4,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2464,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true
+      }
+    },
+    {
+      "frame": 5,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2464,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true
+      }
+    },
+    {
+      "frame": 6,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2469,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true
+      }
+    },
+    {
+      "frame": 7,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 2454,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true
+      }
+    },
+    {
+      "frame": 8,
+      "bbox": [
+        44,
+        4,
+        148,
+        204
+      ],
+      "changedPixels": 0,
+      "checks": {
+        "lockedPixelsIdentical": true,
+        "baseline203": true,
+        "fullFigureBbox": true,
+        "rgba192x208": true,
+        "binaryAlpha": true,
+        "transparentRGBZero": true,
+        "oneConnectedFigure": true,
+        "cuffsWristsAndElbowsFrozen": true
+      }
+    }
+  ],
+  "structuralChecksPassed": true
+}
