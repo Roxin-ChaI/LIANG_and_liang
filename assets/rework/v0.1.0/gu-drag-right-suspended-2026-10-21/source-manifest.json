@@ -1,0 +1,37 @@
+{
+  "status": "SPEC_READY",
+  "userApproval": "PENDING",
+  "runtimeIntegrated": false,
+  "scope": "gu-running-right-only",
+  "frameCount": 8,
+  "cell": [
+    192,
+    208
+  ],
+  "bodyEditBox": [
+    40,
+    76,
+    136,
+    208
+  ],
+  "canonicalBbox": [
+    54,
+    4,
+    122,
+    204
+  ],
+  "baseline": 203,
+  "motion": "suspended-by-nape-passive-right-drag",
+  "sources": {
+    "assets/builds/gu/spritesheet.webp": "b6a3f086a9fdb9a4cb7c86d047991e1d3ff9a7a2ab740e4c2f705b42b9d08908",
+    "assets/builds/feng/spritesheet.webp": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+    "assets/gu/idle.png": "e51d09e2d1c09f6db316050ca859a103684712ef7685b50a1297e74e45985656",
+    "standalone-app/asset-overrides.json": "887c3be3c245978ceeb422cc13562e452ec9466b6267f1aabf269b59158ffb1d"
+  },
+  "deferred": [
+    "feng-look-intermediates",
+    "gu-drag-left",
+    "feng-drag-right",
+    "feng-drag-left"
+  ]
+}
