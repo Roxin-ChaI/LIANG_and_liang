@@ -15,7 +15,15 @@ FENG = ROOT / "assets/builds/feng/spritesheet.webp"
 GU = ROOT / "assets/rework/v0.1.0/action-repair-2026-10-02/gu.webp"
 
 
+def assert_unapproved(folder=None):
+    folder = Path(folder or OUT / "nod-revision").resolve()
+    record = folder / "review-status.json"
+    if record.exists() and json.loads(record.read_text()).get("generatorLocked"):
+        raise RuntimeError("Approved Feng Failed is frozen; use a new version directory")
+
+
 def prepare():
+    assert_unapproved()
     OUT.mkdir(parents=True, exist_ok=True)
     idle = cell(Image.open(FENG).convert("RGBA"), 0, 0)
     refs = [cell(Image.open(GU).convert("RGBA"), 5, i) for i in range(8)]

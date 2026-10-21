@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from tools.prepare_feng_failed_r3 import OUT, FENG
+from tools.prepare_feng_failed_r3 import OUT, FENG, assert_unapproved
 from tools.build_animation_review import save_contact, save_preview, cell
 from tools.finish_feng_look_r6 import components
 
@@ -74,6 +74,7 @@ def local_edits(idle, source_path=None):
 
 
 def build(output=OUT, upper_source=None, lock_head_silhouette=False):
+    assert_unapproved(output)
     output.mkdir(parents=True, exist_ok=True)
     idle = cell(Image.open(FENG).convert("RGBA"), 0, 0)
     p = np.array(idle)

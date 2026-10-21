@@ -1,0 +1,26 @@
+{
+  "status": "FENG_FAILED_ART_APPROVED",
+  "userApproval": "APPROVED",
+  "reviewDate": "2026-10-21",
+  "userFeedback": "Feng Failed 审核通过,我再审一下Feng Look",
+  "scope": "R3 nod-revision eight-frame animation shown in idle-comparison.gif",
+  "frameCount": 8,
+  "cell": [
+    192,
+    208
+  ],
+  "generatorLocked": true,
+  "runtimeIntegrated": false,
+  "sha256": {
+    "failed-01.png": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+    "failed-02.png": "0056fda6f7049949daf1a4e0a8099c411659a27e8bfb52c99bee87488a423419",
+    "failed-03.png": "5da0a838faa7986e5dc4440ca1f645a3872d527e6fc7e7ada7e5f4a856f2a4e7",
+    "failed-04.png": "7f5fc2eb068daed08dd9dd22c198a948dfc541f5becd9d10a6d866d4e34cdef3",
+    "failed-05.png": "7f5fc2eb068daed08dd9dd22c198a948dfc541f5becd9d10a6d866d4e34cdef3",
+    "failed-06.png": "54db7e2b25590109a89694effe08684b115f448d51d951a2d2b7c70bc0f5c5a2",
+    "failed-07.png": "0056fda6f7049949daf1a4e0a8099c411659a27e8bfb52c99bee87488a423419",
+    "failed-08.png": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b",
+    "feng-failed.png": "6cb6ff55502370a0eea9f299a0b9307061e453a05edbecd9f8c13af4fd6cca24"
+  },
+  "excluded": "The parent R3 first trial remains self-rejected; generated sources and intermediate references are not independently approved artwork."
+}

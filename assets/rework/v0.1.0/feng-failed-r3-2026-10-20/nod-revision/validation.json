@@ -1,9 +1,11 @@
 {
-  "status": "CANDIDATE_READY_FOR_USER_REVIEW",
-  "userApproval": "PENDING",
+  "status": "FENG_FAILED_ART_APPROVED",
+  "userApproval": "APPROVED",
+  "reviewDate": "2026-10-21",
+  "approvalRecord": "review-status.json",
   "selfReview": {
     "scope": "Native + 4x ordered frames + 6x hands/cuffs, not App runtime QA",
-    "userApproval": "PENDING",
+    "userApproval": "APPROVED",
     "observations": [
       "Clearer downward facial pitch than the rejected first trial",
       "No visible duplicate finger, detached wrist, elbow or lapel tearing in reviewed sheets",
@@ -13,7 +15,7 @@
     "limitations": [
       "Generated local facial art is not pixel-identical to the original face",
       "Automated geometric checks cannot certify perceived identity or motion quality",
-      "No user approval or live App integration is claimed"
+      "User art approval recorded on 2026-10-21; live App integration remains unperformed"
     ]
   },
   "runtimeIntegrated": false,

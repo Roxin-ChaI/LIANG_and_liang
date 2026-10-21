@@ -1,6 +1,7 @@
 # Feng Failed R3 — 原位握拳与低头
 
-状态：制作中，未批准、未接入 App。
+当前状态：2026-10-21 用户批准 nod-revision 8 帧动画，已冻结、未接入 App。
+下文制作与自检记录保留历史阶段状态；最终批准见文末。
 
 本轮只处理 Feng Failed；不改已经批准的 Feng Look、其它动作、
 正式图集、播放器、Scheduler、Hooks。
@@ -60,3 +61,12 @@
 
 结论：`CANDIDATE_READY_FOR_USER_REVIEW`，不是艺术批准。正式 atlas、
 其它已批准状态、运行 App 和素材选择配置未修改。
+
+## 用户批准 — 2026-10-21
+
+用户原话：「Feng Failed 审核通过,我再审一下Feng Look」。
+批准范围仅为 nod-revision 的 8 帧及对应条带，标记 `FENG_FAILED_ART_APPROVED`。
+`review-status.json` 记录 9 个文件的 SHA256，生成入口禁止覆盖批准目录。
+PNG/GIF 原字节不变；不将父目录已自检否决的首轮候选一并批准。
+本次未改正式 atlas、运行 App 或素材选择配置。Feng Look 仅重新展示既有四方向，
+不扩帧、不重新生成，也不将「再审一下」误记为新批准或否决。

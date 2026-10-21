@@ -1,5 +1,6 @@
 """Validate the candidate without equating raster invariants to art approval."""
 import json
+import hashlib
 from pathlib import Path
 
 import numpy as np
@@ -70,8 +71,9 @@ def test_strip_and_gif_preserve_each_frame(frames):
 def test_honest_review_gate_and_no_runtime_integration():
     report = json.loads((OUT/"validation.json").read_text())
     assert report["structuralChecksPassed"]
-    assert report["status"] == "CANDIDATE_READY_FOR_USER_REVIEW"
-    assert report["userApproval"] == "PENDING"
+    assert report["status"] == "FENG_FAILED_ART_APPROVED"
+    assert report["userApproval"] == "APPROVED"
+    assert report["reviewDate"] == "2026-10-21"
     assert not report["runtimeIntegrated"]
     assert report["imagegenUsed"] and report["headSilhouetteLocked"]
     assert report["selfReview"]["limitations"]
@@ -82,3 +84,27 @@ def test_first_trial_is_preserved_and_rejected():
     assert report["status"] == "SELF_REVIEW_REJECTED_NOD_TOO_WEAK"
     assert report["structuralChecksPassed"]
     assert OUT != BASE
+
+
+def test_approved_pixels_match_frozen_fingerprints():
+    record = json.loads((OUT/"review-status.json").read_text())
+    assert record["generatorLocked"] and record["userApproval"] == "APPROVED"
+    assert not record["runtimeIntegrated"]
+    assert len(record["sha256"]) == 9
+    for name, expected in record["sha256"].items():
+        assert hashlib.sha256((OUT/name).read_bytes()).hexdigest() == expected
+
+
+def test_generators_refuse_approved_output_without_touching_bytes():
+    from tools.prepare_feng_failed_r3 import prepare
+    from tools.finish_feng_failed_r3 import build
+    from tools.review_feng_failed_r3_nod import review
+    before = {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
+              for p in OUT.iterdir() if p.is_file()}
+    for fn, kwargs in [(prepare, {}), (review, {}),
+                       (build, {"output": OUT}),
+                       (build, {"output": OUT/".."/"nod-revision"})]:
+        with pytest.raises(RuntimeError, match="frozen"):
+            fn(**kwargs)
+    assert before == {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
+                      for p in OUT.iterdir() if p.is_file()}
