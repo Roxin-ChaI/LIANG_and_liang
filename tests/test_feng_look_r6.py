@@ -67,6 +67,18 @@ def test_approved_cardinals_match_frozen_hashes():
         assert hashlib.sha256((OUT/name).read_bytes()).hexdigest()==expected
 
 
+def test_reconfirmation_preserves_original_approval_scope():
+    record=json.loads((OUT/"review-status.json").read_text())
+    report=json.loads((OUT/"validation.json").read_text())
+    assert record["reviewDate"]=="2026-10-20"
+    assert record["reconfirmedDate"]=="2026-10-21"
+    assert record["reconfirmationFeedback"]=="Feng Look 审核通过"
+    assert report["approvalReconfirmedDate"]==record["reconfirmedDate"]
+    assert record["directions"]==[0,90,180,270]
+    assert not record["runtimeIntegrated"]
+    assert not record["complete16DirectionAnimation"]
+
+
 def test_every_writer_refuses_to_overwrite_approved_art():
     from tools.finish_feng_look_r6 import extract,composite_trial,clean_head_candidates,review
     from tools.prepare_feng_look_r6 import build

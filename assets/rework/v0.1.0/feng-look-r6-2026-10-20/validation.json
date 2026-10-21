@@ -2,6 +2,7 @@
   "status": "FOUR_CARDINAL_KEYPOSES_ART_APPROVED",
   "userApproval": "APPROVED",
   "approvalRecord": "review-status.json",
+  "approvalReconfirmedDate": "2026-10-21",
   "runtimeIntegrated": false,
   "complete16DirectionAnimation": false,
   "imagegenUsed": true,
