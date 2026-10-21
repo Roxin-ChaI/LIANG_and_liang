@@ -1,0 +1,16 @@
+{
+  "status": "BASE_SELF_REVIEW_PASSED_FOR_MOTION_STUDY",
+  "userApproval": "PENDING",
+  "runtimeIntegrated": false,
+  "source": "source-body-edit.png",
+  "evidence": "base-detail.png",
+  "normalization": "Fixed reference crop to 96x132 with nearest-neighbor; alpha threshold 128; exact source-palette restriction. No foreground bbox fitting.",
+  "originalPixelReuse": "All canonical rows y<160 are byte-identical. Only the generated lower-knee/ankle/shoe region is composited.",
+  "selfReview": {
+    "identity": "Exact original head, glasses, face and neck; no generated face or head scaling.",
+    "armsAndSuit": "Exact original pixels eliminate first-draft shortening and pinched waist.",
+    "knees": "Mild flexion joins original upper legs; no visible disconnected knee edge in native and 5x detail review.",
+    "feet": "Lowest shoe pixel y=193, ten pixels above original ground baseline y=203; angled shoes, not planted walking feet.",
+    "limitation": "This is a motion-study base, not user-approved animation. Slight knee flexion changes silhouette height without whole-body scaling."
+  }
+}

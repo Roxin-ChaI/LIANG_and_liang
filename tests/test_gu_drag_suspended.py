@@ -39,3 +39,18 @@ def test_first_body_draft_is_explicitly_rejected():
     idle = Image.open(OUT / "canonical-idle.png")
     draft = Image.open(OUT / "suspended-base.png")
     assert draft.crop((0,0,192,88)).tobytes() == idle.crop((0,0,192,88)).tobytes()
+
+
+def test_revised_pose_reuses_original_upper_body_and_is_airborne():
+    from tools.build_gu_drag_suspended import R2
+    from tools.finish_feng_look_r6 import components
+    import numpy as np
+    idle = np.array(Image.open(OUT / "canonical-idle.png"))
+    pose = Image.open(R2 / "suspended-base.png")
+    p = np.array(pose)
+    assert np.array_equal(idle[:160], p[:160])
+    assert pose.getbbox() == (54,4,122,194)
+    assert len(components(pose)) == 1
+    assert set(np.unique(p[:,:,3])) == {0,255}
+    assert not p[p[:,:,3] == 0,:3].any()
+    assert pose.getbbox()[3]-1 < 203
