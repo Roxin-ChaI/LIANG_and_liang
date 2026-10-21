@@ -28,6 +28,7 @@ def assert_unapproved(folder=OUT):
 
 def prepare():
     assert_unapproved()
+    assert_unapproved(OUT / "revision-2")
     OUT.mkdir(parents=True, exist_ok=True)
     idle = cell(Image.open(GU).convert("RGBA"), 0, 0)
     idle.save(OUT / "canonical-idle.png")

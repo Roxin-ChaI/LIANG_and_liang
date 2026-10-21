@@ -54,3 +54,92 @@ def test_revised_pose_reuses_original_upper_body_and_is_airborne():
     assert set(np.unique(p[:,:,3])) == {0,255}
     assert not p[p[:,:,3] == 0,:3].any()
     assert pose.getbbox()[3]-1 < 203
+
+
+def final_frames():
+    from tools.build_gu_drag_suspended import R2
+    return [Image.open(R2/f"right-{i:02d}.png").convert("RGBA") for i in range(1,9)]
+
+
+def test_eight_real_frames_and_exact_strip_order():
+    from tools.build_gu_drag_suspended import R2
+    frames=final_frames()
+    assert len({im.tobytes() for im in frames}) == 8
+    strip=Image.open(R2/"gu-running-right.png")
+    assert strip.mode=="RGBA" and strip.size==(1536,208)
+    for i,frame in enumerate(frames):
+        assert frame.size==(192,208)
+        assert strip.crop((i*192,0,(i+1)*192,208)).tobytes()==frame.tobytes()
+
+
+def test_head_fixed_while_torso_hands_and_feet_move_together():
+    import numpy as np
+    from tools.build_gu_drag_suspended import R2,row_offsets
+    base=np.array(Image.open(R2/"suspended-base.png"))
+    idle=np.array(Image.open(OUT/"canonical-idle.png"))
+    for i,frame in enumerate(final_frames()):
+        p=np.array(frame)
+        assert np.array_equal(p[:88],idle[:88])
+        for y,dx in enumerate(row_offsets(i)):
+            x=np.where(base[y,:,3]>0)[0]
+            assert np.array_equal(p[y,x+dx],base[y,x])
+            assert int((p[y,:,3]>0).sum())==len(x)
+        assert row_offsets(i)[130] < 0
+        assert row_offsets(i)[150] < 0
+        assert row_offsets(i)[193] < 0
+    for y in [110,130,150,180,193]:
+        assert len({int(row_offsets(i)[y]) for i in range(8)})>=2
+
+
+def test_alpha_palette_connectedness_no_clipping_or_ground_contact():
+    import numpy as np
+    from tools.build_gu_drag_suspended import R2
+    from tools.finish_feng_look_r6 import components
+    base=np.array(Image.open(R2/"suspended-base.png"))
+    colors={tuple(c) for c in base[base[:,:,3]>0]}
+    for frame in final_frames():
+        p=np.array(frame)
+        assert set(np.unique(p[:,:,3]))=={0,255}
+        assert not p[p[:,:,3]==0,:3].any()
+        assert {tuple(c) for c in p[p[:,:,3]>0]}==colors
+        assert len(components(frame))==1
+        box=frame.getbbox()
+        assert box[0]>=4 and box[1]>=4 and box[2]<=188
+        assert box[3]==194
+        assert not p[194:].any()
+
+
+def test_offsets_and_loop_cannot_introduce_large_discontinuities():
+    import numpy as np
+    from tools.build_gu_drag_suspended import row_offsets
+    for i in range(8):
+        current=row_offsets(i)
+        adjacent=row_offsets((i+1)%8)
+        assert int(np.abs(np.diff(current)).max())<=1
+        assert int(np.abs(adjacent-current).max())<=3
+        assert not current[:88].any()
+
+
+def test_preview_order_frame_count_and_actual_drag_cadence():
+    from tools.build_gu_drag_suspended import R2,DURATIONS
+    assert DURATIONS==[120]*8
+    for name,durations in [("preview.gif",DURATIONS),("preview-native.gif",DURATIONS),
+                           ("idle-comparison.gif",DURATIONS),("preview-slow.gif",[500]*8)]:
+        im=Image.open(R2/name)
+        assert im.n_frames==8
+        assert im.info["loop"]==0
+        for i,duration in enumerate(durations):
+            im.seek(i)
+            assert im.info["duration"]==duration
+
+
+def test_candidate_does_not_claim_user_or_runtime_approval():
+    from tools.build_gu_drag_suspended import R2
+    validation=json.loads((R2/"validation.json").read_text())
+    review=json.loads((R2/"review-status.json").read_text())
+    assert validation["checksPassed"]
+    assert validation["uniqueFrames"]==8
+    assert review["status"]=="CANDIDATE_READY_FOR_USER_REVIEW"
+    assert review["userApproval"]==validation["userApproval"]=="PENDING"
+    assert not review["runtimeIntegrated"] and not validation["runtimeIntegrated"]
+    assert validation["dynamicBrowserReview"].startswith("NOT_VERIFIED")

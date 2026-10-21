@@ -1,0 +1,19 @@
+{
+  "status": "CANDIDATE_READY_FOR_USER_REVIEW",
+  "userApproval": "PENDING",
+  "generatorLocked": false,
+  "runtimeIntegrated": false,
+  "reviewScope": "Gu Drag Right only, eight suspended-sway frames; no other direction or character",
+  "selfReview": {
+    "method": "Inspected all eight PNGs in native contact sheet and 4x collar/elbow/cuff/knee details on alternating light/dark backgrounds; checked adjacent silhouette displacements including 8-to-1.",
+    "head": "Exact Idle pixels at their original position, no head resizing, re-expression or new glasses.",
+    "body": "Original upper-body pixels travel together in small continuous integer scanline offsets. No torso/arm x-boundary cut and no shoulder widening.",
+    "seams": "No obvious detached limb, cuff gap, white fringe or color discontinuity observed in the inspected sheets.",
+    "motion": "All eight frames differ. Waist, hands and feet move, with a fixed neck anchor; no alternating floor-contact stride. Adjacent maximum displacement is 1-3 pixels, including loop closure.",
+    "limitation": "Continuous scanline displacement is a limited sway study, not a fully articulated physical rig. Whether the nape-lift reads naturally requires the user's GIF review.",
+    "browserGifPlayback": "NOT_VERIFIED: browser file URL action denied by security policy. No alternate browser or local-server workaround attempted.",
+    "appRuntime": "NOT_TESTED; current App and asset overrides were not changed."
+  },
+  "reviewArtifacts": ["preview.gif", "preview-slow.gif", "preview-native.gif", "idle-comparison.gif", "contact.png", "seam-detail.png", "adjacent-silhouettes.png"],
+  "creation": "Built-in image editing for a local knee/ankle/shoe edit, then fixed-canvas nearest-neighbor normalization, original Idle pixel reuse, and integer-only sway; no ImageGen CLI. Prompts and rejected draft retained."
+}
