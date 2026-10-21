@@ -30,3 +30,12 @@ def test_approval_freeze_guard(tmp_path):
     (tmp_path / "review-status.json").write_text('{"generatorLocked":true}')
     with pytest.raises(RuntimeError, match="frozen"):
         assert_unapproved(tmp_path)
+
+
+def test_first_body_draft_is_explicitly_rejected():
+    report = json.loads((OUT / "base-self-review.json").read_text())
+    assert report["status"] == "SELF_REVIEW_REJECTED_ARM_LENGTH_AND_WAIST"
+    assert not report["runtimeIntegrated"]
+    idle = Image.open(OUT / "canonical-idle.png")
+    draft = Image.open(OUT / "suspended-base.png")
+    assert draft.crop((0,0,192,88)).tobytes() == idle.crop((0,0,192,88)).tobytes()

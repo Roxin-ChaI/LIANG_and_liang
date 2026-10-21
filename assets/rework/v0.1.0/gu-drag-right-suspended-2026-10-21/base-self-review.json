@@ -1,0 +1,13 @@
+{
+  "status": "SELF_REVIEW_REJECTED_ARM_LENGTH_AND_WAIST",
+  "userApproval": "PENDING",
+  "runtimeIntegrated": false,
+  "source": "source-body-edit.png",
+  "evidence": "base-detail.png",
+  "observed": [
+    "The head is pixel-identical to Idle; no new face is used.",
+    "The generated lower-body posture reads as suspended, but the hanging hands end too high relative to Idle.",
+    "The waist is pinched and the suit structure is too altered for the requested Idle proportions."
+  ],
+  "decision": "Do not animate this draft. Request one targeted body revision retaining original arm length and torso width."
+}

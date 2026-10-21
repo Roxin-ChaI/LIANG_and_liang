@@ -29,4 +29,4 @@
 
 ## 当前状态
 
-`SPEC_READY`。仅 Gu Right；Feng Look 补帧已延后。未生成候选，未运行 App 验收。
+首张身体姿态已进行 Idle 对照自检，标记 `SELF_REVIEW_REJECTED_ARM_LENGTH_AND_WAIST`：悬空方向成立，但手臂偏短、腰线过紧。未扩帧，准备仅定向修正身体。原始头部像素完整保留。仅 Gu Right；Feng Look 补帧已延后，未运行 App 验收。
