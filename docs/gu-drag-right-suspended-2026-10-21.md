@@ -1,4 +1,15 @@
-# Gu Drag Right — 后颈悬提摆荡候选
+# Gu Drag Right — 后颈悬提摆荡（已批准）
+
+## 用户审批 — 2026-10-22
+
+用户原话：「可以,当前审核通过」。批准对象为上一轮展示的 `revision-2` Gu 右拖拽 8 帧悬提摆荡动画，标记 `GU_DRAG_RIGHT_ART_APPROVED`。
+
+- 冻结 `right-01.png` 至 `right-08.png`、`gu-running-right.png` 和 4 个审核 GIF，SHA256 记录于 `revision-2/review-status.json`。
+- 启用现有生成器锁；基础姿态归一化、动画生成和引用准备不得覆盖已批准素材。没有重新生成或修改任何 PNG/GIF。
+- 本次是用户艺术审批，不把历史浏览器自动播放未验证或 App 未测试改写为 PASS。`runtimeIntegrated=false`，当前 App、atlas、Hook、Scheduler 不变。
+- 审批不涵盖已否决的第一版身体图、Gu Left、Feng Right/Left。Feng Look 补帧继续延后；下一动作应为 Gu Left，本次不自动制作。
+
+下文保留制作和自检过程的历史状态；当前审批以上述记录为准。
 
 ## 排期与授权范围
 
@@ -27,7 +38,7 @@
 4. 自动检查尺寸/alpha/隐藏 RGB/连通性/无裁切/锁定头部/源文件哈希/8→1 位移连续性。视觉逐帧和循环自检单独记录，技术通过不能代替用户批准。
 5. 输出原速 GIF、慢速 GIF、Idle 对照 GIF、逐帧 Contact Sheet、局部细节图与 QA。状态只能为待审核或自检失败；不自行标记用户通过。
 
-## 当前状态
+## 初稿自检（历史）
 
 首张身体姿态已进行 Idle 对照自检，标记 `SELF_REVIEW_REJECTED_ARM_LENGTH_AND_WAIST`：悬空方向成立，但手臂偏短、腰线过紧。未扩帧，准备仅定向修正身体。原始头部像素完整保留。仅 Gu Right；Feng Look 补帧已延后，未运行 App 验收。
 
@@ -35,7 +46,7 @@
 
 `revision-2` 仅使用第二次生成的膝部以下姿态；y<160 的头部、脖颈、肩膀、躯干、双臂、手、袖口全部复用 Idle 原像素。新脚底 y=193，悬空 10 px。膝部连接和衣服颜色在原尺寸与放大细节中自检通过；该判定仅允许进入摆动研究，不构成用户艺术审批。第一版及其否决记录保留，不作为最终候选。
 
-## 8 帧待审候选
+## 8 帧候选制作记录（审批前）
 
 路径：`assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/`。
 

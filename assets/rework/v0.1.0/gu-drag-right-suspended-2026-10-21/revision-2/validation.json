@@ -1,6 +1,7 @@
 {
-  "status": "STRUCTURAL_PASS_VISUAL_REVIEW_PENDING",
-  "userApproval": "PENDING",
+  "status": "GU_DRAG_RIGHT_ART_APPROVED",
+  "userApproval": "APPROVED",
+  "reviewDate": "2026-10-22",
   "runtimeIntegrated": false,
   "frameCount": 8,
   "stripSize": [

@@ -133,13 +133,38 @@ def test_preview_order_frame_count_and_actual_drag_cadence():
             assert im.info["duration"]==duration
 
 
-def test_candidate_does_not_claim_user_or_runtime_approval():
+def test_user_approval_is_scoped_and_does_not_claim_runtime_verification():
     from tools.build_gu_drag_suspended import R2
     validation=json.loads((R2/"validation.json").read_text())
     review=json.loads((R2/"review-status.json").read_text())
     assert validation["checksPassed"]
     assert validation["uniqueFrames"]==8
-    assert review["status"]=="CANDIDATE_READY_FOR_USER_REVIEW"
-    assert review["userApproval"]==validation["userApproval"]=="PENDING"
+    assert review["status"]==validation["status"]=="GU_DRAG_RIGHT_ART_APPROVED"
+    assert review["userApproval"]==validation["userApproval"]=="APPROVED"
+    assert review["reviewDate"]==validation["reviewDate"]=="2026-10-22"
+    assert review["userFeedback"]=="可以,当前审核通过"
+    assert review["generatorLocked"]
+    assert "excludes rejected draft" in review["approvedScope"]
     assert not review["runtimeIntegrated"] and not validation["runtimeIntegrated"]
     assert validation["dynamicBrowserReview"].startswith("NOT_VERIFIED")
+
+
+def test_approved_frames_strip_and_review_gifs_are_frozen():
+    from tools.build_gu_drag_suspended import R2
+    record=json.loads((R2/"review-status.json").read_text())
+    expected={f"right-{i:02d}.png" for i in range(1,9)} | {
+        "gu-running-right.png","preview.gif","preview-slow.gif",
+        "preview-native.gif","idle-comparison.gif"}
+    assert set(record["sha256"])==expected
+    for name,digest in record["sha256"].items():
+        assert sha(R2/name)==digest
+
+
+def test_approved_candidate_writers_abort_without_touching_files():
+    from tools.build_gu_drag_suspended import R2,normalize_r2,animate
+    before={str(p.relative_to(OUT)):sha(p) for p in OUT.rglob("*") if p.is_file()}
+    for writer in [prepare,normalize_r2,animate]:
+        with pytest.raises(RuntimeError,match="frozen"):
+            writer()
+    after={str(p.relative_to(OUT)):sha(p) for p in OUT.rglob("*") if p.is_file()}
+    assert after==before
