@@ -140,15 +140,35 @@ def test_sources_and_live_asset_selection_are_unchanged():
     verify_right_source()
 
 
-def test_user_and_runtime_approval_are_not_inherited():
+def test_explicit_user_approval_does_not_claim_runtime_verification():
     validation=json.loads((OUT/"validation.json").read_text())
     review=json.loads((OUT/"review-status.json").read_text())
     assert validation["checksPassed"] and validation["uniqueFrames"]==8
-    assert review["status"]=="CANDIDATE_READY_FOR_USER_REVIEW"
-    assert review["userApproval"]==validation["userApproval"]=="PENDING"
+    assert review["status"]==validation["status"]=="GU_DRAG_LEFT_ART_APPROVED"
+    assert review["userApproval"]==validation["userApproval"]=="APPROVED"
+    assert review["reviewDate"]==validation["reviewDate"]=="2026-10-23"
+    assert review["userFeedback"].startswith("审核通过")
+    assert "no runtime integration or Feng drag approval" in review["approvedScope"]
     assert not review["runtimeIntegrated"] and not validation["runtimeIntegrated"]
-    assert not review["generatorLocked"]
+    assert review["generatorLocked"]
     assert validation["dynamicPlayback"].startswith("NOT_VERIFIED")
+
+
+def test_approved_frames_strip_and_gifs_are_frozen():
+    review=json.loads((OUT/"review-status.json").read_text())
+    expected={f"left-{i:02d}.png" for i in range(1,9)} | {
+        "gu-running-left.png","preview.gif","preview-slow.gif","preview-native.gif",
+        "idle-comparison.gif","right-left-comparison.gif"}
+    assert set(review["sha256"])==expected
+    for name,digest in review["sha256"].items():
+        assert sha(OUT/name)==digest
+
+
+def test_approved_default_build_aborts_without_writes():
+    before={p.name:sha(p) for p in OUT.iterdir() if p.is_file()}
+    with pytest.raises(RuntimeError,match="frozen"):
+        build()
+    assert {p.name:sha(p) for p in OUT.iterdir() if p.is_file()}==before
 
 
 def test_rebuild_is_deterministic_and_does_not_modify_right(tmp_path):
