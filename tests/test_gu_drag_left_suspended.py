@@ -6,9 +6,11 @@ import pytest
 from PIL import Image
 
 from tools.build_gu_drag_left_suspended import (
-    OUT, RIGHT, RIGHT_ROOT, assert_unapproved, derive_left, verify_right_source,
+    OUT, RIGHT, RIGHT_ROOT, ROOT, assert_unapproved, derive_left, verify_right_source, build,
 )
 from tools.build_gu_drag_suspended import row_offsets
+from tools.prepare_gu_drag_suspended import sha
+from tools.finish_feng_look_r6 import components
 
 
 def read_right(i):
@@ -75,3 +77,87 @@ def test_approved_candidate_cannot_be_overwritten(tmp_path):
     (tmp_path/"review-status.json").write_text('{"generatorLocked":true}')
     with pytest.raises(RuntimeError,match="frozen"):
         assert_unapproved(tmp_path)
+    before={p.name:sha(p) for p in tmp_path.iterdir()}
+    with pytest.raises(RuntimeError,match="frozen"):
+        build(tmp_path)
+    assert {p.name:sha(p) for p in tmp_path.iterdir()}==before
+
+
+def read_lefts():
+    return [Image.open(OUT/f"left-{i:02d}.png").convert("RGBA") for i in range(1,9)]
+
+
+def test_saved_frames_match_derivation_and_strip_order():
+    frames=read_lefts()
+    assert len({im.tobytes() for im in frames})==8
+    strip=Image.open(OUT/"gu-running-left.png")
+    assert strip.mode=="RGBA" and strip.size==(1536,208)
+    for i,f in enumerate(frames):
+        assert f.tobytes()==derive_left(read_right(i),i).tobytes()
+        assert strip.crop((i*192,0,(i+1)*192,208)).tobytes()==f.tobytes()
+
+
+def test_outputs_are_connected_airborne_and_have_no_extra_pixels():
+    for i,frame in enumerate(read_lefts()):
+        p=np.array(frame);r=np.array(read_right(i))
+        assert frame.size==(192,208) and frame.mode=="RGBA"
+        assert set(np.unique(p[:,:,3]))=={0,255}
+        assert not p[p[:,:,3]==0,:3].any()
+        assert np.array_equal((p[:,:,3]>0).sum(1),(r[:,:,3]>0).sum(1))
+        assert {tuple(c) for c in p[p[:,:,3]>0]}=={tuple(c) for c in r[r[:,:,3]>0]}
+        assert len(components(frame))==1
+        box=frame.getbbox()
+        assert box[0]>=4 and box[1]==4 and box[2]<=188 and box[3]==194
+
+
+def test_cycle_and_upper_body_motion_are_continuous():
+    for i in range(8):
+        a=-row_offsets(i);b=-row_offsets((i+1)%8)
+        assert int(np.abs(a-b).max())<=3
+        assert int(np.abs(np.diff(a)).max())<=1
+        assert not a[:88].any()
+    for y in [110,130,150,193]:
+        assert len({int(row_offsets(i)[y]) for i in range(8)})>=2
+
+
+def test_all_gifs_retain_eight_frames_and_documented_timing():
+    for name in ["preview.gif","preview-native.gif","idle-comparison.gif",
+                 "right-left-comparison.gif","preview-slow.gif"]:
+        gif=Image.open(OUT/name)
+        assert gif.n_frames==8 and gif.info["loop"]==0
+        for i in range(8):
+            gif.seek(i)
+            assert gif.info["duration"]==(500 if name=="preview-slow.gif" else 120)
+    assert Image.open(OUT/"preview-native.gif").size==(192,208)
+
+
+def test_sources_and_live_asset_selection_are_unchanged():
+    manifest=json.loads((OUT/"source-manifest.json").read_text())
+    assert not manifest["imagegenUsed"] and not manifest["resamplingUsed"]
+    for name,digest in manifest["sourceHashes"].items():
+        assert sha(ROOT/name)==digest
+    assert "standalone-app/asset-overrides.json" in manifest["sourceHashes"]
+    verify_right_source()
+
+
+def test_user_and_runtime_approval_are_not_inherited():
+    validation=json.loads((OUT/"validation.json").read_text())
+    review=json.loads((OUT/"review-status.json").read_text())
+    assert validation["checksPassed"] and validation["uniqueFrames"]==8
+    assert review["status"]=="CANDIDATE_READY_FOR_USER_REVIEW"
+    assert review["userApproval"]==validation["userApproval"]=="PENDING"
+    assert not review["runtimeIntegrated"] and not validation["runtimeIntegrated"]
+    assert not review["generatorLocked"]
+    assert validation["dynamicPlayback"].startswith("NOT_VERIFIED")
+
+
+def test_rebuild_is_deterministic_and_does_not_modify_right(tmp_path):
+    before={str(p.relative_to(RIGHT_ROOT)):sha(p) for p in RIGHT_ROOT.rglob("*") if p.is_file()}
+    result=build(tmp_path)
+    assert result["checksPassed"]
+    for name in [*[f"left-{i:02d}.png" for i in range(1,9)],"gu-running-left.png",
+                 "preview.gif","preview-slow.gif","preview-native.gif","idle-comparison.gif",
+                 "right-left-comparison.gif","contact.png","seam-detail.png"]:
+        assert sha(tmp_path/name)==sha(OUT/name)
+    after={str(p.relative_to(RIGHT_ROOT)):sha(p) for p in RIGHT_ROOT.rglob("*") if p.is_file()}
+    assert before==after

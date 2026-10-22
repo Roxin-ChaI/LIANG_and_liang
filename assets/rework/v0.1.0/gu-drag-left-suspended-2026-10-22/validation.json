@@ -1,0 +1,259 @@
+{
+  "status": "STRUCTURAL_PASS_VISUAL_REVIEW_PENDING",
+  "userApproval": "PENDING",
+  "runtimeIntegrated": false,
+  "stripSize": [
+    1536,
+    208
+  ],
+  "frameCount": 8,
+  "durationsMs": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120
+  ],
+  "uniqueFrames": 8,
+  "sourceFilesUnchanged": true,
+  "checksPassed": true,
+  "frames": [
+    {
+      "frame": 1,
+      "bbox": [
+        54,
+        4,
+        125,
+        194
+      ],
+      "footY": 193,
+      "neckDx": 0,
+      "waistDx": 3,
+      "handsDx": 4,
+      "shoesDx": 10,
+      "nextMaxDx": 3,
+      "checks": {
+        "rgba192x208": true,
+        "headNeckIdleExact": true,
+        "binaryAlpha": true,
+        "zeroHiddenRgb": true,
+        "noNewColors": true,
+        "sameOccupiedPixelsPerRow": true,
+        "oneConnectedFigure": true,
+        "safeMargins": true,
+        "feetAirborneAt193": true,
+        "positiveBodyLag": true,
+        "maxAdjacentStep3IncludingLoop": true,
+        "maxRowStep1": true
+      }
+    },
+    {
+      "frame": 2,
+      "bbox": [
+        54,
+        4,
+        127,
+        194
+      ],
+      "footY": 193,
+      "neckDx": 0,
+      "waistDx": 4,
+      "handsDx": 7,
+      "shoesDx": 13,
+      "nextMaxDx": 2,
+      "checks": {
+        "rgba192x208": true,
+        "headNeckIdleExact": true,
+        "binaryAlpha": true,
+        "zeroHiddenRgb": true,
+        "noNewColors": true,
+        "sameOccupiedPixelsPerRow": true,
+        "oneConnectedFigure": true,
+        "safeMargins": true,
+        "feetAirborneAt193": true,
+        "positiveBodyLag": true,
+        "maxAdjacentStep3IncludingLoop": true,
+        "maxRowStep1": true
+      }
+    },
+    {
+      "frame": 3,
+      "bbox": [
+        54,
+        4,
+        129,
+        194
+      ],
+      "footY": 193,
+      "neckDx": 0,
+      "waistDx": 6,
+      "handsDx": 8,
+      "shoesDx": 14,
+      "nextMaxDx": 1,
+      "checks": {
+        "rgba192x208": true,
+        "headNeckIdleExact": true,
+        "binaryAlpha": true,
+        "zeroHiddenRgb": true,
+        "noNewColors": true,
+        "sameOccupiedPixelsPerRow": true,
+        "oneConnectedFigure": true,
+        "safeMargins": true,
+        "feetAirborneAt193": true,
+        "positiveBodyLag": true,
+        "maxAdjacentStep3IncludingLoop": true,
+        "maxRowStep1": true
+      }
+    },
+    {
+      "frame": 4,
+      "bbox": [
+        54,
+        4,
+        129,
+        194
+      ],
+      "footY": 193,
+      "neckDx": 0,
+      "waistDx": 6,
+      "handsDx": 9,
+      "shoesDx": 13,
+      "nextMaxDx": 3,
+      "checks": {
+        "rgba192x208": true,
+        "headNeckIdleExact": true,
+        "binaryAlpha": true,
+        "zeroHiddenRgb": true,
+        "noNewColors": true,
+        "sameOccupiedPixelsPerRow": true,
+        "oneConnectedFigure": true,
+        "safeMargins": true,
+        "feetAirborneAt193": true,
+        "positiveBodyLag": true,
+        "maxAdjacentStep3IncludingLoop": true,
+        "maxRowStep1": true
+      }
+    },
+    {
+      "frame": 5,
+      "bbox": [
+        54,
+        4,
+        128,
+        194
+      ],
+      "footY": 193,
+      "neckDx": 0,
+      "waistDx": 5,
+      "handsDx": 7,
+      "shoesDx": 10,
+      "nextMaxDx": 3,
+      "checks": {
+        "rgba192x208": true,
+        "headNeckIdleExact": true,
+        "binaryAlpha": true,
+        "zeroHiddenRgb": true,
+        "noNewColors": true,
+        "sameOccupiedPixelsPerRow": true,
+        "oneConnectedFigure": true,
+        "safeMargins": true,
+        "feetAirborneAt193": true,
+        "positiveBodyLag": true,
+        "maxAdjacentStep3IncludingLoop": true,
+        "maxRowStep1": true
+      }
+    },
+    {
+      "frame": 6,
+      "bbox": [
+        54,
+        4,
+        126,
+        194
+      ],
+      "footY": 193,
+      "neckDx": 0,
+      "waistDx": 4,
+      "handsDx": 5,
+      "shoesDx": 7,
+      "nextMaxDx": 2,
+      "checks": {
+        "rgba192x208": true,
+        "headNeckIdleExact": true,
+        "binaryAlpha": true,
+        "zeroHiddenRgb": true,
+        "noNewColors": true,
+        "sameOccupiedPixelsPerRow": true,
+        "oneConnectedFigure": true,
+        "safeMargins": true,
+        "feetAirborneAt193": true,
+        "positiveBodyLag": true,
+        "maxAdjacentStep3IncludingLoop": true,
+        "maxRowStep1": true
+      }
+    },
+    {
+      "frame": 7,
+      "bbox": [
+        54,
+        4,
+        125,
+        194
+      ],
+      "footY": 193,
+      "neckDx": 0,
+      "waistDx": 2,
+      "handsDx": 4,
+      "shoesDx": 6,
+      "nextMaxDx": 1,
+      "checks": {
+        "rgba192x208": true,
+        "headNeckIdleExact": true,
+        "binaryAlpha": true,
+        "zeroHiddenRgb": true,
+        "noNewColors": true,
+        "sameOccupiedPixelsPerRow": true,
+        "oneConnectedFigure": true,
+        "safeMargins": true,
+        "feetAirborneAt193": true,
+        "positiveBodyLag": true,
+        "maxAdjacentStep3IncludingLoop": true,
+        "maxRowStep1": true
+      }
+    },
+    {
+      "frame": 8,
+      "bbox": [
+        54,
+        4,
+        124,
+        194
+      ],
+      "footY": 193,
+      "neckDx": 0,
+      "waistDx": 2,
+      "handsDx": 3,
+      "shoesDx": 7,
+      "nextMaxDx": 3,
+      "checks": {
+        "rgba192x208": true,
+        "headNeckIdleExact": true,
+        "binaryAlpha": true,
+        "zeroHiddenRgb": true,
+        "noNewColors": true,
+        "sameOccupiedPixelsPerRow": true,
+        "oneConnectedFigure": true,
+        "safeMargins": true,
+        "feetAirborneAt193": true,
+        "positiveBodyLag": true,
+        "maxAdjacentStep3IncludingLoop": true,
+        "maxRowStep1": true
+      }
+    }
+  ],
+  "dynamicPlayback": "NOT_VERIFIED_BY_AGENT; GIF supplied for user review",
+  "appRuntime": "NOT_TESTED; no asset override or live App change"
+}

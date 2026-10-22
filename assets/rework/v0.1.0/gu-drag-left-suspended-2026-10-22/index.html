@@ -1,0 +1,19 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<title>Gu 左拖拽 · 后颈悬提摆荡候选</title><style>
+body{background:#202329;color:#eee;font:16px system-ui;margin:26px;line-height:1.65}
+img{image-rendering:pixelated;max-width:100%;height:auto}a{color:#a4d5ff}
+.grid{display:flex;gap:24px;flex-wrap:wrap}figure{margin:0}small{color:#bdc2cd}</style>
+<h1>Gu Left · 向左悬提、身体向右滞后</h1>
+<p>8 帧候选，120 ms/帧。头部与脖颈保留 Idle 原像素、原位置；不镜像发型和脸。
+仅反转已批准右向运动的身体位移；不重新生成、不缩放。未接入 App，待用户审核。</p>
+<h2>Idle 对照 / 原速</h2><img src="idle-comparison.gif" width="768">
+<h2>右向已批准 / Idle / 左向候选</h2><img src="right-left-comparison.gif" width="1152">
+<div class="grid"><figure><h2>原尺寸</h2><img src="preview-native.gif" width="192"></figure>
+<figure><h2>2× 原速</h2><img src="preview.gif" width="384"></figure>
+<figure><h2>慢速逐帧</h2><img src="preview-slow.gif" width="384"></figure></div>
+<h2>全部 8 帧</h2><a href="contact.png"><img src="contact.png"></a>
+<h2>明暗底细节</h2><a href="seam-detail.png"><img src="seam-detail.png"></a>
+<h2>相邻轮廓（最后一格 8→1）</h2><img src="adjacent-silhouettes.png">
+<p><a href="validation.json">技术检查</a> · <a href="review-status.json">自检及审批状态</a> ·
+<a href="source-manifest.json">来源与冻结哈希</a> · <a href="gu-running-left.png">透明 PNG 条带</a></p>
+<small>GIF 中背景、编号、地面参考线仅用于审阅，生产 PNG 无背景。Feng Look 补帧仍延后。</small></html>

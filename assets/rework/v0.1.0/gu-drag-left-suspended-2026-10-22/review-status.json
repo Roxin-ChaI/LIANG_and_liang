@@ -1,0 +1,21 @@
+{
+  "status": "CANDIDATE_READY_FOR_USER_REVIEW",
+  "userApproval": "PENDING",
+  "generatorLocked": false,
+  "runtimeIntegrated": false,
+  "scope": "Gu Drag Left only; eight same-order suspended-sway frames. Does not inherit right-direction art approval.",
+  "source": "Approved Gu right-drag revision-2, frozen in 5d84dde",
+  "method": "Reverse the existing integer displacement field while preserving every source scanline's pixel order, colors and alpha. No whole-character mirror, no resampling and no new image generation.",
+  "selfReview": {
+    "evidence": ["contact.png", "seam-detail.png", "adjacent-silhouettes.png"],
+    "method": "All eight native-scale poses, magnified collar/elbow/cuff/knee/shoe regions on alternating dark/light backgrounds, and adjacent silhouette differences including 8-to-1 were inspected.",
+    "identity": "Hair, face, glasses and neck remain exact Idle pixels at the same position; no mirrored hair part or facial drift.",
+    "direction": "Torso, arms and dangling legs trail to screen right under the fixed neck, consistent with leftward dragging. No alternating ground-contact stride.",
+    "seams": "No obvious detached cuff, elbow, knee, added white edge or new suit color discontinuity observed in the inspected sheets.",
+    "loop": "Eight unique frames; measured adjacent displacement 1-3 px including final-to-first. This is a structural continuity check, not a claim of live mouse/App acceptance.",
+    "limitation": "The base pose is asymmetric, so left and right silhouettes are not exact mirrors. Left-direction motion feel and nape-suspension readability remain for independent user GIF review.",
+    "dynamicPlayback": "NOT_VERIFIED_BY_AGENT; original-speed and slow GIFs supplied to the user. No retry of the previously blocked file-URL browser action.",
+    "appRuntime": "NOT_TESTED; current running App and asset overrides were not modified."
+  },
+  "reviewArtifacts": ["preview.gif", "preview-slow.gif", "preview-native.gif", "idle-comparison.gif", "right-left-comparison.gif", "contact.png", "seam-detail.png", "adjacent-silhouettes.png"]
+}

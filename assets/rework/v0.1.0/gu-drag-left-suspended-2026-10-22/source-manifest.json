@@ -1,0 +1,32 @@
+{
+  "status": "GENERATED_FOR_REVIEW",
+  "scope": "gu-running-left-only",
+  "sourceApproval": "GU_DRAG_RIGHT_ART_APPROVED",
+  "sourceApprovalCommit": "5d84dde",
+  "sourceHashes": {
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/right-01.png": "986875c68e464d5bd154a91de8a81319469a82c12d17bab0b6b8ae474a9fa110",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/right-02.png": "7065db623ade1535543a6ba9712bffa74ddf66fa343b978d7197a9cc6d6dfe6b",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/right-03.png": "1673de20ba1be44b877fabeeda7f52bb6e00e05141573608a281018935de802a",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/right-04.png": "8830d0ac0d406a42eeed6090f578b773130f83546146189c31a66b2e374bf713",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/right-05.png": "ef6391e7f5fc10fdfed53007d627ba7c17344b6facda78a00bd91ad2a87177ce",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/right-06.png": "59bd719c2e21c6f1466a1dda94e36498499d4eb4e77c963966d02f1b7b1dc001",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/right-07.png": "96caa1f27d1e5c42153a2db0032abc8480ac26d2c33615672fcefee1dc794617",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/right-08.png": "f6294ae41f9ff2de94776729834b47b9f1af0f8b91bda7f3be32fd21bab4bdc3",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/gu-running-right.png": "02cc3933d5c3e5a9b30b4485dbe1c6dcfc0306cacab74f80e9f2be4180149858",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/idle-comparison.gif": "f819f0e00f6f0ae78b790b4ef147110ab871876cff1425f5731665252bd6ad3d",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/preview-native.gif": "634b66de8894ac9833996aaf9767565ad698da27e83d79f0b291798a7fbf717e",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/preview-slow.gif": "dfdfbcd2290abf0d0cc5f9498cc14cd2ff3a00cdf91120da2140fea0781a254b",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/preview.gif": "f1c2a546fe90fca269f93020b83e9534b3f8d63524298e37fbcc13b65c591b3b",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/review-status.json": "cdb631f0b1593f35f189722dd3da208ba3c4ad3b4c6ea65c41de4e8309dbf6e3",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/validation.json": "72dcb51128b95ba26f5727e454599f4d5be7b9a3d9393405afb40914f457e284",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/canonical-idle.png": "6c925bbcd1386cad107cdffb5aa7569d9ace295790cb9542d7dd0629f074cab3",
+    "tools/build_gu_drag_suspended.py": "2455878d7a411e48493de03711e42fc11b2d0769be9d9d4cce224395fd48652e",
+    "assets/builds/gu/spritesheet.webp": "b6a3f086a9fdb9a4cb7c86d047991e1d3ff9a7a2ab740e4c2f705b42b9d08908",
+    "assets/builds/feng/spritesheet.webp": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+    "standalone-app/asset-overrides.json": "887c3be3c245978ceeb422cc13562e452ec9466b6267f1aabf269b59158ffb1d"
+  },
+  "method": "same-order approved right PNGs, per-row delta=-2*right_offset; identity not mirrored",
+  "imagegenUsed": false,
+  "resamplingUsed": false,
+  "runtimeIntegrated": false
+}
