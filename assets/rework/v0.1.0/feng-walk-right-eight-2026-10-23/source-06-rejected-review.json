@@ -1,0 +1,8 @@
+{
+  "status": "SELF_REJECTED",
+  "source": "source-06-rejected.png",
+  "frame": 6,
+  "reason": "Near thigh repeats first-half support arrangement; near hand is already behind rather than between approved key 3 and key 4 positions.",
+  "runtimeIntegrated": false,
+  "nextAction": "One targeted arm/leg phase correction before accepting frame 6."
+}

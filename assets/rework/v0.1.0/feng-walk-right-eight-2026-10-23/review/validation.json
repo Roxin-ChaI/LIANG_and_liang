@@ -1,0 +1,274 @@
+{
+  "status": "SELF_REVIEW_PENDING",
+  "userApproval": "PENDING",
+  "runtimeIntegrated": false,
+  "frameCount": 8,
+  "cell": [
+    192,
+    208
+  ],
+  "strip": [
+    1536,
+    208
+  ],
+  "durationMs": [
+    140,
+    140,
+    140,
+    140,
+    140,
+    140,
+    140,
+    140
+  ],
+  "keyFramesPixelIdentical": true,
+  "newFrameMetrics": [
+    {
+      "frame": 2,
+      "source": "source-02.png",
+      "sourceSha256": "c7f014e4d1ecb2905416588341d76ff630a435f7776e710bfc5d4b86e9abf648",
+      "sourceSize": [
+        1205,
+        1305
+      ],
+      "sourceBbox": [
+        234,
+        46,
+        876,
+        1265
+      ],
+      "beltCentreX": 621,
+      "commonScale": 0.16324856439704677,
+      "transform": [
+        6.125628140703517,
+        0,
+        30.376884422110606,
+        0,
+        6.125628140703517,
+        17.934673366834204
+      ],
+      "baseline": 203,
+      "bbox": [
+        33,
+        5,
+        138,
+        204
+      ],
+      "height": 199
+    },
+    {
+      "frame": 4,
+      "source": "source-04.png",
+      "sourceSha256": "4e3d351d1f88b291cc760e47f5d5fd66ddb87da0f25fc02d9f953ee3d0b8c6a1",
+      "sourceSize": [
+        1205,
+        1305
+      ],
+      "sourceBbox": [
+        228,
+        86,
+        973,
+        1248
+      ],
+      "beltCentreX": 610,
+      "commonScale": 0.16324856439704677,
+      "transform": [
+        6.125628140703517,
+        0,
+        19.376884422110606,
+        0,
+        6.125628140703517,
+        0.934673366834204
+      ],
+      "baseline": 203,
+      "bbox": [
+        34,
+        14,
+        156,
+        204
+      ],
+      "height": 190
+    },
+    {
+      "frame": 6,
+      "source": "source-06.png",
+      "sourceSha256": "bbed13621e020e76e1f2f315c5df83303b31711a5dbea95668f8245c22cac361",
+      "sourceSize": [
+        1205,
+        1306
+      ],
+      "sourceBbox": [
+        300,
+        78,
+        865,
+        1236
+      ],
+      "beltCentreX": 633,
+      "commonScale": 0.16324856439704677,
+      "transform": [
+        6.125628140703517,
+        0,
+        42.37688442211061,
+        0,
+        6.125628140703517,
+        -11.065326633165796
+      ],
+      "baseline": 203,
+      "bbox": [
+        42,
+        15,
+        134,
+        204
+      ],
+      "height": 189
+    },
+    {
+      "frame": 8,
+      "source": "source-08.png",
+      "sourceSha256": "735183c1658aa430d0818d6204ae85ed622f02d046f5d03e0d598aa07415b398",
+      "sourceSize": [
+        1205,
+        1305
+      ],
+      "sourceBbox": [
+        237,
+        77,
+        931,
+        1262
+      ],
+      "beltCentreX": 641,
+      "commonScale": 0.16324856439704677,
+      "transform": [
+        6.125628140703517,
+        0,
+        50.37688442211061,
+        0,
+        6.125628140703517,
+        14.934673366834204
+      ],
+      "baseline": 203,
+      "bbox": [
+        30,
+        10,
+        144,
+        204
+      ],
+      "height": 194
+    }
+  ],
+  "pairs": [
+    {
+      "keyFrom": 1,
+      "newFrame": 2,
+      "keyTo": 2,
+      "heights": [
+        199,
+        199,
+        199
+      ],
+      "outsideNeighbourHeight": 0,
+      "visualReview": "PENDING"
+    },
+    {
+      "keyFrom": 2,
+      "newFrame": 4,
+      "keyTo": 3,
+      "heights": [
+        199,
+        190,
+        193
+      ],
+      "outsideNeighbourHeight": 3,
+      "visualReview": "PENDING"
+    },
+    {
+      "keyFrom": 3,
+      "newFrame": 6,
+      "keyTo": 4,
+      "heights": [
+        193,
+        189,
+        194
+      ],
+      "outsideNeighbourHeight": 4,
+      "visualReview": "PENDING"
+    },
+    {
+      "keyFrom": 4,
+      "newFrame": 8,
+      "keyTo": 1,
+      "heights": [
+        194,
+        194,
+        199
+      ],
+      "outsideNeighbourHeight": 0,
+      "visualReview": "PENDING"
+    }
+  ],
+  "adjacent": [
+    {
+      "from": 1,
+      "to": 2,
+      "changedPixels": 12383
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "changedPixels": 11954
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "changedPixels": 13218
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "changedPixels": 11034
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "changedPixels": 11681
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "changedPixels": 11869
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "changedPixels": 12527
+    },
+    {
+      "from": 8,
+      "to": 1,
+      "changedPixels": 12456
+    }
+  ],
+  "allBaselines": [
+    203,
+    203,
+    203,
+    203,
+    203,
+    203,
+    203,
+    203
+  ],
+  "allHeights": [
+    199,
+    199,
+    199,
+    190,
+    193,
+    189,
+    194,
+    194
+  ],
+  "processing": "One common isotropic NN scale for all four generated drawings; integer/native registration via belt and sole; alpha threshold128, hidden RGB zero. Approved key pixels copied unchanged. No motion tweening or anatomy warping.",
+  "livePlayback": "NOT_VERIFIED",
+  "appTest": "NOT_TESTED"
+}

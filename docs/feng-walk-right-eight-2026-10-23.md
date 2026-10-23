@@ -37,3 +37,15 @@ reordering, independent bbox-fit scaling or speed-up to conceal errors.
   triples. Final eight-frame review remains pending until the user approves it.
 
 Each completed stage is committed independently. No left derivation this turn.
+
+## First assembly — REWORK_REQUIRED
+
+Four separately generated in-betweens were interleaved at 02/04/06/08; all odd
+frames are pixel-identical to approved keys. Frame 6's initial source was rejected
+for wrong limb phase, then revised once before assembly. The original rejected
+source and prompt are retained, never silently selected by the packager.
+
+Native contact-sheet self-review found frame 4 overreaches its stride, while frames
+4/6 undershoot neighbouring body heights by 3/4px. These are not declared fixed
+by file-order tests. `attempt-1-review.json` requires targeted art corrections.
+The first assembled `review/` remains immutable historical evidence.

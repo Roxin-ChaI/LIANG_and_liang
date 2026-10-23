@@ -1,0 +1,12 @@
+{
+  "status": "REWORK_REQUIRED",
+  "userApproval": "NOT_REQUESTED",
+  "runtimeIntegrated": false,
+  "evidence": "review/validation.json",
+  "failedFrames": [4, 6],
+  "findings": [
+    "Frame 4 reaches nearly full next-key stride, rather than halfway; height 190px undershoots neighbouring 199/193px keys by 3px.",
+    "Frame 6 corrected the first rejected arm pose but remains too low: height 189px undershoots 193/194px keys by 4px."
+  ],
+  "nextAction": "Target only new frames 4 and 6. Preserve approved frames 1,3,5,7 and the same normalization scale."
+}
