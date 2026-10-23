@@ -1,5 +1,19 @@
 # Feng right walk: eight-frame completion
 
+## Current approval — 2026-10-23
+
+The user approved the complete `review-r2` eight-frame preview with “审核通过”,
+after the remaining self-review findings were presented. Current art status:
+`FENG_RIGHT_WALK_ART_APPROVED`. Root `review-status.json` is the approval authority
+and freezes all 29 R2 images, previews and QA records by SHA256. No pixels,
+sequence or timing changed during approval recording.
+
+Earlier failed self-review and measurements below remain historical evidence;
+human acceptance does not rewrite them as numerical or App-test passes.
+This approval does not include a left derivative or runtime integration.
+Next planned art step is a same-order per-frame mirrored Feng left candidate,
+with a separate preview and approval. It has not been produced in this stage.
+
 Scope: complete the approved four-pose blocking into an eight-frame review
 candidate. Do not change approved images, Gu, left walk, atlases or the App.
 

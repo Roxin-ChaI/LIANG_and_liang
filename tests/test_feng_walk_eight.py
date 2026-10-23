@@ -153,3 +153,21 @@ def test_r2_evidence_cannot_be_overwritten():
     from tools.build_feng_walk_eight import build
     with pytest.raises(FileExistsError):
         build(OUT/"review-r2")
+
+
+def test_user_approval_freezes_exact_r2_without_rewriting_historical_findings():
+    approval=json.loads((OUT/"review-status.json").read_text())
+    assert approval["status"]=="FENG_RIGHT_WALK_ART_APPROVED"
+    assert approval["userApproval"]=="APPROVED"
+    assert approval["approvedRevision"]=="review-r2"
+    assert approval["generatorLocked"] and not approval["runtimeIntegrated"]
+    assert approval["appTest"]=="NOT_TESTED" and approval["frameCount"]==8
+    expected={str(p.relative_to(OUT)) for p in (OUT/"review-r2").iterdir() if p.is_file()}
+    assert set(approval["sha256"])==expected
+    for path,digest in approval["sha256"].items():
+        assert sha(OUT/path)==digest
+    assert "Feng left derivative" in approval["notApproved"]
+    assert "App integration" in approval["notApproved"]
+    historical=json.loads((OUT/"review-r2/self-review.json").read_text())
+    assert historical["verdict"]=="REWORK_REQUIRED"
+    assert historical["failedFrames"]==[4,6]
