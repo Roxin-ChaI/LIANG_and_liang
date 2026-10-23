@@ -1,0 +1,14 @@
+{
+  "status": "SELF_REJECTED",
+  "userApproval": "NOT_REQUESTED",
+  "runtimeIntegrated": false,
+  "source": "source-attempt-1.png",
+  "method": "built-in imagegen; four-pose sheet edit of canonical Idle scaffold",
+  "visualFindings": [
+    "Poses 1 and 3 repeat the same near-leg-forward occlusion instead of opposite-leg contact.",
+    "Poses 2 and 4 repeat the same support/passing-leg arrangement.",
+    "Near arm stays behind in both contact poses instead of counter-swinging."
+  ],
+  "notProven": ["Full Idle identity fidelity", "Final pixel-level runtime compliance"],
+  "nextAction": "One targeted correction of lower-row limb phase; do not make eight frames."
+}

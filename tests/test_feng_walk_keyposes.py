@@ -37,3 +37,11 @@ def test_preparation_refuses_to_overwrite(tmp_path):
     with pytest.raises(FileExistsError):
         prepare(target)
     assert before == {p.name:sha(p) for p in target.iterdir()}
+
+
+def test_repeated_leg_candidate_is_explicitly_rejected():
+    record=json.loads((OUT/"attempt-1-review.json").read_text())
+    assert record["status"] == "SELF_REJECTED"
+    assert not record["runtimeIntegrated"]
+    assert record["userApproval"] == "NOT_REQUESTED"
+    assert len(record["visualFindings"]) == 3

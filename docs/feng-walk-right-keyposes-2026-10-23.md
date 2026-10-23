@@ -51,3 +51,11 @@ at hip, knee, elbow, wrist/cuff. Jacket lapels and sleeves must remain coherent.
 If a candidate fails self-review, label it rejected and do not promote it.
 Protected inputs: Gu/Feng formal atlas, Gu approved suspended right/left,
 Feng approved Look/Failed, asset overrides. No writes to those paths.
+
+## Attempt 1 — self-rejected
+
+The source sheet repeats near-leg-forward contact in poses 1/3 and the same
+support leg in 2/4. The near arm does not reverse its swing. This fails the central
+alternating gait requirement even though four distinct images were generated.
+`attempt-1-review.json` records the failure; this is not a user review candidate.
+A bounded targeted correction will address only the lower row's limb phase.
