@@ -17,7 +17,7 @@ SCALE=199/1219
 BELT_CENTRES={2:621,4:610,6:633,8:641}
 
 
-def normalized_source(path,frame):
+def normalized_source(path,frame,*,belt_x=None):
     im=Image.open(path).convert("RGBA")
     if im.width!=1205 or im.height not in (1305,1306):
         raise ValueError("Unexpected source resolution; review common scale explicitly")
@@ -28,7 +28,8 @@ def normalized_source(path,frame):
     box=hard.getbbox()
     if box is None:
         raise ValueError("Empty source")
-    matrix=(1/SCALE,0,BELT_CENTRES[frame]+0.5-96.5/SCALE,
+    belt_x=BELT_CENTRES[frame] if belt_x is None else belt_x
+    matrix=(1/SCALE,0,belt_x+0.5-96.5/SCALE,
             0,1/SCALE,box[3]-0.5-203.5/SCALE)
     out=hard.transform((192,208),Image.Transform.AFFINE,matrix,
                        resample=Image.Resampling.NEAREST)
@@ -37,7 +38,7 @@ def normalized_source(path,frame):
     if b is None or b[0]<2 or b[1]<2 or b[2]>190 or b[3]!=204:
         raise ValueError(f"Clipped, insufficient margin or incorrect baseline: {b}")
     return out,{"source":path.name,"sourceSha256":sha(path),"sourceSize":list(im.size),
-        "sourceBbox":list(box),"beltCentreX":BELT_CENTRES[frame],"commonScale":SCALE,
+        "sourceBbox":list(box),"beltCentreX":belt_x,"commonScale":SCALE,
         "transform":list(matrix),"baseline":b[3]-1,"bbox":list(b),"height":b[3]-b[1]}
 
 
@@ -54,14 +55,18 @@ def assemble(keys,inbetweens):
     return result
 
 
-def build(folder=OUT/"review"):
+def build(folder=OUT/"review",*,sources=None,belt_centres=None):
     verify_approved_keys()
     if folder.exists():
         raise FileExistsError("Review outputs are immutable; use another revision")
     keys=[Image.open(KEYS/"attempt-3-review"/f"pose-{i:02d}.png").convert("RGBA") for i in range(1,5)]
     new={};metrics=[]
+    sources={i:OUT/f"source-{i:02d}.png" for i in [2,4,6,8]} if sources is None else sources
+    belt_centres=BELT_CENTRES if belt_centres is None else belt_centres
+    if set(sources)!={2,4,6,8} or set(belt_centres)!={2,4,6,8}:
+        raise ValueError("Explicit complete source selection required")
     for i in [2,4,6,8]:
-        new[i],metric=normalized_source(OUT/f"source-{i:02d}.png",i)
+        new[i],metric=normalized_source(sources[i],i,belt_x=belt_centres[i])
         metrics.append({"frame":i,**metric})
     frames=assemble(keys,new)
     folder.mkdir(parents=True)

@@ -93,3 +93,63 @@ def test_completed_evidence_cannot_be_overwritten():
     from tools.build_feng_walk_eight import build
     with pytest.raises(FileExistsError):
         build()
+
+
+def test_r2_changes_only_requested_inbetweens_and_keeps_strip_order():
+    strip=Image.open(OUT/"review-r2/feng-running-right.png")
+    assert strip.mode=="RGBA" and strip.size==(1536,208)
+    for i in range(1,9):
+        frame=Image.open(OUT/"review-r2"/f"right-{i:02d}.png")
+        assert frame.tobytes()==strip.crop(((i-1)*192,0,i*192,208)).tobytes()
+        previous=Image.open(OUT/"review"/f"right-{i:02d}.png")
+        assert (frame.tobytes()==previous.tobytes()) == (i not in (4,6))
+        pixels=np.array(frame)
+        assert set(np.unique(pixels[:,:,3]))<={0,255}
+        assert not np.any(pixels[pixels[:,:,3]==0,:3])
+        assert frame.getbbox()[3]==204
+
+
+def test_r2_provenance_is_reproducible_without_independent_fit_scaling():
+    from tools.build_feng_walk_eight import normalized_source, SCALE
+    report=json.loads((OUT/"review-r2/validation.json").read_text())
+    assert [p["outsideNeighbourHeight"] for p in report["pairs"]]==[0,3,4,0]
+    for metric in report["newFrameMetrics"]:
+        i=metric["frame"]
+        source=OUT/(f"source-{i:02d}-r2.png" if i in (4,6) else f"source-{i:02d}.png")
+        assert metric["sourceSha256"]==sha(source)
+        assert metric["commonScale"]==SCALE
+        frame,_=normalized_source(source,i,belt_x=metric["beltCentreX"])
+        assert frame.tobytes()==Image.open(OUT/"review-r2"/f"right-{i:02d}.png").tobytes()
+
+
+@pytest.mark.parametrize("name,delay",[("preview.gif",140),("preview-slow.gif",450),("preview-native.gif",140),("idle-comparison.gif",140)])
+def test_r2_gifs_preserve_eight_frames_and_timing(name,delay):
+    im=Image.open(OUT/"review-r2"/name)
+    assert im.n_frames==8 and im.info["loop"]==0
+    for i in range(8):
+        im.seek(i)
+        assert im.info["duration"]==delay
+
+
+@pytest.mark.parametrize("kwargs",[{"sources":{}},{"belt_centres":{}},{"sources":{2:OUT/"source-02.png"}}])
+def test_revision_sources_cannot_silently_fall_back(tmp_path,kwargs):
+    from tools.build_feng_walk_eight import build
+    with pytest.raises(ValueError,match="Explicit complete"):
+        build(tmp_path/"invalid",**kwargs)
+    assert not (tmp_path/"invalid").exists()
+
+
+def test_r2_visual_failure_is_not_promoted_by_structural_success():
+    report=json.loads((OUT/"review-r2/self-review.json").read_text())
+    assert report["verdict"]=="REWORK_REQUIRED"
+    assert report["failedFrames"]==[4,6]
+    assert report["userApproval"]=="PENDING"
+    assert report["appTest"]=="NOT_TESTED"
+    assert not report["runtimeIntegrated"]
+    assert report["evidenceSha256"]["contact.png"]==sha(OUT/"review-r2/contact.png")
+
+
+def test_r2_evidence_cannot_be_overwritten():
+    from tools.build_feng_walk_eight import build
+    with pytest.raises(FileExistsError):
+        build(OUT/"review-r2")

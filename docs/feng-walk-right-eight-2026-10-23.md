@@ -49,3 +49,44 @@ Native contact-sheet self-review found frame 4 overreaches its stride, while fra
 4/6 undershoot neighbouring body heights by 3/4px. These are not declared fixed
 by file-order tests. `attempt-1-review.json` requires targeted art corrections.
 The first assembled `review/` remains immutable historical evidence.
+
+## Targeted revision R2 — REWORK_REQUIRED
+
+Only new drawings 04/06 were revised. `review-r2/` retains all approved odd frames
+and the first assembly's 02/08 byte-for-byte. Explicit source selection and recorded
+belt coordinates make packing reproducible without overwriting earlier evidence.
+The common nearest-neighbour scale remains 199/1219 for every new source.
+
+| Triple (global frame numbers) | Heights (px) | Result |
+|---|---|---|
+| 01 → 02 → 03 | 199 / 199 / 199 | No height overshoot; motion approval pending |
+| 03 → 04 → 05 | 199 / 190 / 193 | FAIL: additional 3px undershoot, stride too advanced |
+| 05 → 06 → 07 | 193 / 189 / 194 | FAIL: additional 4px undershoot, body appears smaller/lower |
+| 07 → 08 → 01 | 194 / 194 / 199 | No height overshoot; loop motion approval pending |
+
+The local labels 01/02/03 on pair contact sheets mean the three positions in
+that triple, not global frame IDs. `pair-04` is global 03/04/05; `pair-06` is
+global 05/06/07. All soles remain at y=203; this does not resolve head/body jumps.
+Frame 6's arm trajectory improved, but that is not a whole-frame PASS.
+
+Evidence in `assets/rework/v0.1.0/feng-walk-right-eight-2026-10-23/review-r2/`:
+
+- `contact.png`, `contact-native.png`: ordered full eight-frame review.
+- `preview.gif`, `preview-native.gif`: 140ms per frame, sequence 01…08→01.
+- `preview-slow.gif`: 450ms per frame; no duplicated endpoint or speed-up.
+- `idle-comparison.gif`: unchanged canonical Idle beside candidate playback.
+- `pair-02/04/06/08.png`, matching GIFs and overlays: pairwise inspection.
+- `validation.json`: mechanical packaging facts, not visual acceptance.
+- `self-review.json`: final static self-review, failed frames and evidence hashes.
+
+The finite directed revision did not solve frames 4/6. Stop treating further
+similar generations as progress; keep these as failed review evidence, not accepted
+art. No integration, left derivation or modifications to approved key poses.
+Actual App playback remains NOT_TESTED; animated screen observation is NOT_VERIFIED.
+The user receives GIF previews for inspection; no user approval has been inferred.
+
+Validation: 90 related Python tests passed (eight-frame packager, approved key
+poses, both Gu suspended-drag candidates, Feng Look and Failed safeguards).
+`git diff --check` passed. This was a scoped art regression, not a full project
+Python/Node regression. Formal Gu/Feng atlas and App override SHA256 values match
+the pre-work baseline; no runtime files were changed.

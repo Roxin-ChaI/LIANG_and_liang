@@ -1,0 +1,43 @@
+{
+  "verdict": "REWORK_REQUIRED",
+  "reviewDate": "2026-10-23",
+  "reviewMethod": "Static native and enlarged contact sheets, adjacent key/in-between/key triples, source provenance and pixel comparison. Animated playback not independently observed.",
+  "userApproval": "PENDING",
+  "runtimeIntegrated": false,
+  "appTest": "NOT_TESTED",
+  "livePlayback": "NOT_VERIFIED",
+  "failedFrames": [4, 6],
+  "approvedKeysUnchanged": true,
+  "unchangedFromFirstAssembly": [1, 2, 3, 5, 7, 8],
+  "allBaselines": [203, 203, 203, 203, 203, 203, 203, 203],
+  "allHeights": [199, 199, 199, 190, 193, 189, 194, 194],
+  "findings": [
+    {
+      "frame": 4,
+      "severity": "P1",
+      "status": "UNRESOLVED",
+      "observation": "New pose is 190px tall, below both neighbouring approved poses (199/193px). The 3px additional undershoot remains. The shortened stride still visually approaches the next contact pose too early; arm swing and leg phase are not accepted as an even progression.",
+      "evidence": ["pair-04.png", "pair-04-overlay.png", "contact.png"]
+    },
+    {
+      "frame": 6,
+      "severity": "P1",
+      "status": "UNRESOLVED",
+      "observation": "Near-arm position is more intermediate, but the new pose is 189px tall against neighbouring 193/194px poses: 4px additional undershoot. The body appears smaller/lower. Support-leg continuity is not approved solely from file order or matching baseline.",
+      "evidence": ["pair-06.png", "pair-06-overlay.png", "contact.png"]
+    }
+  ],
+  "limitations": [
+    "Baseline consistency does not prove stable head position, scale, identity or gait.",
+    "Approved keys themselves retain their original 6px height range; they were not re-scaled or repainted.",
+    "Frames 2 and 8 pass the height-range check, not a substitute for full motion or user approval.",
+    "No independent per-frame scale fitting, duplicate frames or faster timing used to hide failed drawings.",
+    "No automatic derivation of left walk and no runtime asset replacement."
+  ],
+  "evidenceSha256": {
+    "contact.png": "dfd1830f366936a160232cdaa1e185975d468d20ba7f5e3e4818e93c35537565",
+    "preview.gif": "c27465337705f42c1e28d67d1d8b2774212313b9ea75cd8cc62eb589a0268cf4",
+    "preview-slow.gif": "d7ca363cc50f47e1366bb8a2690147d85bbda6a7e92f2ae6804f1d05bb228972",
+    "feng-running-right.png": "041d1b5c1554805e945f4d956d5f8c8283be1bf3020b84964168bb946cd1e9a7"
+  }
+}
