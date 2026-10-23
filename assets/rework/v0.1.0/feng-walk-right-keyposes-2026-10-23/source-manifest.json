@@ -1,0 +1,41 @@
+{
+  "status": "SPEC_READY",
+  "userApproval": "PENDING",
+  "runtimeIntegrated": false,
+  "scope": "feng-right-four-keyposes-only",
+  "frameCount": 4,
+  "cell": [
+    192,
+    208
+  ],
+  "baseline": 203,
+  "registrationX": 96,
+  "sourceOrder": [
+    "N-contact",
+    "N-support-F-passing",
+    "F-contact",
+    "F-support-N-passing"
+  ],
+  "canonicalBbox": [
+    44,
+    4,
+    148,
+    204
+  ],
+  "canonicalHeadReference": [
+    64,
+    4,
+    113,
+    61
+  ],
+  "sources": {
+    "assets/builds/gu/spritesheet.webp": "b6a3f086a9fdb9a4cb7c86d047991e1d3ff9a7a2ab740e4c2f705b42b9d08908",
+    "assets/builds/feng/spritesheet.webp": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+    "assets/feng/idle.png": "03b116aedd0a37ee792fbab5690f6d0c6bfbe97fa058c633de16e938b0092eb8",
+    "standalone-app/asset-overrides.json": "887c3be3c245978ceeb422cc13562e452ec9466b6267f1aabf269b59158ffb1d",
+    "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/review-status.json": "cdb631f0b1593f35f189722dd3da208ba3c4ad3b4c6ea65c41de4e8309dbf6e3",
+    "assets/rework/v0.1.0/gu-drag-left-suspended-2026-10-22/review-status.json": "438ea1b5b544e0f3579e9b3288fd16d7a8c1cb9431ab195555f57a97a7ea3e28",
+    "assets/rework/v0.1.0/feng-look-r6-2026-10-20/review-status.json": "bfb45d02b291c5ef139a9b705d2f4de2eba22c26f828d3ea802826526ef502ba",
+    "assets/rework/v0.1.0/feng-failed-r3-2026-10-20/nod-revision/review-status.json": "5700712ebf1abf75a91741d3b8a9d301d2401a401a1ca5f086f0c8c28824974c"
+  }
+}
