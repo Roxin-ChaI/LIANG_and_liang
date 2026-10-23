@@ -59,3 +59,42 @@ support leg in 2/4. The near arm does not reverse its swing. This fails the cent
 alternating gait requirement even though four distinct images were generated.
 `attempt-1-review.json` records the failure; this is not a user review candidate.
 A bounded targeted correction will address only the lower row's limb phase.
+
+## Attempts 2/3 — bounded corrections, still self-rejected
+
+Attempt 2 changes the lower-row arm/leg phase but pose 4 becomes another extended
+contact rather than passing. Attempt 3 targets that leg only. Its low passing pose
+improves the silhouette, but native-scale inspection exposes remaining failures:
+
+- After one common scale and foot registration, poses 3/4 are approximately 6 px
+  shorter than 1/2. Contact pose 3 should not suddenly shrink relative to contact 1.
+- Pose 3 has a larger stride and more narrowed-looking torso turn than pose 1.
+- Pose 2 is early rear-foot lift, while 4 is advanced passing: corresponding gait
+  phases still do not establish balanced alternating support and timing.
+
+No extra retry, eight-frame expansion, left mirror or integration is performed.
+This is `FENG_RIGHT_KEYPOSE_SELF_REJECTED`, not an approved replacement.
+The supplied GIF is failed-draft evidence, not a claim of smooth walking.
+
+`attempt-3-review/` contains four 192×208 RGBA review crops, Idle comparison,
+normal/slow GIF, joint details and measured geometry. The packer uses a shared
+isotropic nearest-neighbour transform anchored at each manually identified belt
+centre and sole. Alpha is thresholded at 128, hidden RGB zeroed. There is no
+per-pose resizing, anatomy synthesis, recolouring, tweening or source-frame drop.
+The foot sample uses PIL's half-pixel convention so the rendered sole is y=203.
+
+Artwork was produced with the built-in image tool, not CLI. Exact prompts are
+`assets/rework/v0.1.0/feng-walk-right-prompt-2026-10-23.txt` and the candidate
+folder's `retry-prompt.txt` / `passing-prompt.txt`. Generated sources are retained
+as `source-attempt-1.png` through `source-attempt-3.png` with no source overwrites.
+
+Static self-review inspected actual source and native/2x/3x derived frames.
+GIF decoding/cadence is tested; real-time playback observation is NOT_VERIFIED.
+No App was launched or replaced. User approval is NOT_REQUESTED for failed art.
+
+## Verification
+
+64 related Python tests passed: Feng walk references/rejection evidence (12),
+Gu suspended left/right, approved Feng Look and Failed suites. This is not a full
+Python/Node application regression. `git diff --check` passed before submission.
+Passing tests verify preservation, packing and honest rejection, not passing art.

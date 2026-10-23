@@ -1,0 +1,150 @@
+{
+  "status": "SELF_REJECTED",
+  "userApproval": "NOT_REQUESTED",
+  "runtimeIntegrated": false,
+  "frameCount": 4,
+  "cell": [
+    192,
+    208
+  ],
+  "source": "../source-attempt-3.png",
+  "sourceSha256": "2a8eefabb2a86ac5ff970cc95f670485fb08c47e2c63e85843c8498db77b3bd6",
+  "mechanicalProcessing": "Shared isotropic NN scale; pelvis/sole registration; alpha threshold 128 and transparent RGB zero. No anatomy painting, palette remapping, tweening or per-frame size fitting.",
+  "metrics": [
+    {
+      "sourceBbox": [
+        149,
+        19,
+        511,
+        642
+      ],
+      "sourceHip": [
+        356,
+        345
+      ],
+      "sharedScale": 0.31942215088282505,
+      "outputBbox": [
+        30,
+        5,
+        146,
+        204
+      ],
+      "soleY": 203,
+      "characterHeight": 199,
+      "transform": [
+        3.130653266331658,
+        0,
+        54.391959798995,
+        0,
+        3.130653266331658,
+        4.4120603015076085
+      ]
+    },
+    {
+      "sourceBbox": [
+        139,
+        19,
+        428,
+        642
+      ],
+      "sourceHip": [
+        311,
+        345
+      ],
+      "sharedScale": 0.31942215088282505,
+      "outputBbox": [
+        41,
+        5,
+        134,
+        204
+      ],
+      "soleY": 203,
+      "characterHeight": 199,
+      "transform": [
+        3.130653266331658,
+        0,
+        9.391959798995003,
+        0,
+        3.130653266331658,
+        4.4120603015076085
+      ]
+    },
+    {
+      "sourceBbox": [
+        138,
+        12,
+        549,
+        616
+      ],
+      "sourceHip": [
+        369,
+        337
+      ],
+      "sharedScale": 0.31942215088282505,
+      "outputBbox": [
+        23,
+        11,
+        154,
+        204
+      ],
+      "soleY": 203,
+      "characterHeight": 193,
+      "transform": [
+        3.130653266331658,
+        0,
+        67.391959798995,
+        0,
+        3.130653266331658,
+        -21.58793969849239
+      ]
+    },
+    {
+      "sourceBbox": [
+        132,
+        12,
+        428,
+        618
+      ],
+      "sourceHip": [
+        311,
+        337
+      ],
+      "sharedScale": 0.31942215088282505,
+      "outputBbox": [
+        39,
+        10,
+        134,
+        204
+      ],
+      "soleY": 203,
+      "characterHeight": 194,
+      "transform": [
+        3.130653266331658,
+        0,
+        9.391959798995003,
+        0,
+        3.130653266331658,
+        -19.58793969849239
+      ]
+    }
+  ],
+  "uniquePoses": 4,
+  "heightRange": 6,
+  "geometryGate": {
+    "maxHeightRange": 2,
+    "passed": false
+  },
+  "visualGate": {
+    "passed": false,
+    "findings": [
+      "Poses 3/4 shorten visibly relative to 1/2 after common scaling and sole registration; this is not acceptable stable-height walking.",
+      "Pose 3 uses a longer stride and narrower-looking torso turn than pose 1; the two half-steps are not visually balanced.",
+      "Pose 2 remains early rear-foot lift whereas pose 4 is a more advanced passing pose. Timing symmetry and full foot trajectories are not established.",
+      "Identity/style matching cannot be approved solely from similar head dimensions; runtime-normalized candidates still require stricter Idle matching."
+    ]
+  },
+  "livePlayback": "NOT_VERIFIED",
+  "appTest": "NOT_TESTED",
+  "nextStageAllowed": false,
+  "note": "Animated GIF is four-pose blocking, not the final eight-frame animation. Structural values do not establish visual approval."
+}

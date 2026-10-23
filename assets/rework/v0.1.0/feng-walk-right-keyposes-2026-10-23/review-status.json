@@ -1,0 +1,14 @@
+{
+  "status": "FENG_RIGHT_KEYPOSE_SELF_REJECTED",
+  "userApproval": "NOT_REQUESTED",
+  "runtimeIntegrated": false,
+  "date": "2026-10-23",
+  "builtInImagegenCalls": 3,
+  "candidateFrames": 4,
+  "scope": "Feng right walking key poses only",
+  "evidence": "attempt-3-review/validation.json",
+  "preview": "attempt-3-review/preview.gif",
+  "contact": "attempt-3-review/idle-contact.png",
+  "blockedNextSteps": ["eight-frame completion", "left mirror", "App integration"],
+  "reason": "Height instability, unequal stride and unbalanced passing phases remain after bounded targeted corrections. Do not present as an approved repair."
+}
