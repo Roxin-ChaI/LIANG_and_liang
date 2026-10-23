@@ -74,3 +74,18 @@ def test_reject_tampered_source(tmp_path):
     (source / "review-r2/right-01.png").write_bytes(b"tampered")
     with pytest.raises(ValueError, match="Frozen source changed"):
         verified_frames(source)
+
+
+def test_user_approval_freezes_left_art_without_implying_runtime_test():
+    report = json.loads((OUT / "review-status.json").read_text())
+    assert report["status"] == "FENG_LEFT_WALK_ART_APPROVED"
+    assert report["userApproval"] == "APPROVED" and report["generatorLocked"]
+    assert report["frameCount"] == 8 and report["durationMs"] == [140] * 8
+    assert not report["runtimeIntegrated"] and report["appTest"] == "NOT_TESTED"
+    assert "App integration" in report["notApproved"]
+    expected = {p.name for p in OUT.iterdir() if p.is_file() and p.name != "review-status.json"}
+    assert set(report["sha256"]) == expected
+    for path, digest in report["sha256"].items():
+        assert sha256(OUT / path) == digest
+    historical = json.loads((OUT / "validation.json").read_text())
+    assert historical["userApproval"] == "PENDING"

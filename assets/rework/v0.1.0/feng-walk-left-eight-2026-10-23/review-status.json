@@ -1,0 +1,46 @@
+{
+  "status": "FENG_LEFT_WALK_ART_APPROVED",
+  "userApproval": "APPROVED",
+  "reviewDate": "2026-10-23",
+  "approvalEvidence": "User: 审核通过, responding to the eight-frame Feng left mirror GIF, slow preview and right/left comparison.",
+  "scope": "Feng left walk eight-frame artwork only",
+  "frameCount": 8,
+  "durationMs": [
+    140,
+    140,
+    140,
+    140,
+    140,
+    140,
+    140,
+    140
+  ],
+  "generatorLocked": true,
+  "runtimeIntegrated": false,
+  "appTest": "NOT_TESTED",
+  "sourceCommit": "fb80f52",
+  "preview": "preview.gif",
+  "contact": "contact.png",
+  "historicalValidation": "validation.json remains the unchanged pre-approval structural/provenance report. This review-status.json records the subsequent human approval. Source right-walk height/phase variations remain inherited, not repaired.",
+  "notApproved": [
+    "App integration"
+  ],
+  "sha256": {
+    "contact.png": "ed799b4762c69801b56d289bd7dac3258c07206580ec40844020e5ca7ecc868e",
+    "feng-running-left.png": "9918a9a5480600a60be7ce7ec3dd73012b0506fc8f5fdc730053a994d90d7b0e",
+    "left-01.png": "556cc15c718a1dc5840030836cc1c52bc1487681679411df76c2e0e2cdb2dbd9",
+    "left-02.png": "769bfdd3ec4c532d5efef0f6292e88cdee1c0f9d3c5af788538446f90e357ac2",
+    "left-03.png": "5ced9ba43a58d865e79cef06c345fa14c19dae4e3db1a264768b3b623b1cb2bf",
+    "left-04.png": "18b9e8c6490ee68f433f727694022132150ba52e0f2b118ca1e5db38bbf9c7af",
+    "left-05.png": "e9a22268fd6b7f5af105e12f05828b1aa3cbafbb6f604594ff2b27d66c6bb546",
+    "left-06.png": "9f38b0c10e8dd406e958bdfa8eabacbb6d3cd76dfcdd6b8500982994e809a4ac",
+    "left-07.png": "d7b96c8a68a9071746778243c0ffc2f5a5e0b02c24fdf7a419946d5c7aebcec4",
+    "left-08.png": "e5e9e2e15e5159a690842a6892f819a97a7d4eb706677a72727b574e8f0ccdb6",
+    "preview-native.gif": "b53e226e17e4d98d24935ee9caad6693fee6a85f65783c4e9cdee708e1943baf",
+    "preview-slow.gif": "50198051542d272ca73ca8a2e6f4b25e3b18c7d2e7564bb8d7b4ec5020390369",
+    "preview.gif": "2224821715533ed5bf5ae171b9c395f88c898805545eb3ce607a232971313f67",
+    "right-left-comparison.gif": "4b61e59774e02c32cd51a4688e624ceb452cacac89e6d36779a6354a84a1df0c",
+    "right-left-contact.png": "ee9e96ec0478802cb9aa4aa1ce66ada8fb3c653687b0cd42c50cd57077a40dd0",
+    "validation.json": "8ebc7b9e35f994f794fc1e65295487ce1e0e5315bcf306a657bfa2cd63267fc1"
+  }
+}

@@ -1,4 +1,15 @@
-# Feng left walk — review candidate
+# Feng left walk — approved artwork
+
+## User approval — 2026-10-23
+
+The user approved the eight-frame GIF with “审核通过”. Current status:
+`FENG_LEFT_WALK_ART_APPROVED`. `review-status.json` records the approval and
+freezes all 16 existing artwork, preview and validation files by SHA256.
+No pixels, frame order or timing changed. App integration remains out of scope.
+The pre-approval validation report and review observations below are retained
+unchanged as historical evidence, not a claim that App testing has occurred.
+
+## Construction and pre-approval review
 
 User requested horizontal mirroring of the approved eight-frame right walk.
 Source: `assets/rework/v0.1.0/feng-walk-right-eight-2026-10-23/review-r2/`,
