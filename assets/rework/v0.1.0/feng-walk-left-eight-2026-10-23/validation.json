@@ -1,0 +1,202 @@
+{
+  "structuralStatus": "PASS",
+  "userApproval": "PENDING",
+  "runtimeIntegrated": false,
+  "source": "assets/rework/v0.1.0/feng-walk-right-eight-2026-10-23",
+  "sourceApprovalSha256": "661ec7e811cfe62275cf891e385fda6704b996d4da156d7be5657040e74e2549",
+  "method": "Per-frame exact horizontal pixel reflection x -> 191-x. No scaling, translation, interpolation, recoloring or frame reordering.",
+  "frameCount": 8,
+  "cell": [
+    192,
+    208
+  ],
+  "strip": [
+    1536,
+    208
+  ],
+  "durationMs": [
+    140,
+    140,
+    140,
+    140,
+    140,
+    140,
+    140,
+    140
+  ],
+  "frames": [
+    {
+      "frame": 1,
+      "sourceFrame": 1,
+      "bbox": [
+        46,
+        5,
+        162,
+        204
+      ],
+      "baseline": 203,
+      "exactMirror": true,
+      "sourceSha256": "69126c687e26c0204b870d593a3f437aaccece59ecf143405cb5a9bb3c255593"
+    },
+    {
+      "frame": 2,
+      "sourceFrame": 2,
+      "bbox": [
+        54,
+        5,
+        159,
+        204
+      ],
+      "baseline": 203,
+      "exactMirror": true,
+      "sourceSha256": "11147fb76a0abae03e909fdabf3eacd24f816b08af8204df0b685581364265c2"
+    },
+    {
+      "frame": 3,
+      "sourceFrame": 3,
+      "bbox": [
+        58,
+        5,
+        151,
+        204
+      ],
+      "baseline": 203,
+      "exactMirror": true,
+      "sourceSha256": "bdaf490eab3c26c231f640448dfa7ec5cb75d1d3cd732c7f705884a92e535be1"
+    },
+    {
+      "frame": 4,
+      "sourceFrame": 4,
+      "bbox": [
+        42,
+        14,
+        154,
+        204
+      ],
+      "baseline": 203,
+      "exactMirror": true,
+      "sourceSha256": "18fc872c4dc3498a0f9d30f985b7a0701b1ac5b0ee53336fa0db91f25fe251d6"
+    },
+    {
+      "frame": 5,
+      "sourceFrame": 5,
+      "bbox": [
+        38,
+        11,
+        169,
+        204
+      ],
+      "baseline": 203,
+      "exactMirror": true,
+      "sourceSha256": "4f23c0931b9ec3fc13abcbe6dd3156fbe182de8acbcaee225ff36474bbbd4423"
+    },
+    {
+      "frame": 6,
+      "sourceFrame": 6,
+      "bbox": [
+        58,
+        15,
+        150,
+        204
+      ],
+      "baseline": 203,
+      "exactMirror": true,
+      "sourceSha256": "73b3eb8788ff95314c5a161e3638acb0a2c996b7529ded268bfb3f1dd95b054f"
+    },
+    {
+      "frame": 7,
+      "sourceFrame": 7,
+      "bbox": [
+        58,
+        10,
+        153,
+        204
+      ],
+      "baseline": 203,
+      "exactMirror": true,
+      "sourceSha256": "c5c0e741608c3f4ad87ca35b42842c964d154590b616d18dd912de8aec948902"
+    },
+    {
+      "frame": 8,
+      "sourceFrame": 8,
+      "bbox": [
+        48,
+        10,
+        162,
+        204
+      ],
+      "baseline": 203,
+      "exactMirror": true,
+      "sourceSha256": "fa893475d94b2af8ab75275b7ffa198aa18f2baf3d05d038859f3dfb3666df15"
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 2,
+      "changedPixels": 12383,
+      "sameTemporalDifferenceAsSource": true
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "changedPixels": 11954,
+      "sameTemporalDifferenceAsSource": true
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "changedPixels": 12905,
+      "sameTemporalDifferenceAsSource": true
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "changedPixels": 11235,
+      "sameTemporalDifferenceAsSource": true
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "changedPixels": 11794,
+      "sameTemporalDifferenceAsSource": true
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "changedPixels": 11956,
+      "sameTemporalDifferenceAsSource": true
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "changedPixels": 12527,
+      "sameTemporalDifferenceAsSource": true
+    },
+    {
+      "from": 8,
+      "to": 1,
+      "changedPixels": 12456,
+      "sameTemporalDifferenceAsSource": true
+    }
+  ],
+  "limitations": "Source artwork's accepted height/gait variations are inherited, not fixed. A source x=96 pixel maps to x=95, around cell axis95.5; no compensating translation.",
+  "appTest": "NOT_TESTED",
+  "sha256": {
+    "contact.png": "ed799b4762c69801b56d289bd7dac3258c07206580ec40844020e5ca7ecc868e",
+    "feng-running-left.png": "9918a9a5480600a60be7ce7ec3dd73012b0506fc8f5fdc730053a994d90d7b0e",
+    "left-01.png": "556cc15c718a1dc5840030836cc1c52bc1487681679411df76c2e0e2cdb2dbd9",
+    "left-02.png": "769bfdd3ec4c532d5efef0f6292e88cdee1c0f9d3c5af788538446f90e357ac2",
+    "left-03.png": "5ced9ba43a58d865e79cef06c345fa14c19dae4e3db1a264768b3b623b1cb2bf",
+    "left-04.png": "18b9e8c6490ee68f433f727694022132150ba52e0f2b118ca1e5db38bbf9c7af",
+    "left-05.png": "e9a22268fd6b7f5af105e12f05828b1aa3cbafbb6f604594ff2b27d66c6bb546",
+    "left-06.png": "9f38b0c10e8dd406e958bdfa8eabacbb6d3cd76dfcdd6b8500982994e809a4ac",
+    "left-07.png": "d7b96c8a68a9071746778243c0ffc2f5a5e0b02c24fdf7a419946d5c7aebcec4",
+    "left-08.png": "e5e9e2e15e5159a690842a6892f819a97a7d4eb706677a72727b574e8f0ccdb6",
+    "preview-native.gif": "b53e226e17e4d98d24935ee9caad6693fee6a85f65783c4e9cdee708e1943baf",
+    "preview-slow.gif": "50198051542d272ca73ca8a2e6f4b25e3b18c7d2e7564bb8d7b4ec5020390369",
+    "preview.gif": "2224821715533ed5bf5ae171b9c395f88c898805545eb3ce607a232971313f67",
+    "right-left-comparison.gif": "4b61e59774e02c32cd51a4688e624ceb452cacac89e6d36779a6354a84a1df0c",
+    "right-left-contact.png": "ee9e96ec0478802cb9aa4aa1ce66ada8fb3c653687b0cd42c50cd57077a40dd0"
+  }
+}
