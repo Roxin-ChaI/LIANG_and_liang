@@ -1,0 +1,195 @@
+{
+  "status": "STRUCTURAL_PASS",
+  "spriteVersion": 2,
+  "atlasSize": [
+    1536,
+    2288
+  ],
+  "replacements": [
+    {
+      "form": "gu",
+      "row": 1,
+      "state": "running-right",
+      "frames": 8,
+      "source": "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/gu-running-right.png",
+      "sourceSha256": "02cc3933d5c3e5a9b30b4485dbe1c6dcfc0306cacab74f80e9f2be4180149858",
+      "approval": "assets/rework/v0.1.0/gu-drag-right-suspended-2026-10-21/revision-2/review-status.json",
+      "approvalSha256": "cdb631f0b1593f35f189722dd3da208ba3c4ad3b4c6ea65c41de4e8309dbf6e3",
+      "durationsMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ]
+    },
+    {
+      "form": "gu",
+      "row": 2,
+      "state": "running-left",
+      "frames": 8,
+      "source": "assets/rework/v0.1.0/gu-drag-left-suspended-2026-10-22/gu-running-left.png",
+      "sourceSha256": "a65b92a4afb32e0524afcf12d13848b54f5e26d18bba205ab848b215d4c89098",
+      "approval": "assets/rework/v0.1.0/gu-drag-left-suspended-2026-10-22/review-status.json",
+      "approvalSha256": "438ea1b5b544e0f3579e9b3288fd16d7a8c1cb9431ab195555f57a97a7ea3e28",
+      "durationsMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ]
+    },
+    {
+      "form": "feng",
+      "row": 1,
+      "state": "running-right",
+      "frames": 8,
+      "source": "assets/rework/v0.1.0/feng-walk-right-eight-2026-10-23/review-r2/feng-running-right.png",
+      "sourceSha256": "041d1b5c1554805e945f4d956d5f8c8283be1bf3020b84964168bb946cd1e9a7",
+      "approval": "assets/rework/v0.1.0/feng-walk-right-eight-2026-10-23/review-status.json",
+      "approvalSha256": "661ec7e811cfe62275cf891e385fda6704b996d4da156d7be5657040e74e2549",
+      "durationsMs": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140
+      ]
+    },
+    {
+      "form": "feng",
+      "row": 2,
+      "state": "running-left",
+      "frames": 8,
+      "source": "assets/rework/v0.1.0/feng-walk-left-eight-2026-10-23/feng-running-left.png",
+      "sourceSha256": "9918a9a5480600a60be7ce7ec3dd73012b0506fc8f5fdc730053a994d90d7b0e",
+      "approval": "assets/rework/v0.1.0/feng-walk-left-eight-2026-10-23/review-status.json",
+      "approvalSha256": "31b1658c0808290fa62714c72ae106b049bc1c5b7d8dd32611ff9ed139feeb7c",
+      "durationsMs": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140
+      ]
+    },
+    {
+      "form": "feng",
+      "row": 3,
+      "state": "waving",
+      "frames": 4,
+      "source": "assets/rework/v0.1.0/action-rework-r2-2026-10-03/feng-waving-edge/feng-waving-edge.png",
+      "sourceSha256": "ae65364d9abe8a4badaf885915535cd7813b9c9cad454a06affc7328f6872e99",
+      "approval": "assets/rework/v0.1.0/action-rework-r2-2026-10-03/review-status.json",
+      "approvalSha256": "57b8abda69a5b09266ed4d28c3a6d2c91b0b54be750bf32637634aba8d9a3a3a",
+      "durationsMs": [
+        180,
+        180,
+        180,
+        180
+      ]
+    },
+    {
+      "form": "feng",
+      "row": 5,
+      "state": "failed",
+      "frames": 8,
+      "source": "assets/rework/v0.1.0/feng-failed-r3-2026-10-20/nod-revision/feng-failed.png",
+      "sourceSha256": "6cb6ff55502370a0eea9f299a0b9307061e453a05edbecd9f8c13af4fd6cca24",
+      "approval": "assets/rework/v0.1.0/feng-failed-r3-2026-10-20/nod-revision/review-status.json",
+      "approvalSha256": "5700712ebf1abf75a91741d3b8a9d301d2401a401a1ca5f086f0c8c28824974c",
+      "durationsMs": [
+        280,
+        140,
+        160,
+        160,
+        260,
+        180,
+        160,
+        400
+      ]
+    },
+    {
+      "form": "feng",
+      "row": 8,
+      "state": "review",
+      "frames": 6,
+      "source": "assets/rework/v0.1.0/action-rework-r2-2026-10-03/feng-review-edge/feng-review-edge.png",
+      "sourceSha256": "dab503c281df0c3178a4a5404654f164dc5390183d147e5588248bf104730de9",
+      "approval": "assets/rework/v0.1.0/action-rework-r2-2026-10-03/review-status.json",
+      "approvalSha256": "57b8abda69a5b09266ed4d28c3a6d2c91b0b54be750bf32637634aba8d9a3a3a",
+      "durationsMs": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ]
+    }
+  ],
+  "untouched": [
+    "both Look rows",
+    "all other rows",
+    "both transitions",
+    "frozen source atlases"
+  ],
+  "base": {
+    "gu": {
+      "path": "assets/rework/v0.1.0/action-repair-2026-10-02/gu.webp",
+      "sha256": "d9520dd59d65fdb5ae3db6ff765e76ccf8b6374da0f714b821d9069fd1d68a55"
+    },
+    "feng": {
+      "path": "assets/rework/v0.1.0/action-repair-2026-10-02/feng.webp",
+      "sha256": "442c84a8ac01b0fcbb516b94d852db4960e60195dd6bd6446944195a7c0cb9bb"
+    }
+  },
+  "outputSha256": {
+    "gu": "59fb49e7772943482f54d7b2e87d017891871103b1146dc579853ec5e398d5ca",
+    "feng": "268c87f0963343cd5e76f1c64f0a487776441490fa0608dcb96fcea703633979"
+  },
+  "pixelPreservation": "Replaced cells exact approved RGBA; all other rows exact prior selected atlas; lossless WebP decode verified.",
+  "inheritedAlpha": {
+    "gu": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 55925,
+      "7": 62636,
+      "8": 56403,
+      "9": 0,
+      "10": 0
+    },
+    "feng": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0
+    }
+  },
+  "warning": "Existing Gu Waiting/Running/Review semi-transparent pixels and both atlases' Idle slot 6 (unused by current six-frame runtime) preserved unchanged. This is a scoped integration validator, not a clean-atlas all-slot certification.",
+  "appTest": "NOT_TESTED"
+}
