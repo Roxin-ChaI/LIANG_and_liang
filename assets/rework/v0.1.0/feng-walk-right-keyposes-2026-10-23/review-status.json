@@ -1,6 +1,9 @@
 {
-  "status": "FENG_RIGHT_KEYPOSE_SELF_REJECTED",
-  "userApproval": "NOT_REQUESTED",
+  "status": "FENG_RIGHT_KEYPOSE_ART_APPROVED",
+  "userApproval": "APPROVED",
+  "reviewDate": "2026-10-23",
+  "approvalEvidence": "User: 审核通过, replying to attempt-3 four-pose GIF and Idle comparison.",
+  "generatorLocked": true,
   "runtimeIntegrated": false,
   "date": "2026-10-23",
   "builtInImagegenCalls": 3,
@@ -9,6 +12,22 @@
   "evidence": "attempt-3-review/validation.json",
   "preview": "attempt-3-review/preview.gif",
   "contact": "attempt-3-review/idle-contact.png",
-  "blockedNextSteps": ["eight-frame completion", "left mirror", "App integration"],
-  "reason": "Height instability, unequal stride and unbalanced passing phases remain after bounded targeted corrections. Do not present as an approved repair."
+  "nextStep": "Develop the eight-frame right walk in a separate revision, preserving these four approved key poses; review the complete loop separately.",
+  "notApproved": ["complete eight-frame walk", "left mirror", "App integration"],
+  "previousStatus": "FENG_RIGHT_KEYPOSE_SELF_REJECTED",
+  "historicalSelfReview": "Height instability, unequal stride and passing-phase findings remain recorded unchanged in validation.json. Human approval accepts this four-key-pose artwork; it does not turn historical measurement failures into passes.",
+  "sha256": {
+    "attempt-3-review/pose-01.png": "69126c687e26c0204b870d593a3f437aaccece59ecf143405cb5a9bb3c255593",
+    "attempt-3-review/pose-02.png": "bdaf490eab3c26c231f640448dfa7ec5cb75d1d3cd732c7f705884a92e535be1",
+    "attempt-3-review/pose-03.png": "4f23c0931b9ec3fc13abcbe6dd3156fbe182de8acbcaee225ff36474bbbd4423",
+    "attempt-3-review/pose-04.png": "c5c0e741608c3f4ad87ca35b42842c964d154590b616d18dd912de8aec948902",
+    "attempt-3-review/idle-comparison.gif": "f4566a951c09589aef3cfae6a215b9ae12754008d192583f76d503edfaf564c8",
+    "attempt-3-review/preview.gif": "475fd0e02c3604b95c60dd679afa9bb00ae8fcd55d9f89c3ed7e2686aaaac6c8",
+    "attempt-3-review/preview-slow.gif": "b627cf7552890acdcd36d6740f98b6907399df17c44abd11745831eac065fbcb",
+    "attempt-3-review/idle-contact.png": "44322d151b49d47b343f6948201cdbe3a3a53dc5a9c9e6394b554f5862bcd456",
+    "attempt-3-review/joint-detail.png": "1a986b07f9b1604000ad779fd4979adf0e4f7b5c5ae8833624f30057870ac3b8",
+    "attempt-3-review/validation.json": "8fff77c2a23f83a31afe0ab7925e140a25ddd1da0fb85917901fdc3641d99212",
+    "source-attempt-3.png": "2a8eefabb2a86ac5ff970cc95f670485fb08c47e2c63e85843c8498db77b3bd6",
+    "canonical-idle.png": "4ae8848d3a40e6c3d8507b7fda119d58462f3236b3202471239ee0b9c0ac506b"
+  }
 }

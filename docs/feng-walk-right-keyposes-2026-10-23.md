@@ -1,5 +1,21 @@
 # Feng right walk: four-key-pose review
 
+## Current decision — user approved, 2026-10-23
+
+The user replied “审核通过” to the attempt-3 GIF and Idle contact sheet.
+Status: **FENG_RIGHT_KEYPOSE_ART_APPROVED**. Approval covers exactly the four
+192×208 key poses in `attempt-3-review/`, not attempts 1/2, the future full
+eight-frame cycle, left walk or runtime integration. The four poses, previews,
+canonical reference, generated source and original QA report are hash-frozen
+in `review-status.json` (12 files). No image pixels were changed for approval.
+
+Earlier self-review findings below remain historical evidence. In particular,
+the measured height range was not silently changed to PASS. Human acceptance
+of the key poses and automated measurement results are separate records.
+Future eight-frame work must use a new revision and receive its own loop review.
+
+## Original specification and audit history
+
 Date: 2026-10-23. User confirmed Feng; the preceding “Gu right” was a typo.
 Scope: four review poses only, not the final eight-frame strip. No App integration,
 left derivation, Gu changes, runtime changes or release tag.
@@ -98,3 +114,6 @@ No App was launched or replaced. User approval is NOT_REQUESTED for failed art.
 Gu suspended left/right, approved Feng Look and Failed suites. This is not a full
 Python/Node application regression. `git diff --check` passed before submission.
 Passing tests verify preservation, packing and honest rejection, not passing art.
+
+Approval update: 66 related tests passed, including explicit approval scope,
+12 frozen hashes and both writers refusing to overwrite this baseline.

@@ -22,7 +22,7 @@ def test_scaffold_is_only_nearest_neighbour_reference_not_new_art():
         assert target.crop((x,y,x+768,y+832)).tobytes() == reference.tobytes()
 
 
-def test_protected_sources_unchanged_and_review_pending():
+def test_protected_sources_unchanged_and_original_manifest_preserved():
     record=json.loads((OUT/"source-manifest.json").read_text())
     assert record["frameCount"] == 4
     assert record["userApproval"] == "PENDING" and not record["runtimeIntegrated"]
@@ -94,3 +94,28 @@ def test_completed_review_cannot_be_overwritten():
     from tools.review_feng_walk_keyposes import build
     with pytest.raises(FileExistsError,match="completed review"):
         build()
+
+
+def test_user_approval_is_scoped_and_frozen_without_rewriting_old_qa():
+    record=json.loads((OUT/"review-status.json").read_text())
+    assert record["status"] == "FENG_RIGHT_KEYPOSE_ART_APPROVED"
+    assert record["userApproval"] == "APPROVED" and record["generatorLocked"]
+    assert record["reviewDate"] == "2026-10-23"
+    assert record["candidateFrames"] == 4 and not record["runtimeIntegrated"]
+    assert record["notApproved"] == ["complete eight-frame walk", "left mirror", "App integration"]
+    assert len(record["sha256"]) == 12
+    for path,digest in record["sha256"].items():
+        assert sha(OUT/path) == digest
+    original=json.loads((OUT/"attempt-3-review/validation.json").read_text())
+    assert original["status"] == "SELF_REJECTED"
+    assert not original["geometryGate"]["passed"]
+
+
+def test_approved_baseline_writers_refuse_without_any_file_changes():
+    from tools.review_feng_walk_keyposes import build
+    before={str(p.relative_to(OUT)):sha(p) for p in OUT.rglob("*") if p.is_file()}
+    with pytest.raises(FileExistsError):
+        prepare()
+    with pytest.raises(FileExistsError):
+        build()
+    assert before == {str(p.relative_to(OUT)):sha(p) for p in OUT.rglob("*") if p.is_file()}
