@@ -34,7 +34,55 @@ the subsequent deployment separately.
 
 ## Runtime selection and acceptance
 
-Pending in the next stage: select the derived atlases, retain approved motion
-timing, build a separate local App and test it with an isolated test profile.
-Do not overwrite or restart the currently running older App, touch Codex, change
-Hooks, alter Look artwork, or create a release tag.
+Completed on 2026-10-24: asset-overrides selects the two derived atlases.
+Only those two entries changed; `previous-asset-overrides.json` preserves the
+previous configuration byte-for-byte. Historical asset-production tests now
+check that archived configuration and continue checking artwork at original paths.
+An additional integration test constrains the live configuration diff to exactly
+those two atlas entries. No historical approval or source manifest was rewritten.
+
+Feng artwork timing now follows approved previews: walking 140ms per frame,
+Waving/Review 180ms per frame, Failed 280/140/160/160/260/180/160/400ms.
+Gu drag remains 120ms per frame. Renderer supplies the active form to frameAt;
+priority, transitions, Scheduler and Hooks are unchanged. Look stays untouched.
+
+## Build and live verification
+
+Local build: `dist/Liang no Henshin Integrated 2026-10-24.app`.
+43 bundled inputs matched their selected sources, including exact atlas bytes.
+Project-owned ad-hoc signing and strict codesign verification passed.
+The pre-existing `dist/Liang no Henshin.app` was not overwritten or stopped.
+
+`tools/run_standalone_app_qa.py` returned `STANDALONE_APP_QA_PASS`:
+
+- Real Electron startup, transparent capture margins and 192×208 hitbox.
+- Gu→Feng renderer frames 0–9 and Feng→Gu 0–7, correct form takeover and Running restoration.
+- Hover, drag row selection, work rows and unchanged Look row routing.
+- Injected Beijing boundary schedule and restart reconciliation.
+- Synthetic pointer drag only, not physical mouse acceptance.
+
+`tools/qa_integrated_actions.py` returned `SEVEN_ACTIONS_RENDERER_PASS`:
+Gu left/right and Feng left/right/Failed/Waving/Review each reported all required
+frame indices in a real packaged renderer. Captures were checked for transparent
+margin/non-clipping; sampled screenshots were visually inspected. This is not
+a claim of exhaustive transition-by-transition visual approval.
+
+Evidence (local generated, not committed):
+
+- `standalone-app/evidence/approved-actions-2026-10-24/report.json` and transition captures.
+- `standalone-app/evidence/integrated-seven-actions-2026-10-24/report.json`,
+  `events.json`, and seven action screenshots.
+
+Both test runs used temporary profiles, disabled Codex event attachment and exited
+their own test processes. Existing App and receiver were not stopped. No Codex
+installation/configuration changes, no source art changes, no release tag.
+Physical mouse acceptance: NOT_VERIFIED. New-package live Hook acceptance:
+NOT_TESTED; isolated tests deliberately avoid competing for the current receiver.
+
+Regression: 108 scoped Python tests passed; all 43 standalone Node tests passed.
+Node socket tests needed unsandboxed execution after an EPERM sandbox failure.
+This is not the full legacy Python project suite. `git diff --check` passed.
+
+Integration status: ready for user testing of the new separate App. Source/runtime
+selection is updated; the previously running packaged App remains its older version
+until the user switches to this new build.
