@@ -140,6 +140,7 @@ function tick(now) {
         // epoch sampled asynchronously with performance.now() can be newer.
         // A not-yet-started normal animation is frame 0, never negative age.
         const sampled = frameAt(current.normalState, Math.max(0, now - enteredAt), {
+          form: current.currentForm,
           // Desktop's notification row is finite, but an active standalone task owns
           // Running until Stop/timeout; do not visually fall back to Idle mid-task.
           held: current.normalState === "running" && current.underlyingState === "running",

@@ -28,7 +28,8 @@ def test_protected_sources_unchanged_and_original_manifest_preserved():
     assert record["userApproval"] == "PENDING" and not record["runtimeIntegrated"]
     assert record["sourceOrder"] == ["N-contact", "N-support-F-passing", "F-contact", "F-support-N-passing"]
     for path,digest in record["sources"].items():
-        assert sha(ROOT/path) == digest
+        historical = "assets/rework/v0.1.0/approved-actions-integration-2026-10-23/previous-asset-overrides.json" if path == "standalone-app/asset-overrides.json" else path
+        assert sha(ROOT/historical) == digest
 
 
 def test_preparation_refuses_to_overwrite(tmp_path):

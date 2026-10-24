@@ -47,3 +47,25 @@ def test_unused_cell_validation_rejects_hidden_rgb():
     im.putpixel((7*192, 0), (1,0,0,0))
     with pytest.raises(ValueError, match="Hidden RGB"):
         validate_atlas(im)
+
+
+def test_packager_selects_integrated_atlases_but_preserves_transition_sources():
+    from tools.build_standalone_app import ROOT, source_files
+    selected = {str(logical): source for source, logical in source_files()}
+    for form in ("gu", "feng"):
+        assert selected[f"assets/builds/{form}/spritesheet.webp"] == OUT / f"{form}.webp"
+    for i in range(1, 11):
+        name = f"gu_to_feng_{i:02d}.png"
+        assert selected[f"assets/transform-overlay/gu_to_feng/{name}"] == BASE/"gu_to_feng"/name
+    for i in range(1, 9):
+        relative = f"assets/transform-overlay/feng_to_gu/feng_to_gu_{i:02d}.png"
+        assert selected[relative] == ROOT/relative
+
+
+def test_selection_change_is_limited_to_two_atlas_paths():
+    from tools.assemble_approved_actions import ROOT
+    before = json.loads((OUT/"previous-asset-overrides.json").read_text())
+    after = json.loads((ROOT/"standalone-app/asset-overrides.json").read_text())
+    assert set(before) == set(after)
+    assert {key for key in before if before[key] != after[key]} == {
+        "assets/builds/gu/spritesheet.webp", "assets/builds/feng/spritesheet.webp"}

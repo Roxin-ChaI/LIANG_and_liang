@@ -131,11 +131,12 @@ def test_all_gifs_retain_eight_frames_and_documented_timing():
     assert Image.open(OUT/"preview-native.gif").size==(192,208)
 
 
-def test_sources_and_live_asset_selection_are_unchanged():
+def test_sources_and_historical_asset_selection_are_unchanged():
     manifest=json.loads((OUT/"source-manifest.json").read_text())
     assert not manifest["imagegenUsed"] and not manifest["resamplingUsed"]
     for name,digest in manifest["sourceHashes"].items():
-        assert sha(ROOT/name)==digest
+        historical = "assets/rework/v0.1.0/approved-actions-integration-2026-10-23/previous-asset-overrides.json" if name == "standalone-app/asset-overrides.json" else name
+        assert sha(ROOT/historical)==digest
     assert "standalone-app/asset-overrides.json" in manifest["sourceHashes"]
     verify_right_source()
 

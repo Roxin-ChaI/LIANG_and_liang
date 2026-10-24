@@ -21,20 +21,31 @@ export function lookState(direction) {
   return { state: direction < 8 ? "look-row-9" : "look-row-10", frame: direction % 8 };
 }
 
-function durations(descriptor, slowIdle) {
-  const base = descriptor.durations ?? Array.from({ length: descriptor.frames }, (_, index) =>
+// Approved preview timing belongs to the form's artwork, not to interaction priority.
+export const APPROVED_FORM_DURATIONS = Object.freeze({
+  feng: Object.freeze({
+    "running-right": Object.freeze([140, 140, 140, 140, 140, 140, 140, 140]),
+    "running-left": Object.freeze([140, 140, 140, 140, 140, 140, 140, 140]),
+    waving: Object.freeze([180, 180, 180, 180]),
+    failed: Object.freeze([280, 140, 160, 160, 260, 180, 160, 400]),
+    review: Object.freeze([180, 180, 180, 180, 180, 180]),
+  }),
+});
+
+function durations(descriptor, slowIdle, form, state) {
+  const base = APPROVED_FORM_DURATIONS[form]?.[state] ?? descriptor.durations ?? Array.from({ length: descriptor.frames }, (_, index) =>
     index === descriptor.frames - 1 ? descriptor.lastDuration : descriptor.duration);
   return slowIdle ? base.map((value) => value * 6) : base;
 }
 
-export function frameAt(state, elapsedMs, { slowIdle = false, held = false } = {}) {
+export function frameAt(state, elapsedMs, { slowIdle = false, held = false, form = null } = {}) {
   const descriptor = STATES[state];
   if (!descriptor) throw new TypeError(`unknown animation state: ${state}`);
   if (!Number.isFinite(elapsedMs) || elapsedMs < 0) throw new RangeError("elapsedMs must be non-negative and finite");
-  const lengths = durations(descriptor, slowIdle);
+  const lengths = durations(descriptor, slowIdle, form, state);
   const pass = lengths.reduce((sum, value) => sum + value, 0);
   if (!held && descriptor.repeat !== Infinity && elapsedMs >= pass * descriptor.repeat) {
-    return Object.freeze({ ...frameAt("idle", elapsedMs - pass * descriptor.repeat, { slowIdle: true }), completed: true });
+    return Object.freeze({ ...frameAt("idle", elapsedMs - pass * descriptor.repeat, { slowIdle: true, form }), completed: true });
   }
   let position = elapsedMs % pass;
   for (let index = 0; index < lengths.length; index += 1) {
