@@ -1,0 +1,1808 @@
+{
+  "status": "PENDING_USER_REVIEW",
+  "not_installed": true,
+  "previous_sha256": "f45b97dd51f778d8de922dc710b6e78c42a116cb26b9ee5b5fdbd6d23478c69f",
+  "directional_source_sha256": "b6a3f086a9fdb9a4cb7c86d047991e1d3ff9a7a2ab740e4c2f705b42b9d08908",
+  "frames": [
+    {
+      "angle": 0.0,
+      "changed_pixels": 0,
+      "edits": []
+    },
+    {
+      "angle": 22.5,
+      "changed_pixels": 11,
+      "edits": [
+        {
+          "xy": [
+            91,
+            82
+          ],
+          "source_xy": [
+            91,
+            82
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            92,
+            82
+          ],
+          "source_xy": [
+            92,
+            82
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            93,
+            82
+          ],
+          "source_xy": [
+            93,
+            82
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            94,
+            82
+          ],
+          "source_xy": [
+            94,
+            82
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            95,
+            82
+          ],
+          "source_xy": [
+            95,
+            82
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            96,
+            82
+          ],
+          "source_xy": [
+            96,
+            82
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            97,
+            82
+          ],
+          "source_xy": [
+            97,
+            82
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            99,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            82
+          ],
+          "source_xy": [
+            99,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            90,
+            82
+          ],
+          "source_xy": [
+            99,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            83
+          ],
+          "source_xy": [
+            91,
+            83
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 45.0,
+      "changed_pixels": 2,
+      "edits": [
+        {
+          "xy": [
+            88,
+            75
+          ],
+          "source_xy": [
+            88,
+            75
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            90,
+            82
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 67.5,
+      "changed_pixels": 9,
+      "edits": [
+        {
+          "xy": [
+            101,
+            77
+          ],
+          "source_xy": [
+            101,
+            77
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            102,
+            77
+          ],
+          "source_xy": [
+            102,
+            77
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            102,
+            78
+          ],
+          "source_xy": [
+            102,
+            78
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            87,
+            79
+          ],
+          "source_xy": [
+            89,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            91,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            82
+          ],
+          "source_xy": [
+            91,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            83
+          ],
+          "source_xy": [
+            91,
+            83
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            90,
+            84
+          ],
+          "source_xy": [
+            92,
+            84
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            91,
+            85
+          ],
+          "source_xy": [
+            93,
+            85
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 90.0,
+      "changed_pixels": 10,
+      "edits": [
+        {
+          "xy": [
+            100,
+            77
+          ],
+          "source_xy": [
+            100,
+            77
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            101,
+            77
+          ],
+          "source_xy": [
+            101,
+            77
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            102,
+            77
+          ],
+          "source_xy": [
+            102,
+            77
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            102,
+            78
+          ],
+          "source_xy": [
+            102,
+            78
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            87,
+            79
+          ],
+          "source_xy": [
+            89,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            91,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            82
+          ],
+          "source_xy": [
+            91,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            83
+          ],
+          "source_xy": [
+            91,
+            83
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            90,
+            84
+          ],
+          "source_xy": [
+            92,
+            84
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            91,
+            85
+          ],
+          "source_xy": [
+            93,
+            85
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 112.5,
+      "changed_pixels": 3,
+      "edits": [
+        {
+          "xy": [
+            101,
+            78
+          ],
+          "source_xy": [
+            101,
+            78
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            87,
+            79
+          ],
+          "source_xy": [
+            89,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            90,
+            82
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 135.0,
+      "changed_pixels": 5,
+      "edits": [
+        {
+          "xy": [
+            100,
+            78
+          ],
+          "source_xy": [
+            100,
+            78
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            101,
+            78
+          ],
+          "source_xy": [
+            101,
+            78
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            87,
+            79
+          ],
+          "source_xy": [
+            89,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            90,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            90,
+            84
+          ],
+          "source_xy": [
+            92,
+            84
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 157.5,
+      "changed_pixels": 5,
+      "edits": [
+        {
+          "xy": [
+            99,
+            79
+          ],
+          "source_xy": [
+            99,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            100,
+            79
+          ],
+          "source_xy": [
+            100,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            87,
+            79
+          ],
+          "source_xy": [
+            89,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            101,
+            79
+          ],
+          "source_xy": [
+            97,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            90,
+            82
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 180.0,
+      "changed_pixels": 14,
+      "edits": [
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            88,
+            82
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            90,
+            82
+          ],
+          "source_xy": [
+            90,
+            82
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            91,
+            82
+          ],
+          "source_xy": [
+            91,
+            82
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            92,
+            82
+          ],
+          "source_xy": [
+            92,
+            82
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            93,
+            82
+          ],
+          "source_xy": [
+            93,
+            82
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            97,
+            80
+          ],
+          "source_xy": [
+            97,
+            80
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            98,
+            80
+          ],
+          "source_xy": [
+            98,
+            80
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            100,
+            79
+          ],
+          "source_xy": [
+            98,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            101,
+            79
+          ],
+          "source_xy": [
+            98,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            99,
+            80
+          ],
+          "source_xy": [
+            95,
+            80
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            82
+          ],
+          "source_xy": [
+            95,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            86
+          ],
+          "source_xy": [
+            94,
+            86
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            87
+          ],
+          "source_xy": [
+            94,
+            87
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            88
+          ],
+          "source_xy": [
+            94,
+            88
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 202.5,
+      "changed_pixels": 13,
+      "edits": [
+        {
+          "xy": [
+            99,
+            76
+          ],
+          "source_xy": [
+            99,
+            76
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            100,
+            76
+          ],
+          "source_xy": [
+            100,
+            76
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            100,
+            79
+          ],
+          "source_xy": [
+            98,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            101,
+            79
+          ],
+          "source_xy": [
+            98,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            99,
+            81
+          ],
+          "source_xy": [
+            97,
+            81
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            99,
+            82
+          ],
+          "source_xy": [
+            97,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            98,
+            83
+          ],
+          "source_xy": [
+            96,
+            83
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            97,
+            84
+          ],
+          "source_xy": [
+            95,
+            84
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            85
+          ],
+          "source_xy": [
+            94,
+            85
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            97,
+            85
+          ],
+          "source_xy": [
+            94,
+            85
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            86
+          ],
+          "source_xy": [
+            94,
+            86
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            95,
+            87
+          ],
+          "source_xy": [
+            93,
+            87
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            87
+          ],
+          "source_xy": [
+            93,
+            87
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 225.0,
+      "changed_pixels": 8,
+      "edits": [
+        {
+          "xy": [
+            90,
+            79
+          ],
+          "source_xy": [
+            90,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            91,
+            79
+          ],
+          "source_xy": [
+            91,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            87,
+            79
+          ],
+          "source_xy": [
+            93,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            79
+          ],
+          "source_xy": [
+            93,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            79
+          ],
+          "source_xy": [
+            93,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            90,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            83
+          ],
+          "source_xy": [
+            91,
+            83
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            88
+          ],
+          "source_xy": [
+            94,
+            88
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 247.5,
+      "changed_pixels": 10,
+      "edits": [
+        {
+          "xy": [
+            89,
+            78
+          ],
+          "source_xy": [
+            89,
+            78
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            90,
+            78
+          ],
+          "source_xy": [
+            90,
+            78
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            87,
+            79
+          ],
+          "source_xy": [
+            89,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            101,
+            79
+          ],
+          "source_xy": [
+            99,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            90,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            99,
+            82
+          ],
+          "source_xy": [
+            97,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            83
+          ],
+          "source_xy": [
+            91,
+            83
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            97,
+            85
+          ],
+          "source_xy": [
+            95,
+            85
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            87
+          ],
+          "source_xy": [
+            94,
+            87
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            88
+          ],
+          "source_xy": [
+            94,
+            88
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 270.0,
+      "changed_pixels": 11,
+      "edits": [
+        {
+          "xy": [
+            87,
+            79
+          ],
+          "source_xy": [
+            89,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            101,
+            79
+          ],
+          "source_xy": [
+            99,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            90,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            99,
+            82
+          ],
+          "source_xy": [
+            97,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            83
+          ],
+          "source_xy": [
+            91,
+            83
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            97,
+            84
+          ],
+          "source_xy": [
+            95,
+            84
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            97,
+            85
+          ],
+          "source_xy": [
+            95,
+            85
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            86
+          ],
+          "source_xy": [
+            94,
+            86
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            87
+          ],
+          "source_xy": [
+            94,
+            87
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            95,
+            88
+          ],
+          "source_xy": [
+            93,
+            88
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            88
+          ],
+          "source_xy": [
+            93,
+            88
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 292.5,
+      "changed_pixels": 13,
+      "edits": [
+        {
+          "xy": [
+            89,
+            79
+          ],
+          "source_xy": [
+            89,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            90,
+            79
+          ],
+          "source_xy": [
+            90,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            99,
+            76
+          ],
+          "source_xy": [
+            99,
+            76
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            100,
+            76
+          ],
+          "source_xy": [
+            100,
+            76
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            87,
+            79
+          ],
+          "source_xy": [
+            92,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            79
+          ],
+          "source_xy": [
+            92,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            101,
+            79
+          ],
+          "source_xy": [
+            99,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            90,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            99,
+            82
+          ],
+          "source_xy": [
+            97,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            97,
+            84
+          ],
+          "source_xy": [
+            95,
+            84
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            97,
+            85
+          ],
+          "source_xy": [
+            95,
+            85
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            87
+          ],
+          "source_xy": [
+            94,
+            87
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            88
+          ],
+          "source_xy": [
+            94,
+            88
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 315.0,
+      "changed_pixels": 16,
+      "edits": [
+        {
+          "xy": [
+            90,
+            79
+          ],
+          "source_xy": [
+            90,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            91,
+            79
+          ],
+          "source_xy": [
+            91,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            92,
+            79
+          ],
+          "source_xy": [
+            92,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            93,
+            79
+          ],
+          "source_xy": [
+            93,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            94,
+            79
+          ],
+          "source_xy": [
+            94,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            100,
+            77
+          ],
+          "source_xy": [
+            100,
+            77
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            101,
+            77
+          ],
+          "source_xy": [
+            101,
+            77
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            87,
+            79
+          ],
+          "source_xy": [
+            96,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            79
+          ],
+          "source_xy": [
+            96,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            79
+          ],
+          "source_xy": [
+            96,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            101,
+            79
+          ],
+          "source_xy": [
+            99,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            90,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            83
+          ],
+          "source_xy": [
+            91,
+            83
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            98,
+            83
+          ],
+          "source_xy": [
+            96,
+            83
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            97,
+            85
+          ],
+          "source_xy": [
+            95,
+            85
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            96,
+            87
+          ],
+          "source_xy": [
+            94,
+            87
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    },
+    {
+      "angle": 337.5,
+      "changed_pixels": 25,
+      "edits": [
+        {
+          "xy": [
+            91,
+            79
+          ],
+          "source_xy": [
+            91,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            92,
+            79
+          ],
+          "source_xy": [
+            92,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            93,
+            79
+          ],
+          "source_xy": [
+            93,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            94,
+            79
+          ],
+          "source_xy": [
+            94,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            95,
+            79
+          ],
+          "source_xy": [
+            95,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            96,
+            79
+          ],
+          "source_xy": [
+            96,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            97,
+            79
+          ],
+          "source_xy": [
+            97,
+            79
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            100,
+            78
+          ],
+          "source_xy": [
+            100,
+            78
+          ],
+          "reason": "enclosed neck shadow"
+        },
+        {
+          "xy": [
+            87,
+            79
+          ],
+          "source_xy": [
+            99,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            79
+          ],
+          "source_xy": [
+            99,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            79
+          ],
+          "source_xy": [
+            99,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            90,
+            79
+          ],
+          "source_xy": [
+            99,
+            79
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            88,
+            82
+          ],
+          "source_xy": [
+            92,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            82
+          ],
+          "source_xy": [
+            92,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            90,
+            82
+          ],
+          "source_xy": [
+            92,
+            82
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            89,
+            83
+          ],
+          "source_xy": [
+            93,
+            83
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            90,
+            83
+          ],
+          "source_xy": [
+            93,
+            83
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            91,
+            83
+          ],
+          "source_xy": [
+            93,
+            83
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            90,
+            84
+          ],
+          "source_xy": [
+            93,
+            84
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            91,
+            84
+          ],
+          "source_xy": [
+            93,
+            84
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            91,
+            85
+          ],
+          "source_xy": [
+            94,
+            85
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            92,
+            85
+          ],
+          "source_xy": [
+            94,
+            85
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            92,
+            86
+          ],
+          "source_xy": [
+            95,
+            86
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            93,
+            86
+          ],
+          "source_xy": [
+            95,
+            86
+          ],
+          "reason": "neck interior slit"
+        },
+        {
+          "xy": [
+            93,
+            87
+          ],
+          "source_xy": [
+            95,
+            87
+          ],
+          "reason": "neck interior slit"
+        }
+      ]
+    }
+  ]
+}
