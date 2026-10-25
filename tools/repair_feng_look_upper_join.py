@@ -46,6 +46,8 @@ def digest(path):
 
 
 def build(output=OUT):
+    if (OUT/'review-status.json').exists():
+        raise RuntimeError('Upper-join candidate rejected; do not regenerate or use as repair base')
     output.mkdir(parents=True, exist_ok=True)
     previous = Image.open(PREVIOUS).convert('RGBA')
     source = Image.open(SOURCE).convert('RGBA')

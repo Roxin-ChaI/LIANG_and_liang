@@ -1,5 +1,5 @@
 {
-  "status": "PENDING_USER_REVIEW",
+  "status": "REJECTED",
   "installed": false,
   "method": "restore intact same-direction upper body from existing atlas, without resampling",
   "important": "This reverses the defective head/body compositor in the review candidate; it is not newly drawn art. The resulting full cells are identical to the original directional source.",

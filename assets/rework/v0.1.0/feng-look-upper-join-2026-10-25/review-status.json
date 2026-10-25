@@ -1,0 +1,8 @@
+{
+  "status": "REJECTED",
+  "reviewed_on": "2026-10-26",
+  "reason": "User rejected complete upper-body restoration: shoulder tearing and garment color differences.",
+  "usable_as_source": false,
+  "replacement_base": "assets/rework/v0.1.0/feng-look-hand-join-2026-10-25/feng-look-16.png",
+  "installed": false
+}
