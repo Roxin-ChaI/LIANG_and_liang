@@ -1,0 +1,8436 @@
+{
+  "status": "PENDING_USER_REVIEW",
+  "installed": false,
+  "scope": "Feng Look external neck remnants and missing back-hair/neck shadow only",
+  "source_sha256": "268c87f0963343cd5e76f1c64f0a487776441490fa0608dcb96fcea703633979",
+  "original_sha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+  "known_unresolved": "Existing horizontal hand seams in side-looking directions; body-edge light pixels. Not whole-Look approval.",
+  "frames": [
+    {
+      "angle": 0.0,
+      "changed_pixels": 0,
+      "edits": []
+    },
+    {
+      "angle": 22.5,
+      "changed_pixels": 66,
+      "edits": [
+        {
+          "xy": [
+            65,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            45
+          ]
+        },
+        {
+          "xy": [
+            66,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            45
+          ]
+        },
+        {
+          "xy": [
+            67,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            45
+          ]
+        },
+        {
+          "xy": [
+            68,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            45
+          ]
+        },
+        {
+          "xy": [
+            65,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            46
+          ]
+        },
+        {
+          "xy": [
+            66,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            46
+          ]
+        },
+        {
+          "xy": [
+            67,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            46
+          ]
+        },
+        {
+          "xy": [
+            68,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            46
+          ]
+        },
+        {
+          "xy": [
+            69,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            46
+          ]
+        },
+        {
+          "xy": [
+            65,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            47
+          ]
+        },
+        {
+          "xy": [
+            66,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            47
+          ]
+        },
+        {
+          "xy": [
+            67,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            47
+          ]
+        },
+        {
+          "xy": [
+            68,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            47
+          ]
+        },
+        {
+          "xy": [
+            69,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            47
+          ]
+        },
+        {
+          "xy": [
+            70,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            47
+          ]
+        },
+        {
+          "xy": [
+            65,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            48
+          ]
+        },
+        {
+          "xy": [
+            66,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            48
+          ]
+        },
+        {
+          "xy": [
+            67,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            48
+          ]
+        },
+        {
+          "xy": [
+            68,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            48
+          ]
+        },
+        {
+          "xy": [
+            69,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            48
+          ]
+        },
+        {
+          "xy": [
+            70,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            48
+          ]
+        },
+        {
+          "xy": [
+            71,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            48
+          ]
+        },
+        {
+          "xy": [
+            66,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            49
+          ]
+        },
+        {
+          "xy": [
+            67,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            49
+          ]
+        },
+        {
+          "xy": [
+            68,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            49
+          ]
+        },
+        {
+          "xy": [
+            69,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            49
+          ]
+        },
+        {
+          "xy": [
+            70,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            49
+          ]
+        },
+        {
+          "xy": [
+            71,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            49
+          ]
+        },
+        {
+          "xy": [
+            72,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            49
+          ]
+        },
+        {
+          "xy": [
+            68,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            50
+          ]
+        },
+        {
+          "xy": [
+            69,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            50
+          ]
+        },
+        {
+          "xy": [
+            70,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            50
+          ]
+        },
+        {
+          "xy": [
+            71,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            50
+          ]
+        },
+        {
+          "xy": [
+            72,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            50
+          ]
+        },
+        {
+          "xy": [
+            73,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            50
+          ]
+        },
+        {
+          "xy": [
+            74,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            50
+          ]
+        },
+        {
+          "xy": [
+            75,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            50
+          ]
+        },
+        {
+          "xy": [
+            76,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            50
+          ]
+        },
+        {
+          "xy": [
+            77,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            50
+          ]
+        },
+        {
+          "xy": [
+            78,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            50
+          ]
+        },
+        {
+          "xy": [
+            79,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            50
+          ]
+        },
+        {
+          "xy": [
+            69,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            51
+          ]
+        },
+        {
+          "xy": [
+            70,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            51
+          ]
+        },
+        {
+          "xy": [
+            71,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            51
+          ]
+        },
+        {
+          "xy": [
+            72,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            51
+          ]
+        },
+        {
+          "xy": [
+            73,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            51
+          ]
+        },
+        {
+          "xy": [
+            74,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            51
+          ]
+        },
+        {
+          "xy": [
+            75,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            51
+          ]
+        },
+        {
+          "xy": [
+            76,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            51
+          ]
+        },
+        {
+          "xy": [
+            77,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            51
+          ]
+        },
+        {
+          "xy": [
+            78,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            51
+          ]
+        },
+        {
+          "xy": [
+            71,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            52
+          ]
+        },
+        {
+          "xy": [
+            72,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            52
+          ]
+        },
+        {
+          "xy": [
+            73,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            52
+          ]
+        },
+        {
+          "xy": [
+            74,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            52
+          ]
+        },
+        {
+          "xy": [
+            75,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            52
+          ]
+        },
+        {
+          "xy": [
+            76,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            52
+          ]
+        },
+        {
+          "xy": [
+            77,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            52
+          ]
+        },
+        {
+          "xy": [
+            74,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            53
+          ]
+        },
+        {
+          "xy": [
+            75,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            53
+          ]
+        },
+        {
+          "xy": [
+            76,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            53
+          ]
+        },
+        {
+          "xy": [
+            77,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            53
+          ]
+        },
+        {
+          "xy": [
+            75,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            54
+          ]
+        },
+        {
+          "xy": [
+            76,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            54
+          ]
+        },
+        {
+          "xy": [
+            77,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            54
+          ]
+        },
+        {
+          "xy": [
+            77,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 45.0,
+      "changed_pixels": 92,
+      "edits": [
+        {
+          "xy": [
+            65,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            45
+          ]
+        },
+        {
+          "xy": [
+            66,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            45
+          ]
+        },
+        {
+          "xy": [
+            67,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            45
+          ]
+        },
+        {
+          "xy": [
+            68,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            45
+          ]
+        },
+        {
+          "xy": [
+            69,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            45
+          ]
+        },
+        {
+          "xy": [
+            70,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            45
+          ]
+        },
+        {
+          "xy": [
+            71,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            45
+          ]
+        },
+        {
+          "xy": [
+            65,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            46
+          ]
+        },
+        {
+          "xy": [
+            66,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            46
+          ]
+        },
+        {
+          "xy": [
+            67,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            46
+          ]
+        },
+        {
+          "xy": [
+            68,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            46
+          ]
+        },
+        {
+          "xy": [
+            69,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            46
+          ]
+        },
+        {
+          "xy": [
+            70,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            46
+          ]
+        },
+        {
+          "xy": [
+            71,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            46
+          ]
+        },
+        {
+          "xy": [
+            72,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            46
+          ]
+        },
+        {
+          "xy": [
+            65,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            47
+          ]
+        },
+        {
+          "xy": [
+            66,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            47
+          ]
+        },
+        {
+          "xy": [
+            67,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            47
+          ]
+        },
+        {
+          "xy": [
+            68,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            47
+          ]
+        },
+        {
+          "xy": [
+            69,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            47
+          ]
+        },
+        {
+          "xy": [
+            70,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            47
+          ]
+        },
+        {
+          "xy": [
+            71,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            47
+          ]
+        },
+        {
+          "xy": [
+            72,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            47
+          ]
+        },
+        {
+          "xy": [
+            73,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            47
+          ]
+        },
+        {
+          "xy": [
+            65,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            48
+          ]
+        },
+        {
+          "xy": [
+            66,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            48
+          ]
+        },
+        {
+          "xy": [
+            67,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            48
+          ]
+        },
+        {
+          "xy": [
+            68,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            48
+          ]
+        },
+        {
+          "xy": [
+            69,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            48
+          ]
+        },
+        {
+          "xy": [
+            70,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            48
+          ]
+        },
+        {
+          "xy": [
+            71,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            48
+          ]
+        },
+        {
+          "xy": [
+            72,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            48
+          ]
+        },
+        {
+          "xy": [
+            73,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            48
+          ]
+        },
+        {
+          "xy": [
+            74,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            48
+          ]
+        },
+        {
+          "xy": [
+            65,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            49
+          ]
+        },
+        {
+          "xy": [
+            66,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            49
+          ]
+        },
+        {
+          "xy": [
+            67,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            49
+          ]
+        },
+        {
+          "xy": [
+            68,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            49
+          ]
+        },
+        {
+          "xy": [
+            69,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            49
+          ]
+        },
+        {
+          "xy": [
+            70,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            49
+          ]
+        },
+        {
+          "xy": [
+            71,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            49
+          ]
+        },
+        {
+          "xy": [
+            72,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            49
+          ]
+        },
+        {
+          "xy": [
+            73,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            49
+          ]
+        },
+        {
+          "xy": [
+            74,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            49
+          ]
+        },
+        {
+          "xy": [
+            75,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            49
+          ]
+        },
+        {
+          "xy": [
+            67,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            50
+          ]
+        },
+        {
+          "xy": [
+            68,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            50
+          ]
+        },
+        {
+          "xy": [
+            69,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            50
+          ]
+        },
+        {
+          "xy": [
+            70,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            50
+          ]
+        },
+        {
+          "xy": [
+            71,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            50
+          ]
+        },
+        {
+          "xy": [
+            72,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            50
+          ]
+        },
+        {
+          "xy": [
+            73,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            50
+          ]
+        },
+        {
+          "xy": [
+            74,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            50
+          ]
+        },
+        {
+          "xy": [
+            75,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            50
+          ]
+        },
+        {
+          "xy": [
+            76,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            50
+          ]
+        },
+        {
+          "xy": [
+            77,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            50
+          ]
+        },
+        {
+          "xy": [
+            78,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            50
+          ]
+        },
+        {
+          "xy": [
+            79,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            50
+          ]
+        },
+        {
+          "xy": [
+            80,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            80,
+            50
+          ]
+        },
+        {
+          "xy": [
+            69,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            51
+          ]
+        },
+        {
+          "xy": [
+            70,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            51
+          ]
+        },
+        {
+          "xy": [
+            71,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            51
+          ]
+        },
+        {
+          "xy": [
+            72,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            51
+          ]
+        },
+        {
+          "xy": [
+            73,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            51
+          ]
+        },
+        {
+          "xy": [
+            74,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            51
+          ]
+        },
+        {
+          "xy": [
+            75,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            51
+          ]
+        },
+        {
+          "xy": [
+            76,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            51
+          ]
+        },
+        {
+          "xy": [
+            77,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            51
+          ]
+        },
+        {
+          "xy": [
+            78,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            51
+          ]
+        },
+        {
+          "xy": [
+            79,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            51
+          ]
+        },
+        {
+          "xy": [
+            80,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            80,
+            51
+          ]
+        },
+        {
+          "xy": [
+            71,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            52
+          ]
+        },
+        {
+          "xy": [
+            72,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            52
+          ]
+        },
+        {
+          "xy": [
+            73,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            52
+          ]
+        },
+        {
+          "xy": [
+            74,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            52
+          ]
+        },
+        {
+          "xy": [
+            75,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            52
+          ]
+        },
+        {
+          "xy": [
+            76,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            52
+          ]
+        },
+        {
+          "xy": [
+            77,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            52
+          ]
+        },
+        {
+          "xy": [
+            78,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            52
+          ]
+        },
+        {
+          "xy": [
+            79,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            52
+          ]
+        },
+        {
+          "xy": [
+            74,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            53
+          ]
+        },
+        {
+          "xy": [
+            75,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            53
+          ]
+        },
+        {
+          "xy": [
+            76,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            53
+          ]
+        },
+        {
+          "xy": [
+            77,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            53
+          ]
+        },
+        {
+          "xy": [
+            78,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            53
+          ]
+        },
+        {
+          "xy": [
+            79,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            53
+          ]
+        },
+        {
+          "xy": [
+            75,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            54
+          ]
+        },
+        {
+          "xy": [
+            76,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            54
+          ]
+        },
+        {
+          "xy": [
+            77,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            54
+          ]
+        },
+        {
+          "xy": [
+            78,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            54
+          ]
+        },
+        {
+          "xy": [
+            77,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            55
+          ]
+        },
+        {
+          "xy": [
+            78,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 67.5,
+      "changed_pixels": 97,
+      "edits": [
+        {
+          "xy": [
+            65,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            45
+          ]
+        },
+        {
+          "xy": [
+            66,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            45
+          ]
+        },
+        {
+          "xy": [
+            67,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            45
+          ]
+        },
+        {
+          "xy": [
+            68,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            45
+          ]
+        },
+        {
+          "xy": [
+            69,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            45
+          ]
+        },
+        {
+          "xy": [
+            70,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            45
+          ]
+        },
+        {
+          "xy": [
+            71,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            45
+          ]
+        },
+        {
+          "xy": [
+            72,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            45
+          ]
+        },
+        {
+          "xy": [
+            73,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            45
+          ]
+        },
+        {
+          "xy": [
+            65,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            46
+          ]
+        },
+        {
+          "xy": [
+            66,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            46
+          ]
+        },
+        {
+          "xy": [
+            67,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            46
+          ]
+        },
+        {
+          "xy": [
+            68,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            46
+          ]
+        },
+        {
+          "xy": [
+            69,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            46
+          ]
+        },
+        {
+          "xy": [
+            70,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            46
+          ]
+        },
+        {
+          "xy": [
+            71,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            46
+          ]
+        },
+        {
+          "xy": [
+            72,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            46
+          ]
+        },
+        {
+          "xy": [
+            73,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            46
+          ]
+        },
+        {
+          "xy": [
+            74,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            46
+          ]
+        },
+        {
+          "xy": [
+            65,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            47
+          ]
+        },
+        {
+          "xy": [
+            66,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            47
+          ]
+        },
+        {
+          "xy": [
+            67,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            47
+          ]
+        },
+        {
+          "xy": [
+            68,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            47
+          ]
+        },
+        {
+          "xy": [
+            69,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            47
+          ]
+        },
+        {
+          "xy": [
+            70,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            47
+          ]
+        },
+        {
+          "xy": [
+            71,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            47
+          ]
+        },
+        {
+          "xy": [
+            72,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            47
+          ]
+        },
+        {
+          "xy": [
+            73,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            47
+          ]
+        },
+        {
+          "xy": [
+            74,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            47
+          ]
+        },
+        {
+          "xy": [
+            75,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            47
+          ]
+        },
+        {
+          "xy": [
+            65,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            48
+          ]
+        },
+        {
+          "xy": [
+            66,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            48
+          ]
+        },
+        {
+          "xy": [
+            67,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            48
+          ]
+        },
+        {
+          "xy": [
+            68,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            48
+          ]
+        },
+        {
+          "xy": [
+            69,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            48
+          ]
+        },
+        {
+          "xy": [
+            70,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            48
+          ]
+        },
+        {
+          "xy": [
+            71,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            48
+          ]
+        },
+        {
+          "xy": [
+            72,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            48
+          ]
+        },
+        {
+          "xy": [
+            73,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            48
+          ]
+        },
+        {
+          "xy": [
+            74,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            48
+          ]
+        },
+        {
+          "xy": [
+            75,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            48
+          ]
+        },
+        {
+          "xy": [
+            67,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            49
+          ]
+        },
+        {
+          "xy": [
+            68,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            49
+          ]
+        },
+        {
+          "xy": [
+            69,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            49
+          ]
+        },
+        {
+          "xy": [
+            70,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            49
+          ]
+        },
+        {
+          "xy": [
+            71,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            49
+          ]
+        },
+        {
+          "xy": [
+            72,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            49
+          ]
+        },
+        {
+          "xy": [
+            73,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            49
+          ]
+        },
+        {
+          "xy": [
+            74,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            49
+          ]
+        },
+        {
+          "xy": [
+            75,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            49
+          ]
+        },
+        {
+          "xy": [
+            76,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            49
+          ]
+        },
+        {
+          "xy": [
+            77,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            49
+          ]
+        },
+        {
+          "xy": [
+            78,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            49
+          ]
+        },
+        {
+          "xy": [
+            69,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            50
+          ]
+        },
+        {
+          "xy": [
+            70,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            50
+          ]
+        },
+        {
+          "xy": [
+            71,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            50
+          ]
+        },
+        {
+          "xy": [
+            72,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            50
+          ]
+        },
+        {
+          "xy": [
+            73,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            50
+          ]
+        },
+        {
+          "xy": [
+            74,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            50
+          ]
+        },
+        {
+          "xy": [
+            75,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            50
+          ]
+        },
+        {
+          "xy": [
+            76,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            50
+          ]
+        },
+        {
+          "xy": [
+            77,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            50
+          ]
+        },
+        {
+          "xy": [
+            78,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            50
+          ]
+        },
+        {
+          "xy": [
+            79,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            50
+          ]
+        },
+        {
+          "xy": [
+            80,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            80,
+            50
+          ]
+        },
+        {
+          "xy": [
+            81,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            81,
+            50
+          ]
+        },
+        {
+          "xy": [
+            70,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            51
+          ]
+        },
+        {
+          "xy": [
+            71,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            51
+          ]
+        },
+        {
+          "xy": [
+            72,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            51
+          ]
+        },
+        {
+          "xy": [
+            73,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            51
+          ]
+        },
+        {
+          "xy": [
+            74,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            51
+          ]
+        },
+        {
+          "xy": [
+            75,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            51
+          ]
+        },
+        {
+          "xy": [
+            76,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            51
+          ]
+        },
+        {
+          "xy": [
+            77,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            51
+          ]
+        },
+        {
+          "xy": [
+            78,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            51
+          ]
+        },
+        {
+          "xy": [
+            79,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            51
+          ]
+        },
+        {
+          "xy": [
+            80,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            80,
+            51
+          ]
+        },
+        {
+          "xy": [
+            72,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            52
+          ]
+        },
+        {
+          "xy": [
+            73,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            52
+          ]
+        },
+        {
+          "xy": [
+            74,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            52
+          ]
+        },
+        {
+          "xy": [
+            75,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            52
+          ]
+        },
+        {
+          "xy": [
+            76,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            52
+          ]
+        },
+        {
+          "xy": [
+            77,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            52
+          ]
+        },
+        {
+          "xy": [
+            78,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            52
+          ]
+        },
+        {
+          "xy": [
+            79,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            52
+          ]
+        },
+        {
+          "xy": [
+            80,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            80,
+            52
+          ]
+        },
+        {
+          "xy": [
+            74,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            53
+          ]
+        },
+        {
+          "xy": [
+            75,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            53
+          ]
+        },
+        {
+          "xy": [
+            76,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            53
+          ]
+        },
+        {
+          "xy": [
+            77,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            53
+          ]
+        },
+        {
+          "xy": [
+            78,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            53
+          ]
+        },
+        {
+          "xy": [
+            79,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            53
+          ]
+        },
+        {
+          "xy": [
+            75,
+            54
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            77,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            54
+          ]
+        },
+        {
+          "xy": [
+            78,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            54
+          ]
+        },
+        {
+          "xy": [
+            79,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            54
+          ]
+        },
+        {
+          "xy": [
+            78,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 90.0,
+      "changed_pixels": 28,
+      "edits": [
+        {
+          "xy": [
+            72,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            46
+          ]
+        },
+        {
+          "xy": [
+            73,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            48
+          ]
+        },
+        {
+          "xy": [
+            74,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            48
+          ]
+        },
+        {
+          "xy": [
+            75,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            48
+          ]
+        },
+        {
+          "xy": [
+            76,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            48
+          ]
+        },
+        {
+          "xy": [
+            77,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            48
+          ]
+        },
+        {
+          "xy": [
+            78,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            48
+          ]
+        },
+        {
+          "xy": [
+            70,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            71,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            72,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            75,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            49
+          ]
+        },
+        {
+          "xy": [
+            76,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            49
+          ]
+        },
+        {
+          "xy": [
+            77,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            49
+          ]
+        },
+        {
+          "xy": [
+            78,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            49
+          ]
+        },
+        {
+          "xy": [
+            72,
+            50
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            73,
+            50
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            76,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            50
+          ]
+        },
+        {
+          "xy": [
+            77,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            50
+          ]
+        },
+        {
+          "xy": [
+            78,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            50
+          ]
+        },
+        {
+          "xy": [
+            77,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            51
+          ]
+        },
+        {
+          "xy": [
+            78,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            51
+          ]
+        },
+        {
+          "xy": [
+            79,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            51
+          ]
+        },
+        {
+          "xy": [
+            74,
+            52
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            77,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            52
+          ]
+        },
+        {
+          "xy": [
+            77,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            53
+          ]
+        },
+        {
+          "xy": [
+            75,
+            54
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            76,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            54
+          ]
+        },
+        {
+          "xy": [
+            77,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 112.5,
+      "changed_pixels": 85,
+      "edits": [
+        {
+          "xy": [
+            65,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            45
+          ]
+        },
+        {
+          "xy": [
+            66,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            45
+          ]
+        },
+        {
+          "xy": [
+            67,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            45
+          ]
+        },
+        {
+          "xy": [
+            68,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            45
+          ]
+        },
+        {
+          "xy": [
+            69,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            45
+          ]
+        },
+        {
+          "xy": [
+            70,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            45
+          ]
+        },
+        {
+          "xy": [
+            71,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            45
+          ]
+        },
+        {
+          "xy": [
+            72,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            45
+          ]
+        },
+        {
+          "xy": [
+            65,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            65,
+            46
+          ]
+        },
+        {
+          "xy": [
+            66,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            46
+          ]
+        },
+        {
+          "xy": [
+            67,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            46
+          ]
+        },
+        {
+          "xy": [
+            68,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            46
+          ]
+        },
+        {
+          "xy": [
+            69,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            46
+          ]
+        },
+        {
+          "xy": [
+            70,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            46
+          ]
+        },
+        {
+          "xy": [
+            71,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            46
+          ]
+        },
+        {
+          "xy": [
+            72,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            46
+          ]
+        },
+        {
+          "xy": [
+            73,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            46
+          ]
+        },
+        {
+          "xy": [
+            66,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            66,
+            47
+          ]
+        },
+        {
+          "xy": [
+            67,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            47
+          ]
+        },
+        {
+          "xy": [
+            68,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            47
+          ]
+        },
+        {
+          "xy": [
+            69,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            47
+          ]
+        },
+        {
+          "xy": [
+            70,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            47
+          ]
+        },
+        {
+          "xy": [
+            71,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            47
+          ]
+        },
+        {
+          "xy": [
+            72,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            47
+          ]
+        },
+        {
+          "xy": [
+            73,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            47
+          ]
+        },
+        {
+          "xy": [
+            67,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            67,
+            48
+          ]
+        },
+        {
+          "xy": [
+            68,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            48
+          ]
+        },
+        {
+          "xy": [
+            69,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            48
+          ]
+        },
+        {
+          "xy": [
+            70,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            48
+          ]
+        },
+        {
+          "xy": [
+            71,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            48
+          ]
+        },
+        {
+          "xy": [
+            72,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            48
+          ]
+        },
+        {
+          "xy": [
+            73,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            48
+          ]
+        },
+        {
+          "xy": [
+            68,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            68,
+            49
+          ]
+        },
+        {
+          "xy": [
+            69,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            49
+          ]
+        },
+        {
+          "xy": [
+            70,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            49
+          ]
+        },
+        {
+          "xy": [
+            71,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            49
+          ]
+        },
+        {
+          "xy": [
+            72,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            49
+          ]
+        },
+        {
+          "xy": [
+            73,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            49
+          ]
+        },
+        {
+          "xy": [
+            74,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            49
+          ]
+        },
+        {
+          "xy": [
+            69,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            50
+          ]
+        },
+        {
+          "xy": [
+            70,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            50
+          ]
+        },
+        {
+          "xy": [
+            71,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            50
+          ]
+        },
+        {
+          "xy": [
+            72,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            50
+          ]
+        },
+        {
+          "xy": [
+            73,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            50
+          ]
+        },
+        {
+          "xy": [
+            74,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            50
+          ]
+        },
+        {
+          "xy": [
+            75,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            50
+          ]
+        },
+        {
+          "xy": [
+            76,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            50
+          ]
+        },
+        {
+          "xy": [
+            70,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            51
+          ]
+        },
+        {
+          "xy": [
+            71,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            51
+          ]
+        },
+        {
+          "xy": [
+            72,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            51
+          ]
+        },
+        {
+          "xy": [
+            73,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            51
+          ]
+        },
+        {
+          "xy": [
+            74,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            51
+          ]
+        },
+        {
+          "xy": [
+            75,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            51
+          ]
+        },
+        {
+          "xy": [
+            76,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            51
+          ]
+        },
+        {
+          "xy": [
+            77,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            51
+          ]
+        },
+        {
+          "xy": [
+            70,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            52
+          ]
+        },
+        {
+          "xy": [
+            71,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            52
+          ]
+        },
+        {
+          "xy": [
+            72,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            52
+          ]
+        },
+        {
+          "xy": [
+            73,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            52
+          ]
+        },
+        {
+          "xy": [
+            74,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            52
+          ]
+        },
+        {
+          "xy": [
+            75,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            52
+          ]
+        },
+        {
+          "xy": [
+            76,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            52
+          ]
+        },
+        {
+          "xy": [
+            77,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            52
+          ]
+        },
+        {
+          "xy": [
+            78,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            52
+          ]
+        },
+        {
+          "xy": [
+            79,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            52
+          ]
+        },
+        {
+          "xy": [
+            80,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            80,
+            52
+          ]
+        },
+        {
+          "xy": [
+            72,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            53
+          ]
+        },
+        {
+          "xy": [
+            73,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            53
+          ]
+        },
+        {
+          "xy": [
+            74,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            53
+          ]
+        },
+        {
+          "xy": [
+            75,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            53
+          ]
+        },
+        {
+          "xy": [
+            76,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            53
+          ]
+        },
+        {
+          "xy": [
+            77,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            53
+          ]
+        },
+        {
+          "xy": [
+            78,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            53
+          ]
+        },
+        {
+          "xy": [
+            79,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            53
+          ]
+        },
+        {
+          "xy": [
+            73,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            54
+          ]
+        },
+        {
+          "xy": [
+            74,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            54
+          ]
+        },
+        {
+          "xy": [
+            75,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            54
+          ]
+        },
+        {
+          "xy": [
+            76,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            54
+          ]
+        },
+        {
+          "xy": [
+            77,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            54
+          ]
+        },
+        {
+          "xy": [
+            78,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            54
+          ]
+        },
+        {
+          "xy": [
+            79,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            54
+          ]
+        },
+        {
+          "xy": [
+            73,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            55
+          ]
+        },
+        {
+          "xy": [
+            77,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            55
+          ]
+        },
+        {
+          "xy": [
+            78,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            55
+          ]
+        },
+        {
+          "xy": [
+            79,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 135.0,
+      "changed_pixels": 37,
+      "edits": [
+        {
+          "xy": [
+            69,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            69,
+            45
+          ]
+        },
+        {
+          "xy": [
+            70,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            47
+          ]
+        },
+        {
+          "xy": [
+            71,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            47
+          ]
+        },
+        {
+          "xy": [
+            70,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            70,
+            48
+          ]
+        },
+        {
+          "xy": [
+            71,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            48
+          ]
+        },
+        {
+          "xy": [
+            70,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            71,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            49
+          ]
+        },
+        {
+          "xy": [
+            71,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            50
+          ]
+        },
+        {
+          "xy": [
+            72,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            50
+          ]
+        },
+        {
+          "xy": [
+            73,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            50
+          ]
+        },
+        {
+          "xy": [
+            71,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            51
+          ]
+        },
+        {
+          "xy": [
+            73,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            51
+          ]
+        },
+        {
+          "xy": [
+            74,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            51
+          ]
+        },
+        {
+          "xy": [
+            75,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            51
+          ]
+        },
+        {
+          "xy": [
+            76,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            51
+          ]
+        },
+        {
+          "xy": [
+            77,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            51
+          ]
+        },
+        {
+          "xy": [
+            73,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            52
+          ]
+        },
+        {
+          "xy": [
+            74,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            52
+          ]
+        },
+        {
+          "xy": [
+            75,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            52
+          ]
+        },
+        {
+          "xy": [
+            76,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            52
+          ]
+        },
+        {
+          "xy": [
+            77,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            52
+          ]
+        },
+        {
+          "xy": [
+            78,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            52
+          ]
+        },
+        {
+          "xy": [
+            74,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            53
+          ]
+        },
+        {
+          "xy": [
+            75,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            53
+          ]
+        },
+        {
+          "xy": [
+            76,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            53
+          ]
+        },
+        {
+          "xy": [
+            77,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            53
+          ]
+        },
+        {
+          "xy": [
+            78,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            53
+          ]
+        },
+        {
+          "xy": [
+            74,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            54
+          ]
+        },
+        {
+          "xy": [
+            75,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            54
+          ]
+        },
+        {
+          "xy": [
+            76,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            54
+          ]
+        },
+        {
+          "xy": [
+            77,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            54
+          ]
+        },
+        {
+          "xy": [
+            78,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            54
+          ]
+        },
+        {
+          "xy": [
+            79,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            54
+          ]
+        },
+        {
+          "xy": [
+            77,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            55
+          ]
+        },
+        {
+          "xy": [
+            78,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            55
+          ]
+        },
+        {
+          "xy": [
+            79,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            55
+          ]
+        },
+        {
+          "xy": [
+            80,
+            56
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            80,
+            56
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 157.5,
+      "changed_pixels": 27,
+      "edits": [
+        {
+          "xy": [
+            70,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            71,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            71,
+            49
+          ]
+        },
+        {
+          "xy": [
+            72,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            72,
+            50
+          ]
+        },
+        {
+          "xy": [
+            73,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            50
+          ]
+        },
+        {
+          "xy": [
+            73,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            51
+          ]
+        },
+        {
+          "xy": [
+            74,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            51
+          ]
+        },
+        {
+          "xy": [
+            75,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            51
+          ]
+        },
+        {
+          "xy": [
+            76,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            51
+          ]
+        },
+        {
+          "xy": [
+            77,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            51
+          ]
+        },
+        {
+          "xy": [
+            73,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            73,
+            52
+          ]
+        },
+        {
+          "xy": [
+            74,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            52
+          ]
+        },
+        {
+          "xy": [
+            75,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            52
+          ]
+        },
+        {
+          "xy": [
+            76,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            52
+          ]
+        },
+        {
+          "xy": [
+            77,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            52
+          ]
+        },
+        {
+          "xy": [
+            74,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            53
+          ]
+        },
+        {
+          "xy": [
+            75,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            53
+          ]
+        },
+        {
+          "xy": [
+            76,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            53
+          ]
+        },
+        {
+          "xy": [
+            77,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            53
+          ]
+        },
+        {
+          "xy": [
+            78,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            53
+          ]
+        },
+        {
+          "xy": [
+            74,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            74,
+            54
+          ]
+        },
+        {
+          "xy": [
+            75,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            75,
+            54
+          ]
+        },
+        {
+          "xy": [
+            76,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            76,
+            54
+          ]
+        },
+        {
+          "xy": [
+            77,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            54
+          ]
+        },
+        {
+          "xy": [
+            78,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            54
+          ]
+        },
+        {
+          "xy": [
+            77,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            77,
+            55
+          ]
+        },
+        {
+          "xy": [
+            78,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            78,
+            55
+          ]
+        },
+        {
+          "xy": [
+            79,
+            55
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            79,
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 180.0,
+      "changed_pixels": 15,
+      "edits": [
+        {
+          "xy": [
+            108,
+            47
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            104,
+            48
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            105,
+            48
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            106,
+            48
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            107,
+            48
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            70,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            71,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            104,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            105,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            106,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            103,
+            50
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            103,
+            51
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            103,
+            52
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            102,
+            53
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            103,
+            53
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        }
+      ]
+    },
+    {
+      "angle": 202.5,
+      "changed_pixels": 21,
+      "edits": [
+        {
+          "xy": [
+            108,
+            47
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            107,
+            48
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            105,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            49
+          ]
+        },
+        {
+          "xy": [
+            106,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            49
+          ]
+        },
+        {
+          "xy": [
+            99,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            51
+          ]
+        },
+        {
+          "xy": [
+            100,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            51
+          ]
+        },
+        {
+          "xy": [
+            101,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            51
+          ]
+        },
+        {
+          "xy": [
+            102,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            51
+          ]
+        },
+        {
+          "xy": [
+            103,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            51
+          ]
+        },
+        {
+          "xy": [
+            104,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            51
+          ]
+        },
+        {
+          "xy": [
+            100,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            52
+          ]
+        },
+        {
+          "xy": [
+            101,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            52
+          ]
+        },
+        {
+          "xy": [
+            102,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            52
+          ]
+        },
+        {
+          "xy": [
+            103,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            52
+          ]
+        },
+        {
+          "xy": [
+            99,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            53
+          ]
+        },
+        {
+          "xy": [
+            100,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            53
+          ]
+        },
+        {
+          "xy": [
+            101,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            53
+          ]
+        },
+        {
+          "xy": [
+            102,
+            53
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            103,
+            53
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            99,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            54
+          ]
+        },
+        {
+          "xy": [
+            100,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 225.0,
+      "changed_pixels": 24,
+      "edits": [
+        {
+          "xy": [
+            108,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            45
+          ]
+        },
+        {
+          "xy": [
+            107,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            46
+          ]
+        },
+        {
+          "xy": [
+            108,
+            47
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            106,
+            48
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            107,
+            48
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            105,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            49
+          ]
+        },
+        {
+          "xy": [
+            106,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            103,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            50
+          ]
+        },
+        {
+          "xy": [
+            104,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            50
+          ]
+        },
+        {
+          "xy": [
+            99,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            51
+          ]
+        },
+        {
+          "xy": [
+            100,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            51
+          ]
+        },
+        {
+          "xy": [
+            101,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            51
+          ]
+        },
+        {
+          "xy": [
+            102,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            51
+          ]
+        },
+        {
+          "xy": [
+            103,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            51
+          ]
+        },
+        {
+          "xy": [
+            99,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            52
+          ]
+        },
+        {
+          "xy": [
+            100,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            52
+          ]
+        },
+        {
+          "xy": [
+            101,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            52
+          ]
+        },
+        {
+          "xy": [
+            102,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            52
+          ]
+        },
+        {
+          "xy": [
+            103,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            52
+          ]
+        },
+        {
+          "xy": [
+            100,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            53
+          ]
+        },
+        {
+          "xy": [
+            101,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            53
+          ]
+        },
+        {
+          "xy": [
+            102,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            53
+          ]
+        },
+        {
+          "xy": [
+            103,
+            53
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            100,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 247.5,
+      "changed_pixels": 56,
+      "edits": [
+        {
+          "xy": [
+            103,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            45
+          ]
+        },
+        {
+          "xy": [
+            104,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            45
+          ]
+        },
+        {
+          "xy": [
+            105,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            45
+          ]
+        },
+        {
+          "xy": [
+            106,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            45
+          ]
+        },
+        {
+          "xy": [
+            107,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            45
+          ]
+        },
+        {
+          "xy": [
+            102,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            46
+          ]
+        },
+        {
+          "xy": [
+            103,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            46
+          ]
+        },
+        {
+          "xy": [
+            104,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            46
+          ]
+        },
+        {
+          "xy": [
+            105,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            46
+          ]
+        },
+        {
+          "xy": [
+            106,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            46
+          ]
+        },
+        {
+          "xy": [
+            107,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            46
+          ]
+        },
+        {
+          "xy": [
+            101,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            47
+          ]
+        },
+        {
+          "xy": [
+            102,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            47
+          ]
+        },
+        {
+          "xy": [
+            103,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            47
+          ]
+        },
+        {
+          "xy": [
+            104,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            47
+          ]
+        },
+        {
+          "xy": [
+            105,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            47
+          ]
+        },
+        {
+          "xy": [
+            106,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            47
+          ]
+        },
+        {
+          "xy": [
+            108,
+            47
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            101,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            48
+          ]
+        },
+        {
+          "xy": [
+            102,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            48
+          ]
+        },
+        {
+          "xy": [
+            103,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            48
+          ]
+        },
+        {
+          "xy": [
+            104,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            48
+          ]
+        },
+        {
+          "xy": [
+            105,
+            48
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            106,
+            48
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            107,
+            48
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            99,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            49
+          ]
+        },
+        {
+          "xy": [
+            100,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            49
+          ]
+        },
+        {
+          "xy": [
+            101,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            49
+          ]
+        },
+        {
+          "xy": [
+            102,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            49
+          ]
+        },
+        {
+          "xy": [
+            103,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            49
+          ]
+        },
+        {
+          "xy": [
+            104,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            49
+          ]
+        },
+        {
+          "xy": [
+            105,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            106,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            99,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            50
+          ]
+        },
+        {
+          "xy": [
+            100,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            50
+          ]
+        },
+        {
+          "xy": [
+            101,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            50
+          ]
+        },
+        {
+          "xy": [
+            102,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            50
+          ]
+        },
+        {
+          "xy": [
+            103,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            50
+          ]
+        },
+        {
+          "xy": [
+            99,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            51
+          ]
+        },
+        {
+          "xy": [
+            100,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            51
+          ]
+        },
+        {
+          "xy": [
+            101,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            51
+          ]
+        },
+        {
+          "xy": [
+            102,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            51
+          ]
+        },
+        {
+          "xy": [
+            103,
+            51
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            99,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            52
+          ]
+        },
+        {
+          "xy": [
+            100,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            52
+          ]
+        },
+        {
+          "xy": [
+            101,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            52
+          ]
+        },
+        {
+          "xy": [
+            102,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            52
+          ]
+        },
+        {
+          "xy": [
+            103,
+            52
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            99,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            53
+          ]
+        },
+        {
+          "xy": [
+            100,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            53
+          ]
+        },
+        {
+          "xy": [
+            102,
+            53
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            103,
+            53
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            99,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            54
+          ]
+        },
+        {
+          "xy": [
+            100,
+            54
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            99,
+            56
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            56
+          ]
+        },
+        {
+          "xy": [
+            99,
+            57
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            57
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 270.0,
+      "changed_pixels": 31,
+      "edits": [
+        {
+          "xy": [
+            107,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            45
+          ]
+        },
+        {
+          "xy": [
+            106,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            46
+          ]
+        },
+        {
+          "xy": [
+            101,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            47
+          ]
+        },
+        {
+          "xy": [
+            102,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            47
+          ]
+        },
+        {
+          "xy": [
+            103,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            47
+          ]
+        },
+        {
+          "xy": [
+            104,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            47
+          ]
+        },
+        {
+          "xy": [
+            105,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            47
+          ]
+        },
+        {
+          "xy": [
+            108,
+            47
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            101,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            48
+          ]
+        },
+        {
+          "xy": [
+            102,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            48
+          ]
+        },
+        {
+          "xy": [
+            103,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            48
+          ]
+        },
+        {
+          "xy": [
+            104,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            48
+          ]
+        },
+        {
+          "xy": [
+            105,
+            48
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            106,
+            48
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            107,
+            48
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            70,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            101,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            49
+          ]
+        },
+        {
+          "xy": [
+            102,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            49
+          ]
+        },
+        {
+          "xy": [
+            104,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            105,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            106,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            101,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            50
+          ]
+        },
+        {
+          "xy": [
+            102,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            50
+          ]
+        },
+        {
+          "xy": [
+            103,
+            50
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            102,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            51
+          ]
+        },
+        {
+          "xy": [
+            103,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            51
+          ]
+        },
+        {
+          "xy": [
+            102,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            52
+          ]
+        },
+        {
+          "xy": [
+            103,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            52
+          ]
+        },
+        {
+          "xy": [
+            104,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            52
+          ]
+        },
+        {
+          "xy": [
+            102,
+            53
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            103,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            53
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 292.5,
+      "changed_pixels": 74,
+      "edits": [
+        {
+          "xy": [
+            106,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            45
+          ]
+        },
+        {
+          "xy": [
+            107,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            45
+          ]
+        },
+        {
+          "xy": [
+            108,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            45
+          ]
+        },
+        {
+          "xy": [
+            109,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            45
+          ]
+        },
+        {
+          "xy": [
+            110,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            110,
+            45
+          ]
+        },
+        {
+          "xy": [
+            111,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            45
+          ]
+        },
+        {
+          "xy": [
+            112,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            45
+          ]
+        },
+        {
+          "xy": [
+            113,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            113,
+            45
+          ]
+        },
+        {
+          "xy": [
+            114,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            114,
+            45
+          ]
+        },
+        {
+          "xy": [
+            106,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            46
+          ]
+        },
+        {
+          "xy": [
+            107,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            46
+          ]
+        },
+        {
+          "xy": [
+            108,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            46
+          ]
+        },
+        {
+          "xy": [
+            109,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            46
+          ]
+        },
+        {
+          "xy": [
+            110,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            110,
+            46
+          ]
+        },
+        {
+          "xy": [
+            111,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            46
+          ]
+        },
+        {
+          "xy": [
+            112,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            46
+          ]
+        },
+        {
+          "xy": [
+            113,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            113,
+            46
+          ]
+        },
+        {
+          "xy": [
+            114,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            114,
+            46
+          ]
+        },
+        {
+          "xy": [
+            106,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            47
+          ]
+        },
+        {
+          "xy": [
+            107,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            47
+          ]
+        },
+        {
+          "xy": [
+            108,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            47
+          ]
+        },
+        {
+          "xy": [
+            109,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            47
+          ]
+        },
+        {
+          "xy": [
+            110,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            110,
+            47
+          ]
+        },
+        {
+          "xy": [
+            111,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            47
+          ]
+        },
+        {
+          "xy": [
+            112,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            47
+          ]
+        },
+        {
+          "xy": [
+            113,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            113,
+            47
+          ]
+        },
+        {
+          "xy": [
+            105,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            48
+          ]
+        },
+        {
+          "xy": [
+            106,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            48
+          ]
+        },
+        {
+          "xy": [
+            107,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            48
+          ]
+        },
+        {
+          "xy": [
+            108,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            48
+          ]
+        },
+        {
+          "xy": [
+            109,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            48
+          ]
+        },
+        {
+          "xy": [
+            110,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            110,
+            48
+          ]
+        },
+        {
+          "xy": [
+            111,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            48
+          ]
+        },
+        {
+          "xy": [
+            112,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            48
+          ]
+        },
+        {
+          "xy": [
+            104,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            49
+          ]
+        },
+        {
+          "xy": [
+            105,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            49
+          ]
+        },
+        {
+          "xy": [
+            106,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            49
+          ]
+        },
+        {
+          "xy": [
+            107,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            49
+          ]
+        },
+        {
+          "xy": [
+            108,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            49
+          ]
+        },
+        {
+          "xy": [
+            109,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            49
+          ]
+        },
+        {
+          "xy": [
+            110,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            110,
+            49
+          ]
+        },
+        {
+          "xy": [
+            111,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            49
+          ]
+        },
+        {
+          "xy": [
+            112,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            49
+          ]
+        },
+        {
+          "xy": [
+            103,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            50
+          ]
+        },
+        {
+          "xy": [
+            104,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            50
+          ]
+        },
+        {
+          "xy": [
+            105,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            50
+          ]
+        },
+        {
+          "xy": [
+            106,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            50
+          ]
+        },
+        {
+          "xy": [
+            107,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            50
+          ]
+        },
+        {
+          "xy": [
+            108,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            50
+          ]
+        },
+        {
+          "xy": [
+            109,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            50
+          ]
+        },
+        {
+          "xy": [
+            110,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            110,
+            50
+          ]
+        },
+        {
+          "xy": [
+            111,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            50
+          ]
+        },
+        {
+          "xy": [
+            112,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            50
+          ]
+        },
+        {
+          "xy": [
+            101,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            51
+          ]
+        },
+        {
+          "xy": [
+            102,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            51
+          ]
+        },
+        {
+          "xy": [
+            103,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            51
+          ]
+        },
+        {
+          "xy": [
+            104,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            51
+          ]
+        },
+        {
+          "xy": [
+            105,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            51
+          ]
+        },
+        {
+          "xy": [
+            106,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            51
+          ]
+        },
+        {
+          "xy": [
+            107,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            51
+          ]
+        },
+        {
+          "xy": [
+            108,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            51
+          ]
+        },
+        {
+          "xy": [
+            100,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            52
+          ]
+        },
+        {
+          "xy": [
+            101,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            52
+          ]
+        },
+        {
+          "xy": [
+            102,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            52
+          ]
+        },
+        {
+          "xy": [
+            103,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            52
+          ]
+        },
+        {
+          "xy": [
+            104,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            52
+          ]
+        },
+        {
+          "xy": [
+            105,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            52
+          ]
+        },
+        {
+          "xy": [
+            106,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            52
+          ]
+        },
+        {
+          "xy": [
+            107,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            52
+          ]
+        },
+        {
+          "xy": [
+            100,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            53
+          ]
+        },
+        {
+          "xy": [
+            101,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            53
+          ]
+        },
+        {
+          "xy": [
+            102,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            53
+          ]
+        },
+        {
+          "xy": [
+            103,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            53
+          ]
+        },
+        {
+          "xy": [
+            100,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 315.0,
+      "changed_pixels": 75,
+      "edits": [
+        {
+          "xy": [
+            106,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            45
+          ]
+        },
+        {
+          "xy": [
+            107,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            45
+          ]
+        },
+        {
+          "xy": [
+            108,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            45
+          ]
+        },
+        {
+          "xy": [
+            109,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            45
+          ]
+        },
+        {
+          "xy": [
+            110,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            110,
+            45
+          ]
+        },
+        {
+          "xy": [
+            111,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            45
+          ]
+        },
+        {
+          "xy": [
+            112,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            45
+          ]
+        },
+        {
+          "xy": [
+            113,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            113,
+            45
+          ]
+        },
+        {
+          "xy": [
+            114,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            114,
+            45
+          ]
+        },
+        {
+          "xy": [
+            115,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            115,
+            45
+          ]
+        },
+        {
+          "xy": [
+            106,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            46
+          ]
+        },
+        {
+          "xy": [
+            107,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            46
+          ]
+        },
+        {
+          "xy": [
+            108,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            46
+          ]
+        },
+        {
+          "xy": [
+            109,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            46
+          ]
+        },
+        {
+          "xy": [
+            110,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            110,
+            46
+          ]
+        },
+        {
+          "xy": [
+            111,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            46
+          ]
+        },
+        {
+          "xy": [
+            112,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            46
+          ]
+        },
+        {
+          "xy": [
+            113,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            113,
+            46
+          ]
+        },
+        {
+          "xy": [
+            114,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            114,
+            46
+          ]
+        },
+        {
+          "xy": [
+            115,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            115,
+            46
+          ]
+        },
+        {
+          "xy": [
+            106,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            47
+          ]
+        },
+        {
+          "xy": [
+            107,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            47
+          ]
+        },
+        {
+          "xy": [
+            108,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            47
+          ]
+        },
+        {
+          "xy": [
+            109,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            47
+          ]
+        },
+        {
+          "xy": [
+            110,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            110,
+            47
+          ]
+        },
+        {
+          "xy": [
+            111,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            47
+          ]
+        },
+        {
+          "xy": [
+            112,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            47
+          ]
+        },
+        {
+          "xy": [
+            113,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            113,
+            47
+          ]
+        },
+        {
+          "xy": [
+            106,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            48
+          ]
+        },
+        {
+          "xy": [
+            107,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            48
+          ]
+        },
+        {
+          "xy": [
+            108,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            48
+          ]
+        },
+        {
+          "xy": [
+            109,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            48
+          ]
+        },
+        {
+          "xy": [
+            110,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            110,
+            48
+          ]
+        },
+        {
+          "xy": [
+            111,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            48
+          ]
+        },
+        {
+          "xy": [
+            112,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            48
+          ]
+        },
+        {
+          "xy": [
+            70,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            105,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            49
+          ]
+        },
+        {
+          "xy": [
+            106,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            49
+          ]
+        },
+        {
+          "xy": [
+            107,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            49
+          ]
+        },
+        {
+          "xy": [
+            108,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            49
+          ]
+        },
+        {
+          "xy": [
+            109,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            49
+          ]
+        },
+        {
+          "xy": [
+            110,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            110,
+            49
+          ]
+        },
+        {
+          "xy": [
+            111,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            49
+          ]
+        },
+        {
+          "xy": [
+            104,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            50
+          ]
+        },
+        {
+          "xy": [
+            105,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            50
+          ]
+        },
+        {
+          "xy": [
+            106,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            50
+          ]
+        },
+        {
+          "xy": [
+            107,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            50
+          ]
+        },
+        {
+          "xy": [
+            108,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            50
+          ]
+        },
+        {
+          "xy": [
+            109,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            50
+          ]
+        },
+        {
+          "xy": [
+            110,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            110,
+            50
+          ]
+        },
+        {
+          "xy": [
+            102,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            51
+          ]
+        },
+        {
+          "xy": [
+            103,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            51
+          ]
+        },
+        {
+          "xy": [
+            104,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            51
+          ]
+        },
+        {
+          "xy": [
+            105,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            51
+          ]
+        },
+        {
+          "xy": [
+            106,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            51
+          ]
+        },
+        {
+          "xy": [
+            107,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            51
+          ]
+        },
+        {
+          "xy": [
+            108,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            51
+          ]
+        },
+        {
+          "xy": [
+            99,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            52
+          ]
+        },
+        {
+          "xy": [
+            100,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            52
+          ]
+        },
+        {
+          "xy": [
+            101,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            52
+          ]
+        },
+        {
+          "xy": [
+            102,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            52
+          ]
+        },
+        {
+          "xy": [
+            103,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            52
+          ]
+        },
+        {
+          "xy": [
+            104,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            104,
+            52
+          ]
+        },
+        {
+          "xy": [
+            105,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            105,
+            52
+          ]
+        },
+        {
+          "xy": [
+            106,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            52
+          ]
+        },
+        {
+          "xy": [
+            107,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            52
+          ]
+        },
+        {
+          "xy": [
+            99,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            53
+          ]
+        },
+        {
+          "xy": [
+            100,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            53
+          ]
+        },
+        {
+          "xy": [
+            101,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            53
+          ]
+        },
+        {
+          "xy": [
+            102,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            53
+          ]
+        },
+        {
+          "xy": [
+            103,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            53
+          ]
+        },
+        {
+          "xy": [
+            106,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            53
+          ]
+        },
+        {
+          "xy": [
+            100,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            54
+          ]
+        },
+        {
+          "xy": [
+            99,
+            56
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            56
+          ]
+        },
+        {
+          "xy": [
+            99,
+            57
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            99,
+            57
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 337.5,
+      "changed_pixels": 46,
+      "edits": [
+        {
+          "xy": [
+            111,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            45
+          ]
+        },
+        {
+          "xy": [
+            112,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            45
+          ]
+        },
+        {
+          "xy": [
+            113,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            113,
+            45
+          ]
+        },
+        {
+          "xy": [
+            114,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            114,
+            45
+          ]
+        },
+        {
+          "xy": [
+            115,
+            45
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            115,
+            45
+          ]
+        },
+        {
+          "xy": [
+            111,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            46
+          ]
+        },
+        {
+          "xy": [
+            112,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            46
+          ]
+        },
+        {
+          "xy": [
+            113,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            113,
+            46
+          ]
+        },
+        {
+          "xy": [
+            114,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            114,
+            46
+          ]
+        },
+        {
+          "xy": [
+            115,
+            46
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            115,
+            46
+          ]
+        },
+        {
+          "xy": [
+            111,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            47
+          ]
+        },
+        {
+          "xy": [
+            112,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            47
+          ]
+        },
+        {
+          "xy": [
+            113,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            113,
+            47
+          ]
+        },
+        {
+          "xy": [
+            114,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            114,
+            47
+          ]
+        },
+        {
+          "xy": [
+            115,
+            47
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            115,
+            47
+          ]
+        },
+        {
+          "xy": [
+            111,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            48
+          ]
+        },
+        {
+          "xy": [
+            112,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            48
+          ]
+        },
+        {
+          "xy": [
+            113,
+            48
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            113,
+            48
+          ]
+        },
+        {
+          "xy": [
+            70,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            71,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            72,
+            49
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            111,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            49
+          ]
+        },
+        {
+          "xy": [
+            112,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            49
+          ]
+        },
+        {
+          "xy": [
+            113,
+            49
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            113,
+            49
+          ]
+        },
+        {
+          "xy": [
+            72,
+            50
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            73,
+            50
+          ],
+          "operation": "remove donor jaw remnant",
+          "source_xy": null
+        },
+        {
+          "xy": [
+            109,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            50
+          ]
+        },
+        {
+          "xy": [
+            110,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            110,
+            50
+          ]
+        },
+        {
+          "xy": [
+            111,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            111,
+            50
+          ]
+        },
+        {
+          "xy": [
+            112,
+            50
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            50
+          ]
+        },
+        {
+          "xy": [
+            108,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            51
+          ]
+        },
+        {
+          "xy": [
+            109,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            51
+          ]
+        },
+        {
+          "xy": [
+            112,
+            51
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            112,
+            51
+          ]
+        },
+        {
+          "xy": [
+            106,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            52
+          ]
+        },
+        {
+          "xy": [
+            107,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            52
+          ]
+        },
+        {
+          "xy": [
+            108,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            52
+          ]
+        },
+        {
+          "xy": [
+            109,
+            52
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            52
+          ]
+        },
+        {
+          "xy": [
+            100,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            53
+          ]
+        },
+        {
+          "xy": [
+            101,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            101,
+            53
+          ]
+        },
+        {
+          "xy": [
+            102,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            102,
+            53
+          ]
+        },
+        {
+          "xy": [
+            103,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            103,
+            53
+          ]
+        },
+        {
+          "xy": [
+            106,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            106,
+            53
+          ]
+        },
+        {
+          "xy": [
+            107,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            107,
+            53
+          ]
+        },
+        {
+          "xy": [
+            108,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            108,
+            53
+          ]
+        },
+        {
+          "xy": [
+            109,
+            53
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            109,
+            53
+          ]
+        },
+        {
+          "xy": [
+            100,
+            54
+          ],
+          "operation": "restore directional hair/neck shadow",
+          "source_xy": [
+            100,
+            54
+          ]
+        }
+      ]
+    }
+  ]
+}
