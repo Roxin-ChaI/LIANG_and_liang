@@ -1,0 +1,217 @@
+{
+  "status": "PENDING_USER_REVIEW",
+  "installed": false,
+  "method": "restore intact same-direction upper body from existing atlas, without resampling",
+  "important": "This reverses the defective head/body compositor in the review candidate; it is not newly drawn art. The resulting full cells are identical to the original directional source.",
+  "cause": "skin-only head selection and subsequent rectangular palm patch cut through different directional hand/cuff/lapel artwork",
+  "source_sha256": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a",
+  "previous_sha256": "5a6ec44eaf3afdda2210e7e527d8b8fc2430fc88e7e1bd3f1253326de85a65f0",
+  "preserved": "head y<45 and all pixels y>=90; original direction order",
+  "tradeoff": "Original small directional shoulder/collar motion is retained; body above y90 is no longer claimed pixel-fixed.",
+  "not_claimed": "No user approval or runtime QA. Existing source-art imperfections are not certified absent.",
+  "frames": [
+    {
+      "angle": 0.0,
+      "changed_pixels": 0,
+      "changed_bbox": null,
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 22.5,
+      "changed_pixels": 1487,
+      "changed_bbox": [
+        45,
+        45,
+        137,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 45.0,
+      "changed_pixels": 1490,
+      "changed_bbox": [
+        45,
+        45,
+        137,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 67.5,
+      "changed_pixels": 1480,
+      "changed_bbox": [
+        45,
+        45,
+        137,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 90.0,
+      "changed_pixels": 1491,
+      "changed_bbox": [
+        45,
+        46,
+        138,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 112.5,
+      "changed_pixels": 1451,
+      "changed_bbox": [
+        45,
+        45,
+        137,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 135.0,
+      "changed_pixels": 1469,
+      "changed_bbox": [
+        45,
+        45,
+        137,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 157.5,
+      "changed_pixels": 1466,
+      "changed_bbox": [
+        45,
+        45,
+        137,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 180.0,
+      "changed_pixels": 1757,
+      "changed_bbox": [
+        45,
+        46,
+        138,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 202.5,
+      "changed_pixels": 1445,
+      "changed_bbox": [
+        45,
+        50,
+        137,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 225.0,
+      "changed_pixels": 1400,
+      "changed_bbox": [
+        45,
+        45,
+        137,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 247.5,
+      "changed_pixels": 1354,
+      "changed_bbox": [
+        45,
+        45,
+        137,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 270.0,
+      "changed_pixels": 1690,
+      "changed_bbox": [
+        45,
+        45,
+        138,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 292.5,
+      "changed_pixels": 1339,
+      "changed_bbox": [
+        45,
+        49,
+        137,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 315.0,
+      "changed_pixels": 1331,
+      "changed_bbox": [
+        45,
+        45,
+        137,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    },
+    {
+      "angle": 337.5,
+      "changed_pixels": 1406,
+      "changed_bbox": [
+        45,
+        45,
+        137,
+        82
+      ],
+      "lower_join_band_exact": true,
+      "whole_direction_source_exact": true,
+      "baseline": 203
+    }
+  ]
+}
