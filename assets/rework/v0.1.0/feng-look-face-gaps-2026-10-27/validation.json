@@ -1,0 +1,2449 @@
+{
+  "status": "PENDING_USER_REVIEW",
+  "installed": false,
+  "base": "assets/rework/v0.1.0/feng-look-cuff-repair-2026-10-26/feng-look-16.png",
+  "source_hashes": {
+    "assets/rework/v0.1.0/feng-look-cuff-repair-2026-10-26/feng-look-16.png": "81c638faca568ecfd649980a3f925efdfc663ad56b388ef3369252cb7324fcdf",
+    "assets/builds/feng/spritesheet.webp": "d697e573268b66cb0f6a062480ec87c8c11712ca34b57f8c2fc0a97ed6e2164a"
+  },
+  "method": "fill explicitly scoped transparent holes only, exact existing RGBA colors",
+  "protected": "ALL previously opaque pixels, hands, repaired cuff, shoulders, pose and direction order",
+  "observed": "135/157.5-degree eye cut is an exterior-connected transparent row; left-down neck has enclosed alpha holes",
+  "not_claimed": "No new character design or runtime QA; awaiting visual approval",
+  "frames": [
+    {
+      "angle": 0.0,
+      "filled_pixels": 0,
+      "edits": []
+    },
+    {
+      "angle": 22.5,
+      "filled_pixels": 13,
+      "edits": [
+        {
+          "xy": [
+            80,
+            61
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            61
+          ]
+        },
+        {
+          "xy": [
+            78,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            62
+          ]
+        },
+        {
+          "xy": [
+            79,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            62
+          ]
+        },
+        {
+          "xy": [
+            80,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            62
+          ]
+        },
+        {
+          "xy": [
+            78,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            63
+          ]
+        },
+        {
+          "xy": [
+            79,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            63
+          ]
+        },
+        {
+          "xy": [
+            77,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            64
+          ]
+        },
+        {
+          "xy": [
+            78,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            64
+          ]
+        },
+        {
+          "xy": [
+            76,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            65
+          ]
+        },
+        {
+          "xy": [
+            77,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            65
+          ]
+        },
+        {
+          "xy": [
+            76,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            66
+          ]
+        },
+        {
+          "xy": [
+            77,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            66
+          ]
+        },
+        {
+          "xy": [
+            76,
+            67
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            67
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 45.0,
+      "filled_pixels": 23,
+      "edits": [
+        {
+          "xy": [
+            79,
+            58
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            58
+          ]
+        },
+        {
+          "xy": [
+            80,
+            59
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            59
+          ]
+        },
+        {
+          "xy": [
+            81,
+            60
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            81,
+            60
+          ]
+        },
+        {
+          "xy": [
+            80,
+            61
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            61
+          ]
+        },
+        {
+          "xy": [
+            81,
+            61
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            81,
+            61
+          ]
+        },
+        {
+          "xy": [
+            78,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            62
+          ]
+        },
+        {
+          "xy": [
+            79,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            62
+          ]
+        },
+        {
+          "xy": [
+            80,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            62
+          ]
+        },
+        {
+          "xy": [
+            81,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            81,
+            62
+          ]
+        },
+        {
+          "xy": [
+            78,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            63
+          ]
+        },
+        {
+          "xy": [
+            79,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            63
+          ]
+        },
+        {
+          "xy": [
+            80,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            63
+          ]
+        },
+        {
+          "xy": [
+            77,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            64
+          ]
+        },
+        {
+          "xy": [
+            78,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            64
+          ]
+        },
+        {
+          "xy": [
+            79,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            64
+          ]
+        },
+        {
+          "xy": [
+            76,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            65
+          ]
+        },
+        {
+          "xy": [
+            77,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            65
+          ]
+        },
+        {
+          "xy": [
+            78,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            65
+          ]
+        },
+        {
+          "xy": [
+            79,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            65
+          ]
+        },
+        {
+          "xy": [
+            76,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            66
+          ]
+        },
+        {
+          "xy": [
+            77,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            66
+          ]
+        },
+        {
+          "xy": [
+            76,
+            67
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            67
+          ]
+        },
+        {
+          "xy": [
+            77,
+            67
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            67
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 67.5,
+      "filled_pixels": 22,
+      "edits": [
+        {
+          "xy": [
+            77,
+            55
+          ],
+          "kind": "neck contour continuation",
+          "source": "base same frame",
+          "source_xy": [
+            77,
+            54
+          ]
+        },
+        {
+          "xy": [
+            79,
+            58
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            58
+          ]
+        },
+        {
+          "xy": [
+            80,
+            59
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            59
+          ]
+        },
+        {
+          "xy": [
+            81,
+            60
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            81,
+            60
+          ]
+        },
+        {
+          "xy": [
+            80,
+            61
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            61
+          ]
+        },
+        {
+          "xy": [
+            81,
+            61
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            81,
+            61
+          ]
+        },
+        {
+          "xy": [
+            78,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            62
+          ]
+        },
+        {
+          "xy": [
+            79,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            62
+          ]
+        },
+        {
+          "xy": [
+            80,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            62
+          ]
+        },
+        {
+          "xy": [
+            81,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            81,
+            62
+          ]
+        },
+        {
+          "xy": [
+            78,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            63
+          ]
+        },
+        {
+          "xy": [
+            79,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            63
+          ]
+        },
+        {
+          "xy": [
+            80,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            63
+          ]
+        },
+        {
+          "xy": [
+            77,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            64
+          ]
+        },
+        {
+          "xy": [
+            78,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            64
+          ]
+        },
+        {
+          "xy": [
+            79,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            64
+          ]
+        },
+        {
+          "xy": [
+            76,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            65
+          ]
+        },
+        {
+          "xy": [
+            77,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            65
+          ]
+        },
+        {
+          "xy": [
+            78,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            65
+          ]
+        },
+        {
+          "xy": [
+            76,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            66
+          ]
+        },
+        {
+          "xy": [
+            77,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            66
+          ]
+        },
+        {
+          "xy": [
+            76,
+            67
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            67
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 90.0,
+      "filled_pixels": 13,
+      "edits": [
+        {
+          "xy": [
+            77,
+            55
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            55
+          ]
+        },
+        {
+          "xy": [
+            81,
+            60
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            81,
+            60
+          ]
+        },
+        {
+          "xy": [
+            93,
+            60
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            93,
+            60
+          ]
+        },
+        {
+          "xy": [
+            94,
+            60
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            94,
+            60
+          ]
+        },
+        {
+          "xy": [
+            95,
+            60
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            95,
+            60
+          ]
+        },
+        {
+          "xy": [
+            96,
+            60
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            96,
+            60
+          ]
+        },
+        {
+          "xy": [
+            80,
+            61
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            61
+          ]
+        },
+        {
+          "xy": [
+            78,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            62
+          ]
+        },
+        {
+          "xy": [
+            79,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            62
+          ]
+        },
+        {
+          "xy": [
+            78,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            63
+          ]
+        },
+        {
+          "xy": [
+            77,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            64
+          ]
+        },
+        {
+          "xy": [
+            76,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            65
+          ]
+        },
+        {
+          "xy": [
+            76,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 112.5,
+      "filled_pixels": 27,
+      "edits": [
+        {
+          "xy": [
+            107,
+            58
+          ],
+          "kind": "neck contour continuation",
+          "source": "base same frame",
+          "source_xy": [
+            106,
+            58
+          ]
+        },
+        {
+          "xy": [
+            80,
+            61
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            61
+          ]
+        },
+        {
+          "xy": [
+            81,
+            61
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            81,
+            61
+          ]
+        },
+        {
+          "xy": [
+            78,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            62
+          ]
+        },
+        {
+          "xy": [
+            79,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            62
+          ]
+        },
+        {
+          "xy": [
+            80,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            62
+          ]
+        },
+        {
+          "xy": [
+            81,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            81,
+            62
+          ]
+        },
+        {
+          "xy": [
+            78,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            63
+          ]
+        },
+        {
+          "xy": [
+            79,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            63
+          ]
+        },
+        {
+          "xy": [
+            80,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            63
+          ]
+        },
+        {
+          "xy": [
+            77,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            64
+          ]
+        },
+        {
+          "xy": [
+            78,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            64
+          ]
+        },
+        {
+          "xy": [
+            79,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            64
+          ]
+        },
+        {
+          "xy": [
+            76,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            65
+          ]
+        },
+        {
+          "xy": [
+            77,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            65
+          ]
+        },
+        {
+          "xy": [
+            78,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            65
+          ]
+        },
+        {
+          "xy": [
+            76,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            66
+          ]
+        },
+        {
+          "xy": [
+            77,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            66
+          ]
+        },
+        {
+          "xy": [
+            78,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            66
+          ]
+        },
+        {
+          "xy": [
+            76,
+            67
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            67
+          ]
+        },
+        {
+          "xy": [
+            77,
+            67
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            67
+          ]
+        },
+        {
+          "xy": [
+            111,
+            45
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            116,
+            44
+          ]
+        },
+        {
+          "xy": [
+            112,
+            45
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            116,
+            44
+          ]
+        },
+        {
+          "xy": [
+            113,
+            45
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            116,
+            44
+          ]
+        },
+        {
+          "xy": [
+            114,
+            45
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            116,
+            44
+          ]
+        },
+        {
+          "xy": [
+            115,
+            45
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            116,
+            44
+          ]
+        },
+        {
+          "xy": [
+            116,
+            45
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            116,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 135.0,
+      "filled_pixels": 31,
+      "edits": [
+        {
+          "xy": [
+            79,
+            56
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            56
+          ]
+        },
+        {
+          "xy": [
+            79,
+            58
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            58
+          ]
+        },
+        {
+          "xy": [
+            81,
+            60
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            81,
+            60
+          ]
+        },
+        {
+          "xy": [
+            82,
+            60
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            82,
+            60
+          ]
+        },
+        {
+          "xy": [
+            80,
+            61
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            61
+          ]
+        },
+        {
+          "xy": [
+            81,
+            61
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            81,
+            61
+          ]
+        },
+        {
+          "xy": [
+            78,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            62
+          ]
+        },
+        {
+          "xy": [
+            79,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            62
+          ]
+        },
+        {
+          "xy": [
+            80,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            62
+          ]
+        },
+        {
+          "xy": [
+            78,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            63
+          ]
+        },
+        {
+          "xy": [
+            79,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            63
+          ]
+        },
+        {
+          "xy": [
+            77,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            64
+          ]
+        },
+        {
+          "xy": [
+            78,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            64
+          ]
+        },
+        {
+          "xy": [
+            79,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            64
+          ]
+        },
+        {
+          "xy": [
+            76,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            65
+          ]
+        },
+        {
+          "xy": [
+            77,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            65
+          ]
+        },
+        {
+          "xy": [
+            78,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            65
+          ]
+        },
+        {
+          "xy": [
+            76,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            66
+          ]
+        },
+        {
+          "xy": [
+            77,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            66
+          ]
+        },
+        {
+          "xy": [
+            78,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            66
+          ]
+        },
+        {
+          "xy": [
+            76,
+            67
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            67
+          ]
+        },
+        {
+          "xy": [
+            77,
+            67
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            67
+          ]
+        },
+        {
+          "xy": [
+            104,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            104,
+            45
+          ]
+        },
+        {
+          "xy": [
+            105,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            105,
+            45
+          ]
+        },
+        {
+          "xy": [
+            106,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            106,
+            45
+          ]
+        },
+        {
+          "xy": [
+            107,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            107,
+            45
+          ]
+        },
+        {
+          "xy": [
+            108,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            108,
+            45
+          ]
+        },
+        {
+          "xy": [
+            109,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            109,
+            45
+          ]
+        },
+        {
+          "xy": [
+            110,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            110,
+            45
+          ]
+        },
+        {
+          "xy": [
+            111,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            111,
+            45
+          ]
+        },
+        {
+          "xy": [
+            112,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            112,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 157.5,
+      "filled_pixels": 28,
+      "edits": [
+        {
+          "xy": [
+            79,
+            58
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            58
+          ]
+        },
+        {
+          "xy": [
+            80,
+            59
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            59
+          ]
+        },
+        {
+          "xy": [
+            80,
+            61
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            61
+          ]
+        },
+        {
+          "xy": [
+            81,
+            61
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            81,
+            61
+          ]
+        },
+        {
+          "xy": [
+            78,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            62
+          ]
+        },
+        {
+          "xy": [
+            79,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            62
+          ]
+        },
+        {
+          "xy": [
+            80,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            62
+          ]
+        },
+        {
+          "xy": [
+            78,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            63
+          ]
+        },
+        {
+          "xy": [
+            79,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            63
+          ]
+        },
+        {
+          "xy": [
+            77,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            64
+          ]
+        },
+        {
+          "xy": [
+            78,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            64
+          ]
+        },
+        {
+          "xy": [
+            79,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            64
+          ]
+        },
+        {
+          "xy": [
+            76,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            65
+          ]
+        },
+        {
+          "xy": [
+            77,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            65
+          ]
+        },
+        {
+          "xy": [
+            78,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            65
+          ]
+        },
+        {
+          "xy": [
+            76,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            66
+          ]
+        },
+        {
+          "xy": [
+            77,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            66
+          ]
+        },
+        {
+          "xy": [
+            78,
+            66
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            66
+          ]
+        },
+        {
+          "xy": [
+            76,
+            67
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            67
+          ]
+        },
+        {
+          "xy": [
+            77,
+            67
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            67
+          ]
+        },
+        {
+          "xy": [
+            105,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            105,
+            45
+          ]
+        },
+        {
+          "xy": [
+            106,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            106,
+            45
+          ]
+        },
+        {
+          "xy": [
+            107,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            107,
+            45
+          ]
+        },
+        {
+          "xy": [
+            108,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            108,
+            45
+          ]
+        },
+        {
+          "xy": [
+            109,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            109,
+            45
+          ]
+        },
+        {
+          "xy": [
+            110,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            110,
+            45
+          ]
+        },
+        {
+          "xy": [
+            111,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            111,
+            45
+          ]
+        },
+        {
+          "xy": [
+            112,
+            46
+          ],
+          "kind": "spectacle/face alpha cut",
+          "source": "base same frame",
+          "source_xy": [
+            112,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 180.0,
+      "filled_pixels": 12,
+      "edits": [
+        {
+          "xy": [
+            99,
+            57
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            99,
+            57
+          ]
+        },
+        {
+          "xy": [
+            97,
+            58
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            97,
+            58
+          ]
+        },
+        {
+          "xy": [
+            98,
+            58
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            98,
+            58
+          ]
+        },
+        {
+          "xy": [
+            96,
+            59
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            96,
+            59
+          ]
+        },
+        {
+          "xy": [
+            97,
+            59
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            97,
+            59
+          ]
+        },
+        {
+          "xy": [
+            81,
+            60
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            81,
+            60
+          ]
+        },
+        {
+          "xy": [
+            78,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            62
+          ]
+        },
+        {
+          "xy": [
+            79,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            79,
+            62
+          ]
+        },
+        {
+          "xy": [
+            80,
+            62
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            80,
+            62
+          ]
+        },
+        {
+          "xy": [
+            78,
+            63
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            78,
+            63
+          ]
+        },
+        {
+          "xy": [
+            77,
+            64
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            77,
+            64
+          ]
+        },
+        {
+          "xy": [
+            76,
+            65
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            76,
+            65
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 202.5,
+      "filled_pixels": 2,
+      "edits": [
+        {
+          "xy": [
+            102,
+            53
+          ],
+          "kind": "neck contour continuation",
+          "source": "base same frame",
+          "source_xy": [
+            102,
+            52
+          ]
+        },
+        {
+          "xy": [
+            103,
+            53
+          ],
+          "kind": "neck contour continuation",
+          "source": "base same frame",
+          "source_xy": [
+            104,
+            53
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 225.0,
+      "filled_pixels": 3,
+      "edits": [
+        {
+          "xy": [
+            98,
+            51
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            98,
+            51
+          ]
+        },
+        {
+          "xy": [
+            98,
+            52
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            98,
+            52
+          ]
+        },
+        {
+          "xy": [
+            103,
+            53
+          ],
+          "kind": "neck contour continuation",
+          "source": "base same frame",
+          "source_xy": [
+            104,
+            53
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 247.5,
+      "filled_pixels": 11,
+      "edits": [
+        {
+          "xy": [
+            98,
+            50
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            98,
+            50
+          ]
+        },
+        {
+          "xy": [
+            94,
+            51
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            94,
+            51
+          ]
+        },
+        {
+          "xy": [
+            95,
+            51
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            95,
+            51
+          ]
+        },
+        {
+          "xy": [
+            96,
+            51
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            96,
+            51
+          ]
+        },
+        {
+          "xy": [
+            97,
+            51
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            97,
+            51
+          ]
+        },
+        {
+          "xy": [
+            98,
+            51
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            98,
+            51
+          ]
+        },
+        {
+          "xy": [
+            97,
+            52
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            97,
+            52
+          ]
+        },
+        {
+          "xy": [
+            98,
+            52
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            98,
+            52
+          ]
+        },
+        {
+          "xy": [
+            98,
+            53
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            98,
+            53
+          ]
+        },
+        {
+          "xy": [
+            98,
+            54
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            98,
+            54
+          ]
+        },
+        {
+          "xy": [
+            100,
+            54
+          ],
+          "kind": "neck contour continuation",
+          "source": "base same frame",
+          "source_xy": [
+            101,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 270.0,
+      "filled_pixels": 1,
+      "edits": [
+        {
+          "xy": [
+            102,
+            53
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            102,
+            53
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 292.5,
+      "filled_pixels": 5,
+      "edits": [
+        {
+          "xy": [
+            97,
+            52
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            97,
+            52
+          ]
+        },
+        {
+          "xy": [
+            98,
+            52
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            98,
+            52
+          ]
+        },
+        {
+          "xy": [
+            99,
+            52
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            99,
+            52
+          ]
+        },
+        {
+          "xy": [
+            99,
+            56
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            99,
+            56
+          ]
+        },
+        {
+          "xy": [
+            99,
+            57
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            99,
+            57
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 315.0,
+      "filled_pixels": 4,
+      "edits": [
+        {
+          "xy": [
+            101,
+            51
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            101,
+            51
+          ]
+        },
+        {
+          "xy": [
+            96,
+            52
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            96,
+            52
+          ]
+        },
+        {
+          "xy": [
+            97,
+            52
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            97,
+            52
+          ]
+        },
+        {
+          "xy": [
+            98,
+            52
+          ],
+          "kind": "neck/collar alpha hole",
+          "source": "original same direction",
+          "source_xy": [
+            98,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 337.5,
+      "filled_pixels": 0,
+      "edits": []
+    }
+  ]
+}
