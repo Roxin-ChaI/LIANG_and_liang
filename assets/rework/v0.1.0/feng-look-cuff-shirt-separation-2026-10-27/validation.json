@@ -1,0 +1,4303 @@
+{
+  "status": "PENDING_USER_REVIEW",
+  "installed": false,
+  "base": "assets/rework/v0.1.0/feng-look-face-gaps-2026-10-27/feng-look-16.png",
+  "base_sha256": "52c8e55e419a715c8c7dca7d44b7b52fd65115536c17521066109b0b54f9a4da",
+  "method": "local existing-pixel cuff/shirt layer separation",
+  "protected": "all skin, alpha, head, neck, shoulders, cuff white pixels and all pixels outside x74..84/y82..93",
+  "frames": [
+    {
+      "angle": 0.0,
+      "changed_pixels": 0,
+      "edits": []
+    },
+    {
+      "angle": 22.5,
+      "changed_pixels": 0,
+      "edits": []
+    },
+    {
+      "angle": 45.0,
+      "changed_pixels": 15,
+      "edits": [
+        {
+          "xy": [
+            82,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            82
+          ]
+        },
+        {
+          "xy": [
+            84,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            82
+          ]
+        },
+        {
+          "xy": [
+            82,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            83
+          ]
+        },
+        {
+          "xy": [
+            84,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            83
+          ]
+        },
+        {
+          "xy": [
+            82,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            84
+          ]
+        },
+        {
+          "xy": [
+            83,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            84
+          ]
+        },
+        {
+          "xy": [
+            82,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            85
+          ]
+        },
+        {
+          "xy": [
+            83,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            85
+          ]
+        },
+        {
+          "xy": [
+            84,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            85
+          ]
+        },
+        {
+          "xy": [
+            82,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            86
+          ]
+        },
+        {
+          "xy": [
+            83,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            86
+          ]
+        },
+        {
+          "xy": [
+            84,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            86
+          ]
+        },
+        {
+          "xy": [
+            82,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            87
+          ]
+        },
+        {
+          "xy": [
+            83,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            87
+          ]
+        },
+        {
+          "xy": [
+            84,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            87
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 67.5,
+      "changed_pixels": 15,
+      "edits": [
+        {
+          "xy": [
+            82,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            82
+          ]
+        },
+        {
+          "xy": [
+            84,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            82
+          ]
+        },
+        {
+          "xy": [
+            82,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            83
+          ]
+        },
+        {
+          "xy": [
+            84,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            83
+          ]
+        },
+        {
+          "xy": [
+            82,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            84
+          ]
+        },
+        {
+          "xy": [
+            83,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            84
+          ]
+        },
+        {
+          "xy": [
+            82,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            85
+          ]
+        },
+        {
+          "xy": [
+            83,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            85
+          ]
+        },
+        {
+          "xy": [
+            84,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            85
+          ]
+        },
+        {
+          "xy": [
+            82,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            86
+          ]
+        },
+        {
+          "xy": [
+            83,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            86
+          ]
+        },
+        {
+          "xy": [
+            84,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            86
+          ]
+        },
+        {
+          "xy": [
+            82,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            87
+          ]
+        },
+        {
+          "xy": [
+            83,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            87
+          ]
+        },
+        {
+          "xy": [
+            84,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            87
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 90.0,
+      "changed_pixels": 0,
+      "edits": []
+    },
+    {
+      "angle": 112.5,
+      "changed_pixels": 15,
+      "edits": [
+        {
+          "xy": [
+            82,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            82
+          ]
+        },
+        {
+          "xy": [
+            84,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            82
+          ]
+        },
+        {
+          "xy": [
+            82,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            83
+          ]
+        },
+        {
+          "xy": [
+            84,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            83
+          ]
+        },
+        {
+          "xy": [
+            82,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            84
+          ]
+        },
+        {
+          "xy": [
+            83,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            84
+          ]
+        },
+        {
+          "xy": [
+            82,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            85
+          ]
+        },
+        {
+          "xy": [
+            83,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            85
+          ]
+        },
+        {
+          "xy": [
+            84,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            85
+          ]
+        },
+        {
+          "xy": [
+            82,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            86
+          ]
+        },
+        {
+          "xy": [
+            83,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            86
+          ]
+        },
+        {
+          "xy": [
+            84,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            86
+          ]
+        },
+        {
+          "xy": [
+            82,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            87
+          ]
+        },
+        {
+          "xy": [
+            83,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            87
+          ]
+        },
+        {
+          "xy": [
+            84,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            87
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 135.0,
+      "changed_pixels": 15,
+      "edits": [
+        {
+          "xy": [
+            82,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            82
+          ]
+        },
+        {
+          "xy": [
+            84,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            82
+          ]
+        },
+        {
+          "xy": [
+            82,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            83
+          ]
+        },
+        {
+          "xy": [
+            84,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            83
+          ]
+        },
+        {
+          "xy": [
+            82,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            84
+          ]
+        },
+        {
+          "xy": [
+            83,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            84
+          ]
+        },
+        {
+          "xy": [
+            82,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            85
+          ]
+        },
+        {
+          "xy": [
+            83,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            85
+          ]
+        },
+        {
+          "xy": [
+            84,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            85
+          ]
+        },
+        {
+          "xy": [
+            82,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            86
+          ]
+        },
+        {
+          "xy": [
+            83,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            86
+          ]
+        },
+        {
+          "xy": [
+            84,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            86
+          ]
+        },
+        {
+          "xy": [
+            82,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            87
+          ]
+        },
+        {
+          "xy": [
+            83,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            87
+          ]
+        },
+        {
+          "xy": [
+            84,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            87
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 157.5,
+      "changed_pixels": 15,
+      "edits": [
+        {
+          "xy": [
+            82,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            82
+          ]
+        },
+        {
+          "xy": [
+            84,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            82
+          ]
+        },
+        {
+          "xy": [
+            82,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            83
+          ]
+        },
+        {
+          "xy": [
+            84,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            83
+          ]
+        },
+        {
+          "xy": [
+            82,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            84
+          ]
+        },
+        {
+          "xy": [
+            83,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            84
+          ]
+        },
+        {
+          "xy": [
+            82,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            85
+          ]
+        },
+        {
+          "xy": [
+            83,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            85
+          ]
+        },
+        {
+          "xy": [
+            84,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            85
+          ]
+        },
+        {
+          "xy": [
+            82,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            86
+          ]
+        },
+        {
+          "xy": [
+            83,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            86
+          ]
+        },
+        {
+          "xy": [
+            84,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            86
+          ]
+        },
+        {
+          "xy": [
+            82,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            87
+          ]
+        },
+        {
+          "xy": [
+            83,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            87
+          ]
+        },
+        {
+          "xy": [
+            84,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            87
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 180.0,
+      "changed_pixels": 0,
+      "edits": []
+    },
+    {
+      "angle": 202.5,
+      "changed_pixels": 46,
+      "edits": [
+        {
+          "xy": [
+            78,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            82
+          ]
+        },
+        {
+          "xy": [
+            82,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            82
+          ]
+        },
+        {
+          "xy": [
+            83,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            82
+          ]
+        },
+        {
+          "xy": [
+            84,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            82
+          ]
+        },
+        {
+          "xy": [
+            78,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            83
+          ]
+        },
+        {
+          "xy": [
+            82,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            83
+          ]
+        },
+        {
+          "xy": [
+            83,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            83
+          ]
+        },
+        {
+          "xy": [
+            84,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            83
+          ]
+        },
+        {
+          "xy": [
+            78,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            84
+          ]
+        },
+        {
+          "xy": [
+            82,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            84
+          ]
+        },
+        {
+          "xy": [
+            83,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            84
+          ]
+        },
+        {
+          "xy": [
+            84,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            84
+          ]
+        },
+        {
+          "xy": [
+            78,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            85
+          ]
+        },
+        {
+          "xy": [
+            82,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            85
+          ]
+        },
+        {
+          "xy": [
+            83,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            85
+          ]
+        },
+        {
+          "xy": [
+            84,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            85
+          ]
+        },
+        {
+          "xy": [
+            78,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            86
+          ]
+        },
+        {
+          "xy": [
+            82,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            86
+          ]
+        },
+        {
+          "xy": [
+            83,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            86
+          ]
+        },
+        {
+          "xy": [
+            84,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            86
+          ]
+        },
+        {
+          "xy": [
+            78,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            87
+          ]
+        },
+        {
+          "xy": [
+            82,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            87
+          ]
+        },
+        {
+          "xy": [
+            83,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            87
+          ]
+        },
+        {
+          "xy": [
+            84,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            87
+          ]
+        },
+        {
+          "xy": [
+            78,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            88
+          ]
+        },
+        {
+          "xy": [
+            82,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            88
+          ]
+        },
+        {
+          "xy": [
+            83,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            88
+          ]
+        },
+        {
+          "xy": [
+            84,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            88
+          ]
+        },
+        {
+          "xy": [
+            79,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            89
+          ]
+        },
+        {
+          "xy": [
+            82,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            89
+          ]
+        },
+        {
+          "xy": [
+            83,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            89
+          ]
+        },
+        {
+          "xy": [
+            84,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            89
+          ]
+        },
+        {
+          "xy": [
+            80,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            90
+          ]
+        },
+        {
+          "xy": [
+            82,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            90
+          ]
+        },
+        {
+          "xy": [
+            83,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            90
+          ]
+        },
+        {
+          "xy": [
+            84,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            90
+          ]
+        },
+        {
+          "xy": [
+            80,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            91
+          ]
+        },
+        {
+          "xy": [
+            82,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            91
+          ]
+        },
+        {
+          "xy": [
+            83,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            91
+          ]
+        },
+        {
+          "xy": [
+            84,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            91
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 225.0,
+      "changed_pixels": 51,
+      "edits": [
+        {
+          "xy": [
+            77,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            82
+          ]
+        },
+        {
+          "xy": [
+            82,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            82
+          ]
+        },
+        {
+          "xy": [
+            83,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            82
+          ]
+        },
+        {
+          "xy": [
+            84,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            82
+          ]
+        },
+        {
+          "xy": [
+            77,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            78,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            83
+          ]
+        },
+        {
+          "xy": [
+            82,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            83
+          ]
+        },
+        {
+          "xy": [
+            83,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            83
+          ]
+        },
+        {
+          "xy": [
+            84,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            83
+          ]
+        },
+        {
+          "xy": [
+            77,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            78,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            84
+          ]
+        },
+        {
+          "xy": [
+            82,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            84
+          ]
+        },
+        {
+          "xy": [
+            83,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            84
+          ]
+        },
+        {
+          "xy": [
+            84,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            84
+          ]
+        },
+        {
+          "xy": [
+            77,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            78,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            85
+          ]
+        },
+        {
+          "xy": [
+            82,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            85
+          ]
+        },
+        {
+          "xy": [
+            83,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            85
+          ]
+        },
+        {
+          "xy": [
+            84,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            85
+          ]
+        },
+        {
+          "xy": [
+            77,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            78,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            86
+          ]
+        },
+        {
+          "xy": [
+            82,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            86
+          ]
+        },
+        {
+          "xy": [
+            83,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            86
+          ]
+        },
+        {
+          "xy": [
+            84,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            86
+          ]
+        },
+        {
+          "xy": [
+            78,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            87
+          ]
+        },
+        {
+          "xy": [
+            82,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            87
+          ]
+        },
+        {
+          "xy": [
+            83,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            87
+          ]
+        },
+        {
+          "xy": [
+            84,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            87
+          ]
+        },
+        {
+          "xy": [
+            78,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            88
+          ]
+        },
+        {
+          "xy": [
+            82,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            88
+          ]
+        },
+        {
+          "xy": [
+            83,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            88
+          ]
+        },
+        {
+          "xy": [
+            84,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            88
+          ]
+        },
+        {
+          "xy": [
+            78,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            89
+          ]
+        },
+        {
+          "xy": [
+            82,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            89
+          ]
+        },
+        {
+          "xy": [
+            83,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            89
+          ]
+        },
+        {
+          "xy": [
+            84,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            89
+          ]
+        },
+        {
+          "xy": [
+            80,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            90
+          ]
+        },
+        {
+          "xy": [
+            82,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            90
+          ]
+        },
+        {
+          "xy": [
+            83,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            90
+          ]
+        },
+        {
+          "xy": [
+            84,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            90
+          ]
+        },
+        {
+          "xy": [
+            80,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            91
+          ]
+        },
+        {
+          "xy": [
+            82,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            91
+          ]
+        },
+        {
+          "xy": [
+            83,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            91
+          ]
+        },
+        {
+          "xy": [
+            84,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            91
+          ]
+        },
+        {
+          "xy": [
+            80,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            92
+          ]
+        },
+        {
+          "xy": [
+            82,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            92
+          ]
+        },
+        {
+          "xy": [
+            83,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            92
+          ]
+        },
+        {
+          "xy": [
+            84,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            92
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 247.5,
+      "changed_pixels": 53,
+      "edits": [
+        {
+          "xy": [
+            75,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            82
+          ]
+        },
+        {
+          "xy": [
+            82,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            82
+          ]
+        },
+        {
+          "xy": [
+            83,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            82
+          ]
+        },
+        {
+          "xy": [
+            84,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            82
+          ]
+        },
+        {
+          "xy": [
+            75,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            76,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            83
+          ]
+        },
+        {
+          "xy": [
+            82,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            83
+          ]
+        },
+        {
+          "xy": [
+            83,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            83
+          ]
+        },
+        {
+          "xy": [
+            84,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            83
+          ]
+        },
+        {
+          "xy": [
+            75,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            76,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            84
+          ]
+        },
+        {
+          "xy": [
+            82,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            84
+          ]
+        },
+        {
+          "xy": [
+            83,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            84
+          ]
+        },
+        {
+          "xy": [
+            84,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            84
+          ]
+        },
+        {
+          "xy": [
+            76,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            77,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            85
+          ]
+        },
+        {
+          "xy": [
+            82,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            85
+          ]
+        },
+        {
+          "xy": [
+            83,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            85
+          ]
+        },
+        {
+          "xy": [
+            84,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            85
+          ]
+        },
+        {
+          "xy": [
+            76,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            77,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            86
+          ]
+        },
+        {
+          "xy": [
+            82,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            86
+          ]
+        },
+        {
+          "xy": [
+            83,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            86
+          ]
+        },
+        {
+          "xy": [
+            84,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            86
+          ]
+        },
+        {
+          "xy": [
+            76,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            77,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            87
+          ]
+        },
+        {
+          "xy": [
+            82,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            87
+          ]
+        },
+        {
+          "xy": [
+            83,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            87
+          ]
+        },
+        {
+          "xy": [
+            84,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            87
+          ]
+        },
+        {
+          "xy": [
+            77,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            78,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            88
+          ]
+        },
+        {
+          "xy": [
+            82,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            88
+          ]
+        },
+        {
+          "xy": [
+            83,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            88
+          ]
+        },
+        {
+          "xy": [
+            84,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            88
+          ]
+        },
+        {
+          "xy": [
+            78,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            89
+          ]
+        },
+        {
+          "xy": [
+            82,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            89
+          ]
+        },
+        {
+          "xy": [
+            83,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            89
+          ]
+        },
+        {
+          "xy": [
+            84,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            89
+          ]
+        },
+        {
+          "xy": [
+            79,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            80,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            90
+          ]
+        },
+        {
+          "xy": [
+            82,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            90
+          ]
+        },
+        {
+          "xy": [
+            83,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            90
+          ]
+        },
+        {
+          "xy": [
+            84,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            90
+          ]
+        },
+        {
+          "xy": [
+            79,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            80,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            91
+          ]
+        },
+        {
+          "xy": [
+            82,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            91
+          ]
+        },
+        {
+          "xy": [
+            83,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            91
+          ]
+        },
+        {
+          "xy": [
+            84,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            91
+          ]
+        },
+        {
+          "xy": [
+            80,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            92
+          ]
+        },
+        {
+          "xy": [
+            82,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            92
+          ]
+        },
+        {
+          "xy": [
+            83,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            92
+          ]
+        },
+        {
+          "xy": [
+            84,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            92
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 270.0,
+      "changed_pixels": 0,
+      "edits": []
+    },
+    {
+      "angle": 292.5,
+      "changed_pixels": 53,
+      "edits": [
+        {
+          "xy": [
+            75,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            82
+          ]
+        },
+        {
+          "xy": [
+            82,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            82
+          ]
+        },
+        {
+          "xy": [
+            83,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            82
+          ]
+        },
+        {
+          "xy": [
+            84,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            82
+          ]
+        },
+        {
+          "xy": [
+            75,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            76,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            83
+          ]
+        },
+        {
+          "xy": [
+            82,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            83
+          ]
+        },
+        {
+          "xy": [
+            83,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            83
+          ]
+        },
+        {
+          "xy": [
+            84,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            83
+          ]
+        },
+        {
+          "xy": [
+            75,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            76,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            84
+          ]
+        },
+        {
+          "xy": [
+            82,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            84
+          ]
+        },
+        {
+          "xy": [
+            83,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            84
+          ]
+        },
+        {
+          "xy": [
+            84,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            84
+          ]
+        },
+        {
+          "xy": [
+            76,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            77,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            85
+          ]
+        },
+        {
+          "xy": [
+            82,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            85
+          ]
+        },
+        {
+          "xy": [
+            83,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            85
+          ]
+        },
+        {
+          "xy": [
+            84,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            85
+          ]
+        },
+        {
+          "xy": [
+            76,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            77,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            86
+          ]
+        },
+        {
+          "xy": [
+            82,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            86
+          ]
+        },
+        {
+          "xy": [
+            83,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            86
+          ]
+        },
+        {
+          "xy": [
+            84,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            86
+          ]
+        },
+        {
+          "xy": [
+            76,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            77,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            87
+          ]
+        },
+        {
+          "xy": [
+            82,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            87
+          ]
+        },
+        {
+          "xy": [
+            83,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            87
+          ]
+        },
+        {
+          "xy": [
+            84,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            87
+          ]
+        },
+        {
+          "xy": [
+            77,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            78,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            88
+          ]
+        },
+        {
+          "xy": [
+            82,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            88
+          ]
+        },
+        {
+          "xy": [
+            83,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            88
+          ]
+        },
+        {
+          "xy": [
+            84,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            88
+          ]
+        },
+        {
+          "xy": [
+            78,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            89
+          ]
+        },
+        {
+          "xy": [
+            82,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            89
+          ]
+        },
+        {
+          "xy": [
+            83,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            89
+          ]
+        },
+        {
+          "xy": [
+            84,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            89
+          ]
+        },
+        {
+          "xy": [
+            79,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            80,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            90
+          ]
+        },
+        {
+          "xy": [
+            82,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            90
+          ]
+        },
+        {
+          "xy": [
+            83,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            90
+          ]
+        },
+        {
+          "xy": [
+            84,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            90
+          ]
+        },
+        {
+          "xy": [
+            79,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            80,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            91
+          ]
+        },
+        {
+          "xy": [
+            82,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            91
+          ]
+        },
+        {
+          "xy": [
+            83,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            91
+          ]
+        },
+        {
+          "xy": [
+            84,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            91
+          ]
+        },
+        {
+          "xy": [
+            80,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            92
+          ]
+        },
+        {
+          "xy": [
+            82,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            92
+          ]
+        },
+        {
+          "xy": [
+            83,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            92
+          ]
+        },
+        {
+          "xy": [
+            84,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            92
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 315.0,
+      "changed_pixels": 53,
+      "edits": [
+        {
+          "xy": [
+            75,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            82
+          ]
+        },
+        {
+          "xy": [
+            82,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            82
+          ]
+        },
+        {
+          "xy": [
+            83,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            82
+          ]
+        },
+        {
+          "xy": [
+            84,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            82
+          ]
+        },
+        {
+          "xy": [
+            75,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            76,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            83
+          ]
+        },
+        {
+          "xy": [
+            82,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            83
+          ]
+        },
+        {
+          "xy": [
+            83,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            83
+          ]
+        },
+        {
+          "xy": [
+            84,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            83
+          ]
+        },
+        {
+          "xy": [
+            75,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            76,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            84
+          ]
+        },
+        {
+          "xy": [
+            82,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            84
+          ]
+        },
+        {
+          "xy": [
+            83,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            84
+          ]
+        },
+        {
+          "xy": [
+            84,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            84
+          ]
+        },
+        {
+          "xy": [
+            76,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            77,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            85
+          ]
+        },
+        {
+          "xy": [
+            82,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            85
+          ]
+        },
+        {
+          "xy": [
+            83,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            85
+          ]
+        },
+        {
+          "xy": [
+            84,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            85
+          ]
+        },
+        {
+          "xy": [
+            76,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            77,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            86
+          ]
+        },
+        {
+          "xy": [
+            82,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            86
+          ]
+        },
+        {
+          "xy": [
+            83,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            86
+          ]
+        },
+        {
+          "xy": [
+            84,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            86
+          ]
+        },
+        {
+          "xy": [
+            76,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            77,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            87
+          ]
+        },
+        {
+          "xy": [
+            82,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            87
+          ]
+        },
+        {
+          "xy": [
+            83,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            87
+          ]
+        },
+        {
+          "xy": [
+            84,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            87
+          ]
+        },
+        {
+          "xy": [
+            77,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            78,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            88
+          ]
+        },
+        {
+          "xy": [
+            82,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            88
+          ]
+        },
+        {
+          "xy": [
+            83,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            88
+          ]
+        },
+        {
+          "xy": [
+            84,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            88
+          ]
+        },
+        {
+          "xy": [
+            78,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            89
+          ]
+        },
+        {
+          "xy": [
+            82,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            89
+          ]
+        },
+        {
+          "xy": [
+            83,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            89
+          ]
+        },
+        {
+          "xy": [
+            84,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            89
+          ]
+        },
+        {
+          "xy": [
+            79,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            80,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            90
+          ]
+        },
+        {
+          "xy": [
+            82,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            90
+          ]
+        },
+        {
+          "xy": [
+            83,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            90
+          ]
+        },
+        {
+          "xy": [
+            84,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            90
+          ]
+        },
+        {
+          "xy": [
+            79,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            80,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            91
+          ]
+        },
+        {
+          "xy": [
+            82,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            91
+          ]
+        },
+        {
+          "xy": [
+            83,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            91
+          ]
+        },
+        {
+          "xy": [
+            84,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            91
+          ]
+        },
+        {
+          "xy": [
+            80,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            92
+          ]
+        },
+        {
+          "xy": [
+            82,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            92
+          ]
+        },
+        {
+          "xy": [
+            83,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            92
+          ]
+        },
+        {
+          "xy": [
+            84,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            92
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 337.5,
+      "changed_pixels": 51,
+      "edits": [
+        {
+          "xy": [
+            77,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            82
+          ]
+        },
+        {
+          "xy": [
+            82,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            82
+          ]
+        },
+        {
+          "xy": [
+            83,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            82
+          ]
+        },
+        {
+          "xy": [
+            84,
+            82
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            82
+          ]
+        },
+        {
+          "xy": [
+            77,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            78,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            83
+          ]
+        },
+        {
+          "xy": [
+            82,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            83
+          ]
+        },
+        {
+          "xy": [
+            83,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            83
+          ]
+        },
+        {
+          "xy": [
+            84,
+            83
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            83
+          ]
+        },
+        {
+          "xy": [
+            77,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            78,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            84
+          ]
+        },
+        {
+          "xy": [
+            82,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            84
+          ]
+        },
+        {
+          "xy": [
+            83,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            84
+          ]
+        },
+        {
+          "xy": [
+            84,
+            84
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            84
+          ]
+        },
+        {
+          "xy": [
+            77,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            78,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            85
+          ]
+        },
+        {
+          "xy": [
+            82,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            85
+          ]
+        },
+        {
+          "xy": [
+            83,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            85
+          ]
+        },
+        {
+          "xy": [
+            84,
+            85
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            85
+          ]
+        },
+        {
+          "xy": [
+            77,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            78,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            86
+          ]
+        },
+        {
+          "xy": [
+            82,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            86
+          ]
+        },
+        {
+          "xy": [
+            83,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            86
+          ]
+        },
+        {
+          "xy": [
+            84,
+            86
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            86
+          ]
+        },
+        {
+          "xy": [
+            78,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            87
+          ]
+        },
+        {
+          "xy": [
+            82,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            87
+          ]
+        },
+        {
+          "xy": [
+            83,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            87
+          ]
+        },
+        {
+          "xy": [
+            84,
+            87
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            87
+          ]
+        },
+        {
+          "xy": [
+            78,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            88
+          ]
+        },
+        {
+          "xy": [
+            82,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            88
+          ]
+        },
+        {
+          "xy": [
+            83,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            88
+          ]
+        },
+        {
+          "xy": [
+            84,
+            88
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            88
+          ]
+        },
+        {
+          "xy": [
+            78,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            72,
+            84
+          ]
+        },
+        {
+          "xy": [
+            79,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            79,
+            89
+          ]
+        },
+        {
+          "xy": [
+            82,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            89
+          ]
+        },
+        {
+          "xy": [
+            83,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            89
+          ]
+        },
+        {
+          "xy": [
+            84,
+            89
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            89
+          ]
+        },
+        {
+          "xy": [
+            80,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            90
+          ]
+        },
+        {
+          "xy": [
+            82,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            90
+          ]
+        },
+        {
+          "xy": [
+            83,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            90
+          ]
+        },
+        {
+          "xy": [
+            84,
+            90
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            90
+          ]
+        },
+        {
+          "xy": [
+            80,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            91
+          ]
+        },
+        {
+          "xy": [
+            82,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            91
+          ]
+        },
+        {
+          "xy": [
+            83,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            91
+          ]
+        },
+        {
+          "xy": [
+            84,
+            91
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            91
+          ]
+        },
+        {
+          "xy": [
+            80,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            80,
+            92
+          ]
+        },
+        {
+          "xy": [
+            82,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            82,
+            92
+          ]
+        },
+        {
+          "xy": [
+            83,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            83,
+            92
+          ]
+        },
+        {
+          "xy": [
+            84,
+            92
+          ],
+          "source_frame": 0,
+          "source_xy": [
+            84,
+            92
+          ]
+        }
+      ]
+    }
+  ]
+}
