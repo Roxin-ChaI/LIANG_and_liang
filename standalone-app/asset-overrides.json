@@ -1,6 +1,6 @@
 {
-  "assets/builds/gu/spritesheet.webp": "assets/rework/v0.1.0/approved-actions-integration-2026-10-23/gu.webp",
-  "assets/builds/feng/spritesheet.webp": "assets/rework/v0.1.0/approved-actions-integration-2026-10-23/feng.webp",
+  "assets/builds/gu/spritesheet.webp": "assets/releases/v0.1.1/gu.webp",
+  "assets/builds/feng/spritesheet.webp": "assets/releases/v0.1.1/feng.webp",
   "assets/transform-overlay.sha256": "assets/rework/v0.1.0/action-repair-2026-10-02/transform-overlay.sha256",
   "assets/transform-overlay/gu_to_feng/gu_to_feng_01.png": "assets/rework/v0.1.0/action-repair-2026-10-02/gu_to_feng/gu_to_feng_01.png",
   "assets/transform-overlay/gu_to_feng/gu_to_feng_02.png": "assets/rework/v0.1.0/action-repair-2026-10-02/gu_to_feng/gu_to_feng_02.png",

@@ -1,0 +1,31 @@
+{
+  "version": "0.1.1",
+  "spriteVersion": 2,
+  "atlasSize": [
+    1536,
+    2288
+  ],
+  "approval": "User requested formal App integration and v0.1.1 release after reviewing final repairs.",
+  "changedRows": [
+    9,
+    10
+  ],
+  "otherRows": "byte-identical decoded RGBA to v0.1.0 selection",
+  "limitations": "Existing semi-transparent work pixels and unused Idle slot 6 retained; scoped validator.",
+  "forms": {
+    "gu": {
+      "source": "assets/rework/v0.1.0/gu-look-neck-connection-2026-10-25/gu-look-16.png",
+      "sourceSha256": "6ebea7b04f09be437f31af3f6e3409d3ef9066447555689a9b5dc79cd4a56b85",
+      "base": "assets/rework/v0.1.0/approved-actions-integration-2026-10-23/gu.webp",
+      "baseSha256": "59fb49e7772943482f54d7b2e87d017891871103b1146dc579853ec5e398d5ca",
+      "sha256": "fab827e17cb6dd71a36300368088ebd401c08bb2147b0b9d00bcb8babeb3a99b"
+    },
+    "feng": {
+      "source": "assets/rework/v0.1.0/feng-look-cuff-shirt-separation-2026-10-27/feng-look-16.png",
+      "sourceSha256": "1bc9efd4fd2f7c4c70cbf3fe1d383aa3920fd059ca526d49f46d2b4e17adaf2e",
+      "base": "assets/rework/v0.1.0/approved-actions-integration-2026-10-23/feng.webp",
+      "baseSha256": "268c87f0963343cd5e76f1c64f0a487776441490fa0608dcb96fcea703633979",
+      "sha256": "b542acff205d3b125dc1b8d3f5f6416319d89aa0f4d2878770c1028f8c2937fe"
+    }
+  }
+}

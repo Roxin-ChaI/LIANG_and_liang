@@ -51,9 +51,10 @@ def test_unused_cell_validation_rejects_hidden_rgb():
 
 def test_packager_selects_integrated_atlases_but_preserves_transition_sources():
     from tools.build_standalone_app import ROOT, source_files
+    from tools.assemble_v011_look import OUT as RELEASE_OUT
     selected = {str(logical): source for source, logical in source_files()}
     for form in ("gu", "feng"):
-        assert selected[f"assets/builds/{form}/spritesheet.webp"] == OUT / f"{form}.webp"
+        assert selected[f"assets/builds/{form}/spritesheet.webp"] == RELEASE_OUT / f"{form}.webp"
     for i in range(1, 11):
         name = f"gu_to_feng_{i:02d}.png"
         assert selected[f"assets/transform-overlay/gu_to_feng/{name}"] == BASE/"gu_to_feng"/name

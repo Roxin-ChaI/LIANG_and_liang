@@ -82,6 +82,7 @@ def build(destination: Path = DIST, *, gu_atlas: Path | None = None) -> dict[str
     if not ELECTRON_APP.is_dir():
         raise RuntimeError("project Electron runtime is not installed")
     files = source_files(gu_atlas)
+    version = json.loads((ROOT / 'standalone-app/package.json').read_text())['version']
     destination.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="liang-app-build-", dir=destination.parent) as temporary:
         temporary_root = Path(temporary)
@@ -93,12 +94,14 @@ def build(destination: Path = DIST, *, gu_atlas: Path | None = None) -> dict[str
         info["CFBundleIdentifier"] = BUNDLE_ID
         info["CFBundleName"] = "Liang no Henshin"
         info["CFBundleDisplayName"] = "Liang no Henshin"
+        info["CFBundleShortVersionString"] = version
+        info["CFBundleVersion"] = version
         with plist_path.open("wb") as handle:
             plistlib.dump(info, handle)
         payload = app / "Contents/Resources/app"
         payload.mkdir()
         (payload / "package.json").write_text(json.dumps({
-            "name": "liang-no-henshin-standalone", "version": "0.1.0",
+            "name": "liang-no-henshin-standalone", "version": version,
             "private": True, "type": "module", "main": "standalone-app/main.mjs",
         }, sort_keys=True) + "\n")
         hashes = {}
