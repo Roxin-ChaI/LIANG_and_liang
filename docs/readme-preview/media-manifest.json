@@ -1,0 +1,182 @@
+{
+  "status": "README_DRAFT_FOR_USER_REVIEW",
+  "sources": {
+    "assets/releases/v0.1.1/gu.webp": "fab827e17cb6dd71a36300368088ebd401c08bb2147b0b9d00bcb8babeb3a99b",
+    "assets/releases/v0.1.1/feng.webp": "b542acff205d3b125dc1b8d3f5f6416319d89aa0f4d2878770c1028f8c2937fe",
+    "assets/rework/v0.1.0/action-repair-2026-10-02/gu_to_feng/gu_to_feng_01.png": "4db18eca042c9af17c599c7d51a23fde6a898f5209e9a3eb230a4c226557fc1f",
+    "assets/rework/v0.1.0/action-repair-2026-10-02/gu_to_feng/gu_to_feng_02.png": "10d6bde52920809f135010695ba66f17dc92db208b9c2c6bb8190417191c857f",
+    "assets/rework/v0.1.0/action-repair-2026-10-02/gu_to_feng/gu_to_feng_03.png": "50aef4c78deafa9b95049f14eb2bddbf06563d9e78b104e3609ef59984d8fb79",
+    "assets/rework/v0.1.0/action-repair-2026-10-02/gu_to_feng/gu_to_feng_04.png": "46edd7192102fef0b003c570184ccd34980889b75448fcbb6e97e86beaa7a279",
+    "assets/rework/v0.1.0/action-repair-2026-10-02/gu_to_feng/gu_to_feng_05.png": "e7666314b9e777e954ffd06fc455508ddf51a1dc64080b58f8cfa24ce5c8c801",
+    "assets/rework/v0.1.0/action-repair-2026-10-02/gu_to_feng/gu_to_feng_06.png": "65f1b7a6711a86d4efe57e6678e71c0a7807ea6a2e717499f99175a400ac6ff1",
+    "assets/rework/v0.1.0/action-repair-2026-10-02/gu_to_feng/gu_to_feng_07.png": "13dd6cf11d33ca4b3749a96e4ef5ca58816940857c60bdcf6341e99582d96515",
+    "assets/rework/v0.1.0/action-repair-2026-10-02/gu_to_feng/gu_to_feng_08.png": "a379b612088b9f92b9cf2e40199e1b5a94daf995968902ee90fc7b6778fd64b3",
+    "assets/rework/v0.1.0/action-repair-2026-10-02/gu_to_feng/gu_to_feng_09.png": "9f928b4dfedfae94be1dabcce94178cd9692616720fba10ccff6cc790b502ab1",
+    "assets/rework/v0.1.0/action-repair-2026-10-02/gu_to_feng/gu_to_feng_10.png": "e941725324f94dd159fa5f439643cabb4f8129fbdcc40771e8537897176fc2f9",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_01.png": "006f98c261817cb23081ea1cfc1b37871e5e76c744a24e3879ec16c617fb4e9c",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_02.png": "26a1fd7a0662c59457fd7bd42726febfabba7984685b2d65d496527f081418de",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_03.png": "fa84eadb4c1e7dcb4a5c16ac672312613b1a4018983f1d12f7ca730b3d5fc5e0",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_04.png": "11840bf444cf50b6da23b78019a0cf4a2b33a3fe84d56d345566ed59da83bbf4",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_05.png": "ebd9278d705fd4625bd9218b41546b64f310e566246d5114467f25da3e60f8d2",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_06.png": "c5c8b0b44155c10cd6d9790065aaa892ffe8355cac49380e774c7652e4324084",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_07.png": "0a06b37a1dcd8609a46abe872d1f013023e4599f403f4342db6d20dba37f56ba",
+    "assets/transform-overlay/feng_to_gu/feng_to_gu_08.png": "2381807ba12708e071579f8688cb91dff0d4d9d9024343d60dd3057d3cd9339c"
+  },
+  "animations": {
+    "gu-idle.gif": {
+      "row": 0,
+      "sourceFrames": 6,
+      "durationsMs": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ]
+    },
+    "gu-jumping.gif": {
+      "row": 4,
+      "sourceFrames": 5,
+      "durationsMs": [
+        140,
+        140,
+        140,
+        140,
+        280
+      ]
+    },
+    "gu-running-right.gif": {
+      "row": 1,
+      "sourceFrames": 8,
+      "durationsMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ]
+    },
+    "gu-look.gif": {
+      "directions": 16,
+      "previewStepMs": 220,
+      "mode": "direction sweep, not automatic runtime action"
+    },
+    "feng-idle.gif": {
+      "row": 0,
+      "sourceFrames": 6,
+      "durationsMs": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ]
+    },
+    "feng-jumping.gif": {
+      "row": 4,
+      "sourceFrames": 5,
+      "durationsMs": [
+        140,
+        140,
+        140,
+        140,
+        280
+      ]
+    },
+    "feng-running-right.gif": {
+      "row": 1,
+      "sourceFrames": 8,
+      "durationsMs": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140
+      ]
+    },
+    "feng-look.gif": {
+      "directions": 16,
+      "previewStepMs": 220,
+      "mode": "direction sweep, not automatic runtime action"
+    },
+    "transformation-cycle.gif": {
+      "sequence": [
+        "gu:idle:0",
+        "gu:idle:1",
+        "gu:idle:2",
+        "gu:idle:3",
+        "gu:idle:4",
+        "gu:idle:5",
+        "gu_to_feng:1",
+        "gu_to_feng:2",
+        "gu_to_feng:3",
+        "gu_to_feng:4",
+        "gu_to_feng:5",
+        "gu_to_feng:6",
+        "gu_to_feng:7",
+        "gu_to_feng:8",
+        "gu_to_feng:9",
+        "gu_to_feng:10",
+        "feng:idle:0",
+        "feng:idle:1",
+        "feng:idle:2",
+        "feng:idle:3",
+        "feng:idle:4",
+        "feng:idle:5",
+        "feng_to_gu:1",
+        "feng_to_gu:2",
+        "feng_to_gu:3",
+        "feng_to_gu:4",
+        "feng_to_gu:5",
+        "feng_to_gu:6",
+        "feng_to_gu:7",
+        "feng_to_gu:8"
+      ],
+      "durationsMs": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        280,
+        110,
+        110,
+        140,
+        140,
+        320,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140
+      ],
+      "layout": "same 256x256 canvas/anchors as standalone renderer"
+    }
+  },
+  "sourceArtModified": false,
+  "gifColorLimit": 256,
+  "gifDither": false,
+  "mediaType": "selected-release asset animation previews, not screen recordings"
+}
