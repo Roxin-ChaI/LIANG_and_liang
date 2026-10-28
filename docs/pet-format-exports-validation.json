@@ -1,0 +1,114 @@
+{
+  "status": "FORMAT_AND_PIXEL_VALIDATED",
+  "runtimeImport": "NOT_TESTED",
+  "petId": "liang-no-henshin",
+  "profiles": {
+    "codex-v2": 11,
+    "dsh-v2": 11,
+    "dsh-v1-legacy": 9
+  },
+  "packages": [
+    {
+      "profile": "codex-v2",
+      "form": "gu",
+      "spriteVersionNumber": 2,
+      "size": [
+        1536,
+        2288
+      ],
+      "frames": 73,
+      "file": "LIANG_and_liang-v0.1.1-codex-v2-gu.zip",
+      "sha256": "9cb5f375ce441a9596b6b289fe5a2d1dfe2e554ac01deab6f386a6241baefcb0",
+      "spritesheetSha256": "6720c7393cb6a598b013e3b2b9d80fa4f78a81b5ab8e60e49b746ded995370f0",
+      "sourceSha256": "fab827e17cb6dd71a36300368088ebd401c08bb2147b0b9d00bcb8babeb3a99b",
+      "activePixels": "byte-identical to v0.1.1",
+      "unusedCells": "RGBA zero",
+      "preservedPartialAlphaPixels": 174964
+    },
+    {
+      "profile": "codex-v2",
+      "form": "feng",
+      "spriteVersionNumber": 2,
+      "size": [
+        1536,
+        2288
+      ],
+      "frames": 73,
+      "file": "LIANG_and_liang-v0.1.1-codex-v2-feng.zip",
+      "sha256": "b5ad820d1c75c3fd9c13c48589bdb629ae581b9cfeeb3c9af2f68b3a880726b2",
+      "spritesheetSha256": "a706469c8ee3b47ec3797f53022129bdcd5d56008efb791691bfb0b9b7866284",
+      "sourceSha256": "b542acff205d3b125dc1b8d3f5f6416319d89aa0f4d2878770c1028f8c2937fe",
+      "activePixels": "byte-identical to v0.1.1",
+      "unusedCells": "RGBA zero",
+      "preservedPartialAlphaPixels": 0
+    },
+    {
+      "profile": "dsh-v2",
+      "form": "gu",
+      "spriteVersionNumber": 2,
+      "size": [
+        1536,
+        2288
+      ],
+      "frames": 73,
+      "file": "LIANG_and_liang-v0.1.1-dsh-v2-gu.zip",
+      "sha256": "9cb5f375ce441a9596b6b289fe5a2d1dfe2e554ac01deab6f386a6241baefcb0",
+      "spritesheetSha256": "6720c7393cb6a598b013e3b2b9d80fa4f78a81b5ab8e60e49b746ded995370f0",
+      "sourceSha256": "fab827e17cb6dd71a36300368088ebd401c08bb2147b0b9d00bcb8babeb3a99b",
+      "activePixels": "byte-identical to v0.1.1",
+      "unusedCells": "RGBA zero",
+      "preservedPartialAlphaPixels": 174964
+    },
+    {
+      "profile": "dsh-v2",
+      "form": "feng",
+      "spriteVersionNumber": 2,
+      "size": [
+        1536,
+        2288
+      ],
+      "frames": 73,
+      "file": "LIANG_and_liang-v0.1.1-dsh-v2-feng.zip",
+      "sha256": "b5ad820d1c75c3fd9c13c48589bdb629ae581b9cfeeb3c9af2f68b3a880726b2",
+      "spritesheetSha256": "a706469c8ee3b47ec3797f53022129bdcd5d56008efb791691bfb0b9b7866284",
+      "sourceSha256": "b542acff205d3b125dc1b8d3f5f6416319d89aa0f4d2878770c1028f8c2937fe",
+      "activePixels": "byte-identical to v0.1.1",
+      "unusedCells": "RGBA zero",
+      "preservedPartialAlphaPixels": 0
+    },
+    {
+      "profile": "dsh-v1-legacy",
+      "form": "gu",
+      "spriteVersionNumber": 1,
+      "size": [
+        1536,
+        1872
+      ],
+      "frames": 57,
+      "file": "LIANG_and_liang-v0.1.1-dsh-v1-legacy-gu.zip",
+      "sha256": "aedb87e7900cb2a6aad5c3d07888f568bf3e086b6aaf6c76e354838bfacfd7c4",
+      "spritesheetSha256": "f789e191689f565e2ee499314242e1348c083baa498d4ff5a7bd7731ac149e91",
+      "sourceSha256": "fab827e17cb6dd71a36300368088ebd401c08bb2147b0b9d00bcb8babeb3a99b",
+      "activePixels": "byte-identical to v0.1.1",
+      "unusedCells": "RGBA zero",
+      "preservedPartialAlphaPixels": 174964
+    },
+    {
+      "profile": "dsh-v1-legacy",
+      "form": "feng",
+      "spriteVersionNumber": 1,
+      "size": [
+        1536,
+        1872
+      ],
+      "frames": 57,
+      "file": "LIANG_and_liang-v0.1.1-dsh-v1-legacy-feng.zip",
+      "sha256": "eab70f8b8cc909d05d3f58c04ab1df225253802d71051e3aac4202e3e33a6536",
+      "spritesheetSha256": "dc8f7c130022084f255ac0111f9632f51f3e7895d52034a763a8100f999ac8fe",
+      "sourceSha256": "b542acff205d3b125dc1b8d3f5f6416319d89aa0f4d2878770c1028f8c2937fe",
+      "activePixels": "byte-identical to v0.1.1",
+      "unusedCells": "RGBA zero",
+      "preservedPartialAlphaPixels": 0
+    }
+  ]
+}
